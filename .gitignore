@@ -51,3 +51,5 @@ _sass/@primer/css/**/*.md
 
 # action
 action.changelog.md
+images/
+videos/
