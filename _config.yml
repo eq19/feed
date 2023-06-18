@@ -1,6 +1,7 @@
-theme: null
 title: jekyll-rtd-theme
 description: Just another documentation theme compatible with GitHub Pages
+
+theme: null
 
 # debug:
 #   compress: true
@@ -10,8 +11,6 @@ description: Just another documentation theme compatible with GitHub Pages
 readme_index:
   with_frontmatter: true
 
-# Plugins
-whitelist: []
 plugins:
   - jemoji
   - jekyll-avatar
@@ -24,66 +23,23 @@ exclude:
   - update.sh
   - Gemfile
   - Gemfile.lock
+  - requirements.txt
   - node_modules
-  - vendor/ruby/
-  - vendor/gems/
-  - vendor/cache/
-  - vendor/bundle/
   - package.json
   - package-lock.json
   - webpack.config.js
-  - requirements.txt
   - jekyll-rtd-theme.gemspec
-include             : [".htaccess"]
 
-# Handling Reading
-safe                : false
-keep_files          : [".git", ".svn"]
-encoding            : "utf-8"
-markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
-strict_front_matter : false
-
-# Filtering Content
-show_drafts         : null
-limit_posts         : 0
-future              : false
-unpublished         : false
-
-# Conversion
-markdown            : kramdown
-highlighter         : rouge
-lsi                 : false
-excerpt_separator   : "\n\n"
-incremental         : false
-
-# Serving
-detach              : false
-port                : 4000
-host                : 127.0.0.1
-baseurl             : "" # does not include hostname
-show_dir_listing    : false
-
-# Outputting
-permalink           : date
-paginate_path       : /page:num
-timezone            : null
-
-quiet               : false
-verbose             : false
-defaults            : []
-
-liquid:
-  error_mode        : warn
-  strict_filters    : false
-  strict_variables  : false
-
-# Markdown Processors
-kramdown:
-  auto_ids          : true
-  entity_output     : as_char
-  toc_levels        : [1, 2, 3, 4, 5, 6]
-  smart_quotes      : lsquo,rsquo,ldquo,rdquo
-  input             : GFM
-  hard_wrap         : false
-  footnote_nr       : 1
-  show_warnings     : false
+# Where things are
+source              : .
+collections:
+  posts:
+    output          : true
+collections_dir     : .
+data_dir            : _data
+sass:
+  sass_dir          : _sass
+destination         : ./_site
+includes_dir        : _includes
+layouts_dir         : _layouts
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
