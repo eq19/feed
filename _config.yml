@@ -36,10 +36,10 @@ collections:
   posts:
     output          : true
 collections_dir     : .
-data_dir            : _data
-sass:
-  sass_dir          : _sass
 destination         : ./_site
-includes_dir        : _includes
-layouts_dir         : _layouts
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+sass:
+  sass_dir          : text/_sass
+data_dir            : text/_data
+includes_dir        : text/_includes
+layouts_dir         : text/_layouts
+plugins_dir         : text/_plugins # takes an array of strings and loads plugins in that order
