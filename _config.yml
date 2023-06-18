@@ -87,17 +87,3 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
-
-# Where things are
-source              : .
-collections:
-  posts:
-    output          : true
-collections_dir     : .
-data_dir            : _data
-sass:
-  sass_dir          : _sass
-destination         : ./_site
-includes_dir        : _includes
-layouts_dir         : _layouts
-plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
