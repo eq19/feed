@@ -24,5 +24,5 @@ echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
   ${JEKYLL_BASEURL} -c ${JEKYLL_CFG} -d /vendor/build
 
-cd /vendor/build && rm -rf .git
-git init --initial-branch=master && touch .nojekyll && deploy_remote "${REPOSITORY}"
+cd /vendor/build #&& touch .nojekyll
+rm -rf .git && git init --initial-branch=master && deploy_remote "${REPOSITORY}"
