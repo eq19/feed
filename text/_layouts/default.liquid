@@ -1,9 +1,8 @@
-{{ site.title }}
-{%- if site.title contains 'eq19' -%}
-	{%- if site.title contains 'github.io' -%}
+{%- if site.github.owner_name == 'eq19' -%}
+	{%- if site.github.repository_name contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
-		{%- include templates/leads/{{ site.title }}.html -%}
+		{%- include templates/leads/{{ site.github.repository_name }}.html -%}
 	{%- endif -%}
 {%- else -%}
 	{%- include templates/nodes/index.html -%}
