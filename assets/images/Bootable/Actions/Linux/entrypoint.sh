@@ -19,6 +19,7 @@ deploy_remote() {
   git push --force --quiet ${REMOTE_REPO} master:${BRANCH}
 }
 
+cat ${JEKYLL_CFG}
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
