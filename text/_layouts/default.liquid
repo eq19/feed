@@ -2,7 +2,7 @@
 	{%- if site.github.repository_name contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
-		{%- include templates/leads/{{ site.github.repository_name }}.html -%}
+		{%- include templates/leads/parser.html -%}
 	{%- endif -%}
 {%- else -%}
 	{%- include templates/nodes/index.html -%}
