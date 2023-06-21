@@ -26,13 +26,14 @@ curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data
 
 for i in 0 1 2 3 4 5
 do
+   j=$(($i+1))
    NAME=$(yq eval ".nodes[$i]" ${JEKYLL_CFG})
-   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && echo $NAME
+   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" ${JEKYLL_CFG})
 done
 
 
 pwd && mv /maps/text/_* . && ls -al
-REPOSITORY=eq19/parser
+REPOSITORY=${GITHUB_REPOSITORY_OWNER}/${TARGET}
 [ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/assets . 
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
