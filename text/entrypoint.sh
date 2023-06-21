@@ -26,7 +26,7 @@ sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
 curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" >> ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
-pwd && mv /maps/text/_* .  && ls -al
+mv /maps/assets .  && mv /maps/text/_* . && ls -al
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
   ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
