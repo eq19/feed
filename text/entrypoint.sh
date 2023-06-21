@@ -28,7 +28,7 @@ curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
-  ${JEKYLL_BASEURL} -c ${JEKYLL_CFG} -d /vendor/build
+  ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
 
-cd /vendor/build #&& touch .nojekyll
+cd /maps/text/_site #&& touch .nojekyll
 rm -rf .git && git init --initial-branch=master && deploy_remote "${REPOSITORY}"
