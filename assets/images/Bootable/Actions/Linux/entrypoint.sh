@@ -23,7 +23,7 @@ deploy_remote() {
 # https://stackoverflow.com/a/43358500/4058484
 echo -e "\n$hr\nCONFIG FILE\n$hr"
 sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed -En "s/name: //g" >> ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" >> ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
