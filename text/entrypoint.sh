@@ -31,5 +31,5 @@ pwd && mv /maps/text/_* .  && ls -al
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
   ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
 
-cd /maps/text/_site #&& touch .nojekyll
-rm -rf .git && git init --initial-branch=master && deploy_remote "${REPOSITORY}"
+cd ./_site #&& touch .nojekyll
+git init --initial-branch=master && deploy_remote "${REPOSITORY}"
