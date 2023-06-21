@@ -1,3 +1,13 @@
+{% for item in site.nodes %}
+  {% if site.github.repository_name contains item %}
+    {% assign position = forloop.index0 %}
+    {% break %} 
+  {% endif %}
+{% endfor %}
+
+{{ site.nodes[position] }}
+
+
 {%- if site.github.owner_name == 'eq19' -%}
 	{%- if site.github.repository_name contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
