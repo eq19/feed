@@ -2,7 +2,7 @@ FROM jekyll/jekyll:latest
 LABEL version=v0.0.1
 
 RUN apk update
-RUN apk add bash
+RUN apk add curl
 
 ADD . /maps
 
