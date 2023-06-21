@@ -5,14 +5,11 @@
   {% endif %}
 {% endfor %}
 
-{{ site.nodes[position] }}
-
-
 {%- if site.github.owner_name == 'eq19' -%}
 	{%- if site.github.repository_name contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
-		{%- include templates/leads/parser.html -%}
+		{%- include templates/leads/{{ site.nodes[position] }}.html -%}
 	{%- endif -%}
 {%- else -%}
 	{%- include templates/nodes/index.html -%}
