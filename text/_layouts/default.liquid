@@ -1,6 +1,6 @@
 {% for item in site.nodes %}
   {% if site.github.repository_name contains item %}
-    {% assign position = forloop.index1 %}
+    {% assign position = forloop.index %}
     {% break %} 
   {% endif %}
 {% endfor %}
