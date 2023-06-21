@@ -52,5 +52,6 @@ _sass/@primer/css/**/*.md
 # action
 action.changelog.md
 _drafts/
+assets/.github
 multiboot/
 FiraDisk/
