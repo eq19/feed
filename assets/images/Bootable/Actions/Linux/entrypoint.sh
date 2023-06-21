@@ -23,7 +23,7 @@ deploy_remote() {
 # https://dev.to/thomasaudo/get-started-with-github-grapql-api--1g8b
 echo -e "\n$hr\nPINNED  REPOSITORIES\n$hr"
 output=$(curl -L -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" \
---data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"')
+--data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '"\(.data), \(.user)"')
 echo "$output"
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
