@@ -20,10 +20,10 @@ deploy_remote() {
 }
 
 # pinned repos
-# https://dev.to/thomasaudo/get-started-with-github-grapql-api--1g8b
+# https://stackoverflow.com/a/43358500/4058484
 echo -e "\n$hr\nPINNED  REPOSITORIES\n$hr"
 output=$(curl -L -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" \
---data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '"\(.data), \(.user)"')
+--data-raw '{ "query": "query { repositoryOwner(login: \"'"${GITHUB_REPOSITORY_OWNER}"'\") { ... on User { pinnedRepositories(first:6) { edges { node { name } } } } } }" }' | jq --raw-output '.data.repositoryOwner.pinnedRepositories.edges[].node.name')
 echo "$output"
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
