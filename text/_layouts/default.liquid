@@ -1,11 +1,9 @@
 {% for item in site.nodes %}
   {% if site.github.repository_name contains item %}
-    {% assign position = forloop.index %}
+    {% assign site_name = site.nodes[forloop.index] %}
     {% break %} 
   {% endif %}
 {% endfor %}
-
-{% assign site_name = site.nodes[position] %}
 
 {%- if site.github.owner_name == 'eq19' -%}
 	{%- if site.github.repository_name contains 'github.io' -%}
