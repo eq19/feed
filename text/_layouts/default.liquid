@@ -2,13 +2,8 @@
 	{%- if site.github.repository_name contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
-		{%- for item in site.nodes -%}
-		  {%- if site.github.repository_name contains item -%}
-			{%- assign site_name = site.nodes[forloop.index] -%}
-			{%- break -%} 
-		  {%- endif -%}
-		{%- endfor -%}
-		{%- include templates/leads/{{ site_name }}.html -%}
+		{% assign target = site.target_repository | split: '/' %}
+		{%- include templates/leads/{{ target[1] }}.html -%}
 	{%- endif -%}
 {%- else -%}
 	{%- include templates/nodes/index.html -%}
