@@ -26,7 +26,7 @@ curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data
 
 for i in 0 1 2 3 4 5
 do
-   yq eval '.nodes[$i]' ${JEKYLL_CFG}
+   yq eval '.nodes['$i']' ${JEKYLL_CFG}
 done
 
 
