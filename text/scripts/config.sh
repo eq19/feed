@@ -12,6 +12,10 @@ setup_config() {
 	   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" ${JEKYLL_CFG})
 	done
 
+	mv /maps/text/_* .
+	REPOSITORY=${GITHUB_REPOSITORY_OWNER}/${TARGET}
+	[ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/assets .
+
 	sed -i "1s|^|target_repository: $REPOSITORY\n|" ${JEKYLL_CFG}
 	sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
 }
