@@ -27,7 +27,7 @@ curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data
 for i in 0 1 2 3 4 5
 do
    NAME=$(yq eval ".nodes[$i]" ${JEKYLL_CFG})
-   [ "${GITHUB_REPOSITORY}" == *"$NAME"* ] && echo $NAME
+   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && echo $NAME
 done
 
 
