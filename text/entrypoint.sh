@@ -5,7 +5,6 @@ TOKEN=${INPUT_TOKEN}
 ACTOR=${GITHUB_ACTOR}
 JEKYLL_BASEURL=${INPUT_JEKYLL_BASEURL:=}
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
-REPOSITORY=eq19/parser
 
 git config --global user.name "${ACTOR}"
 git config --global user.email "${ACTOR}@users.noreply.github.com"
@@ -25,7 +24,10 @@ echo -e "\n$hr\nCONFIG FILE\n$hr"
 sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
 curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" >> ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
+yq eval '.nodes' ${JEKYLL_CFG}
+
 pwd && mv /maps/text/_* . && ls -al
+REPOSITORY=eq19/parser
 [ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/assets . 
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
