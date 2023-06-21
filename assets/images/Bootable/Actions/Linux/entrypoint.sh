@@ -22,10 +22,8 @@ deploy_remote() {
 # pinned repos
 # https://stackoverflow.com/a/43358500/4058484
 echo -e "\n$hr\nPINNED  REPOSITORIES\n$hr"
-output=$(curl -L -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"')
+output=$(curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"')
 echo "$output"
-
-curl -L -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"'
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && pwd
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
