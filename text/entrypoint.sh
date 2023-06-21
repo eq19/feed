@@ -24,7 +24,10 @@ echo -e "\n$hr\nCONFIG FILE\n$hr"
 sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
 curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" >> ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
-yq eval '.nodes[2]' ${JEKYLL_CFG}
+for i in 0 1 2 3 4 5
+do
+   yq eval '.nodes[i]' ${JEKYLL_CFG}
+done
 
 
 pwd && mv /maps/text/_* . && ls -al
