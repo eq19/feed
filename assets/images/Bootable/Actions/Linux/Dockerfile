@@ -3,7 +3,7 @@ LABEL version=v0.0.1
 
 RUN apk update
 RUN apk upgrade
-RUN apk add -U curl
+RUN apk add -U curl jq
 
 ADD . /maps
 
