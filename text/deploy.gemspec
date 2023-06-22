@@ -10,8 +10,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/eq19/parser"
   spec.summary       = "This repository act as 'the parser' with id=34"
 
+# https://stackoverflow.com/a/42109330/4058484
 # https://guides.rubygems.org/specification-reference/#files
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data|_includes|_layouts|_plugins|_sass|assets|LICENSE|README)!i) }
+# spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data|_includes|_layouts|_plugins|_sass|assets|LICENSE|README)!i) }
 
   spec.add_runtime_dependency "jekyll", ">= 3.0"
 # spec.add_development_dependency "rake", "~> 10.0"

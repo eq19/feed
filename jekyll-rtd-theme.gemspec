@@ -8,7 +8,8 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.homepage      = "https://github.com/rundocs/jekyll-rtd-theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
+# https://stackoverflow.com/a/42109330/4058484
+# spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
 
   spec.add_runtime_dependency "github-pages", "~> 209"
 end

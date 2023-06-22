@@ -6,6 +6,7 @@ RUN apk add -U curl jq yq
 
 ADD . /maps
 
+ENV VENDOR_BUNDLE=/vendor/bundle
 ENV BUNDLE_GEMFILE=/maps/text/Gemfile
 
 RUN bundle install
