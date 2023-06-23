@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 deploy_remote() {
-  echo -e "Deploying to $1 on branch ${BRANCH}"
+  echo -e "Deploying to $1 on branch gh-pages"
   REMOTE_REPO="https://${ACTOR}:${TOKEN}@github.com/$1.git"
 
   git config --global user.name "${ACTOR}"
