@@ -1,8 +1,14 @@
 # Ignore everything
 *
 
+# Not subdirectories
+!*/
+
 # But not these files...
 !.gitignore
+!*.liquid
+!*.rb
 
 # Nor these directories...
 !.github
+
