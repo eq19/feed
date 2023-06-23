@@ -1,13 +1,10 @@
 # Ignore everything
-*
-
-# Not subdirectories
-!*/
+*.ini
+/_*/**/*
 
 # But not these files...
-!*.liquid
-!*.rb
+!/_*/**/*.md
+!/_*/**/*.liquid
 
-# Nor these directories...
-!.github
-
+# These directories...
+FiraDisk/
