@@ -3,13 +3,13 @@
 Gem::Specification.new do |spec|
 
   spec.license       = "MIT"
-  spec.version       = "3.2.7"
-  spec.name          = "parser"
-  spec.authors       = ["eq19"]
-  spec.email         = ["admin@eq19.com"]
-  spec.homepage      = "https://github.com/eq19/parser"
-  spec.summary       = "This repository act as 'the parser' with id=34"
-
+  spec.name          = "jekyll-rtd-theme"
+  spec.version       = "2.0.10"
+  spec.authors       = ["saowang"]
+  spec.email         = ["saowang@outlook.com"]
+  spec.summary       = "Just another documentation theme compatible with GitHub Pages"
+  spec.homepage      = "https://github.com/rundocs/jekyll-rtd-theme"
+  
 # https://stackoverflow.com/a/42109330/4058484
 # https://guides.rubygems.org/specification-reference/#files
 # spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(_data|_includes|_layouts|_plugins|_sass|assets|LICENSE|README)!i) }
