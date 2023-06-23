@@ -1,6 +1,5 @@
 #!/bin/sh
 
-BRANCH=gh-pages
 TOKEN=${INPUT_TOKEN}
 ACTOR=${GITHUB_ACTOR}
 SCRIPT_DIR=/maps/text/scripts
