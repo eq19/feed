@@ -1,6 +1,6 @@
 {%- if site.github.owner_name == 'eq19' -%}
 	{%- if site.github.repository_name contains 'github.io' -%}
-		{%- include templates/leads/index.html -%}
+		{%- include templates/leads/index.liquid -%}
 	{%- else -%}
 		{%- assign target = site.target_repository | split: '/' | last -%}
 		{%- include templates/leads/{{ target | default: site.github.repository_name }}.liquid -%}
