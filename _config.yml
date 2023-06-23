@@ -1,7 +1,5 @@
 description: Jekyll theme compatible with GitHub Pages
 
-theme: null
-
 # debug:
 #   compress: true
 #   dist: false
@@ -32,23 +30,18 @@ exclude:
   - jekyll-rtd-theme.gemspec
 
 # Where things are
-source              : .
+source: .
+theme: null
+collections_dir: .
 collections:
   posts:
-    output          : true
-collections_dir     : .
-destination         : ./_site
-sass:
-  sass_dir          : _feed/text/_sass
-data_dir            : _feed/text/_data
-includes_dir        : _feed/text/_includes
-layouts_dir         : _feed/text/_layouts
-plugins_dir         : _feed/text/_plugins # takes an array of strings and loads plugins in that order
+    output: true
+destination: ./_site
 
 # Front Matter Defaults
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
     values:
       layout: "default"
