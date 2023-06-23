@@ -12,7 +12,7 @@ source ${SCRIPT_DIR}/config.sh && setup_config && cat ${JEKYLL_CFG}
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && ls -al
 # https://stackoverflow.com/a/70916831/4058484
-bundle add webrick
+# bundle add webrick
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
 JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
   ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
