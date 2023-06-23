@@ -10,7 +10,7 @@ deploy_remote() {
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null
   cd "$(basename "${REMOTE_REPO}" .git)" && rm -rf *
 
-  mv -v ${GITHUB_WORKSPACE}/_site/* . && git add .
+  mv -v ${GITHUB_WORKSPACE}/_site/* . && touch .nojekyll && git add .
   git commit -m "jekyll build from cction ${GITHUB_SHA}"
   git push -u origin gh-pages
 }
