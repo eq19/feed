@@ -17,7 +17,4 @@ JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile \
   ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
 
 echo -e "\n$hr\nDEPLOY\n$hr"
-cd ./_site #&& touch .nojekyll
-git config --global user.name "${ACTOR}"
-git config --global user.email "${ACTOR}@users.noreply.github.com"
-git init --initial-branch=master && source ${SCRIPT_DIR}/remote.sh && deploy_remote "${REPOSITORY}"
+source ${SCRIPT_DIR}/remote.sh && deploy_remote "${REPOSITORY}"
