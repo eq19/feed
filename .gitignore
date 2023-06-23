@@ -1,57 +1,8 @@
-# Folder config file
-Desktop.ini
+# Ignore everything
+*
 
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
+# But not these files...
+!.gitignore
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-*.sys
-*.vhd
-
-# Windows shortcuts
-*.lnk
-
-# jekyll
-.jekyll-metadata
-_site
-.sass-cache
-.jekyll-cache
-
-
-# bundler
-*.gem
-Gemfile.lock
-
-
-# python
-*.whl
-
-
-# npm
-node_modules
-package-lock.json
-
-
-# _sass
-_sass/@primer/css/**/*.md
-
-
-# lighthouse
-*.report.html
-
-
-# action
-action.changelog.md
-_drafts/
-assets/.github
-multiboot/
-FiraDisk/
+# Nor these directories...
+!.github
