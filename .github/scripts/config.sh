@@ -15,7 +15,7 @@ setup_config() {
 	rm nodes.yaml
 	rm -Rf -- */ && mv /maps/_* .
 	REPOSITORY=${GITHUB_REPOSITORY_OWNER}/${TARGET}
-	[ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/_assets mv /maps/assets
+	[ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/_assets /maps/assets
 
 	sed -i "1s|^|target_repository: $REPOSITORY\n|" ${JEKYLL_CFG}
 	sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
