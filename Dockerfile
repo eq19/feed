@@ -7,7 +7,7 @@ RUN apk add -U curl github-cli jq yq
 ADD . /maps
 
 ENV VENDOR_BUNDLE=/vendor/bundle
-ENV BUNDLE_GEMFILE=/maps/_plugins/gemspec/Gemfile
+ENV BUNDLE_GEMFILE=/maps/Gemfile
 
 RUN bundle install
 
