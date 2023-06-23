@@ -3,7 +3,7 @@
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
 		{%- assign target = site.target_repository | split: '/' | last -%}
-		{%- include templates/leads/{{ target | default: site.github.repository_name }}.html -%}
+		{%- include templates/leads/{{ target | default: site.github.repository_name }}.liquid -%}
 	{%- endif -%}
 {%- else -%}
 	{%- include templates/nodes/index.html -%}
