@@ -2,7 +2,7 @@
 
 TOKEN=${INPUT_TOKEN}
 ACTOR=${GITHUB_ACTOR}
-SCRIPT_DIR=/maps/_plugins/gemspec/scripts
+SCRIPT_DIR=/maps/.github/scripts
 JEKYLL_BASEURL=${INPUT_JEKYLL_BASEURL:=}
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
 
