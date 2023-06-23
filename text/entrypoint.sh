@@ -8,7 +8,7 @@ JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
 
 echo -e "\n$hr\nCONFIG FILE\n$hr"
 mv /maps/_config.yml ${JEKYLL_CFG}
-source ${SCRIPT_DIR}/config.sh && setup_config && cat ${JEKYLL_CFG}
+source ${SCRIPT_DIR}/config.sh && setup_config && cat ${JEKYLL_CFG} && ls -al
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
 # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
