@@ -8,8 +8,9 @@ deploy_remote() {
   git config --global user.email "${ACTOR}@users.noreply.github.com"
 
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null
-  cd "$(basename "${REMOTE_REPO}" .git)" && rm -rf .
-  mv ${GITHUB_WORKSPACE}/_site/* . && git add .
+  cd "$(basename "${REMOTE_REPO}" .git)" && rm -rf *
+
+  cp ${GITHUB_WORKSPACE}/_site/* . && git add .
   git commit --allow-empty -m "jekyll build from cction ${GITHUB_SHA}"
   git push -u origin gh-pages
 
