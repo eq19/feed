@@ -7,9 +7,9 @@ RUN apk add -U curl github-cli jq yq
 ADD . /maps
 
 ENV VENDOR_BUNDLE=/vendor/bundle
-ENV BUNDLE_GEMFILE=/maps/text/Gemfile
+ENV BUNDLE_GEMFILE=/maps/_plugins/gemspec/Gemfile
 
 RUN bundle install
 
-RUN chmod +x /maps/text/entrypoint.sh
-ENTRYPOINT ["/maps/text/entrypoint.sh"]
+RUN chmod +x /maps/entrypoint.sh
+ENTRYPOINT ["/maps/entrypoint.sh"]
