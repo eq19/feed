@@ -1,6 +1,17 @@
 #!/bin/sh
 
-setup_config() {
+deploy_remote() {
+  echo -e "Deploying to $1 on branch gh-pages"
+  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
+
+  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf *
+  mv -v ${GITHUB_WORKSPACE}/_site/* . && touch .nojekyll && git add .
+  git commit -m "jekyll build from cction ${GITHUB_SHA}"
+  git push -u origin gh-pages
+}
+
+jekyll_build() {
   # pinned repos
   # https://stackoverflow.com/a/43358500/4058484
   curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $INPUT_TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" > nodes.yaml
@@ -23,18 +34,7 @@ setup_config() {
 
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
+  Jecho -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
 }
 
-deploy_remote() {
-  echo -e "Deploying to $1 on branch gh-pages"
-  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
-
-  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf *
-  mv -v ${GITHUB_WORKSPACE}/_site/* . && touch .nojekyll && git add .
-  git commit -m "jekyll build from cction ${GITHUB_SHA}"
-  git push -u origin gh-pages
-}
-
-echo -e "\n$hr\nJEKYLL BUILD\n$hr" && setup_config
-echo -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
