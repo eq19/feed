@@ -3,9 +3,9 @@
 BRANCH=gh-pages
 TOKEN=${INPUT_TOKEN}
 ACTOR=${GITHUB_ACTOR}
-SCRIPT_DIR=./.github/scripts
 JEKYLL_BASEURL=${INPUT_JEKYLL_BASEURL:=}
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
+SCRIPT_DIR=${GITHUB_WORKSPACE}/.github/scripts
 
 echo -e "\n$hr\nCONFIG FILE\n$hr"
 mv /maps/_config.yml ${JEKYLL_CFG}
