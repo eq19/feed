@@ -11,5 +11,5 @@ ENV BUNDLE_GEMFILE=/maps/text/Gemfile
 
 RUN bundle install
 
-RUN chmod +x /maps/text/entrypoint.sh
-ENTRYPOINT ["/maps/text/entrypoint.sh"]
+RUN chmod +x /maps/entrypoint.sh
+ENTRYPOINT ["/maps/entrypoint.sh"]
