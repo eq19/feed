@@ -9,6 +9,7 @@ JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
 
 echo -e "\n$hr\nCONFIG FILE\n$hr"
 mv /maps/_config.yml ${JEKYLL_CFG}
+git submodule update --init --recursive
 source ${SCRIPT_DIR}/config.sh && setup_config && cat ${JEKYLL_CFG}
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
