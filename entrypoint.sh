@@ -11,9 +11,9 @@ setup_config() {
 
 	for i in 0 1 2 3 4 5
 	do
-	   j=$(($i+1))
-	   NAME=$(yq eval ".nodes[$i]" nodes.yaml)
-	   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" nodes.yaml)
+		j=$(($i+1))
+		NAME=$(yq eval ".nodes[$i]" nodes.yaml)
+		[ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" nodes.yaml)
 	done
 
 	rm nodes.yaml
@@ -29,24 +29,16 @@ setup_config() {
 	JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
 }
 
-echo -e "\n$hr\nJEKYLL BUILD\n$hr"
-setup_config
-
-
 deploy_remote() {
   echo -e "Deploying to $1 on branch gh-pages"
   REMOTE_REPO="https://${ACTOR}:${TOKEN}@github.com/$1.git"
 
-  git config --global user.name "${ACTOR}"
-  git config --global user.email "${ACTOR}@users.noreply.github.com"
-
-  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null
-  cd $(basename $1) && rm -rf *
-
+  git config --global user.name "${ACTOR}" && git config --global user.email "${ACTOR}@users.noreply.github.com"
+  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf *
   mv -v ${GITHUB_WORKSPACE}/_site/* . && touch .nojekyll && git add .
   git commit -m "jekyll build from cction ${GITHUB_SHA}"
   git push -u origin gh-pages
 }
 
-echo -e "\n$hr\nDEPLOY\n$hr"
-deploy_remote "${REPOSITORY}"
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && setup_config
+echo -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
