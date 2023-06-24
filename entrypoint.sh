@@ -38,4 +38,4 @@ jekyll_build() {
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-gh org list
+gh api orgs/:orgname/repos
