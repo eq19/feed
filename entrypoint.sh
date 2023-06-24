@@ -34,7 +34,7 @@ jekyll_build() {
 
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
-  Jecho -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
+  echo -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
