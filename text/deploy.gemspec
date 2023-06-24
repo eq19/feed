@@ -1,5 +1,5 @@
 require 'rake'
-frozen_string_literal: true
+# frozen_string_literal: true
 
 Gem::Specification.new do |spec|
 
