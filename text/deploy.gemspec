@@ -1,20 +1,16 @@
-  require 'rake'
-# frozen_string_literal: true
+require 'rake'
+frozen_string_literal: true
 
 Gem::Specification.new do |spec|
 
+  spec.name          = "jekyll-rtd-theme"
+  spec.version       = "2.0.10"
+  spec.authors       = ["saowang"]
+  spec.email         = ["saowang@outlook.com"]
+  spec.homepage      = "https://github.com/rundocs/jekyll-rtd-theme"
+  spec.summary       = "Just another documentation theme compatible with GitHub Pages"
+  spec.files         = FileList['assets/*','_*/*','[A-Z]*'].to_a
   spec.license       = "MIT"
-  spec.version       = "3.2.7"
-  spec.name          = "parser"
-  spec.authors       = ["eq19"]
-  spec.email         = ["admin@eq19.com"]
-  spec.homepage      = "https://github.com/eq19/parser"
-  spec.summary       = "This repository act as 'the parser' with id=34"
-
-# https://guides.rubygems.org/specification-reference/#files
-  spec.files = FileList['assets/*','_*/*','[A-Z]*'].to_a
-# fatal: Not a git repository https://stackoverflow.com/a/42109330/4058484
-# spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
   
   spec.add_runtime_dependency "jekyll", ">= 3.0"
 # spec.add_development_dependency "rake", "~> 10.0"
