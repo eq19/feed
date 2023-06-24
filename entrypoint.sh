@@ -1,9 +1,7 @@
 #!/bin/sh
 
-BRANCH=gh-pages
 TOKEN=${INPUT_TOKEN}
 ACTOR=${GITHUB_ACTOR}
-JEKYLL_BASEURL=${INPUT_JEKYLL_BASEURL:=}
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
 
 setup_config() {
@@ -28,7 +26,7 @@ setup_config() {
 	sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
 	# https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-	JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile ${JEKYLL_BASEURL} -c ${JEKYLL_CFG}
+	JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr"
