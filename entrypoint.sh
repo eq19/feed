@@ -38,4 +38,4 @@ jekyll_build() {
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-gh api orgs/:orgname/repos
+gh auth login --with-token && gh api orgs/:orgname/repos
