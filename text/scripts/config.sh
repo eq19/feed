@@ -12,6 +12,7 @@ setup_config() {
 	   [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" nodes.yaml)
 	done
 
+	rm nodes.yaml
 	mv /maps/text/_* .
 	REPOSITORY=${GITHUB_REPOSITORY_OWNER}/${TARGET}
 	[ "${REPOSITORY}" == "eq19/eq19.github.io" ] && mv /maps/assets .
