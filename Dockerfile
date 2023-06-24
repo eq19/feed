@@ -3,6 +3,7 @@ LABEL version=v0.0.1
 
 RUN apk update && apk upgrade
 RUN apk add -U curl github-cli jq yq
+RUN git submodule update --init
 
 ADD . /maps
 
