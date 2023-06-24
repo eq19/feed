@@ -38,4 +38,4 @@ jekyll_build() {
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-echo ${INPUT_TOKEN} | gh auth login --with-token && gh api orgs/:orgname/repos
+echo ${INPUT_TOKEN} | gh auth login --with-token && gh api -H "Accept: application/vnd.github+json" /user/orgs --jq ".[].login"
