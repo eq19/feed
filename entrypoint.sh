@@ -12,18 +12,19 @@ deploy_remote() {
 }
 
 jekyll_build() {
-  # pinned repos
-  # https://stackoverflow.com/a/43358500/4058484
+  echo ${INPUT_TOKEN} | gh auth login --with-token
+  gh api -H "Accept: application/vnd.github+json" /user/orgs --jq "map(.login)" > nodes.json
   curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $INPUT_TOKEN" --data-raw '{"query":"{\n  user(login: \"'${GITHUB_REPOSITORY_OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" > nodes.yaml
 
   for i in 0 1 2 3 4 5
   do
+	jq -r ".[$i]" nodes.json
     j=$(($i+1)) && NAME=$(yq eval ".nodes[$i]" nodes.yaml)
     [ -z "${GITHUB_REPOSITORY##*$NAME*}" ] && TARGET=$(yq eval ".nodes[$j]" nodes.yaml)
   done
 
   REPOSITORY=${GITHUB_REPOSITORY_OWNER}/${TARGET}
-  rm nodes.yaml && rm -Rf -- */ && mv /maps/text/_* .
+  rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
   [ -z "${REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
 
   JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
@@ -38,4 +39,3 @@ jekyll_build() {
 }
 
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-echo ${INPUT_TOKEN} | gh auth login --with-token && gh api -H "Accept: application/vnd.github+json" /user/orgs --jq ".[].login"
