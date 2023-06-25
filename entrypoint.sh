@@ -17,7 +17,7 @@ jekyll_build() {
   do
     j=$(($i+1)) && NAME=$(yq eval ".nodes[$i]" nodes.yaml)
     [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && REPOSITORY=${OWNER}/$(yq eval ".nodes[0]" nodes.yaml)
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && i -lt 5 ]] && REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && $i -lt 5 ]] && REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
