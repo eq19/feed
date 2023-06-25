@@ -1,8 +1,8 @@
 #!/bin/sh
 
 OWNER=${GITHUB_REPOSITORY_OWNER}
-REPOSITORY=${OWNER}/${OWNER}.github.io
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
+TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
 
 deploy_remote() {
   echo -e "Deploying to $1 on branch gh-pages"
@@ -20,20 +20,20 @@ jekyll_build() {
   for i in 0 1 2 3 4 5
   do
     j=$(($i+1)) && NAME=$(yq eval ".nodes[$i]" nodes.yaml)
-    [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && REPOSITORY=${OWNER}/$(yq eval ".nodes[0]" nodes.yaml)
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
+    [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[0]" nodes.yaml)
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
-  [ -z "${REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
+  [ -z "${TARGET_REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
 
   mv /maps/_config.yml ${JEKYLL_CFG}
-  sed -i "1s|^|target_repository: $REPOSITORY\n|" ${JEKYLL_CFG}
+  sed -i "1s|^|target_repository: $TARGET_REPOSITORY\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
-  echo -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${REPOSITORY}"
+  echo -e "\n$hr\nDEPLOY\n$hr" && deploy_remote "${TARGET_REPOSITORY}"
 }
 
 set_owner() {
