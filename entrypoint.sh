@@ -1,5 +1,9 @@
 #!/bin/sh
 
+OWNER=${GITHUB_REPOSITORY_OWNER}
+REPOSITORY=${OWNER}/${OWNER}.github.io
+JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
+
 deploy_remote() {
   echo -e "Deploying to $1 on branch gh-pages"
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
