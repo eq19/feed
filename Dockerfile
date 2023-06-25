@@ -5,10 +5,10 @@ ENV VENDOR_BUNDLE=/vendor/bundle
 ENV BUNDLE_GEMFILE=/maps/text/Gemfile
 
 RUN apk update && apk upgrade
-RUN apk add -U curl github-cli jq yq
+RUN apk add -U curl github-cli jq npm yq
+RUN bundle install
+RUN npm install --save gh-pinned-repos
 
 ADD . /maps
-RUN bundle install
-
 RUN chmod +x /maps/entrypoint.sh
 ENTRYPOINT ["/maps/entrypoint.sh"]
