@@ -5,7 +5,7 @@ ENV VENDOR_BUNDLE=/vendor/bundle
 ENV BUNDLE_GEMFILE=/maps/text/Gemfile
 
 RUN apk update && apk upgrade
-RUN apk add -U curl github-cli jq bpm yq
+RUN apk add --update  -U curl github-cli jq nodejs npm yq
 
 ADD . /maps
 RUN bundle install
