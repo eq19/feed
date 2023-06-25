@@ -9,7 +9,7 @@ RUN apk add -U curl github-cli jq bpm yq
 
 ADD . /maps
 RUN bundle install
-npm install --save gh-pinned-repos
+RUN npm install --save gh-pinned-repos
 
 RUN chmod +x /maps/entrypoint.sh
 ENTRYPOINT ["/maps/entrypoint.sh"]
