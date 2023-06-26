@@ -46,6 +46,5 @@ set_owner() {
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 #echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
 echo ${INPUT_TOKEN} | gh auth login --with-token
-ORGS=$(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /, /g")
-IFS=', '; array=(Paris, France, Europe)
+IFS=', '; array=($(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /, /g"))
 for item in ${array[@]}; do echo $item; done
