@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 OWNER=${GITHUB_REPOSITORY_OWNER}
 JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
