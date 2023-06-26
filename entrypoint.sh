@@ -20,15 +20,15 @@ jekyll_build() {
   # https://stackoverflow.com/q/43352056/4058484
   
   chmod +x /maps/pinned_repos.rb
-  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
-  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
+  IFS=', '; array=($(/maps/pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
+  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=$1/${array[0]}
 
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
   for i in 0 1 2 3 4 5; do
     NAME=${array[$i]}
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$i+1]}
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
@@ -50,12 +50,12 @@ set_owner() {
   IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the organization list
-  [[ ! " ${array[*]} " =~ " ${OWNER} " ]] && OWNER=${array[0]}
   for ((i=0; i < ${#array[@]}; i++)); do
     [[ "$OWNER" -eq "${array[-1]}" ]] && OWNER=${GITHUB_ACTOR}
     [[ "${array[$i]}" -eq "${OWNER}" ]] && OWNER="${array[$i+1]}"
   done
+  [[ ! " ${array[*]} " =~ " ${OWNER} " ]] && OWNER=${array[0]}
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build "${OWNER}"
