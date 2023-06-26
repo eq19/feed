@@ -62,5 +62,6 @@ set_owner() {
     j=$(($i+1)) && NAME=${array[$i]}
     [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
   done
-
+  
+echo $NAME
 echo $TARGET_REPOSITORY
