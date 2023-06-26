@@ -20,7 +20,7 @@ jekyll_build() {
   # https://stackoverflow.com/q/43352056/4058484
   
   chmod +x /maps/pinned_repos.rb
-  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
+  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
 
   # Structure: Cell Types – Modulo 6
@@ -51,15 +51,4 @@ set_owner() {
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-# echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-
-  chmod +x /maps/pinned_repos.rb
-  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
-  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
-
-  for i in 0 1 2 3 4 5
-  do
-    j=$(($i+1)) && NAME=${array[$i]}
-    echo $NAME
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && echo ${OWNER}/${array[$j]}
-  done
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
