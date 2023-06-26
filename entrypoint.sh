@@ -46,6 +46,6 @@ set_owner() {
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 # echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /;/g" > nodes.yaml
-IFS=';' read -ra ADDR <<< nodes.yaml
+chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
+IFS=$'\n' read -ra ADDR <<< nodes.yaml
 echo ${ADDR[1]}
