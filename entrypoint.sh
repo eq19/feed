@@ -57,11 +57,9 @@ set_owner() {
   IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
 
- for i in 0 1 2 3 4 5
+  for i in 0 1 2 3 4 5
   do
     j=$(($i+1)) && NAME=${array[$i]}
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
+    echo $NAME
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && echo ${OWNER}/${array[$j]}
   done
-  
-echo $NAME
-echo $TARGET_REPOSITORY
