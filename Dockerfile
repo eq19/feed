@@ -10,8 +10,5 @@ RUN apk add -U curl github-cli jq yq
 ADD . /maps
 RUN bundle install
 
-#RUN chmod +x /maps/entrypoint.sh
-#ENTRYPOINT ["/maps/entrypoint.sh"]
-
-RUN chmod +x /maps/pinned_repos.rb
-ENTRYPOINT ["/maps/pinned_repos.rb"]
+RUN chmod +x /maps/entrypoint.sh
+ENTRYPOINT ["/maps/entrypoint.sh"]

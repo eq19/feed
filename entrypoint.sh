@@ -45,4 +45,5 @@ set_owner() {
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+# echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+/maps/pinned_repos.rb eq19
