@@ -11,5 +11,5 @@ end
 
 username = ARGV.first
 profile_url = "https://github.com/#{username}"
-page = Nokogiri::HTML(open(profile_url))
+page = Nokogiri::HTML(URI.open(profile_url))
 page.css("span.repo").each { |repo| puts repo.text }
