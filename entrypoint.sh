@@ -16,14 +16,13 @@ deploy_remote() {
 
 jekyll_build() {
   
-  # https://stackoverflow.com/a/43358500/4058484
-  curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $INPUT_TOKEN" --data-raw '{"query":"{\n  user(login: \"'${OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" > nodes.yaml
-
-  for i in 0 1 2 3 4 5
+  chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /;/g" > nodes.yaml
+  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | awk -F';' '{print $1}')
+  
+  for i in 1 2 3 4 5 6
   do
-    j=$(($i+1)) && NAME=$(yq eval ".nodes[$i]" nodes.yaml)
-    [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[0]" nodes.yaml)
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
+    j=$(($i+1)) && NAME=$(cat nodes.yaml | cut -d';' -f"$i")
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 6 ]] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | cut -d';' -f"$j")
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
@@ -45,7 +44,4 @@ set_owner() {
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-# echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /;/g" > nodes.yaml
-cat nodes.yaml | awk -F';'
-echo $1
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
