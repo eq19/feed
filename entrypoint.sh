@@ -19,10 +19,10 @@ jekyll_build() {
   chmod +x /maps/pinned_repos.rb && IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
   
-  for i in 1 2 3 4 5 6
+  for i in 0 2 3 4 5
   do
-    j=$(($i+1)) && NAME=$(cat nodes.yaml | cut -d';' -f"$i")
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 6 ]] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | cut -d';' -f"$j")
+    j=$(($i+1)) && NAME=${array[$i]}
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
