@@ -26,10 +26,9 @@ jekyll_build() {
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
-  for i in 0 1 2 3 4 5
-  do
-    j=$(($i+1)) && NAME=${array[$i]}
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
+  for i in 0 1 2 3 4 5; do
+    NAME=${array[$i]}
+    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$i+1]}
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
@@ -45,9 +44,17 @@ jekyll_build() {
 }
 
 set_owner() {
+  # Get organization list
+  HEADER="Accept: application/vnd.github+json"
   echo ${INPUT_TOKEN} | gh auth login --with-token
-  IFS=', '; array=($(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /, /g"))
-  for item in ${array[@]}; do echo $item; done
+  IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
+  
+  # Iterate the organization list
+  [[ ! " ${array[*]} " =~ " ${OWNER} " ]] && OWNER=${array[0]}
+  for ((i=0; i < ${#array[@]}; i++)); do
+    [[ "$OWNER" -eq "${array[-1]}" ]] && OWNER=${GITHUB_ACTOR}
+    [[ "${array[$i]}" -eq "${OWNER}" ]] && OWNER="${array[$i+1]}"
+  done
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
