@@ -26,7 +26,7 @@ jekyll_build() {
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
-  for i in 0 2 3 4 5
+  for i in 0 1 2 3 4 5
   do
     j=$(($i+1)) && NAME=${array[$i]}
     [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
@@ -57,7 +57,7 @@ set_owner() {
   IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
 
- for i in 0 2 3 4 5
+ for i in 0 1 2 3 4 5
   do
     j=$(($i+1)) && NAME=${array[$i]}
     [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$j]}
