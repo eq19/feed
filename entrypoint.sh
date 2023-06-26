@@ -16,8 +16,8 @@ deploy_remote() {
 
 jekyll_build() {
   
-  # https://stackoverflow.com/a/43358500/4058484
-  curl -s -X POST "${GITHUB_GRAPHQL_URL}" -H "Authorization: bearer $INPUT_TOKEN" --data-raw '{"query":"{\n  user(login: \"'${OWNER}'\") {\n pinnedItems(first: 6, types: REPOSITORY) {\n nodes {\n ... on Repository {\n name\n }\n }\n }\n }\n}"' | jq --raw-output '.data.user.pinnedItems' | yq eval -P | sed "s/name: //g" > nodes.yaml
+  # https://stackoverflow.com/q/43352056/4058484
+  chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
 
   for i in 0 1 2 3 4 5
   do
@@ -45,6 +45,6 @@ set_owner() {
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-# echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-chmod +x /maps/pinned_repos.rb
-/maps/pinned_repos.rb eq19
+#echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
+cat nodes.yaml
