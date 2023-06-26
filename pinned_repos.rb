@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
+
 # get a user's pinned repos
+# https://stackoverflow.com/q/43352056/4058484
+
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
