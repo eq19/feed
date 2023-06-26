@@ -54,7 +54,7 @@ set_owner() {
 # echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
 
   chmod +x /maps/pinned_repos.rb
-  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
+  IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
 
   for i in 0 1 2 3 4 5
