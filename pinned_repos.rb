@@ -11,5 +11,5 @@ require 'open-uri'
 
 #username = ARGV.first
 profile_url = "https://github.com/eq19"
-page = Nokogiri::HTML(open(profile_url))
+page = Nokogiri::HTML(URI.open(profile_url))
 page.css("span.repo").each { |repo| puts repo.text }
