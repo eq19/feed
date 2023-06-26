@@ -46,7 +46,5 @@ set_owner() {
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 # echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-chmod +x /maps/pinned_repos.rb && IN=$(/maps/pinned_repos.rb "${OWNER}" | yq eval -P)
-arrIN=(${IN// / })
-echo ${arrIN[1]}
-
+chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P > nodes.yaml
+cat nodes.yaml
