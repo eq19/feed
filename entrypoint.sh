@@ -52,7 +52,7 @@ set_owner() {
   # Iterate the organization list
   for ((i=0; i < ${#array[@]}; i++)); do
     [[ "$OWNER" -eq "${array[-1]}" ]] && OWNER=${GITHUB_ACTOR}
-    [[ "${array[$i]}" -eq "${OWNER}" ]] && OWNER="${array[$i+1]}"
+    [[ "${array[$i]}" -eq "${OWNER}" ]] && OWNER=${array[$i+1]}
   done
   [[ ! " ${array[*]} " =~ " ${OWNER} " ]] && OWNER=${array[0]}
 }
