@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
 # spec.add_development_dependency "nuggets", "~> 1.6.1"
 # spec.add_development_dependency "graphql", "~> 2.0.14"
 # spec.add_development_dependency "rubocop", "~> 0.57.2"
+  spec.add_development_dependency "open-uri", "~> 0.3.0"
 # spec.add_development_dependency "nokogiri", "~> 1.13.7"
 # spec.add_development_dependency "github_api", "~> 0.19.0"
   spec.add_development_dependency "jekyll-gist", "~> 1.5.0"
