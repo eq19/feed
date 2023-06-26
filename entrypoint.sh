@@ -16,7 +16,7 @@ deploy_remote() {
 
 jekyll_build() {
   # https://stackoverflow.com/a/12328162/4058484
-  chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /;/g" > nodes.yaml
+  chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | awk -F';' '{print $1}')
   
   for i in 1 2 3 4 5 6
@@ -39,9 +39,12 @@ jekyll_build() {
 
 set_owner() {
   echo ${INPUT_TOKEN} | gh auth login --with-token
-  gh api -H "Accept: application/vnd.github+json" /user/orgs --jq "map(.login)" > nodes.json
+  gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /; /g"
   OWNER=$(jq -r ".[1]" nodes.json)
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+#echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
+chmod +x /maps/pinned_repos.rb
+echo $(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /; /g")
+echo $(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g")
