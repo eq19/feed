@@ -17,7 +17,7 @@ deploy_remote() {
 jekyll_build() {
   # https://stackoverflow.com/a/12328162/4058484
   chmod +x /maps/pinned_repos.rb && IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
-  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | awk -F';' '{print $1}')
+  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/${array[0]}
   
   for i in 1 2 3 4 5 6
   do
@@ -45,5 +45,5 @@ set_owner() {
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 #echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-  chmod +x /maps/pinned_repos.rb && IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g"))
-  for item in ${array[@]}; do echo $item; done
+  chmod +x /maps/pinned_repos.rb && IFS=', '; array=($(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /, /g"))
+  echo ${OWNER}/${array[0]}
