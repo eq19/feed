@@ -46,6 +46,6 @@ set_owner() {
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 #echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
 echo ${INPUT_TOKEN} | gh auth login --with-token
-ORGANIZATION=$(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /, /g")
-a=$(echo "$ORGANIZATION" | tr ', ' '\n')
+ORGS=$(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /, /g")
+a=($(echo "$ORGS" | tr ',' '\n'))
 echo "${a[2]}"
