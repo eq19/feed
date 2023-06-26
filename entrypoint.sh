@@ -18,13 +18,12 @@ jekyll_build() {
   
   # https://stackoverflow.com/q/43352056/4058484
   chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
+  [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(head -n 1 nodes.yaml)
 
-  for i in 0 1 2 3 4 5
-  do
-    j=$(($i+1)) && NAME=$(yq eval ".nodes[$i]" nodes.yaml)
-    [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[0]" nodes.yaml)
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/$(yq eval ".nodes[$j]" nodes.yaml)
-  done
+  while read -r ONE; do
+    read -r TWO
+    [ -z "${GITHUB_REPOSITORY##*$ONE*}" ] && TARGET_REPOSITORY=${OWNER}/${TWO}
+  done < nodes.yaml
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
   [ -z "${TARGET_REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
@@ -45,6 +44,4 @@ set_owner() {
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
-#echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
-chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
-cat nodes.yaml
+echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
