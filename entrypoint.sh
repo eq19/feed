@@ -15,7 +15,7 @@ deploy_remote() {
 }
 
 jekyll_build() {
-  
+  # https://stackoverflow.com/a/12328162/4058484
   chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /;/g" > nodes.yaml
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=${OWNER}/$(cat nodes.yaml | awk -F';' '{print $1}')
   
