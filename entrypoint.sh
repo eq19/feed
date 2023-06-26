@@ -46,5 +46,6 @@ set_owner() {
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 #echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
 chmod +x /maps/pinned_repos.rb
-echo $(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /; /g")
+echo ${INPUT_TOKEN} | gh auth login --with-token
 echo $(/maps/pinned_repos.rb ${OWNER} | yq eval -P |  sed "s/ /; /g")
+echo $(gh api -H "Accept: application/vnd.github+json" /user/orgs  --jq '.[].login' | yq eval -P | sed "s/ /; /g")
