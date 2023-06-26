@@ -46,4 +46,8 @@ set_owner() {
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 #echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build
 chmod +x /maps/pinned_repos.rb && /maps/pinned_repos.rb ${OWNER} > nodes.yaml
-cat nodes.yaml
+  while read -r ONE; do
+    read -r TWO
+    [ -z "${GITHUB_REPOSITORY##*$ONE*}" ] && TARGET_REPOSITORY=${OWNER}/${TWO}
+  done < nodes.yaml
+echo ${TARGET_REPOSITORY}
