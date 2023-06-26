@@ -10,6 +10,6 @@ require 'open-uri'
 #end
 
 #username = ARGV.first
-profile_url = "https://github.com/eq19"
+profile_url = "https://github.com/FeedMapping"
 page = Nokogiri::HTML(URI.open(profile_url))
 page.css("span.repo").each { |repo| puts repo.text }
