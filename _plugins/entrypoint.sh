@@ -26,8 +26,7 @@ jekyll_build() {
   # https://www.hexspin.com/cell-types/
 
   for i in 0 1 2 3 4 5; do
-    NAME=${array[$i]}
-    [[ -z "${GITHUB_REPOSITORY##*$NAME*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
+    [[ -z "${GITHUB_REPOSITORY##*${array[$i]}*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
   done
 
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
