@@ -19,8 +19,7 @@ jekyll_build() {
   # Access a user's pinned repos
   # https://stackoverflow.com/q/43352056/4058484
   
-  chmod +x /maps/pinned_repos.rb
-  IFS=', '; array=($(/maps/pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
+  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
   [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && TARGET_REPOSITORY=$1/${array[0]}
 
   # Structure: Cell Types – Modulo 6
