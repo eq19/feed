@@ -48,11 +48,13 @@ set_owner() {
   IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the organization list
-  [[ "$OWNER" -eq "${array[-1]}" ]] && OWNER=${GITHUB_ACTOR}
-  [[ ! " ${array[*]} " =~ " ${OWNER} " ]] && OWNER=${array[0]}
-  for ((i=0; i < ${#array[@]}; i++)); do
-    [[ "${array[$i]}" -eq "${OWNER}" && "$i" -lt ${#array[@]}-1  ]] && OWNER=${array[$i+1]}
-  done
+  if [[ "$OWNER" -eq "${array[-1]}" ]]; then OWNER=${GITHUB_ACTOR}
+  elif [[ ! " ${array[*]} " =~ " ${OWNER} " ]]; then OWNER=${array[0]}
+  else
+    for ((i=0; i < ${#array[@]}; i++)); do
+      [[ "${array[$i]}" -eq "${OWNER}" && "$i" -lt ${#array[@]}-1  ]] && OWNER=${array[$i+1]}
+    done
+  fi
 }
 
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
