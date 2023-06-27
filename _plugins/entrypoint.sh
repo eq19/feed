@@ -27,9 +27,8 @@ jekyll_build() {
     done
   fi
 
-  rm -Rf -- */ && mv /maps/text/_* .
   find . ! -name 'README.md' -type f -exec rm -f {} +
-  [ -z "${TARGET_REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
+  rm -Rf -- */ && mv /maps/text/_* . && if [ -z "${TARGET_REPOSITORY##*github.io*}" ]; then mv /maps/_assets assets; fi
   
   mv /maps/_config.yml ${JEKYLL_CFG}
   sed -i "1s|^|target_repository: $TARGET_REPOSITORY\n|" ${JEKYLL_CFG}
