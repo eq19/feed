@@ -27,10 +27,9 @@ jekyll_build() {
     done
   fi
 
-  git clone https://gist.github.com/0ce5848f7ad62dc46dedfaa430069857 /maps/gist
-  cp -f /maps/gist/1_1_prime.md README.md
-
   find . ! -name 'README.md' -type f -exec rm -f {} +
+  git clone https://gist.github.com/0ce5848f7ad62dc46dedfaa430069857 /maps/gist
+  rm -rf ${GITHUB_WORKSPACE}/README.md && mv /maps/gist/1_1_prime.md ${GITHUB_WORKSPACE}/README.md
   rm -Rf -- */ && mv /maps/text/_* . && if [ -z "${TARGET_REPOSITORY##*github.io*}" ]; then mv /maps/_assets assets; fi
   
   mv /maps/_config.yml ${JEKYLL_CFG}
