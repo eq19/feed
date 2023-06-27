@@ -26,15 +26,14 @@ jekyll_build() {
       [[ -z "${GITHUB_REPOSITORY##*${array[$i]}*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
     done
   fi
+
+  rm -Rf -- */ && mv /maps/text/_* .
+  find . ! -name 'README.md' -type f -exec rm -f {} +
+  [ -z "${TARGET_REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
   
   mv /maps/_config.yml ${JEKYLL_CFG}
   sed -i "1s|^|target_repository: $TARGET_REPOSITORY\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
-
-  find . ! -name 'README.md' -type f -exec rm -f {} +
-  git clone https://gist.github.com/0ce5848f7ad62dc46dedfaa430069857 /maps/gist
-  rm -rf ${GITHUB_WORKSPACE}/README.md && mv /maps/gist/1_1_prime.md ${GITHUB_WORKSPACE}/_site/README.md
-  rm -Rf -- */ && mv /maps/text/_* . && if [ -z "${TARGET_REPOSITORY##*github.io*}" ]; then mv /maps/_assets assets; fi
 
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
