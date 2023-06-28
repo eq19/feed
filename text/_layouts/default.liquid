@@ -1,7 +1,8 @@
-{%- if site.github.owner_name == 'eq19' -%}
-	{%- if site.github.repository_name contains 'github.io' -%}
+{%- assign target = site.target_repository | split: '/' -%}
+{%- if target[0] == 'eq19' -%}
+	{%- if target[1] contains 'github.io' -%}
 		{%- include templates/leads/index.html -%}
 	{%- else -%}
-		{%- include templates/leads/{{ site.target_repository | split: '/' | last }}.html -%}
+		{%- include templates/leads/{{ target | last }}.html -%}
 	{%- endif -%}
 {%- endif -%}
