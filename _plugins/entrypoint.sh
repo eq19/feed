@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
-# https://www.hexspin.com/cell-types/
+# https://www.hexspin.com/proof-of-confinement/
 
 jekyll_build() {
   
@@ -44,7 +44,7 @@ set_target() {
     done
   fi
 }
-OWNER=${GITHUB_REPOSITORY_OWNER}
-[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
-jekyll_build ${OWNER}/${TARGET_REPOSITORY}
+echo ${OWNER}
+#[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
+#TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
+#jekyll_build ${OWNER}/${TARGET_REPOSITORY}
