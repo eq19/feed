@@ -1,5 +1,6 @@
 FROM jekyll/jekyll:latest
 LABEL version=v0.0.1
+ARG OWNER
 
 ADD . /maps
 
