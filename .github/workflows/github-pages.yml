@@ -37,7 +37,7 @@ jobs:
         uses: eq19/feed@v2
         with:
           pre_build_commands: 'make build'
-          token: ${{ secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
       - name: 💎 Build on Windows
         if: runner.os == 'Windows'
