@@ -4,6 +4,4 @@
 	{%- else -%}
 		{%- include templates/leads/{{ site.target_repository | split: '/' | last }}.html -%}
 	{%- endif -%}
-{%- else -%}
-	{%- include templates/nodes/index.html -%}
 {%- endif -%}
