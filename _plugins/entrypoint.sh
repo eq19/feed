@@ -30,11 +30,11 @@ set_target() {
   
   # Iterate the pinned repos
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then TARGET_REPOSITORY=${OWNER}/${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then TARGET_REPOSITORY=${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then TARGET_REPOSITORY="${OWNER}.github.io"
   else
     for i in 0 1 2 3 4 5; do
-      [[ "${array[$i]}" == "$1" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${OWNER}/${array[$i+1]}
+      [[ "${array[$i]}" == "$1" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${array[$i+1]}
     done
   fi
 }
