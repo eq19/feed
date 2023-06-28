@@ -25,8 +25,14 @@ jekyll_build() {
 
 set_target() {
   
-  # Get pinned repos.
-  IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+  # Get pinned repos
+  if [[ "$2" == *"github.io"* ]]; then
+    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+  else
+    HEADER="Accept: application/vnd.github+json"
+    echo ${INPUT_TOKEN} | gh auth login --with-token
+    IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
+  fi
   
   # Iterate the pinned repos
   printf -v array_str -- ',,%q' "${array[@]}"
