@@ -44,7 +44,7 @@ set_target() {
     done
   fi
 }
-echo ${OWNER}
-#[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
-#TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
-#jekyll_build ${OWNER}/${TARGET_REPOSITORY}
+
+[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
+jekyll_build ${OWNER}/${TARGET_REPOSITORY}
