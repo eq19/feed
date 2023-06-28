@@ -8,8 +8,6 @@ on:
   workflow_run:
     types: [completed] #requested
     workflows: ["pages-build-deployment"]
-env:
-  OWNER: ${{ github.repository_owner }}
 
 # 🪂 Allow only one concurrent deployment across the branches
 concurrency:
@@ -19,11 +17,15 @@ concurrency:
 # Sets permissions of the GITHUB_TOKEN
 permissions: write-all
 
+# Sets global environtment variables
+env:
+  OWNER: ${{ github.repository_owner }}
+
 jobs:
   # Build job
   github-pages:
     if: github.event.workflow_run.conclusion == 'success'
-    runs-on: ${{ github.repository_owner != 'FeedMapping' && 'ubuntu-latest' || 'windows-latest' }}
+    runs-on: ${{ env.OWNER != 'FeedMapping' && 'ubuntu-latest' || 'windows-latest' }}
     steps:
       - name: 📂 Checkout
         uses: actions/checkout@v3
