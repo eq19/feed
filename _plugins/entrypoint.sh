@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+OWNER=${GITHUB_REPOSITORY_OWNER}
+JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
+TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
+
 deploy_remote() {
   echo -e "Deploying to $1 on branch gh-pages"
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
@@ -11,14 +15,16 @@ deploy_remote() {
 }
 
 jekyll_build() {
+  
+  # Access a user's pinned repos
+  # https://stackoverflow.com/q/43352056/4058484
+  
+  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
+
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
-  JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
-  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
-
-  if [[ "$OWNER" -eq "${array[-1]}" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
-  elif [ -z "${GITHUB_REPOSITORY##*github.io*}" ]; then TARGET_REPOSITORY=$1/${array[0]}
+  if [ -z "${GITHUB_REPOSITORY##*github.io*}" ]; then TARGET_REPOSITORY=$1/${array[0]}
   else
     for i in 0 1 2 3 4 5; do
       [[ -z "${GITHUB_REPOSITORY##*${array[$i]}*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
@@ -53,6 +59,5 @@ set_owner() {
   fi
 }
 
-OWNER=${GITHUB_REPOSITORY_OWNER}
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build "${OWNER}"
