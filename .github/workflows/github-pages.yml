@@ -8,14 +8,13 @@ on:
   workflow_run:
     types: [completed] #requested
     workflows: ["pages-build-deployment"]
+env:
+  OWNER: ${{ github.repository_owner }}
 
 # 🪂 Allow only one concurrent deployment across the branches
 concurrency:
   group: "pages"
   cancel-in-progress: true
-
-env:
-  OWNER: ${{ github.repository_owner }}
   
 # Sets permissions of the GITHUB_TOKEN
 permissions: write-all
