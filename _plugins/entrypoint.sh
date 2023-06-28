@@ -57,5 +57,5 @@ set_owner() {
 
 
 [[ ${GITHUB_REPOSITORY} != *"github.io"* ]]  && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
-echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target $(basename ${GITHUB_REPOSITORY})
+echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target "$(basename ${GITHUB_REPOSITORY})"
 echo -e "\n$hr\nDEPLOY\n$hr" && jekyll_build "${TARGET_REPOSITORY}"
