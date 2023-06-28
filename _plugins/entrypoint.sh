@@ -8,9 +8,11 @@ jekyll_build() {
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets assets; fi
   JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml && mv /maps/_config.yml ${JEKYLL_CFG}
 
+  echo -e "\n$hr\nSET CONFIG\n$hr"
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
+  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
 
@@ -23,7 +25,7 @@ jekyll_build() {
 
 set_target() {
   
-  # Get pinned repos.
+  # Get pinned repos
   IFS=', '; array=($(pinned_repos.rb $2 | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the pinned repos
@@ -56,6 +58,6 @@ set_owner() {
 }
 
 
-[[ ${GITHUB_REPOSITORY} != *"github.io"* ]]  && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
-echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}
-echo -e "\n$hr\nDEPLOY\n$hr" && jekyll_build ${TARGET_REPOSITORY}
+[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
+set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}
+jekyll_build ${TARGET_REPOSITORY}
