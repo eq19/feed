@@ -18,7 +18,8 @@ jekyll_build() {
   NAME=$(basename ${GITHUB_REPOSITORY})
   IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
   
-  if [[ ! " ${array[*]} " =~ " ${NAME} " ]]; then TARGET_REPOSITORY=$1/${array[0]}
+  printf -v array_str -- ',,%q' "${array[@]}"
+  if [[ ! "${array_str},," =~ ",,${NAME},," ]]; then TARGET_REPOSITORY=$1/${array[0]}
   elif [[ "${array[-1]}" -eq "${NAME}" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
   else
     for i in 0 1 2 3 4 5; do
@@ -45,7 +46,8 @@ set_owner() {
   IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the organization list
-  if [[ ! " ${array[*]} " =~ " ${OWNER} " ]]; then OWNER=${array[0]}
+  printf -v array_str -- ',,%q' "${array[@]}"
+  if [[ ! "${array_str},," =~ ",,${OWNER},," ]]; then OWNER=${array[0]}
   elif [[ "${array[-1]}" -eq "$OWNER" ]]; then OWNER=${GITHUB_ACTOR}
   else
     for ((i=0; i < ${#array[@]}; i++)); do
