@@ -25,7 +25,7 @@ jekyll_build() {
 
 set_target() {
   
-  # Get pinned repos
+  # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
@@ -34,7 +34,7 @@ set_target() {
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
   fi
   
-  # Iterate the pinned repos
+  # Iterate the Structure
   printf -v array_str -- ',,%q' "${array[@]}"
   if [[ ! "${array_str},," =~ ",,$1,," ]]; then echo ${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then echo $2
@@ -45,25 +45,6 @@ set_target() {
   fi
 }
 
-set_owner() {
-
-  # Get organization list
-  HEADER="Accept: application/vnd.github+json"
-  echo ${INPUT_TOKEN} | gh auth login --with-token
-  IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
-  
-  # Iterate the organization list
-  printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then echo ${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then echo $2
-  else
-    for ((i=0; i < ${#array[@]}; i++)); do
-      [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && echo ${array[$i+1]}
-    done
-  fi
-}
-
-
-[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || OWNER=$(set_owner ${GITHUB_REPOSITORY_OWNER} ${GITHUB_ACTOR})
+[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || OWNER=$(set_target ${GITHUB_REPOSITORY_OWNER} ${GITHUB_ACTOR})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY}
