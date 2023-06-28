@@ -54,16 +54,16 @@ set_owner() {
   
   # Iterate the organization list
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then OWNER=${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then OWNER=${GITHUB_ACTOR}
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then echo ${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then echo $2
   else
     for ((i=0; i < ${#array[@]}; i++)); do
-      [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && OWNER=${array[$i+1]}
+      [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && echo ${array[$i+1]}
     done
   fi
 }
 
 
-[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
+[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || OWNER=$(set_owner ${GITHUB_REPOSITORY_OWNER} ${GITHUB_ACTOR})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY}
