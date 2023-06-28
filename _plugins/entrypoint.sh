@@ -20,10 +20,10 @@ jekyll_build() {
   
   printf -v array_str -- ',,%q' "${array[@]}"
   if [[ ! "${array_str},," =~ ",,${NAME},," ]]; then TARGET_REPOSITORY=$1/${array[0]}
-  elif [[ "${array[-1]}" -eq "${NAME}" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
+  elif [[ "${array[-1]}" == "${NAME}" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
   else
     for i in 0 1 2 3 4 5; do
-      [[ "${array[$i]}" -eq "${NAME}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
+      [[ "${array[$i]}" == "${NAME}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
     done
   fi
   
@@ -48,10 +48,10 @@ set_owner() {
   # Iterate the organization list
   printf -v array_str -- ',,%q' "${array[@]}"
   if [[ ! "${array_str},," =~ ",,${OWNER},," ]]; then OWNER=${array[0]}
-  elif [[ "${array[-1]}" -eq "$OWNER" ]]; then OWNER=${GITHUB_ACTOR}
+  elif [[ "${array[-1]}" == "${OWNER}" ]]; then OWNER=${GITHUB_ACTOR}
   else
     for ((i=0; i < ${#array[@]}; i++)); do
-      [[ "${array[$i]}" -eq "${OWNER}" && "$i" -lt ${#array[@]}-1  ]] && OWNER=${array[$i+1]}
+      [[ "${array[$i]}" == "${OWNER}" && "$i" -lt ${#array[@]}-1  ]] && OWNER=${array[$i+1]}
     done
   fi
 }
