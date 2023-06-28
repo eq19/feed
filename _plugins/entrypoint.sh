@@ -33,8 +33,8 @@ set_target() {
   if [[ ! "${array_str},," =~ ",,$1,," ]]; then TARGET_REPOSITORY=${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then TARGET_REPOSITORY=${OWNER}.github.io
   else
-    for i in 0 1 2 3 4 5; do
-      [[ "${array[$i]}" == "$1" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${array[$i+1]}
+    for ((i=0; i < ${#array[@]}; i++)); do
+      [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && TARGET_REPOSITORY=${array[$i+1]}
     done
   fi
 }
