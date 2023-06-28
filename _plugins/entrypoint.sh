@@ -15,11 +15,14 @@ jekyll_build() {
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
+  NAME=$(basename ${GITHUB_REPOSITORY})
   IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
-  if [ -z "${GITHUB_REPOSITORY##*github.io*}" ]; then TARGET_REPOSITORY=$1/${array[0]}
+  
+  if [[ ! " ${array[*]} " =~ " ${NAME} " ]]; then TARGET_REPOSITORY=$1/${array[0]}
+  elif [[ "${array[-1]}" -eq "${NAME}" ]]; then TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
   else
     for i in 0 1 2 3 4 5; do
-      [[ -z "${GITHUB_REPOSITORY##*${array[$i]}*}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
+      [[ "${array[$i]}" -eq "${NAME}" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$1/${array[$i+1]}
     done
   fi
   
@@ -42,8 +45,8 @@ set_owner() {
   IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the organization list
-  if [[ "$OWNER" -eq "${array[-1]}" ]]; then OWNER=${GITHUB_ACTOR}
-  elif [[ ! " ${array[*]} " =~ " ${OWNER} " ]]; then OWNER=${array[0]}
+  if [[ ! " ${array[*]} " =~ " ${OWNER} " ]]; then OWNER=${array[0]}
+  elif [[ "${array[-1]}" -eq "$OWNER" ]]; then OWNER=${GITHUB_ACTOR}
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       [[ "${array[$i]}" -eq "${OWNER}" && "$i" -lt ${#array[@]}-1  ]] && OWNER=${array[$i+1]}
@@ -52,6 +55,5 @@ set_owner() {
 }
 
 OWNER=${GITHUB_REPOSITORY_OWNER}
-TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build "${OWNER}"
