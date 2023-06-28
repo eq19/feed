@@ -24,7 +24,7 @@ jekyll_build() {
 set_target() {
   
   # Get pinned repos.
-  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
+  IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the pinned repos
   printf -v array_str -- ',,%q' "${array[@]}"
@@ -57,5 +57,5 @@ set_owner() {
 
 
 [[ ${GITHUB_REPOSITORY} != *"github.io"* ]]  && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
-echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target "$(basename ${GITHUB_REPOSITORY})"
+echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target $(basename ${GITHUB_REPOSITORY})
 echo -e "\n$hr\nDEPLOY\n$hr" && jekyll_build "${TARGET_REPOSITORY}"
