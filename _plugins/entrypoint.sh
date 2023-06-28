@@ -12,7 +12,7 @@ jekyll_build() {
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
-  echo -e "\n$hr\nbuild & DEPLOY\n$hr"
+  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
 
