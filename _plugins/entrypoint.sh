@@ -44,7 +44,7 @@ set_target() {
     done
   fi
 }
-
-[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || OWNER=$(set_target ${GITHUB_REPOSITORY_OWNER} ${GITHUB_ACTOR})
+OWNER=${GITHUB_REPOSITORY_OWNER}
+[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY}
