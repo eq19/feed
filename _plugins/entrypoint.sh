@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-OWNER=${GITHUB_REPOSITORY_OWNER}
-JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml
-TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
-
 deploy_remote() {
   echo -e "Deploying to $1 on branch gh-pages"
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
@@ -16,14 +12,10 @@ deploy_remote() {
 
 jekyll_build() {
   
-  # Access a user's pinned repos
-  # https://stackoverflow.com/q/43352056/4058484
-  
-  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
-
   # Structure: Cell Types – Modulo 6
   # https://www.hexspin.com/cell-types/
 
+  IFS=', '; array=($(pinned_repos.rb $1 | yq eval -P | sed "s/ /, /g"))
   if [ -z "${GITHUB_REPOSITORY##*github.io*}" ]; then TARGET_REPOSITORY=$1/${array[0]}
   else
     for i in 0 1 2 3 4 5; do
@@ -33,8 +25,8 @@ jekyll_build() {
   
   rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
   [ -z "${TARGET_REPOSITORY##*github.io*}" ] && mv /maps/_assets assets
+  JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml && mv /maps/_config.yml ${JEKYLL_CFG}
 
-  mv /maps/_config.yml ${JEKYLL_CFG}
   sed -i "1s|^|target_repository: $TARGET_REPOSITORY\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
@@ -59,5 +51,7 @@ set_owner() {
   fi
 }
 
+OWNER=${GITHUB_REPOSITORY_OWNER}
+TARGET_REPOSITORY=${OWNER}/${OWNER}.github.io
 [ -z "${GITHUB_REPOSITORY##*github.io*}" ] && set_owner
 echo -e "\n$hr\nJEKYLL BUILD\n$hr" && jekyll_build "${OWNER}"
