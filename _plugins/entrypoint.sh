@@ -8,11 +8,9 @@ jekyll_build() {
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets assets; fi
   JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml && mv /maps/_config.yml ${JEKYLL_CFG}
 
-  echo -e "\n$hr\nSET CONFIG\n$hr"
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
-  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
 
@@ -25,16 +23,16 @@ jekyll_build() {
 
 set_target() {
   
-  # Get pinned repos
-  IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+  # Get pinned repos.
+  IFS=', '; array=($(pinned_repos.rb $2 | yq eval -P | sed "s/ /, /g"))
   
   # Iterate the pinned repos
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then TARGET_REPOSITORY=${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then TARGET_REPOSITORY=${OWNER}.github.io
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then TARGET_REPOSITORY=$2/${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then TARGET_REPOSITORY=$2/$2.github.io
   else
     for i in 0 1 2 3 4 5; do
-      [[ "${array[$i]}" == "$1" && "$i" -lt 5 ]] && TARGET_REPOSITORY=${array[$i+1]}
+      [[ "${array[$i]}" == "$1" && "$i" -lt 5 ]] && TARGET_REPOSITORY=$2/${array[$i+1]}
     done
   fi
 }
@@ -58,5 +56,6 @@ set_owner() {
 }
 
 
-[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
-set_target $(basename ${GITHUB_REPOSITORY}) && jekyll_build "${OWNER}/${TARGET_REPOSITORY}"
+[[ ${GITHUB_REPOSITORY} != *"github.io"* ]]  && OWNER=${GITHUB_REPOSITORY_OWNER} || set_owner ${GITHUB_REPOSITORY_OWNER}
+echo -e "\n$hr\nSET REPOSITORY\n$hr" && set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}
+echo -e "\n$hr\nDEPLOY\n$hr" && jekyll_build ${TARGET_REPOSITORY}
