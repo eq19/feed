@@ -5,9 +5,8 @@
 jekyll_build() {
   
   echo -e "\n$hr\nSET CONFIG\n$hr"
-  rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* .
+  rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* . && mv /maps/_config.yml ${JEKYLL_CFG}
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets assets; fi
-  JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml && mv /maps/_config.yml ${JEKYLL_CFG}
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
@@ -16,11 +15,11 @@ jekyll_build() {
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
+  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git" && echo -e "Deploying to $1 on branch gh-pages"
 
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git" && echo -e "Deploying to $1 on branch gh-pages"
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf *
-git config --global --add safe.directory '*'
+  git config --global --add safe.directory '*'
   mv -v ${GITHUB_WORKSPACE}/_site/* . && touch .nojekyll && git add .
   git commit -m "jekyll build" && git push -u origin gh-pages
 }
