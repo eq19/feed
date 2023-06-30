@@ -36,16 +36,16 @@ set_target() {
   
   # Iterate the Structure
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then echo ${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then echo $2
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then ID=34; echo ${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then ID=34; echo $2
   else
     for ((i=0; i < ${#array[@]}; i++)); do
-      [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && echo ${array[$i+1]}
+      if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then ID=34; echo ${array[$i+1]}; fi
     done
   fi
   
   # Generate id from the Structure
-  return 31
+  return ${ID}
 }
 
 # https://unix.stackexchange.com/a/615292/158462
