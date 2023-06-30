@@ -6,6 +6,7 @@ jekyll_build() {
   
   echo -e "\n$hr\nCONFIG\n$hr"
   rm -Rf -- */ && mv /maps/text/_* . && find /maps/_* \! -name '_plugins' -type d -exec mv {} . \;
+  ls -al .
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
