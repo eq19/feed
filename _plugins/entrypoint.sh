@@ -45,10 +45,11 @@ set_target() {
   fi
   
   # Generate id from the Structure
-  return [[ -n "$3" ]] && $(( $ID + $3 * 6 )) || ${ID}
+  [[ -z "$ID" ]] && SPIN=0 || echo SPIN=`expr $ID \* 6`
+  return $(( $ID + $SPIN ))
 }
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $?)
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
