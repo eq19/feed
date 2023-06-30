@@ -41,7 +41,7 @@ exclude:
   - jekyll-rtd-theme.gemspec
 
 # Where things are
-source: .
+source: /maps
 theme: null
 collections_dir: .
 collections:
