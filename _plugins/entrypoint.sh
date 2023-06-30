@@ -2,30 +2,6 @@
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
-jekyll_build() {
-  
-  echo -e "\n$hr\nCONFIG\n$hr"
-  rm -Rf -- */ && mv -fn /mapa/_config.yml ${JEKYLL_CFG}
-  find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
-  
-  sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
-
-  echo -e "\n$hr\nWORKSPACE\n$hr"
-  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
-
-  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
-  # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
-  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git" && echo -e "Deploying to $1 on branch gh-pages"
-
-  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
-  git config --global --add safe.directory '*' && mv -v ${GITHUB_WORKSPACE}/_site/* .
-  git add . && git commit -m "jekyll build" && git push -u origin gh-pages
-}
-
 set_target() {
   
   # Get Structure
@@ -51,6 +27,30 @@ set_target() {
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && SPIN=0
   return $(( $ID + $SPIN ))
+}
+
+jekyll_build() {
+  
+  echo -e "\n$hr\nCONFIG\n$hr"
+  rm -Rf -- */ && mv -fn /mapa/_config.yml ${JEKYLL_CFG}
+  find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
+  
+  sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
+  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
+  sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+
+  echo -e "\n$hr\nWORKSPACE\n$hr"
+  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
+
+  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
+  # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --trace --profile ${INPUT_JEKYLL_BASEURL:=} -c ${JEKYLL_CFG}
+  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git" && echo -e "Deploying to $1 on branch gh-pages"
+
+  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
+  git config --global --add safe.directory '*' && mv -v ${GITHUB_WORKSPACE}/_site/* .
+  git add . && git commit -m "jekyll build" && git push -u origin gh-pages
 }
 
 # https://unix.stackexchange.com/a/615292/158462
