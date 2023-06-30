@@ -41,16 +41,17 @@ node_modules
 package-lock.json
 
 
-# _sass
-_sass/@primer/css/**/*.md
-
-
 # lighthouse
 *.report.html
 
 
 # action
 action.changelog.md
+
+
+# _sass
+_sass/@primer/css/**/*.md
+
 
 _drafts/
 multiboot/
