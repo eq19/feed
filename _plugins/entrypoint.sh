@@ -43,7 +43,9 @@ set_target() {
       [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && echo ${array[$i+1]}
     done
   fi
-  return 30
+  
+  # Generate id from the Structure
+  return 31
 }
 
 # https://unix.stackexchange.com/a/615292/158462
