@@ -5,8 +5,8 @@
 jekyll_build() {
   
   echo -e "\n$hr\nCONFIG\n$hr"
-  rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* . && mv /maps/_config.yml ${JEKYLL_CFG}
-  if [[ $1 == *"github.io"* ]]; then mv /maps/_assets assets; fi
+  rm -rf  nodes.* && rm -Rf -- */ && mv /maps/text/_* /maps && mv /maps/_config.yml ${JEKYLL_CFG}
+  if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
