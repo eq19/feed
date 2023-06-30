@@ -10,7 +10,8 @@ jekyll_build() {
   JEKYLL_CFG=${GITHUB_WORKSPACE}/_config.yml && mv /maps/_config.yml ${JEKYLL_CFG}
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
+  sed -i "1s|^|id: 30\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
