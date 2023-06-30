@@ -5,13 +5,12 @@
 jekyll_build() {
   
   echo -e "\n$hr\nCONFIG\n$hr"
-  rm -Rf -- */ && mv /maps/text/_* . && find /maps/_* \! -name '_plugins' -type d -exec mv {} . \;
-  ls -al .
+  rm -Rf -- */ && find /maps/_* \! -name '_plugins' -type d -exec mv {} . \;
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+  sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG} && ls -al .
 
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
