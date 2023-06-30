@@ -45,7 +45,7 @@ set_target() {
   fi
   
   # Generate id from the Structure
-  [[ -z "$ID" ]] && SPIN=0 || echo SPIN=`expr $ID \* 6`
+  [[ -z "$SPIN" ]] && SPIN=0 || echo SPIN=`expr $ID \* 6`
   return $(( $ID + $SPIN ))
 }
 
