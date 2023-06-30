@@ -5,7 +5,7 @@
 jekyll_build() {
   
   echo -e "\n$hr\nCONFIG\n$hr"
-  rm -Rf -- */ && mv /mapa/_config.yml ${JEKYLL_CFG}
+  rm -Rf -- */ && mv -fn /mapa/_config.yml ${JEKYLL_CFG}
   find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
