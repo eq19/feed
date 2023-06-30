@@ -10,7 +10,7 @@ jekyll_build() {
 
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|id: 30\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+  sed -i "1s|^|id: $2\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
@@ -43,8 +43,10 @@ set_target() {
       [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]] && echo ${array[$i+1]}
     done
   fi
+  return 30
 }
 
+# https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
-jekyll_build ${OWNER}/${TARGET_REPOSITORY}
+jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
