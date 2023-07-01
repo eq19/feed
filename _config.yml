@@ -43,9 +43,6 @@ exclude:
 
 # Where things are
 source: .
-sass:
-  # Where you keep your scss files
-  sass_dir: assets/css/
 theme: null
 collections_dir: .
 collections:
