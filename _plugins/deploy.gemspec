@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.files         = FileList['assets/*','_*/*','[A-Z]*'].to_a
   spec.license       = "MIT"
   
-  spec.add_runtime_dependency "jekyll", ">= 3.0"
+# spec.add_runtime_dependency "jekyll", ">= 4.2.2"
 # spec.add_development_dependency "rake", "~> 10.0"
 # spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "prime", "~> 0.1.2"
