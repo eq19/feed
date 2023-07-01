@@ -22,6 +22,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-relative-links
   - jekyll-default-layout
+  - jekyll-sass-converter
   - jekyll-github-metadata
   - jekyll-titles-from-headings
   - jekyll-optional-front-matter
