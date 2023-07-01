@@ -1,8 +1,8 @@
 description: Jekyll theme compatible with GitHub Pages
 
 # debug:
-#   compress: true
 #   dist: false
+#   compress: true
 #   shortcodes: true
 
 readme_index:
