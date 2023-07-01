@@ -1,5 +1,4 @@
-{{ site.id | plus:1 }}
-{% hello Jesse %}
+{%- assign site_id = site.id | plus:1 -%}{% hello site_id %}
 {%- assign target = site.target_repository | split: '/' -%}
 {%- if target[0] == 'eq19' -%}
 	{%- if target[1] contains 'github.io' -%}
