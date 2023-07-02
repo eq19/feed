@@ -12,10 +12,17 @@ readme_index:
 
 plugins:
   - jemoji
+  - jekyll-gist
   - jekyll-avatar
   - jekyll-mentions
-  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-relative-links
   - jekyll-github-metadata
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
 
 exclude:
   - Makefile
