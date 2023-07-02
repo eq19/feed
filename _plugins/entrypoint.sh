@@ -32,7 +32,7 @@ set_target() {
 jekyll_build() {
   
   echo -e "\n$hr\nCONFIG\n$hr"
-  rm -Rf -- */ && mv -fn /maps/_config.yml ${JEKYLL_CFG}
+  rm -Rf -- */ && rm -rf .* && mv -fn /maps/_config.yml ${JEKYLL_CFG}
   find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
@@ -49,7 +49,7 @@ jekyll_build() {
   
   echo -e "Deploying to $1 on branch gh-pages"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * # && touch .nojekyll
+  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && rm -rf .* # && touch .nojekyll
   git config --global --add safe.directory '*' && mv -v ${GITHUB_WORKSPACE}/_site/* .
   git add . && git commit -m "jekyll build" && git push -u origin gh-pages
 }
