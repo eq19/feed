@@ -1,11 +1,8 @@
-title: jekyll-rtd-theme
-description: Just another documentation theme compatible with GitHub Pages
-
-theme: null
+description: Jekyll theme compatible with GitHub Pages
 
 # debug:
-#   compress: true
 #   dist: false
+#   compress: true
 #   shortcodes: true
 
 readme_index:
@@ -13,8 +10,22 @@ readme_index:
 
 plugins:
   - jemoji
+  - jekyll-gist
+  - jekyll-feed
   - jekyll-avatar
+  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-mentions
+  - jekyll-remote-theme
+  - jekyll-coffeescript
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-default-layout
+  - jekyll-sass-converter
+  - jekyll-github-metadata
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
 
 exclude:
   - Makefile
@@ -29,3 +40,20 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
+
+# Where things are
+source: .
+theme: null
+collections_dir: .
+collections:
+  posts:
+    output: true
+destination: ./_site
+
+# Front Matter Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
