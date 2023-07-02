@@ -2,10 +2,10 @@
 name: Build and deploy Jekyll site
 
 # 💎 Runs on workflow_run.conclusion
-on: # push
-  workflow_run:
-    types: [completed] #requested
-    workflows: ["pages-build-deployment"]
+on: push
+  # workflow_run:
+    # types: [completed] #requested
+    # workflows: ["pages-build-deployment"]
 
 # 🪂 Allow only one concurrent deployment across the branches
 concurrency:
@@ -20,7 +20,7 @@ env:
 jobs:
   # Build job
   github-pages:
-    if: github.event.workflow_run.conclusion == 'success'
+    # if: github.event.workflow_run.conclusion == 'success'
     runs-on: ${{ github.ref_name != 'main' && 'ubuntu-latest' || 'windows-latest' }}
     steps:
       - name: 📂 Checkout
