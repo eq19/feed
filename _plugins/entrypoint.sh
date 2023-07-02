@@ -55,6 +55,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nPUSHED\n$hr"
   ls -al 
+}
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
