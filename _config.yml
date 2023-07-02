@@ -20,29 +20,29 @@ readme_index:
   with_frontmatter: true
 
 exclude:
-  - Makefile
   - CNAME
   - LICENSE
+  - Makefile
   - update.sh
   - Gemfile
   - Gemfile.lock
-  - requirements.txt
   - node_modules
   - package.json
+  - requirements.txt
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
-  
+
 plugins:
   - jemoji
   - jekyll-gist
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-paginate
-  - jekyll-readme-index
   - jekyll-coffeescript
+  - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-relative-links
   - jekyll-github-metadata
-  - jekyll-optional-front-matter
   - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
