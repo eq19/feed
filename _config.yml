@@ -19,15 +19,15 @@ readme_index:
   with_frontmatter: true
 
 exclude:
-  - Makefile
   - CNAME
   - LICENSE
-  - update.sh
   - Gemfile
+  - Makefile
+  - update.sh
   - Gemfile.lock
-  - requirements.txt
   - node_modules
   - package.json
+  - requirements.txt
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
