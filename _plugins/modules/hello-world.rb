@@ -12,4 +12,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('github_edit_link', Jekyll::HelloWorld)
+Liquid::Template.register_tag('hello', Jekyll::HelloWorld)
