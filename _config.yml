@@ -15,6 +15,7 @@ plugins:
   - jekyll-avatar
   - jekyll-mentions
   - jekyll-gist
+  - jekyll-github-metadata
 
 exclude:
   - Makefile
