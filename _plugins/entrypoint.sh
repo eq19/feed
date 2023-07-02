@@ -50,7 +50,7 @@ jekyll_build() {
   echo -e "Deploying to $1 on branch gh-pages"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
-  git config --global --add safe.directory '*' && mv -v ${GITHUB_WORKSPACE}/_site/* .
+  git config --global --add safe.directory '*' && mv -v ${GITHUB_WORKSPACE}/_site/* . && ls -al .
   git add . && git commit -m "jekyll build" && git push -u origin gh-pages
 }
 
