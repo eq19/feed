@@ -1,48 +1,30 @@
-description: Theme compatible with GitHub Pages
+description: Just another documentation theme compatible with GitHub Pages
+
+theme: null
 
 # debug:
-#   dist: false
 #   compress: true
+#   dist: false
 #   shortcodes: true
 
-lsi: false
-safe: true
-source: .
-theme: null
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
 readme_index:
   with_frontmatter: true
 
+plugins:
+  - jemoji
+  - jekyll-avatar
+  - jekyll-mentions
+
 exclude:
+  - Makefile
   - CNAME
   - LICENSE
-  - Makefile
   - update.sh
   - Gemfile
   - Gemfile.lock
+  - requirements.txt
   - node_modules
   - package.json
-  - requirements.txt
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
-
-plugins:
-  - jemoji
-  - jekyll-gist
-  - jekyll-avatar
-  - jekyll-mentions
-  - jekyll-paginate
-  - jekyll-coffeescript
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-relative-links
-  - jekyll-github-metadata
-  - jekyll-titles-from-headings
-  - jekyll-optional-front-matter
