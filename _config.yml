@@ -10,20 +10,6 @@ theme: null
 readme_index:
   with_frontmatter: true
 
-plugins:
-  - jemoji
-  - jekyll-gist
-  - jekyll-avatar
-  - jekyll-mentions
-  - jekyll-paginate
-  - jekyll-coffeescript
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-relative-links
-  - jekyll-github-metadata
-  - jekyll-titles-from-headings
-  - jekyll-optional-front-matter
-
 exclude:
   - Makefile
   - CNAME
@@ -37,3 +23,17 @@ exclude:
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
+
+plugins:
+  - jemoji
+  - jekyll-gist
+  - jekyll-avatar
+  - jekyll-mentions
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-relative-links
+  - jekyll-github-metadata
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
