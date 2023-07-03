@@ -40,6 +40,7 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
+  mv _includes/workdir/* .
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
 
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
