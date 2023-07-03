@@ -52,7 +52,8 @@ jekyll_build() {
   echo -e "Deploying to $1 on branch gh-pages"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
-  mv -v ${GITHUB_WORKSPACE}/_site/* . && git add . && git commit -m "jekyll build" && git push -u origin gh-pages
+  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && mv -v ${GITHUB_WORKSPACE}/_site/* .
+  git add . && git commit -m "jekyll build" && git push -u origin gh-pages
 
   echo -e "\n$hr\nPUSHED\n$hr"
   ls -al 
