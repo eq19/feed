@@ -30,11 +30,12 @@ set_target() {
 }
 
 jekyll_build() {
-  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  git config --global --add safe.directory '*' && rm -rf .github && mv /maps/.github .
-  git add . && git commit -m "update workflow" && git push &>/dev/null
 
   echo -e "\n$hr\nCONFIG\n$hr"
+  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  git config --global --add safe.directory '*' && rm -rf .github && mv /maps/.github . && git add .
+  git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
+
   rm -Rf -- */ && mv -fn /maps/_config.yml ${JEKYLL_CFG}
   find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   
