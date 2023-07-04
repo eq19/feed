@@ -61,5 +61,7 @@ jekyll_build() {
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
+echo ${OWNER} $? ID $ID SPIN $SPIN
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $?)
+echo ${OWNER} $? ID $ID SPIN $SPIN
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
