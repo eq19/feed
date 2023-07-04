@@ -7,7 +7,7 @@ set_target() {
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     # [[ -n "$3" ]] && SPIN=`expr $3 \* 6`
-    [[ -z ${ID+OWNER} ]] && echo "var is unset" || echo "var is set to `expr $3 \* 6`" # SPIN=`expr $3 \* 6`
+    [[ -z ${ID+OWNER} ]] && echo "var is unset" || echo "expr $3 \* 6" # SPIN=`expr $3 \* 6`
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
