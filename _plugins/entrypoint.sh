@@ -52,9 +52,11 @@ jekyll_build() {
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/modules
   
   echo -e "Deploying to $1 on branch gh-pages"
-  git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
-  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && mv -v ${GITHUB_WORKSPACE}/_site/* .
-  git add . && git commit -m "jekyll build" && git push -u origin gh-pages
+  cd ${GITHUB_WORKSPACE}/_site && git init --initial-branch=master && git remote add origin ${REMOTE_REPO}
+  # git clone -b gh-pages --single-branch ${REMOTE_REPO} && cd $(basename $1) && rm -rf * && mv -v ${GITHUB_WORKSPACE}/_site/* .
+  
+  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
+  git commit -m "jekyll build" > /dev/null && git push --force --quiet ${REMOTE_REPO} master:gh-pages
 
   echo -e "\n$hr\nPUSHED\n$hr"
   ls -al 
