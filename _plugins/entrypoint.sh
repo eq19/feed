@@ -36,8 +36,7 @@ jekyll_build() {
   git config --global --add safe.directory '*' && rm -rf .github && mv /maps/.github . && git add .
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
-  rm -Rf -- */ && mv -fn /maps/_config.yml ${JEKYLL_CFG}
-  find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
+  rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
