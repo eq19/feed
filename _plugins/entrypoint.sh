@@ -30,7 +30,10 @@ set_target() {
 }
 
 jekyll_build() {
-  
+  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  git config --global --add safe.directory '*' && rm -rf .github && mv /maps/.github .
+  git add . && git commit -m "update workflow" && git push
+
   echo -e "\n$hr\nCONFIG\n$hr"
   rm -Rf -- */ && mv -fn /maps/_config.yml ${JEKYLL_CFG}
   find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
@@ -44,13 +47,11 @@ jekyll_build() {
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
 
   echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
-  git config --global --add safe.directory '*' 
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/modules
   
   echo -e "Deploying to $1 on branch gh-pages"
-  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   git clone -b gh-pages --single-branch ${REMOTE_REPO} &>/dev/null && cd $(basename $1) && rm -rf * && touch .nojekyll
   if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && mv -v ${GITHUB_WORKSPACE}/_site/* .
   git add . && git commit -m "jekyll build" && git push -u origin gh-pages
