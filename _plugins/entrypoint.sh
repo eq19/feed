@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -z ${ID+OWNER} ]] && true || echo "ID is set to '$ID'" # SPIN=`expr $3 \* 6`
+    [[ -z ${ID+OWNER} ]] && echo "var is unset" || echo "var is set to '$var'" # SPIN=`expr $3 \* 6`
 echo $3 ID $ID SPIN $SPIN
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
@@ -63,4 +63,5 @@ jekyll_build() {
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $?)
+echo ${OWNER} $? ID $ID SPIN $SPIN
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
