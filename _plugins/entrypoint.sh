@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$ID" ]] && SPIN=`expr $3 \* 6`
+    [[ -n "$ID" ]] && echo testID # SPIN=`expr $3 \* 6`
 echo $3 ID $ID SPIN $SPIN
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
