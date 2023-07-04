@@ -61,5 +61,6 @@ jekyll_build() {
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${OWNER} != ${GITHUB_ACTOR} || ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR})
+echo test $?
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $?)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
