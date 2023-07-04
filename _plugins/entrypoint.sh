@@ -46,20 +46,17 @@ jekyll_build() {
   mv _includes/workdir/* .
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
 
-  echo -e "\n$hr\nBUILD & DEPLOY\n$hr"
+  echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/gem
   
-  echo -e "Deploying to $1 on branch gh-pages"
+  echo -e "\n$hr\nDEPLOY\n$hr"
   cd ${GITHUB_WORKSPACE}/_site && git init --initial-branch=master && git remote add origin ${REMOTE_REPO}
   # git clone -b gh-pages --single-branch ${REMOTE_REPO} && cd $(basename $1) && rm -rf * && mv -v ${GITHUB_WORKSPACE}/_site/* .
   
-  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
+  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && ls -al && git add .
   git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
-
-  echo -e "\n$hr\nPUSHED\n$hr"
-  ls -al 
 }
 
 # https://unix.stackexchange.com/a/615292/158462
