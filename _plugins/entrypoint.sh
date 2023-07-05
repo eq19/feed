@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$ID" ]] && SPIN=$( expr 6 '*' "$3" )
+    [[ -n "$ID" ]] && SPIN=$( expr 6 '*' "$( echo $ID | sed 's/.* //')" )
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
@@ -60,5 +60,5 @@ jekyll_build() {
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $(echo "$ID" | sed 's/.* //'))
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
