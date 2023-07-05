@@ -7,8 +7,8 @@ set_target() {
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     # [[ -n "$3" ]] && SPIN=`expr $3 \* 6`
-    [[ -z ${ID+OWNER} ]] && true || echo $( expr 6 '*' "$3" ) # SPIN=`expr $3 \* 6`
-    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+    [[ -z ${ID+OWNER} ]] && true || echo $3 # $( expr 6 '*' "$3" ) # SPIN=`expr $3 \* 6`
+    IFS=', '; array=($(pinned_repos.rb ${OWN ER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
     echo ${INPUT_TOKEN} | gh auth login --with-token
