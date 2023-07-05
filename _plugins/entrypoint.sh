@@ -33,7 +33,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
+  rm -rf .github && mv /maps/.github . && git add .
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
   rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
@@ -48,6 +48,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
+git config --global --add safe.directory ${GITHUB_WORKSPACE}
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/gem
   
