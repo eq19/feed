@@ -26,7 +26,7 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && SPIN=0
-  return $(( $SPAN + $SPIN ))
+  [[ -z "$2" ]] && echo $(( $SPAN + $SPIN )) || return $(( $SPAN + $SPIN ))
 }
 
 jekyll_build() {
@@ -59,6 +59,6 @@ jekyll_build() {
 }
 
 # https://unix.stackexchange.com/a/615292/158462
-[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${OWNER})
-NUM=$? && TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io ${NUM})
+[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io ${ID})
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
