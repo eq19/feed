@@ -33,22 +33,20 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-  rm -rf .github && mv /maps/.github . && git add .
+  git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
-  rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
-  
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
   sed -i "1s|^|SPAN: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  mv _includes/workdir/* .
-  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al .
+  rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
+  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && mv _includes/workdir/* .
+  chown -R $( whoami ):$( whoami ) ${GITHUB_WORKSPACE} && ls -al .
 
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-git config --global --add safe.directory ${GITHUB_WORKSPACE}
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/gem
   
