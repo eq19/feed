@@ -16,17 +16,17 @@ set_target() {
   
   # Iterate the Structure
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then ID=1; echo ${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then ID=${#array[@]}; echo $2
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then SPAN=1; echo ${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then SPAN=${#array[@]}; echo $2
   else
     for ((i=0; i < ${#array[@]}; i++)); do
-      if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then ID=$(( $i + 1 )); echo ${array[$ID]}; fi
+      if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && SPIN=0
-  return $(( $ID + $SPIN ))
+  return $(( $SPAN + $SPIN ))
 }
 
 jekyll_build() {
@@ -40,7 +40,7 @@ jekyll_build() {
   
   sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
   sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|id: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
+  sed -i "1s|^|SPAN: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   mv _includes/workdir/* .
@@ -61,6 +61,6 @@ jekyll_build() {
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${OWNER})
-echo ID $ID $?
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io 2)
+NUM=$?
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io $NUM)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
