@@ -26,7 +26,7 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && SPIN=0
-  return $(( $ID + $SPIN ))
+  return 16 # $(( $ID + $SPIN ))
 }
 
 jekyll_build() {
