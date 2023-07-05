@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$ID" ]] && SPIN=$( expr 6 '*' "$( echo $ID | sed 's/.* //')" )
+    [[ -n "$ID" ]] && SPIN=$( expr "$( echo $ID | sed 's/.* //')" '*' 6 )
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
