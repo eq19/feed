@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$ID" ]] && SPIN=$( expr "$( echo $ID | sed 's/.* //')" '*' 6 )
+    [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
@@ -25,8 +25,8 @@ set_target() {
   fi
   
   # Generate id from the Structure
-  [[ -z "$SPIN" ]] && SPIN=0
-  [[ -z "$2" ]] && echo $(( $SPAN + $SPIN )) || return $(( $SPAN + $SPIN ))
+  [[ -z "$SPIN" ]] && SPIN=0 || SPIN=$(( 6*SPIN+SPIN ))
+  [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
 
 jekyll_build() {
