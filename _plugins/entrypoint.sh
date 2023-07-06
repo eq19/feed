@@ -26,7 +26,7 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && SPIN=0 || SPIN=$(( 6*SPIN+SPIN ))
-  [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
+  [[ -z "$2" ]] && echo $(( $SPAN )) || if [[ "$1" == "$2" ]]; then return 7; else return $(( $SPAN + $SPIN )); fi
 }
 
 jekyll_build() {
