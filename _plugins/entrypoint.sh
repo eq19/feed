@@ -25,7 +25,7 @@ set_target() {
   fi
   
   # Generate id from the Structure
-  [[ -z "$SPIN" ]] && ( [[ "$1" != "$2" ]] && SPIN=0 || SPIN=7 ) || SPIN=$(( 6*SPIN+SPIN ))
+  [[ -z "$SPIN" ]] && ( [[ "$1" == "$2" ]] && SPIN=7 || SPIN=0 ) || SPIN=$(( 6*SPIN+SPIN ))
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
 
