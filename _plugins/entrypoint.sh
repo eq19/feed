@@ -9,7 +9,10 @@ set_target() {
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
+    HEADER="Accept: application/vnd.github+json"
+    echo ${INPUT_TOKEN} | gh auth login --with-token
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+    IFS=', '; JEKYLL_GIST=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
   fi
   
   # Iterate the Structure
@@ -41,7 +44,7 @@ jekyll_build() {
   echo -e "\n$hr\nWORKSPACE\n$hr"
   rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && mv _includes/workdir/* .
-  rm -rf README.md && wget -O README.md ${gists[$2]} &>/dev/null
+  rm -rf README.md && wget -O README.md ${JEKYLL_GIST[$2]} &>/dev/null
   chown -R $( whoami ):$( whoami ) ${GITHUB_WORKSPACE} && ls -al .
 
   echo -e "\n$hr\nBUILD\n$hr"
@@ -56,10 +59,6 @@ jekyll_build() {
   echo -e "\n$hr\nDEPLOY\n$hr"
   ls -al
 }
-
-HEADER="Accept: application/vnd.github+json"
-echo ${INPUT_TOKEN} | gh auth login --with-token
-IFS=', '; gists=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
