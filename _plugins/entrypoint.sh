@@ -10,8 +10,7 @@ set_target() {
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     echo ${INPUT_TOKEN} | gh auth login --with-token
-    readonly HEADER="Accept: application/vnd.github+json"
-    IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+    IFS=', '; array=($(gh api /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
   # Iterate the Structure
@@ -30,7 +29,7 @@ set_target() {
 }
 
 jekyll_build() {
-echo ${gists[10]}
+
   echo -e "\n$hr\nCONFIG\n$hr"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
@@ -41,6 +40,7 @@ echo ${gists[10]}
   sed -i "1s|^|ID: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
+  rm -rf EEADME.md && wget -O EEADME.md ${gists[$2]}
   rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && mv _includes/workdir/* .
   chown -R $( whoami ):$( whoami ) ${GITHUB_WORKSPACE} && ls -al .
@@ -60,6 +60,6 @@ echo ${gists[10]}
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
-IFS=', '; gists=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
+IFS=', '; gists=($(gh api /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
