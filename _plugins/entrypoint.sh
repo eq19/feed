@@ -40,9 +40,9 @@ jekyll_build() {
   sed -i "1s|^|ID: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  rm -rf README.md && wget -O README.md ${gists[$2]}
   rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && mv _includes/workdir/* .
+  rm -rf README.md && wget -O README.md ${gists[$2]} &>/dev/null
   chown -R $( whoami ):$( whoami ) ${GITHUB_WORKSPACE} && ls -al .
 
   echo -e "\n$hr\nBUILD\n$hr"
