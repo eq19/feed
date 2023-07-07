@@ -9,6 +9,8 @@ set_target() {
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
+    echo ${INPUT_TOKEN} | gh auth login --with-token
+    readonly HEADER="Accept: application/vnd.github+json"
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -55,9 +57,6 @@ echo ${gists[10]}
   echo -e "\n$hr\nDEPLOY\n$hr"
   ls -al
 }
-
-HEADER="Accept: application/vnd.github+json"
-echo ${INPUT_TOKEN} | gh auth login --with-token
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
