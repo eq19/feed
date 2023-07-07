@@ -9,8 +9,6 @@ set_target() {
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
-    HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -30,7 +28,6 @@ set_target() {
 }
 
 jekyll_build() {
-    IFS=', '; gists=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
 echo MY_GISTS ${gists[$2]}
   echo -e "\n$hr\nCONFIG\n$hr"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
@@ -58,6 +55,10 @@ echo MY_GISTS ${gists[$2]}
   echo -e "\n$hr\nDEPLOY\n$hr"
   ls -al
 }
+
+    HEADER="Accept: application/vnd.github+json"
+    echo ${INPUT_TOKEN} | gh auth login --with-token
+IFS=', '; gists=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
