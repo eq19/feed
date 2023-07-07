@@ -11,7 +11,7 @@ set_target() {
   else
     HEADER="Accept: application/vnd.github+json"
     echo ${INPUT_TOKEN} | gh auth login --with-token
-    IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+    IFS=', '; array=($(gh api /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
   # Iterate the Structure
