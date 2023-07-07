@@ -58,6 +58,10 @@ jekyll_build() {
   ls -al
 }
 
+HEADER="Accept: application/vnd.github+json"
+echo ${INPUT_TOKEN} | gh auth login --with-token
+IFS=', '; JEKYLL_GIST=($(gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' | yq eval -P | sed "s/ /, /g"))
+
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
