@@ -16,6 +16,7 @@ concurrency:
 env:
   OWNER: ${{ github.repository_owner }}
   JEKYLL_CFG: /maps/_config.yml
+  JEKYLL_MAPS: []
 
 jobs:
   # Build job
