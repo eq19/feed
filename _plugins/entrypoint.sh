@@ -54,13 +54,13 @@ jekyll_build() {
   
   cd _site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
-  git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
+  # git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
   echo -e "\n$hr\nDEPLOY\n$hr"
   ls -al
 }
 
 # https://unix.stackexchange.com/a/615292/158462
-[[ ${GITHUB_REPOSITORY} == *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
+[[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && OWNER=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
 TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
 jekyll_build ${OWNER}/${TARGET_REPOSITORY} $?
