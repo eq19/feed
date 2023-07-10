@@ -33,24 +33,24 @@ set_target() {
 
 jekyll_build() {
 
-  echo -e "\n$hr\nCONFIG\n$hr"
   git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
   git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
-
-  sed -i "1s|^|target_repository: $1\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" ${JEKYLL_CFG}
-  sed -i "1s|^|ID: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv _includes/workdir/* .
   if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi
   wget -O README.md $(cat /tmp/gist_files | awk "NR==$2") &>/dev/null && ls -al .
 
+  echo -e "\n$hr\nCONFIG\n$hr"
+  sed -i "1s|^|target_repository: $1\n|" _config.yml
+  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" _config.yml
+  sed -i "1s|^|ID: $(( $2 + 30 ))\n|" _config.yml && cat _config.yml
+
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/gem
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c _config.yml -p /maps/_plugins/gem
   
   cd _site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
