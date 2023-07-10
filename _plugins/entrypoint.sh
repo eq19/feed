@@ -11,7 +11,8 @@ set_target() {
   else
     HEADER="Accept: application/vnd.github+json"
     echo ${INPUT_TOKEN} | gh auth login --with-token
-    gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' > /tmp/tempout
+	gh api -H "${HEADER}" /users/eq19/gists --jq '.[].url' > /tmp/gist_url
+    gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' > /tmp/gist_files
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -51,7 +52,7 @@ jekyll_build() {
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c ${JEKYLL_CFG} -p /maps/_plugins/gem
   
-  cd ${GITHUB_WORKSPACE}/_site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
+  cd _site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
   # git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
