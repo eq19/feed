@@ -50,7 +50,7 @@ jekyll_build() {
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/$1.git"
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -c _config.yml -p /maps/_plugins/gem
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gem
   
   cd _site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
