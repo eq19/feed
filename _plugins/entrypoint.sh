@@ -42,10 +42,9 @@ jekyll_build() {
   sed -i "1s|^|ID: $(( $2 + 30 ))\n|" ${JEKYLL_CFG} && cat ${JEKYLL_CFG}
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  rm -Rf -- */ && find /maps/_* -maxdepth 0 \! -name '_plugins' -type d -exec mv {} . \; -prune
-  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && mv _includes/workdir/* .
-  wget -O README.md $(cat /tmp/tempout | awk "NR==$2") &>/dev/null
-  chown -R $( whoami ):$( whoami ) ${GITHUB_WORKSPACE} && ls -al .
+  cd /maps && mv _includes/workdir/* .
+  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi
+  wget -O README.md $(cat /tmp/gist_files | awk "NR==$2") &>/dev/null && ls -al .
 
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
