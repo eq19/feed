@@ -4,6 +4,7 @@ LABEL version=v0.0.1
 ADD . /maps
 
 ENV PATH="${PATH}:/maps/_plugins"
+ENV JEKYLL_CFG=/maps/_config.yml
 ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
 
 RUN apk update && apk upgrade
