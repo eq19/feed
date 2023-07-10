@@ -21,15 +21,23 @@ exclude:
   - CNAME
   - LICENSE
   - Gemfile
+  - Gemfile_
   - Makefile
+  - keras.json
   - update.sh
+  - action.yml  
+  - Dockerfile
   - Gemfile.lock
   - node_modules
   - package.json
+  - entrypoint.sh
+  - entrypoint.sh_
+  - pinned_repos.rb
   - requirements.txt
   - package-lock.json
   - webpack.config.js
   - jekyll-rtd-theme.gemspec
+  - jekyll-rtd-theme.gemspec_
 
 plugins:
   - jemoji
