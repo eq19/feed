@@ -5,7 +5,6 @@ description: Just another documentation theme compatible with GitHub Pages
 #   compress: true
 #   shortcodes: true
 
-source: .
 lsi: false
 theme: null
 incremental: false
