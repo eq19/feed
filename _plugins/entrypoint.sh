@@ -38,9 +38,10 @@ jekyll_build() {
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  cd /maps && mv _includes/workdir/* .
+  cd /maps && mv _includes/workdir/* . && NR=$3
+  [[ $1 == "eq19/eq19.github.io" ]] && NR=1 || NR=$(( NR+2 ))
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
-  wget -O README.md $(cat /tmp/gist_files | awk "NR==$3") &>/dev/null && ls -al .
+  wget -O README.md $(cat /tmp/gist_files | awk "NR==${NR}") &>/dev/null && ls -al .
 
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
@@ -52,9 +53,9 @@ jekyll_build() {
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p _plugins/gems
   
-  cd _site && git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
-  if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && touch .nojekyll && git add .
-  # git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
+  cd _site && touch .nojekyll && if [[ $1 == "eq19/eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi
+  git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO} && git add .
+  git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
   echo -e "\n$hr\nDEPLOY\n$hr"
   ls -al
