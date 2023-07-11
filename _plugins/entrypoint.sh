@@ -19,7 +19,7 @@ set_target() {
   # Iterate the Structure
   printf -v array_str -- ',,%q' "${array[@]}"
   if [[ ! "${array_str},," =~ ",,$1,," ]]; then SPAN=0; echo ${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then SPAN=${#array[@]}; echo $2
+  elif [[ "${array[-1]}" == "$1" ]]; then SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}|${ENTRY}|g"
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
@@ -62,5 +62,5 @@ jekyll_build() {
 
 # https://unix.stackexchange.com/a/615292/158462
 [[ ${GITHUB_REPOSITORY} != *"github.io"* ]] && ENTRY=$(set_target ${OWNER} ${GITHUB_ACTOR}) || ID=$(set_target ${OWNER} ${ID})
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${ENTRY}.github.io)
-jekyll_build ${ENTRY}/${TARGET_REPOSITORY} $?
+TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}/${OWNER}.github.io)
+jekyll_build ${TARGET_REPOSITORY} $?
