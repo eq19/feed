@@ -14,6 +14,8 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+# folders sort
 readme_index:
   with_frontmatter: true
 
