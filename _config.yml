@@ -17,6 +17,9 @@ kramdown:
 readme_index:
   with_frontmatter: true
 
+include:
+  - README.md
+
 exclude:
   - LICENSE
   - action.yml  
