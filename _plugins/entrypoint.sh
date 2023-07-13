@@ -38,9 +38,9 @@ jekyll_build() {
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv _includes/workdir/* . 
-  NR=$3 && [[ $1 == "eq19.github.io" ]] && NR=1 || NR=$(( NR+1 ))
+  [[ $1 == "eq19.github.io" ]] && NR=0 || NR=$3
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
-  wget -O README.md $(cat /tmp/gist_files | awk "NR==${NR}") &>/dev/null && ls -al .
+  wget -O README.md $(cat /tmp/gist_files | awk "NR==$(( NR+2 ))") &>/dev/null && ls -al .
 
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
