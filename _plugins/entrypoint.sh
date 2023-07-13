@@ -10,9 +10,8 @@ set_target() {
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token
-	gh api -H "${HEADER}" /users/eq19/gists --jq '.[].url' > /tmp/gist_url
-    gh api -H "${HEADER}" /users/eq19/gists --jq '.[].files.[].raw_url' > /tmp/gist_files
+    echo ${INPUT_TOKEN} | gh auth login --with-token 
+    gh api -H "${HEADER}" /users/eq19/gists --jq 'sort_by(.created_at)|.[].files.[].raw_url' > /tmp/gist_files
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -39,9 +38,9 @@ jekyll_build() {
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv _includes/workdir/* . 
+  NR=$3 && [[ $1 == "eq19.github.io" ]] && NR=1 || NR=$(( NR+1 ))
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
-  [[ $1 != "eq19.github.io" ]] && NR=$3 || NR=$(( $(wc -l < /tmp/gist_files) - 7 ))
-  wget -O README.md $(cat /tmp/gist_files | awk "NR==$(( NR+1 ))") &>/dev/null && ls -al .
+  wget -O README.md $(cat /tmp/gist_files | awk "NR==${NR}") &>/dev/null && ls -al .
 
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
