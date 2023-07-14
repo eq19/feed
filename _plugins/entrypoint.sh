@@ -10,7 +10,8 @@ set_target() {
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token 
+    echo ${INPUT_TOKEN} | gh auth login --with-token
+	gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/test
     gh api -H "${HEADER}" /users/eq19/gists --jq 'sort_by(.created_at)|.[].files.[].raw_url' > /tmp/gist_files
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
