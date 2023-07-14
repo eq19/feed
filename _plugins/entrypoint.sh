@@ -11,7 +11,7 @@ set_target() {
   else
     HEADER="Accept: application/vnd.github+json"
     echo ${INPUT_TOKEN} | gh auth login --with-token
-    gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/test
+    gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/test &>/dev/null
     gh api -H "${HEADER}" /users/eq19/gists --jq 'sort_by(.created_at)|.[].files.[].raw_url' > /tmp/gist_files
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
