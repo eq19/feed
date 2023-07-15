@@ -38,7 +38,7 @@ jekyll_build() {
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  cd /maps && mv _includes/workdir/* . 
+  cd /maps && mv _includes/workdir/* .
   [[ $1 == "eq19.github.io" ]] && NR=$(( 0-1 )) || NR=$3
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
   wget -O README.md $(cat /tmp/gist_files | awk "NR==$(( NR+2 ))") &>/dev/null && ls -al .
@@ -50,6 +50,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
+  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p _plugins/gems
   
