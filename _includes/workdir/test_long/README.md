@@ -2,7 +2,7 @@
 sort: 3
 ---
 
-# Test Documentation 3
+# Exponentiation Zones
 
 {% hello Jesse %}
 
