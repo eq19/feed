@@ -201,5 +201,3 @@ As you may see the bilateral way between this 19's tensor with the (Δ1) is not 
 [![](https://user-images.githubusercontent.com/8466209/199392468-a2738235-b65f-47da-848d-ffa0340cd51b.png)](https://github.com/eq19)
 
 Broadly speaking it still remain of how this project can be developed so that it can be applied to the goals we want. Therefore we decided to bring further every details in to a group of websites. That is the background why the _[root scheme](https://gist.github.com/eq19)_ of 'eq19' is exist.
-
-{% include list.liquid all=true %}
