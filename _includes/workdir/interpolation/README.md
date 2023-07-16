@@ -4,6 +4,26 @@ sort: 4
 
 ## Interpolation
 
+The process is carried out based on a combination of the numbers 2 and 3 by multiplication and the 9th and 10th powers of the 19th identity as a boundary number that [serves distribution of the 11th](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#eulers-identity) by 2 to 20 and 40 to 50 in bases 10 to 100 and 1000.
+
+>19² can be written as the sum of three (3) consecutive squared triangular numbers 6²+10²+ 15²
+
+```
+--+-----+-----
+ 1 | 1   |{15}
+---+-----+-----
+ 2 |{16} |{40}
+---+-----+-----
+ 3 | 41  |{50}
+---+-----+-----
+ 4 | 51  | 63
+---+-----+-----
+ 5 | 64  | 83
+---+-----+-----
+ 6 | 84  | 98
+---+-----+-----
+```
+
 By our mapping the prime seven (7) is forming the prime pair of (5,7) with the prime five (5) which is the only number that is part of more than one pair of twin primes, (3, 5) and (5, 7). This (5, 7) is one of the pair of that we called _[True Prime Pairs](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_.
 
 ***out (product) = in (joint) x out (last) = (1 + 5) x 19 = 6 x 19 = 114***
