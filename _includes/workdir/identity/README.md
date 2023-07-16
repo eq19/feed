@@ -2,7 +2,7 @@
 sort: 4
 ---
 
-## Interpolation
+## Identity Zones
 
 The process is carried out based on a combination of the numbers 2 and 3 by multiplication and the 9th and 10th powers of the 19th identity as a boundary number that [serves distribution of the 11th](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#eulers-identity) by 2 to 20 and 40 to 50 in bases 10 to 100 and 1000.
 
