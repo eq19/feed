@@ -41,7 +41,7 @@ jekyll_build() {
   NR=$3 && [[ $1 == "eq19.github.io" ]] && NR=$( tail -n 1 /tmp/gist_files ) || NR=$(cat /tmp/gist_files | awk "NR==$(( NR+1 ))")
 
   wget -O README.md ${NR} &>/dev/null && ls -al .
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  find . -type f -name "*.md" -exec sed -i 's/🚀:/sort:/g' {} +
 
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
