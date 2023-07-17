@@ -1,11 +1,6 @@
 ---
-sort: 2
+sort: 12
 ---
+# I'm folder12
 
-# Multiplication Zones
-
-```
-{% raw %}{% include list.liquid all=true %}{% endraw %}
-```
-
-{% include list.liquid all=true %}
+source: `{{ page.path }}`
