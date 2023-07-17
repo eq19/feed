@@ -14,5 +14,5 @@ clone_gist() {
   gh gist clone 765ddc69e339079a5a64b56c1d46e00f /maps/_includes/workdir/exponentiation/folder5
   gh gist clone f78d4470250720fb18111165564d555f /maps/_includes/workdir/exponentiation/folder6
 
-  gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/identition/folder12
+  gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/identition/folder12/folder2
 }
