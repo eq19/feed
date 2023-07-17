@@ -14,5 +14,16 @@ clone_gist() {
   gh gist clone 765ddc69e339079a5a64b56c1d46e00f /maps/_includes/workdir/exponentiation/folder5
   gh gist clone f78d4470250720fb18111165564d555f /maps/_includes/workdir/exponentiation/folder6
 
+  gh gist clone b32915925d9d365e2e9351f0c4ed786e /maps/_includes/workdir/identition/folder2
+  gh gist clone 88d09204b2e5986237bd66d062406fde /maps/_includes/workdir/identition/folder3
+  gh gist clone 8cab5e72d52ecb338a2f2187082a1699 /maps/_includes/workdir/identition/folder4
+  gh gist clone 54600a56d20163c2da8910dd804ec406 /maps/_includes/workdir/identition/folder5
+  gh gist clone f1af4317b619154719546e615aaa2155 /maps/_includes/workdir/identition/folder6
+  gh gist clone 6c89c3b0f109e0ead561a452720d1ebf /maps/_includes/workdir/identition/folder7
+  gh gist clone f21abd90f8d471390aad23d6ecc90d6d /maps/_includes/workdir/identition/folder8
+  gh gist clone 6e2fcc2138be6fb68839a3ede32f0525 /maps/_includes/workdir/identition/folder9
+  gh gist clone b541275ab7deda356feef32d600e44d8 /maps/_includes/workdir/identition/folder10
+  gh gist clone 80c8098f16f3e6ca06893b17a02d910e /maps/_includes/workdir/identition/folder11
+
   gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/identition/folder12/folder2
 }
