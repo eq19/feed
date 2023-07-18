@@ -36,8 +36,7 @@ jekyll_build() {
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  cd /maps && mv _includes/workdir/* .
-  if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
+  cd /maps && if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
   NR=$3 && [[ $1 == "eq19.github.io" ]] && NR=$( tail -n 1 /tmp/gist_files ) || NR=$(cat /tmp/gist_files | awk "NR==$(( NR+1 ))")
 
   wget -O README.md ${NR} &>/dev/null && ls -al .
