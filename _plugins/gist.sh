@@ -33,7 +33,7 @@ clone_gist() {
   gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/identition/folder12/folder2
 
   mv -f /maps/_includes/workdir/19_2_addition.md /maps/_includes/workdir/addition/README.md
-  mv -f /maps/_includes/workdir/19_3_multiplication.md /maps/_includes/workdir/multiplicationn/README.md
+  mv -f /maps/_includes/workdir/19_3_multiplication.md /maps/_includes/workdir/multiplication/README.md
   mv -f /maps/_includes/workdir/19_4_exponentiation.md /maps/_includes/workdir/exponentiation/README.md
   mv -f /maps/_includes/workdir/19_5_identition.md /maps/_includes/workdir/identition/README.md
 }
