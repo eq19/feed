@@ -4,6 +4,7 @@ clone_gist() {
 
   PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
   gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+  em -rf /tmp/maps /maps/addition /maps/multiplication /maps/exponentiation /maps/identition
 
   gh gist clone c9bdc2bbe55f2d162535023c8d321831 /tmp/maps
   gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /maps/addition
