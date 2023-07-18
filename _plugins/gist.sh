@@ -25,6 +25,7 @@ clone_gist() {
   gh gist clone 6e2fcc2138be6fb68839a3ede32f0525 /maps/_includes/workdir/identition/folder9
   gh gist clone b541275ab7deda356feef32d600e44d8 /maps/_includes/workdir/identition/folder10
   gh gist clone 80c8098f16f3e6ca06893b17a02d910e /maps/_includes/workdir/identition/folder11
+  gh gist clone 4ffc4d02579d5cfd336a553c6da2f267 /maps/_includes/workdir/identition/folder12
 
   gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/_includes/workdir/identition/folder12/folder2
 }
