@@ -7,6 +7,7 @@ clone_gist() {
   gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /maps/_includes/workdir/addition
   gh gist clone 4ffc4d02579d5cfd336a553c6da2f267 /maps/_includes/workdir/multiplication
 
+  gh gist clone bbfac33187aae966e2faedf253f7b703 /maps/_includes/workdir/exponentiation
   gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /maps/_includes/workdir/exponentiation/folder1
   gh gist clone e84a0961dc7636c01d5953d19d65e30a /maps/_includes/workdir/exponentiation/folder2
   gh gist clone dc30497160f3389546d177da901537d9 /maps/_includes/workdir/exponentiation/folder3
@@ -14,6 +15,7 @@ clone_gist() {
   gh gist clone 765ddc69e339079a5a64b56c1d46e00f /maps/_includes/workdir/exponentiation/folder5
   gh gist clone f78d4470250720fb18111165564d555f /maps/_includes/workdir/exponentiation/folder6
 
+  gh gist clone fd5135db1c295af4d3dae5f95f6891ea /maps/_includes/workdir/identition
   gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /maps/_includes/workdir/identition/folder1
   gh gist clone b32915925d9d365e2e9351f0c4ed786e /maps/_includes/workdir/identition/folder2
   gh gist clone 88d09204b2e5986237bd66d062406fde /maps/_includes/workdir/identition/folder3
