@@ -31,7 +31,7 @@ set_target() {
 
 jekyll_build() {
 
-  git config --global user.name "${GITHUB_ACTOR}" && git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+  git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
   git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
   git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
@@ -44,12 +44,12 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
-  sed -i "1s|^|repository: $GITHUB_REPOSITORY\n|" _config.yml
+  sed -i "1s|^|repository: $REPO\n|" _config.yml
   sed -i "1s|^|ID: $(( $3 + 30 ))\n|" _config.yml && cat _config.yml
 
   echo -e "\n$hr\nBUILD\n$hr"
   # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  REMOTE_REPO="https://${GITHUB_ACTOR}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
+  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p _plugins/gems
   
   cd _site && touch .nojekyll && mv /maps/README.md .
@@ -62,6 +62,6 @@ jekyll_build() {
 }
 
 # https://unix.stackexchange.com/a/615292/158462
-if [[ ${GITHUB_REPOSITORY} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${GITHUB_ACTOR}); else ID=$(set_target ${OWNER} ${ID}); fi
-TARGET_REPOSITORY=$(set_target $(basename ${GITHUB_REPOSITORY}) ${OWNER}.github.io)
+if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
+TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
