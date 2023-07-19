@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 rm -rf /tmp/workdir
-PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
-gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 gh gist clone c9bdc2bbe55f2d162535023c8d321831 /tmp/workdir
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/workdir/addition
