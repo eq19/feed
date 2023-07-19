@@ -50,7 +50,7 @@ jekyll_build() {
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd _site && touch .nojekyll && mv /maps/workdir/README.md .
-  if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
+  if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al .
 
   REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
