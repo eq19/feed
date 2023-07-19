@@ -36,3 +36,5 @@ gh gist clone 80c8098f16f3e6ca06893b17a02d910e /tmp/workdir/identition/folder11
 
 gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /tmp/workdir/identition/folder12
 mv -f /tmp/workdir/the_root.md /tmp/workdir/identition/folder12/README.md
+
+find /tmp/workdir -type d -name .git -prune -exec rm -rf {} \;
