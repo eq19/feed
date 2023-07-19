@@ -43,7 +43,7 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nBUILD\n$hr"
-  find . -type d -name '.git' -exec rm -rf {} \; && git init
+  find . -type d -name ".git" -exec rm -rf {} \; && git init
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
