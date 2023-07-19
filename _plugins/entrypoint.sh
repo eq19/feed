@@ -31,25 +31,25 @@ set_target() {
 
 jekyll_build() {
 
+  echo -e "\n$hr\nWORKSPACE\n$hr"
+  cd /maps && mv -f /tmp/workdir/* .
+  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
+  [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR}
+  if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi && ls -al /maps
+
   echo -e "\n$hr\nCONFIG\n$hr"
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
-  echo -e "\n$hr\nWORKSPACE\n$hr"
-  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
-  [[ $1 != "eq19.github.io" ]] && wget -O /maps/workdir/README.md ${NR}
-  if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi
-  find /maps/workdir -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} + && ls -al /maps
-
   echo -e "\n$hr\nBUILD\n$hr"
-  cd /maps && mv -f /tmp/workdir/* .
   find . -type d -name '*.git' -exec rm -rf {} \; && git init
+  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd _site && touch .nojekyll && mv /maps/workdir/README.md .
+  cd _site && touch .nojekyll && mv /maps/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al .
 
   REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
