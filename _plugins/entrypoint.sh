@@ -7,7 +7,7 @@ set_target() {
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
-    IFS=', '; array=($(ruby pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
