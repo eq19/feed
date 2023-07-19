@@ -7,7 +7,7 @@ set_target() {
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
-    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+    IFS=', '; array=($(ruby pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
@@ -73,5 +73,4 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
 if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
 TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
-# jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
-echo $?
+jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
