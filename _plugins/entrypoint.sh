@@ -67,6 +67,7 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
-[[ ${REPO} != *"github.io"* ]] && ENTRY=$(set_target ${OWNER} ${USER}) || ID=$(set_target ${OWNER} ${ID})
+ID=$(set_target ${OWNER} ${ID})
+[[ ${REPO} != *"github.io"* ]] && ENTRY=$(set_target ${OWNER} ${USER})
 TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
