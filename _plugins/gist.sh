@@ -34,5 +34,5 @@ gh gist clone 6e2fcc2138be6fb68839a3ede32f0525 /maps/identition/folder9
 gh gist clone b541275ab7deda356feef32d600e44d8 /maps/identition/folder10
 gh gist clone 80c8098f16f3e6ca06893b17a02d910e /maps/identition/folder11
 
-gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/manifest
-mv -f /tmp/maps/19_5_root.md /maps/manifest/README.md
+gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/identition/folder12
+mv -f /tmp/maps/19_5_root.md /maps/identition/folder12/README.md
