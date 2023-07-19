@@ -34,8 +34,8 @@ jekyll_build() {
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
-  rm -rf .git && find . -type d -name .git -exec rm -rf {} \; && git init
   [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
+  rm -rf .git && find . -type d -name .git -exec rm -rf {} \;  &>/dev/null && git init
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi && ls -al /maps
 
   echo -e "\n$hr\nCONFIG\n$hr"
