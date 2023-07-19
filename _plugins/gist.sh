@@ -28,8 +28,7 @@ gh gist clone f21abd90f8d471390aad23d6ecc90d6d /maps/identition/folder8
 gh gist clone 6e2fcc2138be6fb68839a3ede32f0525 /maps/identition/folder9
 gh gist clone b541275ab7deda356feef32d600e44d8 /maps/identition/folder10
 gh gist clone 80c8098f16f3e6ca06893b17a02d910e /maps/identition/folder11
-gh gist clone 4ffc4d02579d5cfd336a553c6da2f267 /maps/identition/folder12
-gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/identition/folder12/folder2
+gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/identition/folder12
 
 mv -f /tmp/maps/19_2_addition.md /maps/addition/README.md
 mv -f /tmp/maps/19_3_multiplication.md /maps/multiplication/README.md
