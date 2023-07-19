@@ -10,7 +10,7 @@ set_target() {
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     export HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh # &>/dev/null
+    echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -34,7 +34,7 @@ jekyll_build() {
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
-  [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR}
+  [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi && ls -al /maps
 
   echo -e "\n$hr\nCONFIG\n$hr"
@@ -43,14 +43,14 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nBUILD\n$hr"
-  find . -type d -name '*.git' -exec rm -rf {} \; && git init
+  find . -type d -name '.git' -exec rm -rf {} \; && git init
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd _site && touch .nojekyll && mv /maps/README.md .
-  if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al .
+  if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
 
   REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
