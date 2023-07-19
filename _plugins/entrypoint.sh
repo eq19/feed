@@ -10,7 +10,7 @@ set_target() {
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
     export HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh  &>/dev/null
+    echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh # &>/dev/null
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -31,37 +31,37 @@ set_target() {
 
 jekyll_build() {
 
-  git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
-  git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
-  git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
+  echo -e "\n$hr\nCONFIG\n$hr"
+  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
+  sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  cd /maps && if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv _assets assets; fi
-  NR=$3 && [[ $1 == "eq19.github.io" ]] && NR=$( tail -n 1 /tmp/gist_files ) || NR=$(cat /tmp/gist_files | awk "NR==$(( NR+1 ))")
-
-  wget -O README.md ${NR} &>/dev/null && ls -al .
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-
-  echo -e "\n$hr\nCONFIG\n$hr"
-  sed -i "1s|^|target_repository: ${OWNER}/$1\n|" _config.yml
-  sed -i "1s|^|repository: $REPO\n|" _config.yml
-  sed -i "1s|^|ID: $(( $3 + 30 ))\n|" _config.yml && cat _config.yml
+  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
+  [[ $1 != "eq19.github.io" ]] && wget -O /maps/workdir/README.md ${NR}
+  if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi
+  find /maps/workdir -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} + && ls -al /maps
 
   echo -e "\n$hr\nBUILD\n$hr"
-  # https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p _plugins/gems
+  cd /maps/workdir && find . -type d -name '*.git' -exec rm -f {} \; && git init
+  # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
-  cd _site && touch .nojekyll && mv /maps/README.md .
-  [[ $1 == "eq19.github.io" ]] && echo "www.eq19.com" > CNAME
+  echo -e "\n$hr\nDEPLOY\n$hr"
+  cd _site && touch .nojekyll && mv /maps/workdir/README.md .
+  if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
+
+  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
-
-  echo -e "\n$hr\nDEPLOY\n$hr"
-  ls -al
 }
 
-# https://unix.stackexchange.com/a/615292/158462
+# Set repository with the update workflow 
+git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
+git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
+git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
+
+# Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
 if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
 TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
