@@ -43,7 +43,8 @@ jekyll_build() {
   find /maps/workdir -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} + && ls -al /maps
 
   echo -e "\n$hr\nBUILD\n$hr"
-  cd /maps/workdir && find . -type d -name '*.git' -exec rm -f {} \; && git init
+  cd /maps && mv -f /tmp/workdir/* .
+  find . -type d -name '*.git' -exec rm -rf {} \; && git init
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
