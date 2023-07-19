@@ -55,6 +55,10 @@ jekyll_build() {
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
 
+# Install yq manually https://lindevs.com/install-yq-on-ubuntu
+# sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+# sudo chmod a+x /usr/local/bin/yq
+
 # Set repository with the update workflow 
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
 git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
@@ -69,4 +73,5 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
 if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
 TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
-jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+# jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+echo $?
