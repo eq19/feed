@@ -1,4 +1,4 @@
-ok#!/usr/bin/env bash
+#!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
@@ -35,7 +35,7 @@ jekyll_build() {
   cd /maps && mv -f /tmp/workdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
   [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
-  # rm -rf .git && find . -type d -name .git -prune -exec rm -rf {} \; && git init &>/dev/null
+  rm -rf .git && find . -type d -name .git -exec rm -rf {} \;  &>/dev/null && git init
   if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi && ls -al /maps
 
   echo -e "\n$hr\nCONFIG\n$hr"
@@ -44,9 +44,9 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nBUILD\n$hr"
-  # find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd _site && touch .nojekyll && mv /maps/README.md .
