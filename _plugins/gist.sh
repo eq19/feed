@@ -28,10 +28,11 @@ gh gist clone f21abd90f8d471390aad23d6ecc90d6d /maps/identition/folder8
 gh gist clone 6e2fcc2138be6fb68839a3ede32f0525 /maps/identition/folder9
 gh gist clone b541275ab7deda356feef32d600e44d8 /maps/identition/folder10
 gh gist clone 80c8098f16f3e6ca06893b17a02d910e /maps/identition/folder11
-gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/identition/folder12
+
+gh gist clone 5b26b3cd8dc42d94ef240496ad56a54f /maps/manifest
 
 mv -f /tmp/maps/19_1_addition.md /maps/addition/README.md
 mv -f /tmp/maps/19_2_multiplication.md /maps/multiplication/README.md
 mv -f /tmp/maps/19_3_exponentiation.md /maps/exponentiation/README.md
 mv -f /tmp/maps/19_4_identition.md /maps/identition/README.md
-mv -f /tmp/maps/19_5_root.md /maps/identition/folder12/README.md
+mv -f /tmp/maps/19_5_root.md /maps/manifest/README.md
