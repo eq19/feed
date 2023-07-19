@@ -31,16 +31,17 @@ set_target() {
 
 jekyll_build() {
 
+  echo -e "\n$hr\nCONFIG\n$hr"
+  [[ $1 == *"github.io"* ]] && OWNER=$2
+  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
+  sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
+
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
   [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
-  if [[ $1 == *"github.io"* ]]; then OWNER=$2; mv /maps/_assets /maps/assets; fi && ls -al /maps
-
-  echo -e "\n$hr\nCONFIG\n$hr"
-  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
-  [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
-  sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
+  if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi && ls -al /maps
 
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
