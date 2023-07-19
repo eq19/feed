@@ -9,8 +9,6 @@ set_target() {
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
   else
-    export HEADER="Accept: application/vnd.github+json"
-    echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
   fi
   
@@ -62,7 +60,13 @@ git config --global user.name "${USER}" && git config --global user.email "${USE
 git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github . && git add .
 git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
+# Get repository structure on gist files
+HEADER="Accept: application/vnd.github+json"
+echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
+PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
+gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
-if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
+[[ ${REPO} != *"github.io"* ]] && ENTRY=$(set_target ${OWNER} ${USER}) || ID=$(set_target ${OWNER} ${ID})
 TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
