@@ -29,7 +29,7 @@ echo "SPAN: ${SPAN}" >> /maps/_config.yml
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
 echo "SPAN-SPIN: ${SPAN} -- ${SPIN}" >> /maps/_config.yml
-  [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
+  return $(( $SPAN + $SPIN ))
 }
 
 jekyll_build() {
