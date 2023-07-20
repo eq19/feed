@@ -1,13 +1,18 @@
-no#!/usr/bin/env bash
+#!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
 set_target() {
+echo "ENTRY-CELL: ${ENTRY} -- ${CELL}" >> /maps/_config.yml
+  
   # Get Structure
-  if [[ -n "$SPIN" ]]; then
+  if [[ -n "$CELL" ]]; then
+    SPIN=$(( CELL * 7 ))
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+echo "SPIN: ${SPIN}" >> /maps/_config.yml
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+echo "ORG: /user/orgs" >> /maps/_config.yml
   fi
   
   # Iterate the Structure
@@ -19,9 +24,11 @@ set_target() {
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
+echo "SPAN: ${SPAN}" >> /maps/_config.yml
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
+echo "SPAN-SPIN: ${SPAN} -- ${SPIN}" >> /maps/_config.yml
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
 
@@ -69,6 +76,6 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
-ENTRY=$(set_target ${OWNER} ${USER}) && SPAN=$? && SPIN=$(( SPAN * 7 ))
-TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
+if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER} ${USER}); fi
+CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
