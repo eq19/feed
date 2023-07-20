@@ -36,9 +36,9 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
-  echo "repository: ${OWNER}/$1\n|" /maps/_config.yml
-  [[ $1 != *"github.io"* ]] && echo "basedir: /$1\n|" /maps/_config.yml
-  echo "id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
+  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
+  sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
