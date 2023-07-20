@@ -3,7 +3,6 @@
 # https://www.hexspin.com/proof-of-confinement/
 
 set_target() {
-echo "ENTRY-CELL: ${ENTRY} -- ${CELL}" >> /maps/_config.yml
   
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
