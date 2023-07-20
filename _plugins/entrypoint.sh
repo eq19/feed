@@ -20,6 +20,7 @@ set_target() {
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
+
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
@@ -52,10 +53,6 @@ jekyll_build() {
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
-
-# Install yq manually https://lindevs.com/install-yq-on-ubuntu
-# sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
-# sudo chmod a+x /usr/local/bin/yq
 
 # Set repository with the update workflow 
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
