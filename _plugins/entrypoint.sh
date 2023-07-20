@@ -3,11 +3,11 @@
 # https://www.hexspin.com/proof-of-confinement/
 
 set_target() {
-echo "ENTRY-ID: ${ENTRY} -- ${ID}" >> /maps/_config.yml
+echo "ENTRY-ID-CELL: ${ENTRY} -- ${ID} -- ${CELL}" >> /maps/_config.yml
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
+    [[ -n "$CELL" ]] && SPIN=$(( 6*CELL+CELL ))
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
 echo "SPIN-ID: ${SPIN} -- ${ID}" >> /maps/_config.yml
   else
@@ -27,7 +27,7 @@ echo "ORG: /user/orgs" >> /maps/_config.yml
 echo "SPAN-ID: ${SPAN} -- ${ID}" >> /maps/_config.yml
   
   # Generate id from the Structure
-  [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi || SPIN=$(( 6*SPIN+SPIN ))
+  [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
 echo "SPAN-SPIN: ${SPAN} -- ${SPIN}" >> /maps/_config.yml
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
@@ -77,5 +77,5 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
 if [[ ${REPO} != *"github.io"* ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ID=$(set_target ${OWNER} ${ID}); fi
-TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
+CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
