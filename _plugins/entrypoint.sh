@@ -6,8 +6,8 @@ set_target() {
 echo "ENTRY-ID-CELL: ${ENTRY} -- ${ID} -- ${CELL}" >> /maps/_config.yml
   
   # Get Structure
-  if [[ "$2" == *"github.io"* ]]; then
-    [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
+  if [[ -n "$CELL" ]]; then
+    SPIN=$(( CELL * 7 ))
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
 echo "SPIN-ID: ${SPIN} -- ${ID}" >> /maps/_config.yml
   else
