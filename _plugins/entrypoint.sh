@@ -3,13 +3,16 @@
 # https://www.hexspin.com/proof-of-confinement/
 
 set_target() {
+sed -i "1s|^|ENTRY-ID: ${ENTRY} ${ID}\n|" /maps/_config.yml
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+sed -i "1s|^|SPIN-ID: ${SPIN} ${ID}\n|" /maps/_config.yml
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+sed -i "1s|^|ORG: /user/orgs\n|" /maps/_config.yml
   fi
   
   # Iterate the Structure
@@ -21,6 +24,7 @@ set_target() {
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
+sed -i "1s|^|SPAN-ID: ${SPAN} ${ID}\n|" /maps/_config.yml
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi || SPIN=$(( 6*SPIN+SPIN ))
