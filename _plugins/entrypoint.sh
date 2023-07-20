@@ -28,6 +28,7 @@ sed -i "1s|^|SPAN-ID: ${SPAN} ${ID}\n|" /maps/_config.yml
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi || SPIN=$(( 6*SPIN+SPIN ))
+sed -i "1s|^|SPAN-SPIN: ${SPAN} ${SPIN}\n|" /maps/_config.yml
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
 
