@@ -65,7 +65,7 @@ echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
 PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
-# Capture the string and the return status https://unix.stackexchange.com/a/615292/158462
+# Capture the string and return status
 ENTRY=$(set_target ${OWNER} ${USER})
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
