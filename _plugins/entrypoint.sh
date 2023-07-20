@@ -3,16 +3,16 @@
 # https://www.hexspin.com/proof-of-confinement/
 
 set_target() {
-sed -i "1s|^|ENTRY-ID: ${ENTRY} ${ID}\n|" /maps/_config.yml
+echo "ENTRY-ID: ${ENTRY} ${ID}" >> /maps/_config.yml
   
   # Get Structure
   if [[ "$2" == *"github.io"* ]]; then
     [[ -n "$ID" ]] && SPIN=$( echo $ID | sed 's/.* //')
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
-sed -i "1s|^|SPIN-ID: ${SPIN} ${ID}\n|" /maps/_config.yml
+echo "SPIN-ID: ${SPIN} ${ID}" >> /maps/_config.yml
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
-sed -i "1s|^|ORG: /user/orgs\n|" /maps/_config.yml
+echo "ORG: /user/orgs" >> /maps/_config.yml
   fi
   
   # Iterate the Structure
@@ -24,11 +24,11 @@ sed -i "1s|^|ORG: /user/orgs\n|" /maps/_config.yml
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
-sed -i "1s|^|SPAN-ID: ${SPAN} ${ID}\n|" /maps/_config.yml
+echo "SPAN-ID: ${SPAN} ${ID}" >> /maps/_config.yml
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi || SPIN=$(( 6*SPIN+SPIN ))
-sed -i "1s|^|SPAN-SPIN: ${SPAN} ${SPIN}\n|" /maps/_config.yml
+echo "SPAN-SPIN: ${SPAN} ${SPIN}" >> /maps/_config.yml
   [[ -z "$2" ]] && echo $(( $SPAN )) || return $(( $SPAN + $SPIN ))
 }
 
@@ -36,9 +36,9 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
-  sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
-  [[ $1 != *"github.io"* ]] && sed -i "1s|^|basedir: /$1\n|" /maps/_config.yml
-  sed -i "1s|^|id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
+  echo "repository: ${OWNER}/$1\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && echo "basedir: /$1\n|" /maps/_config.yml
+  echo "id: $(( $3 + 30 ))\n|" /maps/_config.yml && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
