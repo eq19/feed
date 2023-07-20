@@ -6,8 +6,8 @@ set_target() {
 echo "ENTRY-CELL: ${ENTRY} -- ${CELL}" >> /maps/_config.yml
   
   # Get Structure
-  if [[ -n "$CELL" ]]; then
-    SPIN=$(( CELL * 7 ))
+  if [[ $2 == *"github.io"* ]]; then
+    [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
 echo "SPIN: ${SPIN}" >> /maps/_config.yml
   else
@@ -72,6 +72,6 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
-ENTRY=$(set_target ${OWNER} ${USER})
+[[ "${OWNER}" != "${USER}"]] && ENTRY=$(set_target ${OWNER} ${USER})
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
