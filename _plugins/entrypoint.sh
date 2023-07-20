@@ -8,11 +8,10 @@ echo "ENTRY-CELL: ${ENTRY} -- ${CELL}" >> /maps/_config.yml
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
+    echo "  - spin: ${CELL}" >> /maps/_config.yml
     IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
-echo "SPIN: ${SPIN}" >> /maps/_config.yml
   else
     IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
-echo "ORG: /user/orgs" >> /maps/_config.yml
   fi
   
   # Iterate the Structure
@@ -24,11 +23,9 @@ echo "ORG: /user/orgs" >> /maps/_config.yml
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
-echo "SPAN: ${SPAN}" >> /maps/_config.yml
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
-echo "SPAN-SPIN: ${SPAN} -- ${SPIN}" >> /maps/_config.yml
   return $(( $SPAN + $SPIN ))
 }
 
