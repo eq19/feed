@@ -8,8 +8,8 @@ ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
 
 ENV GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
-RUN apk update && apk upgrade
-RUN apk add -U bash curl github-cli jq yq
-RUN bundle install &>/dev/null && bundle add webrick
+# RUN apk update && apk upgrade
+# RUN apk add -U bash curl github-cli jq yq
+# RUN bundle install &>/dev/null && bundle add webrick
 
 ENTRYPOINT ["entrypoint.sh"]
