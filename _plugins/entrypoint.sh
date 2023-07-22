@@ -69,11 +69,11 @@ git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
 PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
-gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+# gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
-if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
-CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
+# if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
+# CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 # jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
 
 ls -al /mnt
