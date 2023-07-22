@@ -76,6 +76,7 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 # CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 # jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
 
+echo $(whoami)
 
 cd /
 pwd
