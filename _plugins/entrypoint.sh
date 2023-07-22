@@ -92,7 +92,7 @@ pwd
 # echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
 ls -al .
 
-cd /github
+cd /github/workspace
 # echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
 pwd
 ls -al .
