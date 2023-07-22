@@ -62,7 +62,7 @@ jekyll_build() {
 # Set repository with the update workflow 
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
 git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github .
-chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${USER}'/g' .github/workflows/main.yml
+chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
