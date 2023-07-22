@@ -62,37 +62,16 @@ jekyll_build() {
 # Set repository with the update workflow 
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
 git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github .
-chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${USER}'/g' .github/workflows/main.yml
+chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
 HEADER="Accept: application/vnd.github+json"
-# echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
+echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
 PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
-# gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
-# if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
-# CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
-# jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
-
-echo $(whoami)
-
-cd /
-pwd
-ls -al .
-
-cd /mnt
-pwd
-echo "systemctl start runner$(( CELL + 1 )).service" > runner1.sh
-ls -al .
-
-cd /tmp
-pwd
-echo "systemctl start runner$(( CELL + 1 )).service" > runner1.sh
-ls -al .
-
-cd /github/workspace
-echo "systemctl start runner$(( CELL + 1 )).service" > runner1.sh
-pwd
-ls -al .
+if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
+CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
+jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
