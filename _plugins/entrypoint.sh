@@ -15,8 +15,11 @@ set_target() {
   
   # Iterate the Structure
   printf -v array_str -- ',,%q' "${array[@]}"
-  if [[ ! "${array_str},," =~ ",,$1,," ]]; then SPAN=0; echo ${array[0]}
-  elif [[ "${array[-1]}" == "$1" ]]; then SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
+  if [[ ! "${array_str},," =~ ",,$1,," ]]; then
+    SPAN=0; echo ${array[0]}
+  elif [[ "${array[-1]}" == "$1" ]]; then
+    SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
+    # 'systemctl start runner1.service'
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
@@ -57,7 +60,6 @@ jekyll_build() {
 }
 
 # Set repository with the update workflow 
-# gcloud compute ssh --zone "us-central1-a" "instance-template" --project "feedmapping" -- 'systemctl start runner1.service'
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
 rm -rf .github && mv /maps/.github . && sed -i 's/eq19/'${OWNER}'/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
