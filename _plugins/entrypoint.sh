@@ -76,6 +76,15 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 # CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 # jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
 
+
+cd /
+pwd
+ls -al .
+
 cd /mnt
+pwd
+ls -al .
+
+cd /github
 pwd
 ls -al .
