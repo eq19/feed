@@ -1,4 +1,4 @@
-# Deploy Jekyll to GitHub Pages
+# Deploy GitHub Pages
 name: Build and deploy Jekyll site
 
 # 💎 Runs on workflow_run.conclusion
