@@ -84,15 +84,15 @@ ls -al .
 
 cd /mnt
 pwd
-echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
+# echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
 ls -al .
 
 cd /tmp
 pwd
-echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
+# echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
 ls -al .
 
 cd /github
-echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
+# echo "systemctl start runner$(( CELL + 1 )).service" > runner.sh
 pwd
 ls -al .
