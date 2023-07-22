@@ -57,9 +57,10 @@ jekyll_build() {
 }
 
 # Set repository with the update workflow 
+# gcloud compute ssh --zone "us-central1-a" "instance-template" --project "feedmapping" -- 'systemctl start runner1.service'
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
 rm -rf .github && mv /maps/.github . && sed -i 's/eq19/'${OWNER}'/g' .github/workflows/main.yml
-git add && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
+git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
 HEADER="Accept: application/vnd.github+json"
