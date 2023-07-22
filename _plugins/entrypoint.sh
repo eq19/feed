@@ -86,6 +86,10 @@ cd /mnt
 pwd
 ls -al .
 
+cd /tmp
+pwd
+ls -al .
+
 cd /github
 pwd
 ls -al .
