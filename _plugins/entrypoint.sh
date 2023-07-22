@@ -76,4 +76,4 @@ if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); els
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 # jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
 
-ls -al /
+ls -al /mnt
