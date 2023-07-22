@@ -19,7 +19,7 @@ set_target() {
     SPAN=0; echo ${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
-    rm -rf /mnt/disks/Linux/tmp/runner.sh && echo "systemctl start runner2.service" > /mnt/disks/Linux/tmp/runner.sh
+    echo "systemctl start runner$(( CELL + 1 )).service" > /mnt/disks/Linux/tmp/runner.sh
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
@@ -61,7 +61,7 @@ jekyll_build() {
 
 # Set repository with the update workflow 
 git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
-rm -rf .github && mv /maps/.github . && sed -i 's/eq19/'${OWNER}'/g' .github/workflows/main.yml
+rm -rf .github && mv /maps/.github . && sed -i 's/Jekyll/'${OWNER}'/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
