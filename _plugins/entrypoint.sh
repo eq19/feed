@@ -61,7 +61,7 @@ jekyll_build() {
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
   # Set repository with the update workflow 
-  cd ${GITHUB_WORKSPACE} && git config --global --add safe.directory * && rm -rf .github && mv /maps/.github .
+  cd ${GITHUB_WORKSPACE} && git config --global --add safe.directory . && rm -rf .github && mv /maps/.github .
   chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
   git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 }
