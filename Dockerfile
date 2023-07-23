@@ -16,6 +16,6 @@ ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
 RUN apk add -U bash curl github-cli jq yq
 
 # https://bundler.io/v1.16/man/bundle-config.1.html
-RUN bundle install &>/dev/null && bundle add webrick
+RUN bundle install && bundle add webrick
 
 ENTRYPOINT ["entrypoint.sh"]
