@@ -19,7 +19,6 @@ set_target() {
     SPAN=0; echo ${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
-    echo "systemctl start runner$(( CELL + 1 )).service" > /mnt/disks/Linux/tmp/runner.sh
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
@@ -55,16 +54,17 @@ jekyll_build() {
   cd _site && touch .nojekyll && mv /maps/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
 
-  git config --global user.name "${USER}"
-  git config --global user.email "${USER}@users.noreply.github.com"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
-
-  # Set repository with the update workflow 
-  cd ${GITHUB_WORKSPACE} && git config --global --add safe.directory . && rm -rf .github && mv /maps/.github .
-  chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
-  git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 }
+
+# Set update workflow 
+git config --global user.name "${USER}"
+git config --global --add safe.directory ${GITHUB_WORKSPACE}
+git config --global user.email "${USER}@users.noreply.github.com"
+
+rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github   
+git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
 HEADER="Accept: application/vnd.github+json"
@@ -77,5 +77,5 @@ if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); els
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
 
-apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+apk clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 exit $?
