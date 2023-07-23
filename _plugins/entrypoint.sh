@@ -47,6 +47,7 @@ jekyll_build() {
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
+
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
@@ -69,6 +70,7 @@ git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null
 # Get repository structure on gist files
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
+
 PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
