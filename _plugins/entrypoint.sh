@@ -76,3 +76,6 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+exit $?
