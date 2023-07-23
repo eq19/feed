@@ -47,6 +47,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
   
@@ -54,16 +55,11 @@ jekyll_build() {
   cd _site && touch .nojekyll && mv /maps/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
 
-  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
+  git config --global user.name "${USER}"
+  git config --global user.email "${USER}@users.noreply.github.com"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
-
-# Set repository with the update workflow 
-git config --global user.name "${USER}" && git config --global user.email "${USER}@users.noreply.github.com"
-git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github .
-chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
-git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get repository structure on gist files
 HEADER="Accept: application/vnd.github+json"
@@ -75,3 +71,8 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+pwd
+# Set repository with the update workflow 
+# git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github .
+# chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
+# git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
