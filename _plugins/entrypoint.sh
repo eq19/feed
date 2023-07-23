@@ -59,6 +59,11 @@ jekyll_build() {
   git config --global user.email "${USER}@users.noreply.github.com"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
+
+  # Set repository with the update workflow 
+  cd ${GITHUB_WORKSPACE} && git config --global --add safe.directory * && rm -rf .github && mv /maps/.github .
+  chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
+  git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 }
 
 # Get repository structure on gist files
@@ -71,8 +76,3 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
-pwd
-# Set repository with the update workflow 
-# git config --global --add safe.directory ${GITHUB_WORKSPACE} && rm -rf .github && mv /maps/.github .
-# chown -R "$(whoami)" .github && sed -i 's/₠Quantum/'${OWNER}'/g' .github/workflows/main.yml
-# git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
