@@ -45,6 +45,8 @@ jekyll_build() {
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi && ls -al /maps
 
   echo -e "\n$hr\nBUILD\n$hr"
+  CREDENTIAL=${INPUT_TOKEN}
+  [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
 
@@ -59,9 +61,7 @@ jekyll_build() {
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
 
-echo " ${USER} - ${OWNER} - ${ACTOR}"
 # Set update workflow
-[[ -z "$ACTOR" ]] && ACTOR=${USER}
 git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
@@ -69,7 +69,7 @@ git config --global user.email "${ACTOR}@users.noreply.github.com"
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github   
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
-# Get repository structure on gist files
+# Get structure on gist
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
 
@@ -77,7 +77,6 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
-if [[ "${OWNER}" != "${USER}" ]]; then CREDENTIAL=${INPUT_TOKEN}; else CREDENTIAL=${INPUT_OWNER}; fi
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=FeedMapping; fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
-# jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
