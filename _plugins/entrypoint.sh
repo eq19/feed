@@ -46,7 +46,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  REMOTE_REPO="https://${ACTOR}:${GITHUB_TOKEN}@github.com/${OWNER}/$1.git"
+  REMOTE_REPO="https://${ACTOR}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
 
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
