@@ -69,7 +69,7 @@ git config --global user.email "${ACTOR}@users.noreply.github.com"
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github   
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
-# Get structure on gist
+# Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
 
