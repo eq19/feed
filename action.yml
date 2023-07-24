@@ -5,6 +5,9 @@ inputs:
   provider:
     description: 'The deploy provider'
     required: true
+  owner:
+    description: 'The deploy owner'
+    required: false
   token:
     description: 'The deploy token'
     required: false
