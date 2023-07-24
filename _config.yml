@@ -1,4 +1,4 @@
-description: Just another documentation theme compatible with GitHub Pages
+description: Mapping the quantum way
 
 # debug:
 #   dist: false
@@ -6,9 +6,10 @@ description: Just another documentation theme compatible with GitHub Pages
 #   shortcodes: true
 
 lsi: false
-theme: null
+title: ₠Quantum
 incremental: false
 highlighter: rouge
+
 gist:
   noscript: false
 kramdown:
