@@ -46,7 +46,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  REMOTE_REPO="https://${USER}:${INPUT_TOKEN}@github.com/${OWNER}/$1.git"
+  REMOTE_REPO="https://${ACTOR}:${GITHUB_TOKEN}@github.com/${OWNER}/$1.git"
 
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
@@ -59,7 +59,8 @@ jekyll_build() {
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
 
-# Set update workflow 
+# Set update workflow
+[[ -z "$ACTOR" ]] && ACTOR=${USER}
 git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
