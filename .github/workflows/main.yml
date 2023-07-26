@@ -51,7 +51,7 @@ jobs:
           owner: ${{ secrets.JEKYLL_GITHUB_OWNER }}
  
       - name: 💎 Build on COS
-        if: github.actor == github.repository_owner
+        if: github.ref_name == 'main'
         uses: eq19/lexerd@v3
         with:
           pre_build_commands: 'make build'
