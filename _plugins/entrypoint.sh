@@ -36,7 +36,7 @@ jekyll_build() {
   [[ $1 == *"github.io"* ]] && OWNER=$2
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
-  sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && cat /maps/_config.yml
+  sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $3 &>/dev/null && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
@@ -71,8 +71,7 @@ git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null
 
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
-echo ${INPUT_TOKEN} | gh auth login --with-token && gist.sh &>/dev/null
-
+echo ${INPUT_TOKEN} | gh auth login --with-token
 PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
