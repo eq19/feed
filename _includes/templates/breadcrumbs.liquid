@@ -1,8 +1,13 @@
 <div class="navigation-top d-flex flex-justify-between">
     <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
         <li class="breadcrumb-item">
-            <a class="no-underline" href="{% if page.path == "README.md" %}{{ docs.source.path }}{%- else -%}{{ site.baseurl }}/{%- endif -%}" title="Up">
+            {%- if page.path == "README.md" -%}
+                <a class="no-underline" href="{{ docs.source.path }}" title="Up">
                 <i class="fa fa-arrow-up"></i>
+            {%- else -%}
+                <a class="no-underline" href="{{ site.baseurl }}/" title="Up">
+                <i class="fa fa-arrow-up"></i>
+			{%- endif -%}
             </a>
         </li>
         {%- case page.url -%}
