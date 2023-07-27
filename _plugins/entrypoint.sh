@@ -31,10 +31,14 @@ set_target() {
 }
 
 jekyll_build() {
-
+echo $(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
+
+  PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
+  sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
+  
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $3 &>/dev/null && cat /maps/_config.yml
 
@@ -66,7 +70,8 @@ git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
 
-rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github   
+rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
+[[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get structure on gist files
@@ -76,6 +81,6 @@ PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
-if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} "eq19"); else ENTRY=FeedMapping; fi
+if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
