@@ -1,25 +1,28 @@
 <div class="navigation-top d-flex flex-justify-between">
     <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
         <li class="breadcrumb-item">
-            {%- if page.path == "README.md" -%}
-                {%- if site.repository contains "eq19/" or site.repository contains "github.io" -%}
-                    <a class="no-underline" href="https://eq19.com/" title="Home">
-                    <i class="fa fa-home"></i>
-                {%- else -%}
-                    <a class="no-underline" href="{{ docs.source.path }}" title="Up">
-                    <i class="fa fa-arrow-up"></i>
-                {%- endif -%}
-            {%- else -%}
-                <a class="no-underline" href="{{ site.baseurl }}/" title="Up">
-                <i class="fa fa-arrow-up"></i>
-            {%- endif -%}
+            <a class="no-underline" href="https://eq19.com/" title="Home">
+            <i class="fa fa-home"></i>
             </a>
         </li>
-        <li class="breadcrumb-item">
-            {%- unless site.repository contains "eq19.github.io" -%}
-                {{ site.repository | split: "/" | first }}
-            {%- endunless -%}
-        </li>
+
+        {%- if site.repository != "eq19/eq19.github.io" -%}
+            {%- if site.repository contains "eq19/" -%}
+                <li class="breadcrumb-item">
+                {{ site.repository | split: "/" | last }}</a>
+                </li>
+            {%- else -%}
+                <li class="breadcrumb-item">
+                {{ site.repository | split: "/" | first }}</a>
+                </li>
+                {%- unless site.repository contains "github.io" -%}
+                    <li class="breadcrumb-item">
+                    {{ site.repository | split: "/" | last }}</a>
+                    </li>
+                {%- endunless -%}
+            {%- endif -%}  
+        {%- endif -%}        
+
         {%- case page.url -%}
             {%- when "/search.html" -%}
                 <li class="breadcrumb-item" aria-current="page">
