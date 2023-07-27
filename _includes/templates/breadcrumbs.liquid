@@ -2,7 +2,7 @@
     <ul class="breadcrumb" role="navigation" aria-label="breadcrumbs navigation">
         <li class="breadcrumb-item">
             {%- if page.path == "README.md" -%}
-                {%- if site.repository contains "github.io" -%}
+                {%- if site.repository contains "eq19/" || site.repository contains "github.io" -%}
                     <a class="no-underline" href="https://eq19.com/" title="Home">
                     <i class="fa fa-home"></i>
                 {%- else -%}
