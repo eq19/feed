@@ -16,9 +16,9 @@
             </a>
         </li>
         <li class="breadcrumb-item">
-                {%- unless site.repository contains "eq19.github.io" -%}
-                    {{ site.repository | split: "/" | first }}
-                {%- endunless -%}
+            {%- unless site.repository contains "eq19.github.io" -%}
+                {{ site.repository | split: "/" | first }}
+            {%- endunless -%}
         </li>
         {%- case page.url -%}
             {%- when "/search.html" -%}
