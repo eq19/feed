@@ -13,7 +13,7 @@
                 </li>
             {%- else -%}
                 <li class="breadcrumb-item">
-                {{ site.repository | split: "/" | first }}</a>
+                {{ site.repository | split: "/" | first }}{{ docs.name }}</a>
                 </li>
                 {%- unless site.repository contains "github.io" -%}
                     <li class="breadcrumb-item">
