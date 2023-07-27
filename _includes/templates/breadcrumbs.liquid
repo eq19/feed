@@ -28,7 +28,11 @@
                 {%- assign blocks = page.path | split: "/" -%}
                 {%- for block in blocks -%}
                     <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
-                        {%- if forloop.last -%}
+                        {%- if forloop.first -%}
+                            {%- unless site.repository contains "eq19.github.io" -%}
+                                {{ site.repository | split: "/" | first }}
+                            {%- endunless -%}
+                        {%- elsif forloop.last -%}
                             {{ page.name }}
                         {%- else -%}
                             <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block }}</a>
