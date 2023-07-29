@@ -9,7 +9,7 @@
         {%- if site.repository != "eq19/eq19.github.io" -%}
             {%- if site.repository contains "eq19/" -%}
                 <li class="breadcrumb-item">
-                <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last }}</a>
+                <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
                 </li>
             {%- else -%}
                 <li class="breadcrumb-item">
@@ -17,7 +17,7 @@
                 </li>
                 {%- unless site.repository contains "github.io" -%}
                     <li class="breadcrumb-item">
-                    <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last }}</a>
+                    <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
                     </li>
                 {%- endunless -%}
             {%- endif -%}  
@@ -37,9 +37,9 @@
                 {%- for block in blocks -%}
                     <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
                         {%- if forloop.last -%}
-                            {{ page.name }}
+                            {{ page.name | capitalize }}
                         {%- else -%}
-                            <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block }}</a>
+                            <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block | capitalize }}</a>
                         {%- endif -%}
                     </li>
                 {%- endfor -%}
