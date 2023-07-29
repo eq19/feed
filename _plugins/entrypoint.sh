@@ -77,7 +77,7 @@ git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token
-PATTERN="sort_by(.created_at)|.[] | select(.public==true).files.[].raw_url"
+PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.filename != "README.md").raw_url'
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
