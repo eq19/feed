@@ -37,7 +37,7 @@
                 {%- for block in blocks -%}
                     <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
                         {%- if forloop.last -%}
-                            {{ page.name | split: "." | first | capitalize }}
+                            {{ page.name | split: "." | first | capitalize | replace: "Readme", "Intro"  }}
                         {%- else -%}
                             <a href="{{ site.baseurl }}/{% for block in blocks limit: forloop.index %}{{ block }}/{% endfor %}">{{ block | capitalize }}</a>
                         {%- endif -%}
