@@ -3,6 +3,8 @@
 rm -rf /tmp/workdir
 
 gh repo clone https://github.com/eq19/eq19.github.io.wiki.git /tmp/workdir
+mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
+
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/workdir/addition
 mv -f /tmp/workdir/file01.md /tmp/workdir/addition/README.md
 
