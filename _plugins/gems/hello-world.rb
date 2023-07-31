@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      "Hello World, #{@text}!"
+      "This section is #{@text}!"
     end
   end
 end
