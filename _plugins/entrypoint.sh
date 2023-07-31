@@ -44,7 +44,7 @@ echo $(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /maps && mv -f /tmp/workdir/* .
-  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 1 ))")
+  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
   [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi && ls -al /maps
 
