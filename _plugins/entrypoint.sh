@@ -36,7 +36,7 @@ jekyll_build() {
   [[ $1 == *"github.io"* ]] && OWNER=$2
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
 
-  PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
+  [[ "${OWNER}" != "eq19" ]] && PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
   [[ -n "$PROPERTY" ]] && sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
   
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
