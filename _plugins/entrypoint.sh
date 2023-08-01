@@ -31,7 +31,7 @@ set_target() {
 }
 
 jekyll_build() {
-echo $(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
+
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
