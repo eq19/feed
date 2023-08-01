@@ -5,10 +5,10 @@ rm -rf /tmp/workdir
 SITE_WIKI_URL=https://github.com/${OWNER}/$1.wiki.git
 git ls-remote ${SITE_WIKI_URL} > /dev/null 2>&1
 
-if [[ "$?" != 0 ]]; then
-  git clone https://github.com/eq19/eq19.github.io.wiki.git /tmp/workdir
-else
+if [[ "$?" == 0 ]]; then
   git clone ${SITE_WIKI_URL}/tmp/workdir
+else
+  git clone https://github.com/eq19/eq19.github.io.wiki.git /tmp/workdir
 fi
 
 mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
