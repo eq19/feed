@@ -2,11 +2,11 @@
 
 rm -rf /tmp/workdir
 
-WIKI=https://github.com/${OWNER}/$1.wiki.git
+WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
 git ls-remote ${WIKI} > /dev/null 2>&1
-git clone $([ "$?" == 0 ] && echo $WIKI || echo $BASE) /tmp/workdir
+git clone $([ $? == 0 ] && echo $WIKI || echo $BASE) /tmp/workdir
 mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/workdir/addition
