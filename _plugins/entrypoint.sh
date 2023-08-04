@@ -27,6 +27,7 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
+  [[ -n "$CELL" ]] && echo "  - span: ${SPAN}" >> /maps/_config.yml
   return $(( $SPAN + $SPIN ))
 }
 
