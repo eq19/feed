@@ -40,6 +40,7 @@ jekyll_build() {
   [[ "${OWNER}" != "eq19" ]] && PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
   [[ -n "$PROPERTY" ]] && sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
   
+  myArray=("maps" "feed" "lexer" "parser" "syntax" "grammar")
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} $3 &>/dev/null && cat /maps/_config.yml
 
