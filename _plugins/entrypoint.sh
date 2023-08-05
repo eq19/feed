@@ -41,7 +41,7 @@ jekyll_build() {
   [[ -n "$PROPERTY" ]] && sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
   
   MYPATH=("io" "maps" "feed" "lexer" "parser" "syntax" "grammar")
-  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /${MYPATH[$(($3 % 7))]}\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /${MYPATH[$((($3 + 1) % 7))]}\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} $3 &>/dev/null && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
