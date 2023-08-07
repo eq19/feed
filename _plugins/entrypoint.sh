@@ -32,9 +32,9 @@ set_target() {
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
   if [[ -n "$CELL" ]]; then
     echo "  - span: ${SPAN}" >> /maps/_config.yml
-    echo "  - pinned_repo:  [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
+    echo "  - pinned:  [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  - user_orgs:  [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
-    echo "  - desc:  [$(cat /tmp/desc)]" >> /maps/_config.yml
+    echo "  - orgs_description:  [$(cat /tmp/desc)]" >> /maps/_config.yml
   fi
   return $(( $SPAN + $SPIN ))
 }
