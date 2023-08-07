@@ -7,10 +7,9 @@ set_target() {
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
-    pinned_repos.rb ${ENTRY} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
-    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+    pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    IFS=', '; array=($(cat /tmp/pinned_repo))
   else
-    gh api -H "${HEADER}" /user/orgs --jq '.[].description' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/desc
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
   fi
