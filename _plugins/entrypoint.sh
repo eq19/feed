@@ -11,7 +11,7 @@ set_target() {
     pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
-    gh api -H "${HEADER}" /user/orgs --jq '.[].description' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/desc_orgs
+    gh api -H "${HEADER}" /user/orgs --jq '.[].description' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/desc
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
   fi
@@ -30,8 +30,12 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
-  [[ -n "$CELL" ]] && echo "  - span: ${SPAN}" >> /maps/_config.yml
-  [[ -n "$CELL" ]] && echo "  - orgs:  [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
+  if [[ -z "$CELL" ]]; then
+    echo "  - span: ${SPAN}" >> /maps/_config.yml
+    echo "  - orgs:  [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
+    echo "  - orgs:  [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
+    echo "  - orgs:  [$(cat /tmp/desc)]" >> /maps/_config.yml
+  fi
   return $(( $SPAN + $SPIN ))
 }
 
