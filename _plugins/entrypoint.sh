@@ -8,9 +8,12 @@ set_target() {
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
     echo "  - spin: ${CELL}" >> /maps/_config.yml
-    IFS=', '; array=($(pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g"))
+    pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    IFS=', '; array=($(cat /tmp/pinned_repo))
   else
-    IFS=', '; array=($(gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g"))
+    gh api -H "${HEADER}" /user/orgs --jq '.[].description' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/desc_orgs
+    gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
+    IFS=', '; array=($(cat /tmp/user_orgs))
   fi
   
   # Iterate the Structure
@@ -28,6 +31,7 @@ set_target() {
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
   [[ -n "$CELL" ]] && echo "  - span: ${SPAN}" >> /maps/_config.yml
+  [[ -n "$CELL" ]] && echo "  - orgs:  [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   return $(( $SPAN + $SPIN ))
 }
 
