@@ -34,7 +34,6 @@ set_target() {
     echo "  - span: ${SPAN}" >> /maps/_config.yml
     echo "  - pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  - user_orgs: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
-    echo "  - orgs_description: [$(cat /tmp/desc)]" >> /maps/_config.yml
   fi
   return $(( $SPAN + $SPIN ))
 }
