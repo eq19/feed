@@ -7,7 +7,6 @@ set_target() {
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
-    echo "  - spin: ${CELL}" >> /maps/_config.yml
     pinned_repos.rb ${OWNER} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
@@ -31,7 +30,7 @@ set_target() {
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
   if [[ -n "$CELL" ]]; then
-    echo "  - span: ${SPAN}" >> /maps/_config.yml
+    echo "  - spin: [${SPAN}, ${CELL}]" >> /maps/_config.yml
     echo "  - pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  - organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
