@@ -30,7 +30,7 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
-  if [[ -z "$CELL" ]]; then
+  if [[ -n"$CELL" ]]; then
     echo "  - span: ${SPAN}" >> /maps/_config.yml
     echo "  - pinned_repo:  [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  - user_orgs:  [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
