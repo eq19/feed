@@ -1,5 +1,5 @@
 {%- include templates/leads/baseline.liquid -%}
 ```tip
-{% hello inherited from %} {{ item_baseline }}
+{% hello inherited by %} <a href="{{ item_baseline | prepend:"https://" | append: ".github.io/" }}">the spin</a>
 ```
 {%- include common/core/list.liquid -%}
