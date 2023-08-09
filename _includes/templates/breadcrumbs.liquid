@@ -9,15 +9,15 @@
         {%- if site.repository != "eq19/eq19.github.io" -%}
             {%- if site.repository contains "eq19/" -%}
                 <li class="breadcrumb-item">
-                <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
+                    <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
                 </li>
             {%- else -%}
                 <li class="breadcrumb-item">
-                <a href="/">{{ site.property }}</a>
+                    <a href="/">{{ site.property }}</a>
                 </li>
                 {%- unless site.repository contains "github.io" -%}
                     <li class="breadcrumb-item">
-                    <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
+                        <a href="{{ site.baseurl }}/">{{ site.repository | split: "/" | last | capitalize }}</a>
                     </li>
                 {%- endunless -%}
             {%- endif -%}  
@@ -33,6 +33,7 @@
                     404
                 </li>
             {%- else -%}
+                {%- include templates/leads/baseline.liquid -%}
                 {%- assign blocks = page.path | split: "/" -%}
                 {%- for block in blocks -%}
                     <li class="breadcrumb-item" {% if forloop.last %}aria-current="page"{% endif %}>
