@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      "This section is #{@text}"
+      "This section is #{@text} by [the spin]({{ item_baseline | prepend:"https://" | append: ".github.io/" }})"
     end
   end
 end
