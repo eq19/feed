@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      "This _[child section]({{ item_baseline | prepend:'https://' | append: '.github.io/' }})_ is #{@text}"
+      "This _child section_ is #{@text}"
     end
   end
 end
