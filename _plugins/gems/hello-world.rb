@@ -7,7 +7,7 @@ module Jekyll
     end
 
     def render(context)
-      "This _section_ is #{@text}"
+      "This _child section_ is #{@text}"
     end
   end
 end
