@@ -28,7 +28,7 @@ gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/folde
 gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/folder17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folder18
 
-mv -f /tmp/addition/* /tmp/workdir/addition
+mv -f /tmp/gistdir/* /tmp/workdir
 mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 mv -f /tmp/workdir/addition/1st-zone.md /tmp/workdir/addition/README.md
 mv -f /tmp/workdir/multiplication/2nd-zone.md /tmp/workdir/multiplication/README.md
