@@ -31,8 +31,8 @@ gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folde
 mv -f /tmp/gistdir/* /tmp/workdir
 mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 mv -f /tmp/workdir/addition/1st-zone.md /tmp/workdir/addition/README.md
+mv -f /tmp/workdir/identition/4th-zone.md /tmp/workdir/identition/README.md
 mv -f /tmp/workdir/multiplication/2nd-zone.md /tmp/workdir/multiplication/README.md
 mv -f /tmp/workdir/exponentiation/3rd-zone.md /tmp/workdir/exponentiation/README.md
-mv -f /tmp/workdir/identition/4th-zone.md /tmp/workdir/identition/README.md
 
 find /tmp/workdir -type d -name .git -prune -exec rm -rf {} \;
