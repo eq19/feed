@@ -52,15 +52,15 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} $3 &>/dev/null && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
-  cd /maps && mv -f /tmp/workdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
+  cd /maps && cp -R /tmp/gistdir/* /tmp/workdir/ && mv -f /tmp/workdir/* .
   [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
   if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi && ls -al /maps
-
+  
   echo -e "\n$hr\nBUILD\n$hr"
   CREDENTIAL=${INPUT_TOKEN}
   [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  find /maps -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
 
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
