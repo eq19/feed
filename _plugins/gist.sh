@@ -3,8 +3,9 @@
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
-git ls-remote ${WIKI} > /dev/null 2>&1
 rm -rf /tmp/workdir /tmp/gistdir && mkdir /tmp/gistdir
+
+git ls-remote ${WIKI} > /dev/null 2>&1
 git clone $([ $? == 0 ] && echo $WIKI || echo $BASE) /tmp/workdir
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/addition
@@ -34,7 +35,6 @@ gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folde
 cp -R /tmp/gistdir/* /tmp/workdir/
 mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 mv -f /tmp/workdir/addition/1st_zone.md /tmp/workdir/addition/README.md
-mv -f /tmp/workdir/identition/4th_zone.md /tmp/workdir/identition/README.md
 mv -f /tmp/workdir/multiplication/2nd_zone.md /tmp/workdir/multiplication/README.md
 mv -f /tmp/workdir/exponentiation/3rd_zone.md /tmp/workdir/exponentiation/README.md
 
