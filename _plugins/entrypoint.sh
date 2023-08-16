@@ -60,10 +60,10 @@ jekyll_build() {
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -q -p /maps/_plugins/gems
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
+  cd _site && touch .nojekyll && mv ${GITHUB_WORKSPACE}/tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
   
   CREDENTIAL=${INPUT_TOKEN}
