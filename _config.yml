@@ -5,23 +5,11 @@ description: Mapping the quantum way across prime identity
 #   compress: true
 #   shortcodes: true
 
+source: .
 lsi: false
 title: ₠Quantum
 incremental: false
 highlighter: rouge
-
-source              : .
-destination         : ./_site
-collections_dir     : .
-plugins_dir         : /maps/_plugins/gems # takes an array of strings and loads plugins in that order
-layouts_dir         : /maps/_layouts
-data_dir            : /maps/_data
-includes_dir        : /maps/_includes
-sass:
-  sass_dir: /maps/_sass
-collections:
-  posts:
-    output          : true
 
 gist:
   noscript: false
