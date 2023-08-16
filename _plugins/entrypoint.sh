@@ -58,7 +58,7 @@ jekyll_build() {
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
   
   echo -e "\n$hr\nBUILD\n$hr"
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} + && rm -rf .git
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
