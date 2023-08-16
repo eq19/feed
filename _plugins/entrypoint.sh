@@ -52,15 +52,15 @@ jekyll_build() {
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} $3 &>/dev/null && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
+  cd /tmp/workdir && cp -R /tmp/gistdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
-  cd /tmp/workdir && cp -R /tmp/gistdir/* . && mv -f /maps/_* .
   [[ $1 != "eq19.github.io" ]] && wget -O README.md ${NR} &>/dev/null
   find /tmp/workdir -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al /tmp/workdir
+  if [[ $1 == *"github.io"* ]]; then mv /map/_assets assets; fi && ls -al /tmp/workdir
   
   echo -e "\n$hr\nBUILD\n$hr"
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /tmp/workdir/_plugins/gems
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build -t --profile --config /maps/_config.yml
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
