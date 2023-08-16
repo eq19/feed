@@ -1,18 +1,18 @@
 {%- if page.path contains "folder13/" -%}
-  {% assign item_baseline = site.track.pinned[0] | prepend: "/" -%}
+  {%- assign item_baseline = site.track.pinned[0] | prepend: "/" -%}
 {%- endif -%}
-{%- if page.path contains "folder14/" +%}
+{%- if page.path contains "folder14/" -%}
   {%- assign item_baseline = site.track.pinned[1] | prepend: "/" -%}
 {%- endif -%}
-{%- if page.path contains "folder15/" +%}
+{%- if page.path contains "folder15/" -%}
   {%- assign item_baseline = site.track.pinned[2] | prepend: "/" -%}
 {%- endif -%}
 {%- if page.path contains "folder16/" -%}
-  {% assign item_baseline = site.track.pinned[3] | prepend: "/" -%}
+  {%- assign item_baseline = site.track.pinned[3] | prepend: "/" -%}
 {%- endif -%}
 {%- if page.path contains "folder17/" -%}
   {%- assign item_baseline = site.track.pinned[4] | prepend: "/" -%}
-{% endif -%}
+{%- endif -%}
 {%- if page.path contains "folder18/" -%}
   {%- assign item_baseline = site.track.pinned[5] | prepend: "/" -%}
 {%- endif -%}
@@ -21,7 +21,7 @@
   {%- assign item_baseline = site.track.organization[0] | prepend:"https://" | append: ".github.io/" -%}
 {%- endif -%}
 {%- if page.path contains "folder2/" -%}
-  {% assign item_baseline = site.track.organization[1] | prepend:"https://" | append: ".github.io/" -%}
+  {%- assign item_baseline = site.track.organization[1] | prepend:"https://" | append: ".github.io/" -%}
 {%- endif -%}
 {%- if page.path contains "folder3/" -%}
   {%- assign item_baseline = site.track.organization[2] | prepend:"https://" | append: ".github.io/" -%}
@@ -37,7 +37,7 @@
 {%- endif -%}
 {%- if page.path contains "folder7/" -%}
   {%- assign item_baseline = site.track.organization[6] | prepend:"https://" | append: ".github.io/" -%}
-{% endif -%}
+{%- endif -%}
 {%- if page.path contains "folder8/" -%}
   {%- assign item_baseline = site.track.organization[7] | prepend:"https://" | append: ".github.io/" -%}
 {%- endif -%}
