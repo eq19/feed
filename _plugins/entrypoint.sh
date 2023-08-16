@@ -53,23 +53,22 @@ jekyll_build() {
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
-  cd /maps && cp -R /tmp/gistdir/* /tmp/workdir/ && mv -f /tmp/workdir/* .
-  [[ $1 != "eq19.github.io" ]] && wget -O /maps/README.md ${NR} &>/dev/null
-  if [[ $1 == *"github.io"* ]]; then mv /maps/_assets /maps/assets; fi && ls -al /maps
+  cd /tmp/workdir && cp -R /tmp/gistdir/* . && mv -f /maps/_* .
+  [[ $1 != "eq19.github.io" ]] && wget -O README.md ${NR} &>/dev/null
+  find /tmp/workdir -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al /tmp/workdir
   
   echo -e "\n$hr\nBUILD\n$hr"
-  CREDENTIAL=${INPUT_TOKEN}
-  [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
-  find /maps -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
-
   # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -s /maps -p /maps/_plugins/gems
+  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /tmp/workdir/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd _site && touch .nojekyll && mv /maps/README.md .
+  cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
-
+  
+  CREDENTIAL=${INPUT_TOKEN}
+  [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
+  REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
   git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
