@@ -49,21 +49,21 @@ jekyll_build() {
   MYPATH=("io" "maps" "feed" "lexer" "parser" "syntax" "grammar")
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   # [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /${MYPATH[$((($3 + 1) % 7))]}\n|" /maps/_config.yml
-  sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} ${GITHUB_WORKSPACE} $3 &>/dev/null && cat /maps/_config.yml
+  sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml && gist.sh $1 ${OWNER} $3 &>/dev/null && cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
+  cd /tmp/workdir && cp -R /tmp/gistdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
-  cd ${GITHUB_WORKSPACE}/tmp/workdir && cp -R /tmp/gistdir/* .
   [[ $1 != "eq19.github.io" ]] && wget -O README.md ${NR} &>/dev/null
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
   
   echo -e "\n$hr\nBUILD\n$hr"
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} + && rm -rf .git
-  # Jekyll Quick Reference (Cheat Sheet) https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
+  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd _site && touch .nojekyll && mv ${GITHUB_WORKSPACE}/tmp/workdir/README.md .
+  cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
   
   CREDENTIAL=${INPUT_TOKEN}
