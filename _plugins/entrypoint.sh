@@ -59,9 +59,9 @@ jekyll_build() {
   cd /tmp/workdir && cp -R /tmp/gistdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
   [[ $1 != "eq19.github.io" ]] && wget -O README.md ${NR} &>/dev/null
-  mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
+# mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
-cat /tmp/workdir/_data/orgs.json   
+cat /tmp/orgs.json   
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
