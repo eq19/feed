@@ -12,7 +12,6 @@ set_target() {
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
-	rm -rf /tmp/orgs.json
   fi
   
   # Iterate the Structure
