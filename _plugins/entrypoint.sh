@@ -12,6 +12,7 @@ set_target() {
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
+	rm -rf /tmp/orgs.json
   fi
   
   # Iterate the Structure
@@ -23,6 +24,10 @@ set_target() {
     [[ -n "$CELL" ]] && pinned_repos.rb ${ENTRY} | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
   else
     for ((i=0; i < ${#array[@]}; i++)); do
+      if [[ $2 != *"github.io"* ]]; then
+	    gh api -H "${HEADER}" /orgs/${array[$i]} >> /tmp/orgs.json
+        if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
+	  fi
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
     done
   fi
@@ -55,8 +60,9 @@ jekyll_build() {
   cd /tmp/workdir && cp -R /tmp/gistdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
   [[ $1 != "eq19.github.io" ]] && wget -O README.md ${NR} &>/dev/null
+  mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
-  
+cat /tmp/workdir/_data/orgs.json   
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
