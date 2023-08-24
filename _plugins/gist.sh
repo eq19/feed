@@ -31,5 +31,5 @@ gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folde
 find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/gistdir -type f -name "*zone.md" -prune -exec sh -c 'mkdir "${1%_*}" && mv -f "$1" "${1%_*}/README.md"' sh {} \;
+find /tmp/gistdir -type f -name "*zone.md" -prune -exec sh -c 'mkdir -p "${1%_*}" && mv -f "$1" "${1%_*}/README.md"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
