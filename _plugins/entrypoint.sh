@@ -16,7 +16,6 @@ set_target() {
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
       PIN2=$(pinned_repos.rb ${array[$i]} | yq eval -P | sed "s/ /| /g")
-      echo $PIN2
       PIN2="maps|feed|lexer|parser|syntax|grammar"
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + {"key1": "value1"} + {"key2": "'$PIN2'"}' >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
