@@ -12,13 +12,12 @@ set_target() {
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
-
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      IFS=', '; pin=($(pinned_repos.rb ${array[$i]} | yq eval -P | sed "s/ /, /g"))
-      #PIN2="maps;feed;lexer;parser;syntax;grammar"
-      #gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + {"key1": "value1"} + {"key2": "'$PIN2'"}' >> /tmp/orgs.json
-      gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + {"key1": "value1"} + {"key2": ["'${pin[0]}'","'${pin[1]}'"]}' >> /tmp/orgs.json
+      IFS=', '; pr=($(pinned_repos.rb ${array[$i]} | yq eval -P | sed "s/ /, /g"))
+      gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + \
+      {"key1": "value1"} + \
+      {"key2": ["'${pr[0]}'","'${pr[1]}'","'${pr[2]}'","'${pr[3]}'","'${pr[4]}'","'${pr[5]}'"]}' >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
     done
     echo "]" >> /tmp/orgs.json
