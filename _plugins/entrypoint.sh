@@ -14,10 +14,11 @@ set_target() {
     IFS=', '; array=($(cat /tmp/user_orgs))
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      IFS=', '; pr=($(pinned_repos.rb ${array[$i]} | yq eval -P | sed "s/ /, /g"))
+      IFS=', '; p1=($(pinned_repos.rb ${array[$i]} 1 | yq eval -P | sed "s/ /, /g"))
+      IFS=', '; p2=($(pinned_repos.rb ${array[$i]} 2 | yq eval -P | sed "s/ /, /g"))      
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. +
-      {"key1": "value1"} +
-      {"key2": ["'${pr[0]}'","'${pr[1]}'","'${pr[2]}'","'${pr[3]}'","'${pr[4]}'","'${pr[5]}'"]}' >> /tmp/orgs.json
+        {"key1": "value1"} +
+        {"key2": ["'${p2[0]}'","'${p2[1]}'","'${p2[2]}'","'${p2[3]}'","'${p2[4]}'","'${p2[5]}'"]}' >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
     done
     echo "]" >> /tmp/orgs.json
