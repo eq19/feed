@@ -13,6 +13,7 @@ require 'open-uri'
 # end
 
 username = ARGV.first
-profile_url = "https://github.com/#{username}"
+mode = ARGV.last
+profile_url = "https://github.com/#{username}?view_as=#{mode}"
 page = Nokogiri::HTML(URI.open(profile_url))
 page.css("span.repo").each { |repo| puts repo.text }
