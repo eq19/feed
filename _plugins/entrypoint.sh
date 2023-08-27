@@ -5,7 +5,7 @@
 set_target() {
   
   # Get Structure
-  if [[ $2 == *"github.io"* ]]; then
+    if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
     pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
@@ -89,6 +89,8 @@ git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
 
+CREDENTIAL=${INPUT_TOKEN}
+[[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
 [[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
