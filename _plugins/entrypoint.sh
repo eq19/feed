@@ -15,7 +15,8 @@ set_target() {
 
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + {"key2": "value2"}' >> /tmp/orgs.json
+      PIN = '. + {"key2": "value2"}'
+      gh api -H "${HEADER}" /orgs/${array[$i]} | jq "${PIN}" >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
     done
     echo "]" >> /tmp/orgs.json
