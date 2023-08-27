@@ -15,16 +15,7 @@ set_target() {
 
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-    
-BUCKET_NAME=testbucket
-OBJECT_NAME=testworkflow-2.0.1.jar
-TARGET_LOCATION=/opt/test/testworkflow-2.0.1.jar
-
-MYPATH=$( jq -n \
-                  --arg bn "$BUCKET_NAME" \
-                  --arg on "$OBJECT_NAME" \
-                  --arg tl "$TARGET_LOCATION" \
-                  '{bucketname: $bn, objectname: $on, targetlocation: $tl}' )
+      MYPATH='%s\n' "${array[@]}" | jq -R . | jq -s .
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. + {"key1": "value1"} + {"key2": $MYPATH}' >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
     done
