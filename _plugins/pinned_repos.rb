@@ -12,8 +12,8 @@ require 'open-uri'
 #  exit 1
 # end
 
-username = ARGV.first
-mode = ARGV.last
+username = ARGV[0]
+mode = ARGV[1]
 profile_url = "https://github.com/#{username}?view_as=#{mode}"
 page = Nokogiri::HTML(URI.open(profile_url))
 page.css("span.repo").each { |repo| puts repo.text }
