@@ -7,15 +7,15 @@ set_target() {
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
-    pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      IFS=', '; p1=($(pinned_repos.rb ${array[$i]} member | yq eval -P | sed "s/ /, /g"))
-      IFS=', '; p2=($(pinned_repos.rb ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
+      IFS=', '; p1=($(pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${array[$i]} member | yq eval -P | sed "s/ /, /g"))
+      IFS=', '; p2=($(pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. +
         {"key1": ["'${p1[0]}'","'${p1[1]}'","'${p1[2]}'","'${p1[3]}'","'${p1[4]}'","'${p1[5]}'"]} +
         {"key2": ["'${p2[0]}'","'${p2[1]}'","'${p2[2]}'","'${p2[3]}'","'${p2[4]}'","'${p2[5]}'"]}' >> /tmp/orgs.json
