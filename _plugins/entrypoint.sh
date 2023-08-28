@@ -14,11 +14,10 @@ set_target() {
     IFS=', '; array=($(cat /tmp/user_orgs))
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      IFS=', '; p1=($(pinned_repos.rb ${array[$i]} member | yq eval -P | sed "s/ /, /g"))
-      IFS=', '; p2=($(pinned_repos.rb ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
+      IFS=', '; pr=($(pinned_repos.rb ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. +
-        {"key1": ["'${p1[0]}'","'${p1[1]}'","'${p1[2]}'","'${p1[3]}'","'${p1[4]}'","'${p1[5]}'"]} +
-        {"key2": ["'${p2[0]}'","'${p2[1]}'","'${p2[2]}'","'${p2[3]}'","'${p2[4]}'","'${p2[5]}'"]}' >> /tmp/orgs.json
+        {"key1": ["maps","feed","lexer","parser","syntax","grammar"]} +
+        {"key2": ["'${pr[0]}'","'${pr[1]}'","'${pr[2]}'","'${pr[3]}'","'${pr[4]}'","'${pr[5]}'"]}' >> /tmp/orgs.json
       if [[ "$i" -lt "${#array[@]}-1" ]]; then echo "," >> /tmp/orgs.json; fi
     done
     echo "]" >> /tmp/orgs.json
