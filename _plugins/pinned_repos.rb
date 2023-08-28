@@ -12,7 +12,7 @@ require 'open-uri'
 #  exit 1
 # end
 
-credential = ENV['INPUT_TOKEN']
+token = ENV['INPUT_TOKEN']
 username = ARGV[0]
 mode = ARGV[1]
 
@@ -25,5 +25,5 @@ uri = URI.parse( profile_url )
 params = { :view_as => "#{mode}" }
 uri.query = URI.encode_www_form( params )
 
-page = Nokogiri::HTML(URI.open(uri, "Authorization" => "Bearer #{credential}"))
+page = Nokogiri::HTML(URI.open(uri, "Authorization" => "Bearer #{token}"))
 page.css("span.repo").each { |repo| puts repo.text }
