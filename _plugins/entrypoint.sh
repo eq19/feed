@@ -7,15 +7,15 @@ set_target() {
   # Get Structure
     if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
-    pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
     IFS=', '; array=($(cat /tmp/user_orgs))
     echo "[" > /tmp/orgs.json
     for ((i=0; i < ${#array[@]}; i++)); do
-      IFS=', '; p1=($(pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${array[$i]} member | yq eval -P | sed "s/ /, /g"))
-      IFS=', '; p2=($(pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
+      IFS=', '; p1=($(pinned_repos.rb ${array[$i]} member | yq eval -P | sed "s/ /, /g"))
+      IFS=', '; p2=($(pinned_repos.rb ${array[$i]} public | yq eval -P | sed "s/ /, /g"))      
       gh api -H "${HEADER}" /orgs/${array[$i]} | jq '. +
         {"key1": ["'${p1[0]}'","'${p1[1]}'","'${p1[2]}'","'${p1[3]}'","'${p1[4]}'","'${p1[5]}'"]} +
         {"key2": ["'${p2[0]}'","'${p2[1]}'","'${p2[2]}'","'${p2[3]}'","'${p2[4]}'","'${p2[5]}'"]}' >> /tmp/orgs.json
@@ -30,7 +30,7 @@ set_target() {
     SPAN=0; echo ${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
-    [[ -n "$CELL" ]] && pinned_repos.rb ${ACTOR} ${CREDENTIAL} ${ENTRY} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    [[ -n "$CELL" ]] && pinned_repos.rb ${ENTRY} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
@@ -89,8 +89,6 @@ git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
 
-CREDENTIAL=${INPUT_TOKEN}
-[[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
 [[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
