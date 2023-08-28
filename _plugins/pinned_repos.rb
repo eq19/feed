@@ -12,10 +12,9 @@ require 'open-uri'
 #  exit 1
 # end
 
-actor = ARGV[0]
-credential = ARGV[1]
-username = ARGV[2]
-mode = ARGV[3]
+credential = ENV['INPUT_TOKEN']
+username = ARGV[0]
+mode = ARGV[1]
 
 # profile_url = "https://github.com/#{username}?view_as=#{mode}"
 # open("http://...", :http_basic_authentication=>[user, password])
