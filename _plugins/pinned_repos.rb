@@ -18,8 +18,6 @@ username = ARGV[2]
 mode = ARGV[3]
 
 # open("http://...", :http_basic_authentication=>[user, password])
-# profile_url = "https://#{actor}:#{credential}@github.com/#{username}?view_as=#{mode}"
-# page = Nokogiri::HTML(URI.open(profile_url))
 # profile_url = "https://github.com/#{username}?view_as=#{mode}"
 
 # uri = URI.parse("https://github.com/#{username}")
@@ -27,8 +25,6 @@ mode = ARGV[3]
 # params = { :view_as => "#{mode}" }
 # uri.query = URI.encode_www_form( params )
 
-# page = Nokogiri::HTML(URI.open(uri, "Authorization" => "Bearer #{credential}"))
-
 profile_url = "https://github.com/#{username}"
-page = Nokogiri::HTML(URI.open(profile_url))
+page = Nokogiri::HTML(URI.open(profile_url, "Authorization" => "Bearer #{credential}"))
 page.css("span.repo").each { |repo| puts repo.text }
