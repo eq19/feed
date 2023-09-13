@@ -131,6 +131,8 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
            -113 +150 = +37                                             +102 = +139    -113 -114
 ```
 
+by the above tabulation, here you can see that the layout of our home page refers to the configuration of ∆1 i.e. id: 1 to 18, Id: 19 to 30, Id: 31 to 36 and Id: 37 to 102.
+
 ## Euler partition
 
 By _[The Δ(19 vs 18) Scenario](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
