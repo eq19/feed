@@ -257,7 +257,7 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
 
-You may also notice that this addition zone takes only the seven (7) primes out of the 18's structure. So there would be the empty spaces for `18 - 7 = 11` numbers.
+So basically  there is a power transformation between ***addition*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
 
 ***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
 
@@ -278,11 +278,11 @@ You may also notice that this addition zone takes only the seven (7) primes out 
                 {98}                                        |   └── 13
 ```
 
-By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
+You may also notice that this addition zone takes only the seven (7) primes out of the 18's structure. So there would be the empty spaces for `18 - 7 = 11` numbers.
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-So basically  there is a power transformation between ***addition*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
+By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
