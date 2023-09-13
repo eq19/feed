@@ -144,7 +144,7 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 [![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sacks_spiral.svg/120px-Sacks_spiral.svg.png)
 
-Since the module 6 is occured all over the spin then we have defined that this 4 zones should stand as default configuration as you can see on the left sidebar. 
+Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
 ## Exponentiation patterns
 
