@@ -131,7 +131,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
            -113 +150 = +37                                             +102 = +139    -113 -114
 ```
 
-by the above tabulation, here you can see that the layout of our home page refers to the configuration of ∆1 i.e. id: 1 to 18, Id: 19 to 30, Id: 31 to 36 and Id: 37 to 102.
+by the above tabulation, here you can see that _[the layout](https://github.com/eq19/feed/tree/v2/_layouts)_ of our home page refers to the configuration of ∆1 i.e. id: 1 to 18, Id: 19 to 30, Id: 31 to 36 and Id: 37 to 102.
 
 ## Euler partition
 
