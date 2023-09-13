@@ -174,7 +174,7 @@ Gists and Wiki are actually Git repositories, which means that you can fork or c
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
 ```
 
-[![4 zomes](https://user-images.githubusercontent.com/8466209/260595027-4546951a-fbac-4397-90e2-442a6a17d627.png)](https://github.com/eq19/eq19.github.io/wiki)
+[![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
