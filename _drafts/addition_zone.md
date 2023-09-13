@@ -278,7 +278,7 @@ You may also notice that this addition zone takes only the seven (7) primes out 
                 {98}                                        |   └── 13
 ```
 
-By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is completed.
+By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
