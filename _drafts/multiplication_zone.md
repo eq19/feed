@@ -206,16 +206,6 @@ Below is the scheme showing a parsering result by repeating the positions in the
 
 [![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/identition/#euler-partition)
 
-Here we can see that the transformation from 7 to 12 is actually started from the prime 13. So the power of 7 is transfered to 77 by the prime pair 11 and 13. 
-
-```note
-We call this double strand a convolution, which results in an opposite arrangement. It represents the natural vibration, thus also the redundant vibrations in the energy transfer. In the 6 For example, in the graph, the even number 60 is folded. At folding of the even number 60 6 result in ***8 prime pairs***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_
-```
-
-***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
-
-![](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)
-
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
 ***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
