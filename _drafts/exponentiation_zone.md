@@ -128,7 +128,7 @@ We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io
 
 ![](https://user-images.githubusercontent.com/8466209/226644534-00cf4fe3-04f9-4b28-8a8b-674bcf4bd585.png)
 
-By the spin above you can see that the 4 zones of these `19's to 17's` is represent the `1 to 5`. Such of formation can be seen on _Ulam Spiral_ as below.
+By the spin above you can see that the 4 zones of these `19's to 17's` are representing the rotation `1 to 5`. Such of formation can be seen on _Ulam Spiral_ as below.
 
 ```tip
 The Ulam spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanisław Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later.
