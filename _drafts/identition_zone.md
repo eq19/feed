@@ -64,7 +64,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)*** This behaviour brings us to the conclusion that the dimension in string theory are linked with the prime distribution.
+Further observation on these partitions with logical sequence of numbers we finaly found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)*** This behaviour brings us to the conclusion that the dimension in string theory are linked with the prime distribution.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
