@@ -74,6 +74,8 @@ As conclusion the behaviour of this 7 is happen between the sequence of 30 and 3
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
+When the seven (7) and eleven (11) are combined as eighteen (18). By the prime hexagon whenever ∆1 is recycled by nineteen (19) then they will generate 114 partitions. 
+
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
 ```tip
