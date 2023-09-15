@@ -55,7 +55,6 @@ Despite the theories are still considered speculative, we are going to take them
                  Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
                 {98}                                        |   └── 13
 ```
-
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer  associated with the partition.
 
 ## Partition function
@@ -67,6 +66,8 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 ```
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
+
+![](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)
 
 As conclusion the behaviour of this 7 is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
 
