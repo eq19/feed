@@ -76,8 +76,6 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
-Each result goes to the 9th object of **prime 67** which is 19th prime. So when the cycle has passed the 10th object then the 43 objects will be laid by 9 collumns and slightly forming a _[recombination](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#scheme-139)_ which facilitate them to finaly generate ***1000 primes***
-
 ```tip
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns***. This 11 is reflected to the extra dimensions. However by MEC30 the number 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them to the 30. And by the MEC30 this 30th order ***[repeats itself](https://www.eq19.com/multiplication/#parsering-structure)*** to infinity. Even in the first 30s system.
 ```
