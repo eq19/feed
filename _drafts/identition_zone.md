@@ -51,6 +51,7 @@ Despite the theories are still considered speculative, we are going to take them
                  Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
                 {98}                                        |   └── 13
 ```
+
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer  associated with the partition.
 
 ## Partition function
@@ -62,6 +63,8 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 ```
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
+
+***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
