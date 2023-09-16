@@ -21,7 +21,6 @@ Exponentiation is an operation involving two numbers, the base and the exponent 
 
 This exponentiation takes important roles since by the _[multiplication zones](https://www.eq19.com/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
 
-
 [![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://www.eq19.com/multiplication/#parsering-structure)
 
 Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
@@ -113,6 +112,8 @@ The spin states for the powers of pi. The Prime Hexagon is an integer environmen
 ![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
 
 By further observation we finally come to the connection of primes with ***pi***. So by simple words this exponentiation brings us back to the hexagonal formation. 
+
+[![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/#eulers-identity)
 
 ### Hexagonal formation
 
