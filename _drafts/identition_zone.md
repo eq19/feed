@@ -74,16 +74,12 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
-```tip
-This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the self repetition on MEC30.
-```
-
 ![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
 
 Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
 
-```note
-We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
+```tip
+This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the self repetition on MEC30.
 ```
 
 ***109 = 29th prime = (10th prime)th prime***
