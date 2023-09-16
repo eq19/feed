@@ -19,6 +19,17 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 ![images](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)
 
+1. Line/length
+2. Plane/shapes
+3. Depth
+4. Time
+5. Alternate world (we could measure similarities and differences of what might have been). Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
+6. A plane of possible worlds that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
+7. Access to different worlds with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
+8. This dimension is similar to the seventh. There are multiple universes that all started differently and histories that branch out infinitely.
+9. Here, we can compare all the could-have-been universes, each with a possibly different set of laws of physics.
+10. Kinda like an extra room to accommodate ALL the theories. In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
+
 It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. So in order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
 ```note
