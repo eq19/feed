@@ -74,6 +74,10 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
+```note
+_([PrimesDemystified]())_
+```
+
 ![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
 
 Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
