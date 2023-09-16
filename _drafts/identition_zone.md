@@ -90,7 +90,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
-When the seven (7) and eleven (11) are combined as eighteen (18) then by the prime hexagon ∆1 is recycled as nineteen (19) and generate ***114 partitions***. 
+When the seven (7) and eleven (11) are combined as eighteen (18) then by the prime hexagon ∆1 is recycled as nineteen (19) and repeatedly generate ***114 partitions***. 
 
 ```tip
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns***. This 11 is reflected to the extra dimensions. However by MEC30 the number 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them to the 30. And by the MEC30 this 30th order ***[repeats itself](https://www.eq19.com/multiplication/#parsering-structure)*** to infinity. Even in the first 30s system.
