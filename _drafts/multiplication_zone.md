@@ -178,8 +178,6 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
-[![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/#eulers-identity)
-
 This feature are the solution to arrange 30 files located in in four (4) of zone folders to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_. Let's find what we can do with it.
 
 ## Parsering Structure
