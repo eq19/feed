@@ -7,14 +7,15 @@
 
 # Identition Zones (37-102)
 
-By this image you would see how the exponentiation zones should actually work on our solar system. But there is still not enough. Nowadays there are many scientists come in to the conclusion that there should be ***extra dimensions*** involved.
+By this image you would see how the exponentiation zones should actually work on our solar system. But there is still not enough.
 
 ```note
 Five consistent versions of superstring theory were developed before it was conjectured in the mid-1990s that they were all different limiting cases of a single theory in **11 dimensions** known as M-theory _([Wikipedia](https://en.wikipedia.org/wiki/String_theory))_.
 ```
+
 [![Solar Ststem](https://user-images.githubusercontent.com/8466209/223703153-6ea330bf-92e8-433b-9ebe-660430a87a29.gif)](https://www.eq19.com/exponentiation/#subclasses-of-partition)
 
-The extra dimensions play a crucial role in string theory and typically it would take a very complicated form. 
+Nowadays there are many scientists come in to the conclusion that there should be ***extra dimensions*** involved and typically it would take a very complicated form. 
 
 ![images](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)
 
