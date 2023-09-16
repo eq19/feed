@@ -114,8 +114,6 @@ The spin states for the powers of pi. The Prime Hexagon is an integer environmen
 
 By further observation we finally come to the connection of primes with ***pi***. So by simple words this exponentiation brings us back to the hexagonal formation. 
 
-![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
-
 ### Hexagonal formation
 
 Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
