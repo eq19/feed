@@ -22,7 +22,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 2. Plane/shapes
 3. Depth
 4. Time
-5. Alternate world (we could measure similarities and differences of what might have been). Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
+5. Alternate world (we could measure similarities and differences of what might have been).
 6. A plane of possible worlds that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. Access to different worlds with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
 8. This dimension is similar to the seventh. There are multiple universes that all started differently and histories that branch out infinitely.
@@ -32,7 +32,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)](https://www.wattpad.com/amp/474802474)
 
-It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
+Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)
 
@@ -45,6 +45,10 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
+
+It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
+
+![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
