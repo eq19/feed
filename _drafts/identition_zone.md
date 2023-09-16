@@ -64,7 +64,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-Further observation on these partitions with the logical sequence of numbers we finaly found a ***[linkage to the powers of 10 and Fibonaci sequences](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+Further observation on these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10 and Fibonaci sequence](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
@@ -72,7 +72,7 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 ![](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)
 
-This behaviour brings us to a suggestion that the dimension in string theory are linked with the prime distribution.
+Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon. This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with the prime distribution.
 
 ![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
 
