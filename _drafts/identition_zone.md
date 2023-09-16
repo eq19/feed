@@ -40,11 +40,11 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 ![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)
 
-In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
+In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
 ## String Theory
 
-In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
+In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
