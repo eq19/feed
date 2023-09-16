@@ -28,8 +28,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 8. This dimension is similar to the seventh. There are multiple universes that all started differently and histories that branch out infinitely.
 9. Here, we can compare all the could-have-been universes, each with a possibly different set of laws of physics.
 10. Kinda like an extra room to accommodate ALL the theories. 
-``` with a possibly different set of laws of physics.
-10. Kinda like an extra room to accommodate ALL the theories.
+```
 
 [![extra dimensions](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)](https://www.wattpad.com/amp/474802474)
 
