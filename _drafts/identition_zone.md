@@ -34,6 +34,10 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
+```note
+The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
+```
+
 ![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)
 
 In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
@@ -43,7 +47,7 @@ In additions, some physicists believe that at the instant of the Big Bang, the u
 In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
 ```note
-The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
+It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
@@ -102,10 +106,6 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
 By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10 and Fibonaci sequence](https://www.eq19.com/addition/#structure-minor-hexagons)***.
-
-```note
-It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
-```
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
