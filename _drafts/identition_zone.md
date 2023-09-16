@@ -27,14 +27,17 @@ Nowadays there are many scientists come in to the conclusion that there should b
 7. Access to different worlds with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
 8. This dimension is similar to the seventh. There are multiple universes that all started differently and histories that branch out infinitely.
 9. Here, we can compare all the could-have-been universes, each with a possibly different set of laws of physics.
-10. Kinda like an extra room to accommodate ALL the theories. In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
-```
+10. Kinda like an extra room to accommodate ALL the theories. 
+``` with a possibly different set of laws of physics.
+10. Kinda like an extra room to accommodate ALL the theories.
 
 [![extra dimensions](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)](https://www.wattpad.com/amp/474802474)
 
 Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)
+
+In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
 
 ## String Theory
 
