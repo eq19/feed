@@ -70,7 +70,7 @@ By taking the correlation of these 11 partitions with the logical sequence of nu
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
 ```
 
-![](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)
+[![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
