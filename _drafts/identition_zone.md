@@ -9,12 +9,16 @@
 
 By this image you would see how the exponentiation zones should actually work on our solar system. But there is still not enough. Nowadays there are many scientists come in to the conclusion that there should be ***extra dimensions*** involved.
 
+```note
+Five consistent versions of superstring theory were developed before it was conjectured in the mid-1990s that they were all different limiting cases of a single theory in **11 dimensions** known as M-theory _([Wikipedia](https://en.wikipedia.org/wiki/String_theory))_.
+```
+
 [![Solar Ststem](https://user-images.githubusercontent.com/8466209/223703153-6ea330bf-92e8-433b-9ebe-660430a87a29.gif)](https://www.eq19.com/exponentiation/#subclasses-of-partition)
 
 The extra dimensions play a crucial role in string theory and typically it would take a very complicated form. It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
 
 ```note
-Five consistent versions of superstring theory were developed before it was conjectured in the mid-1990s that they were all different limiting cases of a single theory in **11 dimensions** known as M-theory _([Wikipedia](https://en.wikipedia.org/wiki/String_theory))_.
+The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _(String Theory - Pdf)_
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
