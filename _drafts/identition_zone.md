@@ -30,7 +30,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 10. Kinda like an extra room to accommodate ALL the theories. In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
 ```
 
-[![images](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)]()
+[![extra dimensions](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca)](https://www.wattpad.com/amp/474802474)
 
 It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. So in order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
