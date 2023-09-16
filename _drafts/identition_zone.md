@@ -72,6 +72,8 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 ![](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)
 
+![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
+
 As conclusion the behaviour of this 7 is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
 
 ```note
