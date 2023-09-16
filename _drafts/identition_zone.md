@@ -64,7 +64,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-Further observation on these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10 and Fibonaci sequence](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10 and Fibonaci sequence](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
@@ -76,7 +76,7 @@ Both scheme are carrying a correlation between two (2) number of 89 and 109 whic
 
 ![](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)
 
-As conclusion the behaviour of this 7 is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
+Further observation we came to a conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of 30 and 36 while the 12 is happen between the sequence of 36 and 102.
 
 ```note
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
