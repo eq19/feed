@@ -18,7 +18,7 @@ Five consistent versions of superstring theory were developed before it was conj
 The extra dimensions play a crucial role in string theory and typically it would take a very complicated form. It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
 
 ```note
-The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _(String Theory - Pdf)_
+The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
