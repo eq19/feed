@@ -103,19 +103,11 @@ You may see this scheme is build by 3 (three) layers where the next layer will c
 
 [![recycle](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://github.com/chetabahana/chetabahana.github.io/wiki/18)
 
-The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
-
-```note
-The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
-```
-
-![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
-
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/#eulers-identity)
 
-By further observation we finally come to the connection of primes with ***pi***. So by simple words this exponentiation brings us back to the hexagonal formation. 
+The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
 
 ### Hexagonal formation
 
