@@ -248,7 +248,7 @@ The main different with gist is that wiki is allowing folder. So we can sort the
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
-This feature are the solution to arrange 30 files located in in four (4) of zone folders to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_. Below is the scheme showing a parsering result by repeating the positions in the next step.
+These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
 Because the value 30 is the first (common) product of the first 3 primes. ***And this 30th order repeats itself to infinity. Even in the first 30s system, therefore, the positions are fixed in which the number information positions itself to infinity***. We call it the first member of the MEC 30. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
@@ -256,6 +256,6 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 
 [![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/exponentiation)
 
-These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
+This scheme is showing a parsering result by repeating the positions in the next step.These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
 Let's find what we can do with it.
