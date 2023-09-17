@@ -42,7 +42,7 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
-## String Theory
+## $\color{green}{String Theory}$
 
 In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
 
