@@ -182,7 +182,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 -----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
  Δ17 |  - |  - | 35 |  - |  - | 65 |  - |  - |  - |  - |  - |  - |  - | -  | 107|  - |  - |  - |
      +----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
- Δ18 |  - | 30 | 36 |  - |  - |  - |  - |  - |  - |  - |  - |  - | -  | 102|   -|  - |  - |  - |
+ Δ18 |  - | 30 | 36 |  - |  - |  - |  - |  - |  - |  - |  - |  - | -  | 102|  - |  - |  - |  - |
 =====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+====+
   1  |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 |  16|  17| 18 | 19 |
 -----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
@@ -190,7 +190,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
            -113 +150 = +37                                             +102 = +139    -113 -114
 ```
 
-By the above tabulation, here you can see that _[the layout](https://github.com/eq19/feed/tree/v2/_layouts)_ of our home page refers to the four (4) partitions of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
+By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the four (4) partitions of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
 Let's discuss how they goes to 114 partitions by ∆18.
 
