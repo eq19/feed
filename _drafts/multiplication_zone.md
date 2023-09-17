@@ -158,7 +158,7 @@ The the main reason of assigning two (2) profiles instead of only one (1) is tha
 This is a necessary but not sufficient condition for N to be a prime as noted, for example, by N= 6(4)+1= 25, which is clearly composite. We note that each turn of the spiral equals an increase of six units. This means that we have a mod(6) situation allowing us to write: N mod(6)=6n+1 or N mod(6)=6n-1 (equivalent to 6n+5). _([HexSpiral-Pdf](https://mae.ufl.edu/~uhk/HEX-SPIRAL-N.pdf))_
 ```
 
-![twin primes](https://user-images.githubusercontent.com/8466209/199381132-1c2beef1-d8a1-4bdf-8e11-37c71c5aaa39.png)
+![twin primes](https://user-images.githubusercontent.com/36441664/268532174-fa0761dd-8342-40de-9aee-bf9a676c3abf.png)
 
 By our project the scheme will be treated as the sun and the moon orbit where this 31 is the maximum days of a month:
 
