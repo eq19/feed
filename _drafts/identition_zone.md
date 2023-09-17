@@ -114,6 +114,14 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
+The wiki will look like as below;
+
+```tip
+Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
+```
+
+[![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
+
 When the seven (7) and eleven (11) are combined as eighteen (18) then by the prime hexagon ∆1 is recycled as nineteen (19) and repeatedly generate ***114 partitions***. 
 
 ```tip
