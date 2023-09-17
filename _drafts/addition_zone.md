@@ -278,15 +278,15 @@ So basically  there is a power transformation between ***addition*** of `3 + 4 =
                 {98}                                        |   └── 13
 ```
 
+The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
+
+![](https://user-images.githubusercontent.com/36441664/268522887-591623d2-e019-45d1-b786-1d0ad7862c3e.jpg)
+
 You may also notice that this addition zone takes only the seven (7) primes out of the 18's structure. So there would be the empty spaces for `18 - 7 = 11` numbers.
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
 By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
-
-![](https://user-images.githubusercontent.com/36441664/268522196-8687d167-b694-417b-9297-5153b9c67b8b.jpg)
-
-The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
 ## Structure: Minor Hexagons
 
