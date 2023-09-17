@@ -143,10 +143,9 @@ Since the _modulo 6_ is occured all over the spin then we have defined that this
 
 ![](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)
 
-## Parsering Structure
-
 By this point we come to the position where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
+## Parsering Structure
 
 You may see that the spins are going backward starting with `Id: 31`. This is identical with the rotation curve of energy distribution by the MEC30.
 
@@ -179,6 +178,7 @@ Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#s
 The implementation from addition folder 1 will be exposed by the exponentiation folder 7 meanwhile the folder 12 of multiplication goes to identition zone of 11 folders.
 
 So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
+
 ## Exponentiation patterns
 
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
