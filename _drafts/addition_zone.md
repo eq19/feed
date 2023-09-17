@@ -284,6 +284,8 @@ You may also notice that this addition zone takes only the seven (7) primes out 
 
 By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
+![](https://user-images.githubusercontent.com/36441664/268522196-8687d167-b694-417b-9297-5153b9c67b8b.jpg)
+
 The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
 ## Structure: Minor Hexagons
@@ -311,7 +313,5 @@ It would mean that there should be a crucial fraction with the residual of decim
 [![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)
 
 It can be used to build parsers/compilers/interpreters for various use cases ranging from simple config files to full fledged programming languages.
-
-[![](https://user-images.githubusercontent.com/36441664/103798614-886ddc00-507c-11eb-8bde-536290198d20.jpg)](https://www.eq19.com/multiplication/)
 
 You may find that the rest of topics will concern mainly to this matter.
