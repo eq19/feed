@@ -23,6 +23,14 @@ This exponentiation takes important roles since by the _[multiplication zones](h
 
 [![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://www.eq19.com/multiplication/#parsering-structure)
 
+By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
+
+```note
+Cell types are interesting, but they simply reflect a ***modulo 6 view of numbers***.  More interesting are the six internal hexagons within the Prime Hexagon.  Like the Prime Hexagon, they are newly discovered.   The minor hexagons form solely from the order, and type, of primes along the number line _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
+```
+
+[![Proof of Confinement](https://github.com/eq19/eq19.github.io/assets/8466209/ad0a0dc3-9f4d-4fb3-8a59-4c798fbe7bf7)](https://www.hexspin.com/proof-of-confinement/)
+
 Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
