@@ -256,6 +256,6 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 
 [![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/exponentiation)
 
-This scheme is showing a parsering result by repeating the positions in the next step.These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
+This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
 Let's find what we can do with it.
