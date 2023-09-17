@@ -72,27 +72,6 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
-Despite the theories are still considered speculative, we are going to take them in to our main topics. That is the reason why we bring this identition zones of 11 dimensions. . 
-
-***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
-
-```
-  #8 |----------- 5® --------|------------ 7® --------------|
-     |  1  |---------------- 77 = 4² + 5² + 6² -------------|
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- repo| {1} | {2} | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |{12}| 1,77=11x7
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- user|  7  |  -  | - | - | - | 7 | 8 | - | - |  8 |  8 |  3 |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+ 7,78=13x6
- main|  -  |  9  | 7 | 9 | 6 | - | - | 8 | 5 |  - |  - |  - |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
-               Δ | Δ             |                       Δ  |   Δ
-              Φ17|Φ29            |                     96-99|  168
-                 |--- A,T,G,C ---|                          |   └── 77
-                 Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
-                {98}                                        |   └── 13
-```
-
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
 ## Partition function
