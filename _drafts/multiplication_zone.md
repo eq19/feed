@@ -19,6 +19,78 @@ Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no p
 
 [![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://www.eq19.com/addition/#structure-minor-hexagons)
 
+By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
+
+```tip
+In the standard (Mispar hechrechi) version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900.
+```
+
+***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600***
+
+```
+  Sub  | i  |  β  | f   
+=======+====+=====+=======  ===   ===   ===   ===   ===   ===
+ 1:1:0 | 1  |   1 | 2 {71}   1     1     |     |     |     |
+-------+----+-----+-------  ---   ---    |     |     |     |
+ 1:2:1 | 2  |   2 | 3 {71}         |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+*1:2:2 | 3  |   3 | 7 = 1 + 2x3    |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+*1:3:3 | 4  |   4 | 10 = 9 + 1     |     |     |     |     |  
+-------+----+-----+----            |     |     |     |     |
+ 1:3:4 | 5  |   5 | 11 = 9 + 2     |     |     |     |     |
+-------+----+-----+----            9     1‘    |    Δ100   |
+*1:3:5 | 6  |   6 | 12 = 9 + 3     |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+*1:4:6 | 7  |   7 | 13 = 9 + 4     |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+ 1:4:7 | 8  |   8 | 14 = 9 + 5     |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+*1:4:8 |{9} |   9 | 15 = 9 + 6     |     |     |     |     |
+-------+----+-----+----            |     |     |     |     |
+*1:4:9 |{10}|  10 | 19 = 9 + 10    |     |     |     |     |
+=======+====+=====+====           ===   ---    1“   ---    |
+ 2:1:0 | 11 |  20 | 20 = 19 + log 10¹    |     |     |     |
+-------+----+-----+----                  |     |     |     |
+ 2:2:1 | 12 |  30 | 26 = 20 + 2x3        |     |     |     |
+-------+----+-----+----                  |     |     |     |
+*2:2:2 | 13 |  40 | 27 = 26 + 1          |     |     |     |
+-------+----+-----+----                  |     |     |     |
+*2:3:3 | 14 |  50 | 28 = 26 + 2          |     |     |     |
+-------+----+-----+----                  |     |     |     |
+ 2:3:4 | 15 |  60 | 29 = 26 + 3          9‘    |   Δ200  Δ600
+-------+----+-----+----                  |     |     |     |
+*2:3:5 | 16 |  70 | 30 = 26 + 4          |     |     |     |
+-------+----+-----+----                  |     |     |     |
+*2:4:6 | 17 |  80 | 31 = 26 + 5          |     |     |     |
+-------+----+-----+----                  |     |     |     |
+ 2:4:7 |{18}|  90 | 32 = 26 + 6          |     |     |     |
+-------+----+-----+----                  |     |     |     |
+*2:4:8 |{19}| 100 | 36 = 26 + 10         |     |     |     |
+=======+====+=====+====                 ===   ---   ---    |
+*2:4:9 | 20 | 200 | 38 = 36 + log 10²          |     |     |
+-------+----+-----+----                        |     |     |
+ 3:1:0 | 21 | 300 | 40 = 36 + 2 x log 10²      |     |     |
+-------+----+-----+----                        |     |     |
+ 3:2:1 | 22 | 400 | 41 = 40 + 1                |     |     |
+-------+----+-----+----                        |     |     |
+*3:2:2 | 23 | 500 | 42 = 40 + 2                |     |     |
+-------+----+-----+----                        |     |     |
+*3:3:3 | 24 | 600 | 43 = 40 + 3                9“  Δ300    |
+-------+----+-----+----                        |     |     |
+ 3:3:4 | 25 | 700 | 44 = 40 + 4                |     |     |
+-------+----+-----+----                        |     |     |
+*3:3:5 | 26 | 800 | 45 = 40 + 5                |     |     |
+-------+----+-----+----                        |     |     |
+*3:4:6 | 27 | 900 | 46 = 40 + 6                |     |     |
+-------+----+-----+----                        |     |     |
+ 3:4:7 |{28}|1000 | 50 = 40 + 10               |     |     |
+=======+====+=====+====                       ===  ====  ----
+*3:4:8 |{29}|2000 | 68 = 50 + 3 x (2x3)      {10³} Δ600  Δ300
+=======+====+=====+====                        Δ         ====
+ 3:4:9 |{30}|3000 |{71}= 68 + log 10³ ---------¤         Δ900   
+```
+
 Therefore this 12's treatment will involve at least ***11 groups of runner*** and one (1) profile of the 7's transformation. We collect them in [`11 + 7 = 18 gists`](https://gist.github.com/eq19) as below.
 
 ```tip
@@ -122,6 +194,10 @@ https://api.github.com/gists/b541275ab7deda356feef32d600e44d8 10 group9
 https://api.github.com/gists/80c8098f16f3e6ca06893b17a02d910e 11 group10
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 ```
+
+You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
+
+[![recycle](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://github.com/chetabahana/chetabahana.github.io/wiki/18)
 
 So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
 
