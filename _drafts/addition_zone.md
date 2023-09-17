@@ -203,7 +203,7 @@ The most obvious interesting feature of this prime hexagon is it confines all nu
 
 ## Structure: True Prime Pairs
 
-There are twists and turns until 19 abuts 2. The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons*** which is identical with 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
+The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons*** which is identical with 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
 ```
 $True Prime Pairs:
@@ -278,15 +278,15 @@ So basically  there is a power transformation between ***addition*** of `3 + 4 =
                 {98}                                        |   └── 13
 ```
 
-You may also notice that this addition zone takes only the seven (7) primes out of the 18's structure. So there would be the empty spaces for `18 - 7 = 11` numbers.
+You may also notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure. 
 
 ![](https://user-images.githubusercontent.com/36441664/268522887-591623d2-e019-45d1-b786-1d0ad7862c3e.jpg)
 
-By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
+So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
+This is what we mean by _addition_ and it happens whenever a cycle is restarted. The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
 ## Structure: Minor Hexagons
 
