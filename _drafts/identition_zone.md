@@ -30,7 +30,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 10. Kinda like an extra room to accommodate ALL the theories. 
 ```
 
-[![extra dimensions](https://github.com/eq19/feed/assets/36441664/26cd6e73-e4e8-4de2-bb17-5da7184344ca](https://en.wikipedia.org/wiki/Dimension)
+[![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
 Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
