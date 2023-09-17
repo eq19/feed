@@ -236,15 +236,7 @@ find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f 
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
 
-Gists and Wiki are actually Git repositories, which means that you can fork or clone any gist, even if you aren't the original author. The wiki will look like as below;
-
-```tip
-Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
-```
-
-[![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
-
-The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
+Gists and Wiki are actually Git repositories, which means that you can fork or clone any gist, even if you aren't the original author. The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
