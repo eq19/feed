@@ -178,42 +178,6 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
-This feature are the solution to arrange 30 files located in in four (4) of zone folders to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_. Let's find what we can do with it.
-
-## Parsering Structure
-
-By this point we come to the position where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
-
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/#eulers-identity)
 
-You may see that the spins are going backward starting with `Id: 31`. This is identical with the rotation curve of energy distribution by the MEC30.
-
-```note
-The position 19 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position of the 19 is 11. So in this second term the 11th-prime number 31 is now forced to determine ***a new axis-symmetrical zero position***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
-```
-
-***37 + 12 = 61 - 12 = 49 = 7 x 7 = d(13)***
-
-![image](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
-
-Below is the scheme showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
-
-```note
-Because the value 30 is the first (common) product of the first 3 primes. ***And this 30th order repeats itself to infinity. Even in the first 30s system, therefore, the positions are fixed in which the number information positions itself to infinity***. We call it the first member of the MEC 30. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
-```
-
-[![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/identition/#euler-partition)
-
-As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
-
-***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
-
-[![exponentiation zones](https://user-images.githubusercontent.com/8466209/200024664-afc433a0-5f7f-4ec1-9bfc-77d672817fed.png)](https://github.com/eq19)
-
-Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#structure-minor-hexagons)_ and data parser from _[Jekyll/Liquid](https://jekyllrb.com/docs/datafiles/)_ finally we found the correlation between the lexer and parser.
-
-[![Parsering](https://github.com/eq19/eq19.github.io/assets/8466209/50fbc0a0-7441-4800-97aa-265b0dfd2ac2)](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)
-
-The implementation from addition folder 1 will be exposed by the exponentiation folder 7 meanwhile the folder 12 of multiplication goes to identition zone of 11 folders.
-
-So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
+This feature are the solution to arrange 30 files located in in four (4) of zone folders to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_. Let's find what we can do with it.
