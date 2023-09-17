@@ -312,4 +312,6 @@ It would mean that there should be a crucial fraction with the residual of decim
 
 It can be used to build parsers/compilers/interpreters for various use cases ranging from simple config files to full fledged programming languages.
 
+![](https://user-images.githubusercontent.com/36441664/103798614-886ddc00-507c-11eb-8bde-536290198d20.jpg)
+
 You may find that the rest of topics will concern mainly to this matter.
