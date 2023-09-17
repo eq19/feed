@@ -109,6 +109,14 @@ By taking the correlation of these 11 partitions with the logical sequence of nu
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
+By further observation we finally come to the connection of primes with ***pi***. So by simple words this exponentiation brings us back to the hexagonal formation. 
+
+```note
+The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
+```
+
+![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
+
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
 ```note
