@@ -122,7 +122,7 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
-When the seven (7) and eleven (11) are combined as eighteen (18) then by the prime hexagon ∆1 is recycled as nineteen (19) and repeatedly generate ***114 partitions***. 
+When the seven (7) and eleven (11) are combined as eighteen (18) then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
 
 ```tip
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns***. This 11 is reflected to the extra dimensions. However by MEC30 the number 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them to the 30. And by the MEC30 this 30th order ***[repeats itself](https://www.eq19.com/multiplication/#parsering-structure)*** to infinity. Even in the first 30s system.
