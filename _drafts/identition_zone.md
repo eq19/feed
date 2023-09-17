@@ -1,4 +1,4 @@
----
+I---
 💎: 5
 🚀: 19
 🔨: identition
@@ -114,7 +114,7 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
-The wiki will look like as below;
+Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37`. These files are organized within the wiki of main repository.
 
 ```tip
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
