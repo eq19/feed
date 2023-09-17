@@ -89,14 +89,6 @@ The position 19 in the second term gives a redundant value of the template 7 of 
 
 ![image](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
 
-Below is the scheme showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
-
-```note
-Because the value 30 is the first (common) product of the first 3 primes. ***And this 30th order repeats itself to infinity. Even in the first 30s system, therefore, the positions are fixed in which the number information positions itself to infinity***. We call it the first member of the MEC 30. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
-```
-
-[![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/identition/#euler-partition)
-
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
 ***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
