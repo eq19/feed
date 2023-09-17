@@ -205,7 +205,7 @@ As explicitly indicated by `n - 7` within identition zones this `p(33)` behave r
 Note that when 77 contains 'Lucky 7 and 11' as prime factors it is also the product of the middle two numbers of this sequence (11*7 = 77). _([Prime Curios!](https://t5k.org/curios/page.php/77.html))_
 ```
 
-[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)(https://www.eq19.com/addition/#structure-true-prime-pairs)
+[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
 By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities of the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_.
 
