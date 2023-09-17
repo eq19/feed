@@ -308,10 +308,10 @@ I wondered if that property might hold for the incremental powers of phi as well
 
 It would mean that there should be a crucial fraction with the residual of decimal value. In this project we are going to analyze it using a javascript library called _[Chevrotain](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)_.
 
-[![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://www.eq19.com/multiplication/)
+[![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)
 
 It can be used to build parsers/compilers/interpreters for various use cases ranging from simple config files to full fledged programming languages.
 
-![](https://user-images.githubusercontent.com/36441664/103798614-886ddc00-507c-11eb-8bde-536290198d20.jpg)
+[![](https://user-images.githubusercontent.com/36441664/103798614-886ddc00-507c-11eb-8bde-536290198d20.jpg)](https://www.eq19.com/multiplication/)
 
 You may find that the rest of topics will concern mainly to this matter.
