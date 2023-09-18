@@ -62,6 +62,15 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
+```note
+In the first part of this thesis we consider the massive covariant pertur-
+bative superstring spectra of compactifications of the type I open super-
+string preserving 4, 8 or 16 supercharges. In the second part we introduce the type of partition functions called
+Hilbert series, which count the number of algebraically or linearly inde-
+pendent polynomials at each graded level of a graded algebraic structure
+such as a (graded) ring, module or ideal.
+```
+
 ![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
@@ -79,7 +88,7 @@ Here we implement a method called the rank of a partition where the rank of a pa
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
 ```note
-The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Freeman_Dyson) in a paper published in the journal [Eureka](https://en.m.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.m.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.m.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.m.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.m.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
+The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.m.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.m.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.m.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.m.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.m.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
 ```
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
