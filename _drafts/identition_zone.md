@@ -63,8 +63,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
 ```note
-In the first part of this thesis /0/00we consider the massive covariant perturbative superstring spectra of compactifications of the type I open superstring preserving 4, 8 or 16 supercharges. In the second part we introduce the type of partition functions called Hilbert series, which count the number of algebraically or linearly independent polynomials at each graded level of a graded algebraic structure such as a (graded) ring, module or ideal. _([Partition functions in superstring
-theory]())_
+In the first part of this thesis we consider the massive covariant perturbative superstring spectra of compactifications of the type I open superstring preserving 4, 8 or 16 supercharges. In the second part we introduce the type of partition functions called Hilbert series, which count the number of algebraically or linearly independent polynomials at each graded level of a graded algebraic structure such as a (graded) ring, module or ideal. _([Partition functions in superstring theory](https://core.ac.uk/download/pdf/76996904.pdf))_
 ```
 
 ![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
