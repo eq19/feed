@@ -118,7 +118,7 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 [![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/#eulers-identity)
 
-Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37`. 
+Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com/addition/#structure-true-prime-pairs). 
 
 ## Δ(19 vs 18) Scenario
 
