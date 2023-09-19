@@ -213,7 +213,7 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 [![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
-Here we can see that the transformation from 7 to 12 is actually started from the prime 13. So the power of 7 is transfered to 77 by the pairing level of 29 and 89. 
+Here we can see that the transformation from 7 to 12 is actually started from the prime 13. So the power of 7 is transfered to 77 by _[the partition level of 29 and 89](https://www.eq19.com/identition/#partition-function)_. 
 
 ```note
 We call this double strand a convolution, which results in an opposite arrangement. It represents the natural vibration, thus also the redundant vibrations in the energy transfer. In the 6 For example, in the graph, the even number 60 is folded. At folding of the even number 60 6 result in ***8 prime pairs***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_
