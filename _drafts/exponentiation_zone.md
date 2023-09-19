@@ -37,7 +37,7 @@ Cell types are interesting, but they simply reflect a ***modulo 6 view of number
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
-[![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/#eulers-identity)
+[![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
 The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
 
