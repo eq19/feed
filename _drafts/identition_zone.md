@@ -130,6 +130,8 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
+![RiemannZeta_Zeros svg (1)](https://github.com/eq19/feed/assets/36441664/89277c6d-56f1-4002-b778-1dbb967f2c2c)
+
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
 
 ```tip
