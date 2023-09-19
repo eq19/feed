@@ -90,6 +90,10 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
+```note
+The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries.
+```
+
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
 By further observation we finally come to their connection with ***the powers of pi***. So by simple words this 11 dimensions brings us back to the hexagonal formation. 
