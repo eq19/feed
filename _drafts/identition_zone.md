@@ -122,7 +122,7 @@ Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 
 
 ## Δ(19 vs 18) Scenario
 
-By our project, these 37 files are organized within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_.
+By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by the 18 files located in thegist.
 
 ```tip
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
