@@ -9,7 +9,7 @@
 
 {% include list.liquid all=true %}
 
-## Background of exponentiation
+## Self repetition
 
 Exponentiation is an operation involving two numbers, the base and the exponent or power. Exponentiation is written as ***b<sup>n</sup>***, where ***b*** is the base and ***n*** is the power.
 
