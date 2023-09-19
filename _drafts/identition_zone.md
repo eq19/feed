@@ -18,16 +18,16 @@ Five consistent versions of superstring theory were developed before it was conj
 Nowadays there are many scientists come in to the conclusion that there should be ***extra dimensions*** involved and typically it would take a very complicated form. 
 
 ```note
-1. Line/length
-2. Plane/shapes
-3. Depth
-4. Time
-5. Alternate world (we could measure similarities and differences of what might have been).
-6. A plane of possible worlds that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
-7. Access to different worlds with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
-8. This dimension is similar to the seventh. There are multiple universes that all started differently and histories that branch out infinitely.
-9. Here, we can compare all the could-have-been universes, each with a possibly different set of laws of physics.
-10. Kinda like an extra room to accommodate ALL the theories. 
+1. ***Line/length***
+2. ***Plane/shapes***
+3. ***Depth***
+4. ***Time***
+5. ***Alternate world*** (we could measure similarities and differences of what might have been).
+6. ***A plane of possible worlds**" that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
+7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
+8. This dimension is similar to the seventh. There are ***multiple universes*** that all started differently and histories that branch out infinitely.
+9. Here, we can compare ***all the could-have-been universes**", each with a possibly different set of laws of physics.
+10. Kinda like ***an extra room to accommodate ALL the theories***. 
 ```
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
@@ -71,7 +71,7 @@ In the first part of this thesis we consider the massive covariant perturbative 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ```tip
-The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience.As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
+The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
@@ -83,7 +83,7 @@ Here we implement a method called the rank of a partition where the rank of a pa
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
 ```note
-The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.m.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.m.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.m.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.m.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.m.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
+The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
 ```
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
@@ -107,7 +107,7 @@ The spin states for the powers of pi. The Prime Hexagon is an integer environmen
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
 ```note
-In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their collective bilateral 9 sum symmetry). _([PrimesDemystified](https://primesdemystified.com/))_
+In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
 ```
 
 [![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://primesdemystified.com/)
