@@ -134,7 +134,7 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
-Since we are discussing about prime distribution then the arrangement of this 37 will follow the scheme listed below which we call them as ***Δ(19 vs 18) Scenario***:
+Since we are discussing about prime distribution then the arrangement of this 37 will follow the scheme called ***Δ(19 vs 18) Scenario*** where the [zeta function](https://www.eq19.com/#zeta-function) stands as the basic algorithm.
 
 [![RiemannZeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://www.eq19.com/#zeta-function)
 
