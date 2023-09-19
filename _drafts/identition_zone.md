@@ -130,6 +130,8 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
+Since we are discussing about prime distribution then the arrangement of this 37 will follow the scheme listed below which we call them as ***Δ(19 vs 18) Scenario***:
+
 [![RiemannZeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://www.eq19.com/#zeta-function)
 
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
@@ -193,7 +195,7 @@ Let's discuss how they goes to 114 partitions by ∆18.
 
 ## Euler partition
 
-By _[The Δ(19 vs 18) Scenario](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
+By _[The Δ(19 vs 18) Scenario](https://www.eq19.com/identition/#%CE%B419-vs-18-scenario)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
 
 ***0 + 30 + 36 + 102 = 168 = π(1000)***
 
