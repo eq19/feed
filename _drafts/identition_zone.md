@@ -221,7 +221,7 @@ We call this double strand a convolution, which results in an opposite arrangeme
 
 ***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
 
-![](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)
+[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#partition-function)
 
 As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times 11.
 
