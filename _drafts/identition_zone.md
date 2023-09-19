@@ -88,7 +88,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10 and Fibonaci sequence](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
