@@ -141,7 +141,7 @@ Since we are discussing about prime distribution then this 18's structure will a
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
 
 ```tip
-By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns***. This 11 is reflected to the extra dimensions. However by MEC30 the number 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them to the 30. And by the MEC30 this 30th order ***[repeats itself](https://www.eq19.com/multiplication/#parsering-structure)*** to infinity. Even in the first 30s system.
+By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns***. This 11 is reflected to the extra dimensions. However by MEC30 the number 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them to the 30. And by the MEC30 this 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system.
 ```
 
 ```scss
