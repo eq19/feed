@@ -130,8 +130,6 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
-![RiemannZeta_Zeros svg (1)](https://github.com/eq19/feed/assets/36441664/89277c6d-56f1-4002-b778-1dbb967f2c2c)
-
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
 
 ```tip
@@ -188,6 +186,8 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 ```
 
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
+
+![RiemannZeta_Zeros](https://user-images.githubusercontent.com/36441664/268829741-434326f6-30af-49c1-b8d1-876f0f6d5416.png)
 
 Let's discuss how they goes to 114 partitions by ∆18.
 
