@@ -66,7 +66,7 @@ In quantum field theory, partition functions are generating functionals for corr
 ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
 ```
 
-[![Feynman diagrams](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
+[![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
 
