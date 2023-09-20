@@ -92,14 +92,6 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
-
-```note
-The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
-```
-
-[![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
-
 ***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
 
 {% for item in site.data.orgs %}
@@ -115,6 +107,14 @@ The root function of ***13 repositories*** per each of organization above is not
 ```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
+
+By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+
+```note
+The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
+```
+
+[![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
 ## The powers of pi
 
