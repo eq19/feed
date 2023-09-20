@@ -257,27 +257,6 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
 
-So basically  there is a power transformation between ***addition*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
-
-***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
-
-```
-  #8 |----------- 5® --------|------------ 7® --------------|
-     |  1  |---------------- 77 = 4² + 5² + 6² -------------|
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- repo| {1} | {2} | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |{12}| 1,77=11x7
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- user|  7  |  -  | - | - | - | 7 | 8 | - | - |  8 |  8 |  3 |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+ 7,78=13x6
- main|  -  |  9  | 7 | 9 | 6 | - | - | 8 | 5 |  - |  - |  - |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
-               Δ | Δ             |                       Δ  |   Δ
-              Φ17|Φ29            |                     96-99|  168
-                 |--- A,T,G,C ---|                          |   └── 77
-                 Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
-                {98}                                        |   └── 13
-```
-
 You may also notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure. 
 
 ![](https://user-images.githubusercontent.com/36441664/268522887-591623d2-e019-45d1-b786-1d0ad7862c3e.jpg)
