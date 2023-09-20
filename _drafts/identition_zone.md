@@ -92,6 +92,8 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
+Using this theory we are going to stimulate the 11 dimension of string theory throug their partition using github organizations of 13 repositories each.
+
 ***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
 
 {% for item in site.data.orgs %}
@@ -103,7 +105,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall confirm to 1000 nodes.
 
 ```warning
-The root function of ***13 repositories*** per each of organization above is not arranged to directly follow to the hexagonal forms but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+The root function of ***13 repositories*** per each of organization above is not arranged to directly follow to the partition function but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
 ```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
