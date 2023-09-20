@@ -68,7 +68,7 @@ In quantum field theory, partition functions are generating functionals for corr
 
 ![Feynman diagrams](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)
 
-One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
+One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
 
 ![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
