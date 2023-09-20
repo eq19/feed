@@ -72,10 +72,6 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 
 ![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
-Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
-
-## Partition function
-
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ```note
@@ -83,6 +79,10 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
+
+Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
+
+## Partition function
 
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
