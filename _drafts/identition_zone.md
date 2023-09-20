@@ -68,10 +68,10 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
-One must therefore [imagine scenarios](https://core.ac.uk/download/pdf/76996904.pdf) in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
+One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
 ```note
-In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a perturbative approach is usually implemented, this being equivalent to summing over Feynman diagrams.
+In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
 ```
 
 ![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
