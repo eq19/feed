@@ -79,10 +79,6 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
-```note
-It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
-```
-
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
@@ -145,6 +141,10 @@ The first 1000 prime numbers are silently screaming: "Pay attention to us, for w
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
 By taking the correlation of these 11 partitions with the logical sequence of numbers we found a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+
+```note
+It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
+```
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
