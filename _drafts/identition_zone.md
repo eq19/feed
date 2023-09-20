@@ -60,14 +60,6 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 ![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
-One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
-
-```note
-In the first part of this thesis we consider the massive covariant perturbative superstring spectra of compactifications of the type I open superstring preserving 4, 8 or 16 supercharges. In the second part we introduce the type of partition functions called Hilbert series, which count the number of algebraically or linearly independent polynomials at each graded level of a graded algebraic structure such as a (graded) ring, module or ideal. _([Partition functions in superstring theory - Pdf](https://core.ac.uk/download/pdf/76996904.pdf))_
-```
-
-![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
-
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ```tip
@@ -75,6 +67,18 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
+
+```note
+In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a perturbative approach is usually implemented, this being equivalent to summing over Feynman diagrams.
+```
+
+One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
+
+```note
+In the first part of this thesis we consider the massive covariant perturbative superstring spectra of compactifications of the type I open superstring preserving 4, 8 or 16 supercharges. In the second part we introduce the type of partition functions called Hilbert series, which count the number of algebraically or linearly independent polynomials at each graded level of a graded algebraic structure such as a (graded) ring, module or ideal. _([Partition functions in superstring theory - Pdf](https://core.ac.uk/download/pdf/76996904.pdf))_
+```
+
+![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
