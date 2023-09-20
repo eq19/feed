@@ -102,7 +102,7 @@ Using this theory we are going to stimulate the 11 dimension of string theory th
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)_*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
+So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
 
 ***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
 
