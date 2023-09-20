@@ -28,7 +28,6 @@ Nowadays there are many scientists come in to the conclusion that there should b
 8. This dimension is similar to the seventh. There are ***multiple universes*** that all started differently and histories that branch out infinitely.
 9. Here, we can compare ***all the could-have-been universes***, each with a possibly different set of laws of physics.
 10. Kinda like ***an extra room to accommodate ALL the theories***. In additions, some physicists believe that at the instant of the Big Bang, the universe(s) was fully 10 dimensional.
-
 ```
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
@@ -41,11 +40,11 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
-In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
+In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory).
 
 ## String Theory
 
-In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by one-dimensional objects called strings. String theory describes how these strings propagate through space and interact with each other.
+In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
