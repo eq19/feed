@@ -41,20 +41,6 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
-```note
-In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
-```
-
-![slide13](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)
-
-It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
-
-```note
-We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
-```
-
-![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
-
 In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
 ## String Theory
@@ -67,13 +53,19 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
 
-Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
+It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
 
-```tip
-The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
+```note
+We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
-[![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
+![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
+
+```note
+In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
+```
+
+![slide13](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
@@ -82,6 +74,14 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
 ## Partition function
+
+Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
+
+```tip
+The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
+```
+
+[![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
