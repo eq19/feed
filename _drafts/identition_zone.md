@@ -104,6 +104,10 @@ Using this theory we are going to stimulate the 11 dimension of string theory th
 
 So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
 
+```warning
+The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+```
+
 ***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
 
 ```
@@ -124,10 +128,6 @@ So basically  there is a power transformation between ***[addition](https://www.
 ```
 
 These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall confirm to 1000 nodes.
-
-```warning
-The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
-```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
