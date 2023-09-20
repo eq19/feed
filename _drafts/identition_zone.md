@@ -92,7 +92,7 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-Using this theory we are going to stimulate the 11 dimension of string theory throug their partition using github organizations of 13 repositories each.
+Using this theory we are going to stimulate the 11 dimension of string theory throug the rank of the their partition using github organizations of 13 repositories each.
 
 ***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
 
