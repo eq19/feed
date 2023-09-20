@@ -92,7 +92,17 @@ The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Fr
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
-So basically  there is a power transformation between ***addition*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
+Using this theory we are going to stimulate the 11 dimension of string theory throug the rank of their partition using github organizations of 13 repositories each.
+
+***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
+
+{% for item in site.data.orgs %}
+  1. {{ item.name | jsonify }}
+     - {{ item.key1 | jsonify }}
+     - {{ item.key2 | jsonify }}
+{% endfor %}
+
+So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)_*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` where this 7 will be treated as one of 12's member.
 
 ***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
 
@@ -112,16 +122,6 @@ So basically  there is a power transformation between ***addition*** of `3 + 4 =
                  Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
                 {98}                                        |   └── 13
 ```
-
-Using this theory we are going to stimulate the 11 dimension of string theory throug the rank of their partition using github organizations of 13 repositories each.
-
-***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
-
-{% for item in site.data.orgs %}
-  1. {{ item.name | jsonify }}
-     - {{ item.key1 | jsonify }}
-     - {{ item.key2 | jsonify }}
-{% endfor %}
 
 These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall confirm to 1000 nodes.
 
