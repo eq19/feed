@@ -70,7 +70,7 @@ In quantum field theory, partition functions are generating functionals for corr
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
-![default](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
+![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
