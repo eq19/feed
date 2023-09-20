@@ -63,9 +63,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
 ```note
-As usual, the images on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right.
-
-You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in string theory.
+As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
 ```
 [![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
