@@ -100,6 +100,22 @@ The first 1000 prime numbers are silently screaming: "Pay attention to us, for w
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
+***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
+
+{% for item in site.data.orgs %}
+  1. {{ item.name | jsonify }}
+     - {{ item.key1 | jsonify }}
+     - {{ item.key2 | jsonify }}
+{% endfor %}
+
+These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall confirm to 1000 nodes.
+
+```warning
+The root function of ***13 repositories*** per each of organization above is not arranged to directly follow to the hexagonal forms but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+```
+
+[![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
+
 ## The powers of pi
 
 By further observation we finally come to their connection with ***the powers of pi***. So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#hexagonal-formation)_. 
