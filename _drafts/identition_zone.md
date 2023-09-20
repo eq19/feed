@@ -99,6 +99,8 @@ The first 1000 prime numbers are silently screaming: "Pay attention to us, for w
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
+## The powers of pi
+
 By further observation we finally come to their connection with ***the powers of pi***. So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#hexagonal-formation)_. 
 
 ```note
