@@ -130,7 +130,7 @@ The root function of ***13 repositories*** per each of organization above is not
                 {98}                                        |   └── 13
 ```
 
-These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall confirm to 1000 primes.
+These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
 
 ```note
 The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
@@ -146,9 +146,11 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
+The following study illustrates a period-24 palindromic that bring ***the powers of pi***. 
+
 ## The powers of pi
 
-By further observation we finally come to their connection with ***the powers of pi***. So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#hexagonal-formation)_. 
+This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#hexagonal-formation)_. 
 
 ```note
 The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
