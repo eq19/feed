@@ -40,6 +40,14 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
+It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
+
+```note
+We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
+```
+
+![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
+
 In order to propagate through space and interact we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) 
 
 ## String Theory
@@ -51,14 +59,6 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
-
-It is not even showed in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***.
-
-```note
-We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
-```
-
-![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
