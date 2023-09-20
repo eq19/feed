@@ -58,13 +58,15 @@ We would suggest that it is the imajinary part in the function of _[Euler Identi
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
-![](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
+![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
+
+In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
 ```note
-In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
+***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
 ```
 
-![slide13](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)
+![Feynman diagrams](https://github.com/eq19/feed/assets/36441664/d5a17004-fbf2-494a-a2f0-f0bb1674c938)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so it would become irrational partitions.
 
