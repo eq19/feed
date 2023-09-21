@@ -80,7 +80,7 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
 ```tip
-In order to maintain the correlation between each of repositories we could use a hierarchical database that stores low-level settings for the operating system such as windows registry.
+In order to maintain the correlation between each of repositories to cope with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as windows registry.
 ```
 
 [![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
