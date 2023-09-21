@@ -83,7 +83,7 @@ Since the _modulo 6_ is occured all over the spin then we have defined that this
 In order to maintain the correlation between each of repositories we could use a hierarchical database that stores low-level settings for the operating system such as windows registry.
 ```
 
-![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)
+[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
 
 By this point we come to the position where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
