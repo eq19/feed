@@ -54,7 +54,7 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
 ```tip
-By our project the 18's on the gist will cover five (5) unique functions that behave as one (1) central plus four (4) zones. This scheme will be implemented to all of 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist repository it self then there shall be `1 + 168 = 169` repositories.
+By our project the 18's on the gist will cover five (5) unique functions that behave as ***one (1) central plus four (4) zones***. This scheme will be implemented to all of the 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist repository it self then there shall be `1 + 168 = 169` repositories.
 ```
 
 ***5 + 2 x 5 x 168 = 5 + 1680 = 1685 = 5 x 337 root functions***
@@ -79,7 +79,11 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
-![](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)
+```tip
+In order to maintain the correlation between each of repositories we could use the object management system that is used such as windows registry.
+```
+
+![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)
 
 By this point we come to the position where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
