@@ -146,7 +146,7 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
-The following study illustrates a period-24 palindromic that bring ***the powers of pi***. 
+Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illustrates a period-24 palindromic that bring ***the powers of pi***. 
 
 ## The powers of pi
 
