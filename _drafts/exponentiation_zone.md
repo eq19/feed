@@ -53,6 +53,8 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
+***5 + 2 x 5 x 168 = 5 + 1680 = 1685 = 5 x 337 root functions***
+
 ![](https://user-images.githubusercontent.com/8466209/226644534-00cf4fe3-04f9-4b28-8a8b-674bcf4bd585.png)
 
 By the spin above you can see that the 4 zones of these `19's to 17's` are representing the rotation `1 to 5`. Such of formation can be seen on _Ulam Spiral_ as below.
