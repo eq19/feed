@@ -105,7 +105,7 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` so this 7 vs 12 will be treated as ***[exponentiation](https://www.eq19.com/exponentiation/)***.
+So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***[exponentiation](https://www.eq19.com/exponentiation/)***.l
 
 ```warning
 The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gist](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
