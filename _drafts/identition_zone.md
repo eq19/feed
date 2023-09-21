@@ -60,7 +60,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 ![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
-In quantum field theory, partition functions are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
+In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
 ```note
 As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
@@ -86,7 +86,7 @@ Here we implement a method called the rank of a partition where the rank of a pa
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
 ```note
-The concept was introduced by [Freeman Dyson](https://en.m.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
+The concept was introduced by [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
 ```
 
 [![Rank_of_a_partition](https://github.com/eq19/eq19.github.io/assets/36441664/0d9e8f5e-5ba6-4e5d-98d3-d9fc73d2f01f)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
