@@ -203,6 +203,14 @@ The most obvious interesting feature of this prime hexagon is it confines all nu
 
 ## Structure: True Prime Pairs
 
+The fact is that the number of 168 divided by 24 is ***exactly seven (7)***. So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_.
+
+```note
+A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
+```
+
+[![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
+
 The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons*** which is identical with 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
 ```
@@ -249,14 +257,6 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
-The fact is that the number of 168 divided by 24 is ***exactly seven (7)***. So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_.
-
-```note
-A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
-```
-
-[![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
-
 You may also notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure. 
 
 ![](https://user-images.githubusercontent.com/36441664/269957059-2f8144a0-c071-4ab3-9ee2-40d24ab1efe4.jpg)
@@ -265,9 +265,11 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-This is what we mean by _addition_ and it happens whenever a cycle is restarted. The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
+This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 ![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
+
+So the above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
 ## Structure: Minor Hexagons
 
