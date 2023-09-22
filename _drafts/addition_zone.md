@@ -269,13 +269,15 @@ This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 ## Structure: Minor Hexagons
 
-![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
-
 When you refer to the website of prime hexagon, there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
 
 ```note
 Similarly, I have a six colored dice in the form of the hexagon.  If I take a known, logical sequence of numbers, say 10, 100, 1000, 10000, and look at their spins in the hexagon, the resulting colors associated with each number should appear random – ***unless the sequence I’m investigating is linked to the nature of the prime numbers***.
+```
 
+![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
+
+```note
 That is, if the powers of 10 all returned with blue spin, or as a series of rainbows, or evenly alternating colors or other non-random results, ***then I’d say prime numbers appear to have a linkage to 10.  I may not know what the the linkage is, just that it appears to exist*** _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
 ```
 
