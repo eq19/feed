@@ -269,6 +269,8 @@ This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 ## Structure: Minor Hexagons
 
+![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
+
 When you refer to the website of prime hexagon, there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
 
 ```note
