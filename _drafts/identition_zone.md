@@ -190,6 +190,10 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 Since we are discussing about prime distribution then this 18's structure will also cover the further scheme that is inherited from the above 37 files. We call this arrangement as ***Δ(19 vs 18) Scenario*** where the [zeta function](https://www.eq19.com/#zeta-function) stands as the basic algorithm.
 
+```note
+This web enabled demonstration shows a polar plot of ***the first 20 non-trivial Riemann zeta function zeros (including Gram points) along the critical line Zeta(1/2+it) for real values of t running from 0 to 50***. The consecutively labeled zeros have 50 red plot points between each, with zeros identified by concentric magenta rings scaled to show the relative distance between their values of t. Gram’s law states that the curve usually crosses the real axis once between zeros. _([TheoryOfEverything]())_
+```
+
 [![RiemannZeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://www.eq19.com/#zeta-function)
 
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
