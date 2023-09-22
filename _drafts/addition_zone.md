@@ -267,6 +267,8 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 
 This is what we mean by _addition_ and it happens whenever a cycle is restarted. The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
 
+![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
+
 ## Structure: Minor Hexagons
 
 When you refer to the website of prime hexagon, there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
