@@ -269,7 +269,11 @@ So the above seven (7) primes will act then as ***[their partitions](https://www
 
 ## Structure: Minor Hexagons
 
-When we continue the there will be 
+When we continue the spin within the discussed prime hexagon with the higher numbers there are the six internal hexagons within the Prime Hexagon.
+
+```note
+Cell types are interesting, but they simply reflect a ***modulo 6 view of numbers***.  More interesting are the six internal hexagons within the Prime Hexagon.  Like the Prime Hexagon, they are newly discovered. The minor hexagons form solely from the order, and type, of primes along the number line _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
+```
 
 ![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
 
