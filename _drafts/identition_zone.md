@@ -261,7 +261,7 @@ By _[The Δ(19 vs 18) Scenario](https://www.eq19.com/identition/#%CE%B419-vs-18-
 
 ***0 + 30 + 36 + 102 = 168 = π(1000)***
 
-[![19vs18](https://user-images.githubusercontent.com/8466209/211178117-9a879fd0-163b-442b-87bf-49d76c0b6c50.png)](https://eq19.com/addition/#prime-hexagon)
+[![19vs18](https://user-images.githubusercontent.com/8466209/211178117-9a879fd0-163b-442b-87bf-49d76c0b6c50.png)](https://www.hexspin.com/0-1-and-negative-numbers/)
 
 The function that appears in the denominator is _[Partition Function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)#Generating_function)_. The equality between the product on the first line and the formulas ***in the third and fourth lines*** is _[Euler's pentagonal number theorem](https://en.m.wikipedia.org/wiki/Pentagonal_number_theorem)_ where `p(33) = 10143` landed exactly by `n - 7`.
 
