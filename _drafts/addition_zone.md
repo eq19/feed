@@ -259,7 +259,7 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 You may also notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure. 
 
-![](https://user-images.githubusercontent.com/36441664/268522887-591623d2-e019-45d1-b786-1d0ad7862c3e.jpg)
+![](https://user-images.githubusercontent.com/36441664/269957059-2f8144a0-c071-4ab3-9ee2-40d24ab1efe4.jpg)
 
 So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
