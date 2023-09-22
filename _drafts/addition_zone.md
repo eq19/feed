@@ -265,15 +265,15 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-This is what we mean by _addition_ and it happens whenever a cycle is restarted.
-
-![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
-
-So the above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***.
+So the above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***. This is what we mean by _addition_ and it happens whenever a cycle is restarted.
 
 ## Structure: Minor Hexagons
 
-When you refer to the website of prime hexagon, there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
+When we continue the there will be 
+
+![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
+
+Moreover there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
 
 ```note
 Similarly, I have a six colored dice in the form of the hexagon.  If I take a known, logical sequence of numbers, say 10, 100, 1000, 10000, and look at their spins in the hexagon, the resulting colors associated with each number should appear random – ***unless the sequence I’m investigating is linked to the nature of the prime numbers***.
