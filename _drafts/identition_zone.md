@@ -259,6 +259,10 @@ Let's discuss how they goes to 114 partitions by ∆18.
 
 By _[The Δ(19 vs 18) Scenario](https://www.eq19.com/identition/#%CE%B419-vs-18-scenario)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
 
+```note
+You likely noticed I began with 2 rather than 1 or 0 when I first constructed the hexagon. Why? Because they do not fit inside — they stick off the hexagon like a tail. Perhaps that’s where they belong. However, if one makes a significant and interesting assumption, then 1 and 0 fall in their logical locations – in the 1 and 0 cells, respectively. _([HexSpin](https://www.hexspin.com/0-1-and-negative-numbers/))
+```
+
 ***0 + 30 + 36 + 102 = 168 = π(1000)***
 
 [![19vs18](https://user-images.githubusercontent.com/8466209/211178117-9a879fd0-163b-442b-87bf-49d76c0b6c50.png)](https://www.hexspin.com/0-1-and-negative-numbers/)
