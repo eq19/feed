@@ -29,10 +29,6 @@ Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 
 
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
-```note
-Cell types are interesting, but they simply reflect a ***modulo 6 view of numbers***.  More interesting are the six internal hexagons within the Prime Hexagon.  Like the Prime Hexagon, they are newly discovered.   The minor hexagons form solely from the order, and type, of primes along the number line _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
-```
-
 [![Proof of Confinement](https://github.com/eq19/eq19.github.io/assets/8466209/ad0a0dc3-9f4d-4fb3-8a59-4c798fbe7bf7)](https://www.hexspin.com/proof-of-confinement/)
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
