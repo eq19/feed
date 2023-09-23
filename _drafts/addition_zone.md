@@ -298,7 +298,7 @@ That is, if the powers of 10 all returned with blue spin, or as a series of rain
 
 ![image](https://github.com/eq19/eq19.github.io/assets/36441664/8997b388-e0b8-481f-a763-76a46a07e085)
 
-There is one other thing with this prime hexagon. The developer found that phi and its members have a pisano period if the resulting fractional numbers are truncated. It would mean that there should be a crucial fraction with the residual of the decimal values. 
+Another is that phi and its members have a pisano period if the resulting fractional numbers are truncated. It would mean that there should be some undiscovered things hidden within the residual of the decimal values. 
 
 ```note
 I wondered if that property might hold for the incremental powers of phi as well. For this reason I chose to see numbers in the hexagon as quantum, and truncate off the decimal values to determine which integer cell they land in. That is what I found. Phi and its members have a pisano period if the resulting fractional numbers are truncated _([HexSpin](https://www.hexspin.com/phi-not-pi-and-why-i-truncate-to-determine-integer-values/))_.
