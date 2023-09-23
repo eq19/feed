@@ -7,7 +7,7 @@
 
 # Exponentiation Zones (31-36)
 
-{% include list.liquid all=true %}
+{% include list.liquid all=false %}
 
 ## Self repetition
 
