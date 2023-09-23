@@ -282,11 +282,13 @@ Cell types are interesting, but they simply reflect a ***modulo 6 view of number
 
 ![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
 
-Moreover there are statements mentioned by the provider which bring us in to an attention. We put some of them below.
+So the fisrt thing that need to be investigated is why the prime spinned by module six (6). What is the special thing about this number six (6) in primes behaviour?
 
 ```note
 Similarly, I have a six colored dice in the form of the hexagon.  If I take a known, logical sequence of numbers, say 10, 100, 1000, 10000, and look at their spins in the hexagon, the resulting colors associated with each number should appear random – ***unless the sequence I’m investigating is linked to the nature of the prime numbers***.
 ```
+
+Moreover there are statements mentioned by the provider which also bring us in to an attention like the modul o six above. We put some of them below.
 
 ![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
 
