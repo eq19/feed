@@ -244,6 +244,10 @@ The main different with gist is that wiki is allowing folder. So we can sort the
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
+In the second opposing member, the position 13 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position 31 as the ***11th prime number*** is now forced to determine a new axis-symmetrical zero position.
+
+![default](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
+
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
