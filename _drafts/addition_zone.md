@@ -274,7 +274,7 @@ So the above seven (7) primes will act then as ***[their partitions](https://www
 
 ## Structure: Minor Hexagons
 
-When we continue the spin within the discussed prime hexagon with the higher numbers there are the six internal hexagons within the Prime Hexagon.
+When we continue the spin within the discussed prime hexagon with the higher numbers there are the six (6) internal hexagons within the Prime Hexagon.
 
 ```note
 Cell types are interesting, but they simply reflect a ***modulo 6 view of numbers***.  More interesting are the six internal hexagons within the Prime Hexagon.  Like the Prime Hexagon, they are newly discovered. The minor hexagons form solely from the order, and type, of primes along the number line _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
@@ -290,7 +290,7 @@ Similarly, I have a six colored dice in the form of the hexagon.  If I take a kn
 
 ![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
 
-Moreover there are statements mentioned by the provider which also bring us in to an attention like the modul o six above. We put some of them below.
+Moreover there are view statements mentioned by the provider which also bring us in to an attention like the modulo 6 above. We put some of them below.
 
 ```note
 That is, if the powers of 10 all returned with blue spin, or as a series of rainbows, or evenly alternating colors or other non-random results, ***then I’d say prime numbers appear to have a linkage to 10.  I may not know what the the linkage is, just that it appears to exist*** _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
