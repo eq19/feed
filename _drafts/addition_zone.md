@@ -298,7 +298,7 @@ That is, if the powers of 10 all returned with blue spin, or as a series of rain
 
 ![image](https://github.com/eq19/eq19.github.io/assets/36441664/8997b388-e0b8-481f-a763-76a46a07e085)
 
-There is one other thing with this prime hexagon. The developer found that phi and its members have a pisano period if the resulting fractional numbers are truncated:
+There is one other thing with this prime hexagon. The developer found that phi and its members have a pisano period if the resulting fractional numbers are truncated. It would mean that there should be a crucial fraction with the residual of the decimal values. 
 
 ```note
 I wondered if that property might hold for the incremental powers of phi as well. For this reason I chose to see numbers in the hexagon as quantum, and truncate off the decimal values to determine which integer cell they land in. That is what I found. Phi and its members have a pisano period if the resulting fractional numbers are truncated _([HexSpin](https://www.hexspin.com/phi-not-pi-and-why-i-truncate-to-determine-integer-values/))_.
@@ -306,7 +306,7 @@ I wondered if that property might hold for the incremental powers of phi as well
 
 [![truncated fractional numbers](https://user-images.githubusercontent.com/8466209/229198281-8dbd72fb-cd0b-46c3-8a2c-ddc66107333e.png)](https://www.hexspin.com/phi-not-pi-and-why-i-truncate-to-determine-integer-values/)
 
-It would mean that there should be a crucial fraction with the residual of decimal value. In this project we are going to analyze it using a javascript library called _[Chevrotain](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)_.
+Going deeper there are many things raised up as questions. So in this project we are going to analyze it using a javascript library called _[Chevrotain](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)_.
 
 [![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://www.eq19.com/multiplication/)
 
