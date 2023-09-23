@@ -7,6 +7,10 @@
 
 # Identition Zones (37-102)
 
+{% include list.liquid all=false %}
+
+## Extra dimensions
+
 By this image you would see how the exponentiation zones should actually work on our solar system. But there is still not enough.
 
 ```note
