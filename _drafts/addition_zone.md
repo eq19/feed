@@ -199,7 +199,7 @@ Each time a prime number is encountered, the spin or ‘wall preference’ is sw
 
 [![Defining the Prime Hexagon](https://github.com/eq19/eq19.github.io/assets/8466209/36aeac77-ecb2-4c94-b2ea-fe0f8b7e391c)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
-That is, as the number line winds about toward infinity, bending around prime numbers, it never exits the ***24 cells***.
+As the number line winds about toward infinity, bending around prime numbers, it never exits the ***24 cells***. and it is the fact that 168 divided by 24 is ***exactly seven (7)***. 
 
 ```note
 The most obvious interesting feature of this prime hexagon is it confines all numbers of primes spin! 
@@ -207,7 +207,6 @@ The most obvious interesting feature of this prime hexagon is it confines all nu
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
 
-The fact is that the number of 168 divided by 24 is ***exactly seven (7)***. 
 So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_.
 
 ## Structure: True Prime Pairs
@@ -220,27 +219,27 @@ $True Prime Pairs:
  
 layer | node | sub |  i  |  f
 ------+------+-----+----------
-      |      |     |  1  | 
-      |      |  1  +-----+          
-      |  1   |     |  2  | (5)
-      |      |-----+-----+
-      |      |     |  3  |
-  1   +------+  2  +-----+----
-      |      |     |  4  |
-      |      +-----+-----+
-      |  2   |     |  5  | (7)
-      |      |  3  +-----+
-      |      |     |  6  |
-------+------+-----+-----+------      } (36)
-      |      |     |  7  |
-      |      |  4  +-----+
-      |  3   |     |  8  | (11)
-      |      +-----+-----+
-      |      |     |  9  |
-  2   +------|  5  +-----+-----
-      |      |     |  10 |
-      |      |-----+-----+
-      |  4   |     |  11 | (13)
+      |      |     |  1  | --------------------------
+      |      |  1  +-----+                           |    
+      |  1   |     |  2  | (5)                       |
+      |      |-----+-----+                           |
+      |      |     |  3  |                           |
+  1   +------+  2  +-----+----                       |
+      |      |     |  4  |                           |
+      |      +-----+-----+                           |
+      |  2   |     |  5  | (7)                       |
+      |      |  3  +-----+                           |
+      |      |     |  6  |                          11x
+------+------+-----+-----+------      } (36)         |
+      |      |     |  7  |                           |
+      |      |  4  +-----+                           |
+      |  3   |     |  8  | (11)                      |
+      |      +-----+-----+                           |
+      |      |     |  9  |                           |
+  2   +------|  5  +-----+-----                      |
+      |      |     |  10 |                           |
+      |      |-----+-----+                           |
+      |  4   |     |  11 | (13) ---------------------
       |      |  6  +-----+
       |      |     |  12 |
 ------+------+-----+-----+------------------
