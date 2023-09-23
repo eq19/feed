@@ -288,9 +288,9 @@ So the fisrt thing that need to be investigated is why the prime spinned by modu
 Similarly, I have a six colored dice in the form of the hexagon.  If I take a known, logical sequence of numbers, say 10, 100, 1000, 10000, and look at their spins in the hexagon, the resulting colors associated with each number should appear random – ***unless the sequence I’m investigating is linked to the nature of the prime numbers***.
 ```
 
-Moreover there are statements mentioned by the provider which also bring us in to an attention like the modul o six above. We put some of them below.
-
 ![](https://user-images.githubusercontent.com/36441664/74550123-6dd1d680-4f83-11ea-8810-3b8f4f50a9c0.png)
+
+Moreover there are statements mentioned by the provider which also bring us in to an attention like the modul o six above. We put some of them below.
 
 ```note
 That is, if the powers of 10 all returned with blue spin, or as a series of rainbows, or evenly alternating colors or other non-random results, ***then I’d say prime numbers appear to have a linkage to 10.  I may not know what the the linkage is, just that it appears to exist*** _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
