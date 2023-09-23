@@ -7,7 +7,7 @@
 
 # Identition Zones (37-102)
 
-{% include list.liquid all=false %}
+{% include list.liquid all=true %}
 
 ## Extra dimensions
 
