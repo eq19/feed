@@ -242,6 +242,8 @@ The main different with gist is that wiki is allowing folder. So we can sort the
 
 ## MEC30 Structure
 
+These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
@@ -291,8 +293,6 @@ layer | node | sub |  i  |  f
 In the second opposing member, the position 13 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position 31 as the ***11th prime number*** is now forced to determine a new axis-symmetrical zero position.
 
 ![default](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
-
-These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
 Because the value 30 is the first (common) product of the first 3 primes. ***And this 30th order repeats itself to infinity. Even in the first 30s system, therefore, the positions are fixed in which the number information positions itself to infinity***. We call it the first member of the MEC 30. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
