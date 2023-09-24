@@ -261,13 +261,13 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
  
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), this vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is scaled.
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), this vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
 
 ```note
 A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
 ```
 
-[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview)
+[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
 
 The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
 
@@ -281,7 +281,7 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-So the above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
+The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
 
 ## Structure: Minor Hexagons
 
