@@ -37,7 +37,7 @@ Since the _modulo 6_ is occured all over the spin then we have defined that this
 
 The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
 
-### Hexagonal formation
+### Root functions
 
 Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
 
