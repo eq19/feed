@@ -12,7 +12,7 @@ Addition is the form of an expression set equal to zero as the ***additive ident
 
 {% include list.liquid all=true %}
 
-By the _[Euler's identity](https://www.eq19.com/#eulers-identity)_ this addition should form as one (1) unit of an object originated by the 18s structure.<br>For further on let's call this unit as ***the base unit***.
+By the _[Euler's identity](https://www.eq19.com/#eulers-identity)_ this addition should form as one (1) unit of an object originated by the 18s structure. For further on let's call this unit as ***the base unit***.
 
 ## Prime Hexagon
 
