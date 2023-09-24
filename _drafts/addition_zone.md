@@ -261,7 +261,7 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
  
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), this vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when that linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), this vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
 
 ```note
 A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
