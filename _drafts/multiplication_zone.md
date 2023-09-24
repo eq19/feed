@@ -195,8 +195,6 @@ So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they wil
 
 This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
 
-## MEC30 Structure
-
 We are going to manage the relation of all the involved things in the scheme above using wiki and gist available by GitHub. Here is the example of the code:
 
 ```tip
@@ -240,7 +238,53 @@ find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f 
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
 
+## MEC30 Structure
+
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
+
+```
+$True Prime Pairs:
+(5,7), (11,13), (17,19)
+ 
+layer | node | sub |  i  |  f
+------+------+-----+----------   ---------------------------------- 0
+      |      |     |  1  | --------------------------
+      |      |  1  +-----+                           |    
+      |  1   |     |  2  | (5)                       |
+      |      |-----+-----+                           |
+      |      |     |  3  |                           |
+  1   +------+  2  +-----+----                       |
+      |      |     |  4  |                           |
+      |      +-----+-----+                           |
+      |  2   |     |  5  | (7)                       |
+      |      |  3  +-----+                           |
+      |      |     |  6  |                          11s
+------+------+-----+-----+------      } (36)         |
+      |      |     |  7  |                           |
+      |      |  4  +-----+                           |
+      |  3   |     |  8  | (11)                      |
+      |      +-----+-----+                           |
+      |      |     |  9  |                           |
+  2   +------|  5  +-----+-----                      |
+      |      |     |  10 |                           |
+      |      |-----+-----+                           |
+      |  4   |     |  11 | (13) ---------------------
+      |      |  6  +-----+        ---------------------------------- 15
+      |      |     |  12 |---------------------------
+------+------+-----+-----+------------               |
+      |      |     |  13 |                           |
+      |      |  7  +-----+                           |
+      |  5   |     |  14 | (17)                      |
+      |      |-----+-----+                           |
+      |      |     |  15 |                           7s
+  3   +------+  8  +-----+-----       } (36)         |
+      |      |     |  16 |                           |
+      |      |-----+-----+                           |
+      |  6   |     |  17 | (19)                      |
+      |      |  9  +-----+                           |
+      |      |     |  18 | --------------------------
+------|------|-----+-----+------   ---------------------------------- 30
+```
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
