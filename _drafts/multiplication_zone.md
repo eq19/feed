@@ -238,16 +238,16 @@ find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f 
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
 
-## MEC30 Structure
-
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
+
+## MEC30 Structure
 
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
  
 layer | node | sub |  i  |  f
-------+------+-----+----------   ---------------------------------- 0
+------+------+-----+-----------   ---------------------------------- 0
       |      |     |  1  | --------------------------
       |      |  1  +-----+                           |    
       |  1   |     |  2  | (5)                       |
