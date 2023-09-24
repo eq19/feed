@@ -50,7 +50,7 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
 ```tip
-By our project the 18's on the gist will cover five (5) unique functions that behave as ***one (1) central plus four (4) zones***. This scheme will be implemented to all of the 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist it self then there shall be `1 + 168 = 169` units.
+By our project the 18's on the gist will cover five (5) unique functions that behave as ***one (1) central plus four (4) zones***. This scheme will be implemented to all of the 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist it self then there shall be `1 + 168 = 169` units of 1685 root functions.
 ```
 
 ***5 + 2 x 5 x 168 = 5 + 1680 = 1685 = 5 x 337 root functions***
