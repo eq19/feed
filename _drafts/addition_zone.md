@@ -265,7 +265,7 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
-Since the plane shall have symmetrical vector then this 7s will take the posistion on 36 side of prime pair 17 and 19 as extension to the 11s.
+Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
 
 ```note
 A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
