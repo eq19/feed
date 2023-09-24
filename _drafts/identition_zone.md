@@ -25,7 +25,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 1. ***Line/length***
 2. ***Plane/shapes***
 3. ***Depth***
-4. ***Time***
+4. ***Time*** (attemp to become the _[theory of everything](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_)
 5. ***Alternate world*** (we could measure similarities and differences of what might have been).
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
