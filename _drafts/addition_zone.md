@@ -216,7 +216,10 @@ So there should be a tight connection between the prime within 1000 with the _[2
 ## Structure: True Prime Pairs
 
 You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
-Since the plane shall have symmetrical vactor then this 7 primes will take the posistion as below.
+
+```note
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
+```
 
 ```
 $True Prime Pairs:
@@ -261,8 +264,8 @@ layer | node | sub |  i  |  f
       |      |     |  18 | --------------------------
 ------|------|-----+-----+------
 ```
- 
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), this vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
+
+Since the plane shall have symmetrical vector then this 7s will take the posistion on 36 side of prime pair 17 and 19 as extension to the 11s.
 
 ```note
 A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
