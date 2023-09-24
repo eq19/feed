@@ -81,7 +81,7 @@ In order to maintain the 18's structure between each of repositories to correlat
 
 [![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
 
-By this point we come to the position where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
+This density will bring the _[D3-Brane](https://en.m.wikipedia.org/wiki/D-brane)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
 ## Parsering Structure
 
