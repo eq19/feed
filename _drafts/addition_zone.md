@@ -288,7 +288,7 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string"), a D2-brane is a plane, and a ***D25-brane fills the highest-dimensional space considered in bosonic string theory***. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
 ```
 
-[![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
+[![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/identition/#partition-function)
 
 The above seven (7) primes will act then as ***[extended branes](https://en.m.wikipedia.org/wiki/D-brane)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
 
