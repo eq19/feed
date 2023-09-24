@@ -109,7 +109,8 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***[exponentiation](https://www.eq19.com/exponentiation/)***.
+So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***[exponentiation](https://www.eq19.com/exponentiation/)***. This scheme will be organized via the 
+_[](https://www.eq19.com/exponentiation/#root-functions)_ of each repositories.
 
 ```warning
 The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_. This gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be followed by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
