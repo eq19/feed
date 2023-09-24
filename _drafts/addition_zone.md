@@ -216,6 +216,7 @@ So there should be a tight connection between the prime within 1000 with the _[2
 ## Structure: True Prime Pairs
 
 You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
+Since the plane shall have symmetrical vactor then this 7 primes will take the posistion as below.
 
 ```
 $True Prime Pairs:
