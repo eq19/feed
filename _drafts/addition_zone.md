@@ -281,7 +281,7 @@ So there would be the empty spaces for `18 - 7 = 11` numbers. By our project the
 
 [![partitions](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/#eulers-identity)
 
-The above seven (7) primes will act then as ***[their partitions](https://www.eq19.com/identition/#euler-partition)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
+The above seven (7) primes will act then as ***[extended branes](https://en.m.wikipedia.org/wiki/D-brane)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
 
 ## Structure: Minor Hexagons
 
