@@ -11,6 +11,10 @@
 
 ## Assigning a lexer
 
+You may learn that sets of algebraic objects has a multilinear relationship related to a vector space called _[tensor](https://en.wikipedia.org/wiki/Tensor)_. Tensors may map between different objects such as vectors, scalars, even other tensors contained in a group of _[partitions](https://en.wikipedia.org/wiki/Partition_(number_theory))_.
+
+[![300px-Components_stress_tensor svg](https://user-images.githubusercontent.com/8466209/211590875-9cae3c47-bbdc-43d8-acc5-d8c64c802967.png)](https://en.wikipedia.org/wiki/Tensor)
+
 By prime hexagon we can see that the number seven (7), hold the power to make the prime spin remain on the track. This power is then transfered to ***twelve (12) spins***. 
 
 ```note
