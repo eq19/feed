@@ -152,7 +152,7 @@ These are the ones that bring [`11 + 13 = 24 cell hexagons`](https://www.eq19.co
 
 ## Orbital structure
 
-The the main reason of assigning two (2) profiles instead of only one (1) is that we have to accommodate the two (2) major types of primes numbers. There are primes number called twin primes.
+The the main reason of assigning two (2) profiles instead of only one (1) is that we have to accommodate the major type of primes numbers called twin primes.
 
 ```note
 This is a necessary but not sufficient condition for N to be a prime as noted, for example, by N= 6(4)+1= 25, which is clearly composite. We note that each turn of the spiral equals an increase of six units. This means that we have a mod(6) situation allowing us to write: N mod(6)=6n+1 or N mod(6)=6n-1 (equivalent to 6n+5). _([HexSpiral-Pdf](https://mae.ufl.edu/~uhk/HEX-SPIRAL-N.pdf))_
