@@ -25,10 +25,6 @@ Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no p
 
 By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
 
-```tip
-In the standard (Mispar hechrechi) version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900.
-```
-
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
