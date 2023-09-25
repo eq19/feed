@@ -23,52 +23,6 @@ Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no p
 
 [![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://www.eq19.com/addition/#structure-minor-hexagons)
 
-By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
-
-```
-$True Prime Pairs:
-(5,7), (11,13), (17,19)
- 
-layer | node | sub |  i  |  f
-------+------+-----+-----------   ---------------------------------- 0
-      |      |     |  1  | --------------------------
-      |      |  1  +-----+                           |    
-      |  1   |     |  2  | (5)                       |
-      |      |-----+-----+                           |
-      |      |     |  3  |                           |
-  1   +------+  2  +-----+----                       |
-      |      |     |  4  |                           |
-      |      +-----+-----+                           |
-      |  2   |     |  5  | (7)                       |
-      |      |  3  +-----+                           |
-      |      |     |  6  |                          11s ‹------- 71
-------+------+-----+-----+------      } (36)         |
-      |      |     |  7  |                           |
-      |      |  4  +-----+                           |
-      |  3   |     |  8  | (11)                      |
-      |      +-----+-----+                           |
-      |      |     |  9  |                           |
-  2   +------|  5  +-----+-----                      |
-      |      |     |  10 |                           |
-      |      |-----+-----+                           |
-      |  4   |     |  11 | (13) ---------------------
-      |      |  6  +-----+        ---------------------------------- 15
-      |      |     |  12 |---------------------------
-------+------+-----+-----+------------               |
-      |      |     |  13 |                           |
-      |      |  7  +-----+                           |
-      |  5   |     |  14 | (17)                      |
-      |      |-----+-----+                           |
-      |      |     |  15 |                           7s ‹------- 43
-  3   +------+  8  +-----+-----       } (36)         |
-      |      |     |  16 |                           |
-      |      |-----+-----+                           |
-      |  6   |     |  17 | (19)                      |
-      |      |  9  +-----+                           |
-      |      |     |  18 | --------------------------
-------|------|-----+-----+------   ---------------------------------- 30
-```
-
 Therefore this 12's treatment will involve at least ***11 groups of runner*** and one (1) profile of the 7's transformation. We collect them in [`11 + 7 = 18 gists`](https://gist.github.com/eq19) as below.
 
 ```tip
@@ -165,17 +119,67 @@ https://api.github.com/gists/80c8098f16f3e6ca06893b17a02d910e 11 group10
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 ```
 
-These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
 
-***19 x 6 = 43 + 71 = 114***
-
-![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+```
+$True Prime Pairs:
+(5,7), (11,13), (17,19)
+ 
+layer | node | sub |  i  |  f
+------+------+-----+-----------   ---------------------------------- 0
+      |      |     |  1  | --------------------------
+      |      |  1  +-----+                           |    
+      |  1   |     |  2  | (5)                       |
+      |      |-----+-----+                           |
+      |      |     |  3  |                           |
+  1   +------+  2  +-----+----                       |
+      |      |     |  4  |                           |
+      |      +-----+-----+                           |
+      |  2   |     |  5  | (7)                       |
+      |      |  3  +-----+                           |
+      |      |     |  6  |                          11s ‹------- 71
+------+------+-----+-----+------      } (36)         |
+      |      |     |  7  |                           |
+      |      |  4  +-----+                           |
+      |  3   |     |  8  | (11)                      |
+      |      +-----+-----+                           |
+      |      |     |  9  |                           |
+  2   +------|  5  +-----+-----                      |
+      |      |     |  10 |                           |
+      |      |-----+-----+                           |
+      |  4   |     |  11 | (13) ---------------------
+      |      |  6  +-----+        ---------------------------------- 15
+      |      |     |  12 |---------------------------
+------+------+-----+-----+------------               |
+      |      |     |  13 |                           |
+      |      |  7  +-----+                           |
+      |  5   |     |  14 | (17)                      |
+      |      |-----+-----+                           |
+      |      |     |  15 |                           7s ‹------- 43
+  3   +------+  8  +-----+-----       } (36)         |
+      |      |     |  16 |                           |
+      |      |-----+-----+                           |
+      |  6   |     |  17 | (19)                      |
+      |      |  9  +-----+                           |
+      |      |     |  18 | --------------------------
+------|------|-----+-----+------   ---------------------------------- 30
+```
 
 So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
 
 This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
 
 ## MEC30 Structure
+
+These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+
+***19 x 6 = 43 + 71 = 114***
+
+![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+
+This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
+
+[![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
 We are going to manage the relation of all the involved things in the scheme above using wiki and gist available by GitHub. Here is the example of the code:
 
@@ -219,10 +223,6 @@ find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1"
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
-
-This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
-
-[![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
 The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
