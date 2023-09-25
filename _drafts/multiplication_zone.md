@@ -169,17 +169,17 @@ https://api.github.com/gists/80c8098f16f3e6ca06893b17a02d910e 11 group10
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 ```
 
-So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
-
-This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
-
-## MEC30 Structure
-
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ***19 x 6 = 43 + 71 = 114***
 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+
+So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
+
+This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
+
+## MEC30 Structure
 
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
