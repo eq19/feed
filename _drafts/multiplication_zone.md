@@ -247,6 +247,8 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------   ---------------------------------- 30
 ```
 
+![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
