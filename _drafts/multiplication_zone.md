@@ -247,6 +247,8 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------   ---------------------------------- 30
 ```
 
+***19 x 6 = 43 + 71 = 114***
+
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
 
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
