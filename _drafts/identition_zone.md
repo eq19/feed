@@ -44,7 +44,7 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
-In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
+In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
 ```tip
 The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
@@ -60,6 +60,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 ![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
+In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
 
 ## Partition function
 
