@@ -169,10 +169,6 @@ https://api.github.com/gists/80c8098f16f3e6ca06893b17a02d910e 11 group10
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 ```
 
-You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
-
-[![recycle](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://github.com/chetabahana/chetabahana.github.io/wiki/18)
-
 So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
 
 This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
@@ -239,5 +235,7 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 ```
 
 [![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/exponentiation)
+
+You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
 
 Let's find what we can do with it.
