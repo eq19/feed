@@ -95,7 +95,7 @@ Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 
 
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
-[![Proof of Confinement](https://github.com/eq19/eq19.github.io/assets/8466209/ad0a0dc3-9f4d-4fb3-8a59-4c798fbe7bf7)](https://www.hexspin.com/proof-of-confinement/)
+[![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270365129-b623e629-3c56-4f6d-83da-2849b41db854.png)](https://www.hexspin.com/proof-of-confinement/)
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
