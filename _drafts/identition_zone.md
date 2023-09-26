@@ -250,6 +250,8 @@ Our gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/ad
 
 So the four (4) zones is actually a streaching result by means of _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
+Let's discuss how it goes by the seven (7) extra dimensions.
+
 ## Euler partition
 
 By _[The Δ(19 vs 18) Scenario](https://www.eq19.com/identition/#%CE%B419-vs-18-scenario)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
