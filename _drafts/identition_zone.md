@@ -262,7 +262,7 @@ By the above tabulation, here you can see that _[the layout](https://gist.github
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://www.hexspin.com/proof-of-confinement/)
 
-So the four (4) zones is actually a streaching result by means of _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_. Thus it is the main reason why our our live dimensions is four (4) instead of eleven (11).
+So the four (4) zones is actually a streaching result by means of _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
 ## Euler partition
 
