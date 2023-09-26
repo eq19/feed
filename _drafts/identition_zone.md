@@ -243,7 +243,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
 ```warning
-Our gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be followed by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
+Our gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be compacted by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
 ```
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://www.hexspin.com/proof-of-confinement/)
