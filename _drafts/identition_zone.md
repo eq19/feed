@@ -119,7 +119,7 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
 These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
 
 ```warning
-The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_. This gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be followed by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
+The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
 ```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
@@ -241,6 +241,10 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 ```
 
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
+
+```warning
+Our gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be followed by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
+```
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://www.hexspin.com/proof-of-confinement/)
 
