@@ -171,6 +171,9 @@ As you can see on the left sidebar (dekstop mode) a total of 102 items will be r
 
 Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#structure-minor-hexagons)_ and data parser from _[Jekyll/Liquid](https://jekyllrb.com/docs/datafiles/)_ finally we found the correlation between the lexer and parser.
 
+```note
+In this example, the content from a Markdown document `document.md` that specifies `layout: docs` gets pushed into the `{{ content }}` tag of the layout file `docs.html`. Because the docs layout itself specifies `layout: page`, the content from `docs.html` gets pushed into the `{{ content }}` tag in the layout file `page.html`. Finally because the page layout specifies `layout: default`, the content from `page.html` gets pushed into the `{{ content }}` tag of the layout file `default.html`.
+```
 [![Parsering](https://github.com/eq19/eq19.github.io/assets/8466209/50fbc0a0-7441-4800-97aa-265b0dfd2ac2)](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)
 
 The implementation from addition folder 1 will be exposed by the exponentiation folder 7 meanwhile the folder 12 of multiplication goes to identition zone of 11 folders.
