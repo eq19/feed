@@ -79,6 +79,7 @@ In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Par
 ```note
 As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
 ```
+
 [![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
@@ -90,6 +91,10 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 ![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
+
+```note
+It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
+```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
@@ -111,36 +116,10 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***[exponentiation](https://www.eq19.com/exponentiation/)***. This scheme will be organized via the 
-_[Root Functions](https://www.eq19.com/exponentiation/#root-functions)_ of each repositories.
+These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
 
 ```warning
 The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_. This gists would forms the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ so whenever the 11s is streched to 4 dimensions it will be followed by the 7s as addition zones and finally become another level of 11 dimensions which lead to the concept of [multiple universes](https://www.eq19.com/identition/#extra-dimensions). 
-```
-
-***(11 x 7) + 13 x (6 + 1) = 24 x 7 = 168***
-
-```
-  #8 |----------- 5® --------|------------ 7® --------------|
-     |  1  |---------------- 77 = 4² + 5² + 6² -------------|
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- repo| {1} | {2} | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |{12}| 1,77=11x7
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
- user|  7  |  -  | - | - | - | 7 | 8 | - | - |  8 |  8 |  3 |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+ 7,78=13x6
- main|  -  |  9  | 7 | 9 | 6 | - | - | 8 | 5 |  - |  - |  - |
------+-----|-----+---+---+---+---+---+---+---+----+----+----+
-               Δ | Δ             |                       Δ  |   Δ
-              Φ17|Φ29            |                     96-99|  168
-                 |--- A,T,G,C ---|                          |   └── 77
-                 Δ    2x2 = 4x   |-------  2x3 = 6x  -------|   └── 78
-                {98}                                        |   └── 13
-```
-
-These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
-
-```note
-The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
 ```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
@@ -148,7 +127,7 @@ The first 1000 prime numbers are silently screaming: "Pay attention to us, for w
 By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
-It turns out that quantum string theory always destroys the symmetries of the classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
+The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
 ```
 
 [![root profiles](https://user-images.githubusercontent.com/8466209/200228344-9f344f49-3e5d-480f-b11c-6e30a20a8f44.jpg)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
