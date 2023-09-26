@@ -256,13 +256,11 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
            -113 +150 = +37                                             +102 = +139    -113 -114
 ```
 
-By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102. So the four (4) zones is actually a streaching result by means of _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
+By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://www.hexspin.com/proof-of-confinement/)
 
-Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar.
-
-Thus it is the main reason why our our live dimensions is four (4) instead of eleven (11).
+So the four (4) zones is actually a streaching result by means of _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_. Thus it is the main reason why our our live dimensions is four (4) instead of eleven (11).
 
 ## Euler partition
 
