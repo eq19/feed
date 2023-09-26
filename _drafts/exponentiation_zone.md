@@ -99,10 +99,6 @@ In the standard (Mispar hechrechi) version of gematria, each letter is given a n
 
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
-[![Proof of Confinement](https://user-images.githubusercontent.com/8466209/241399304-54abb818-2af1-4d9f-80dc-0b1237b88be4.png)](https://www.hexspin.com/proof-of-confinement/)
-
-Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
-
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
 The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
