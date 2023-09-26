@@ -27,6 +27,8 @@ Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
+So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
+
 ```tip
 In the standard (Mispar hechrechi) version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900.
 ```
