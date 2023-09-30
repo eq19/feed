@@ -226,7 +226,7 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------      ‹------------------------------- 30
 ```
 
-By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
+By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by three (3) cycles of six (6) spins as below.
 
 ***19 x 6 = 43 + 71 = 114***
 
