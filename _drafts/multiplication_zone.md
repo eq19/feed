@@ -168,6 +168,14 @@ This eleven (11) things will be discussed later in _[identition zones](https://w
 
 ## MEC30 Structure
 
+Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
+
+```note
+A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
+```
+
+[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
+
 By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
 
 ```tip
