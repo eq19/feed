@@ -166,7 +166,7 @@ So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they wil
 
 This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
 
-## MEC30 Structure
+## Streaching Structure
 
 Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
 
