@@ -261,14 +261,6 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
-Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
-
-```note
-A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
-```
-
-[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
-
 The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
 
 ```note
