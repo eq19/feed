@@ -121,8 +121,8 @@ https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 
 We are going to manage the relation of all the involved things in the scheme above using wiki and gist available by GitHub. Here is the example of the code:
 
-```tip
-Gists and Wiki are actually Git repositories, which means that you can fork or clone any gist, even if you aren't the original author. _(GitHub)_
+```note
+Gists and Wiki are actually Git repositories, which means that you can fork or clone any gist, even if you aren't the original author. _([GitHub](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists#about-gists))_
 ```
 
 ```bash
