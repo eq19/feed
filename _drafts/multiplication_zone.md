@@ -171,7 +171,7 @@ This eleven (11) things will be discussed later in _[identition zones](https://w
 By the item factorization we will need to use _[the logarithm](https://en.m.wikipedia.org/wiki/Logarithm)_ which is the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by the tabulation as below.
 
 ```tip
-Base on the distribution of _[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ structure on the 18s of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
+Base on the _[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
 ```
 
 ```
