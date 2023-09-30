@@ -226,7 +226,7 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------      ‹------------------------------- 30
 ```
 
-By the item factorization we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation). We end up by three (3) cycles time six (6) spins as 18 spins. This is what we mean by the ***multiplication zones***.
+By the item factorization we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by three (3) cycles time six (6) spins as 18 spins. This is what we mean by the ***multiplication zones***.
 
 ***19 x 6 = 43 + 71 = 114***
 
