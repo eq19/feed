@@ -207,7 +207,10 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
 
-So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_. We found later that it is also correlated with 1000 primes.
+The most obvious interesting feature of this prime hexagon is it confines all numbers of primes spin! 
+So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_. 
+
+We found later that it is also correlated with 1000 primes.
 
 ## Structure: True Prime Pairs
 
