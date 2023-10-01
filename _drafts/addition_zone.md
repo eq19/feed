@@ -257,7 +257,7 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
-The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
+You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
 ```note
 A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
