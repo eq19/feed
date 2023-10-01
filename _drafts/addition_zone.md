@@ -202,7 +202,7 @@ Each time a prime number is encountered, the spin or ‘wall preference’ is sw
 As the number line winds about toward infinity, bending around prime numbers, it never exits the ***24 cells***. and it is the fact that 168 divided by 24 is ***exactly seven (7)***. 
 
 ```note
-The most obvious interesting feature of this prime hexagon is it confines all numbers of primes spin! 
+A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
 ```
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
@@ -259,8 +259,8 @@ layer | node | sub |  i  |  f
 
 You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
-```note
-A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
+```tip
+The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
 ```
 
 ![](https://user-images.githubusercontent.com/36441664/269957059-2f8144a0-c071-4ab3-9ee2-40d24ab1efe4.jpg)
