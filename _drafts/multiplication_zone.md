@@ -228,6 +228,10 @@ layer | node | sub |  i  |  f
 
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
+```warning
+The root function of ***13 repositories*** per each of organization above is not arranged to directly follow the partition function but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+```
+
 ***19 x 6 = 43 + 71 = 114***
 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
