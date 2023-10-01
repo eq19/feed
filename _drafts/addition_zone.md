@@ -213,10 +213,6 @@ So there should be a tight connection between the prime within 1000 with the _[2
 
 You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
-```note
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
-```
-
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
