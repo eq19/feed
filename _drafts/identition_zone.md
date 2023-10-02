@@ -52,6 +52,10 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
+In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
+
+## String Theory
+
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
 ```tip
@@ -109,8 +113,6 @@ It turns out that quantum string theory always destroys the symmetries of the cl
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
-
-In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
 
 ## The powers of 10
 
