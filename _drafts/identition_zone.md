@@ -68,6 +68,8 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 ![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
+![fig-1](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)
+
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
 ## Partition function
