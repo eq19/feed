@@ -38,6 +38,8 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
+![](https://user-images.githubusercontent.com/36441664/271979682-67e1c1fe-8b18-427d-ba14-5c3713bab7af.png)
+
 The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ```note
