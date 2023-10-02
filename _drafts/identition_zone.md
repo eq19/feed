@@ -119,7 +119,7 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
 These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
 
 ```note
-The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of **"32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
+The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of ***32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
 ```
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
