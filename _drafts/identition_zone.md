@@ -130,7 +130,7 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-These 11 set of organizations will be organized per the scheme below. We are going to compile the result which shall complement to 1000 primes.
+The _[Root Function](https://www.eq19.com/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://www.eq19.com/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
 
 ```note
 The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of ***32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
@@ -151,10 +151,6 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 ## The powers of pi
 
 This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
-
-```warning
-The _[Root Function](https://www.eq19.com/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://www.eq19.com/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
-```
 
 ![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
 
