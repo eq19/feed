@@ -310,6 +310,10 @@ I wondered if that property might hold for the incremental powers of phi as well
 
 Going deeper there are many things raised up as questions. So in this project we are going to analyze it using a javascript library called _[Chevrotain](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)_.
 
+```note
+The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
+```
+
 [![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://www.eq19.com/multiplication/)
 
 It can be used to build parsers/compilers/interpreters for various use cases ranging from simple config files to full fledged programming languages.
