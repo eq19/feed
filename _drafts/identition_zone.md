@@ -152,10 +152,6 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 
 This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
 
-```note
-The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
-```
-
 ![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
