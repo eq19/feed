@@ -165,6 +165,10 @@ The position 19 in the second term gives a redundant value of the template 7 of 
 
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
+```tip
+Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
+```
+
 ***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
 
 [![exponentiation zones](https://user-images.githubusercontent.com/8466209/200024664-afc433a0-5f7f-4ec1-9bfc-77d672817fed.png)](https://github.com/eq19)
