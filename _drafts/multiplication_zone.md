@@ -178,10 +178,6 @@ A 2×2 real and symmetric matrix representing a stretching and shearing of the p
 
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
-```tip
-Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
-```
-
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
