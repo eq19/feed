@@ -225,7 +225,7 @@ layer | node | sub |  i  |  f
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
 ```tip
-The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing the scheme.
+The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing the 18s scheme.
 ```
 ***19 x 6 = 43 + 71 = 114***
 
