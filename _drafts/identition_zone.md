@@ -109,13 +109,15 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 
 ![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
 
-Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
+Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. 
 
 ```note
 It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
+
+Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ## The powers of 10
 
