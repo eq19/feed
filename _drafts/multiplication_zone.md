@@ -168,7 +168,7 @@ This eleven (11) things will be discussed later in _[identition zones](https://w
 
 ## Streaching Structure
 
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it. The corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
 
 ```note
 A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
@@ -225,7 +225,7 @@ layer | node | sub |  i  |  f
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
 ```tip
-The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing and keep them to remain stay on the 18s scheme.
+The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing and keep them to remain stay on the 18s scheme. Therefore we use the primes ***43 and 71*** as corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ which is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
 ```
 ***19 x 6 = 43 + 71 = 114***
 
