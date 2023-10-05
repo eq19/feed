@@ -249,4 +249,4 @@ Since the higher primes is more than 71 then the most logical position will be i
 You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
 
 So then a question is arised. Where is this vector flowing in the 18s?<br>
-Let's discusse first about exponentiation zone.
+Let's discuss it first with the _[exponentiation zones](https://www.eq19.com/exponentiation/)_.
