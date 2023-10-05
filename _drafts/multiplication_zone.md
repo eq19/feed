@@ -119,7 +119,7 @@ https://api.github.com/gists/80c8098f16f3e6ca06893b17a02d910e 11 group10
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
 ```
 
-We are going to manage the relation of all the involved things in the scheme above using wiki and gist available by GitHub. Here is the example of the code:
+We are going to manage the relation of all the involved things in the scheme above using wiki and gist. The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
 
 ```note
 Gists and Wiki are actually Git repositories, which means that you can fork or clone any gist, even if you aren't the original author. _([GitHub](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists#about-gists))_
@@ -239,8 +239,11 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
-The main different with gist is that wiki is allowing folder. So we can sort the files regardless where the folder that contained the file is located. 
+Base on the above streching on 18s structure and repeating on MEC30 it is clear that there will be a residual vector by the higher primes. So then a question is arised. Where this vector is going?
 
+```tip
+Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ended up on the prime 13.
+```
 [![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/exponentiation)
 
 You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
