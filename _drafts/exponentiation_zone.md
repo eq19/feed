@@ -9,6 +9,7 @@
 
 {% include list.liquid all=true %}
 
+Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar.
 ## Self repetition
 
 Exponentiation is an operation involving two numbers, the base and the exponent or power. Exponentiation is written as ***b<sup>n</sup>***, where ***b*** is the base and ***n*** is the power.
