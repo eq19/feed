@@ -179,7 +179,7 @@ A 2×2 real and symmetric matrix representing a stretching and shearing of the p
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
-Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _(Wikipedia)_
+Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _([Wikipedia](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors))_
 ```
 
 ```
