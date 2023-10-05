@@ -239,7 +239,7 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 
 [![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
 
-Base on the above streching on 18s structure and repeating on MEC30 it is clear that there will be a residual vector by the higher primes.
+Base on the above streching on 18s structure and repeating on MEC30 it is clear that there will be a residual vector by the higher primes. So where would they go?
 
 ```tip
 Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ***ended up on the prime 13***.
@@ -248,5 +248,5 @@ Since the higher primes is more than 71 then the most logical position will be i
 
 You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of prime [31 and 71](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#primes-platform) of previous layer.
 
-So then a question is arised. Where this vector is going?<br>
+So then a question is arised. Where is this vector flowing in the 18s?<br>
 Let's discusse first about exponentiation zone.
