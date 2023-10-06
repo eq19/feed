@@ -7,7 +7,7 @@
 
 # Multiplication Zones (19-30)
 
-Multiplication is the form of an inverse function to exponentation which stand as multiplicative identity reflects a point across the origin.
+Multiplication is the form of expression set equal to the inverse function of exponentation which stand as multiplicative identity reflects a point across the origin.
 
 {% include list.liquid all=true %}
 
