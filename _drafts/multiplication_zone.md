@@ -9,9 +9,15 @@
 
 {% include list.liquid all=true %}
 
+The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _the base unit_. 
+
 ## Assigning a lexer
 
-You may learn that sets of algebraic objects has a multilinear relationship related to a vector space called _[tensor](https://en.wikipedia.org/wiki/Tensor)_. Tensors may map between different objects such as vectors, scalars, even other tensors contained in a group of _[partitions](https://en.wikipedia.org/wiki/Partition_(number_theory))_.
+You may learn that sets of algebraic objects has a multilinear relationship related to a vector space called _[tensor](https://en.wikipedia.org/wiki/Tensor)_.
+
+```note
+Tensors may map between different objects such as vectors, scalars, even other tensors contained in a group of _[partitions](https://en.wikipedia.org/wiki/Partition_(number_theory))_.
+```
 
 [![300px-Components_stress_tensor svg](https://user-images.githubusercontent.com/8466209/211590875-9cae3c47-bbdc-43d8-acc5-d8c64c802967.png)](https://en.wikipedia.org/wiki/Tensor)
 
@@ -173,7 +179,7 @@ This eleven (11) things will be discussed later in _[identition zones](https://w
 In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
 
 ```note
-A 2×2 real and symmetric matrix representing a stretching and shearing of the plane. The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
+The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
 ```
 
 [![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
