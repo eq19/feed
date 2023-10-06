@@ -144,7 +144,7 @@ The four faces of our pyramid additively cascade ***32 four-times triangular num
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
-The symmetry of this supergravity theory is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic symmetry and Sp(32) for the fermion symmetry. 
+The symmetry of this supergravity theory is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
 This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
