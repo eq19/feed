@@ -73,13 +73,13 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 ![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)
 
-Our physical space is observed to have only three large dimensions and—taken together with time as the fourth dimension—a physical theory must take this into account. 
+Our physical space is observed to have only three large dimensions and—taken together with time as the fourth dimension, a physical theory must take this into account. 
 
-```note
-However, nothing prevents a theory from including more than 4 dimensions. In the case of string theory, consistency requires spacetime to have 10, 11 or 26 dimensions. ***The conflict between observation and theory is resolved by making the unobserved dimensions compactified***.
+```tip
+Nothing prevents a theory from including more than 4 dimensions. In the case of string theory, consistency requires spacetime to have 10, 11 or 26 dimensions. ***The conflict between observation and theory is resolved by making the unobserved dimensions compactified***.
 ```
 
-![fig-1](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)
+[![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
