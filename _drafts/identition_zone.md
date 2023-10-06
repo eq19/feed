@@ -9,7 +9,7 @@
 
 {% include list.liquid all=true %}
 
-This identition zones stands as one of the solution to manage the residual primes that happens in the exponentation zones even with the 18s scheme.
+This identition zones stands as one of the solution to manage the residual primes that happens in the exponentation zones to become even within _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_.
 
 
 ## Extra dimensions
