@@ -9,7 +9,7 @@
 
 {% include list.liquid all=true %}
 
-The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _the base unit_. 
+The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_. 
 
 ## Assigning a lexer
 
