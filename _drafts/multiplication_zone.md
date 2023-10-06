@@ -7,7 +7,7 @@
 
 # Multiplication Zones (19-30)
 
-Multiplication is the form of an expression set equal to the inverse function to exponentation as multiplicative identity.
+Multiplication is the form of an inverse function to exponentation which stand as imajinary partition to addition zones  as multiplicative identity.
 
 {% include list.liquid all=true %}
 
