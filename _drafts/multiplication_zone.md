@@ -7,6 +7,8 @@
 
 # Multiplication Zones (19-30)
 
+Multiplication is the form of an expression set equal to the inverse function to exponentation as multiplicative identity.
+
 {% include list.liquid all=true %}
 
 The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_. 
