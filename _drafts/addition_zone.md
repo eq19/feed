@@ -215,6 +215,10 @@ We found later that it is also correlated with 1000 primes.
 
 Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
 
+```note
+The number of primes less than or equal to a thousand (π(1000) = 168) equals the number of hours in a week (7 * 24 = 168).
+```
+
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
