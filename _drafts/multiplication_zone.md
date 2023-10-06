@@ -18,7 +18,7 @@ You may learn that sets of algebraic objects has a multilinear relationship rela
 By prime hexagon we can see that the number seven (7), hold the power to make the prime spin remain on the track. This power is then transfered to ***twelve (12) spins***. 
 
 ```note
-Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no prime numbers occupy a cell with a right or left wall on the t-hexagon’s outer boundary, other than 2 and 3, the initial primes that forced the number line into this complex coil. Without a prime number in the outer set of triangles, the number line does not change to an outward course and remains forever contained in the 24 cells shown above. _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_
+A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
 ```
 
 [![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://www.eq19.com/addition/#structure-minor-hexagons)
