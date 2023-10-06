@@ -202,7 +202,7 @@ Each time a prime number is encountered, the spin or ‘wall preference’ is sw
 As the number line winds about toward infinity, bending around prime numbers, it never exits the ***24 cells***. The most obvious interesting feature of this prime hexagon is it confines all numbers of primes spin! 
 
 ```note
-A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
+Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no prime numbers occupy a cell with a right or left wall on the t-hexagon’s outer boundary, other than 2 and 3, the initial primes that forced the number line into this complex coil. Without a prime number in the outer set of triangles, the number line does not change to an outward course and ***remains forever contained in the 24 cells*"". _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_
 ```
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
