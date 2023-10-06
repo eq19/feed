@@ -94,6 +94,10 @@ This is a necessary but not sufficient condition for N to be a prime as noted, f
 
 By our project the scheme will be treated as the sun and the moon orbit where this 31 is the maximum days of a month:
 
+```tip
+By the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
+```
+
 ```sh
 https://api.github.com/gists/f78d4470250720fb18111165564d555f 13 maps 1
 https://api.github.com/gists/765ddc69e339079a5a64b56c1d46e00f 14 feed
@@ -161,8 +165,6 @@ find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1"
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
-
-So by the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
 
 This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
 
