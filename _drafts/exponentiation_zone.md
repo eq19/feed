@@ -11,7 +11,7 @@ Exponentiation is an operation involving two numbers, the base and the exponent 
 
 {% include list.liquid all=true %}
 
-Exponentiation Zones allows multiple layers on representing _[recursive residues](https://arxiv.org/pdf/1801.07561)_ of the operands, thus promising large gain to arithmetic on numbers.
+Exponentiation Zones allows multiple layers on representing _[recursive residues](https://arxiv.org/pdf/1801.07561)_ of the operands, thus promising large gain to the conventional arithmetic expression
 
 ## Self repetition
 
