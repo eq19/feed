@@ -7,16 +7,18 @@
 
 # Exponentiation Zones (31-36)
 
+Exponentiation is an operation involving two numbers, the base and the exponent or power. Exponentiation is written as ***b<sup>n</sup>***, where ***b*** is the base and ***n*** is the power.
+
 {% include list.liquid all=true %}
 
 Exponentiation Zones allows multiple layers on representing _[recursive residues](https://arxiv.org/pdf/1801.07561)_ of the operands, thus promising large gain to arithmetic on numbers.
 
 ## Self repetition
 
-Exponentiation is an operation involving two numbers, the base and the exponent or power. Exponentiation is written as ***b<sup>n</sup>***, where ***b*** is the base and ***n*** is the power.
+The first appearance of ***e*** in a printed publication was in Euler's [Mechanica](https://en.m.wikipedia.org/wiki/Mechanica) (1736). It is unknown why Euler chose the letter e. 
 
 ```note
-[Leonhard Euler](https://en.m.wikipedia.org/wiki/Leonhard_Euler) started to use ***the letter e*** for the constant in 1727 or 1728, in an unpublished paper on explosive forces in cannons, and in a letter to [Christian Goldbach](https://en.m.wikipedia.org/wiki/Christian_Goldbach) on 25 November 1731. The first appearance of e in a printed publication was in Euler's [Mechanica](https://en.m.wikipedia.org/wiki/Mechanica) (1736). It is unknown why Euler chose the letter e. _([Wikipedia](https://en.wikipedia.org/wiki/E_(mathematical_constant)))_
+[Leonhard Euler](https://en.m.wikipedia.org/wiki/Leonhard_Euler) started to use ***the letter e*** for the constant in 1727 or 1728, in an unpublished paper on explosive forces in cannons, and in a letter to [Christian Goldbach](https://en.m.wikipedia.org/wiki/Christian_Goldbach) on 25 November 1731. _([Wikipedia](https://en.wikipedia.org/wiki/E_(mathematical_constant)))_
 ```
 
 [![Letter e](https://user-images.githubusercontent.com/36441664/262249679-b5d6fc1a-6e42-4775-b09d-965ddd046171.png)](https://en.wikipedia.org/wiki/E_(mathematical_constant))
