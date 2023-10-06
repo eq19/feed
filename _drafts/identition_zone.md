@@ -39,7 +39,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
-Unsolved problems in physics: Is string theory, superstring theory, or M-theory, or some other variant on this theme, a step on the road to a "theory of everything," or just a blind alley?
+Unsolved problems in physics: Is string theory, superstring theory, or M-theory, or some other variant on this theme, a step on the road to a _theory of everything_.
 
 ```note
 A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string"), a D2-brane is a plane, and a ***D25-brane fills the highest-dimensional space considered in bosonic string theory***. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
