@@ -75,8 +75,8 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 Our physical space is observed to have only three large dimensions and—taken together with time as the fourth dimension, a physical theory must take this into account. 
 
-```tip
-Nothing prevents a theory from including more than 4 dimensions. In the case of string theory, consistency requires spacetime to have 10, 11 or 26 dimensions. ***The conflict between observation and theory is resolved by making the unobserved dimensions compactified***.
+```note
+Nothing prevents a theory from including more than 4 dimensions. In the case of string theory, consistency requires spacetime to have 10, 11 or 26 dimensions. ***The conflict between observation and theory is resolved by making the unobserved dimensions compactified***. _([Astrophysics Research](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html))_
 ```
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
