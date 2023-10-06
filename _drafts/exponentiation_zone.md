@@ -9,7 +9,7 @@
 
 {% include list.liquid all=true %}
 
-Exponentiation Zones allows parallel addition and multiplication zones on the representing residues of the operands, thus promising large gain to arithmetic on numbers in conventional representation.
+Exponentiation Zones allows parallel addition and multiplication zones on the representing residues of the operands, thus promising large gain to arithmetic on numbers.
 
 ## Self repetition
 
