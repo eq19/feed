@@ -174,7 +174,7 @@ The mathematically significant Fibonacci sequence defines a set of ratios known 
 
 ***786 - 618 = 168 = π(1000)***
 
-![](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)
+[![parsering structure](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering_structure)
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
