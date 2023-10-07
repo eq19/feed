@@ -54,7 +54,7 @@ Geometrically flat" space has three dimensions and is consistent with Euclidean 
 In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding _[eigenvalues](https://www.eq19.com/multiplication/#streaching-structure)_ are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case ***self-consistent field method***.
 ```
 
-![](https://user-images.githubusercontent.com/36441664/273375893-4f9e31b6-69f1-4a61-88f8-5062df3b7edc.gif)
+[![expansion](https://user-images.githubusercontent.com/36441664/273375893-4f9e31b6-69f1-4a61-88f8-5062df3b7edc.gif)](https://www.eq19.com/multiplication/#streaching-structure)
 
 The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
