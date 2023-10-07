@@ -25,6 +25,10 @@ The first appearance of ***e*** in a printed publication was in Euler's [Mechani
 
 This exponentiation takes important roles since by the _[multiplication zones](https://www.eq19.com/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
 
+```note
+During the last few years of the 12th century, ***Fibonacci*** undertook a series of travels around the Mediterranean. At this time, the world’s most prominent mathematicians were Arabs, and he spent much time studying with them. In about 1200, he returned home to Italy, and two years later he published his book, Liber Abaci.This work, whose title translates as the Book of Calculation, was extremely influential in that ***it popularized the use of the Arabic numerals in Europe***, thereby revolutionizing arithmetic and allowing scientific experiment and discovery to progress more quickly.
+```
+
 [![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://www.eq19.com/multiplication/#parsering-structure)
 
 Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
