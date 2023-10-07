@@ -68,14 +68,6 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
 
-The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ we have shown that it is related to `π = 3.1415…`, the fundamental ***circle constant***.
-
-```note
-We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
-```
-
-[![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)](https://www.eq19.com/#eulers-identity)
-
 Our physical space is observed to have only three large dimensions and taken together with time as the fourth dimension, a physical theory must take this into account. 
 
 ```note
@@ -83,6 +75,14 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 ```
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
+
+The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ we have shown that it is related to `π = 3.1415…`, the fundamental ***circle constant***. So how does it go with ***i constant***?
+
+```note
+We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
+```
+
+[![Euler function](https://user-images.githubusercontent.com/8466209/219020102-60b526fd-273d-4c6d-8997-06254bdc5625.png)](https://www.eq19.com/#eulers-identity)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
