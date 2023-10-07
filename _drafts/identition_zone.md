@@ -48,14 +48,6 @@ A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string
 
 ![](https://user-images.githubusercontent.com/36441664/271979682-67e1c1fe-8b18-427d-ba14-5c3713bab7af.png)
 
-Geometrically flat" space has three dimensions and is consistent with Euclidean space. However, spacetime has four dimensions; _[it is not flat](https://en.wikipedia.org/wiki/Expansion_of_the_universe)_ according to Einsten's theory.
-
-```note
-In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding _[eigenvalues](https://www.eq19.com/multiplication/#streaching-structure)_ are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case ***self-consistent field method***.
-```
-
-[![expansion](https://user-images.githubusercontent.com/36441664/273375893-4f9e31b6-69f1-4a61-88f8-5062df3b7edc.gif)](https://www.eq19.com/multiplication/#streaching-structure)
-
 In order to propagate through space and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
 
 ## String Theory
@@ -119,6 +111,14 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 ```
 
 ![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)
+
+Geometrically flat space has three dimensions and is consistent with Euclidean space. However, spacetime has four dimensions; _[it is not flat](https://en.wikipedia.org/wiki/Expansion_of_the_universe)_ according to Einsten's theory.
+
+```note
+In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding _[eigenvalues](https://www.eq19.com/multiplication/#streaching-structure)_ are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case ***self-consistent field method***.
+```
+
+[![expansion](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)](https://www.eq19.com/multiplication/#streaching-structure)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. 
 
