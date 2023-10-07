@@ -169,7 +169,7 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
 
 ```note
-The mathematically significant Fibonacci sequence defines a set of ratios known as _[Fibonacci retracements](https://en.wikipedia.org/wiki/Fibonacci_retracement)_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with residual momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***. While not officially a Fibonacci ratio, 0.5 is also commonly referenced. _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
+The mathematically significant Fibonacci sequence defines a set of ratios known as _[Fibonacci retracements](https://en.wikipedia.org/wiki/Fibonacci_retracement)_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with additional momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***. While not officially a Fibonacci ratio, 0.5 is also commonly referenced. _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
 ```
 
 ***786 - 618 = 168 = π(1000)***
