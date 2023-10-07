@@ -48,6 +48,8 @@ A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string
 
 ![](https://user-images.githubusercontent.com/36441664/271979682-67e1c1fe-8b18-427d-ba14-5c3713bab7af.png)
 
+Geometrically flat" space has three dimensions and is consistent with Euclidean space. However, spacetime has four dimensions; it is not flat according to Einsten's general theory of relativity.
+
 ```note
 In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding eigenvalues are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case self-consistent field method.
 ```
