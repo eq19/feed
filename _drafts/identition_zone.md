@@ -169,12 +169,12 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
 
 ```warning
-The mathematically significant Fibonacci sequence defines a set of ratios known as ***[Fibonacci retracements](https://en.wikipedia.org/wiki/Fibonacci_retracement)*** which can be used to ***determine probable entry and exit points*** for the equities when paired with residual momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***. While not officially a Fibonacci ratio, 0.5 is also commonly referenced.
+The mathematically significant Fibonacci sequence defines a set of ratios known as _[Fibonacci retracements](https://en.wikipedia.org/wiki/Fibonacci_retracement)_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with residual momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***. While not officially a Fibonacci ratio, 0.5 is also commonly referenced.
 ```
 
 ***786 - 618 = 168 = π(1000)***
 
-[![parsering structure](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering_structure)
+[![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
 
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
