@@ -1,4 +1,4 @@
----
+b---
 💎: 5
 🚀: 19
 🔨: identition
@@ -76,7 +76,7 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
 
-We would suggest that it is hidden in the imajinary part in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the exponentiation we have shown that it is related to `π = 3.1415…`, the fundamental ***circle constant***.
+We would suggest that it is hidden in the imajinary part in the function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ which brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_we have shown that it is related to `π = 3.1415…`, the fundamental ***circle constant***.
 
 ```note
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
