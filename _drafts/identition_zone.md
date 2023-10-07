@@ -60,7 +60,7 @@ In order to propagate through space and how they interact with each other we sha
 
 ## String Theory
 
-The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
+In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
 ```note
 ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
@@ -68,7 +68,7 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 
 [![5th dimension](https://user-images.githubusercontent.com/36441664/268457527-b29e19e7-a0a1-487e-913c-38ad4087c7cf.png)](https://www.wattpad.com/amp/474802474)
 
-In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
+The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ```tip
 The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
