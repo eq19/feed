@@ -48,6 +48,8 @@ A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string
 
 ![](https://user-images.githubusercontent.com/36441664/271979682-67e1c1fe-8b18-427d-ba14-5c3713bab7af.png)
 
+![](https://user-images.githubusercontent.com/36441664/273375893-4f9e31b6-69f1-4a61-88f8-5062df3b7edc.gif)
+
 The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ```note
