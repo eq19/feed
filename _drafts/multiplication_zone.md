@@ -261,6 +261,16 @@ Base on the above streching on 18s structure and repeating on MEC30 it is clear 
 Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ***ended up on the prime 13***.
 ```
 
+You may see that the spins are going backward starting with `Id: 31`. This is identical with the rotation curve of energy distribution by the MEC30.
+
+```note
+The position 19 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position of the 19 is 11. So in this second term the 11th-prime number 31 is now forced to determine ***a new axis-symmetrical zero position***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
+```
+
+***37 + 12 = 61 - 12 = 49 = 7 x 7 = d(13)***
+
+![image](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
+
 Here we can see that the transformation from 7 to 12 is actually started from the prime 13. So the power of 7 is transfered to 77 by _[the partition level of 29 and 89](https://www.eq19.com/identition/#partition-function)_. 
 
 ```note
