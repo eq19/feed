@@ -279,7 +279,7 @@ We call this double strand a convolution, which results in an opposite arrangeme
 
 [![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#partition-function)
 
-You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of _primes 43 and 71_ of previous layer.
+You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of ***primes 29 and 89*** of previous layer.
 
 So then a question is arised. Where is this vector flowing in the 18s?<br>
 Let's discuss it first with the _[exponentiation zones](https://www.eq19.com/exponentiation/)_.
