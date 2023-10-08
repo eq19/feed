@@ -34,7 +34,7 @@ During the last few years of the 12th century, ***Fibonacci*** undertook a serie
 Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
 
 ```note
-Newton worked extensively uses calculus in geometric form based on limiting values of the ratios of vanishingly small quantities: in the Principia itself, Newton gave demonstration of this under the name of "the method of first and last ratios" and explained why he put his expositions in this form, remarking also that "hereby the same thing is performed as by the method of indivisibles. _([Wikipedia](https://en.m.wikipedia.org/wiki/Isaac_Newton))_
+A square system of coupled nonlinear equations can be solved iteratively by Newton's method. This method uses the Jacobian matrix of the system of equations. _([Wikipedia](https://en.m.wikipedia.org/wiki/Isaac_Newton))_
 ```
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
