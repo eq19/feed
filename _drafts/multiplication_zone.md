@@ -260,7 +260,16 @@ Base on the above streching on 18s structure and repeating on MEC30 it is clear 
 ```tip
 Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ***ended up on the prime 13***.
 ```
-[![parsering](https://user-images.githubusercontent.com/36441664/74591731-f5cfe300-504c-11ea-9e04-d814c57aa969.png)](https://www.eq19.com/exponentiation)
+
+Here we can see that the transformation from 7 to 12 is actually started from the prime 13. So the power of 7 is transfered to 77 by _[the partition level of 29 and 89](https://www.eq19.com/identition/#partition-function)_. 
+
+```note
+We call this double strand a convolution, which results in an opposite arrangement. It represents the natural vibration, thus also the redundant vibrations in the energy transfer. In the 6 For example, in the graph, the even number 60 is folded. At folding of the even number 60 6 result in ***8 prime pairs***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_
+```
+
+***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
+
+[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#partition-function)
 
 You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of _primes 43 and 71_ of previous layer.
 
