@@ -174,7 +174,9 @@ find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f 
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 ```
 
-This eleven (11) things will be discussed later in _[identition zones](https://www.eq19.com/identition/)_.
+The implementation from addition folder 1 will be exposed by the exponentiation folder 7 meanwhile the folder 12 of multiplication goes to identition zone of 11 folders.
+
+So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Streaching Structure
 
