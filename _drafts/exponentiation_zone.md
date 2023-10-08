@@ -121,7 +121,7 @@ In the Standard Model, the Higgs boson is a massive scalar boson whose mass must
 The Higgs boson field (often referred to as the "God particle") is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
 ```
 
-[![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273428838-cfe72f06-517a-4c21-a0e1-887a04712617.png)](https://en.wikipedia.org/wiki/Higgs_boson)
+[![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
 
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
