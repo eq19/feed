@@ -205,10 +205,6 @@ In this example, the content from a Markdown document `document.md` that specifi
 
 [![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
-The implementation from addition folder 1 will be exposed by the exponentiation folder 7 meanwhile the folder 12 of multiplication goes to identition zone of 11 folders.
-
-So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
-
 ## Exponentiation patterns
 
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
