@@ -33,7 +33,7 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 Therefore this 12's treatment will involve at least ***11 groups of runner*** and one (1) profile of the 7's transformation. We collect them in [`11 + 7 = 18 gists`](https://gist.github.com/eq19) as below.
 
-```tip
+```note
 Gists provide a simple way to share code snippets with others. Every gist is a Git repository, which means that it can be forked and cloned. If you are signed in to GitHub when you create a gist, the gist will be associated with your account and you will see it in your list of gists when you navigate to your gist home page. _([GitHub](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists#about-gists))_
 ```
 
@@ -62,6 +62,10 @@ https://api.github.com/gists/0ce5848f7ad62dc46dedfaa430069857 1 eq19/* 37
 ```
 
 By the prime hexagon the 19th spin is touching back to the first node. So the workflow will be proceeded as ***bilateral way*** and twisted them by such a kind of _[double strands](https://en.wikipedia.org/wiki/Base_pair)_.
+
+```tip
+Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ***ended up on the prime 13***.
+```
 
 ```sh
 https://api.github.com/gists/4ffc4d02579d5cfd336a553c6da2f267 12 group11 77
