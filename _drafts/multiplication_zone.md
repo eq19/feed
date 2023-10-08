@@ -257,12 +257,6 @@ Because the value 30 is the first (common) product of the first 3 primes. ***And
 
 Base on the above streching on 18s structure and repeating on MEC30 it is clear that there will be a residual vector by the higher primes. So where would they go?
 
-```tip
-Since the higher primes is more than 71 then the most logical position will be in the 11s somewhere in the third of minor hexagon. By the MEC30 we can see that they will be pushed to and ***ended up on the prime 13***.
-```
-
-You may see that the spins are going backward starting with `Id: 31`. This is identical with the rotation curve of energy distribution by the MEC30.
-
 ```note
 The position 19 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position of the 19 is 11. So in this second term the 11th-prime number 31 is now forced to determine ***a new axis-symmetrical zero position***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
 ```
