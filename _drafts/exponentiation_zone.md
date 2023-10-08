@@ -114,8 +114,7 @@ In the standard (Mispar hechrechi) version of gematria, each letter is given a n
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
 ```note
-The Higgs field is a scalar field with two neutral and two electrically charged components that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, gives mass to many particles. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
-```
+The Higgs field is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
