@@ -205,9 +205,11 @@ In this example, the content from a Markdown document `document.md` that specifi
 
 [![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
+By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
+
 ## Exponentiation patterns
 
-By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
+In vector calculus, the Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. 
 
 ```note
 It's possible to build a _[Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix)_ for a _[Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)_ step using the Jacobian method. ***You would first flatten out its axes into a matrix, and flatten out the gradient into a vector.*** _([Tensorflow](https://www.tensorflow.org/guide/advanced_autodiff#batch_jacobian))_
@@ -218,7 +220,7 @@ It's possible to build a _[Hessian matrix](https://en.wikipedia.org/wiki/Hessian
 When the subclasses of partitions are flatten out into a matrix, you want to take the Jacobian of each of a stack of targets with respect to a stack of sources, where the Jacobians for each target-source pair are independent.
 
 ```note
-In vector calculus, the Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. ***When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant***. Both the matrix and (if applicable) the determinant are often referred to simply as the Jacobian in literature. _([Wikipedia](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant))_
+***When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant***. Both the matrix and (if applicable) the determinant are often referred to simply as the Jacobian in literature. _([Wikipedia](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant))_
 ```
 
 [![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
