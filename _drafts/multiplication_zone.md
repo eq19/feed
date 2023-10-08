@@ -251,6 +251,9 @@ The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is 
 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
 
+The most question here is how ∆1 actually working between minus 1 and plus 1? 
+Here we finally come to Euler's identity by MEC30.
+
 ## Streching Structure
 
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
