@@ -41,6 +41,8 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 ## God Particle
 
+In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally.
+
 ```note
 The Higgs boson field (often referred to as the "God particle") is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
 ```
