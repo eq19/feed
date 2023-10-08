@@ -28,7 +28,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 ```note
 1. ***Line/length***
 2. ***Plane/shapes***
-3. ***Depth*** (representing a [stretching and shearing](https://www.eq19.com/addition/#structure-true-prime-pairs) of the plane)
+3. ***Depth*** (representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane)
 4. ***Time*** (stands as _[starting point](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ to attemp the ***[Theory Of Everything](https://youtu.be/3mXwMhMIGMA?t=3h54s)***).
 5. ***Alternate world*** (we could measure similarities and differences of what might have been).
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
