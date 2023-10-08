@@ -177,16 +177,6 @@ This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure
 
 ## Parsering Structure
 
-You may see that the spins are going backward starting with `Id: 31`. This is identical with the rotation curve of energy distribution by the MEC30.
-
-```note
-The position 19 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position of the 19 is 11. So in this second term the 11th-prime number 31 is now forced to determine ***a new axis-symmetrical zero position***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
-```
-
-***37 + 12 = 61 - 12 = 49 = 7 x 7 = d(13)***
-
-![image](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
-
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
 ```tip
