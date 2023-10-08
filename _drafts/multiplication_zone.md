@@ -277,7 +277,7 @@ We call this double strand a convolution, which results in an opposite arrangeme
 
 ***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
 
-[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#partition-function)
+[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/exponentiation/)
 
 You may see this scheme is build by 3 (three) layers where the next layer will continue the primes object by carrying the tensor of ***primes 29 and 89*** of previous layer.
 
