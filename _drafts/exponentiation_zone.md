@@ -163,7 +163,7 @@ By MEC30 we will also discuss the relation of these 4 zones with high density of
 Both Ulam and Gardner noted that the existence of such prominent lines ***is not unexpected***, as lines in ***the spiral correspond to quadratic polynomials***, and certain such polynomials, such as Euler's prime-generating polynomial x²-x+41, are believed to produce a high density of prime numbers. Nevertheless, the Ulam spiral is connected with **major unsolved problems** in number theory such as Landau's problems _([Wikipedia](https://en.wikipedia.org/wiki/Ulam_spiral))_.
 ```
 
-[![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sacks_spiral.svg/120px-Sacks_spiral.svg.png)
+[![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://www.eq19.com/multiplication/#streching-structure)
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
