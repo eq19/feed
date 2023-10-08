@@ -29,7 +29,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 1. ***Line/length***
 2. ***Plane/shapes***
 3. ***Depth*** (representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane)
-4. ***Time*** (stands as _[starting point](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ to attemp the ***[Theory Of Everything](https://youtu.be/3mXwMhMIGMA?t=3h54s)***).
+4. ***Time*** (stands as _[starting point](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ to attemp the ***Theory Of Everything***).
 5. ***Alternate world*** (we could measure similarities and differences of what might have been).
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
@@ -40,7 +40,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
-Unsolved problems in physics: Is string theory, superstring theory, or M-theory, or some other variant on this theme, a step on the road to a _theory of everything_.
+Unsolved problems in physics: Is string theory, superstring theory, or M-theory, or some other variant on this theme, a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
 
 ```note
 A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string"), a D2-brane is a plane, and a ***D25-brane fills the highest-dimensional space considered in bosonic string theory***. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
