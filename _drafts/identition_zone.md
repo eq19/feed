@@ -15,7 +15,7 @@ This identition zones stands as one of the solution to deal with the residual pr
 
 ## Extra dimensions
 
-By this image you would see how the exponentiation zones should actually work on our solar system. But there is still not enough.
+By this image you would see how the exponentiation zones should actually work based on _[spacetime](https://en.m.wikipedia.org/wiki/Spacetime)_ on our solar system. But there is still not enough.
 
 ```note
 Five consistent versions of superstring theory were developed before it was conjectured in the mid-1990s that they were all different limiting cases of a single theory in **11 dimensions** known as M-theory _([Wikipedia](https://en.wikipedia.org/wiki/String_theory))_.
