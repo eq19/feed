@@ -39,18 +39,6 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
-
-## God Particle
-
-In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at very high energies. 
-
-```note
-The Higgs boson field (often referred to as the "God particle") is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
-```
-
-![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273427463-76935bf5-8a89-4dbf-8bfc-d15f12942bab.png)
-
 So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
@@ -122,6 +110,18 @@ In the standard (Mispar hechrechi) version of gematria, each letter is given a n
 =======+====+=====+====                        Δ         ====
  3:4:9 |{30}|3000 |{71}= 68 + log 10³ ---------¤         Δ900   
 ```
+
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
+
+## God Particle
+
+In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
+
+```note
+The Higgs boson field (often referred to as the "God particle") is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
+```
+
+![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273427463-76935bf5-8a89-4dbf-8bfc-d15f12942bab.png)
 
 By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
