@@ -182,7 +182,7 @@ The implementation from addition folder 1 will be exposed by the exponentiation 
 
 So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
-## Streaching Structure
+## Shearing Structure
 
 In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
 
@@ -250,6 +250,8 @@ The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is 
 ***19 x 6 = 43 + 71 = 114***
 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+
+## Streching Structure
 
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
