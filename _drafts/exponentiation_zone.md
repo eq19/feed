@@ -123,7 +123,7 @@ The Higgs boson field (often referred to as the "God particle") is ***a scalar f
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
 
-We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_ and then to unify their interactions.
+We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
 ```tip
 Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
@@ -131,7 +131,7 @@ Since bosons carry one unit of angular momentum, ***the fermion's spin direction
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273611899-ab1438d7-9264-4c94-bee4-6e4bfcb20496.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-By a group of number between 10th and 12th primes ***29 to 37*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
+To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons.
 
 ```note
 Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
