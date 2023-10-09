@@ -135,8 +135,9 @@ By a group of number between 10th and 12th primes ***29 to 37*** they have a pro
 
 ```note
 Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
-- Electric and magnetic force into electromagnetism;
-- The electromagnetic interaction and the weak interaction into the electroweak interaction; see below.
+- Electric and magnetic force into electromagnetism,
+- The electromagnetic and the weak interaction into the electroweak interaction.
+The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that particles of matter (fermions) do not directly interact with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
