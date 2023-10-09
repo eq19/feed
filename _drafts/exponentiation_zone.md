@@ -125,20 +125,20 @@ The Higgs boson field (often referred to as the "God particle") is ***a scalar f
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
-```tip
-Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
-```
-
-[![Elementary Particlethe](https://user-images.githubusercontent.com/36441664/273611899-ab1438d7-9264-4c94-bee4-6e4bfcb20496.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
-
-To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser.
-
 ```note
 Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
 - Electric and magnetic force into ***electromagnetic force***,
 - The electromagnetic and the weak interaction into ***electroweak interaction***.
 
 The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+```
+
+[![Elementary Particlethe](https://user-images.githubusercontent.com/36441664/273611899-ab1438d7-9264-4c94-bee4-6e4bfcb20496.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
+
+To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser.
+
+```tip
+Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
