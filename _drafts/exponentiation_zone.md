@@ -125,8 +125,8 @@ The Higgs boson field (often referred to as the "God particle") is ***a scalar f
 
 By a group of number between 10th and 12th primes ***29 to 37*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
-```warning
-We are going to assign the above boson field as a ***standard model*** that attempts to stimulate quantum field models for the four known fundamental forces the electromagnetic force and the weak nuclear force and then to unify these interactions.
+```tip
+We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models for the four known fundamental forces the electromagnetic force and the weak nuclear force and then to unify these interactions.
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
@@ -183,7 +183,7 @@ This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure
 
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
-```tip
+```warning
 Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
 ```
 
