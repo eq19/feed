@@ -123,7 +123,11 @@ The Higgs boson field (often referred to as the "God particle") is ***a scalar f
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
 
-By a group of number ***up to 31*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
+By a group of number between 10th and 12th primes ***29 to 37*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
+
+```tip
+We would assign the above field as a ***standard model*** that attempts to produce quantum field models for the four known fundamental forces the electromagnetic force and the weak nuclear force and then to unify these interactions.
+```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
