@@ -137,7 +137,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser.
 
-```tip
+```note
 Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
