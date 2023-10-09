@@ -221,7 +221,7 @@ By this exponentiation zones we will get multiple layers of primes density. So w
 
 Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
 
-```tip
+```note
 With collaborators, we regularly work on projects where we want to understand the taxonomic and functional diversity of microbial community in the context of metadata often recorded under specific hypotheses. Integrating (***N-/P- integration***; see figure below) these datasets require a fair deal of multivariate statistical analysis for which I have shared the [code](https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological.html) on this website. _([Umer.Ijaz](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro))_
 ```
 
