@@ -133,6 +133,12 @@ We are going to assign the above field as a ***standard model*** that attempts t
 
 By a group of number between 10th and 12th primes ***29 to 37*** they have a profile reflect module 6 view of numbers as happens with the minor hexagons.
 
+```note
+Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
+- Electric and magnetic force into electromagnetism;
+- The electromagnetic interaction and the weak interaction into the electroweak interaction; see below.
+```
+
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
 The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
