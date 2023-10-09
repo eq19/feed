@@ -181,14 +181,6 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 [![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://www.eq19.com/multiplication/#streching-structure)
 
-Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
-
-```tip
-In order to maintain the 18's structure between each of repositories to correlate with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as _[windows registry](https://en.wikipedia.org/wiki/Windows_Registry)_.
-```
-
-[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
-
 This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
 ## Parsering Structure
@@ -210,6 +202,14 @@ In this example, the content from a Markdown document `document.md` that specifi
 ```
 
 [![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+
+Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
+
+```tip
+In order to maintain the 18's structure between each of repositories to correlate with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as _[windows registry](https://en.wikipedia.org/wiki/Windows_Registry)_.
+```
+
+[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
 
 In vector calculus, the Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. 
 
