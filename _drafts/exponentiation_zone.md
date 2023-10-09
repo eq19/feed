@@ -153,7 +153,7 @@ Observing more detail of the discussed scheme of 168 we will get it also when we
 Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
 ```
 
-[![Defining the Prime Hexagon](https://github.com/eq19/eq19.github.io/assets/8466209/71ba3b6c-54aa-4587-af5f-abd2af4b968a)](https://www.hexspin.com/defining-the-prime-hexagon/)
+[![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/201015369-c6ba5c75-c2c7-415b-b424-debaa5c7f64a.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
