@@ -252,6 +252,11 @@ The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
 
 The most question here is how ∆1 actually working between minus 1 and plus 1? 
+
+[![Elementary Particle](https://user-images.githubusercontent.com/36441664/273601636-0c889853-8684-428f-9936-ce6afd111870.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
+
+Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)**$ during such an exchange
+
 Here we finally come to Euler's identity by MEC30.
 
 ## Streching Structure
