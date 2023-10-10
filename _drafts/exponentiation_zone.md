@@ -4,6 +4,7 @@
 🔨: exponentiation
 📂: zones
 ---
+![Hexgrid_prime_number_spiral](https://github.com/eq19/feed/assets/36441664/72669dae-9f66-4953-bb5b-670aac2090f2)
 
 # Exponentiation Zones (31-36)
 
