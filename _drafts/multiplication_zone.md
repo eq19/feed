@@ -186,6 +186,8 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
+![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
+
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
@@ -235,8 +237,6 @@ layer | node | sub |  i  |  f
       |      |     |  18 | --------------------------
 ------|------|-----+-----+------
 ```
-
-![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
 
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
