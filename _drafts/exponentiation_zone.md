@@ -139,7 +139,11 @@ To unify their interactions we assign a group of number from ***30 to 36*** refl
 as the only prime within the group.
 
 ```note
-Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+The interaction of any pair of fermions in perturbation theory can then be modelled thus:
+
+***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
+
+The exchange of bosons always carries energy and momentum between the fermions, thereby changing their speed and direction. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another).Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. Since such interactions result in a change in momentum, they can give rise to classical Newtonian forces. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
