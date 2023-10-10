@@ -213,6 +213,14 @@ We found later that it is also correlated with 1000 primes.
 
 ## Structure: True Prime Pairs
 
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
+
+```note
+The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
+```
+
+[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
+
 Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
 
 ```note
