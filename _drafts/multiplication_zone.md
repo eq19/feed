@@ -248,6 +248,8 @@ Here we finally come to Euler's identity by MEC30.
 
 ## Streching Structure
 
+![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
+
 ```
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
