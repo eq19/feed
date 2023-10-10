@@ -118,7 +118,7 @@ Geometrically flat space has three dimensions and is consistent with Euclidean s
 In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding _[eigenvalues](https://www.eq19.com/multiplication/#streaching-structure)_ are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case ***self-consistent field method***.
 ```
 
-[![expansion](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)](https://www.eq19.com/multiplication/#streaching-structure)
+[![expansion](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)](https://www.eq19.com/multiplication/#streaching-structure)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. 
 
