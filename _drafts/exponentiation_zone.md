@@ -169,13 +169,13 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 
 [![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/201015369-c6ba5c75-c2c7-415b-b424-debaa5c7f64a.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
-By the spin above you can see that the 4 zones of these `19's to 17's` are representing the rotation `1 to 5`. Such of formation can be seen on _Ulam Spiral_ as below.
+By the spin above you can see that the 4 zones of these `19's to 17's` are representing the rotation `1 to 5`. Such of formation can be seen on _[Ulam Spiral](https://en.wikipedia.org/wiki/Ulam_spiral)_ as below.
 
 ```note
 The Ulam spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanisław Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later.
 ```
 
-[![ulam spiral](https://user-images.githubusercontent.com/36441664/274058089-72669dae-9f66-4953-bb5b-670aac2090f2.svg)](https://upload.wikimedia.org/wikipedia/commons/2/25/Hexgrid_prime_number_spiral.svg)
+[![ulam spiral](https://user-images.githubusercontent.com/36441664/274058089-72669dae-9f66-4953-bb5b-670aac2090f2.svg)](https://en.wikipedia.org/wiki/Ulam_spiral)
 
 By MEC30 we will also discuss the relation of these 4 zones with high density of 40 primes where 60 number is folded. So by the module 6 it will always return to the beginning position within [`60+40=100 nodes`](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#the-power-of-168-vs-618) per layer.
 
