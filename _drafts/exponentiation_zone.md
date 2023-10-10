@@ -238,12 +238,12 @@ It's possible to build a _[Hessian matrix](https://en.wikipedia.org/wiki/Hessian
 When the subclasses of partitions are flatten out into a matrix, you want to take the Jacobian of each of a stack of targets with respect to a stack of sources, where the Jacobians for each target-source pair are independent.
 
 ```note
-***When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant***. Both the matrix and (if applicable) the determinant are often referred to simply as the Jacobian in literature. _([Wikipedia](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant))_
+***When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant***. Both the matrix and (if applicable) the determinant ad  often referred to simply as the Jacobian in literature. _([Wikipedia](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant))_
 ```
 
 [![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
 
-Since such interactions result in a change in momentum, they can give rise to classical Newtonian forces ny means of orbital structure of rotation and revolution.. 
+Since such interactions result in a change in momentum, they can give rise to classical Newtonian forces of rotation and revolution by means of orbital structure.
 
 ## Hexagonal patterns
 
