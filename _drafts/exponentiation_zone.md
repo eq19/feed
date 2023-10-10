@@ -133,7 +133,7 @@ Moreover, reducing the number of different interaction types is seen as desirabl
 The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
-[![Elementary Particlethe](https://user-images.githubusercontent.com/36441664/273611899-ab1438d7-9264-4c94-bee4-6e4bfcb20496.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
+[![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser.
 
