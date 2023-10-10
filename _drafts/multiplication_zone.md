@@ -4,7 +4,6 @@
 🔨: multiplication 
 📂: zones
 ---
-![Eigenvectors (1)](https://github.com/eq19/feed/assets/36441664/634bc76b-5b60-430c-abae-3c5bb53b8eef)
 
 # Multiplication Zones (19-30)
 
@@ -185,7 +184,7 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Shearing Structure
 
-![](https://user-images.githubusercontent.com/36441664/274077300-634bc76b-5b60-430c-abae-3c5bb53b8eef.gif)
+![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
