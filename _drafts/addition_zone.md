@@ -286,7 +286,7 @@ When we continue the spin within the discussed prime hexagon with the higher num
 Cell types are interesting, but they simply reflect a ***modulo 6 view of numbers***.  More interesting are the six internal hexagons within the Prime Hexagon.  Like the Prime Hexagon, they are newly discovered. The minor hexagons form solely from the order, and type, of primes along the number line _([HexSpin](https://www.hexspin.com/minor-hexagons/))_.
 ```
 
-![Screen-Shot-2016-11-07-at-5 11 59-PM](https://github.com/eq19/feed/assets/36441664/502f174e-fadc-4ad9-afbc-184ae03cde5a)
+![Screen-Shot-2016-11-07-at-5 11 59-PM](https://user-images.githubusercontent.com/8466209/226644534-00cf4fe3-04f9-4b28-8a8b-674bcf4bd585.png)
 
 So the fisrt thing that need to be investigated is why the prime spinned by module six (6). What is the special thing about this number six (6) in primes behaviour?
 
