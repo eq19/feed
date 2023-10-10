@@ -4,7 +4,6 @@
 🔨: exponentiation
 📂: zones
 ---
-![Hexgrid_prime_number_spiral](https://github.com/eq19/feed/assets/36441664/72669dae-9f66-4953-bb5b-670aac2090f2)
 
 # Exponentiation Zones (31-36)
 
@@ -176,7 +175,7 @@ By the spin above you can see that the 4 zones of these `19's to 17's` are repre
 The Ulam spiral or prime spiral is a graphical depiction of the set of prime numbers, devised by mathematician Stanisław Ulam in 1963 and popularized in Martin Gardner's Mathematical Games column in Scientific American a short time later.
 ```
 
-[![](https://upload.wikimedia.org/wikipedia/commons/2/25/Hexgrid_prime_number_spiral.svg)](https://upload.wikimedia.org/wikipedia/commons/2/25/Hexgrid_prime_number_spiral.svg)
+[![ulam spiral](https://user-images.githubusercontent.com/36441664/274058089-72669dae-9f66-4953-bb5b-670aac2090f2.svg)](https://upload.wikimedia.org/wikipedia/commons/2/25/Hexgrid_prime_number_spiral.svg)
 
 By MEC30 we will also discuss the relation of these 4 zones with high density of 40 primes where 60 number is folded. So by the module 6 it will always return to the beginning position within [`60+40=100 nodes`](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#the-power-of-168-vs-618) per layer.
 
