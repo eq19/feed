@@ -142,7 +142,7 @@ The interaction of any pair of fermions in perturbation theory can be modelled a
 
 ***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
 
-The exchange of bosons always carries energy and momentum between the fermions, thereby changing their speed and direction. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). Since such interactions result in a change in momentum, they can give rise to classical Newtonian forces. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+The exchange of bosons always carries energy and momentum between the fermions, thereby changing their speed and direction. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
@@ -242,6 +242,8 @@ When the subclasses of partitions are flatten out into a matrix, you want to tak
 ```
 
 [![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
+
+Since such interactions result in a change in momentum, they can give rise to classical Newtonian forces ny means of orbital structure of rotation and revolution.. 
 
 ## Hexagonal patterns
 
