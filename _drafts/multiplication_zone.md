@@ -184,14 +184,6 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Shearing Structure
 
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
-
-```note
-The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
-```
-
-[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
-
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```note
