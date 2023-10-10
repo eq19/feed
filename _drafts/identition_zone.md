@@ -127,6 +127,7 @@ In quantum mechanics, and in particular in atomic and molecular physics, within 
 ```
 
 [![expansion](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)](https://www.eq19.com/multiplication/#streaching-structure)
+
 Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ## The powers of 10
