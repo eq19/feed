@@ -243,7 +243,7 @@ When the subclasses of partitions are flatten out into a matrix, you want to tak
 
 [![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
 
-Since such interactions result in a change in momentum, they can give rise to classical _[Newtonian forces](https://en.wikipedia.org/wiki/Classical_mechanics)_ of rotation and revolution by means of orbital structure.
+Since such interactions result in a change in momentum, they can give rise to classical _[Newtonian forces](https://en.wikipedia.org/wiki/Classical_mechanics)_ of rotation and revolution by means of [orbital structure](/https://www.eq19.com/multiplication/#orbital-structure).
 
 ## Hexagonal patterns
 
