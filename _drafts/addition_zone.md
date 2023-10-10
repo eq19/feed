@@ -211,15 +211,7 @@ And it is the fact that 168 divided by 24 is ***exactly seven (7)***. So there s
 
 We found later that it is also correlated with 1000 primes.
 
-## Structure: True Prime Pairs
-
-In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
-
-```note
-The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
-```
-
-[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
+## 18s Structure
 
 Since the transformation of the plane shall have symmetrical vector then this 7s will take the posistion on the last side of 18s structure.
 
@@ -270,6 +262,14 @@ layer | node | sub |  i  |  f
       |      |     |  18 | --------------------------
 ------|------|-----+-----+------
 ```
+
+In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vector is known as _[eigenvector](https://mathworld.wolfram.com/Eigenvector.html)_, a nonzero vector that changes at most by a scalar factor when linear transformation is applied to it.
+
+```note
+The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
+```
+
+[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
 
 You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
 
