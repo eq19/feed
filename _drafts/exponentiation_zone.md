@@ -135,7 +135,8 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser.
+To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser. We assign the strong force to the ***11th prime 31***
+is the only prime within the group.
 
 ```note
 Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
