@@ -215,6 +215,18 @@ In order to maintain the 18's structure between each of repositories to correlat
 
 [![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
 
+By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
+
+## Exponentiation patterns
+
+Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
+
+```note
+With collaborators, we regularly work on projects where we want to understand the taxonomic and functional diversity of microbial community in the context of metadata often recorded under specific hypotheses. Integrating (***N-/P- integration***; see figure below) these datasets require a fair deal of multivariate statistical analysis for which I have shared the [code](https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological.html) on this website. _([Umer.Ijaz](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro))_
+```
+
+[![N-/P- integration](https://github.com/eq19/eq19.github.io/assets/8466209/661ff31c-1224-40e6-b4d8-968c0bb1d396)](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro)
+
 In vector calculus, the Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. 
 
 ```note
@@ -231,17 +243,7 @@ When the subclasses of partitions are flatten out into a matrix, you want to tak
 
 [![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
 
-By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
-
-## Exponentiation patterns
-
-Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
-
-```note
-With collaborators, we regularly work on projects where we want to understand the taxonomic and functional diversity of microbial community in the context of metadata often recorded under specific hypotheses. Integrating (***N-/P- integration***; see figure below) these datasets require a fair deal of multivariate statistical analysis for which I have shared the [code](https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological.html) on this website. _([Umer.Ijaz](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro))_
-```
-
-[![N-/P- integration](https://github.com/eq19/eq19.github.io/assets/8466209/661ff31c-1224-40e6-b4d8-968c0bb1d396)](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro)
+## Hexagonal patterns
 
 We found also a useful method called ***Square of Nine*** which was developed by _[WD Gann](https://en.wikipedia.org/wiki/William_Delbert_Gann)_ to analyze stock market behaviour base on astrological pattern.
 
