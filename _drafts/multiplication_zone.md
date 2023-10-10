@@ -190,6 +190,10 @@ The red vectors are not parallel to either eigenvector, so, their directions are
 
 ![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
+```note
+The points that lie on the line through the origin, parallel to an eigenvector, remain on the line after the transformation. These lines are represented as faint blue and violet lines, matching the associated eigenvectors. The vectors in red are not eigenvectors, therefore their direction is altered by the transformation. Notice that all blue vectors are scaled by a factor of 3. This is their associated eigenvalue. The violet vectors are not scaled, so their eigenvalue is 1.
+```
+
 ![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
 
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
