@@ -135,8 +135,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 as happens with the minor hexagons where ***33 and 34*** stand as lexer and parser. The strong force is assigned to the ***11th prime 31***
-as the only prime within the group.
+To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons. The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as lexer and parser.
 
 ```note
 The interaction of any pair of fermions in perturbation theory can be modelled as:
