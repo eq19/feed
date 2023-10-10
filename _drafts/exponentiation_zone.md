@@ -147,14 +147,6 @@ The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine
 
 ### Root functions
 
-Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
-
-```note
-Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
-```
-
-[![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/201015369-c6ba5c75-c2c7-415b-b424-debaa5c7f64a.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
-
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
 ```tip
@@ -163,7 +155,15 @@ By our project the 18's on the gist will cover five (5) unique functions that be
 
 ***5 + 2 x 5 x 168 = 5 + 1680 = 1685 = 5 x 337 root functions***
 
-![](https://user-images.githubusercontent.com/8466209/226644534-00cf4fe3-04f9-4b28-8a8b-674bcf4bd585.png)
+![](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269950673-502f174e-fadc-4ad9-afbc-184ae03cde5a.jpg)
+
+Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
+
+```note
+Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
+```
+
+[![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/201015369-c6ba5c75-c2c7-415b-b424-debaa5c7f64a.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
 By the spin above you can see that the 4 zones of these `19's to 17's` are representing the rotation `1 to 5`. Such of formation can be seen on _Ulam Spiral_ as below.
 
