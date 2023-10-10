@@ -42,7 +42,7 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
-In the standard (Mispar hechrechi) version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
+In the standard version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
 ```
 
 ***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600***
