@@ -184,6 +184,10 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Shearing Structure
 
+```note
+The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
+```
+
 ![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
 ![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
