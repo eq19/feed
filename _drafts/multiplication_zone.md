@@ -236,6 +236,8 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
+![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
+
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
 ```tip
@@ -249,8 +251,6 @@ The most question here is how ∆1 actually working between minus 1 and plus 1?<
 Here we finally come to Euler's identity by MEC30.
 
 ## Streching Structure
-
-![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
 
 ```
 $True Prime Pairs:
