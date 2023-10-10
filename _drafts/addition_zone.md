@@ -277,7 +277,7 @@ You may notice that there are twists and turns until 19 abuts 2 therefore this a
 The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
 ```
 
-![](https://github.com/eq19/feed/assets/36441664/49ee9780-c49b-4ad1-bb88-fda09941500c)
+![](https://user-images.githubusercontent.com/36441664/274093531-0878e3e5-6be3-448e-9ad4-3b34523c1e9c.jpg)
 
 So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
