@@ -281,12 +281,11 @@ The tessellating field of equilateral triangles fills with numbers, with spin or
 
 So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
-
 [![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/identition/#partition-function)
 
 The above seven (7) primes will act then as ***[extended branes](https://en.m.wikipedia.org/wiki/D-brane)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
 
-## Structure: Minor Hexagons
+## Minor Hexagons
 
 When we continue the spin within the discussed prime hexagon with the higher numbers there are the six (6) internal hexagons within the Prime Hexagon. 
 
