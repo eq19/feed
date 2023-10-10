@@ -118,7 +118,7 @@ In the standard (Mispar hechrechi) version of gematria, each letter is given a n
 In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
 ```note
-The Higgs boson field (often referred to as the "God particle") is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
+The Higgs boson field (often referred to as the _[God particle](https://www.quora.com/How-would-you-explain-the-God-particle-in-laymans-term/answer/Vagish-Kumar-Choudhary)_) is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
 ```
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
