@@ -199,6 +199,14 @@ Each time a prime number is encountered, the spin or ‘wall preference’ is sw
 
 [![Defining the Prime Hexagon](https://github.com/eq19/eq19.github.io/assets/8466209/36aeac77-ecb2-4c94-b2ea-fe0f8b7e391c)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
+You may learn that sets of algebraic objects has a multilinear relationship related to a vector space called _[tensor](https://en.wikipedia.org/wiki/Tensor)_.
+
+```note
+Tensors may map between different objects such as vectors, scalars, even other tensors contained in a group of _[partitions](https://en.wikipedia.org/wiki/Partition_(number_theory))_.
+```
+
+[![300px-Components_stress_tensor svg](https://user-images.githubusercontent.com/8466209/211590875-9cae3c47-bbdc-43d8-acc5-d8c64c802967.png)](https://en.wikipedia.org/wiki/Tensor)
+
 As the number line winds about toward infinity, bending around prime numbers, it never exits the ***24 cells***. The most obvious interesting feature of this prime hexagon is it confines all numbers of primes spin! 
 
 ```note
