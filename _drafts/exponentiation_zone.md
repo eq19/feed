@@ -115,6 +115,9 @@ It has zero spin, even (positive) parity, no electric charge, and no colour char
 
 ## God Particle
 
+![Standard_Model_of_Elementary_Particles svg](https://github.com/eq19/feed/assets/36441664/913c39a3-9fdf-4a02-91da-7bc7b746db27)
+
+
 In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
 ```note
