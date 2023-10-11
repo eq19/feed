@@ -121,7 +121,7 @@ In particle physics, an elementary particle or fundamental particle is a subatom
 The Standard Model presently recognizes seventeen distinct particles—twelve fermions and five bosons.
 ```
 
-![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)
+[![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://en.wikipedia.org/wiki/Elementary_particle)
 
 
 In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
