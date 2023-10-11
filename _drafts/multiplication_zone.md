@@ -184,7 +184,7 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Shearing Structure
 
-Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalue, often represented by lambda as the ***multiplying factor***.
+Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalu is often represented as the ***multiplying factor***.
 
 ```note
 The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
