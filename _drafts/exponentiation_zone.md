@@ -118,7 +118,7 @@ It has zero spin, even (positive) parity, no electric charge, and no colour char
 In particle physics, an elementary particle or fundamental particle is a subatomic particle that is not composed of other particles. 
 
 ```note
-The Standard Model presently recognizes seventeen distinct particles—twelve fermions and five bosons.
+The Standard Model presently recognizes ***seventeen distinct particles (twelve fermions and five bosons)***. As a consequence of flavor and color combinations and antimatter, the fermions and bosons are known to have 48 and 13 variations, respectively. Among the 61 elementary particles embraced by the Standard Model number electrons and other leptons, quarks, and the fundamental bosons. Subatomic particles such as protons or neutrons, which contain two or more elementary particles, are known as composite particles. _([Wikipedia](https://en.wikipedia.org/wiki/Elementary_particle))_
 ```
 
 [![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://en.wikipedia.org/wiki/Elementary_particle)
