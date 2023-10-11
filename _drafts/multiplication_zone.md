@@ -190,9 +190,9 @@ Geometrically, a transformation matrix rotates, stretches, or shears the vectors
 The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
 ```
 
-The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
-
 ![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
+
+The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
 
 ```note
 The points that lie on the line through the origin, parallel to an eigenvector, remain on the line after the transformation. These lines are represented as faint blue and violet lines, matching the associated eigenvectors. The vectors in red are not eigenvectors, therefore their direction is altered by the transformation. Notice that all blue vectors are scaled by a factor of 3. This is their associated eigenvalue. The violet vectors are not scaled, so their eigenvalue is 1.
