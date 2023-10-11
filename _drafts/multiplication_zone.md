@@ -200,7 +200,7 @@ The points that lie on the line through the origin, parallel to an eigenvector, 
 
 ![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
 
-These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
 
 ```note
 Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _([Wikipedia](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors))_
@@ -264,7 +264,7 @@ Here we finally come to Euler's identity by MEC30.
 
 ## Streching Structure
 
-The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
+These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
 ```
 $True Prime Pairs:
