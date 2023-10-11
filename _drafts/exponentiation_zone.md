@@ -115,6 +115,12 @@ It has zero spin, even (positive) parity, no electric charge, and no colour char
 
 ## God Particle
 
+In particle physics, an elementary particle or fundamental particle is a subatomic particle that is not composed of other particles. 
+
+```note
+The Standard Model presently recognizes seventeen distinct particles—twelve fermions and five bosons.
+```
+
 ![Standard_Model_of_Elementary_Particles svg](https://github.com/eq19/feed/assets/36441664/913c39a3-9fdf-4a02-91da-7bc7b746db27)
 
 
