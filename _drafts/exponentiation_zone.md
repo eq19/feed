@@ -126,11 +126,11 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
 ```note
-Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
+The quarks and the leptons interact with the Higgs field through Yukawa interaction. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the ***[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)*** of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
 - Electric and magnetic force into ***electromagnetic force***,
 - The electromagnetic and the weak interaction into ***electroweak interaction***.
 
-The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+_([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
@@ -138,7 +138,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons. The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as lexer and parser.
 
 ```note
-The quarks and the leptons interact with the Higgs field through Yukawa interaction. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the ***[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)*** of the Yukawa matrices. The interaction of any pair of fermions in perturbation theory can be modelled as:
+The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. The interaction of any pair of fermions in perturbation theory can be modelled as:
 
 ***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
 
