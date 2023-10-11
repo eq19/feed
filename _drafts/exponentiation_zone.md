@@ -130,7 +130,7 @@ The quarks and the leptons interact with the Higgs field through Yukawa interact
 - Electric and magnetic force into ***electromagnetic force***,
 - The electromagnetic and the weak interaction into ***electroweak interaction***.
 
-_([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
@@ -138,7 +138,7 @@ _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons. The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as lexer and parser.
 
 ```note
-The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. The interaction of any pair of fermions in perturbation theory can be modelled as:
+The interaction of any pair of fermions in perturbation theory can be modelled as:
 
 ***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
 
