@@ -138,7 +138,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons. The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as lexer and parser.
 
 ```note
-The quarks and the leptons interact with the Higgs field through Yukawa interaction. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the eigenvalues of the Yukawa matrices. The interaction of any pair of fermions in perturbation theory can be modelled as:
+The quarks and the leptons interact with the Higgs field through Yukawa interaction. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the ***[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)*** of the Yukawa matrices. The interaction of any pair of fermions in perturbation theory can be modelled as:
 
 ***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
 
