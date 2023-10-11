@@ -184,11 +184,13 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Shearing Structure
 
-In linear algebra, an eigenvector or characteristic vector of a linear transformation is a nonzero vector that changes at most by a constant factor when that linear transformation is applied to it. The corresponding eigenvalue, often represented by lambda as the ***multiplying factor***.
+Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalue, often represented by lambda as the ***multiplying factor***.
 
 ```note
 The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
 ```
+
+The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
 
 ![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
@@ -262,7 +264,7 @@ Here we finally come to Euler's identity by MEC30.
 
 ## Streching Structure
 
-Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
+The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
 
 ```
 $True Prime Pairs:
