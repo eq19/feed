@@ -149,7 +149,8 @@ To unify their interactions we assign a group of number from ***30 to 36*** refl
 ```note
 - The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
 - The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
-- Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the next chapter. Although unification of forces is generally anticipated, much remains to be done to prove its validity
+
+Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the next chapter. Although unification of forces is generally anticipated, much remains to be done to prove its validity. _([LibreText](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
 ```
 
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
