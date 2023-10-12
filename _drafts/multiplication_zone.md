@@ -31,6 +31,14 @@ This is a necessary but not sufficient condition for N to be a prime as noted, f
 
 ![twin primes](https://user-images.githubusercontent.com/36441664/268532174-fa0761dd-8342-40de-9aee-bf9a676c3abf.png)
 
+Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalu is often represented as the ***multiplying factor***.
+
+```note
+The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
+```
+
+![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
+
 Therefore this 12's treatment will involve at least ***11 groups of runner*** and one (1) profile of the 7's transformation. We collect them in [`11 + 7 = 18 gists`](https://gist.github.com/eq19) as below.
 
 ```note
@@ -95,14 +103,6 @@ We concluded later on that this bilateral would not come to be possible if only 
 These are the ones that bring [`11 + 13 = 24 cell hexagons`](https://www.eq19.com/addition/#structure-true-prime-pairs).
 
 ## Orbital structure
-
-Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalu is often represented as the ***multiplying factor***.
-
-```note
-The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
-```
-
-![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
 
 The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
 
