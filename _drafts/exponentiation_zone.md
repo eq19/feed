@@ -45,7 +45,8 @@ So basically  there is a power transformation between ***[addition](https://www.
 In the standard version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
 ```
 
-***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600***
+***3000 / 30 = 100***
+
 
 ```
   Sub  | i  |  β  | f   
