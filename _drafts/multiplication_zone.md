@@ -190,71 +190,13 @@ The implementation from addition folder 1 will be exposed by the exponentiation 
 
 So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
-The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
-
-```note
-Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _([Wikipedia](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors))_
-```
-
-```
-$True Prime Pairs:
-(5,7), (11,13), (17,19)
- 
-layer | node | sub |  i  |  f
-------+------+-----+-----+------
-      |      |     |  1  | --------------------------
-      |      |  1  +-----+                           |    
-      |  1   |     |  2  | (5)                       |
-      |      |-----+-----+                           |
-      |      |     |  3  |                           |
-  1   +------+  2  +-----+----                       |
-      |      |     |  4  |                           |
-      |      +-----+-----+                           |
-      |  2   |     |  5  | (7)                       |
-      |      |  3  +-----+                           |
-      |      |     |  6  |                          11s ‹------- (71)
-------+------+-----+-----+------      } (36)         |
-      |      |     |  7  |                           |
-      |      |  4  +-----+                           |
-      |  3   |     |  8  | (11)                      |
-      |      +-----+-----+                           |
-      |      |     |  9  |                           |
-  2   +------|  5  +-----+-----                      |
-      |      |     |  10 |                           |
-      |      |-----+-----+                           |
-      |  4   |     |  11 | (13) ---------------------
-      |      |  6  +-----+
-      |      |     |  12 |---------------------------
-------+------+-----+-----+------------               |
-      |      |     |  13 |                           |
-      |      |  7  +-----+                           |
-      |  5   |     |  14 | (17)                      |
-      |      |-----+-----+                           |
-      |      |     |  15 |                           7s ‹------- (43)
-  3   +------+  8  +-----+-----       } (36)         |
-      |      |     |  16 |                           |
-      |      |-----+-----+                           |
-      |  6   |     |  17 | (19)                      |
-      |      |  9  +-----+                           |
-      |      |     |  18 | --------------------------
-------|------|-----+-----+------
-```
-
-Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
-
-```tip
-The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing and keep them to remain stay on the 18s scheme. Therefore we use the primes ***43 and 71*** as corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ which is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
-```
-***19 x 6 = 43 + 71 = 114***
-
-![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
-
-The most question here is how ∆1 actually working between minus 1 and plus 1?<br>
-Here we finally come to Euler's identity by MEC30.
-
 ## Elementary Structure
 
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+
+```note
+The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed. Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _([Wikipedia](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors))_
+```
 
 ```
 $True Prime Pairs:
@@ -299,6 +241,18 @@ layer | node | sub |  i  |  f
       |      |     |  18 | --------------------------
 ------|------|-----+-----+------      ‹------------------------------- 30
 ```
+
+Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
+
+```tip
+The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing and keep them to remain stay on the 18s scheme. Therefore we use the primes ***43 and 71*** as corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ which is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
+```
+***19 x 6 = 43 + 71 = 114***
+
+![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
+
+The most question here is how ∆1 actually working between minus 1 and plus 1?<br>
+Here we finally come to Euler's identity by MEC30.
 
 This scheme is showing a parsering result by repeating the positions in the next step. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
 
