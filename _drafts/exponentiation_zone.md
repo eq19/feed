@@ -112,10 +112,6 @@ In the standard version of gematria, each letter is given a numerical value betw
  3:4:9 |{30}|3000 |{71}= 68 + log 10³ ---------¤         Δ900   
 ```
 
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
-
-## God Particle
-
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
 ```note
@@ -124,6 +120,9 @@ The Standard Model presently recognizes ***seventeen distinct particles (twelve 
 
 [![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
+
+## God Particle
 
 In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
