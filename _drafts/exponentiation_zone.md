@@ -215,7 +215,7 @@ Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#s
 In this example, the content from a Markdown document `document.md` that specifies `layout: docs` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `docs.html`. Because the docs layout itself specifies `layout: page`, the content from `docs.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag in the layout file `page.html`. Finally because the page layout specifies `layout: default`, the content from `page.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `default.html`. _([JekyllRb](https://jekyllrb.com/tutorials/convert-site-to-jekyll/#how-layouts-work))_
 ```
 
-[![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+[![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/exponentiation/#god-particle)
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
