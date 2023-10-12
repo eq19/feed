@@ -146,7 +146,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
 ```note
-The four components of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with three components becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
+The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
 ```
 
 ![ezgif com-resize (3)](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)
