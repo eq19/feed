@@ -147,6 +147,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons.
 
 ```note
+Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
 - The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
 - The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
 
