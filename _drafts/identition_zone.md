@@ -200,7 +200,7 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 ***109 = 29th prime = (10th prime)th prime***
 
-[![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/exponentiation/#self-repetition)
+[![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/addition/#18s-structure)
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
