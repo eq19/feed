@@ -190,7 +190,7 @@ Both scheme are carrying a correlation between two (2) number of 89 and 109 whic
 In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
 ```
 
-[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://primesdemystified.com/)
+[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
 Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)*** while the twelve (12) is happen between the sequence of 36 to 102.
 
