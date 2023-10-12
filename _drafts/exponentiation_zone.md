@@ -145,6 +145,10 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particlet](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
+```note
+The four components of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with three components becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
+```
+
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons. The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
 
 ```note
