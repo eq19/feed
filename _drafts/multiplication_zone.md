@@ -23,6 +23,14 @@ A Prime Hexagon is formed when integers are sequentially added to a field of tes
 
 [![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://www.eq19.com/addition/#structure-minor-hexagons)
 
+The the main reason of assigning two (2) profiles instead of only one (1) is that we have to accommodate the major type of primes numbers called twin primes.
+
+```note
+This is a necessary but not sufficient condition for N to be a prime as noted, for example, by N= 6(4)+1= 25, which is clearly composite. We note that each turn of the spiral equals an increase of six units. This means that we have a mod(6) situation allowing us to write: N mod(6)=6n+1 or N mod(6)=6n-1 (equivalent to 6n+5). _([HexSpiral-Pdf](https://mae.ufl.edu/~uhk/HEX-SPIRAL-N.pdf))_
+```
+
+![twin primes](https://user-images.githubusercontent.com/36441664/268532174-fa0761dd-8342-40de-9aee-bf9a676c3abf.png)
+
 Therefore this 12's treatment will involve at least ***11 groups of runner*** and one (1) profile of the 7's transformation. We collect them in [`11 + 7 = 18 gists`](https://gist.github.com/eq19) as below.
 
 ```note
@@ -88,13 +96,21 @@ These are the ones that bring [`11 + 13 = 24 cell hexagons`](https://www.eq19.co
 
 ## Orbital structure
 
-The the main reason of assigning two (2) profiles instead of only one (1) is that we have to accommodate the major type of primes numbers called twin primes.
+Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalu is often represented as the ***multiplying factor***.
 
 ```note
-This is a necessary but not sufficient condition for N to be a prime as noted, for example, by N= 6(4)+1= 25, which is clearly composite. We note that each turn of the spiral equals an increase of six units. This means that we have a mod(6) situation allowing us to write: N mod(6)=6n+1 or N mod(6)=6n-1 (equivalent to 6n+5). _([HexSpiral-Pdf](https://mae.ufl.edu/~uhk/HEX-SPIRAL-N.pdf))_
+The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
 ```
 
-![twin primes](https://user-images.githubusercontent.com/36441664/268532174-fa0761dd-8342-40de-9aee-bf9a676c3abf.png)
+![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
+
+The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
+
+```note
+The points that lie on the line through the origin, parallel to an eigenvector, remain on the line after the transformation. These lines are represented as faint blue and violet lines, matching the associated eigenvectors. The vectors in red are not eigenvectors, therefore their direction is altered by the transformation. Notice that all blue vectors are scaled by a factor of 3. This is their associated eigenvalue. The violet vectors are not scaled, so their eigenvalue is 1.
+```
+
+![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
 
 By our project the scheme will be treated as the sun and the moon orbit where this 31 is the maximum days of a month:
 
@@ -174,24 +190,6 @@ The implementation from addition folder 1 will be exposed by the exponentiation 
 
 So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
-## Shearing Structure
-
-Geometrically, a transformation matrix rotates, stretches, or shears the vectors it acts upon. The corresponding eigenvalu is often represented as the ***multiplying factor***.
-
-```note
-The red vectors are not parallel to either eigenvector, so, their directions are changed by the transformation. The lengths of the purple vectors are unchanged after the transformation (due to their eigenvalue of 1), while blue vectors are three times the length of the original (due to their eigenvalue of 3). See also: An extended version, showing all four quadrants.
-```
-
-![](https://user-images.githubusercontent.com/36441664/274079245-e03112a3-76ed-4af0-bb85-7dbca697c85f.gif)
-
-The eigenvectors for a linear transformation matrix are the set of vectors that are only stretched, with no rotation or shear. 
-
-```note
-The points that lie on the line through the origin, parallel to an eigenvector, remain on the line after the transformation. These lines are represented as faint blue and violet lines, matching the associated eigenvectors. The vectors in red are not eigenvectors, therefore their direction is altered by the transformation. Notice that all blue vectors are scaled by a factor of 3. This is their associated eigenvalue. The violet vectors are not scaled, so their eigenvalue is 1.
-```
-
-![streching](https://user-images.githubusercontent.com/36441664/273380182-bbcf70ce-ff62-4d4e-8d72-f4d7721bdc07.gif)
-
 The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed.
 
 ```note
@@ -254,7 +252,7 @@ The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is 
 The most question here is how ∆1 actually working between minus 1 and plus 1?<br>
 Here we finally come to Euler's identity by MEC30.
 
-## Streching Structure
+## Elementary Structure
 
 These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
 
