@@ -99,7 +99,7 @@ This is a necessary but not sufficient condition for N to be a prime as noted, f
 By our project the scheme will be treated as the sun and the moon orbit where this 31 is the maximum days of a month:
 
 ```tip
-By the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***).
+By the _[exponentiation zone](https://www.eq19.com/exponentiation/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***). This 7 vs 12 is the point of view from the earth which making its position is just in the right location (not too far nor to close with the sun within the universe.
 ```
 
 ```sh
