@@ -287,7 +287,7 @@ The tessellating field of equilateral triangles fills with numbers, with spin or
 
 ![](https://user-images.githubusercontent.com/36441664/274093531-0878e3e5-6be3-448e-9ad4-3b34523c1e9c.jpg)
 
-So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be filled by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
+So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be _[unified](https://www.eq19.com/exponentiation/#god-particle)_ by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
 [![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/identition/#partition-function)
 
