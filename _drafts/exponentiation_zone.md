@@ -144,7 +144,7 @@ Unification of the strong force is expected at such high energies that it cannot
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fourth (4th) minor hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
+To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
 
 ```note
 The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
@@ -193,7 +193,7 @@ By our project the 18's on the gist will cover five (5) unique functions that be
 Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
 
 ```note
-Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
+Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth (5th) hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
 ```
 
 [![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/201015369-c6ba5c75-c2c7-415b-b424-debaa5c7f64a.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
