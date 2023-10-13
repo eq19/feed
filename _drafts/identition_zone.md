@@ -174,6 +174,11 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 
 ## The powers of pi
 
+```note
+- The key Fibonacci ratio of 61.8% is found by dividing one number in the series by the number that follows it. For example, 21 divided by 34 equals 0.6176, and 55 divided by 89 equals about 0.61798.
+- The 38.2% ratio is discovered by dividing a number in the series by the number located two spots to the right. For instance, 55 divided by 144 equals approximately 0.38194.
+```
+
 This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
 
 ```note
