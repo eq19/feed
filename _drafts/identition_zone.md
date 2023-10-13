@@ -174,12 +174,15 @@ Both 1/89 and 1/109 have the Fibonacci sequence in their decimal expansions illu
 
 ## The powers of pi
 
+We would like to discuss about Fibonacci retracememt. For unknown reasons, these Fibonacci ratios seem to play a role in the stock market, just as they do in nature. 
+
 ```note
 - The key Fibonacci ratio of 61.8% is found by dividing one number in the series by the number that follows it. For example, 21 divided by 34 equals 0.6176, and 55 divided by 89 equals about 0.61798.
 - The 38.2% ratio is discovered by dividing a number in the series by the number located two spots to the right. For instance, 55 divided by 144 equals approximately 0.38194.
+- The 23.6% ratio is found by dividing one number in the series by the number that is three places to the right. For example, 8 divided by 34 equals about 0.23529.
 ```
 
-This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
+Technical traders attempt to use them to determine critical points where an asset's price momentum is likely to reverse. This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[hexagonal formation](https://www.eq19.com/exponentiation/#root-functions)_. 
 
 ```note
 The mathematically significant Fibonacci sequence defines a set of ratios known as _[Fibonacci retracements](https://en.wikipedia.org/wiki/Fibonacci_retracement)_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with additional momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***. The 78.6% level is given by the square root of 61.8%, while not officially a Fibonacci ratio, 0.5 is also commonly referenced (50% is derived not from the Fibonacci sequence but rather from the idea that on average stocks retrace half their earlier movements). _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
