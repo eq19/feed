@@ -159,14 +159,6 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
 
 ```note
-The exchange of virtual pions, along with vector, rho and omega mesons, ***provides an explanation for the residual strong force between nucleons***. Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons. Pions also result from some matter–antimatter annihilation events. All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
-```
-
-[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
-
-The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
-
-```note
 The interaction of any pair of fermions in perturbation theory can be modelled as:
 
 ***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
@@ -174,7 +166,15 @@ The interaction of any pair of fermions in perturbation theory can be modelled a
 The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
-[![main spin](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
+[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+
+The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
+
+```note
+The exchange of virtual pions, along with vector, rho and omega mesons, ***provides an explanation for the residual strong force between nucleons***. Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons. Pions also result from some matter–antimatter annihilation events. All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
+```
+
+[![The exchange of virtual pions](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
 The sum of `31 + 71 = 102`. Meanwhile they are formed by 66 items. Let's combine them all then we will get 168 which is the total primes out of 1000.
 
