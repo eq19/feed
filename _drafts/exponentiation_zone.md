@@ -160,7 +160,7 @@ Unification of the strong force is expected at such high energies that it cannot
 The exchange of virtual pions, along with vector, rho and omega mesons, provides an explanation for the residual strong force between nucleons. Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons. Pions also result from some matter–antimatter annihilation events. All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
 ```
 
-![640px-Pn_Scatter_Quarks svg](https://github.com/eq19/feed/assets/36441664/17603ba1-0e83-433e-a8e2-b3df5716ff00)
+![640px-Pn_Scatter_Quarks svg](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)
 
 The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
 
