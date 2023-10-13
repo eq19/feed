@@ -195,12 +195,12 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)*** while the twelve (12) is happen between the sequence of 36 to 102.
 
 ```tip
-This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the self repetition on MEC30.
+This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the _[self repetition](https://www.eq19.com/exponentiation/#self-repetition)_ on MEC30.
 ```
 
 ***109 = 29th prime = (10th prime)th prime***
 
-[![Euler's identity](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/addition/#18s-structure)
+[![self repetition](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/exponentiation/#self-repetition)
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
