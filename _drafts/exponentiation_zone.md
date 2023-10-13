@@ -135,11 +135,11 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
 ```note
-The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
-- Electric and magnetic force into ***electromagnetic force***,
-- The electromagnetic and the weak interaction into ***[electroweak interaction](https://en.wikipedia.org/wiki/Electroweak_interaction)***.
+Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
+- The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
+- The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
 
-The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the next chapter. Although unification of forces is generally anticipated, much remains to be done to prove its validity. _([LibreText](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
 ```
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
@@ -147,11 +147,11 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons.
 
 ```note
-Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
-- The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
+The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
+- Electric and magnetic force into ***electromagnetic force***,
+- The electromagnetic and the weak interaction into ***[electroweak interaction](https://en.wikipedia.org/wiki/Electroweak_interaction)***.
 
-Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the next chapter. Although unification of forces is generally anticipated, much remains to be done to prove its validity. _([LibreText](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
+The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
