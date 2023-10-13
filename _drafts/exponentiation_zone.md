@@ -176,7 +176,7 @@ The exchange of virtual pions, along with vector, rho and omega mesons, ***provi
 
 [![The exchange of virtual pions](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
-The sum of `31 + 71 = 102`. Meanwhile they are formed by `30 + 36 = 11 x 6 = 66` items. Let's combine them all then we will get 168 which is the total primes out of 1000.
+The sum of `31 + 71 = 102`. Meanwhile they form `30 + 36 = 11 x 6 = 66`. Let's combine them all then we will get 168 which is the total primes out of 1000.
 
 ### Root functions
 
