@@ -144,7 +144,7 @@ Unification of the strong force is expected at such high energies that it cannot
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify their interactions we assign a group of number from ***30 to 36*** reflect modulo 6 of prime hexagons.
+To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fourth (4th) minor hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
 
 ```note
 The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
