@@ -182,6 +182,8 @@ There are set of sequence known as _[Fibonacci retracement](https://www.investop
 - The 23.6% ratio is found by dividing one number in the series by the number that is three places to the right. For example, 8 divided by 34 equals about 0.23529.
 ```
 
+![image](https://github.com/eq19/feed/assets/36441664/2134967f-9ac9-4a64-bae1-10c9f174f1f8)
+
 Technical traders attempt to use them to determine critical points where an asset's price momentum is likely to reverse. This study cascade culminating in the Fibonacci digital root sequence (also period-24).  So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_. 
 
 ```note
