@@ -156,11 +156,13 @@ Unification of the strong force is expected at such high energies that it cannot
 
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
 
+This unification is initiated by the theoretical work by Hideki Yukawa in 1935 had predicted the existence of mesons as the carrier particles of the strong nuclear force.
+
 ```note
-The exchange of virtual pions, along with vector, rho and omega mesons, provides an explanation for the residual strong force between nucleons. Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons. Pions also result from some matter–antimatter annihilation events. All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
+The exchange of virtual pions, along with vector, rho and omega mesons, ***provides an explanation for the residual strong force between nucleons***. Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons. Pions also result from some matter–antimatter annihilation events. All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
 ```
 
-![640px-Pn_Scatter_Quarks svg](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)
+![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)
 
 The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
 
