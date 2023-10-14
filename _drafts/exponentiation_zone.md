@@ -160,10 +160,10 @@ This unification was initiated from the theoretical work by Hideki Yukawa who in
 
 ```warning
 Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- The ***four components*** of the Higgs field (squares) ***break the electroweak symmetry (30)*** and ***interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons (31)***. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
-- ***The strong force is carried by eight proposed particles called gluons (32)***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
+- The ***four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons <sup>(30)</sup>***. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
+- ***The strong force is carried by eight proposed particles called gluons (31)***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
 
-Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the _[identition zones](https://www.eq19.com/identition/)_. Although unification of forces is generally anticipated, ***much remains to be done to prove its validity***. _([LibreTexts](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
+***Unification of the strong force is expected at such high energies (32)*** that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the _[identition zones](https://www.eq19.com/identition/)_. Although unification of forces is generally anticipated, ***much remains to be done to prove its validity***. _([LibreTexts](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
 ```
 
 [![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
