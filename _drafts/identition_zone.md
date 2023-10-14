@@ -128,7 +128,7 @@ It turns out that quantum string theory always destroys the symmetries of classi
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
-Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
+Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the fundamental forces in the early stage after Big Bang.
 
 ## The powers of 10
 
@@ -214,9 +214,6 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 [![self repetition](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/exponentiation/#self-repetition)
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
-
-This scheme will be organized via the 
-_[Root Functions](https://www.eq19.com/exponentiation/#root-functions)_ of each repositories.
 
 ## Δ(19 vs 18) Scenario
 
