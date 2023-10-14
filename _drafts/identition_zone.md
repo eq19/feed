@@ -56,7 +56,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 [![Euler function](https://user-images.githubusercontent.com/36441664/273386228-2451794f-e67c-449d-a5bc-24d867421224.png)](https://www.eq19.com/#eulers-identity)
 
-In order to propagate through spacetime and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***eleven (11) dimensions***.
+In order to propagate through spacetime and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
 ## String Theory
 
