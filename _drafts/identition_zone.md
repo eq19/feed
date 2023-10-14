@@ -84,7 +84,7 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
-The string theory is sofar the leading candidate to the Theory of Everything however it is said that the theory is incompatible with dark energy.
+The string theory is sofar the leading candidate to the Theory of Everything however it is said that the theory is ***incompatible with dark energy***.
 
 ```warning
 It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
