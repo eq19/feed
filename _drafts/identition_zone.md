@@ -128,14 +128,6 @@ It turns out that quantum string theory always destroys the symmetries of classi
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
-Geometrically flat space has three dimensions and is consistent with Euclidean space. However, spacetime has four dimensions; _[it is not flat](https://en.wikipedia.org/wiki/Expansion_of_the_universe)_ according to Einsten's theory.
-
-```note
-In quantum mechanics, and in particular in atomic and molecular physics, within the Hartree–Fock theory, the atomic and molecular orbitals can be defined by the eigenvectors of the Fock operator. The corresponding _[eigenvalues](https://www.eq19.com/multiplication/#streaching-structure)_ are interpreted as ionization potentials via Koopmans' theorem. In this case, the term eigenvector is used in a somewhat more general meaning, since the Fock operator is explicitly dependent on the orbitals and their eigenvalues. Thus, if one wants to underline this aspect, one speaks of nonlinear eigenvalue problems. Such equations are usually solved by an iteration procedure, called in this case ***self-consistent field method***.
-```
-
-[![expansion](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)](https://www.eq19.com/multiplication/#streaching-structure)
-
 Moreover a model that represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with fundamental forces in the early stage after Big Bang.
 
 ## The powers of 10
