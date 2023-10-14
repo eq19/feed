@@ -84,6 +84,12 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
+The string theory is sofar the leading candidate to the Theory of Everything however it is said that the theory is incompatible with dark energy.
+
+```note
+Conclusion. We have argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability.Nov 10, 2019
+```
+
 ![image](https://github.com/eq19/feed/assets/36441664/32414353-979b-40bc-9faf-56d7324e0be2)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
