@@ -160,8 +160,8 @@ This unification was initiated from the theoretical work by Hideki Yukawa who in
 
 ```warning
 Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
-- The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
+- The ***four components*** of the Higgs field (squares) ***break the electroweak symmetry (30)*** and ***interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons (31)***. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
+- ***The strong force is carried by eight proposed particles called gluons (32)***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
 
 Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the _[identition zones](https://www.eq19.com/identition/)_. Although unification of forces is generally anticipated, ***much remains to be done to prove its validity***. _([LibreTexts](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
 ```
@@ -171,11 +171,11 @@ Unification of the strong force is expected at such high energies that it cannot
 The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the initial unifications.
 
 ```note
-The exchange of virtual pions, along with vector, rho and omega mesons, ***provides an explanation for the residual strong force between nucleons***.
-- Pions are not produced in radioactive decay, but commonly are in high-energy collisions between hadrons.
-- Pions also ***result from some matter–antimatter annihilation events***.
+The exchange of virtual pions, along with vector, rho and omega mesons, ***provides an explanation for the residual strong force between nucleons (33)***.
+- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions (34)*** between hadrons.
+- Pions also ***result from some matter–antimatter annihilation events (35)***.
 
-All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components interact with matter in Earth's atmosphere.
+All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter (36)*** in Earth's atmosphere.
 ```
 
 [![The exchange of virtual pions](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
