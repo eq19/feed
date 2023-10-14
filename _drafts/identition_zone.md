@@ -84,14 +84,6 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
-In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
-
-```note
-As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
-```
-
-[![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
-
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
 ## Partition function
@@ -103,6 +95,14 @@ The concept was introduced by [Freeman Dyson](https://en.wikipedia.org/wiki/Free
 ```
 
 [![Rank_of_a_partition](https://user-images.githubusercontent.com/8466209/227838045-3ddd5238-7beb-4023-affa-c61a054afd2b.png)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
+
+In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
+
+```note
+As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
+```
+
+[![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
 
