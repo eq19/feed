@@ -139,7 +139,7 @@ Attempts to show unification of the four forces are called Grand Unified Theorie
 - The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
 - The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
 
-Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the _[identition zones](https://www.eq19.com/identition/)_. Although unification of forces is generally anticipated, much remains to be done to prove its validity. _([LibreTexts](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
+Unification of the strong force is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the as-yet unobserved decay of the proton and topics to be discussed in the _[identition zones](https://www.eq19.com/identition/)_. Although unification of forces is generally anticipated, ***much remains to be done to prove its validity***. _([LibreTexts](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces))_
 ```
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
@@ -222,7 +222,7 @@ This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure
 
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
-```warning
+```tip
 Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
 ```
 
