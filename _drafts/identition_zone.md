@@ -62,7 +62,7 @@ In order to propagate through spacetime and how they interact with each other we
 
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
-```note
+```warning
 ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
 ```
 
@@ -86,8 +86,8 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 The string theory is sofar the leading candidate to the Theory of Everything however it is said that the theory is incompatible with dark energy.
 
-```note
-Conclusion. We have argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
+```warning
+It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
 ```
 
 [![string theory and dark energy](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)](https://www.sciencedirect.com/science/article/pii/S0370269319306720#:~:text=Conclusion,responsible%20for%20its%20radiative%20stability)
