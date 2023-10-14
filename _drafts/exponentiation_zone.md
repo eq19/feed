@@ -134,7 +134,7 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
-```note
+```warning
 Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
 - The ***four components*** of the Higgs field (squares) break the electroweak symmetry and interact with other particles to give them mass, with ***three components*** becoming part of the massive W and Z bosons. Allowed decays of the neutral Higgs boson, H, (circled) satisfy electroweak charge conservation.
 - The strong force is carried by ***eight proposed particles called gluons***, which are intimately connected to a quantum number called color—their governing theory is thus called quantum chromodynamics (QCD).
