@@ -154,7 +154,7 @@ The four faces of our pyramid additively cascade ***32 four-times triangular num
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
-The symmetry of this supergravity theory is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
+The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
 This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
@@ -237,7 +237,7 @@ This web enabled demonstration shows a polar plot of ***the first 20 non-trivial
 
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. 
 
-```tip
+```warning
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system.
 ```
 
@@ -292,8 +292,8 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
-```warning
-Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://www.eq19.com/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://www.eq19.com/exponentiation/#parsering-structure)_ by means of ***[MEC30 Structure](https://www.eq19.com/exponentiation/#self-repetition)***. So whenever the 11s is _[compactified](https://www.eq19.com/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://www.eq19.com/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://www.eq19.com/identition/#extra-dimensions)_ including the _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_ of dark energy and finally become another level of ***[11 dimensions](https://www.eq19.com/identitionl/#the-powers-of-pi)*** which lead to the concept of ***[multiple universes](https://www.eq19.com/identition/#extra-dimensions)***. 
+```danger
+Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://www.eq19.com/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://www.eq19.com/exponentiation/#parsering-structure)_ by means of ***[MEC30 Structure](https://www.eq19.com/exponentiation/#self-repetition)***. So whenever the 11s is _[compactified](https://www.eq19.com/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://www.eq19.com/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://www.eq19.com/identition/#extra-dimensions)_ which including the _[eigenvector](https://www.eq19.com/addition/#structure-true-prime-pairs)_ of dark energy and finally become another level of ***[11 dimensions](https://www.eq19.com/identitionl/#the-powers-of-pi)*** that lead to the concept of ***[multiple universes](https://www.eq19.com/identition/#extra-dimensions)***. 
 ```
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://www.eq19.com/multiplication/#streaching-structure)
