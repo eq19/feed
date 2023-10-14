@@ -90,7 +90,7 @@ The string theory is sofar the leading candidate to the Theory of Everything how
 Conclusion. We have argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability.Nov 10, 2019
 ```
 
-![image](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)
+[![string theory and dark energy](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)](https://www.sciencedirect.com/science/article/pii/S0370269319306720#:~:text=Conclusion,responsible%20for%20its%20radiative%20stability)
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
