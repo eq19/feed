@@ -118,7 +118,7 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 ***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
 ```
 
-![partitions](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)
+[![partitions](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://www.yangruihu.com/susy)
 
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. 
 
