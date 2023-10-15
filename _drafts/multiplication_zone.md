@@ -202,8 +202,8 @@ The eigenvalue is the factor by which an eigenvector is stretched. If the eigenv
 $True Prime Pairs:
 (5,7), (11,13), (17,19)
  
-layer | node | sub |  i  |  f
-------+------+-----+-----+------      ‹------------------------------ 0
+layer | node | sub |  i  |  f.                                        MEC 30
+------+------+-----+-----+------      ‹------------------------------ 0 {-1}
       |      |     |  1  | --------------------------
       |      |  1  +-----+                           |    
       |  1   |     |  2  | (5)                       |
@@ -225,7 +225,7 @@ layer | node | sub |  i  |  f
       |      |     |  10 |                           |
       |      |-----+-----+                           |
       |  4   |     |  11 | (13) ---------------------
-      |      |  6  +-----+            ‹------------------------------ 15
+      |      |  6  +-----+            ‹------------------------------ 15 {0}
       |      |     |  12 |---------------------------
 ------+------+-----+-----+------------               |
       |      |     |  13 |                           |
@@ -239,7 +239,7 @@ layer | node | sub |  i  |  f
       |  6   |     |  17 | (19)                      |
       |      |  9  +-----+                           |
       |      |     |  18 | --------------------------
-------|------|-----+-----+------      ‹------------------------------- 30
+------|------|-----+-----+------      ‹------------------------------- 30 {+1}
 ```
 
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
