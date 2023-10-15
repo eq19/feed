@@ -43,7 +43,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied. Some theories state that light is nothing but ripples of vibrations in the fifth dimension.
 
 ```note
-A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string"), a D2-brane is a plane, and a ***D25-brane fills the highest-dimensional space considered in bosonic string theory***. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
+In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be expressed in terms of an action only for a four-dimensional manifold. Finally, Tangherlini showed in 1963 that when there are more than three spatial dimensions, electron orbitals around nuclei cannot be stable; electrons would either fall into the nucleus or disperse. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
 ```
 
 ![](https://user-images.githubusercontent.com/36441664/275315214-522fb9a5-b785-4e49-90dc-424bbf1d0f1c.png)
