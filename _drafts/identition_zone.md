@@ -132,9 +132,9 @@ Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wik
 
 ## The powers of 10
 
-```note
-One of the longest unsolved problems in the study of supersymmetry is an irreducible off-shell formulation containing a finite number of component fields for the ten-dimensional (along with the extended and eleven-dimensional ones) supergravity multiplet has not been presented. An even simpler and unachieved task is to give a reducible off-shell formulation explicitly showing a finite number of component fields.
+There are 5 different string theories, each requiring 10 dimensions. On the other hand, string theory is supposed to be fundamental theory.
 
+```note
 Inspired by the history of how Einstein constructed General Relativity, we study ***the linearized Nordstrom supergravity in ten- and eleven-dimensional superspaces***. We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions. _([Higher-Dimensional Supergravity](https://www.yangruihu.com/susy))_
 ```
 
