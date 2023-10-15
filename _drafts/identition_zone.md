@@ -132,6 +132,8 @@ Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wik
 
 ## The powers of 10
 
+[![](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://www.yangruihu.com/susy)
+
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
 ```tip
