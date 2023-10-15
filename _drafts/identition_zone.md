@@ -132,6 +132,8 @@ Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wik
 
 ## The powers of 10
 
+An even simpler and unachieved task is to give a reducible off-shell formulation explicitly showing a finite number of component fields.
+
 ```note
 Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in ten- and eleven-dimensional superspaces in [JHEP07(2019)063]. We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions, is presented in [JHEP03(2021)074].
 ```
