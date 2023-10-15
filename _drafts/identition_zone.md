@@ -132,6 +132,10 @@ Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wik
 
 ## The powers of 10
 
+```note
+Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in ten- and eleven-dimensional superspaces in [JHEP07(2019)063]. We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions, is presented in [JHEP03(2021)074].
+```
+
 [![](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://www.yangruihu.com/susy)
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
