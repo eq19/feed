@@ -46,7 +46,7 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 A D0-brane is a single point, a D1-brane is a line (sometimes called a "D-string"), a D2-brane is a plane, and a ***D25-brane fills the highest-dimensional space considered in bosonic string theory***. _([Wikipedia](https://en.m.wikipedia.org/wiki/D-brane))_
 ```
 
-![](https://user-images.githubusercontent.com/36441664/271979682-67e1c1fe-8b18-427d-ba14-5c3713bab7af.png)
+![](https://user-images.githubusercontent.com/36441664/275315214-522fb9a5-b785-4e49-90dc-424bbf1d0f1c.png)
 
 The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ it is related to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
 
