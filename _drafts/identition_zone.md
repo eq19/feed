@@ -193,7 +193,7 @@ The mathematically significant Fibonacci sequence defines a set of ratios known 
 
 [![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/274959197-321ec301-5c69-4a77-8ee0-4dcb2e213a4c.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
 
-Technical traders attempt to use them to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
+Technical traders attempt to utilize them to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
 
 ```note
 The 78.6% level is given by the square root of 61.8%, while not officially a Fibonacci ratio, 0.5 is also commonly referenced (50% is derived not from the Fibonacci sequence but rather from the idea that on average stocks retrace half their earlier movements). _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
