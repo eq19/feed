@@ -23,7 +23,7 @@ Five consistent versions of superstring theory were developed before it was conj
 
 [![Solar Ststem](https://user-images.githubusercontent.com/8466209/223703153-6ea330bf-92e8-433b-9ebe-660430a87a29.gif)](https://www.eq19.com/exponentiation/#subclasses-of-partition)
 
-Nowadays there are many scientists come in to the conclusion that there should be ***extra dimensions*** involved and typically it would take a very complicated form. 
+Nowadays there are many scientists come in to the conclusion that there should be ***[extra dimensions](https://en.wikipedia.org/wiki/Extra_dimensions#:~:text=In%20physics%2C%20extra%20dimensions%20are,on%20the%20Kaluza%E2%80%93Klein%20theory.)*** involved and typically it would take a very complicated form. 
 
 ```note
 1. ***Line/length***
