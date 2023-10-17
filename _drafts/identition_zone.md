@@ -40,7 +40,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
-We are going to discuss the strong coupling dynamics of dimension d ⩾ 4. This would reflect ***matter–antimatter*** annihilation events which tied in to the addition function of Euler Indentity.
+The strong coupling dynamics of dimension d ⩾ 4 would reflect ***matter–antimatter*** annihilation events which tied in to the addition function of Euler Indentity.
 
 ```note
 In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be expressed in terms of an action only for a four-dimensional manifold. Finally, Tangherlini showed in 1963 that ***when there are more than three spatial dimensions, electron orbitals around nuclei cannot be stable***; electrons would either fall into the nucleus or disperse. _([Wikipedia](https://en.wikipedia.org/wiki/Anthropic_principle#Dimensions_of_spacetime))_
