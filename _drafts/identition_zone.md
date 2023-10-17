@@ -74,7 +74,7 @@ Unsolved problems in physics: Is string theory, superstring theory, or M-theory,
 The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
 ```
 
-![time evolution](https://user-images.githubusercontent.com/36441664/275706241-356d91fc-da93-4edd-8a57-9489554b181b.gif)
+[![time evolution](https://user-images.githubusercontent.com/36441664/275706241-356d91fc-da93-4edd-8a57-9489554b181b.gif)](https://en.wikipedia.org/wiki/Klein_bottle#properties)
 
 Our physical space is observed to have only three large dimensions and taken together with time as the fourth dimension, a physical theory must take this into account. 
 
