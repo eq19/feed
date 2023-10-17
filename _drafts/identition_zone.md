@@ -76,7 +76,7 @@ Our physical space is observed to have only three large dimensions and taken tog
 
 [![time evolution](https://user-images.githubusercontent.com/36441664/275706241-356d91fc-da93-4edd-8a57-9489554b181b.gif)](https://en.wikipedia.org/wiki/Klein_bottle#properties)
 
-String theory, superstring theory, or M-theory, or some other variant on this theme is one of the Unsolved Problem in physic, a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
+String theory, superstring theory, or M-theory, or some other variant on this theme is one of the Unsolved Problem in physic as [a step road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
 
 ```note
 Nothing prevents a theory from including more than 4 dimensions. In the case of string theory, consistency requires spacetime to have 10, 11 or 26 dimensions. ***The conflict between observation and theory is resolved by making the unobserved dimensions compactified***. _([Astrophysics Research](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html))_
@@ -84,7 +84,7 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
-The string theory is sofar the leading candidate to the _Theory of Everything_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
+The string theory is sofar the leading candidate to the _TOE_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
 
 ```warning
 It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
