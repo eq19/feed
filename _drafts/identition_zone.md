@@ -68,7 +68,7 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
 
-String theory, superstring theory, or M-theory, or some other variant on this theme is one of theUnsolved Problem in physic, a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
+String theory, superstring theory, or M-theory, or some other variant on this theme is one of the Unsolved Problem in physic. It is a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
 
 ```warning
 ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
