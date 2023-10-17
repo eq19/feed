@@ -56,7 +56,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 [![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
 
-In order to propagate through spacetime and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
+In order to propagate spacetime _[annihilation](https://en.wikipedia.org/wiki/Annihilation)_ and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
 ## String Theory
 
