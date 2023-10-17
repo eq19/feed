@@ -54,7 +54,7 @@ The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
-[![Euler function](https://user-images.githubusercontent.com/36441664/273386228-2451794f-e67c-449d-a5bc-24d867421224.png)](https://www.eq19.com/#eulers-identity)
+![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)
 
 In order to propagate through spacetime and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
