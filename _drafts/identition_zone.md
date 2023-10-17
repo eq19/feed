@@ -46,7 +46,7 @@ The strong coupling dynamics of string theories in dimension d ⩾ 4 are studied
 In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be expressed in terms of an action only for a four-dimensional manifold. Finally, Tangherlini showed in 1963 that ***when there are more than three spatial dimensions, electron orbitals around nuclei cannot be stable***; electrons would either fall into the nucleus or disperse. _([Wikipedia](https://en.wikipedia.org/wiki/Anthropic_principle#Dimensions_of_spacetime))_
 ```
 
-[![Dimensions of spacetime](https://user-images.githubusercontent.com/36441664/275315214-522fb9a5-b785-4e49-90dc-424bbf1d0f1c.png)](https://en.wikipedia.org/wiki/Anthropic_principle#Dimensions_of_spacetime)
+[![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
 
 The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings the three (3) operations of ***addition, multiplication*** and ***exponentiation***. By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ it is related to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
 
@@ -54,7 +54,7 @@ The function of _[Euler Identity](https://www.eq19.com/#eulers-identity)_ brings
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
-[![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
+![hqdefault](https://github.com/eq19/feed/assets/36441664/fc9e36b0-6963-40a4-9dde-41c0f88a8ab9)
 
 In order to propagate spacetime _[annihilation](https://en.wikipedia.org/wiki/Annihilation)_ and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
