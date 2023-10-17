@@ -168,7 +168,7 @@ The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\
 This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. ***This gives O(8) for the gauge group which is too small to contain the Standard Model gauge group U(1) × SU(2) × SU(3) which would need at least O(10)***. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
 ```
 
-[![spinor](https://user-images.githubusercontent.com/36441664/273259221-4ba9147b-675a-4656-9e62-30b65e7783fe.png)](https://en.wikipedia.org/wiki/Spinor)
+[![spinor](https://user-images.githubusercontent.com/36441664/273259221-4ba9147b-675a-4656-9e62-30b65e7783fe.png)](https://qr.ae/pKnIES)
 
 By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
