@@ -62,16 +62,16 @@ In order to propagate through spacetime and how they interact with each other we
 
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
-```warning
-***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
+```tip
+The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
 
-Unsolved problems in physics: Is string theory, superstring theory, or M-theory, or some other variant on this theme, a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
+String theory, superstring theory, or M-theory, or some other variant on this theme is one of theUnsolved Problem in physic, a step on [the road](https://youtu.be/3mXwMhMIGMA?t=3h54s) to a _[Theory Of Everything (TOE)](https://en.wikipedia.org/wiki/Theory_of_everything)_.
 
-```tip
-The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the fundamental forces that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
+```warning
+***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
 ```
 
 [![time evolution](https://user-images.githubusercontent.com/36441664/275706241-356d91fc-da93-4edd-8a57-9489554b181b.gif)](https://en.wikipedia.org/wiki/Klein_bottle#properties)
