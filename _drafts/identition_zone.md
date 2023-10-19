@@ -54,7 +54,7 @@ By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-o
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
 ```
 
-![image](https://github.com/eq19/feed/assets/36441664/d9ee23e6-ee4a-4925-8eb1-a466ed7d4555)
+![image](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/275866981-d9ee23e6-ee4a-4925-8eb1-a466ed7d4555.png)
 
 In order to propagate spacetime _[annihilation](https://en.wikipedia.org/wiki/Annihilation)_ and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
