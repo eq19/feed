@@ -96,14 +96,6 @@ Here we implement a method called the rank of a partition where the rank of a pa
 
 ## Partition function
 
-In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
- 
-```note
-The concept was introduced by [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
-```
-
-[![Rank_of_a_partition](https://user-images.githubusercontent.com/8466209/227838045-3ddd5238-7beb-4023-affa-c61a054afd2b.png)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
-
 In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
 ```note
@@ -111,6 +103,14 @@ As usual, the images ***on the left are snapshots of the particles at different 
 ```
 
 [![Feynman diagrams](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269164028-d5a17004-fbf2-494a-a2f0-f0bb1674c938.jpg)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
+
+In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
+ 
+```note
+The concept was introduced by [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
+```
+
+[![Rank_of_a_partition](https://user-images.githubusercontent.com/8466209/227838045-3ddd5238-7beb-4023-affa-c61a054afd2b.png)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
 
 One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
 
