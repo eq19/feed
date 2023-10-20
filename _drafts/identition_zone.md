@@ -310,6 +310,8 @@ Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structu
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
+![](https://user-images.githubusercontent.com/36441664/277068593-0362e63f-3829-4381-8e93-14409b813e9c.png)
+
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
 ## Euler partition
