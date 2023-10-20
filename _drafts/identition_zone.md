@@ -102,7 +102,7 @@ In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Par
 As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
 ```
 
-[![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276835396-8c6cd1d6-bc54-458b-9bbd-49e454d2b422.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
+[![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
 In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
  
