@@ -48,7 +48,7 @@ In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be e
 
 [![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
 
-By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ these annihilation relates to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
+By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ these annihilation [relates](https://quantumartandpoetry.blogspot.com/2013/08/the-theory-of-everything-explaining.htm) to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
 
 ```note
 We've seen how it [Euler's identity] can easily be deduced from results of Johann Bernoulli and Roger Cotes, but that neither of them seem to have done so. Even Euler does not seem to have written it down explicitly – and certainly it doesn't appear in any of his publications – though he must surely have realized that it follows immediately from his identity [i.e. [Euler's formula](https://en.m.wikipedia.org/wiki/Euler%27s_formula)], e^ix = cos x + i sin x. ***Moreover, it seems to be unknown who first stated the result explicitly…*** _([Wikipedia](https://en.m.wikipedia.org/wiki/Euler%27s_identity))_
