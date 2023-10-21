@@ -143,7 +143,7 @@ There are 5 different string theories, each requiring 10 dimensions. On the othe
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace.
 
 ```warning
-Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://www.yangruihu.com/susy)_.
+Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_.
 - We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws.
 - The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions.
 - We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe a supersymmetric multiplet in arbitrary spacetime dimensions efficiently.
