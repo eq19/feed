@@ -25,7 +25,7 @@ Five consistent versions of superstring theory were developed before it was conj
 
 Nowadays there are many scientists come in to the conclusion that there should be ***[extra dimensions](https://en.wikipedia.org/wiki/Extra_dimensions#:~:text=In%20physics%2C%20extra%20dimensions%20are,on%20the%20Kaluza%E2%80%93Klein%20theory.)*** involved and typically it would take a very complicated form. 
 
-```note
+```tip
 1. ***Line/length***
 2. ***Plane/shapes***
 3. ***Depth*** (representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane)
@@ -140,10 +140,10 @@ There are 5 different string theories, each requiring 10 dimensions. On the othe
 
 ## The powers of 10
 
-Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://www.yangruihu.com/susy)_.
+In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace.
 
 ```warning
-We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws.
+- Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://www.yangruihu.com/susy)_.We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws.
 - The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions.
 - We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe a supersymmetric multiplet in arbitrary spacetime dimensions efficiently.
 - Thus, adinkra-based arguments suggest the surprising possibility that the 11D, N = 1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N = 1 superfield supergravity.
