@@ -143,12 +143,13 @@ There are 5 different string theories, each requiring 10 dimensions. On the othe
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace.
 
 ```warning
-- Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://www.yangruihu.com/susy)_.We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws.
+Inspired by the history of how Einstein constructed General Relativity, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://www.yangruihu.com/susy)_.
+- We found no obstacles to applying the lessons we learned in 4D to higher dimensions. We also derive infinitesimal 10D superspace Weyl transformation laws.
 - The identification of all off-shell ten-dimensional supergeometrical Weyl field strength tensors, constructed from respective torsions.
 - We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe a supersymmetric multiplet in arbitrary spacetime dimensions efficiently.
 - Thus, adinkra-based arguments suggest the surprising possibility that the 11D, N = 1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N = 1 superfield supergravity.
 
-We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional theta-monomials are replaced by [Young Tableaux](https://www.eq19.com/identition/#partition-function).
+We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional theta-monomials are replaced by [Young Tableaux](https://www.eq19.com/identition/#partition-function) as shiwn below. _([YangruiHu.com](https://www.yangruihu.com/susy))_
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
