@@ -310,6 +310,10 @@ Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structu
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
+```note
+String Theory which states there could be 11 dimensions (9 dimensions of space, 1 dimension of time, and 1 dimension for other universes) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
+```
+
 [![11 dimensions](https://user-images.githubusercontent.com/36441664/277068593-0362e63f-3829-4381-8e93-14409b813e9c.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
 
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
