@@ -130,6 +130,12 @@ It turns out that quantum string theory always destroys the symmetries of classi
 
 Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the fundamental forces in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
 
+```note
+String Theory which states there could be 11 dimensions (9 dimensions of space, 1 dimension of time, and 1 dimension for other universes) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
+```
+
+[![11 dimensions](https://user-images.githubusercontent.com/36441664/277068593-0362e63f-3829-4381-8e93-14409b813e9c.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
+
 ## The powers of 10
 
 There are 5 different string theories, each requiring 10 dimensions. On the other hand, string theory is supposed to be fundamental theory.
@@ -309,12 +315,6 @@ Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structu
 [![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://www.eq19.com/multiplication/#streaching-structure)
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
-
-```note
-String Theory which states there could be 11 dimensions (9 dimensions of space, 1 dimension of time, and 1 dimension for other universes) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
-```
-
-[![11 dimensions](https://user-images.githubusercontent.com/36441664/277068593-0362e63f-3829-4381-8e93-14409b813e9c.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
 
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
