@@ -46,7 +46,7 @@ The coupling dynamics of dimension d ⩾ 4 reflects to ***[matter–antimatter a
 In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be expressed in terms of an action only for a four-dimensional manifold. Finally, Tangherlini showed in 1963 that ***when there are more than three spatial dimensions, electron orbitals around nuclei cannot be stable***; electrons would either fall into the nucleus or disperse. _([Wikipedia](https://en.wikipedia.org/wiki/Anthropic_principle#Dimensions_of_spacetime))_
 ```
 
-[![image](https://github.com/eq19/feed/assets/36441664/3c5cbf7e-71d3-4f70-94ba-0a24619674be)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
+[![pairing from nothingness](https://user-images.githubusercontent.com/36441664/277077844-a6c38352-5d68-4f55-ae51-6bb1c8bfac7b.png)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
 
 By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ these annihilation [relates](https://quantumartandpoetry.blogspot.com/2013/08/the-theory-of-everything-explaining.html) to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
 
