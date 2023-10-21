@@ -184,6 +184,16 @@ Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expan
 
 ## The powers of pi
 
+Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
+
+```note
+The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of 61.8%, while not officially a Fibonacci ratio, 0.5 is also commonly referenced (50% is derived not from the Fibonacci sequence but rather from the idea that on average stocks retrace half their earlier movements). _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
+```
+
+***786 - 618 = 168 = π(1000)***
+
+[![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
+
 There are set of sequence known as _[Fibonacci retracement](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20to%20the%20right.)_. For unknown reasons, these Fibonacci ratios seem to play a role in the _[stock market](https://www.eq19.com/exponentiation/#hexagonal-patterns)_, just as they do in nature. 
 
 ```note
@@ -196,16 +206,6 @@ The mathematically significant Fibonacci sequence defines a set of ratios known 
 [![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/274959197-321ec301-5c69-4a77-8ee0-4dcb2e213a4c.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
 
 Technical traders attempt to utilize them to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
-
-```note
-The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of 61.8%, while not officially a Fibonacci ratio, 0.5 is also commonly referenced (50% is derived not from the Fibonacci sequence but rather from the idea that on average stocks retrace half their earlier movements). _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
-```
-
-***786 - 618 = 168 = π(1000)***
-
-[![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
-
-Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
 
 ```note
 In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
