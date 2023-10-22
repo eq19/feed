@@ -258,7 +258,7 @@ This web enabled demonstration shows a polar plot of ***the first 20 non-trivial
 
 [![Riemann Zeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://qr.ae/pKnIbn)
 
-When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
+When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions.
 
 ```warning
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system.
@@ -349,7 +349,7 @@ As explicitly indicated by `n - 7` within identition zones this `p(33)` behave r
 
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
-By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times 11.
+By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities of the prime pair 11 and 13 so the nodes is converted from 7 to 77 which is 7 times 11.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
@@ -357,6 +357,6 @@ By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times
 
 [![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
-By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities of the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_.
+It will be the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
 
 The only difference is _the base unit_ of the lexer [`(Id: 33)`](https://www.eq19.com/multiplication/#parsering-structure).<br>It is now carrying the above `p(33) = 10143`.
