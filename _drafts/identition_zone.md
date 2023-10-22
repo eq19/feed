@@ -347,7 +347,7 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). 
 
-[](https://www.eq19.com/exponentiation/#root-functions)
+[![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
 By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times 11.
 
