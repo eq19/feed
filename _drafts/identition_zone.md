@@ -349,7 +349,7 @@ As explicitly indicated by `n - 7` within identition zones this `p(33)` behave r
 
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
-By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities. We are going to discuss how this reversal behaviour goes to the prime pair 11 and 13 so the nodes is converted from 7 to 77 which is 7 times 11.
+By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities. We are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
