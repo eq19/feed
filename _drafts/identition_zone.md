@@ -345,7 +345,11 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 [![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
-As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times 11.
+As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). 
+
+[](https://www.eq19.com/exponentiation/#root-functions)
+
+By the prime pair 11 and 13 the nodes is converted from 7 to 77 which is 7 times 11.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
