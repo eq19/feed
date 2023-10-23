@@ -185,7 +185,7 @@ The first 1000 prime numbers are silently screaming: "Pay attention to us, for w
 
 [![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
-Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
+Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a [period-24 palindromic](https://youtu.be/euNr9PozCmg?t=41m21s) that bring ***the powers of pi***. 
 
 ## The powers of pi
 
