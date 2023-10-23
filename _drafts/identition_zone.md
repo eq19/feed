@@ -345,7 +345,7 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 [![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
-As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/addition/#prime-hexagon).
+As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/identition/#the-powers-of-pi)_.
 
 ```note
 The advantages achieved by the invention are, in particular, that instead of a rudimentary mathematical template, structured in standards, now a folding rule of the MEC 30 can be used which makes the associated and determined algorithm visible.
