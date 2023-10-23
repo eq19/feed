@@ -345,7 +345,7 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 [![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/addition/#structure-true-prime-pairs)
 
-As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). 
+As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/addition/#prime-hexagon).
 
 ```note
 The advantages achieved by the invention are, in particular, that instead of a rudimentary mathematical template, structured in standards, now a folding rule of the MEC 30 can be used which makes the associated and determined algorithm visible.
@@ -363,7 +363,7 @@ Developing MEC 30 as a folding rule emerged from a new analysis of mathematical 
 
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
-By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities. We are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
+By [the next term](https://www.eq19.com/maps/) we are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
