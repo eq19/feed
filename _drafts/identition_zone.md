@@ -358,7 +358,7 @@ Why does it work?
 - So we are able to investigate the energy behavior below the quantum of effect without measuring influence. This works because our scale is the basis for the ***Riemann zeta function***, which reflects the energy distribution in atoms.
 - On the other hand, with larger systems we are able to transfer the behavior of the energy from the subatomic space into the haptic space with the scale described here (thought experiment ***Schröninger's cat***). Thus, we are still able to apply the Schröninger wave equation in the haptic space, and replace the Hamiltonian with our measurements.
 
-Developing MEC 30 as a folding rule emerged from a new analysis of mathematical foundations and makes a new algorithm visible.
+Developing MEC 30 as a folding rule emerged from a new analysis of mathematical foundations and makes a new algorithm visible. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en#similarDocuments))_
 ```
 
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
