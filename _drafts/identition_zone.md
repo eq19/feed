@@ -352,8 +352,8 @@ The advantages achieved by the invention are, in particular, that instead of a r
 
 Why does it work?
 
-- In the subatomic space, Heisenberger does not allow precise measurements because the measurements themselves distort the result. Through the mathematical basis presented here, our scale behaves like ***Plank's quantum*** of action and shows in the positions the behaviorally entangled photons, which in turn produce the quantum of action in the sums. 
-- The MEC 30 as a folding rule is also here a tool for ***the entangled quantum*** systems to explain the ghostly behavior of the elementary particles. So also to make the underlying algorithm visible and explainable, keyword quantum teleportation. 
+- In the subatomic space, Heisenberger does not allow precise measurements because the measurements themselves distort the result. Through the mathematical basis presented here, our scale behaves like ***[Plank's quantum](https://en.wikipedia.org/wiki/Planck%27s_law)*** of action and shows in the positions the behaviorally entangled photons, which in turn produce the quantum of action in the sums. 
+- The MEC 30 as a folding rule is also here a tool for ***[the entangled quantum]()*** systems to explain the ghostly behavior of the elementary particles. So also to make the underlying algorithm visible and explainable, keyword quantum teleportation. 
 - So we are able to investigate the energy behavior below the quantum of effect without measuring influence. This works because our scale is the basis for the ***[Riemann zeta function](https://www.eq19.com/#zeta-function)***, which reflects the energy distribution in atoms.
 - On the other hand, with larger systems we are able to transfer the behavior of the energy from the subatomic space into the haptic space with the scale described here (thought experiment ***Schröninger's cat***).
 - Thus, we are still able to apply the Schröninger wave equation in the haptic space, and ***replace the Hamiltonian*** with our measurements.
