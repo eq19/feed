@@ -347,6 +347,20 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). 
 
+```note
+The advantages achieved by the invention are, in particular, that instead of a rudimentary mathematical template, structured in standards, now a folding rule of the MEC 30 can be used which makes the associated and determined algorithm visible.
+
+Why does it work?
+
+- In the subatomic space, Heisenberger does not allow precise measurements because the measurements themselves distort the result.
+- Through the mathematical basis presented here, our scale behaves like ***Plank's quantum*** of action and shows in the positions the behaviorally entangled photons, which in turn produce the quantum of action in the sums. 
+- The MEC 30 as a folding rule is also here a tool for ***the entangled quantum*** systems to explain the ghostly behavior of the elementary particles. So also to make the underlying algorithm visible and explainable, keyword quantum teleportation. 
+- So we are able to investigate the energy behavior below the quantum of effect without measuring influence. This works because our scale is the basis for the ***Riemann zeta function***, which reflects the energy distribution in atoms.
+- On the other hand, with larger systems we are able to transfer the behavior of the energy from the subatomic space into the haptic space with the scale described here (thought experiment ***Schröninger's cat***). Thus, we are still able to apply the Schröninger wave equation in the haptic space, and replace the Hamiltonian with our measurements.
+
+Developing MEC 30 as a folding rule emerged from a new analysis of mathematical foundations and makes a new algorithm visible.
+```
+
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
 By [the next term](https://www.eq19.com/maps/) there are fractions within these 1000 primes which end up with 168 identities. We are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
