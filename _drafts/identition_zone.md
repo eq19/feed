@@ -218,7 +218,7 @@ The mathematically significant Fibonacci sequence defines a set of ratios known 
 
 [![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/277129518-a7bfc713-40f5-47a5-9a1d-37c3e3fde1ff.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
 
-Technical traders attempt to utilize them to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
+They are used to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
 
 ```note
 In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
