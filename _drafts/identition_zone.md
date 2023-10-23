@@ -132,10 +132,10 @@ Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wik
 
 ## The powers of 10
 
-In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace.
+There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
 ```note
-Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_.
+In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_.
 - We found no obstacles to applying the lessons we learned in _[4D to higher dimensions](https://github.com/eq19/feed/files/12908712/JHEP09.2021.202.pdf)_. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell _[ten-dimensional supergeometrical](https://github.com/eq19/feed/files/12908716/JHEP03.2021.074.pdf)_ Weyl field strength tensors, constructed from respective torsions.
 - We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe ***a supersymmetric multiplet in arbitrary spacetime dimensions*** efficiently.
 - Thus, adinkra-based arguments suggest the surprising possibility that the 11D, N = 1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N = 1 superfield supergravity.
@@ -199,7 +199,8 @@ The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of
 
 [![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
 
-There are 5 different string theories, each requiring 10 dimensions. On the other hand, string theory is supposed to be fundamental theory.
+They are though 24 quantum field, 12 fundamental, 9 quarks, and 3 leptons.
+
 
 ```note
 [String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
