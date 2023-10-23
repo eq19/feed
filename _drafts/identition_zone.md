@@ -199,7 +199,7 @@ The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of
 
 [![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
 
-They are though 24 quantum field, 12 fundamental, 9 quarks, and 3 leptons.
+There are though to be 24 separate quantum fields permit the universe consist of 12 fundamental, 9 quarks, and 3 leptons.
 
 
 ```note
