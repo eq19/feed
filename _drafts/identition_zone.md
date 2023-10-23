@@ -130,14 +130,6 @@ It turns out that quantum string theory always destroys the symmetries of classi
 
 Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the fundamental forces in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
 
-```note
-[String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
-```
-
-[![11 dimensions](https://user-images.githubusercontent.com/36441664/277129339-582ec713-994e-4fed-9b64-d7118440d57c.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
-
-There are 5 different string theories, each requiring 10 dimensions. On the other hand, string theory is supposed to be fundamental theory.
-
 ## The powers of 10
 
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace.
@@ -225,6 +217,14 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 ```
 
 [![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
+
+There are 5 different string theories, each requiring 10 dimensions. On the other hand, string theory is supposed to be fundamental theory.
+
+```note
+[String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
+```
+
+[![11 dimensions](https://user-images.githubusercontent.com/36441664/277129339-582ec713-994e-4fed-9b64-d7118440d57c.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
 
 Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)*** while the twelve (12) is happen between the sequence of 36 to 102.
 
