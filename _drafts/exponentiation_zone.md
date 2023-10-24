@@ -112,6 +112,10 @@ In the standard version of gematria, each letter is given a numerical value betw
  3:4:9 |{30}|3000 |{71}= 68 + log 10³ ---------¤         Δ900   
 ```
 
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
+
+## Elementary Particle
+
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
 ```note
@@ -119,10 +123,6 @@ The Standard Model presently recognizes ***seventeen distinct particles (twelve 
 ```
 
 [![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
-
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
-
-## God Particle
 
 In the Standard Model, the Higgs boson is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
@@ -144,6 +144,8 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
+## Fundamental Forces
+
 To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
 
 ```note
@@ -163,6 +165,18 @@ Feynman diagram for the same process as in the animation, with the individual qu
 ```
 
 [![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+
+```note
+This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
+- The six (up, down, strange, charm, bottom, top) quarks, and their antiquark counterparts,
+- The three charged (electron, muon, tau) and three neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
+- The eight gluons (because of the eight possible color combinations),
+- The two weak (W-and-Z) bosons,
+- The one electromagnetic (photon) boson,
+- And the Higgs boson.
+```
+
+[![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
 The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
 
