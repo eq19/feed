@@ -168,12 +168,14 @@ Feynman diagram for the same process as in the animation, with the individual qu
 
 ```note
 This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
-- The six (up, down, strange, charm, bottom, top) quarks, and their antiquark counterparts,
-- The three charged (electron, muon, tau) and three neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
-- The eight gluons (because of the eight possible color combinations),
-- The two weak (W-and-Z) bosons,
-- The one electromagnetic (photon) boson,
+- The six (6): up-, down-, strange-, charm-, bottom-, top-quarks, and their antiquark counterparts,
+- The three (3) charged (electron, muon, tau) and three (3) neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
+- The eight (8) gluons (because of the eight possible color combinations),
+- The two (2) weak (W-and-Z) bosons,
+- The one (1) electromagnetic (photon) boson,
 - And the Higgs boson.
+
+_([Forbes](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a))_
 ```
 
 [![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
