@@ -199,7 +199,7 @@ The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of
 
 [![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
 
-There are though to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 fundamental forces, 9 quarks, and 3 leptons.
+There are though to be ***[24 various quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 fundamental forces including mass, 9 quarks, and 3 leptons.
 
 ```note
 [String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
