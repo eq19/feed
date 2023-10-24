@@ -114,7 +114,7 @@ In the standard version of gematria, each letter is given a numerical value betw
 
 It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
 
-## Elementary Particle
+## Elementary Particles
 
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
