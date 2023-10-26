@@ -189,6 +189,17 @@ Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expan
 
 ## The powers of pi
 
+There are set of sequence known as _[Fibonacci retracement](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20to%20the%20right.)_. For unknown reasons, these Fibonacci ratios seem to play a role in the _[stock market](https://www.eq19.com/exponentiation/#hexagonal-patterns)_, just as they do in nature. 
+
+```note
+The mathematically significant Fibonacci sequence defines a set of ratios known as _Fibonacci retracements_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with additional momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***.
+- The key Fibonacci ratio of 61.8% is found by dividing one number in the series by the number that follows it. For example, 21 divided by 34 equals 0.6176, and 55 divided by 89 equals about 0.61798.
+- The 38.2% ratio is discovered by dividing a number in the series by the number located two spots to the right. For instance, 55 divided by 144 equals approximately 0.38194.
+- The 23.6% ratio is found by dividing one number in the series by the number that is three places to the right. For example, 8 divided by 34 equals about 0.23529.
+```
+
+[![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/277129518-a7bfc713-40f5-47a5-9a1d-37c3e3fde1ff.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
+
 Both scheme are carrying a correlation between two (2) number of 89 and 109 which provide the bilateral of 12 to the 24 cells of prime hexagon.
 
 ```note
@@ -207,25 +218,6 @@ There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9Po
 
 [![11 dimensions](https://user-images.githubusercontent.com/36441664/277389494-752aa9db-b533-495b-9201-b927292edcb8.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
 
-There are set of sequence known as _[Fibonacci retracement](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20to%20the%20right.)_. For unknown reasons, these Fibonacci ratios seem to play a role in the _[stock market](https://www.eq19.com/exponentiation/#hexagonal-patterns)_, just as they do in nature. 
-
-```note
-The mathematically significant Fibonacci sequence defines a set of ratios known as _Fibonacci retracements_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with additional momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***.
-- The key Fibonacci ratio of 61.8% is found by dividing one number in the series by the number that follows it. For example, 21 divided by 34 equals 0.6176, and 55 divided by 89 equals about 0.61798.
-- The 38.2% ratio is discovered by dividing a number in the series by the number located two spots to the right. For instance, 55 divided by 144 equals approximately 0.38194.
-- The 23.6% ratio is found by dividing one number in the series by the number that is three places to the right. For example, 8 divided by 34 equals about 0.23529.
-```
-
-[![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/277129518-a7bfc713-40f5-47a5-9a1d-37c3e3fde1ff.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
-
-They are used to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
-
-```note
-In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
-```
-
-[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
-
 When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
 
 ```note
@@ -242,7 +234,15 @@ The quarks and leptons are fermions, which is why they have antimatter counterpa
 
 [![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
-Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)*** while the twelve (12) is happen between the sequence of 36 to 102.
+They are used to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
+
+```note
+In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
+```
+
+[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
+
+Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)***.
 
 ## Δ(19 vs 18) Scenario
 
