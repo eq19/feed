@@ -240,6 +240,22 @@ So the 36 should behave as a central. Therefore the total files that inherited f
 
 ## Δ(19 vs 18) Scenario
 
+When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
+
+```note
+This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
+- The six (6): up-, down-, strange-, charm-, bottom-, top-quarks, and their antiquark counterparts,
+- The three (3) charged (electron, muon, tau) and three (3) neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
+- The eight (8) gluons (because of the eight possible color combinations),
+- The two (2) weak (W-and-Z) bosons,
+- The one (1) electromagnetic (photon) boson,
+- And the Higgs boson.
+
+The quarks and leptons are fermions, which is why they have antimatter counterparts, and the W boson comes in two equal-and-opposite varieties (positively and negatively charged), but all told, ***there are 24 unique, fundamental excitations of quantum fields possible***. This is where the 24 fields idea comes from. _([Forbes](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a))_
+```
+
+[![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
+
 By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
 
 ```note
