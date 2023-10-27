@@ -140,7 +140,7 @@ In the forty years since 11D on-shell supergravity theory was constructed in 197
 - We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe ***a supersymmetric multiplet in arbitrary spacetime dimensions*** efficiently.
 - Thus, adinkra-based arguments suggest the surprising possibility that the 11D, N = 1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N = 1 superfield supergravity.
 
-We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional theta-monomials are replaced by [Young Tableaux](https://www.eq19.com/identition/#partition-function) as shown below. _([YangruiHu.com](https://www.yangruihu.com/susy))_
+We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional theta-monomials are replaced by _[Young Tableaux (YT's)](https://www.eq19.com/identition/#partition-function)_ as shown below. _([YangruiHu.com](https://www.yangruihu.com/susy))_
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
@@ -180,7 +180,7 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
-We may call Ge and G ***adynkra series**", which appears to be an adapteand specialized series expansion in terms of Young Tableaux. ***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
+***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
 ```
 
 [![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
