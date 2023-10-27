@@ -177,7 +177,7 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 
 [![spinor](https://user-images.githubusercontent.com/36441664/276617374-f69dd637-a11c-47b2-a3ac-f90a5c95c939.png)](https://qr.ae/pKnIES)
 
-By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
+By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://www.eq19.com/multiplication/#elementary-structure)***.
 
 ```note
 ***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
