@@ -210,7 +210,7 @@ The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of
 
 [![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
 
-When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
+There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
 
 ```note
 [String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
@@ -226,7 +226,7 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 
 [![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
-There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
+When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
 
 ```note
 This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
