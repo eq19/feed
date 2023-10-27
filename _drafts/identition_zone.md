@@ -180,7 +180,7 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[linkage to the powers of 10](https://www.eq19.com/addition/#structure-minor-hexagons)***.
 
 ```note
-The first 1000 prime numbers are silently screaming: "Pay attention to us, for we hold the secret to the distribution of all primes!" We heard the call, and with 'strange coincidences' leading the way have discovered compelling evidence that the 1000th prime number, 7919, ***is the perfectly positioned cornerstone of a mathematical object with highly organized substructures and stunning reflectional symmetries***. _([PrimeDemystified](https://www.primesdemystified.com/First1000Primes.html))_
+We may call Ge and G ***adynkra series**", which appears to be an adapteand specialized series expansion in terms of Young Tableaux. ***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
 ```
 
 [![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
