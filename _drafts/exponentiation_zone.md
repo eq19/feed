@@ -168,6 +168,22 @@ Feynman diagram for the same process as in the animation, with the individual qu
 
 [![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
+When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
+
+```note
+This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
+- The six (6): up-, down-, strange-, charm-, bottom-, top-quarks, and their antiquark counterparts,
+- The three (3) charged (electron, muon, tau) and three (3) neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
+- The eight (8) gluons (because of the eight possible color combinations),
+- The two (2) weak (W-and-Z) bosons,
+- The one (1) electromagnetic (photon) boson,
+- And the Higgs boson.
+
+The quarks and leptons are fermions, which is why they have antimatter counterparts, and the W boson comes in two equal-and-opposite varieties (positively and negatively charged), but all told, ***there are 24 unique, fundamental excitations of quantum fields possible***. This is where the 24 fields idea comes from. _([Forbes](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a))_
+```
+
+[![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
+
 The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
 
 ```warning
