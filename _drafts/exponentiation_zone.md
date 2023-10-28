@@ -175,8 +175,8 @@ This is where the idea of ***12 fermion fields and 12 boson fields*** come from.
 - The six (6): up-, down-, strange-, charm-, bottom-, top-quarks, and their antiquark counterparts,
 - The three (3) charged (electron, muon, tau) and three (3) neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
 - The eight (8) gluons (because of the eight possible color combinations),
-- The two (2) weak (W-and-Z) bosons,
 - The one (1) electromagnetic (photon) boson,
+- The two (2) weak (W-and-Z) bosons,
 - And the Higgs boson.
 
 The quarks and leptons are fermions, which is why they have antimatter counterparts, and the W boson comes in two equal-and-opposite varieties (positively and negatively charged), but all told, ***there are 24 unique, fundamental excitations of quantum fields possible***. This is where the 24 fields idea comes from. _([Forbes](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a))_
