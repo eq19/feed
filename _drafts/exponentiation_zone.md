@@ -168,7 +168,7 @@ Feynman diagram for the same process as in the animation, with the individual qu
 
 [![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
-When we take all the forces that we understand, i.e., not including gravity, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
+When we take all the forces that we understand, i.e., ***not including gravity***, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
 
 ```note
 This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
