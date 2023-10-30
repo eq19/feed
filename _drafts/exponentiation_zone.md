@@ -184,7 +184,7 @@ The quarks and leptons are fermions, which is why they have antimatter counterpa
 
 [![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
-The strong force is assigned to the ***11th prime 31*** as the only prime within the group meanwhile ***33 and 34*** stand as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
+The weak and strong forces are assigned to ***31 and 32*** meanwhile their unifications and exchange are assigned to***33 and 34*** which are standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
 
 ```warning
 Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
