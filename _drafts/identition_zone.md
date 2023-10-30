@@ -226,7 +226,7 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 
 [![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
-Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the sequence of ***[30 to 36](https://www.eq19.com/exponentiation/#self-repetition)***.
+Further observation we came to the conclusion that the behaviour of both scheme goes to seven (7) major partitions which is happen between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
 
 ## Δ(19 vs 18) Scenario
 
