@@ -226,7 +226,7 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 
 [![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
-This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11s it self behave as residual which is happen by the 5th minor hexagon between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
+This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
 
 ## Δ(19 vs 18) Scenario
 
