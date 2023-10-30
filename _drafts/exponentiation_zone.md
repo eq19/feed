@@ -188,10 +188,11 @@ The strong force is assigned to the ***11th prime 31*** as the only prime within
 
 ```warning
 Attempts to show unification of the four forces are called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- The ***four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons***. Allowed decays of the neutral Higgs boson, H, (circled) satisfy ***electroweak charge conservation (1-30)***.
-- ***The strong force is carried by eight proposed particles called gluons (31)***, which are intimately connected to a quantum number called color—their governing theory is thus called ***quantum chromodynamics***.
-- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure) (32)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following unobserved decay of the proton.
-- ***The exchange of virtual pions (33)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
+- The ***four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons(1-30)***.
+- Allowed decays of the neutral Higgs boson, H, (circled) satisfy ***electroweak charge conservation (31)***.
+- ***The strong force is carried by eight proposed particles called gluons (32)***, which are intimately connected to a quantum number called color—their governing theory is thus called ***quantum chromodynamics***.
+- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure) (33)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton***.
+- ***The exchange of virtual pions***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
 - Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
 - Pions also ***result from some matter–antimatter annihilation events (36)***.
 - All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
