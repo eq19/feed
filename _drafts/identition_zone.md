@@ -29,7 +29,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 1. ***Line/length***
 2. ***Plane/shapes***
 3. ***Depth*** (representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane)
-4. ***Time*** (stands as _[starting point](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ to attemp the ***Theory Of Everything***).
+4. ***Time*** (stands as [starting point](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf) to _[attemp](https://youtu.be/yPVQtvbiS4Y)_ the ***Theory Of Everything***).
 5. ***Alternate world*** (we could measure similarities and differences of what might have been). Some theories state that light is nothing but ripples of vibrations in the [fifth dimension](https://www.wattpad.com/amp/474802474)
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
