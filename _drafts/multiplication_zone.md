@@ -277,17 +277,16 @@ We call this double strand a convolution, which results in an opposite arrangeme
 
 ***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
 
-[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/exponentiation/)
+[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#the-powers-of-10)
 
-So then a question is arised. Where is this vector flowing in the 18s?<br>
-Let's discuss it first with the _[exponentiation zones](https://www.eq19.com/exponentiation/)_.
+By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
 
 ## Parsering Structure
 
 As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
 
 ```tip
-Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
+Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-pi)***.
 ```
 
 ***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
@@ -308,7 +307,8 @@ Since the _modulo 6_ is occured all over the spin then we have defined that this
 In order to maintain the 18's structure between each of repositories to correlate with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as _[windows registry](https://en.wikipedia.org/wiki/Windows_Registry)_.
 ```
 
-[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
+[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://www.eq19.com/exponentiation/)
 
-By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
+So then a question is arised. Where is this vector flowing in the 18s?<br>
+Let's discuss it first with the _[exponentiation zones](https://www.eq19.com/exponentiation/)_.
 
