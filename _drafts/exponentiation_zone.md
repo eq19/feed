@@ -244,36 +244,6 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
-## Parsering Structure
-
-As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
-
-```tip
-Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-10)***.
-```
-
-***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
-
-[![exponentiation zones](https://user-images.githubusercontent.com/8466209/200024664-afc433a0-5f7f-4ec1-9bfc-77d672817fed.png)](https://github.com/eq19)
-
-Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#structure-minor-hexagons)_ and data parser from _[Jekyll/Liquid](https://jekyllrb.com/docs/datafiles/)_ finally we found the correlation between the lexer and parser trough _[the powers of pi](https://www.eq19.com/identition/#the-powers-of-pi)_.
-
-```note
-In this example, the content from a Markdown document `document.md` that specifies `layout: docs` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `docs.html`. Because the docs layout itself specifies `layout: page`, the content from `docs.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag in the layout file `page.html`. Finally because the page layout specifies `layout: default`, the content from `page.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `default.html`. _([JekyllRb](https://jekyllrb.com/tutorials/convert-site-to-jekyll/#how-layouts-work))_
-```
-
-[![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/exponentiation/#god-particle)
-
-Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
-
-```tip
-In order to maintain the 18's structure between each of repositories to correlate with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as _[windows registry](https://en.wikipedia.org/wiki/Windows_Registry)_.
-```
-
-[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://en.wikipedia.org/wiki/Windows_Registry)
-
-By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
-
 ## Exponentiation patterns
 
 Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
