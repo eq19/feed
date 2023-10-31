@@ -124,7 +124,7 @@ The Standard Model presently recognizes ***seventeen distinct particles (twelve 
 
 [![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
 
-In the Standard Model, the _[Higgs boson](https://youtu.be/R0clnHE37Xc)_ is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
+In the Standard Model, the _[Higgs boson](https://youtu.be/R0clnHE37Xc?t=13m42s)_ is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
 ```note
 The Higgs boson field (often referred to as the _[God particle](https://www.quora.com/How-would-you-explain-the-God-particle-in-laymans-term/answer/Vagish-Kumar-Choudhary)_) is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
