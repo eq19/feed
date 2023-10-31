@@ -310,7 +310,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
   1  |  2 |  3 |  4 |  5 |  6 |  7 |  8 |  9 | 10 | 11 | 12 | 13 | 14 | 15 |  16|  17| 18 | 19 |
 -----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+----+
      |       Δ    Δ    Δ           |                     Φ12     |       Δ                   Δ |
-           -113 +150 = +37                                             +102 = +139 = +168 - 29
+           -114 +151 = +37                                             +102 = +139 = +168 - 29
 ```
 
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
