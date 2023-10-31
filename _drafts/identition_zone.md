@@ -120,17 +120,13 @@ One must therefore imagine scenarios in which these extra dimensions would not b
 
 [![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)](https://math.osu.edu/sites/math.osu.edu/files/whatisthecrank.pdf)
 
-Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. 
+It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
 
 ```note
-It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**. That's why string theory works only in 10 dimensions _([Physicsforums](https://www.physicsforums.com/threads/why-is-it-necessary-to-have-11-dimensions-in-m-theory.821762/))_.
+Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
-
-Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
-
-## The powers of 10
 
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
@@ -169,6 +165,10 @@ The four faces of our pyramid additively cascade ***32 four-times triangular num
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
+Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
+
+## The powers of pi
+
 The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
@@ -184,10 +184,6 @@ By taking the correlation of these 11 partitions with the logical sequence of nu
 ```
 
 [![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
-
-Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
-
-## The powers of pi
 
 There are set of sequence known as _[Fibonacci retracement](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20to%20the%20right.)_. For unknown reasons, these Fibonacci ratios seem to play a role in the _[stock market](https://www.eq19.com/exponentiation/#hexagonal-patterns)_, just as they do in nature. 
 
@@ -228,7 +224,7 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 
 This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
 
-## Δ(19 vs 18) Scenario
+## The powers of 10
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
