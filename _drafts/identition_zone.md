@@ -251,7 +251,7 @@ Since we are discussing about prime distribution then this 18's structure will a
 This web enabled demonstration shows a polar plot of ***the first 20 non-trivial Riemann zeta function zeros (including Gram points) along the critical line Zeta(1/2+it) for real values of t running from 0 to 50***. The consecutively labeled zeros have 50 red plot points between each, with zeros identified by concentric magenta rings scaled to show the relative distance between their values of t. ***Gram’s law states that the curve usually crosses the real axis once between zeros***. _([TheoryOfEverything](https://theoryofeverything.org/theToE/2016/04/23/interactive-reimann-zeta-function-zeros-demonstration/))_
 ```
 
-***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600***
+***1 + 7 + 29 = 37 = 19 + 18***
 
 [![Riemann Zeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://qr.ae/pKnIbn)
 
@@ -260,6 +260,8 @@ When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.
 ```warning
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system.
 ```
+
+***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600 = 3 x 200***
 
 ```scss
   Δ1 + Δ7 + Δ29  →  | Δ37 + Δ77 = Δ114 = Δ113 + Δ1 → 
