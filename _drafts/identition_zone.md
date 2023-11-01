@@ -339,7 +339,7 @@ The function that appears in the denominator is _[Partition Function](https://en
 Using Euler's method to find p(40): A ruler with plus and minus signs (grey box) is slid downwards, the relevant terms added or subtracted. The positions of the signs are given by differences of alternating natural (blue) and odd (orange) numbers. In the SVG file, hover over the image to move the ruler _([Wikipedia](https://en.wikipedia.org/wiki/Partition_function_(number_theory)#Generating_function))_.
 ```
 
-[![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/addition/#structure-true-prime-pairs)
+[![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/exponentiation/#self-repetition)
 
 As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/identition/#the-powers-of-pi)_.
 
@@ -365,7 +365,7 @@ By [the next term](https://www.eq19.com/maps/) we are going to discuss how this 
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
 ```
 
-[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/exponentiation/#self-repetition)
+[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/addition/#addition-zones-1-18)
 
 This will be the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
 
