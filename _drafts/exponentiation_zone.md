@@ -244,7 +244,7 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
-## Exponentiation patterns
+## Dimensional patterns
 
 Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
 
