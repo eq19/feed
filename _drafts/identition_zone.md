@@ -339,7 +339,7 @@ The function that appears in the denominator is _[Partition Function](https://en
 Using Euler's method to find p(40): A ruler with plus and minus signs (grey box) is slid downwards, the relevant terms added or subtracted. The positions of the signs are given by differences of alternating natural (blue) and odd (orange) numbers. In the SVG file, hover over the image to move the ruler _([Wikipedia](https://en.wikipedia.org/wiki/Partition_function_(number_theory)#Generating_function))_.
 ```
 
-[![Euler_partition_function](https://upload.wikimedia.org/wikipedia/commons/0/05/Euler_partition_function.svg)](https://www.eq19.com/exponentiation/#self-repetition)
+[![Euler_partition_function](https://camo.githubusercontent.com/edf846a419b2999b535be1e1c3cf2a92eed95997bee3558897c1cbc24ab40602/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f45756c65725f706172746974696f6e5f66756e6374696f6e2e737667)](https://www.eq19.com/exponentiation/#self-repetition)
 
 As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/identition/#the-powers-of-pi)_.
 
