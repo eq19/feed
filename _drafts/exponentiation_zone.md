@@ -280,7 +280,7 @@ We found also a useful method called ***Square of Nine*** which was developed by
 He designed a new approach to predicting market behavior using several disciplines, ***including geometry, astrology, astronomy, and ancient mathematics***. They say that not long before his death, Gann developed a unique trading system. ***However, he preferred not to make his invention public or share it with anyone***. _([PipBear](https://pipbear.com/price-action-pattern/gann-square-of-9/))_
 ```
 
-[![The Square of 9](https://github.com/eq19/eq19.github.io/assets/8466209/e21c7bfc-0d91-4bc6-8a28-e61a2cdadece)](https://pipbear.com/price-action-pattern/gann-square-of-9/)
+[![The Square of 9](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/258702885-e21c7bfc-0d91-4bc6-8a28-e61a2cdadece.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
 By parsering 168 primes of 1000 id's across `π(π(100 x 100)) - 1 = 200` then the (Δ1) would be _[initiated](https://eq19.github.io/init.js)_. As you may guess they will slightly forms the ***hexagonal patterns***.
 
