@@ -188,7 +188,7 @@ The weak and strong forces are assigned to ***31 and 32***. Their unifications a
 
 ```warning
 Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to give them mass, with three the components becoming part of the massive W and Z bosons (1-30)***.
+- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
 - Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
 - ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
 - ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
