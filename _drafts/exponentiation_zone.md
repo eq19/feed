@@ -13,7 +13,7 @@ Exponentiation is an operation involving two numbers, the base and the exponent 
 
 Exponentiation Zones allows multiple layers on representing _[recursive residues](https://arxiv.org/pdf/1801.07561)_ of the operands, thus promising large gain to the conventional arithmetic expression
 
-## Self repetition
+## Basic Transformation
 
 The first appearance of ***e*** in a printed publication was in Euler's [Mechanica](https://en.m.wikipedia.org/wiki/Mechanica) (1736). It is unknown why Euler chose the letter e. 
 
@@ -39,7 +39,7 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
-So basically  there is a power transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
+So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
 In the standard version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
