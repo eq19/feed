@@ -366,6 +366,8 @@ Why does it work?
 Developing MEC 30 as a folding rule emerged from a new analysis of mathematical foundations and makes a new algorithm visible. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en#similarDocuments))_
 ```
 
+***p(40-7) = p(33) = loop (100000) = 4 + 25 + 139 + 1091 + 8884 = 10143***
+
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
 By [the next term](https://www.eq19.com/maps/) we are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
