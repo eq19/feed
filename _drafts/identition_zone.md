@@ -58,7 +58,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 In order to propagate this annihilation and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
-## String Theory
+## The Concept
 
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
@@ -91,10 +91,6 @@ It is argued that the generic formulation of string theory leads naturally to da
 ```
 
 [![string theory and dark energy](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)](https://www.sciencedirect.com/science/article/pii/S0370269319306720#:~:text=Conclusion,responsible%20for%20its%20radiative%20stability)
-
-Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
-
-## Partition function
 
 In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
@@ -141,6 +137,10 @@ We show the explicit one-to-one correspondence between Lorentz irreps and field 
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
+
+Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
+
+## Series Expansion
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
