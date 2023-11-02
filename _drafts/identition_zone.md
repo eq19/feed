@@ -261,7 +261,7 @@ When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system.
 ```
 
-***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600 = 3 x 200***
+***36th prime - 30th prime = 151 - 113 = 1 + 37***
 
 ```scss
   Δ1 + Δ7 + Δ29  →  | Δ37 + Δ77 = Δ114 = Δ113 + Δ1 → 
@@ -317,6 +317,8 @@ By the above tabulation, here you can see that _[the layout](https://gist.github
 ```danger
 Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://www.eq19.com/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://www.eq19.com/exponentiation/#parsering-structure)_ by means of _[MEC30 Structure](https://www.eq19.com/exponentiation/#self-repetition)_. So whenever the 11s is _[compactified](https://www.eq19.com/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://www.eq19.com/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://www.eq19.com/identition/#extra-dimensions)_ which including the _[eigenvector](https://www.eq19.com/addition/#18s-structure)_ of _[dark energy](https://www.eq19.com/identition/#string-theory)_ and finally become another level of ***[11 dimensions](https://www.eq19.com/identitionl/#the-powers-of-pi)*** that lead to the concept of _[multiple universes](https://www.eq19.com/identition/#extra-dimensions)_. 
 ```
+
+***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600 = 3 x 200***
 
 [![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://www.eq19.com/multiplication/#streaching-structure)
 
