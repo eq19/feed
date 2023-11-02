@@ -370,7 +370,7 @@ Developing MEC 30 as a folding rule emerged from a new analysis of mathematical 
 
 [![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
 
-By [the next chapter](https://www.eq19.com/maps/) we are going to discuss how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
+Starting with [the next chapter](https://www.eq19.com/identition/folder1/#scenarios-1st-dimension) we are going to discuss in detail how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
