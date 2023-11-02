@@ -243,7 +243,7 @@ By our project, these 37 files are located within _[the wiki of main repository]
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
 ```
 
-***1 + 29 + 6x6 = 30 + 36 = 66 = 11x6***
+***1 + 29 + 6x6 = 29 + 37 = 66 = 11x6***
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
