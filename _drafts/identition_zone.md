@@ -225,7 +225,7 @@ In the matrix pictured below, we list the first 24 elements of our domain, take 
 
 This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
 
-## The powers of 10
+## Consentric Rings
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
