@@ -186,24 +186,6 @@ Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expan
 
 ## Palindromic Sequence
 
-There are set of sequence known as _[Fibonacci retracement](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20to%20the%20right.)_. For unknown reasons, these Fibonacci ratios seem to play a role in the _[stock market](https://www.eq19.com/exponentiation/#hexagonal-patterns)_, just as they do in nature. 
-
-```note
-The mathematically significant Fibonacci sequence defines a set of ratios known as _Fibonacci retracements_ which can be used to determine probable ***[entry and exit points](https://www.eq19.com/exponentiation/#parsering-structure)*** for the equities when paired with additional momentum. The Fibonacci retracement levels are 0.236, 0.382, ***0.618, and 0.786***.
-- The key Fibonacci ratio of 61.8% is found by dividing one number in the series by the number that follows it. For example, 21 divided by 34 equals 0.6176, and 55 divided by 89 equals about 0.61798.
-- The 38.2% ratio is discovered by dividing a number in the series by the number located two spots to the right. For instance, 55 divided by 144 equals approximately 0.38194.
-- The 23.6% ratio is found by dividing one number in the series by the number that is three places to the right. For example, 8 divided by 34 equals about 0.23529.
-- The 78.6% level is given by the _[square root](https://youtu.be/K-AvE0B1KMw)_ of 61.8%, while not officially a Fibonacci ratio, 0.5 is also commonly referenced (50% is derived not from the Fibonacci sequence but rather from the idea that on average stocks retrace half their earlier movements). _([Golden Ratio - Articles](https://www.fnb.co.za/blog/investments/articles/FibonacciandtheGoldenRatio/))_
-```
-
-[![Fibonacci retracement](https://user-images.githubusercontent.com/36441664/277129518-a7bfc713-40f5-47a5-9a1d-37c3e3fde1ff.png)](https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp#:~:text=The%20key%20Fibonacci%20ratio%20of,two%20spots%20)
-
-They are used to determine critical points where an _[asset's momentum is likely to reverse](https://www.eq19.com/identition/#the-powers-of-10)_. This study cascade culminating in the Fibonacci digital root sequence (also period-24). 
-
-***786 - 618 = 168 = π(1000)***
-
-[![entry and exit point](https://user-images.githubusercontent.com/8466209/225589915-8f7690c8-4c17-4232-be51-63e79efb2c51.png)](https://www.eq19.com/exponentiation/#parsering-structure)
-
 There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
 
 ```note
