@@ -251,33 +251,13 @@ The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is 
 
 ![](https://user-images.githubusercontent.com/8466209/224346485-13d27a0b-bfe3-43f0-94da-f75313dc9d77.png)
 
-The most question here is how ∆1 actually working between minus 1 and plus 1? Here we finally come to Euler's identity by MEC30. These positions: `1 7 11 13 17 19 23 29` refer as ***the basic system of MEC30***.
+You may refer to _[the structure of minor hexagon](https://www.hexspin.com/minor-hexagons/)_ it shows that this reversal behaviour is linked to the nature of the prime numbers. 
 
 ```note
-Because the value 30 is the first (common) product of the first 3 primes. ***And this 30th order repeats itself to infinity. Even in the first 30s system, therefore, the positions are fixed in which the number information positions itself to infinity***. We call it the first member of the MEC 30. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
+Aside from 2 and 3, primes come in two flavors, 1 modulo 6 and 5 modulo 6, or the dark and light blue triangles in figure 2(a).  The program determines where primes land in the hexagon by moving between the 6 possible positions where primes may land, figure 2(b) .  The 1-type primes land in python cells 1, 3, and 5.  The 5-type primes land in 0, 2, and 4 cells.   Finally, it can print output in the form of figure 2(c). _([HexSpin](https://www.hexspin.com/finding-a-number-in-the-hexagon/))_
 ```
 
-[![MEC30](https://user-images.githubusercontent.com/36441664/74366957-992db780-4e03-11ea-8f26-cca32bd26003.png)](https://www.eq19.com/exponentiation)
-
-Base on the above streching on 18s structure and repeating on MEC30 it is clear that there will be a residual vector by the higher primes. So where would they go?
-
-```note
-The position 19 in the second term gives a redundant value of the template 7 of 7 × 7 = 49. The opposite prime position of the 19 is 11. So in this second term the 11th-prime number 31 is now forced to determine ***a new axis-symmetrical zero position***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_ 
-```
-
-***37 + 12 = 61 - 12 = 49 = 7 x 7 = d(13)***
-
-![image](https://user-images.githubusercontent.com/36441664/74591945-2b75cb80-504f-11ea-85dd-14d0a803ee6b.png)
-
-You may find that the axis repeats by ***3 (three) folded layers*** of MEC30 which resulting ***eight (8) prime pairs*** in an opposite arragement of ***primes 29 and 89***.
-
-```note
-We call this double strand a convolution, which results in an opposite arrangement. It represents the natural vibration, thus also the redundant vibrations in the energy transfer. In the 6 For example, in the graph, the even number 60 is folded. At folding of the even number 60 6 result in ***8 prime pairs***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en))_
-```
-
-***89^2 - 1 = 7920 = 22 x 360 = 66 x 120 = (168 - 102) x 120***
-
-[![partition level of 29 and 89](https://user-images.githubusercontent.com/8466209/244855108-b80b3c2e-1a13-4b55-828a-72ed15b448dd.png)](https://www.eq19.com/identition/#the-powers-of-10)
+[![Finding a Number in the Hexagon](https://user-images.githubusercontent.com/8466209/259909858-68fe2d5f-13d8-4d26-9598-13bb540a4b12.png)](https://www.hexspin.com/finding-a-number-in-the-hexagon/)
 
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
 
