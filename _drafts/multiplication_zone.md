@@ -192,7 +192,7 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Elementary Structure
 
-Note also that the rate of convergence to infinity in this exampleshould be as the fourth root of t, which is confirmed by the graph (the fourth root of 125000 is about 19).
+Note also that the rate of convergence to infinity in this exampleshould be as the fourth root of t, which is confirmed by the graph (***the fourth root of 125000 is about 19***).
 
 ```note
 Four eigenvalues going to infinity. The plot shows the eigenvalues of A + tuu>J for 0 ≤ t ≤ 125000 in red, and the eigenvalues of A − tuu>J for the same range of t in cyan
