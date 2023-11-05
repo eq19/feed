@@ -242,14 +242,6 @@ layer | node | sub |  i  |  f.                                       MEC 30 / 2
 ------|------|-----+-----+------      ‹------------------------------- 30 {+1/2}
 ```
 
-Note also that the rate of convergence to infinity in this exampleshould be as the fourth root of t, which is confirmed by the graph (***the fourth root of 125000 is about 19***).
-
-```note
-Four eigenvalues going to infinity. The plot shows the eigenvalues of A + tuu>J for 0 ≤ t ≤ 125000 in red, and the eigenvalues of A − tuu>J for the same range of t in cyan
-```
-
-![Four eigenvalues going to infinity](https://user-images.githubusercontent.com/8466209/280523205-4824b461-e3bf-403f-9a36-96919d0ed6e6.png)
-
 Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
 
 ```tip
@@ -266,6 +258,14 @@ Aside from 2 and 3, primes come in two flavors, 1 modulo 6 and 5 modulo 6, or th
 ```
 
 [![Finding a Number in the Hexagon](https://user-images.githubusercontent.com/8466209/259909858-68fe2d5f-13d8-4d26-9598-13bb540a4b12.png)](https://www.hexspin.com/finding-a-number-in-the-hexagon/)
+
+Note also that the rate of convergence to infinity in this exampleshould be as the fourth root of t, which is confirmed by the graph (***the fourth root of 125000 is about 19***).
+
+```note
+Four eigenvalues going to infinity. The plot shows the eigenvalues of A + tuu>J for 0 ≤ t ≤ 125000 in red, and the eigenvalues of A − tuu>J for the same range of t in cyan
+```
+
+![Four eigenvalues going to infinity](https://user-images.githubusercontent.com/8466209/280523205-4824b461-e3bf-403f-9a36-96919d0ed6e6.png)
 
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
 
