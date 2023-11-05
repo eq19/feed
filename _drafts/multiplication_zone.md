@@ -265,7 +265,7 @@ Note also that the rate of convergence to infinity in this exampleshould be as t
 Four eigenvalues going to infinity. The plot shows the eigenvalues of A + tuu>J for 0 ≤ t ≤ 125000 in red, and the eigenvalues of A − tuu>J for the same range of t in cyan
 ```
 
-![Four eigenvalues going to infinity](https://user-images.githubusercontent.com/8466209/280523205-4824b461-e3bf-403f-9a36-96919d0ed6e6.png)
+[![Four eigenvalues going to infinity](https://user-images.githubusercontent.com/8466209/280523205-4824b461-e3bf-403f-9a36-96919d0ed6e6.png)](https://github.com/eq19/eq19.github.io/files/13251083/2007.01188.pdf)
 
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
 
