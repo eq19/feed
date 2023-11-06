@@ -355,6 +355,8 @@ Starting with [the next chapter](https://www.eq19.com/identition/folder1/#scenar
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
 ```
 
+***π(1000) - loop(1,30) - loop(31,36) = 168 - 29 - 25 = 114***
+
 [![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/addition/#addition-zones-1-18)
 
 This will be the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
