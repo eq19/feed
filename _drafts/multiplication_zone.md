@@ -259,22 +259,6 @@ Aside from 2 and 3, primes come in two flavors, 1 modulo 6 and 5 modulo 6, or th
 
 [![Finding a Number in the Hexagon](https://user-images.githubusercontent.com/8466209/259909858-68fe2d5f-13d8-4d26-9598-13bb540a4b12.png)](https://www.hexspin.com/finding-a-number-in-the-hexagon/)
 
-Note also that the rate of convergence to infinity in this exampleshould be as the fourth root of t, which is confirmed by the graph (***the fourth root of 125000 is about 19***).
-
-```note
-Four eigenvalues going to infinity. The plot shows the eigenvalues of A + tuu>J for 0 ≤ t ≤ 125000 in red, and the eigenvalues of A − tuu>J for the same range of t in cyan
-```
-
-[![Four eigenvalues going to infinity](https://user-images.githubusercontent.com/8466209/280523205-4824b461-e3bf-403f-9a36-96919d0ed6e6.png)](https://github.com/eq19/eq19.github.io/files/13251083/2007.01188.pdf)
-
-Now the following results: Due to the convolution and starting from the desired value of the prime position pairs, the product templates and prime numbers templates of _the prime number 7 lie in the numerical Double strand parallel opposite_.
-
-![Double Strands](https://user-images.githubusercontent.com/36441664/75612568-4f5d0500-5b57-11ea-909d-856dcb7c139a.jpg)
-
-The spacetime diagram on the left, the magenta hyperbolae connect events of equal spacelike separation from the origin, while the green hyperbolae connect events of equal timelike separation from the origin.
- 
-![default](https://user-images.githubusercontent.com/8466209/243109676-fbd0fe51-f80e-4512-a460-05a8f5227037.png)
-
 By this exponentiation zones we will get multiple layers of primes density. So we need to get in to the patterns of the above hexagonal forms through _[deep learning](https://en.wikipedia.org/wiki/Deep_learning)_.
 
 ## Parsering Structure
