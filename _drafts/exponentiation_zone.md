@@ -200,7 +200,7 @@ Attempts to TOE show unification of the four forces called Grand Unified Theorie
 Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
 ```
 
-***π(1000) - loop(1,30) - loop(31,36) = 168 - 29 - 25 = 114***
+***19 + 18 + 102 = 37 + 102 = 139 = 34th prime = (40 - 6)the prime***
 
 [![The exchange of virtual pions](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
 
