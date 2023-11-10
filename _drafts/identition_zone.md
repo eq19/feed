@@ -100,23 +100,7 @@ As usual, the images ***on the left are snapshots of the particles at different 
 
 [![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
-In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from the largest part in the partition.
- 
-```note
-The concept was introduced by [Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson)in a paper published in the journal [Eureka](https://en.wikipedia.org/wiki/Eureka_(University_of_Cambridge_magazine)). It was [presented](https://en.wikipedia.org/wiki/Rank_of_a_partition#cite_note-Dyson-1) in the context of a study of certain [congruence](https://en.wikipedia.org/wiki/Congruence_relation) properties of the [partition function](https://en.wikipedia.org/wiki/Partition_function_(number_theory)) discovered by the Indian mathematical genius [Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan). _([Wikipedia](https://en.wikipedia.org/wiki/Rank_of_a_partition))_
-```
-
-[![Rank_of_a_partition](https://user-images.githubusercontent.com/8466209/227838045-3ddd5238-7beb-4023-affa-c61a054afd2b.png)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
-
-One must therefore imagine scenarios in which these extra dimensions would not be observed in experiments so one of solution would be [truncated approach](https://arxiv.org/pdf/2101.07678).
-
-```note
-***They are the imaginary time versions of statistical mechanics partition functions, giving rise to a close connection between these two areas of physics***. Partition functions can rarely be solved for exactly, although free theories do admit such solutions. Instead, a _[perturbative approach](https://core.ac.uk/download/pdf/76996904.pdf)_ is usually implemented, this being equivalent to summing over Feynman diagrams. _([Wikiwand](https://www.wikiwand.com/en/Partition_function_%28quantum_field_theory%29))_
-```
-
-[![partitions](https://user-images.githubusercontent.com/8466209/241397948-2330e830-d3f5-43e2-b019-80559215a97a.png)](https://math.osu.edu/sites/math.osu.edu/files/whatisthecrank.pdf)
-
-It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
+In mathematics, the rank of a partition is the number obtained by subtracting the number of parts in the partition from It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
 
 ```note
 Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
