@@ -246,34 +246,6 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
-## Dimensional patterns
-
-Here we adopt an analysis of variance called _N/P-Integration_ that was applied to find the best set of environmental variables that describe the density out of distance matrices.
-
-```note
-With collaborators, we regularly work on projects where we want to understand the taxonomic and functional diversity of microbial community in the context of metadata often recorded under specific hypotheses. Integrating (***N-/P- integration***; see figure below) these datasets require a fair deal of multivariate statistical analysis for which I have shared the [code](https://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological.html) on this website. _([Umer.Ijaz](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro))_
-```
-
-[![N-/P- integration](https://github.com/eq19/eq19.github.io/assets/8466209/661ff31c-1224-40e6-b4d8-968c0bb1d396)](https://userweb.eng.gla.ac.uk/umer.ijaz/#intro)
-
-In vector calculus, the Jacobian matrix of a vector-valued function of several variables is the matrix of all its first-order partial derivatives. 
-
-```note
-It's possible to build a _[Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix)_ for a _[Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)_ step using the Jacobian method. ***You would first flatten out its axes into a matrix, and flatten out the gradient into a vector.*** _([Tensorflow](https://www.tensorflow.org/guide/advanced_autodiff#batch_jacobian))_
-```
-
-[![Tensorflow - Batch Jacobian](https://user-images.githubusercontent.com/36441664/128624639-b5d8c73f-79af-4433-8b7b-28a35e331d21.png)](https://www.tensorflow.org/guide/advanced_autodiff#batch_jacobian)
-
-When the subclasses of partitions are flatten out into a matrix, you want to take the Jacobian of each of a stack of targets with respect to a stack of sources, where the Jacobians for each target-source pair are independent.
-
-```note
-***When this matrix is square, that is, when the function takes the same number of variables as input as the number of vector components of its output, its determinant is referred to as the Jacobian determinant***. Both the matrix and (if applicable) the determinant ad  often referred to simply as the Jacobian in literature. _([Wikipedia](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant))_
-```
-
-[![Hessian matrix for Newton Method](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://en.wikipedia.org/wiki/Hessian_matrix)
-
-Since such interactions result in a change in momentum, they can give rise to classical _[Newtonian forces](https://en.wikipedia.org/wiki/Newtonian_mechanics)_ of rotation and revolution by means of [orbital structure](https://www.eq19.com/multiplication/#orbital-structure).
-
 ## Hexagonal patterns
 
 We found also a useful method called ***Square of Nine*** which was developed by _[WD Gann](https://en.wikipedia.org/wiki/William_Delbert_Gann)_ to analyze stock market behaviour base on astrological pattern.
