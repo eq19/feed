@@ -206,6 +206,8 @@ Although unification of forces is generally anticipated, ***much remains to be d
 
 In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
 
+![](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)
+
 For now, we will focus on using the root function.
 
 ### Root functions
