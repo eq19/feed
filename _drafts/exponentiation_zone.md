@@ -206,6 +206,11 @@ Although unification of forces is generally anticipated, ***much remains to be d
 
 In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
 
+```note
+Hydrogen density plots for n up to 4. Wavefunctions of the electron in a hydrogen atom at different energy levels.
+Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron.
+```
+
 ![](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)
 
 For now, we will focus on using the root function.
