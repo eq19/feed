@@ -208,10 +208,10 @@ In later sections, we will discuss finding all the solutions to a polynomial fun
 
 ```note
 Hydrogen density plots for n up to 4. Wavefunctions of the electron in a hydrogen atom at different energy levels.
-Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron.
+Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron. _([Wikipedia](https://id.wikipedia.org/wiki/Mekanika_kuantum))_
 ```
 
-![](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)
+[![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://id.wikipedia.org/wiki/Mekanika_kuantum)
 
 For now, we will focus on using the root function.
 
