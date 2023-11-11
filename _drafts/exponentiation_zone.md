@@ -211,7 +211,7 @@ Hydrogen density plots for n up to 4. Wavefunctions of the electron in a hydroge
 Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron.
 ```
 
-![](https://user-images.githubusercontent.com/36441664/274075333-85ea5044-8173-4030-84b2-fc6ab9e129e3.png)
+![](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)
 
 For now, we will focus on using the root function.
 
