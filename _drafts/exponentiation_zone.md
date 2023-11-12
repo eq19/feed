@@ -217,7 +217,7 @@ Although unification of forces is generally anticipated, ***much remains to be d
 
 ***19 + 18 + 102 = 37 + 102 = 139 = 34th prime = (40 - 6)the prime***
 
-[![The exchange of virtual pions](https://github.com/eq19/eq19.github.io/assets/8466209/d29de686-b885-40aa-a585-0665a56cca9a)](https://www.eq19.com/identition/#partition-function)
+[![The exchange of virtual pions](https://user-images.githubusercontent.com/8466209/282278731-ac8438f7-afd4-41f8-8c6a-a41c0d740825.png)](https://www.eq19.com/identition/#partition-function)
 
 In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
 
