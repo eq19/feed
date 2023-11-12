@@ -222,11 +222,10 @@ Although unification of forces is generally anticipated, ***much remains to be d
 In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
 
 ```note
-Hydrogen density plots for n up to 4. _[Wavefunctio]()_ s of the electron in a hydrogen atom at different energy levels.
-Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron. _([Wikipedia](https://en.wikipedia.org/wiki/Mekanika_kuantum))_
+Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions]()_ of the electron in a hydrogen atom at different energy levels.Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron. _([Wikipedia](https://en.wikipedia.org/wiki/Quantum_mechanics))_
 ```
 
-[![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Mekanika_kuantum)
+[![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
 
 For now, we will focus on using the root function.
 
@@ -245,7 +244,7 @@ By our project the 18's on the gist will cover five (5) unique functions that be
 Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
 
 ```note
-Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth (5th) hexagon***, cyan. Finally, 37, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
+Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth (5th) hexagon***, cyan. Finally, 3 7, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
 ```
 
 [![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/282279534-a448cd09-3d5e-4006-a84d-2574f7ed85c3.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
