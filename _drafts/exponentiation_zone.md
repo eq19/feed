@@ -267,7 +267,7 @@ Both Ulam and Gardner noted that the existence of such prominent lines ***is not
 
 This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
 
-## Hexagonal patterns
+## Truncated Perturbation
 
 We found also a useful method called ***Square of Nine*** which was developed by _[WD Gann](https://en.wikipedia.org/wiki/William_Delbert_Gann)_ to analyze stock market behaviour base on astrological pattern.
 
