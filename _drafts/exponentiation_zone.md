@@ -45,7 +45,7 @@ So basically  there is a basic transformation between ***[addition](https://www.
 In the standard version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
 ```
 
-***3000 / 30 = 100***
+***37 + 77 = 114***
 
 
 ```
@@ -121,7 +121,7 @@ In the standard version of gematria, each letter is given a numerical value betw
 -------+----+-------+----                              |     |
 *3:3:5 | 35 |  8000 | 76 = 71 + 5                      |     |
 -------+----+-------+----                              |     |
-*3:4:6 | 36 |  9000 | 77 = 71 + 6                      |     |
+*3:4:6 | 36 |  9000 |{77}= 71 + 6                      |     |
 -------+----+-------+----                              |     |
  3:4:7 |{37}| 10000 | 81 = 71 + 10                     |     |
 =======+====+=======+====                             ====  ----
