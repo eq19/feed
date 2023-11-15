@@ -58,7 +58,7 @@ We've seen how it [Euler's identity] can easily be deduced from results of Johan
 
 In order to propagate this annihilation and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
-## The Concept
+## Wormhole Concept
 
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
