@@ -124,7 +124,7 @@ We show the explicit one-to-one correspondence between Lorentz irreps and field 
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
-## Series Expansion
+## Space Expansion
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
