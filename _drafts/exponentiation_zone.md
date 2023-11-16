@@ -229,7 +229,7 @@ Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions
 
 For now, we will focus on using the root function.
 
-### Root functions
+## Quadratic Polynomials
 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
