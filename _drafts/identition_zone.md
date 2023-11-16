@@ -198,7 +198,7 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
-## Consentric Rings
+## Multiple Universes
 
 By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
 
