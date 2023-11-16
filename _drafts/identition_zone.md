@@ -168,7 +168,7 @@ By taking the correlation of these 11 partitions with the logical sequence of nu
 
 Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
 
-## Palindromic Sequence
+## Vibrating Strings
 
 There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
 
