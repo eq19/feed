@@ -159,17 +159,23 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
+The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
-The interaction of any pair of fermions in perturbation theory can be modelled as:
-
-***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
-
-The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. ***This gives O(8) for the gauge group which is too small to contain the Standard Model gauge group U(1) × SU(2) × SU(3) which would need at least O(10)***. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
 ```
 
-[![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
+[![spinor](https://user-images.githubusercontent.com/36441664/276617374-f69dd637-a11c-47b2-a3ac-f90a5c95c939.png)](https://qr.ae/pKnIES)
+
+By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://www.eq19.com/multiplication/#elementary-structure)***.
+
+```note
+***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
+```
+
+[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
+
+Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
 
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
 
@@ -224,25 +230,6 @@ Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions
 [![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
 
 For now, we will focus on using the root function.
-
-
-The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
-
-```note
-This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. ***This gives O(8) for the gauge group which is too small to contain the Standard Model gauge group U(1) × SU(2) × SU(3) which would need at least O(10)***. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
-```
-
-[![spinor](https://user-images.githubusercontent.com/36441664/276617374-f69dd637-a11c-47b2-a3ac-f90a5c95c939.png)](https://qr.ae/pKnIES)
-
-By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://www.eq19.com/multiplication/#elementary-structure)***.
-
-```note
-***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
-```
-
-[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
-
-Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
 
 ## Vibrating Strings
 
