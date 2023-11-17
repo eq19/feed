@@ -235,10 +235,6 @@ This behaviour finaly brings us to a suggestion that the dimension in string the
 
 So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
 
-## Multiple Universes
-
-By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
-
 ```note
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
 ```
@@ -246,6 +242,10 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 ***1 + 29 + 6x6 = 29 + 37 = 66 = 11x6***
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
+
+By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
+
+## Multiple Universes
 
 Since we are discussing about prime distribution then this 18's structure will also cover the further scheme that is inherited from the above 37 files. We call this arrangement as ***Δ(19 vs 18) Scenario*** where the [zeta function](https://www.eq19.com/#zeta-function) stands as the basic algorithm.
 
