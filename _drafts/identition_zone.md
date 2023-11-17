@@ -109,6 +109,10 @@ Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions repres
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
 
+Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
+
+## Space Expansion
+
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
 ```warning
@@ -122,10 +126,6 @@ We show the explicit one-to-one correspondence between Lorentz irreps and field 
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
-
-Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
-
-## Space Expansion
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
