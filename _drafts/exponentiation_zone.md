@@ -129,6 +129,46 @@ In the standard version of gematria, each letter is given a numerical value betw
 
 It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
 
+## Space Expansion
+
+There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
+
+```warning
+In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_ using _[adinkra](https://github.com/eq19/feed/files/13248983/2110.01665.pdf)_.
+- Valise adinkras, although an important subclass, do not encode all information present when a 4D supermultiplet is reduced to 1D. We extend this to [non-valise adinkras](https://github.com/HEPTHools/Adinkra) providing a complete ***[eigenvalue classification](https://github.com/eq19/feed/files/13228760/1904.01738.pdf)*** via _Python code_.
+- We found no obstacles to applying the lessons we learned in _[4D to higher dimensions](https://github.com/eq19/feed/files/12908712/JHEP09.2021.202.pdf)_. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell _[ten-dimensional supergeometrical](https://github.com/eq19/feed/files/12908716/JHEP03.2021.074.pdf)_ Weyl field strength tensors, constructed from respective torsions.
+- We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe ***a supersymmetric multiplet in arbitrary spacetime dimensions*** efficiently.
+- Thus, _[adinkra-based arguments](https://github.com/eq19/feed/files/13227675/Adinkra_foundation_of_component_decomposition_and_.pdf)_ suggest the surprising possibility that the 11D, N=1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N=1 superfield supergravity.
+
+We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional ζ (theta)-monomials are replaced by _[Young Tableaux (YT's)](https://en.wikipedia.org/wiki/Young_tableau)_ as shown below. _([YangruiHu.com](https://www.yangruihu.com/susy))_
+```
+
+[![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
+
+Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
+
+```tip
+Each of the user profiles will have ***seven (7) user repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and six (6) user pinned repositories. Meanwhile each of organizations will have one (1) profile of [`.github`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) repository and ***thirteen (13) organization repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), and twelve (12) pinned repositories under [`member and public view`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#pinning-repositories-to-your-organizations-profile) of six (6) repositories each.
+```
+
+***7 + (11 x 1) + 7 + (11 x 13) = 24 x 7 = 168***
+
+{% for item in site.data.orgs %}
+  1. {{ item.name | jsonify }}
+     - {{ item.key1 | jsonify }}
+     - {{ item.key2 | jsonify }}
+{% endfor %}
+
+The _[Root Function](https://www.eq19.com/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://www.eq19.com/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+
+```note
+The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of ***32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
+```
+
+***1000 x (5 + 360) days = 1000 years***
+
+[![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
+
 ## Quadratic Polynomials
 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
