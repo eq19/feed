@@ -159,6 +159,26 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
+To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
+
+```note
+The interaction of any pair of fermions in perturbation theory can be modelled as:
+
+***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
+
+The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+```
+
+[![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
+
+This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
+
+```note
+Feynman diagram for the same process as in the animation, with the individual quark constituents shown, to illustrate how the fundamental strong interaction gives rise to the nuclear force. Straight lines are quarks, while ***multi-colored loops are gluons (the carriers of the fundamental force). Other gluons, which bind together the proton, neutron, and pion "in-flight", are not shown***. The π⁰ pion contains an anti-quark, shown to travel in the opposite direction, as per the Feynman–Stueckelberg interpretation. _([Wikipedia](https://en.wikipedia.org/wiki/Pion))_
+```
+
+[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+
 The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
@@ -176,14 +196,6 @@ By taking the correlation of these 11 partitions with the logical sequence of nu
 [![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
 
 Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
-
-This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
-
-```note
-Feynman diagram for the same process as in the animation, with the individual quark constituents shown, to illustrate how the fundamental strong interaction gives rise to the nuclear force. Straight lines are quarks, while ***multi-colored loops are gluons (the carriers of the fundamental force). Other gluons, which bind together the proton, neutron, and pion "in-flight", are not shown***. The π⁰ pion contains an anti-quark, shown to travel in the opposite direction, as per the Feynman–Stueckelberg interpretation. _([Wikipedia](https://en.wikipedia.org/wiki/Pion))_
-```
-
-[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
 
 When we take all the forces that we understand, i.e., ***[not including gravity](https://youtu.be/NsUm9mNXrX4)***, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
 
