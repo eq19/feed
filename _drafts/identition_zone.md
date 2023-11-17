@@ -179,10 +179,7 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 
 [![spinor](https://user-images.githubusercontent.com/36441664/276617374-f69dd637-a11c-47b2-a3ac-f90a5c95c939.png)](https://qr.ae/pKnIES)
 
-
-
-
-Their unifications and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
+Their unifications and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***. For now, we will focus on using the root function.
 
 ## Vibrating Strings
 
@@ -352,8 +349,6 @@ Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions
 ```
 
 [![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
-
-For now, we will focus on using the root function.
 
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
