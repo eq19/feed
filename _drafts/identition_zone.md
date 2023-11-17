@@ -205,32 +205,6 @@ The quarks and leptons are fermions, which is why they have antimatter counterpa
 
 The weak and strong forces are assigned to ***31 and 32***. Their unifications and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
 
-```warning
-Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
-- Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
-- ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
-- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
-- ***[The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
-- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
-- Pions also ***result from some matter–antimatter annihilation events (36)***.
-- All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
-
-Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
-```
-
-[![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/282279534-a448cd09-3d5e-4006-a84d-2574f7ed85c3.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
-
-In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
-
-```note
-Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation)_ of the electron in a hydrogen atom at different energy levels.Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron. _([Wikipedia](https://en.wikipedia.org/wiki/Quantum_mechanics))_
-```
-
-[![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
-
-For now, we will focus on using the root function.
-
 ## Vibrating Strings
 
 There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
@@ -351,6 +325,32 @@ Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structu
 [![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://www.eq19.com/multiplication/#streaching-structure)
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
+
+```warning
+Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
+- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
+- Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
+- ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
+- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
+- ***[The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
+- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
+- Pions also ***result from some matter–antimatter annihilation events (36)***.
+- All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
+
+Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
+```
+
+[![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/282279534-a448cd09-3d5e-4006-a84d-2574f7ed85c3.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
+
+In later sections, we will discuss finding all the solutions to a polynomial function. We will also discuss solving multiple equations with multiple unknowns. 
+
+```note
+Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions](https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation)_ of the electron in a hydrogen atom at different energy levels.Quantum mechanics cannot predict the exact location of a particle in space, only the probability of finding it at different locations. The brighter areas represent a higher probability of finding the electron. _([Wikipedia](https://en.wikipedia.org/wiki/Quantum_mechanics))_
+```
+
+[![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
+
+For now, we will focus on using the root function.
 
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
