@@ -356,6 +356,8 @@ The ***ζ(s)*** will behave as ***the other universe (not the twin)*** which was
 Once a black hole has formed, it can continue to grow by absorbing additional matter. Any black hole will continually absorb gas and interstellar dust from its surroundings. This growth process is one possible way through which some supermassive black holes may have been formed _([Wikipedia](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions#Growth))_
 ```
 
+[![Infinite number](https://user-images.githubusercontent.com/8466209/222023510-e57f97a6-5026-4027-b105-25a4290ed2de.png)](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions)
+
 Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
 ## Hidden Dimensions
