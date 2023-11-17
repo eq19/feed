@@ -350,15 +350,15 @@ Hydrogen density plots for n up to 4 as solution for _[Schrodinger Wavefunctions
 
 [![Mekanika Quantum](https://user-images.githubusercontent.com/8466209/282255177-4538df91-4eb9-4eb6-b5a2-26b9e06f4a2c.png)](https://en.wikipedia.org/wiki/Quantum_mechanics)
 
-The ***ζ(s)*** will behave as ***the other universe (not the twin)*** which was initiated paralelly by a [big bang](https://en.wikipedia.org/wiki/Big_Bang). While this parts are relativity young. it will continue to grow as a [four-vector](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#lexer-vs-parser). So it will need a gap between each identities to proceed the thing.
+The ***ζ(s)*** will behave as ***the other universe (not the twin)*** which was initiated paralelly by a [big bang](https://en.wikipedia.org/wiki/Big_Bang). While this parts are relativity young. it will continue to grow as a [four-vector](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#lexer-vs-parser).
 
 ```note
 Once a black hole has formed, it can continue to grow by absorbing additional matter. Any black hole will continually absorb gas and interstellar dust from its surroundings. This growth process is one possible way through which some supermassive black holes may have been formed _([Wikipedia](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions#Growth))_
 ```
 
-[![Infinite number](https://user-images.githubusercontent.com/8466209/222023510-e57f97a6-5026-4027-b105-25a4290ed2de.png)](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions)
+[![Infinite number](https://user-images.githubusercontent.com/8466209/283898523-1344a713-cec3-4475-8af3-bad8c53d52c0.png)](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions)
 
-Let's discuss how it goes by the ***seven (7) hidden dimensions***.
+So it will need a gap between each identities to proceed the thing. Let's discuss how it goes by the ***seven (7) hidden dimensions***.
 
 ## Hidden Dimensions
 
