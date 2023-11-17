@@ -29,7 +29,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 1. ***Line/length***
 2. ***Plane/shapes***
 3. ***Depth***, representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane
-4. ***Time***, stands as [starting point](https://youtu.be/yPVQtvbiS4Y) to _[attemp](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ the ***Theory Of Everything (TOE)***.
+4. ***Time***, stands as [starting point](https://youtu.be/yPVQtvbiS4Y) to _[attemp](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ the ***[Theory Of Everything (TOE)](https://www.eq19.com/identition/#fundamental-forces)***.
 5. ***Alternate world*** (we could measure similarities and differences of what might have been). Some theories state that light is nothing but ripples of vibrations in the [fifth dimension](https://www.wattpad.com/amp/474802474)
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
@@ -85,7 +85,7 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
-The string theory is sofar the leading candidate to the _TOE_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
+The string theory is sofar the leading candidate to the _[TOE](https://www.eq19.com/identition/#fundamental-forces)_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
 
 ```warning
 It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
