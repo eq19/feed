@@ -93,6 +93,10 @@ It is argued that the generic formulation of string theory leads naturally to da
 
 [![string theory and dark energy](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)](https://www.sciencedirect.com/science/article/pii/S0370269319306720#:~:text=Conclusion,responsible%20for%20its%20radiative%20stability)
 
+Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
+
+## Elementary Particles
+
 In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
 ```note
@@ -100,18 +104,6 @@ As usual, the images ***on the left are snapshots of the particles at different 
 ```
 
 [![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
-
-It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
-
-```note
-Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
-```
-
-[![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
-
-Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
-
-## Elementary Particles
 
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
@@ -124,10 +116,32 @@ The Standard Model presently recognizes ***seventeen distinct particles (twelve 
 In the Standard Model, the _[Higgs boson](https://youtu.be/R0clnHE37Xc?t=13m42s)_ is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
 ```note
-The Higgs boso field (often referred to as the _[God particle](https://www.quora.com/How-would-you-explain-the-God-particle-in-laymans-term/answer/Vagish-Kumar-Choudhary)_) is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
+The Higgs boson field (often referred to as the _[God particle](https://www.quora.com/How-would-you-explain-the-God-particle-in-laymans-term/answer/Vagish-Kumar-Choudhary)_) is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
 ```
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
+
+It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
+
+```note
+Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
+```
+
+[![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
+
+There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
+
+```warning
+In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_ using _[adinkra](https://github.com/eq19/feed/files/13248983/2110.01665.pdf)_.
+- Valise adinkras, although an important subclass, do not encode all information present when a 4D supermultiplet is reduced to 1D. We extend this to [non-valise adinkras](https://github.com/HEPTHools/Adinkra) providing a complete ***[eigenvalue classification](https://github.com/eq19/feed/files/13228760/1904.01738.pdf)*** via _Python code_.
+- We found no obstacles to applying the lessons we learned in _[4D to higher dimensions](https://github.com/eq19/feed/files/12908712/JHEP09.2021.202.pdf)_. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell _[ten-dimensional supergeometrical](https://github.com/eq19/feed/files/12908716/JHEP03.2021.074.pdf)_ Weyl field strength tensors, constructed from respective torsions.
+- We realize that Lie Algebra techniques, in particular branching rules, Plethysm, and tensor product, provide the key to deciphering the complete list of independent fields that describe ***a supersymmetric multiplet in arbitrary spacetime dimensions*** efficiently.
+- Thus, _[adinkra-based arguments](https://github.com/eq19/feed/files/13227675/Adinkra_foundation_of_component_decomposition_and_.pdf)_ suggest the surprising possibility that the 11D, N=1 scalar superfield alone might describe a _[Poincare supergravity prepotential or semi-prepotential](https://github.com/eq19/feed/files/12908715/JHEP09.2020.089.pdf)_ in analogy to one of the off-shell versions of 4D, N=1 superfield supergravity.
+
+We show the explicit one-to-one correspondence between Lorentz irreps and field variables, leading to an _adynkrafield_ formalism in which the traditional ζ (theta)-monomials are replaced by _[Young Tableaux (YT's)](https://en.wikipedia.org/wiki/Young_tableau)_ as shown below. _([YangruiHu.com](https://www.yangruihu.com/susy))_
+```
+
+[![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
