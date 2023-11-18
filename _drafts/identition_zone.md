@@ -13,7 +13,7 @@ Identition is defined for a complex operation by extending one of the definition
 
 This identition zones stands as one of the solution to deal with the residual primes that is occured in the exponentation zones to become compactifiable within _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_.
 
-## Extra dimensions
+## Extra Dimensions
 
 By this image you would see how [the earth movements](https://youtu.be/oW2GT48ZLwA) should actually work based on _[spacetime](https://en.wikipedia.org/wiki/Spacetime)_ curved by mass and energy on our solar system. But it is still not enough.
 
@@ -59,7 +59,7 @@ e^ix = cos x + i sin x when evaluated for x = π. _([Wikipedia](https://en.wikip
 
 In order to propagate this annihilation and how they interact with each other we shall attemp it using [string theory](https://en.wikipedia.org/wiki/String_theory) that bring the concept of ***[eleven (11) dimensions](https://www.techtarget.com/whatis/definition/11th-dimension)***.
 
-## Wormhole Concept
+## Wormhole Theory
 
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
