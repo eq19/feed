@@ -359,7 +359,7 @@ Once a black hole has formed, it can continue to grow by absorbing additional ma
 
 [![Infinite number](https://user-images.githubusercontent.com/8466209/283898523-1344a713-cec3-4475-8af3-bad8c53d52c0.png)](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions)
 
-So it will need a gap between each identities to proceed the thing. Let's discuss how it goes by the ***seven (7) hidden dimensions***.
+So it will need a gap between each identities to proceed the thing. Let's discuss how it goes by the ***[seven (7) hidden dimensions](https://www.eq19.com/addition/)***.
 
 ## Hidden Dimensions
 
