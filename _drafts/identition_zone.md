@@ -71,7 +71,7 @@ The concept of eleven dimensions is a theoretical one in physics and cosmology, 
 
 Our physical space is observed to have only three large dimensions and taken together with time as the fourth dimension, a physical theory must take this into account. 
 
-```warning
+```danger
 ***It is argued, among other things, that eleven-dimensional supergravity arises as a low energy limit of the ten-dimensional Type IIA superstring***, and that a recently conjectured duality between the heterotic string and Type IIA superstrings controls the strong coupling dynamics of the heterotic string in five, six, and seven dimensions and implies S-duality for both heterotic and Type II strings. _([String Theory - Pdf](https://github.com/eq19/feed/files/12640756/String_theory.pdf))_
 ```
 
@@ -87,7 +87,7 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 The string theory is sofar the leading candidate to the _[TOE](https://www.eq19.com/identition/#fundamental-forces)_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
 
-```warning
+```danger
 It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
 ```
 
@@ -279,7 +279,7 @@ This web enabled demonstration shows a polar plot of ***the first 20 non-trivial
 
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions.
 
-```warning
+```tip
 By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system. We call this arrangement as ***Δ(19 vs 18) Scenario*** where the [zeta function](https://www.eq19.com/#zeta-function) stands as the basic algorithm.
  
 ```
@@ -337,7 +337,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
-```danger
+```tip
 Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://www.eq19.com/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://www.eq19.com/exponentiation/#parsering-structure)_ by means of _[MEC30 Structure](https://www.eq19.com/exponentiation/#self-repetition)_. So whenever the 11s is _[compactified](https://www.eq19.com/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://www.eq19.com/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://www.eq19.com/identition/#extra-dimensions)_ which including the _[eigenvector](https://www.eq19.com/addition/#18s-structure)_ of _[dark energy](https://www.eq19.com/identition/#string-theory)_ and finally become another level of ***[11 dimensions](https://www.eq19.com/identitionl/#the-powers-of-pi)*** that lead to the concept of _[multiple universes](https://www.eq19.com/identition/#extra-dimensions)_. 
 ```
 
