@@ -165,7 +165,7 @@ The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\
 This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. ***This gives O(8) for the gauge group which is too small to contain the Standard Model gauge group U(1) × SU(2) × SU(3) which would need at least O(10)***. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
 ```
 
-[![spinor](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/283157454-fb390c30-b9c6-425b-b766-733a8138d3ff.png)](https://qr.ae/pKnIES)
+[![spinor](https://user-images.githubusercontent.com/8466209/284058710-f04ec8dc-b56a-467f-baf5-cdd6b11f7ce8.png)](https://qr.ae/pKnIES)
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
