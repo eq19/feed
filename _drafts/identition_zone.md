@@ -145,7 +145,7 @@ In general relativity, gravity is a force that bends and warps space-time around
 In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
 ```
 
-[![](https://user-images.githubusercontent.com/8466209/284033450-8984a822-b65c-4522-84cf-67f1a0d335c5.png)](https://byjus.com/physics/stringtheory/)
+[![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
 ```warning
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_ using _[adinkra](https://github.com/eq19/feed/files/13248983/2110.01665.pdf)_.
