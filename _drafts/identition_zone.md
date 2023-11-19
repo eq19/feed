@@ -157,7 +157,7 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. 
 
-```warning
+```note
 Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[10- and 11-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_.
 - [Valise adinkras](https://github.com/eq19/feed/files/13248983/2110.01665.pdf), although an important subclass, do not encode all information present when a 4D supermultiplet is reduced to 1D. We extend this to [non-valise adinkras](https://github.com/HEPTHools/Adinkra) providing a complete ***[eigenvalue classification](https://github.com/eq19/feed/files/13228760/1904.01738.pdf)*** via _Python code_.
 - We found no obstacles to applying the lessons we learned in _[4D to higher dimensions](https://github.com/eq19/feed/files/12908712/JHEP09.2021.202.pdf)_. We also derive infinitesimal 10D superspace Weyl transformation laws. The identification of all off-shell _[ten-dimensional supergeometrical](https://github.com/eq19/feed/files/12908716/JHEP03.2021.074.pdf)_ Weyl field strength tensors, constructed from respective torsions.
@@ -183,12 +183,18 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
 
-```note
-The interaction of any pair of fermions in perturbation theory can be modelled as:
+```warning
+Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
+- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
+- Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
+- ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
+- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
+- ***[The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
+- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
+- Pions also ***result from some matter–antimatter annihilation events (36)***.
+- All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
 
-***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
-
-The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
 ```
 
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
@@ -341,18 +347,12 @@ Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structu
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
-```warning
-Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
-- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
-- Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
-- ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
-- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
-- ***[The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
-- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
-- Pions also ***result from some matter–antimatter annihilation events (36)***.
-- All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
+```note
+The interaction of any pair of fermions in perturbation theory can be modelled as:
 
-Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
+***Two fermions go in → interaction by boson exchange → Two changed fermions go out.***
+
+The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
 [![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/282279534-a448cd09-3d5e-4006-a84d-2574f7ed85c3.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
