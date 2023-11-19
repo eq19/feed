@@ -135,6 +135,18 @@ They interact, they transfer energy and momentum and angular momentum; excitatio
 
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
+```note
+In general relativity, gravity is a force that bends and warps space-time around supermassive bodies.
+- Even though gravity is one of the four fundamental forces in nature, it is very weak compared to the other three forces (electromagnetism, weak force and strong force). So it can’t be observed or identified on the scale of subatomic particles.
+- However, [gravity](https://byjus.com/physics/gravity/) is ***very dominant in long-distance scenarios***. It controls the structure of the macro universe (galaxies, planets, stars, moons).
+- As far as quantum mechanics is concerned, gravity doesn’t have much effect. The probable nature of the quantum realm also poses a significant challenge for the induction of gravity in the quantum realm.
+- Generally, ***gravity does not act as a particle as its own***. Even if a hypothetical model is introduced to explain the particle nature of a gravity particle, it violates fundamental energy laws.
+
+In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
+```
+
+[![](https://user-images.githubusercontent.com/8466209/284033450-8984a822-b65c-4522-84cf-67f1a0d335c5.png)](https://byjus.com/physics/stringtheory/)
+
 ```warning
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. Inspired by the history of how Einstein constructed ***General Relativity***, we study the linearized Nordstrom supergravity in _[ten- and eleven-dimensional superspaces](https://github.com/eq19/feed/files/12908714/JHEP07.2019.063.pdf)_ using _[adinkra](https://github.com/eq19/feed/files/13248983/2110.01665.pdf)_.
 - Valise adinkras, although an important subclass, do not encode all information present when a 4D supermultiplet is reduced to 1D. We extend this to [non-valise adinkras](https://github.com/HEPTHools/Adinkra) providing a complete ***[eigenvalue classification](https://github.com/eq19/feed/files/13228760/1904.01738.pdf)*** via _Python code_.
