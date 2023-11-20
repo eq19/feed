@@ -139,14 +139,6 @@ They interact, they transfer energy and momentum and angular momentum; excitatio
 
 ## Fundamental Forces
 
-It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
-
-```note
-Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions represent all related key knowledges of modern physics. Moreover this model represents [Quark-Gluon Plasma](https://en.wikipedia.org/wiki/Quark%E2%80%93gluon_plasma), with all of the [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) in the early stage after _[Big Bang](https://youtu.be/7VgoECW06-s?si=_l-Pu42gwtnxzzT2)_ which probably comes from [Absolute Nothingness](https://www.quora.com/What-is-the-difference-between-the-universe-the-cosmos-space-and-nothing/answer/George-Davros).
-```
-
-[![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
-
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
 ```note
