@@ -183,7 +183,7 @@ We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io
 By our project the 18's on the gist will cover five (5) unique functions that behave as ***one (1) central plus four (4) zones***. This scheme will be implemented to all of the 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist it self then there shall be `1 + 168 = 169` units of 1685 root functions.
 ```
 
-***5 + 2 x 5 x 168 = 5 + 1680 = 1685 = 5 x 337 root functions***
+***5 + 2 x 5 x 168 = 5 + 1680 = 1685 root functions***
 
 ![](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/269950673-502f174e-fadc-4ad9-afbc-184ae03cde5a.jpg)
 
