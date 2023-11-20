@@ -121,7 +121,17 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
 
-![image](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)
+```note
+The Standard Model of Particle Physics, describes for us all know fundamental interaction in nature till date, with the exception of Gravity (work on this front is going on). Here is a summary of the fundamental content of the standard model
+- There are three families of particle, the Quarks, the Leptons and the Gauge Bosons. The Quarks in groups of three forms the composite particles such as the Protons, along with the electron this forms ordinary matter.
+- The Gauge Bosons are the ones those are responsible for interactions. The Quarks interact among themselves by the exchange of a Gluon these are responsible for the strong nuclear force.
+- The newly discovered Higgs Boson interacts with all the Quarks and the first group of Leptons (electron, muon and tau) providing them with their mass. The neutrinos which are the other Leptons originally were thought to have zero mass, but recent discoveries argue that this is not the case.
+- The Weak bosons interact with both Leptons and Quarks, these are responsible for the Weak nuclear forces. The exchange of photon is responsible for the Electromagnetic Force.
+
+The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton which would be the carrier of Gravitational interaction. _([Quora](https://qr.ae/pK4Nd7))_
+```
+
+[![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://qr.ae/pK4Nd7)
 
 They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation
 
