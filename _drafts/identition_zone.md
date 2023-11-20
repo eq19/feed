@@ -121,6 +121,12 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
 
+![image](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)
+
+They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation
+
+## Fundamental Forces
+
 It turns out that quantum string theory always destroys the symmetries of classical string theory, **except in one special case: when the number of dimensions is 10**.
 
 ```note
@@ -128,10 +134,6 @@ Below is a model of E11 (shown by 11 dimensions). Its absolute dimensions repres
 ```
 
 [![default](https://user-images.githubusercontent.com/8466209/242000067-6d2ac164-06d6-4546-a118-10642982ce52.png)](https://www.youtube.com/watch?v=dEoMeHi-6kM)
-
-They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation
-
-## Fundamental Forces
 
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
