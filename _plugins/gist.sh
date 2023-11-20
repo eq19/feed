@@ -9,7 +9,8 @@ git ls-remote ${WIKI} > /dev/null 2>&1
 if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
 else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
 
-gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir && cp -R /maps/_drafts/* /tmp/gistdir
+gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir
+mv /tmp/gistdir/!(README.md) /maps/_includes/virtual && cp -R /maps/_drafts/* /tmp/gistdir
 
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/folder1
 gh gist clone 88d09204b2e5986237bd66d062406fde /tmp/gistdir/identition/folder2
