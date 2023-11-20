@@ -135,7 +135,7 @@ They interact, they transfer energy and momentum and angular momentum; excitatio
 
 [![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://qr.ae/pK4Nd7)
 
-The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to ***supergravity theory***.
+This standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to ***supergravity theory***.
 
 ## Fundamental Forces
 
