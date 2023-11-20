@@ -130,28 +130,14 @@ The Standard Model of Particle Physics, describes for us all know fundamental in
 - The newly discovered Higgs Boson interacts with all the Quarks and the first group of Leptons (electron, muon and tau) providing them with their mass. The neutrinos which are the other Leptons originally were thought to have zero mass, but recent discoveries argue that this is not the case.
 - The Weak bosons interact with both Leptons and Quarks, these are responsible for the Weak nuclear forces. The exchange of photon is responsible for the Electromagnetic Force.
 
-The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton which would be the carrier of Gravitational interaction. _([Quora](https://qr.ae/pK4Nd7))_
+They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation
 ```
 
 [![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://qr.ae/pK4Nd7)
 
-They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation
+The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton which would be the carrier of Gravitational interaction. _([Quora](https://qr.ae/pK4Nd7))_
 
 ## Fundamental Forces
-
-There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
-
-```note
-In general relativity, gravity is a force that bends and warps space-time around supermassive bodies.
-- Even though gravity is one of the four fundamental forces in nature, it is very weak compared to the other three forces (electromagnetism, weak force and strong force). So it can’t be observed or identified on the scale of subatomic particles.
-- However, [gravity](https://byjus.com/physics/gravity/) is ***very dominant in long-distance scenarios***. It controls the structure of the macro universe (galaxies, planets, stars, moons).
-- As far as quantum mechanics is concerned, gravity doesn’t have much effect. The probable nature of the quantum realm also poses a significant challenge for the induction of gravity in the quantum realm.
-- Generally, ***gravity does not act as a particle as its own***. Even if a hypothetical model is introduced to explain the particle nature of a gravity particle, it violates fundamental energy laws.
-
-In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
-```
-
-[![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
 The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
@@ -175,6 +161,20 @@ We show the explicit one-to-one correspondence between Lorentz irreps and field 
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
+
+There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
+
+```note
+In general relativity, gravity is a force that bends and warps space-time around supermassive bodies.
+- Even though gravity is one of the four fundamental forces in nature, it is very weak compared to the other three forces (electromagnetism, weak force and strong force). So it can’t be observed or identified on the scale of subatomic particles.
+- However, [gravity](https://byjus.com/physics/gravity/) is ***very dominant in long-distance scenarios***. It controls the structure of the macro universe (galaxies, planets, stars, moons).
+- As far as quantum mechanics is concerned, gravity doesn’t have much effect. The probable nature of the quantum realm also poses a significant challenge for the induction of gravity in the quantum realm.
+- Generally, ***gravity does not act as a particle as its own***. Even if a hypothetical model is introduced to explain the particle nature of a gravity particle, it violates fundamental energy laws.
+
+In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
+```
+
+[![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
