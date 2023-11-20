@@ -10,7 +10,7 @@ if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
 else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
 
 mkdir /tmp/gistdir && cp -R /maps/_drafts/* /tmp/gistdir
-gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /maps/_includes/virtu
+gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /maps/_includes/virtual
 
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/folder1
 gh gist clone 88d09204b2e5986237bd66d062406fde /tmp/gistdir/identition/folder2
