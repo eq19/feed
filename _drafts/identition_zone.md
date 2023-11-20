@@ -135,11 +135,11 @@ They interact, they transfer energy and momentum and angular momentum; excitatio
 
 [![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://qr.ae/pK4Nd7)
 
-The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton.
+The standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to **supergravity theory***.
 
 ## Fundamental Forces
 
-The symmetry of this ***supergravity theory*** is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
+The symmetry of this _supergravity theory_ is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
 This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 components in 11 dimensions. 11D supergravity can be compactified down to 4 dimensions*** which then has OSp(8\4) symmetry. (We still have 8 × 4 = 32 so there are still the same number of components.) Spinors need 4 components in 4 dimensions. ***This gives O(8) for the gauge group which is too small to contain the Standard Model gauge group U(1) × SU(2) × SU(3) which would need at least O(10)***. _([Wikipedia](https://en.wikipedia.org/wiki/Higher-dimensional_supergravity#The_mathematics))_
