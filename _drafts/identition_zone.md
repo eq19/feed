@@ -108,7 +108,7 @@ As usual, the images ***on the left are snapshots of the particles at different 
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
 ```note
-The Standard Model presently recognizes ***seventeen distinct particles (twelve fermions and five bosons)***. As a consequence of flavor and color combinations and antimatter, the fermions and bosons are known to have 48 and 13 variations, respectively. Among ***the 61 elementary particles*** embraced by the Standard Model number electrons and other leptons, quarks, and the fundamental bosons. Subatomic particles such as protons or neutrons, which contain two or more elementary particles, are known as composite particles. _([Wikipedia](https://en.wikipedia.org/wiki/Elementary_particle))_
+The Standard Model presently recognizes ***seventeen distinct particles (twelve fermions and five bosons)***. As a consequence of flavor and color combinations and antimatter, the fermions and bosons are known to have 48 and 13 variations, respectively. Among ***the 61 elementary particles*** embraced by the Standard Model number electrons and other leptons, quarks, and the fundamental bosons. _([Wikipedia](https://en.wikipedia.org/wiki/Elementary_particle))_
 ```
 
 [![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
@@ -120,6 +120,8 @@ The Higgs boson field (often referred to as the _[God particle](https://www.quor
 ```
 
 [![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
+
+Subatomic particles such as protons or neutrons, which contain two or more elementary particles, are known as composite particles. 
 
 ```note
 The Standard Model of Particle Physics, describes for us all know fundamental interaction in nature till date, with the exception of Gravity (work on this front is going on). Here is a summary of the fundamental content of the standard model
