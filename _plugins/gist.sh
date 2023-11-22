@@ -25,12 +25,12 @@ gh gist clone b541275ab7deda356feef32d600e44d8 /tmp/gistdir/identition/folder9
 gh gist clone 80c8098f16f3e6ca06893b17a02d910e /tmp/gistdir/identition/folder10
 gh gist clone 4ffc4d02579d5cfd336a553c6da2f267 /tmp/gistdir/identition/folder11
 
-gh gist clone f78d4470250720fb18111165564d555f /tmp/gistdir/exponentiation/folder13
-gh gist clone 765ddc69e339079a5a64b56c1d46e00f /tmp/gistdir/exponentiation/folder14
-gh gist clone b9f901cda16e8a11dd24ee6b677ca288 /tmp/gistdir/exponentiation/folder15
-gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/folder16
-gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/folder17
-gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folder18
+gh gist clone f78d4470250720fb18111165564d555f /tmp/gistdir/exponentiation/folder12
+gh gist clone 765ddc69e339079a5a64b56c1d46e00f /tmp/gistdir/exponentiation/folder13
+gh gist clone b9f901cda16e8a11dd24ee6b677ca288 /tmp/gistdir/exponentiation/folder14
+gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/folder15
+gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/folder16
+gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/folder17
 
 find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
