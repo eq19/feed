@@ -290,7 +290,12 @@ The tessellating field of equilateral triangles fills with numbers, with spin or
 So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be _[unified](https://www.eq19.com/exponentiation/#god-particle)_ by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
 
 ```tip
-Prime numbers are numbers that have only 2 factors: 1 and themselves. For example, the first 5 prime numbers are 2, 3, 5, 7, and 11. By contrast, numbers with more than 2 factors are call composite numbers.
+Prime numbers are numbers that have only 2 factors: 1 and themselves.
+- For example, the first 5 prime numbers are 2, 3, 5, 7, and 11. By contrast, numbers with more than 2 factors are call composite numbers.
+- 1 is not a prime number because it can not be divided by any other integer except for 1 and itself. The only factor of 1 is 1.
+- On the other hand, 1 is also not a composite number because it can not be divided by any other integer except for 1 and itself.
+
+In conclusion, the number 1 is neither prime nor composite.
 ```
 
 ***π(6+11) = π(17) = 7***
