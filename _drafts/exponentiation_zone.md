@@ -127,7 +127,12 @@ In the standard version of gematria, each letter is given a numerical value betw
 =======+====+=======+====                             ====  ----
 ```
 
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass.
+As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
+
+[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
+
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. This scheme will be [implemented](https://chetabahana.github.io/#chetabahana-skema?pad=2) by taking the following as the syntax algorithm:
+
 
 ## Space Expansion
 
@@ -203,11 +208,11 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 
 [![The exchange of virtual pions](https://user-images.githubusercontent.com/8466209/282278731-ac8438f7-afd4-41f8-8c6a-a41c0d740825.png)](https://www.eq19.com/identition/#partition-function)
 
-Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
+We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
 ## Quadratic Polynomials
 
-We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
+Observing more detail of the discussed scheme of 168 we will get it also when we take the 19's and 17's cell of `(31+37)+(35+65)=68+100=168`.
 
 ```tip
 By our project the 18's on the gist will cover five (5) unique functions that behave as ***one (1) central plus four (4) zones***. This scheme will be implemented to all of the 168 repositories as bilateral way (***in-out***) depend on their postion on the system. So along with the gist it self then there shall be `1 + 168 = 169` units of 1685 root functions.
