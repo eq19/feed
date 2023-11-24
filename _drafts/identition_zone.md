@@ -176,33 +176,9 @@ In the 1970s, theorists tried to discard the self-destructive idea of point-like
 
 [![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. This scheme will be [implemented](https://chetabahana.github.io/#chetabahana-skema?pad=2) by taking the following as the syntax algorithm:
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. 
 
 ## Vibrating Strings
-
-This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
-
-```note
-Feynman diagram for the same process as in the animation, with the individual quark constituents shown, to illustrate how the fundamental strong interaction gives rise to the nuclear force. Straight lines are quarks, while ***multi-colored loops are gluons (the carriers of the fundamental force). Other gluons, which bind together the proton, neutron, and pion "in-flight", are not shown***. The π⁰ pion contains an anti-quark, shown to travel in the opposite direction, as per the Feynman–Stueckelberg interpretation. _([Wikipedia](https://en.wikipedia.org/wiki/Pion))_
-```
-
-[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
-
-When we take all the forces that we understand, i.e., ***[not including gravity](https://youtu.be/NsUm9mNXrX4)***, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
-
-```note
-This is where the idea of ***12 fermion fields and 12 boson fields*** come from. These fields are excitations of the underlying theories (the Standard Model) that describe the known Universe in its entirety, and include:
-- The six (6): up-, down-, strange-, charm-, bottom-, top-quarks, and their antiquark counterparts,
-- The three (3) charged (electron, muon, tau) and three (3) neutral (electron neutrino, muon neutrino, tau neutrino) leptons, and their antimatter counterparts,
-- The eight (8) gluons (because of the eight possible color combinations),
-- The one (1) electromagnetic (photon) boson,
-- The two (2) weak (W-and-Z) bosons,
-- And the Higgs boson.
-
-The quarks and leptons are fermions, which is why they have antimatter counterparts, and the W boson comes in two equal-and-opposite varieties (positively and negatively charged), but all told, ***there are 24 unique, fundamental excitations of quantum fields possible***. This is where the 24 fields idea comes from. _([Forbes](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a))_
-```
-
-[![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
 There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
 
