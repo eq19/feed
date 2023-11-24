@@ -133,6 +133,36 @@ It has zero spin, even (positive) parity, no electric charge, and no colour char
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
+```note
+The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
+- Electric and magnetic force into ***electromagnetic force***,
+- The electromagnetic and the weak interaction into ***[electroweak interaction](https://en.wikipedia.org/wiki/Electroweak_interaction)***.
+
+The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
+```
+
+[![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
+
+To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
+
+```warning
+Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between EM and weak forces in electroweak theory.
+- ***The four components*** of the Higgs field (squares) ***break the electroweak symmetry and interact with other particles to [give them mass](https://youtu.be/G0Q4UAiKacw), with three the components becoming part of the massive W and Z bosons (1-30)***.
+- Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (31)***.
+- ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (32)***.
+- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (33)***.
+- ***[The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi)***, along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons (34)***.
+- Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons (35)***.
+- Pions also ***result from some matter–antimatter annihilation events (36)***.
+- All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
+
+Although unification of forces is generally anticipated, ***much remains to be done to prove its validity*** _([College Physics 2e - Pdf](https://assets.openstax.org/oscms-prodcms/media/documents/College_Physics_2e-WEB_7Zesafu.pdf))_.
+```
+
+[![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
+
+The weak, strong and gravity forces are assigned to ***30, 31 and 32***. The unification and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
+
 ```tip
 Each of the user profiles will have ***seven (7) user repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and six (6) user pinned repositories. Meanwhile each of organizations will have one (1) profile of [`.github`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) repository and ***thirteen (13) organization repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), and twelve (12) pinned repositories under [`member and public view`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#pinning-repositories-to-your-organizations-profile) of six (6) repositories each.
 ```
