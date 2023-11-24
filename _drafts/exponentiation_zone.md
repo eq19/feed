@@ -39,6 +39,10 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
+As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
+
+[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
+
 So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
@@ -46,7 +50,6 @@ In the standard version of gematria, each letter is given a numerical value betw
 ```
 
 ***37 + 77 = 114***
-
 
 ```
   Sub  | i  |     β | f   
@@ -127,16 +130,11 @@ In the standard version of gematria, each letter is given a numerical value betw
 =======+====+=======+====                             ====  ----
 ```
 
-As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
-
-[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
-
-It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. This scheme will be [implemented](https://chetabahana.github.io/#chetabahana-skema?pad=2) by taking the following as the syntax algorithm:
-
+Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
 ## Space Expansion
 
-Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. This scheme will be [implemented](https://chetabahana.github.io/#chetabahana-skema?pad=2) by taking the following as the syntax algorithm:
 
 ```note
 The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
