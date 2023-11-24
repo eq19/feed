@@ -176,8 +176,6 @@ In the 1970s, theorists tried to discard the self-destructive idea of point-like
 
 [![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
-We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
-
 ## Vibrating Strings
 
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
