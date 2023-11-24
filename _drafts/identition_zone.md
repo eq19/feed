@@ -176,6 +176,8 @@ In the 1970s, theorists tried to discard the self-destructive idea of point-like
 
 [![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
 
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. This scheme will be [implemented](https://chetabahana.github.io/#chetabahana-skema?pad=2) by taking the following as the syntax algorithm:
+
 ## Vibrating Strings
 
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
