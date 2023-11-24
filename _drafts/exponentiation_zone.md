@@ -39,10 +39,6 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
-As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
-
-[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
-
 So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
@@ -130,9 +126,9 @@ In the standard version of gematria, each letter is given a numerical value betw
 =======+====+=======+====                             ====  ----
 ```
 
-Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
+As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
 
-## Space Expansion
+[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
 
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
@@ -165,6 +161,10 @@ Although unification of forces is generally anticipated, ***much remains to be d
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
 
 The weak, strong and gravity forces are assigned to ***30, 31 and 32***. The unification and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
+
+## Space Expansion
+
+Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
 ```tip
 Each of the user profiles will have ***seven (7) user repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and six (6) user pinned repositories. Meanwhile each of organizations will have one (1) profile of [`.github`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) repository and ***thirteen (13) organization repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), and twelve (12) pinned repositories under [`member and public view`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#pinning-repositories-to-your-organizations-profile) of six (6) repositories each.
