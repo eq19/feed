@@ -133,7 +133,7 @@ The Standard Model of Particle Physics, describes for us all know fundamental in
 They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation. _([Quora](https://qr.ae/pK4Nd7))_
 ```
 
-[![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://qr.ae/pK4Nd7)
+[![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://en.wikipedia.org/wiki/Talk:Standard_Model/Archive_2)
 
 This standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to ***supergravity theory***.
 
