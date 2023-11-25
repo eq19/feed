@@ -188,40 +188,6 @@ The quarks and leptons are fermions, which is why they have antimatter counterpa
 
 [![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
-Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
-
-```tip
-Each of the user profiles will have ***seven (7) user repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll) and six (6) user pinned repositories. Meanwhile each of organizations will have one (1) profile of [`.github`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme) repository and ***thirteen (13) organization repositories*** consist of one (1) main of [`github.io`](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), and twelve (12) pinned repositories under [`member and public view`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#pinning-repositories-to-your-organizations-profile) of six (6) repositories each.
-```
-
-***[®main](https://github.com/eq19) + [®wiki](https://gist.github.com/eq19) + [®orgs](https://github.com/settings/organizations) = 7 + (7+11) + (11x13) = 7 + 18 + 143 = 24 x 7 = 168 = π(1000)***
-
-{% for item in site.data.orgs %}
-  1. {{ item.name | jsonify }}
-     - {{ item.key1 | jsonify }}
-     - {{ item.key2 | jsonify }}
-{% endfor %}
-
-The _[Root Function](https://www.eq19.com/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://www.eq19.com/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
-
-```note
-The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of ***32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
-```
-
-***1000 x (5 + 360) days = 1000 years***
-
-[![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
-
-By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://www.eq19.com/multiplication/#elementary-structure)***.
-
-```note
-***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
-```
-
-[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
-
-Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
-
 ```note
 Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth (5th) hexagon***, cyan. Finally, 3 7, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
 ```
