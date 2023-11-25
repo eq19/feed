@@ -188,6 +188,8 @@ The quarks and leptons are fermions, which is why they have antimatter counterpa
 
 [![SM-particles](https://github.com/eq19/eq19.github.io/assets/36441664/37b9ddf0-8069-4786-ac49-d918aff20aec)](https://www.forbes.com/sites/startswithabang/2018/11/17/ask-ethan-are-quantum-fields-real/?sh=32c398b3777a)
 
+It has zero spin, even (positive) parity, no electric charge, and no colour charge, and it couples to (interacts with) mass. 
+
 ```note
 Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 21 on 3’s cell. Prime number 23 sends the number line left to form the fourth hexagon, purple. As it is not a twin, the clockwise progression (rotation) reverses itself. Twin primes ***29 and 31 define the fifth (5th) hexagon***, cyan. Finally, 3 7, again not a twin, reverses the rotation of the system, so 47 can define the yellow hexagon _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_.
 ```
