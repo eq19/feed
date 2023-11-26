@@ -95,48 +95,6 @@ It is argued that the generic formulation of string theory leads naturally to da
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
-## Elementary Particles
-
-In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
-
-```note
-As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
-```
-
-[![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
-
-In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
-
-```note
-The Standard Model presently recognizes ***seventeen distinct particles (twelve fermions and five bosons)***. As a consequence of flavor and color combinations and antimatter, the fermions and bosons are known to have 48 and 13 variations, respectively. Among ***the 61 elementary particles*** embraced by the Standard Model number electrons and other leptons, quarks, and the fundamental bosons. _([Wikipedia](https://en.wikipedia.org/wiki/Elementary_particle))_
-```
-
-[![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
-
-In the Standard Model, the _[Higgs boson](https://youtu.be/R0clnHE37Xc?t=13m42s)_ is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
-
-```note
-The Higgs boson field (often referred to as the _[God particle](https://www.quora.com/How-would-you-explain-the-God-particle-in-laymans-term/answer/Vagish-Kumar-Choudhary)_) is ***a scalar field with two neutral and two electrically charged components*** that form a complex doublet of the weak isospin SU(2) symmetry. Its "Mexican hat-shaped" potential leads it to take a nonzero value everywhere (including otherwise empty space), which breaks the weak isospin symmetry of the electroweak interaction and, via the Higgs mechanism, ***gives mass to many particles***. _([Wikipedia](https://en.wikipedia.org/wiki/Higgs_boson))_
-```
-
-[![Mecanismo_de_Higgs_PH](https://user-images.githubusercontent.com/36441664/273429113-fb4dad06-0f01-40cc-a31e-c8740a478a7f.png)](https://en.wikipedia.org/wiki/Higgs_boson)
-
-Subatomic particles such as protons or neutrons, which contain two or more elementary particles, are known as composite particles. 
-
-```note
-The Standard Model of Particle Physics, describes for us all know fundamental interaction in nature till date, with the exception of Gravity (work on this front is going on). Here is a summary of the fundamental content of the standard model
-- There are three families of particle, the Quarks, the Leptons and the Gauge Bosons. The Quarks in groups of three forms the composite particles such as the Protons, along with the electron this forms ordinary matter.
-- The Gauge Bosons are the ones those are responsible for interactions. The Quarks interact among themselves by the exchange of a Gluon these are responsible for the strong nuclear force.
-- The newly discovered Higgs Boson interacts with all the Quarks and the first group of Leptons (electron, muon and tau) providing them with their mass. The neutrinos which are the other Leptons originally were thought to have zero mass, but recent discoveries argue that this is not the case.
-- The Weak bosons interact with both Leptons and Quarks, these are responsible for the Weak nuclear forces. The exchange of photon is responsible for the Electromagnetic Force.
-
-They interact, they transfer energy and momentum and angular momentum; excitations are created and destroyed. Every excitation that’s possible has a reverse excitation. _([Quora](https://qr.ae/pK4Nd7))_
-```
-
-[![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://en.wikipedia.org/wiki/Talk:Standard_Model/Archive_2)
-
-This standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to ***supergravity theory***.
-
 ## Fundamental Forces
 
 The symmetry of this _supergravity theory_ is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
