@@ -39,6 +39,14 @@ A square system of coupled nonlinear equations can be solved iteratively by Newt
 
 [![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
 
+In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
+
+```note
+As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
+```
+
+[![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
+
 So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
@@ -129,14 +137,6 @@ In the standard version of gematria, each letter is given a numerical value betw
 We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
 ## Elementary Particles
-
-In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
-
-```note
-As usual, the images ***on the left are snapshots of the particles at different times. Those times correspond to the grey slices in the space-time diagram on the right***. You can see the specific interaction points in the space-time diagram, where the blue particle is emitted and then absorbed by the red particles. Those points will be important later, as we compare this to the situation in ***string theory***. _([Slimy.com](http://www.slimy.com/~steuard/research/StringIntro/slide13.html))_
-```
-
-[![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
 In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Elementary_particle)_ or fundamental particle is a subatomic particle that is not composed of other particles. 
 
