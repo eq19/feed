@@ -67,7 +67,8 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  find . -type f -name "*.md" -exec sed -i 's/💎:/spin:/g' {} +
+  find . -type f -name "*.md" -exec sed -i 's/🔨:/spin:/g' {} +
+  find . -type f -name "*.md" -exec sed -i 's/🔨:/span:/g' {} +
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
