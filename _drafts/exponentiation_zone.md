@@ -134,7 +134,7 @@ In the standard version of gematria, each letter is given a numerical value betw
 =======+====+=======+====                             ====  ----
 ```
 
-We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
+As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** that is reinjected via the _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
 
 ## Elementary Particles
 
@@ -172,7 +172,7 @@ This standard model is missing the Gravitational interaction and it is postulate
 
 ## Space Expansion
 
-As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** that is reinjected via the _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
+We are going to assign the above field as a ***standard model*** that attempts to stimulate quantum field models called ***₠Quantum*** for the _[four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
 
 [![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
 
