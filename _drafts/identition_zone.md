@@ -95,7 +95,7 @@ It is argued that the generic formulation of string theory leads naturally to da
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
-## Fundamental Forces
+## Series Expansion
 
 The symmetry of this _supergravity theory_ is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
@@ -208,7 +208,7 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
 
-## Multiple Universes
+## Parallel Universes
 
 Since we are discussing about prime distribution then this 18's structure will also cover the further scheme that is inherited from the above 37 files.
 
