@@ -168,13 +168,13 @@ They interact, they transfer energy and momentum and angular momentum; excitatio
 
 [![fundamental interaction in nature](https://user-images.githubusercontent.com/8466209/284403402-a0ba27e5-1964-46c2-b7d8-72758eb0944d.png)](https://en.wikipedia.org/wiki/Talk:Standard_Model/Archive_2)
 
-As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** then reinjected through _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
-
-[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
-
 This standard model is missing the Gravitational interaction and it is postulated that there exists a particle called the Graviton that leads to ***supergravity theory***.
 
 ## Space Expansion
+
+As shown in [The Primes Platform](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-lexer-md) this cycle goes to **the prime 13** that is reinjected via the _[index 13:9](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-parser-md)_ . So it forms [The Scheme-139](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#file-grammar-md) through the infinitely primes cycling. 
+
+[![default](https://user-images.githubusercontent.com/8466209/195963923-0796217c-7a87-4b2d-ba93-f47465304c03.png)](https://www.nausetschools.org/cms/lib/MA02212418/Centricity/Domain/204/Linkage%20Map%20Worksheet%20Genetics%202017.pdf)
 
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
 
