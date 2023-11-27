@@ -1,9 +1,19 @@
 {%- include templates/leads/baseline.liquid -%}
 {%- assign warning1 = "This page refers to " |
-    append: "_[the child section {{ page.sort }}]({{ item_baseline }})_ that is _[" -%}
-{%- assign warning2 = "]({{ site.baseurl }}{{ item_source }})_ " |
-    append: "by _[the prime spin {{ page.spin }}](https://www.eq19.com/addition/#prime-hexagon)_ " |
-    append: "with _[the {{ page.span }} partitions](https://www.eq19.com/identition/#euler-partition)_ " |
+    append: "_[the child section " |
+    append: page.sort |
+    append: "](" |
+    append: item_baseline |
+    append: ")_ that is _[" -%}
+{%- assign warning2 = "](" |
+    append: site.baseurl |
+    append: item_source |
+    append: ")_ " |
+    append: "by _[the prime spin " |
+    append: page.spin |
+    append: "](https://www.eq19.com/addition/#prime-hexagon)_ with _[the " |
+    append: page.span |
+    append: " partitions](https://www.eq19.com/identition/#euler-partition)_ " |
     append: 'listed below. Please return to the _[Home Page](https://www.eq19.com/)_ " |
     append: "to _[track](https://www.eq19.com/multiplication/#mec30-structure)_ " |
     append: "the _[hierarchy](https://www.eq19.com/identition/#parallel-universes)_." -%}
