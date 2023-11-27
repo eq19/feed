@@ -1,10 +1,11 @@
 {%- include templates/leads/baseline.liquid -%}
-{%- assign warning = "This page refers to " |
+{%- assign warning1 = "This page refers to " |
     append: "_[the child section " |
     append: {{ page.sort }} |
     append: "](" |
     append: {{ item_baseline }} |
-    append: ")_ that is _[% hello inherited %](" |
+    append: ")_ that is _[" -%}
+{%- assign warning2 = "](" |
     append: {{ site.baseurl }}{{ item_source }} |
     append: ")_ by _[the prime spin " |
     append: {{ page.spin }} |
@@ -13,11 +14,10 @@
     append: "partitions](https://www.eq19.com/identition/#euler-partition)_ listed below. " |
     append: "Please return to the _[Home Page](https://www.eq19.com/)_ " |
     append: "to _[track](https://www.eq19.com/multiplication/#mec30-structure)_ " |
-    append: "the _[hierarchy](https://www.eq19.com/identition/#parallel-universes)_."
--%}
+    append: "the _[hierarchy](https://www.eq19.com/identition/#parallel-universes)_." -%}
 
 ```warning
-{{ warning }}
+{{ warning1 }}{% hello inherited %}{{ warning2 }}
 ```
 
 {%- include common/core/list.liquid -%}
