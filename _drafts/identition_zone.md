@@ -95,7 +95,7 @@ It is argued that the generic formulation of string theory leads naturally to da
 
 Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
 
-## Symmetric Expansion
+## Series Expansion
 
 The symmetry of this _supergravity theory_ is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
