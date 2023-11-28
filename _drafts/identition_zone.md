@@ -132,7 +132,7 @@ In general relativity, gravity is a force that bends and warps space-time around
 In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
 ```
 
-[![](https://user-images.githubusercontent.com/8466209/284059163-7022e9c8-229e-488a-b489-c87638d6943c.png)](https://byjus.com/physics/stringtheory/)
+[![](https://github.com/eq19/feed/assets/8466209/6b9b301e-9076-4698-a641-83e29c1a5aa1)](https://byjus.com/physics/stringtheory/)
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
