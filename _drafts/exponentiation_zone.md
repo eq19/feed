@@ -186,6 +186,8 @@ The quarks and the leptons interact with the Higgs field through _[Yukawa intera
 The modern (perturbative) quantum mechanical view of the fundamental forces other than gravity is that ***particles of matter (fermions) do not directly interact*** with each other, but rather carry a charge, and exchange virtual particles (gauge bosons), which are the interaction carriers or force mediators. _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
 
+***®wiki + ®gist + ®zones = 37 + 25 + 4 = 30 + 36 = 66 = 6 x ®orgs = 11 x ®main***
+
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
 To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
