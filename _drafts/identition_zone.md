@@ -97,6 +97,20 @@ Here we implement a method called the rank of a partition where the rank of a pa
 
 ## Series Expansion
 
+There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
+
+```note
+In general relativity, gravity is a force that bends and warps space-time around supermassive bodies.
+- Even though gravity is one of the four fundamental forces in nature, it is very weak compared to the other three forces (electromagnetism, weak force and strong force). So it can’t be observed or identified on the scale of subatomic particles.
+- However, [gravity](https://byjus.com/physics/gravity/) is ***very dominant in long-distance scenarios***. It controls the structure of the macro universe (galaxies, planets, stars, moons).
+- As far as quantum mechanics is concerned, gravity doesn’t have much effect. The probable nature of the quantum realm also poses a significant challenge for the induction of gravity in the quantum realm.
+- Generally, ***gravity does not act as a particle as its own***. Even if a hypothetical model is introduced to explain the particle nature of a gravity particle, it violates fundamental energy laws.
+
+In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
+```
+
+[![](https://github.com/eq19/feed/assets/8466209/6b9b301e-9076-4698-a641-83e29c1a5aa1)](https://byjus.com/physics/stringtheory/)
+
 The symmetry of this _supergravity theory_ is given by the supergroup OSp(1\32) which gives the subgroups O(1) for the bosonic and Sp(32) for the fermion. 
 
 ```note
@@ -119,20 +133,6 @@ We show the explicit one-to-one correspondence between Lorentz irreps and field 
 ```
 
 [![Higher-Dimensional Supergravity](https://user-images.githubusercontent.com/36441664/275302565-33186ad7-adf7-4ce3-baa5-c5359d7aa90d.png)](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf)
-
-There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
-
-```note
-In general relativity, gravity is a force that bends and warps space-time around supermassive bodies.
-- Even though gravity is one of the four fundamental forces in nature, it is very weak compared to the other three forces (electromagnetism, weak force and strong force). So it can’t be observed or identified on the scale of subatomic particles.
-- However, [gravity](https://byjus.com/physics/gravity/) is ***very dominant in long-distance scenarios***. It controls the structure of the macro universe (galaxies, planets, stars, moons).
-- As far as quantum mechanics is concerned, gravity doesn’t have much effect. The probable nature of the quantum realm also poses a significant challenge for the induction of gravity in the quantum realm.
-- Generally, ***gravity does not act as a particle as its own***. Even if a hypothetical model is introduced to explain the particle nature of a gravity particle, it violates fundamental energy laws.
-
-In the 1970s, theorists tried to discard the self-destructive idea of point-like gravity particles. Instead of point particles, strings were introduced. Even if strings collide, there will be no infinite energy problem. Strings can smoothly smash and rebound without implying any physically nonsense infinities.
-```
-
-[![](https://github.com/eq19/feed/assets/8466209/6b9b301e-9076-4698-a641-83e29c1a5aa1)](https://byjus.com/physics/stringtheory/)
 
 Using this concept we are going to stimulate a model of the 11 dimensions throug the rank of their partition using github organizations of 13 repositories each.
 
