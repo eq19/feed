@@ -13,7 +13,7 @@ Identition is defined for a complex operation by extending one of the definition
 
 This identition zones stands as one of the solution to deal with the residual primes that is occured in the exponentation zones to become compactifiable within _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_.
 
-## Extra Dimensions
+## The Extra Dimensions
 
 By this image you would see how [the earth movements](https://youtu.be/oW2GT48ZLwA) should actually work based on _[spacetime](https://en.wikipedia.org/wiki/Spacetime)_ curved by mass and energy on our solar system. But it is still not enough.
 
