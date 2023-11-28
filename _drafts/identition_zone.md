@@ -93,10 +93,6 @@ It is argued that the generic formulation of string theory leads naturally to da
 
 [![string theory and dark energy](https://user-images.githubusercontent.com/36441664/275107639-32414353-979b-40bc-9faf-56d7324e0be2.png)](https://www.sciencedirect.com/science/article/pii/S0370269319306720#:~:text=Conclusion,responsible%20for%20its%20radiative%20stability)
 
-Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
-
-## Series Expansion
-
 There are 5 different string theories, ***each requiring 10 dimensions***. On the other hand, string theory is supposed to be fundamental theory.
 
 ```note
@@ -118,6 +114,10 @@ This is because ***[spinors](https://en.wikipedia.org/wiki/Spinor) need 32 compo
 ```
 
 [![spinor](https://user-images.githubusercontent.com/8466209/284058710-f04ec8dc-b56a-467f-baf5-cdd6b11f7ce8.png)](https://qr.ae/pKnIES)
+
+Here we implement a method called the rank of a partition where the rank of a partition of a positive integer is a certain integer associated with the partition.
+
+## Series Expansion
 
 In the forty years since 11D on-shell supergravity theory was constructed in 1978, a lot of efforts have been made to understand supergravity in superspace. 
 
