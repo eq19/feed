@@ -206,10 +206,6 @@ Every repository on GitHub.com comes equipped with a section for hosting documen
 
 [![37 wiki's files](https://user-images.githubusercontent.com/36441664/267547466-d10df532-d222-44a8-90a4-ad18386301c5.jpg)](https://github.com/eq19/eq19.github.io/wiki)
 
-By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
-
-## Parallel Universes
-
 Since we are discussing about prime distribution then this 18's structure will also cover the further scheme that is inherited from the above 37 files.
 
 ```note
@@ -219,6 +215,10 @@ This web enabled demonstration shows a polar plot of ***the first 20 non-trivial
 ***1 + 7 + 29 = 37 = 19 + 18***
 
 [![Riemann Zeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://qr.ae/pKnIbn)
+
+By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
+
+## Parallel Universes
 
 When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions.
 
