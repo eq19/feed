@@ -66,6 +66,7 @@ jekyll_build() {
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
+  chmod +x /maps/_plugins/edit.sh 
   #find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
   #find . -type f -name "*.md" -exec sed -i 's/🚀:/spin:/g' {} +
   #find . -type f -name "*.md" -exec sed -i 's/🔨:/span:/g' {} +
