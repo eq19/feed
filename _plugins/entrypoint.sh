@@ -66,11 +66,11 @@ jekyll_build() {
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
-  find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
-  find . -type f -name "*.md" -exec sed -i 's/🚀:/spin:/g' {} +
-  find . -type f -name "*.md" -exec sed -i 's/🔨:/span:/g' {} +
-  find . -type f -name "*.md" -exec sed -i 's/📂:/suit:/g' {} +
-  find . -type f -name '*.txt' -exec sh -c 'ed -s "$1" < ./script.ed' sh {} \;
+  #find . -type f -name "*.md" -exec sed -i 's/💎:/sort:/g' {} +
+  #find . -type f -name "*.md" -exec sed -i 's/🚀:/spin:/g' {} +
+  #find . -type f -name "*.md" -exec sed -i 's/🔨:/span:/g' {} +
+  #find . -type f -name "*.md" -exec sed -i 's/📂:/suit:/g' {} +
+  find . -type f -name '*.md' -exec sh -c 'ed -s "$1" < ./script.ed' sh {} \;
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
