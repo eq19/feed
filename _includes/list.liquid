@@ -1,6 +1,7 @@
 {%- include templates/leads/baseline.liquid -%}
-{%- assign warning1 = "This page refers to " |
-    append: "_[the child section " |
+{%- assign warning1 = "This page refers to _[the " |
+    append: page.suit |
+    append: " section " |
     append: page.sort |
     append: "](" |
     append: item_baseline |
