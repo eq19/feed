@@ -10,7 +10,7 @@ if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
 else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
 
 mv -f /tmp/workdir/virtual /maps/_includes/virtual && mkdir /tmp/gistdir
-# && cp -R /maps/_drafts/* /tmp/gistdir
+cp -R /maps/_drafts/* /tmp/gistdir
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/identition/span1
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/span2
@@ -37,7 +37,7 @@ find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1"
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 find /tmp/gistdir -type f -name "*zone.md" -prune -exec sh -c 'mkdir --parent "${1%_*}" && mv -f "$1" "${1%_*}/README.md"' sh {} \;
-find /tmp/gistdir -type f -name "file01.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/gistdir -type f -name "file02.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/gistdir -type f -name "file03.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/gistdir -type f -name "file04.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+#find /tmp/gistdir -type f -name "file01.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+#find /tmp/gistdir -type f -name "file02.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+#find /tmp/gistdir -type f -name "file03.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+#find /tmp/gistdir -type f -name "file04.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
