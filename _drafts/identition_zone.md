@@ -227,7 +227,7 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
  
 ```
 
-***36th prime - 30th prime = 151 - 113 = 1 + 37***
+***30 + 36 + 102 - 25 - 29 = 168 - 25 - 29 = π(1000) - π(100) - 10th prime = 114***
 
 ```scss
   Δ1 + Δ7 + Δ29  →  | Δ37 + Δ77 = Δ114 = Δ113 + Δ1 → 
@@ -297,6 +297,8 @@ The interaction of any pair of fermions in perturbation theory can be modelled a
 
 The exchange of bosons always carries energy and momentum between the fermions, thereby ***changing their speed and direction***. The exchange may also transport a charge between the fermions, changing the charges of the fermions in the process (e.g., turn them from one type of fermion to another). Since bosons carry one unit of angular momentum, ***the fermion's spin direction will flip from +1⁄2 to −1⁄2 (or vice versa)*** during such an exchange (in units of the reduced Planck's constant). _([Wikipedia](https://en.wikipedia.org/wiki/Fundamental_interaction))_
 ```
+
+***36th prime - 30th prime = 151 - 113 = 1 + 37***
 
 [![Defining the Prime Hexagon](https://user-images.githubusercontent.com/8466209/282279534-a448cd09-3d5e-4006-a84d-2574f7ed85c3.png)](https://www.hexspin.com/defining-the-prime-hexagon/)
 
