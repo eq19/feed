@@ -3,6 +3,7 @@
 # = prime.rb
 #
 # Prime numbers and factorization library.
+# https://github.com/ruby/prime
 #
 # Copyright::
 #   Copyright (c) 1998-2008 Keiju ISHITSUKA(SHL Japan Inc.)
