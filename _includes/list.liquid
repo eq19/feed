@@ -1,8 +1,14 @@
 {%- include templates/leads/baseline.liquid -%}
+
+{%- assign zone = "zone" %}{% assign section = page.sort -%}
+{%- if page.sort > 4 %}{% assign zone = "gist" %}{% endif -%}}
+{%- if page.sort > 22 %}{% assign zone = "main" %}{% endif -%}}
+{%- if page.sort > 28 %}{% assign zone = "orgs" %}{% endif -%}}
+
 {%- assign warning1 = "This page refers to _[" |
-    append: page.suit |
+    append: zone |
     append: " section " |
-    append: page.span |
+    append: page.suit |
     append: "](" |
     append: item_baseline |
     append: ")_ that is _[" -%}
