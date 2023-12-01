@@ -1,5 +1,5 @@
 {%- include templates/leads/baseline.liquid -%}
-{%- assign warning1 = "This page refers to _[the " |
+{%- assign warning1 = "This page refers to _[" |
     append: page.suit |
     append: " section " |
     append: page.span |
@@ -10,8 +10,11 @@
     append: site.baseurl |
     append: item_source |
     append: ")_ " |
-    append: "by _[the prime spin " |
+    append: "by _[prime spin " |
     append: page.spin |
+    append: "](https://www.eq19.com/addition/#prime-hexagon)_ " |
+    append: "and _[span " |
+    append: page.span |
     append: "](https://www.eq19.com/addition/#prime-hexagon)_ with _[the " |
     append: "partitions](https://www.eq19.com/identition/#euler-partition)_ " |
     append: "as listed below. Please return to the _[Home Page](https://www.eq19.com/)_ " |
