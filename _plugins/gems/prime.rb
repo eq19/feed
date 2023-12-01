@@ -559,3 +559,5 @@ class Prime
     end
   end
 end
+
+Liquid::Template.register_tag('prime', Prime)
