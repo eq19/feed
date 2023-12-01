@@ -11,4 +11,4 @@ class HelloWorld < Liquid::Tag
 
 end
 
-Liquid::Template.register_tag('hello', HelloWorld)
+Liquid::Template.register_tag('source', HelloWorld)
