@@ -4,10 +4,12 @@
 {%- assign section = page.sort | times: 1 -%}
 {%- if page.sort > 4 -%}
     {%- assign zone = "gist" -%}
+    {%- assign gist = "main" -%}
     {%- assign section = page.sort | minus: 4 -%}
 {%- endif -%}
 {%- if page.sort > 22 -%}
     {%- assign zone = "main" -%}
+    {%- assign gist = "gist" -%}
     {%- assign section = page.sort | minus: 22 -%}
     {%- endif -%}
 {%- if page.sort > 28 -%}
@@ -28,7 +30,11 @@
     append: site.baseurl |
     append: item_source |
     append: ")_ " |
-    append: "from _the gist section-17_ by _[prime spin-" |
+    append: "from _[the " |
+    append: gist |
+    append: " section-" |
+    append: 17 |
+    append: "]()_ by _[prime spin-" |
     append: page.spin |
     append: "](https://www.eq19.com/addition/#prime-hexagon)_ " |
     append: "and _[span-" |
