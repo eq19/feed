@@ -5,7 +5,7 @@
 {%- if page.sort > 22 %}{% assign zone = "main" %}{% assign section = page.sort | minus: 22 %}{% endif -%}
 {%- if page.sort > 28 %}{% assign zone = "orgs" %}{% assign section = page.sort | minus: 28 %}{% endif -%}
 
-{%- assign tip1 = "This section refers to _[wiki page-" |
+{%- assign tip1 = "This section is referring to _[wiki page-" |
     append: page.sort |
     append: "](https://github.com/eq19/eq19.github.io/wiki)_ of _[" |
     append: zone |
