@@ -5,7 +5,9 @@
 {%- if page.sort > 22 %}{% assign zone = "main" %}{% assign section = page.sort | minus: 22 %}{% endif -%}
 {%- if page.sort > 28 %}{% assign zone = "orgs" %}{% assign section = page.sort | minus: 28 %}{% endif -%}
 
-{%- assign warning1 = "This page refers to _[" |
+{%- assign warning1 = "This section refers to _[wiki page-" |
+    append: page.sort |
+    append: "](https://github.com/eq19/eq19.github.io/wiki) of _[" |
     append: zone |
     append: " section-" |
     append: section |
@@ -16,7 +18,7 @@
     append: site.baseurl |
     append: item_source |
     append: ")_ " |
-    append: "by _[prime spin-" |
+    append: "from the gist section-17 by _[prime spin-" |
     append: page.spin |
     append: "](https://www.eq19.com/addition/#prime-hexagon)_ " |
     append: "and _[span-" |
