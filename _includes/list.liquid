@@ -1,9 +1,9 @@
 {%- include templates/leads/baseline.liquid -%}
 
 {%- assign zone = "zone" %}{% assign section = page.sort | times: 1 -%}
-{%- if page.sort > 4 %}{% assign zone = "gist" %}{% assign section = section | minus: 4 %}{% endif -%}
-{%- if page.sort > 22 %}{% assign zone = "main" %}{% assign section = section | minus: 22 %}{% endif -%}
-{%- if page.sort > 28 %}{% assign zone = "orgs" %}{% assign section = section | minus: 28 %}{% endif -%}
+{%- if page.sort > 4 %}{% assign zone = "gist" %}{% assign section = page.sort | minus: 4 %}{% endif -%}
+{%- if page.sort > 22 %}{% assign zone = "main" %}{% assign section = page.sort | minus: 22 %}{% endif -%}
+{%- if page.sort > 28 %}{% assign zone = "orgs" %}{% assign section = page.sort | minus: 28 %}{% endif -%}
 
 {%- assign warning1 = "This page refers to _[" |
     append: zone |
