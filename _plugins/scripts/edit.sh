@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+IFS=$'\n' read -d '' -r -a array < _Sidebar.md
+
 echo $1
-echo ${MY_ARRAY[2]};
+echo ${array[2]};
