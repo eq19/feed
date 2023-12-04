@@ -73,7 +73,7 @@ jekyll_build() {
   find . -type f -name "*.md" -exec sed -i 's/🔨:/span:/g' {} +
   find . -type f -name "*.md" -exec sed -i 's/📂:/suit:/g' {} +
 
-  sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md && cat _Sidebar.md
+  sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
   find . -type f -name "*.md" -exec /maps/_plugins/scripts/edit.sh {} \;
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
