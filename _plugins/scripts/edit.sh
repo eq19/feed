@@ -3,6 +3,8 @@
 FILE=${1##*/}
 SORT=${FILE%.*}
 
+#cat $1 >> README.md
+
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
 sed -i 's/🔨:/span:/g' $1
