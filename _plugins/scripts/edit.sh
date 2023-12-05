@@ -15,6 +15,6 @@ FRONT+="sort: $SORT\n"
 FRONT+="suit: 2\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n"
-FRONT+="{% include list.liquid all=true %}\n"
+FRONT+="{% include list.liquid all=true %}\n\n"
 
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
