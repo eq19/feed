@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo $1
 s=${1##*/} && echo "${s%.*}"
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
