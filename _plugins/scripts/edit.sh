@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo $1
-PATH=${1##*/} && SORT=${PATH%.*}
+FILE=${1##*/} && SORT=${FILE%.*}
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
