@@ -9,7 +9,7 @@ sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
-TITLE=${LINE[$SORT]} && echo "${TITLE%|*}"
+TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
 FRONT="---\n"
 FRONT+="sort: SORT\n"
