@@ -25,4 +25,4 @@ FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
 
-[[ "$SORT" -lt "9" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
