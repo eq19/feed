@@ -8,13 +8,14 @@ sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
-readarray -t SPIN < exponentiation/span18/spin.csv
-  
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
+
+readarray -t SPIN < exponentiation/span18/spin.csv
+SUIT=${SPIN[$SORT][0]}
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
-FRONT+="suit: ${SPIN[$SORT][0]}\n"
+FRONT+="suit: $SUIT\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
