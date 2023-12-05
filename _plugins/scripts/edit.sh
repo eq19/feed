@@ -12,7 +12,7 @@ IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
 FRONT="---\n"
-FRONT+="sort: SORT\n"
+FRONT+="sort: $SORT\n"
 FRONT+="---\n"
 
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
