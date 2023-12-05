@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo $1
+#echo $1
 FILE=${1##*/} && SORT=${FILE%.*}
 
 sed -i 's/💎:/sort:/g' $1
