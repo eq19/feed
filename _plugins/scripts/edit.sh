@@ -9,7 +9,7 @@ sed -i 's/📂:/suit:/g' $1
 
 s=${1##*/} && n = "${s%.*}"
 [[ $n == "2" ]] && echo match
-#sed -i "1s|^|sort: $n\n|" $1
+#sed -i "1s|^|---\nsort: $n\n---\n|" $1
 
 IFS=$'\n' read -d '' -r -a array < _Sidebar.md
 echo ${array[2]};
