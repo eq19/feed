@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-#echo $1
 FILE=${1##*/} && SORT=${FILE%.*}
 
 sed -i 's/💎:/sort:/g' $1
@@ -17,4 +16,5 @@ FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n"
 
+echo $FRONT
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
