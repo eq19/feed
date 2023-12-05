@@ -14,5 +14,6 @@ TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
 FRONT+="---\n"
+FRONT+="# $TITLE\n"
 
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
