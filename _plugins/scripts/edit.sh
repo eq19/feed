@@ -10,8 +10,8 @@ sed -i 's/📂:/suit:/g' $1
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
-readarray -t SPIN < exponentiation/span18/spin.csv
-SUIT=${SPIN[$SORT]}
+readarray -t S P I N < exponentiation/span18/spin.csv
+SUIT=${S[$SORT]}
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
