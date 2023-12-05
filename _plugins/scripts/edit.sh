@@ -14,7 +14,7 @@ TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
-FRONT+="suit: $s[$SORT]\n"
+FRONT+="suit: ${s[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
