@@ -26,3 +26,9 @@ FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
 
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "3" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "4" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "5" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "6" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "7" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "8" ]] && sed -i "1s|^|$FRONT|" $1
