@@ -11,6 +11,8 @@ PATH=${1##*/} && SORT=${PATH%.*}
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TITLE=${LINE[2]} && echo "${TITLE%|*}"
 
-if [[ "$SORT" == "2" ]]; then
-  sed -i "1s|^|---\nsort: SORT\n---\n|" $1
-fi
+FRONT="---\n"
+FRONT+="sort: SORT\n"
+FRONT+="---\n"
+
+[[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
