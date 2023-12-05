@@ -10,12 +10,16 @@ sed -i 's/📂:/suit:/g' $1
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
-readarray -t S P I N < exponentiation/span18/spin.csv
-SUIT=${S[$SORT]}
+while IFS=';' read -ra SPIN; do
+  S+=("${SPIN[0]}")
+  P+=("${SPIN[1]}")
+  I+=("${SPIN[2]}")
+  N+=("${SPIN[3]}")
+done < exponentiation/span18/spin.csv
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
-FRONT+="suit: $SUIT\n"
+FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
