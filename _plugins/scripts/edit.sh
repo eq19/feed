@@ -11,7 +11,7 @@ IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
 readarray -t SPIN < exponentiation/span18/spin.csv
-SUIT=${SPIN[$SORT][0]}
+SUIT=${SPIN[$SORT]}
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
