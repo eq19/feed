@@ -10,7 +10,7 @@ sed -i 's/📂:/suit:/g' $1
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
-while IFS=';' read -ra SPIN; do
+while IFS=',' read -ra SPIN; do
   S+=("${SPIN[0]}")
   P+=("${SPIN[1]}")
   I+=("${SPIN[2]}")
