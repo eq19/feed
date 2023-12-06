@@ -25,6 +25,7 @@ FRONT+="---\n"
 FRONT+="# $TITLE\n"
 FRONT+="{% include list.liquid all=true %}\n\n"
 
+[[ "$SORT" == "1" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "3" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "4" ]] && sed -i "1s|^|$FRONT|" $1
@@ -32,6 +33,7 @@ FRONT+="{% include list.liquid all=true %}\n\n"
 [[ "$SORT" == "6" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "7" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "8" ]] && sed -i "1s|^|$FRONT|" $1
+[[ "$SORT" == "9" ]] && sed -i "1s|^|$FRONT|" $1
 
 if [[ "$SORT" == "1" || "$SORT" == "9" ]]; then
   cat $1 >> ${1%/*}/README.md
