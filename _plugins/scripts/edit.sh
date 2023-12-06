@@ -9,16 +9,15 @@ sed -i 's/🚀:/spin:/g' $1
 sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
-MY_DATA = "exponentiation/span18/spin1.txt"
-#cat "${MY_DATA%/*}/spin1.txt" > "${MY_DATA}"
-#cat "${MY_DATA%/*}/spin2.txt" >> "${MY_DATA}"
+cat exponentiation/span18/spin1.txt > /tmp/spin.txt
+cat exponentiation/span18/spin2.txt >> /tmp/spin.txt
 
 while IFS=' ' read -ra SPIN; do
   S+=("${SPIN[0]}")
   P+=("${SPIN[1]}")
   I+=("${SPIN[2]}")
   N+=("${SPIN[3]}")
-done < "${MY_DATA}"
+done < /tmp/spin.txt
 
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
