@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 FILE=${1##*/}
-SORT=${FILE%.*}
+SORT=$((${FILE%.*} + 0))
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
@@ -24,18 +24,9 @@ FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
-[[ "$SORT" == "0" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "1" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "2" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "3" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "4" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "5" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "6" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "7" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "8" ]] && sed -i "1s|^|$FRONT|" $1
-[[ "$SORT" == "9" ]] && sed -i "1s|^|$FRONT|" $1
+[[ $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
 
-if [[ "$SORT" == "0" || "$SORT" == "1" || "$SORT" == "9" ]]; then
+if [[ $SORT -lt 2 || $SORT == 9 ]]; then
   mv -f $1 ${1%/*}/README.md
   sed '1,6!d' ${1%/*}/README.md
 fi
