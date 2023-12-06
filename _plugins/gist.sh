@@ -30,9 +30,7 @@ gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/span1
 gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/span18
 
-find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-#find /tmp/workdir -type f -name "1.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-#find /tmp/workdir -type f -name "9.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/0.md"' sh {} \;
 find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
