@@ -33,7 +33,7 @@ FRONT+="{% include list.liquid all=true %}\n\n"
 [[ "$SORT" == "7" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "8" ]] && sed -i "1s|^|$FRONT|" $1
 
-if [[ "$SORT" == "1" ]]; then
+if [[ "$SORT" == "1" || "$SORT" == "9" ]]; then
   cat $1 >> ${1%/*}/README.md
   rm -rf $1
 fi
