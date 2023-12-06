@@ -25,7 +25,7 @@ FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
 NUM=$(($SORT + 0))
-[[ $NUM =~ ^-?[0-9]+$ && $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
+[[ $NUM =~ ^-?[0-9]+$ && $NUM -le 9 ]] && sed -i "1s|^|$FRONT|" $1
 
 if [[ "$NUM" == "0" || $NUM == 1 || $NUM == 9 ]]; then
   mv -f $1 ${1%/*}/README.md
