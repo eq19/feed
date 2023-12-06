@@ -22,7 +22,7 @@ FRONT="---\n"
 FRONT+="sort: $SORT\n"
 FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
-FRONT+="# $TITLE\n"
+FRONT+="# $TITLE\n\n"
 
 [[ "$SORT" == "0" ]] && sed -i "1s|^|$FRONT|" $1
 [[ "$SORT" == "1" ]] && sed -i "1s|^|$FRONT|" $1
@@ -37,5 +37,5 @@ FRONT+="# $TITLE\n"
 
 if [[ "$SORT" == "0" || "$SORT" == "1" || "$SORT" == "9" ]]; then
   mv -f $1 ${1%/*}/README.md
-  sed '1,7!d' ${1%/*}/README.md
+  sed '1,6!d' ${1%/*}/README.md
 fi
