@@ -24,7 +24,7 @@ FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
-[[ $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
+[[ $SORT =~ ^-?[0-9]+$ && $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
 
 if [[ $SORT == 0 || $SORT == 1 || $SORT == 9 ]]; then
   mv -f $1 ${1%/*}/README.md
