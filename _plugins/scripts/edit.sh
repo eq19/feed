@@ -3,14 +3,14 @@
 FILE=${1##*/}
 SORT=${FILE%.*}
 
-if [[ "$SORT" == "1" ]]; then
-  #cat $1 >> README.md
-fi
-
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
 sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
+
+if [[ "$SORT" == "1" ]]; then
+  #cat $1 >> README.md
+fi
 
 while IFS=' ' read -ra SPIN; do
   S+=("${SPIN[0]}")
