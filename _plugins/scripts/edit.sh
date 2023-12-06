@@ -24,13 +24,13 @@ edit_file () {
   done < /tmp/spin.txt
 
   FRONT="---\n"
-  FRONT+="sort: $2\n"
-  FRONT+="suit: ${S[$2]}\n"
+  FRONT+="sort: $NUM\n"
+  FRONT+="suit: ${S[$NUM]}\n"
   FRONT+="---\n"
   FRONT+="# $TITLE\n\n"
 
   [[ $NUM -le 9 ]] && sed -i "1s|^|$FRONT|" $1
-  if [[ "$SORT" == "0" || "$SORT" == "1" || "$SORT" == "9" ]]; then
+  if [[ $NUM -lt 2 || $NUM == 9 ]]; then
     mv -f $1 ${1%/*}/README.md
     sed '1,6!d' ${1%/*}/README.md
   fi
