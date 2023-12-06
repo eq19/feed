@@ -18,7 +18,7 @@ while IFS=' ' read -ra SPIN; do
   P+=("${SPIN[1]}")
   I+=("${SPIN[2]}")
   N+=("${SPIN[3]}")
-done < $DATA
+done < "$DATA"
 
 IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
 TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
