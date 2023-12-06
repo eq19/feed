@@ -3,7 +3,9 @@
 FILE=${1##*/}
 SORT=${FILE%.*}
 
-#cat $1 >> README.md
+if [[ "$SORT" == "1" ]]; then
+  #cat $1 >> README.md
+fi
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
