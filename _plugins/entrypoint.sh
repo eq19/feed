@@ -69,8 +69,12 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
-  find . -type f -name "*.md" -exec /maps/_plugins/scripts/edit.sh {} \;
-    
+  #find . -type f -name "*.md" -exec /maps/_plugins/scripts/edit.sh {} \;
+
+  find . -type f  -name "*.md" | while read file; do
+    printf '%s\0%s\0%s\n' "${file%/*}" "$(tr -dc / <<< "$file")" "$file"
+  done | sort -t '\0' | awk -F'\0' '{print $3}'
+
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
