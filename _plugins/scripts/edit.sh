@@ -37,5 +37,5 @@ FRONT+="{% include list.liquid all=true %}\n\n"
 
 if [[ "$SORT" == "1" || "$SORT" == "9" ]]; then
   mv -f $1 ${1%/*}/README.md
-  sed '1,8!d' ${1%/*}/README.md
+  sed '1,7!d' ${1%/*}/README.md
 fi
