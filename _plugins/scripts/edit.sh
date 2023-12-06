@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-LINE=$2
-FILE=${1##*/}
+LINE=$1
+FILE=${2##*/}
 SORT=${FILE%.*}
 NUM=$(($SORT + 0))
-TEXT=$LINE[$SORT] && TITLE=${TEXT%|*}
+TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
-sed -i 's/💎:/sort:/g' $1
-sed -i 's/🚀:/spin:/g' $1
-sed -i 's/🔨:/span:/g' $1
-sed -i 's/📂:/suit:/g' $1
+sed -i 's/💎:/sort:/g' $2
+sed -i 's/🚀:/spin:/g' $2
+sed -i 's/🔨:/span:/g' $2
+sed -i 's/📂:/suit:/g' $2
 
 cat exponentiation/span18/spin1.txt > /tmp/spin.txt
 
@@ -32,8 +32,8 @@ FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
-[[ $SORT =~ ^-?[0-9]+$ && $NUM -le 9 ]] && sed -i "1s|^|$FRONT|" $1
+[[ $SORT =~ ^-?[0-9]+$ && $NUM -le 9 ]] && sed -i "1s|^|$FRONT|" $2
 if [[ "$SORT" == "0" || "$SORT" == "1" || "$SORT" == "9" ]]; then
-  mv -f $1 ${1%/*}/README.md
-  sed '1,6!d' ${1%/*}/README.md
+  mv -f $2 ${2%/*}/README.md
+  sed '1,6!d' ${2%/*}/README.md
 fi
