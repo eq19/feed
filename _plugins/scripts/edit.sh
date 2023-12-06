@@ -37,5 +37,5 @@ FRONT+="{% include list.liquid all=true %}\n\n"
 
 if [[ "$SORT" == "1" || "$SORT" == "9" ]]; then
   mv -f $1 ${1%/*}/README.md
-  cat ${1%/*}/README.md
+  cat -8 ${1%/*}/README.md
 fi
