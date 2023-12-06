@@ -71,8 +71,9 @@ jekyll_build() {
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   
-  find . -type f -name "*.md" -exec /maps/_plugins/scripts/edit.sh $LINE {} \;
-
+  #find . -type f -name "*.md" -exec /maps/_plugins/scripts/edit.sh {} \;
+  find . -type f -name "*.md" -prune -exec sh -c '/maps/_plugins/scripts/edit.sh "${LINE}" "${1}"' sh {} \;
+  
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
