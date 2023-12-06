@@ -4,7 +4,7 @@ LINE=$1
 FILE=${2##*/}
 SORT=${FILE%.*}
 NUM=$(($SORT + 0))
-TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
+TEXT="${LINE[$SORT]}" && TITLE=${TEXT%|*}
 
 sed -i 's/💎:/sort:/g' $2
 sed -i 's/🚀:/spin:/g' $2
