@@ -73,7 +73,7 @@ jekyll_build() {
 
   find . -type f  -name "*.md" | while read file; do
     printf '%s\0%s\0%s\n' "${file%/*}" "$(tr -dc / <<< "$file")" "$file"
-  done | sort -t '\0' | awk -F'\0' '{print $3}'
+  done | sort -z | awk -F'\0' '{print $3}'
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
