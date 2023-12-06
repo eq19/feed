@@ -9,7 +9,7 @@ sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
 if [[ "$SORT" == "1" ]]; then
-  cat $1 >> README.md
+  cat $1 >> ${1%/*}/README.md
   rm -rf $1
 fi
 
