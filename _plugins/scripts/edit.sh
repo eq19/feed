@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 FILE=${1##*/}
-SORT=$((${FILE%.*} + 0))
+SORT=${FILE%.*}
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
@@ -24,9 +24,10 @@ FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
-[[ $SORT =~ ^-?[0-9]+$ && $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
+NUM=$(($SORT + 0))
+[[ $NUM =~ ^-?[0-9]+$ && $SORT -le 9 ]] && sed -i "1s|^|$FRONT|" $1
 
-if [[ $SORT == 0 || $SORT == 1 || $SORT == 9 ]]; then
+if [[ "$NUM" == "0" || $NUM == 1 || $NUM == 9 ]]; then
   mv -f $1 ${1%/*}/README.md
   sed '1,6!d' ${1%/*}/README.md
 fi
