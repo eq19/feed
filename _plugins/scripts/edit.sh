@@ -3,6 +3,7 @@
 FILE=${1##*/}
 SORT=${FILE%.*}
 NUM=$(($SORT + 0))
+TEXT=${2[$SORT]} && TITLE=${TEXT%|*}
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
@@ -23,9 +24,6 @@ while IFS=' ' read -ra SPIN; do
   I+=("${SPIN[2]}")
   N+=("${SPIN[3]}")
 done < /tmp/spin.txt
-
-IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
-TEXT=${LINE[$SORT]} && TITLE=${TEXT%|*}
 
 FRONT="---\n"
 FRONT+="sort: $SORT\n"
