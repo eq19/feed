@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
+LINE=$2
 FILE=${1##*/}
 SORT=${FILE%.*}
 NUM=$(($SORT + 0))
-TEXT=${2[$SORT]} && TITLE=${TEXT%|*}
+TEXT=$LINE[$SORT] && TITLE=${TEXT%|*}
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
