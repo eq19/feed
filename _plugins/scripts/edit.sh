@@ -2,6 +2,7 @@
 
 FILE=${1##*/}
 SORT=${FILE%.*}
+NUM=$(($SORT + 0))
 
 sed -i 's/💎:/sort:/g' $1
 sed -i 's/🚀:/spin:/g' $1
@@ -24,7 +25,6 @@ FRONT+="suit: ${S[$SORT]}\n"
 FRONT+="---\n"
 FRONT+="# $TITLE\n\n"
 
-NUM=$(($SORT + 0))
 [[ $SORT =~ ^-?[0-9]+$ && $NUM -le 9 ]] && sed -i "1s|^|$FRONT|" $1
 
 if [[ "$SORT" == "0" || "$SORT" == "1" || "$SORT" == "9" ]]; then
