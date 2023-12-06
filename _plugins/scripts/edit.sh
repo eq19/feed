@@ -9,9 +9,9 @@ sed -i 's/🚀:/spin:/g' $1
 sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
-DATA = "exponentiation/span18/spin.txt"
-cat "${DATA%/*}/spin1.txt" > $DATA
-cat "${DATA%/*}/spin2.txt" >> $DATA
+DATA = "exponentiation/span18/spin1.txt"
+#cat "${DATA%/*}/spin1.txt" > $DATA
+#cat "${DATA%/*}/spin2.txt" >> $DATA
 
 while IFS=' ' read -ra SPIN; do
   S+=("${SPIN[0]}")
