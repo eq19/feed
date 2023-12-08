@@ -71,8 +71,7 @@ jekyll_build() {
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
 
   find . -type f -name 'spin_1.txt' -prune -exec sh -c 'mv -f "$1" "/tmp/spin.txt"' sh {} \;
-  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while IFS= read -r f; do echo "$f"; done
-  #find . -iname 'spin_*.txt' -print0 | sort -n -t _ -k 2 | xargs -0 -I '{}' ed -s /tmp/spin.txt <<< cat '{}'
+  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while IFS= read -r f; do cat "$f" >> tmp/spin.txt; done
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' edit.sh '{}'
   
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
