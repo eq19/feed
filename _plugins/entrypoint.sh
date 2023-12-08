@@ -69,6 +69,11 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
+  cat exponentiation/span18/spin1.txt > /tmp/spin.txt
+  cat exponentiation/span18/spin2.txt >> /tmp/spin.txt
+  cat exponentiation/span18/spin3.txt >> /tmp/spin.txt
+  cat exponentiation/span18/spin4.txt >> /tmp/spin.txt
+
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' edit.sh '{}'
   
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
