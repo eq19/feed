@@ -11,11 +11,6 @@ edit_file () {
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   TEXT="${LINE[$NUM]}" && TITLE=${TEXT%|*}
 
-  cat exponentiation/span18/spin1.txt > /tmp/spin.txt
-  [[ $NUM -ge 10 ]] && cat exponentiation/span18/spin2.txt >> /tmp/spin.txt
-  [[ $NUM -ge 22 ]] && cat exponentiation/span18/spin3.txt >> /tmp/spin.txt
-  [[ $NUM -ge 28 ]] && cat exponentiation/span18/spin4.txt >> /tmp/spin.txt
-
   while IFS=' ' read -ra SPIN; do
     S+=("${SPIN[0]}")
     P+=("${SPIN[1]}")
