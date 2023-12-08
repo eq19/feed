@@ -68,8 +68,8 @@ jekyll_build() {
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
+  mv -f exponentiation/span18/spin1.txt > /tmp/spin.txt
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
-  cat exponentiation/span18/spin1.txt > /tmp/spin.txt
   cat exponentiation/span18/spin2.txt >> /tmp/spin.txt
   cat exponentiation/span18/spin3.txt >> /tmp/spin.txt
   cat exponentiation/span18/spin4.txt >> /tmp/spin.txt
