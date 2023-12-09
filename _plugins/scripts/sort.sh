@@ -9,10 +9,10 @@ edit_file () {
     O+=("${SORT[1]}")
     R+=("${SORT[2]}")
     T+=("${SORT[3]}")
+    echo "${SORT[0]} ${SORT[1]} ${SORT[2]} ${SORT[3]} ${SORT[0]}" >> /tmp/spin.txt
   done < $1
 
-  sed -e "s/$/ ${S[@]}/" -i $1
-  cat $1
+  cat /tmp/spin.txt
   
 }
 
