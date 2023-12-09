@@ -16,6 +16,8 @@ edit_file () {
     R+=("${PRIMES[1]}")
     I+=("${PRIMES[2]}")
     M+=("${PRIMES[3]}")
+    E+=("${PRIMES[4]}")
+    S+=("${PRIMES[5]}")
   done < /tmp/spin.txt
 
   FRONT="---\n"
