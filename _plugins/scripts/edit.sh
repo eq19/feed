@@ -11,18 +11,20 @@ edit_file () {
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   TEXT="${LINE[$NUM]}" && TITLE=${TEXT%|*}
 
-  while IFS=' ' read -ra PRIMES; do
-    P+=("${PRIMES[0]}")
+  while IFS=' ' read -ra TRACKING; do
+    T+=("${PRIMES[0]}")
     R+=("${PRIMES[1]}")
-    I+=("${PRIMES[2]}")
-    M+=("${PRIMES[3]}")
-    E+=("${PRIMES[4]}")
-    S+=("${PRIMES[5]}")
+    A+=("${PRIMES[2]}")
+    C+=("${PRIMES[3]}")
+    K+=("${PRIMES[4]}")
+    I+=("${PRIMES[5]}")
+    N+=("${PRIMES[6]}")
+    G+=("${PRIMES[7]}")
   done < /tmp/spin.txt
 
   FRONT="---\n"
   FRONT+="sort: $NUM\n"
-  FRONT+="suit: ${P[$NUM]}\n"
+  FRONT+="suit: ${T[$NUM]}\n"
   FRONT+="---\n"
   FRONT+="# $TITLE\n\n"
 
