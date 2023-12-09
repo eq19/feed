@@ -75,7 +75,7 @@ jekyll_build() {
     do cat "$f" >> /tmp/spin.txt; done
   #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' edit.sh '{}'
   find . -iname '*.md' | sort -zn | while IFS= read -r f; 
-    do echo "$f"; done
+    do [[ $f =~ ^-?[0-9]+$ ]] && echo "$f"; done
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
