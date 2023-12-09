@@ -9,9 +9,9 @@ edit_file () {
     O+=("${SORT[1]}")
     R+=("${SORT[2]}")
     T+=("${SORT[3]}")
-  done < /tmp/spin.txt
+  done < $1
 
-  sed -e 's/$/ '$S'/' -i $1
+  sed -e "s/$/ ${S[@]}/" -i $1
   cat $1
   
 }
