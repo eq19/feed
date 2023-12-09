@@ -12,6 +12,7 @@ edit_file () {
   done < /tmp/spin.txt
 
   sed -e 's/$/ '$S'/' -i $1
+  cat $1
   
 }
 
