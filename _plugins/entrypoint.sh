@@ -73,7 +73,7 @@ jekyll_build() {
 
   #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
   find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while IFS= read -r f; 
-    do cat "$f" >> /tmp/spin.txt; done
+    do cat $f >> /tmp/spin.txt; done
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' $1 $2 $3
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
