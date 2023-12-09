@@ -27,10 +27,5 @@ edit_file () {
   fi
 }
 
-sed -i 's/💎:/sort:/g' $1
-sed -i 's/🚀:/spin:/g' $1
-sed -i 's/🔨:/span:/g' $1
-sed -i 's/📂:/suit:/g' $1
-
-FILE=${1##*/} && SORT=${FILE%.*}
-[[ $SORT =~ ^-?[0-9]+$ ]] && edit_file $1 $SORT
+FILE=${1##*/} && NAME=${FILE%.*}
+[[ "$NAME" == "spin_1" ]] && cat $1
