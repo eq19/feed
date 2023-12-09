@@ -12,14 +12,14 @@ edit_file () {
   TEXT="${LINE[$NUM]}" && TITLE=${TEXT%|*}
 
   while IFS=' ' read -ra TRACKING; do
-    T+=("${PRIMES[0]}")
-    R+=("${PRIMES[1]}")
-    A+=("${PRIMES[2]}")
-    C+=("${PRIMES[3]}")
-    K+=("${PRIMES[4]}")
-    I+=("${PRIMES[5]}")
-    N+=("${PRIMES[6]}")
-    G+=("${PRIMES[7]}")
+    T+=("${TRACKING[0]}")
+    R+=("${TRACKING[1]}")
+    A+=("${TRACKING[2]}")
+    C+=("${TRACKING[3]}")
+    K+=("${TRACKING[4]}")
+    I+=("${TRACKING[5]}")
+    N+=("${TRACKING[6]}")
+    G+=("${TRACKING[7]}")
   done < /tmp/spin.txt
 
   FRONT="---\n"
