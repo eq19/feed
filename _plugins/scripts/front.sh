@@ -17,7 +17,7 @@ edit_file () {
 
   FRONT="---\n"
   FRONT+="sort: $NUM\n"
-  FRONT+="suit: ${T[$NUM]}\n"
+  FRONT+="suit: ${K[$NUM]}\n"
   FRONT+="---\n"
   
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
