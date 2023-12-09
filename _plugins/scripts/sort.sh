@@ -2,7 +2,7 @@
 
 edit_file () {
 
-  NUM=$(($1 + 0))
+  #NUM=$(($1 + 0))
 
   while IFS=' ' read -ra SORT; do
     S+=("${SORT[0]}")
