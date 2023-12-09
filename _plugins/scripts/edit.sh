@@ -11,15 +11,15 @@ edit_file () {
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   TEXT="${LINE[$NUM]}" && TITLE=${TEXT%|*}
 
-  while IFS=' ' read -ra TRACKING; do
-    T+=("${TRACKING[0]}")
-    R+=("${TRACKING[1]}")
-    A+=("${TRACKING[2]}")
-    C+=("${TRACKING[3]}")
-    K+=("${TRACKING[4]}")
-    I+=("${TRACKING[5]}")
-    N+=("${TRACKING[6]}")
-    G+=("${TRACKING[7]}")
+  while IFS=' ' read -ra SPIN; do
+    T+=("${SPIN[0]}")
+    R+=("${SPIN[1]}")
+    A+=("${SPIN[2]}")
+    C+=("${SPIN[3]}")
+    K+=("${SPIN[4]}")
+    I+=("${SPIN[5]}")
+    N+=("${SPIN[6]}")
+    G+=("${SPIN[7]}")
   done < /tmp/spin.txt
 
   FRONT="---\n"
