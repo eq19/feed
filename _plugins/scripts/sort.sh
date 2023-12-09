@@ -2,8 +2,6 @@
 
 edit_file () {
 
-  #NUM=$(($1 + 0))
-
   while ((i++)); IFS=' ' read -ra SORT; do
 
     SPIN="${i}"
@@ -21,5 +19,5 @@ edit_file () {
   
 }
 
-FILE=${1##*/} && NAME=${FILE%.*}
-[[ "$NAME" == "spin_1" ]] && edit_file $1
+FILE=${1##*_} && NAME=${FILE%.*}
+[[ $(($NAME + 0)) == 1 ]] && edit_file $1
