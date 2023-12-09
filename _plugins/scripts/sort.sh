@@ -11,11 +11,11 @@ edit_file () {
     R+=("${SORT[2]}")
     T+=("${SORT[3]}")
 
-    SPIN = "${SORT[0]} "
-    SPIN += "${SORT[1]} "
-    SPIN += "${SORT[2]} "
-    SPIN += "${SORT[3]} "
-    SPIN += "${SORT[0]}"
+    SPIN="${SORT[0]} "
+    SPIN+="${SORT[1]} "
+    SPIN+="${SORT[2]} "
+    SPIN+="${SORT[3]} "
+    SPIN+="${SORT[0]}"
     
     echo "${SPIN}" >> /tmp/spin.txt
 
