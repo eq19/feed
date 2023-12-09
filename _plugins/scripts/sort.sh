@@ -11,6 +11,7 @@ edit_file () {
     T+=("${SORT[3]}")
   done < /tmp/spin.txt
 
+  sed -e 's/$/ '$S'/' -i $1
   
 }
 
