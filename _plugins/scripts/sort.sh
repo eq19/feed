@@ -20,4 +20,4 @@ edit_file () {
 }
 
 FILE=${1##*_} && NAME=${FILE%.*}
-[[ $(($NAME + 0)) == 1 ]] && edit_file $1
+[[ $(($NAME + 0)) < 3 ]] && edit_file $1
