@@ -72,7 +72,7 @@ jekyll_build() {
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
   find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
 
-  #cat /tmp/spin.txt
+  cat /tmp/spin.txt
   #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' $1 $2 $3
 
