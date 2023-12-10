@@ -70,13 +70,10 @@ jekyll_build() {
   echo -e "\n$hr\nBUILD\n$hr"
   rm -rf /tmp/spin.txt && touch /tmp/spin.txt
   sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
+  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
 
-  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++));
-    IFS= read -r f; do sort.sh $f; done
-
-  cat /tmp/spin.txt
-  #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
-  find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' $1 $2 $3
+  cat /tmp/spin.txt && find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
+  #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' $1 $2 $3
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
