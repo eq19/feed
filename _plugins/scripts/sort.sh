@@ -8,6 +8,9 @@ edit_file () {
     O+=("${SORT[1]}")
     R+=("${SORT[2]}")
     T+=("${SORT[3]}")
+    I+=("${SORT[1]}")
+    N+=("${SORT[2]}")
+    G+=("${SORT[3]}")
 
   done < /tmp/spin.txt
 
