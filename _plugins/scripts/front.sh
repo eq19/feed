@@ -29,7 +29,7 @@ edit_file () {
   [[ $NUM -le 10 ]] && sed -i "1s|^|$FRONT|" $1
   if [[ $NUM -lt 2 || $NUM == 9 ]]; then
     mv -f $1 ${1%/*}/README.md
-    sed '1,6!d' ${1%/*}/README.md
+    sed '1,8!d' ${1%/*}/README.md
   fi
 }
 
