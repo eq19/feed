@@ -17,7 +17,7 @@ edit_file () {
 
   while ((j++)); IFS=' ' read -ra SORT; do
 
-    SPIN="$(( i + j ))"
+    SPIN="$((i+j-1))"
     SPIN+=" ${SORT[0]}"
     SPIN+=" ${SORT[1]}"
     SPIN+=" ${SORT[2]}"
