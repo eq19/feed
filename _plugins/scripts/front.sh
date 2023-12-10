@@ -17,6 +17,8 @@ edit_file () {
 
   FRONT="---\n"
   FRONT+="sort: $NUM\n"
+  FRONT+="spin: ${G[$NUM]}\n"
+  FRONT+="span: ${N[$NUM]}\n"
   FRONT+="suit: ${I[$NUM]}\n"
   FRONT+="---\n"
   
