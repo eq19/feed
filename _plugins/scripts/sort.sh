@@ -15,8 +15,6 @@ edit_file () {
 
   done < $1
 
-  cat /tmp/spin.txt
-  
 }
 
 FILE=${1##*_} && NAME=${FILE%.*}
