@@ -96,7 +96,7 @@ git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
 
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
-[[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
+#[[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
 git add . && git commit -m "update workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get structure on gist files
