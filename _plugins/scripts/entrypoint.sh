@@ -63,7 +63,8 @@ jekyll_build() {
   echo -e "\n$hr\nWORKSPACE\n$hr"
   cd /tmp/workdir && cp -R /tmp/gistdir/* .
   NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
-  [[ ! -f README.md ]] && wget -O README.md ${NR} &>/dev/null
+  #[[ ! -f README.md ]] && wget -O README.md ${NR} &>/dev/null
+  rm -rf README.md && cp /tmp/workdir/exponentiation/span16/README.md .
   mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
