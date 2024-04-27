@@ -4,7 +4,7 @@ rm -rf /tmp/workdir /tmp/gistdir
 
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
-gh release view --json name,body,tagName --jq '.body' -R eq19/feed
+#gh release view --json name,body,tagName --jq '.body' -R eq19/feed
 
 git ls-remote ${WIKI} > /dev/null 2>&1
 if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
