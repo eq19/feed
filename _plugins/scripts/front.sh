@@ -20,11 +20,12 @@ edit_file () {
   FRONT+="spin: ${G[$NUM]}\n"
   FRONT+="span: ${N[$NUM]}\n"
   FRONT+="suit: ${I[$NUM]}\n"
-  FRONT+="---\n"
   
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
-  TEXT="${LINE[$NUM]}" && TITLE=${TEXT%|*}
-  FRONT+="# $TITLE\n\n"
+  
+  TEXT="${LINE[$NUM]}" 
+  FRONT+="desc: ${TEXT%|*}\n"
+  FRONT+="---\n# ${TEXT%|*}\n\n"
 
   [[ $NUM -le 10 ]] && sed -i "1s|^|$FRONT|" $1
   if [[ $NUM -lt 2 || $NUM == 9 ]]; then
