@@ -24,8 +24,8 @@ edit_file () {
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   
   TEXT="${LINE[$NUM]}" 
-  FRONT+="desc: ${TEXT%|*}\n"
-  FRONT+="---\n# ${TEXT%|*}\n\n"
+  FRONT+="desc: ${TEXT##*|}\n"
+  FRONT+="---\n# ${TEXT%%|*}\n\n"
 
   [[ $NUM -le 10 ]] && sed -i "1s|^|$FRONT|" $1
   if [[ $NUM -lt 2 || $NUM == 9 ]]; then
