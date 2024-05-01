@@ -6,9 +6,10 @@ WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 #gh release view --json name,body,tagName --jq '.body' -R eq19/feed
 
-git ls-remote ${WIKI} > /dev/null 2>&1
-if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
-else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
+#git ls-remote ${WIKI} > /dev/null 2>&1
+#if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
+#else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
+git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
 mv -f /tmp/workdir/virtual /maps/_includes/virtual && mkdir /tmp/gistdir
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/identition/span1
