@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 
+rm -rf /tmp/workdir /tmp/gistdir
 
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 #gh release view --json name,body,tagName --jq '.body' -R eq19/feed
 
-#git ls-remote ${WIKI} > /dev/null 2>&1
-#if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
-
-rm -rf /tmp/workdir /tmp/wikidir /tmp/gistdir && mkdir /tmp/gistdir
-git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/0.md
-git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
+git ls-remote ${WIKI} > /dev/null 2>&1
+if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
+else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
+mv -f /tmp/workdir/virtual /maps/_includes/virtual && mkdir /tmp/gistdir
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/identition/span1
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/span2
@@ -32,9 +31,8 @@ gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/span1
 gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/span18
 
-#find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/0.md"' sh {} \;
+find /tmp/workdir -type f -name "Home.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/0.md"' sh {} \;
 find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/gistdir -type d -name "span17" -prune -exec sh -c 'rm -rf "$1/README.md" && cp -R /tmp/wikidir/* "$1"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 find /tmp/gistdir -type f -name "*zone.md" -prune -exec sh -c 'mkdir --parent "${1%_*}" && mv -f "$1" "${1%_*}/README.md"' sh {} \;
