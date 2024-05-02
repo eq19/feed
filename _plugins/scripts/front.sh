@@ -25,7 +25,7 @@ edit_file () {
   
   TEXT="${LINE[$NUM]}" 
   FRONT+="desc: ${TEXT##*|}\n"
-  FRONT+="redirect_to: http://www.google.com\n"
+  #FRONT+="redirect_to: http://www.google.com\n"
   FRONT+="---\n# ${TEXT%%|*}\n\n"
 
   [[ $NUM -le 10 ]] && sed -i "1s|^|$FRONT|" $1
