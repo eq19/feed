@@ -7,7 +7,12 @@ WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
 git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/0.md
+find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+
 git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
+find /tmp/wikidir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
+find /tmp/wikidir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/identition/span1
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/span2
@@ -28,9 +33,6 @@ gh gist clone b9f901cda16e8a11dd24ee6b677ca288 /tmp/gistdir/exponentiation/span1
 gh gist clone dc30497160f3389546d177da901537d9 /tmp/gistdir/exponentiation/span16
 gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/span18
-
-find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 
 find /tmp/gistdir -type d -name "span17" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
 find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \; && find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
