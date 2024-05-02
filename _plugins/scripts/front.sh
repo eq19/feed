@@ -24,7 +24,7 @@ edit_file () {
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
   
   TEXT="${LINE[$NUM]}" 
-  FRONT+="desc: ${TEXT##*|}\n"
+  FRONT+="description: ${TEXT##*|}\n"
   #FRONT+="redirect_to: http://www.google.com\n"
   FRONT+="---\n# ${TEXT%%|*}\n\n"
 
