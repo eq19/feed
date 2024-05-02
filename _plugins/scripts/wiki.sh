@@ -27,5 +27,3 @@ gh gist clone e84a0961dc7636c01d5953d19d65e30a $1/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef $1/exponentiation/span18
 
 rm -rf $1/README.md && cp -R /tmp/wikidir/* $1
-find $1/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find $1/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
