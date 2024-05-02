@@ -57,7 +57,7 @@ jekyll_build() {
   
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml
-  gist.sh $1 ${OWNER} $3 #&>/dev/null
+  gist.sh $1 ${OWNER} $3 &>/dev/null
   cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
@@ -76,7 +76,7 @@ jekyll_build() {
   cat /tmp/spin.txt
   #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' $1 $2 $3
-
+ls -R /tmp/workdir/exponentiation/span17
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
