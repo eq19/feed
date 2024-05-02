@@ -21,9 +21,9 @@ edit_file () {
   FRONT+="span: ${N[$NUM]}\n"
   FRONT+="suit: ${I[$NUM]}\n"
   
-  IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md
+  IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md; TEXT="${LINE[$NUM]}"; unset IFS;
+  IFS=':'; arrIN=($TEXT); unset IFS;
   
-  TEXT="${LINE[$NUM]}" 
   FRONT+="description: ${TEXT##*|}\n"
   #FRONT+="redirect_to: http://www.eq19.com\n"
   FRONT+="---\n# ${TEXT%%|*}\n\n"
