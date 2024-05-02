@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
+rm -rf /tmp/*dir
+mkdir /tmp/gistdir
+
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
-rm -rf /tmp/workdir /tmp/wikidir /tmp/gistdir && mkdir /tmp/gistdir
 git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/0.md
 git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
 
