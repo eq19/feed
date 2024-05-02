@@ -33,6 +33,7 @@ plugins:
   - jekyll-paginate
   - jekyll-coffeescript
   - jekyll-readme-index
+  - jekyll-redirect-from
   - jekyll-default-layout
   - jekyll-relative-links
   - jekyll-github-metadata
