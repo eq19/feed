@@ -57,7 +57,8 @@ jekyll_build() {
   
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml
-  gist.sh $1 ${OWNER} span16 &>/dev/null
+  FOLDER="span"$(( 17 - $3 ))
+  gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   cat /maps/_config.yml
 
   echo -e "\n$hr\nWORKSPACE\n$hr"
