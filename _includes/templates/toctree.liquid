@@ -12,7 +12,7 @@
         <li class="toc level-{{ level }} {{ current }}" data-sort="{{ item.sort }}" data-level="{{ level }}">
             <a class="d-flex flex-items-baseline {{ current }}" href="{{ spin_url }}">
                 {%- if item.spin -%}
-                    {{ item.spin }}-- {{ item.title | default: item.name }}
+                    {{ item.spin }}. {{ item.title | default: item.name }}
                 {%- else -%}
                     {{ item.title | default: item.name }}
                 {%- endif -%}
