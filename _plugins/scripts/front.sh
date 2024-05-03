@@ -2,6 +2,7 @@
 
 edit_file () {
 
+  ID=$(($2 + 0))
   NUM=$(($3 + 0))
 
   while IFS=' ' read -ra SPIN; do
@@ -26,7 +27,12 @@ edit_file () {
       FRONT+="span: ${N[$NUM]}\n"
       FRONT+="suit: ${I[$NUM]}\n"  
       FRONT+="description: ${TEXT##*|}\n"
-      #FRONT+="redirect_to: http://www.eq19.com\n"
+      if [[ $NUM == 31 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/maps/exponentiation/span17/\n"; fi
+      if [[ $NUM == 32 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/feed/exponentiation/span16/\n"; fi
+      if [[ $NUM == 33 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/lexer/exponentiation/span15/\n"; fi
+      if [[ $NUM == 34 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/parser/exponentiation/span14/\n"; fi
+      if [[ $NUM == 35 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/syntax/exponentiation/span13/\n"; fi
+      if [[ $NUM == 37 && $ID != $NUM ]] then FRONT+="redirect_to: https://www.eq19.com/grammar/exponentiation/span12/\n"; fi
       FRONT+="---\n# ${TEXT%%|*}\n\n"
       sed -i "1s|^|$FRONT|" $1
     fi
