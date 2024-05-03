@@ -32,7 +32,7 @@ edit_file () {
       if [[ $NUM == 33 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/lexer/exponentiation/span15/\n"; fi
       if [[ $NUM == 34 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/parser/exponentiation/span14/\n"; fi
       if [[ $NUM == 35 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/syntax/exponentiation/span13/\n"; fi
-      if [[ $NUM == 37 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/grammar/exponentiation/span12/\n"; fi
+      if [[ $NUM == 37 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/grammar/identition/span12/\n"; fi
       FRONT+="---\n# ${TEXT%%|*}\n\n"
       sed -i "1s|^|$FRONT|" $1
     fi
