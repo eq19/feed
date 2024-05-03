@@ -2,7 +2,7 @@
 
 edit_file () {
 
-  NUM=$(($2 + 0))
+  NUM=$(($3 + 0))
 
   while IFS=' ' read -ra SPIN; do
     T+=("${SPIN[0]}")
@@ -44,4 +44,4 @@ sed -i 's/🔨:/span:/g' $1
 sed -i 's/📂:/suit:/g' $1
 
 FILE=${1##*/} && SORT=${FILE%.*}
-[[ $SORT =~ ^-?[0-9]+$ ]] && edit_file $1 $SORT
+[[ $SORT =~ ^-?[0-9]+$ ]] && edit_file $1 $2 $SORT
