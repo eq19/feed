@@ -7,8 +7,10 @@
         {%- capture current -%}
             {%- if page.url == item.url %}current{% endif -%}
         {%- endcapture %}
+        {%- assign spin_url = item.url | relative_url -%}
+        {%- include common/rest/spinurl.liquid %}
         <li class="toc level-{{ level }} {{ current }}" data-sort="{{ item.sort }}" data-level="{{ level }}">
-            <a class="d-flex flex-items-baseline {{ current }}" href="{{ item.url | relative_url }}">
+            <a class="d-flex flex-items-baseline {{ current }}" href="{{ spin_url }}">
                 {%- if item.spin -%}
                     {{ item.spin }}. {{ item.title | default: item.name }}
                 {%- else -%}
@@ -19,13 +21,5 @@
     {%- endfor %}
 </ul>
 
-{% comment %}
-list the root dirs 
-      if [[ $NUM == 31 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/maps/exponentiation/span17/\n"; fi
-      if [[ $NUM == 32 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/feed/exponentiation/span16/\n"; fi
-      if [[ $NUM == 33 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/lexer/exponentiation/span15/\n"; fi
-      if [[ $NUM == 34 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/parser/exponentiation/span14/\n"; fi
-      if [[ $NUM == 35 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/syntax/exponentiation/span13/\n"; fi
-      if [[ $NUM == 37 && $ID != $NUM ]]; then FRONT+="redirect_to: https://www.eq19.com/grammar/identition/span12/\n"; fi
-{% endcomment %}
+{% comment %}list the root dirs{% endcomment %}
 {%- for workdir in workdir_dirs %}{% include templates/_toctree.liquid %}{% endfor -%}
