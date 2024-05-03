@@ -54,10 +54,12 @@ jekyll_build() {
 
   [[ "${OWNER}" != "eq19" ]] && PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
   [[ -n "$PROPERTY" ]] && sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
-  
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
-  sed -i "1s|^|id: $(( $3 + 31 ))\n|" /maps/_config.yml
+  
+  SITEID="$(( $3 + 31 ))"
   FOLDER="span$(( 17 - $3 ))"
+
+  sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   cat /maps/_config.yml
 
