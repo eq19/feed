@@ -21,9 +21,13 @@ edit_file () {
   FRONT+="span: ${N[$NUM]}\n"
   FRONT+="suit: ${I[$NUM]}\n"
   
-  IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md; TEXT="${LINE[$NUM]}"; unset IFS;
-  IFS=':'; arrIN=($TEXT); unset IFS;
-  
+  IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md; unset IFS;
+  for ((i=0; i < ${#LINE[@]}; i++)); do
+    TEXT="${LINE[$i]}";
+    IFS='|'; array=($TEXT); unset IFS;
+    if [[ "${array[1]}" == "${NUM}" ]]; then echo "${array[0]}"; fi
+  done
+    
   FRONT+="description: ${TEXT##*|}\n"
   #FRONT+="redirect_to: http://www.eq19.com\n"
   FRONT+="---\n# ${TEXT%%|*}\n\n"
@@ -31,7 +35,7 @@ edit_file () {
   #[[ $NUM -le 19 ]] && sed -i "1s|^|$FRONT|" $1
   if [[ $NUM -lt 2 || $NUM == 18 || $NUM -gt 29 ]]; then
     mv -f $1 ${1%/*}/README.md
-    sed '1,8!d' ${1%/*}/README.md
+    #sed '1,8!d' ${1%/*}/README.md
   fi
 }
 
