@@ -6,7 +6,7 @@ mkdir /tmp/gistdir
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
-git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/0.md
+git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 
