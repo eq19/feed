@@ -28,7 +28,7 @@ edit_file () {
   #FRONT+="redirect_to: http://www.eq19.com\n"
   FRONT+="---\n# ${TEXT%%|*}\n\n"
 
-  [[ $NUM -le 19 ]] && sed -i "1s|^|$FRONT|" $1
+  #[[ $NUM -le 19 ]] && sed -i "1s|^|$FRONT|" $1
   if [[ $NUM -lt 2 || $NUM == 18 ]]; then
     mv -f $1 ${1%/*}/README.md
     sed '1,8!d' ${1%/*}/README.md
