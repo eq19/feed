@@ -9,8 +9,8 @@
         {%- endcapture %}
         <li class="toc level-{{ level }} {{ current }}" data-sort="{{ item.sort }}" data-level="{{ level }}">
             <a class="d-flex flex-items-baseline {{ current }}" href="{{ item.url | relative_url }}">
-                {%- if item.suit -%}
-                    {{ item.suit }}. {{ item.title | default: item.name }}
+                {%- if item.spin -%}
+                    {{ item.spin }}. {{ item.title | default: item.name }}
                 {%- else -%}
                     {{ item.title | default: item.name }}
                 {%- endif -%}
