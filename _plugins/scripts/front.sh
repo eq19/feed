@@ -28,7 +28,7 @@ edit_file () {
       FRONT+="description: ${TEXT##*|}\n"
       #FRONT+="redirect_to: http://www.eq19.com\n"
       FRONT+="---\n# ${TEXT%%|*}\n\n"
-      [[ $NUM -le 19 ]] && sed -i "1s|^|$FRONT|" $1
+      sed -i "1s|^|$FRONT|" $1
     fi
   done
   
