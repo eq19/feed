@@ -7,12 +7,7 @@ WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
 git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
-find /tmp/workdir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/workdir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-
 git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
-find /tmp/wikidir/identition -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
-find /tmp/wikidir/exponentiation -type f -name "*.md" -prune -exec sh -c 'mv -f "$1" "${1%/*}/README.md"' sh {} \;
 
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 /tmp/gistdir/identition/span1
 gh gist clone b32915925d9d365e2e9351f0c4ed786e /tmp/gistdir/identition/span2
