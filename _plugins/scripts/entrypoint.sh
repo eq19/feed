@@ -73,7 +73,7 @@ jekyll_build() {
   sed -i 's/0. \[\[//g' /tmp/Sidebar.md && sed -i 's/\]\]//g' /tmp/Sidebar.md
 
   find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}'
-  find . -type d -name "$FOLDER" -prune -exec sh -c '/tmp/README.md >> $1/README.md' sh {} \;
+  find . -type d -name "${FOLDER}" -prune -exec sh -c 'cat /tmp/README.md >> $1/README.md' sh {} \;
   
   echo -e "\n$hr\nWORKSPACE\n$hr"
   #NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
