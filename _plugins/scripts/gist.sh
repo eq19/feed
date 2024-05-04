@@ -37,4 +37,5 @@ find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
 if [[ "${WIKI}" != "${BASE}" ]]; then
   git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
   find /tmp/gistdir -type d -name "$3" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
+  cat /tmp/spin.txt
 fi
