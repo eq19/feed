@@ -43,6 +43,5 @@ edit_file () {
 rm -rf /tmp/spin.txt && touch /tmp/spin.txt
 find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
 
-cat /tmp/spin.txt
 sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
 find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' edit_file '{}'
