@@ -38,8 +38,8 @@ git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/README.m
 find /tmp/gisdir -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
 
 if [[ "${WIKI}" != "${BASE}" ]]; then
-  rm -rf /tmp/spin.txt && touch /tmp/spin.txt
   git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
   find /tmp/gistdir -type d -name "$3" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
+else
   cat /tmp/spin.txt
 fi
