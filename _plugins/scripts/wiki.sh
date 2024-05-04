@@ -21,4 +21,4 @@ gh gist clone e84a0961dc7636c01d5953d19d65e30a $1/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef $1/exponentiation/span18
 
 find $1 -type f -name "README.md" -exec rm -rf {} \;
-cp -R /tmp/wikidir/* $1
+cd $1 && cp -R /tmp/wikidir/* . && front.sh
