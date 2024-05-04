@@ -60,12 +60,10 @@ jekyll_build() {
   sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
+  echo -e "\n$hr\nSPIN\n$hr"
   FOLDER="span$(( 17 - $3 ))"
   gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
-
-  echo -e "\n$hr\nSPIN\n$hr"
-  cd /tmp/gistdir && front.sh
   cd /tmp/workdir && front.sh && cp -R /tmp/gistdir/* .
   
   echo -e "\n$hr\nWORKSPACE\n$hr"
