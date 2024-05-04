@@ -75,7 +75,6 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   rm -rf /tmp/spin.txt && touch /tmp/spin.txt
-  sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
   find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
 
   cat /tmp/spin.txt
