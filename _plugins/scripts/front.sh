@@ -16,6 +16,7 @@ edit_file () {
     G+=("${SPIN[7]}")
   done < /tmp/spin.txt
 
+  sed -i 's/0. \[\[//g' _Sidebar.md && sed -i 's/\]\]//g' _Sidebar.md
   IFS=$'\n' read -d '' -r -a LINE < _Sidebar.md; unset IFS;
   for ((i=0; i < ${#LINE[@]}; i++)); do
     TEXT="${LINE[$i]}";
