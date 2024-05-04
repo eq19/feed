@@ -7,11 +7,14 @@ track:
   pinned: [maps, feed, lexer, parser, syntax, grammar]
   organization: [FeedMapping, GlobalZones, HybridModels, InsightsMonitor, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, WeakNegative, WeakPositive, ZeroWeak]
 
-example: site.track.pinned[0]=maps
+example: site.track.pinned[0] = "maps"
 
 {%- endcomment -%}
 
-{%- if dir_spin == 31 and site_id != 31 -%}{%- assign dir_url = "https://www.eq19.com/maps/exponentiation/span17/" -%}{%- endif -%}
+{%- if dir_spin == 31 and site_id != 31 -%}
+    {%- assign dir_url = "https://www.eq19.com/" | append site.track.pinned[0] | append: "/exponentiation/span17/" -%}
+{%- endif -%}
+
 {%- if dir_spin == 32 and site_id != 32 -%}{%- assign dir_url = "https://www.eq19.com/feed/exponentiation/span16/" -%}{%- endif -%}
 {%- if dir_spin == 33 and site_id != 33 -%}{%- assign dir_url = "https://www.eq19.com/lexer/exponentiation/span15/" -%}{%- endif -%}
 {%- if dir_spin == 34 and site_id != 34 -%}{%- assign dir_url = "https://www.eq19.com/parser/exponentiation/span14/" -%}{%- endif -%}
