@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-#git ls-remote ${WIKI} > /dev/null 2>&1
-#if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
-#else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
-#gh release view --json name,body,tagName --jq '.body' -R eq19/feed
-#mv -f /tmp/workdir/virtual /maps/_includes/virtual && mkdir /tmp/gistdir
-
 gh gist clone 0ce5848f7ad62dc46dedfaa430069857 $1/identition/span1
 gh gist clone b32915925d9d365e2e9351f0c4ed786e $1/identition/span2
 gh gist clone 88d09204b2e5986237bd66d062406fde $1/identition/span3
@@ -26,4 +20,5 @@ gh gist clone dc30497160f3389546d177da901537d9 $1/exponentiation/span16
 gh gist clone e84a0961dc7636c01d5953d19d65e30a $1/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef $1/exponentiation/span18
 
-rm -rf $1/README.md && cp -R /tmp/wikidir/* $1
+find $1 -type f -name "README.md" -exec rm -rf {} \;
+cp -R /tmp/wikidir/* $1
