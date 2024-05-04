@@ -32,8 +32,9 @@ gh gist clone e84a0961dc7636c01d5953d19d65e30a /tmp/gistdir/exponentiation/span1
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef /tmp/gistdir/exponentiation/span18
 
 git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
-git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
-
 find /tmp/gistdir -type f -name "README.md" -exec rm -rf {} \;
-find /tmp/gistdir -type d -name "$3" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
-find /tmp/gistdir -type f -name "*zone.md" -prune -exec sh -c 'mkdir --parent "${1%_*}" && mv -f "$1" "${1%_*}/README.md"' sh {} \;
+
+if [[ "${WIKI}" != "${BASE}" ]]; then
+  git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
+  find /tmp/gistdir -type d -name "$3" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
+fi
