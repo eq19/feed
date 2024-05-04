@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 rm -rf /tmp/*dir
-mkdir /tmp/gistdir
 
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
