@@ -66,9 +66,6 @@ jekyll_build() {
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
   
   cd /tmp/workdir 
-  cat /tmp/spin.txt && rm -rf /tmp/spin.txt && touch /tmp/spin.txt
-  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
-
   rm -rf /tmp/Sidebar.md && cp _Sidebar.md /tmp/Sidebar.md
   sed -i 's/0. \[\[//g' /tmp/Sidebar.md && sed -i 's/\]\]//g' /tmp/Sidebar.md
 
