@@ -57,25 +57,25 @@ jekyll_build() {
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   
   SITEID="$(( $3 + 31 ))"
-  FOLDER="span$(( 17 - $3 ))"
-
   sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
-  gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   cat /maps/_config.yml
-
-  echo -e "\n$hr\nWORKSPACE\n$hr"
+ 
+  FOLDER="span$(( 17 - $3 ))"
+  gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
-  cd /tmp/workdir && cp -R /tmp/gistdir/* .
+
+  echo -e "\n$hr\nSPIN\n$hr"
+  cd /tmp/gistdir && front.sh
+  cd /tmp/workdir && front.sh && cp -R /tmp/gistdir/* .
   
-  NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
+  echo -e "\n$hr\nWORKSPACE\n$hr"
+  #NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
   #[[ ! -f README.md ]] && wget -O README.md ${NR} &>/dev/null
   #rm -rf README.md && cp /tmp/workdir/exponentiation/span16/README.md .
   mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
-  front.sh
-
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
