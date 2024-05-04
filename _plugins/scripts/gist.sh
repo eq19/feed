@@ -6,6 +6,12 @@ mkdir /tmp/gistdir
 WIKI=https://github.com/$2/$1.wiki.git
 BASE=https://github.com/eq19/eq19.github.io.wiki.git
 
+#git ls-remote ${WIKI} > /dev/null 2>&1
+#if [[ $? == 0 ]]; then git clone $WIKI /tmp/workdir;
+#else git clone $BASE /tmp/workdir && rm -rf /tmp/workdir/Home.md; fi
+#gh release view --json name,body,tagName --jq '.body' -R eq19/feed
+#mv -f /tmp/workdir/virtual /maps/_includes/virtual && mkdir /tmp/gistdir
+
 git clone $BASE /tmp/workdir && mv -f /tmp/workdir/Home.md /tmp/workdir/README.md
 git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
 
