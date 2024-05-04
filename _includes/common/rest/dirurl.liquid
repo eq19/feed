@@ -1,9 +1,23 @@
 {%- assign site_id = site.id | times: 1 -%}
 {%- assign dir_spin = dir.spin | times: 1 -%}
+
+{%- comment -%}
+track:
+  spin: [11, 6]
+  pinned: [maps, feed, lexer, parser, syntax, grammar]
+  organization: [FeedMapping, GlobalZones, HybridModels, InsightsMonitor, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, WeakNegative, WeakPositive, ZeroWeak]
+
+example: site.track.pinned[0]=maps
+
+{%- endcomment -%}
+
 {%- if dir_spin == 31 and site_id != 31 -%}{%- assign dir_url = "https://www.eq19.com/maps/exponentiation/span17/" -%}{%- endif -%}
 {%- if dir_spin == 32 and site_id != 32 -%}{%- assign dir_url = "https://www.eq19.com/feed/exponentiation/span16/" -%}{%- endif -%}
 {%- if dir_spin == 33 and site_id != 33 -%}{%- assign dir_url = "https://www.eq19.com/lexer/exponentiation/span15/" -%}{%- endif -%}
 {%- if dir_spin == 34 and site_id != 34 -%}{%- assign dir_url = "https://www.eq19.com/parser/exponentiation/span14/" -%}{%- endif -%}
 {%- if dir_spin == 35 and site_id != 35 -%}{%- assign dir_url = "https://www.eq19.com/syntax/exponentiation/span13/" -%}{%- endif -%}
 {%- if dir_spin == 37 and site_id != 36 -%}{%- assign dir_url = "https://www.eq19.com/grammar/identition/span12/" -%}{%- endif -%}
-{%- if dir_spin == 39 and site_id != 37 -%}{%- assign dir_url = "https://feedmapping.github.io/identition/span11/" -%}{%- endif -%}
+
+{%- if dir_spin == 39 and site_id != 37 -%}
+    {%- assign dir_url = "https://{{ site.track.organization[0] }}.github.io/identition/span11/" -%}
+{%- endif -%}
