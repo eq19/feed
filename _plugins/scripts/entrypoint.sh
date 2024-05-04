@@ -64,7 +64,16 @@ jekyll_build() {
   FOLDER="span$(( 17 - $3 ))"
   gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
-  cd /tmp/workdir && front.sh && cp -R /tmp/gistdir/* .
+  
+  cd /tmp/workdir 
+  rm -rf /tmp/spin.txt && touch /tmp/spin.txt
+  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
+
+  rm -rf /tmp/Sidebar.md && cp _Sidebar.md /tmp/Sidebar.md
+  sed -i 's/0. \[\[//g' /tmp/Sidebar.md && sed -i 's/\]\]//g' /tmp/Sidebar.md
+
+  find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}'
+  cp -R /tmp/gistdir/* .
   
   echo -e "\n$hr\nWORKSPACE\n$hr"
   #NR=$(cat /tmp/gist_files | awk "NR==$(( $3 + 2 ))")
