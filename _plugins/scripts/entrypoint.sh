@@ -74,12 +74,7 @@ jekyll_build() {
   cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
-  rm -rf /tmp/spin.txt && touch /tmp/spin.txt
-  find . -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
-
-  cat /tmp/spin.txt
-  #find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' echo '{}'
-  find . -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}' ${SITEID}
+  front.sh
 
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
   JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
