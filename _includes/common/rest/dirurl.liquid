@@ -13,9 +13,11 @@ example: site.track.pinned[0] = "maps"
 
 {%- endcomment -%}
 
-{%- if dir_spin == 31 and site_id != 31 -%}
-    {%- assign dir_url = "https://www.eq19.com/" | append site.track.pinned[0] | append: "/exponentiation/span17/" -%}
-{%- endif -%}
+{%- for item in site.track.pinned -%}
+    {%- if dir_spin == 31 and site_id != 31 -%}
+        {%- assign dir_url = "https://www.eq19.com/" | append site.track.pinned[0] | append: "/exponentiation/span17/" -%}
+    {%- endif -%}
+{%- endfor -%}
 
 {%- if dir_spin == 32 and site_id != 32 -%}{%- assign dir_url = "https://www.eq19.com/feed/exponentiation/span16/" -%}{%- endif -%}
 {%- if dir_spin == 33 and site_id != 33 -%}{%- assign dir_url = "https://www.eq19.com/lexer/exponentiation/span15/" -%}{%- endif -%}
@@ -23,9 +25,11 @@ example: site.track.pinned[0] = "maps"
 {%- if dir_spin == 35 and site_id != 35 -%}{%- assign dir_url = "https://www.eq19.com/syntax/exponentiation/span13/" -%}{%- endif -%}
 {%- if dir_spin == 37 and site_id != 36 -%}{%- assign dir_url = "https://www.eq19.com/grammar/identition/span12/" -%}{%- endif -%}
 
-{%- if dir_spin == 39 and site_id != 37 -%}
-    {%- assign dir_url = "https://" | append: site.track.organization[0] | append: ".github.io/identition/span11/" -%}
-{%- endif -%}
+{%- for item in site.track.organization -%}
+    {%- if dir_spin == 39 and site_id != 37 -%}
+        {%- assign dir_url = "https://" | append: site.track.organization[0] | append: ".github.io/identition/span11/" -%}
+    {%- endif -%}
+{%- endfor -%}
 
 {%- if dir_spin == 40 and site_id != 40 -%}{%- assign dir_url = "https://globalzones.github.io/identition/span10/" -%}{%- endif -%}
 {%- if dir_spin == 42 and site_id != 42 -%}{%- assign dir_url = "https://hybridmodels.github.io/identition/span9/" -%}{%- endif -%}
