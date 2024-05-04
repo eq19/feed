@@ -30,3 +30,4 @@ rm -rf /tmp/Sidebar.md && cp $1/_Sidebar.md /tmp/Sidebar.md
 sed -i 's/0. \[\[//g' /tmp/Sidebar.md && sed -i 's/\]\]//g' /tmp/Sidebar.md
 
 find $1 -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}'
+cat /tmp/spin.txt
