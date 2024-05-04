@@ -21,7 +21,7 @@ gh gist clone e84a0961dc7636c01d5953d19d65e30a $1/exponentiation/span17
 gh gist clone e9832026b5b78f694e4ad22c3eb6c3ef $1/exponentiation/span18
 
 find $1 -type f -name "README.md" -exec rm -rf {} \;
-cp -R /tmp/wikidir/* $1
+rm -rf /tmp/wikidir/README.md && cp -R /tmp/wikidir/* $1
 
 rm -rf /tmp/spin.txt && touch /tmp/spin.txt
 find $1 -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)); IFS= read -r f; do sort.sh $f $i; done
@@ -30,3 +30,4 @@ rm -rf /tmp/Sidebar.md && cp $1/_Sidebar.md /tmp/Sidebar.md
 sed -i 's/0. \[\[//g' /tmp/Sidebar.md && sed -i 's/\]\]//g' /tmp/Sidebar.md
 
 find $1 -iname '*.md' -print0 | sort -zn | xargs -0 -I '{}' front.sh '{}'
+#find /tmp/workdir -type d -name "$3" -prune -exec sh -c '$1/*.md >> /tmp/wikidir/README.md' sh {} \;
