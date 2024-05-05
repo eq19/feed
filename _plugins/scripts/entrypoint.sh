@@ -50,7 +50,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
-  sed -i "1s|^|builder: ${OWNER}/$1\n|" /maps/_config.yml
+  sed -i "1s|^|builder: ${OWNER}/${REPO}\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
 
   [[ "${OWNER}" != "eq19" ]] && PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
