@@ -35,10 +35,10 @@ example: site.track.pinned[0] = "maps"
     {%- assign num = 11 | minus: forloop.index0 %}
     {%- assign spin = organization[forloop.index0] | times: 1 -%}
     {%- assign span = "/identition/span" | append: num | append: "/" -%}
-    {%- assign repo = item | append: "/" | append: item | append: "github.io" %}
+    {%- assign repo = item | append: "/" | append: item | append: ".github.io" %}
 
     {%- if dir_spin == spin and site.repository != repo -%}
-        {%- assign dir_url = "https://" | append: item  | append: "github.io" | append: span -%}
+        {%- assign dir_url = "https://" | append: item  | append: ".github.io" | append: span -%}
     {%- endif -%}
 
 {%- endfor -%}
