@@ -1,12 +1,12 @@
 {%- assign site_id = site.id | times: 1 -%}
 {%- assign dir_spin = dir.spin | times: 1 -%}
-{%- assign pinned = "31,32,33,34,35" | split: ',' -%}
+{%- assign pinned = "31,32,33,34,35,37" | split: ',' -%}
 {%- assign organization = "39,40,42,44,48,50,54,56,60,66,68" | split: ',' -%}
 
 {%- comment -%}
 track:
   spin: [11, 6]
-  pinned: [maps, feed, lexer, parser, syntax]
+  pinned: [maps, feed, lexer, parser, syntax, grammar]
   organization: [FeedMapping, GlobalZones, HybridModels, InsightsMonitor, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, WeakNegative, WeakPositive, ZeroWeak]
 
 example: site.track.pinned[0] = "maps"
@@ -18,17 +18,17 @@ note: the pinned item "grammar" need to be treated separately due to the transit
     {%- assign repo = "eq19/" | append: item %}
     {%- assign num = 17 | minus: forloop.index0 %}
     {%- assign spin = pinned[forloop.index0] | times: 1 -%}
-    {%- assign span = "/exponentiation/span" | append: num | append: "/" -%}
+    {%- if item != "grammar"}
+        {%- assign span = "/exponentiation/span" | append: num | append: "/" -%}
+    {%- else -%}
+        {%- assign span = "/identition/span" | append: num | append: "/" -%}
+    {%- endif -%}
 
     {%- if dir_spin == spin and site.repository != repo -%}
         {%- assign dir_url = "https://www.eq19.com/" | append: item | append: span -%}
     {%- endif -%}
 
 {%- endfor -%}
-
-{%- if dir_spin == 37 and site.repository != "eq19/grammar" -%}
-    {%- assign dir_url = "https://www.eq19.com/grammar/identition/span12/" -%}
-{%- endif -%}
 
 {%- for item in site.track.organization -%}
 
