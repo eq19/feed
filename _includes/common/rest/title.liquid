@@ -16,6 +16,8 @@
             | append: site.title | truncate: 110 -%}
     {%- else -%}
         {%- assign title = page.title | default: page.name
-            | append: " · "
+            | append: " - "
+            | append: docs.project_tagline
+            | append: " | "
             | append: site.title | truncate: 110 -%}
 {%- endcase -%}
