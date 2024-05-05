@@ -2,7 +2,8 @@
     {%- when "/" -%}
         {%- assign title = site.title
             | append: " · "
-            | append: page.title | default: page.name
+            | append: docs.latest_release.name 
+            | default: page.title
             | append: " | "
             | append: site.description | truncate: 110 -%}
     {%- when "/search.html" -%}
