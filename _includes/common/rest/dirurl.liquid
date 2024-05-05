@@ -6,11 +6,11 @@
 {%- comment -%}
 track:
   spin: [11, 6]
-  pinned: [maps, feed, lexer, parser, syntax, grammar]
+  pinned: [maps, feed, lexer, parser, syntax]
   organization: [FeedMapping, GlobalZones, HybridModels, InsightsMonitor, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, WeakNegative, WeakPositive, ZeroWeak]
 
 example: site.track.pinned[0] = "maps"
-
+note: the pinned item "grammar" need to be treated separately due to the transition of span between "exponentiation" and "identition".
 {%- endcomment -%}
 
 {%- for item in site.track.pinned -%}
