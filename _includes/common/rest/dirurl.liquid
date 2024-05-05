@@ -18,7 +18,7 @@ note: the pinned item "grammar" need to be treated separately due to the transit
     {%- assign repo = "eq19/" | append: item %}
     {%- assign num = 17 | minus: forloop.index0 %}
     {%- assign spin = pinned[forloop.index0] | times: 1 -%}
-    {%- if item != "grammar"}
+    {%- if item != "grammar" -%}
         {%- assign span = "/exponentiation/span" | append: num | append: "/" -%}
     {%- else -%}
         {%- assign span = "/identition/span" | append: num | append: "/" -%}
