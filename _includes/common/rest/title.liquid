@@ -1,10 +1,10 @@
 {%- case page.url -%}
     {%- when "/" -%}
         {%- assign title = site.title
-            | append: " · "
+            | append: " | "
             | append: docs.latest_release.name 
             | default: page.title
-            | append: " | "
+            | append: " - "
             | append: site.description | truncate: 110 -%}
     {%- when "/search.html" -%}
         {%- assign title = __.search | default: "Search"
