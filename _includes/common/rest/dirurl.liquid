@@ -21,7 +21,7 @@ example: site.track.pinned[0] = "maps"
     {%- assign span = "/exponentiation/span" | append: num | append: "/" -%}
 
     {%- if dir_spin == spin and site.repository != repo -%}
-        {%- assign dir_url = "https://www.eq19.com/" | append item | append: span -%}
+        {%- assign dir_url = "https://www.eq19.com/" | append: item | append: span -%}
     {%- endif -%}
 
 {%- endfor -%}
@@ -38,7 +38,7 @@ example: site.track.pinned[0] = "maps"
     {%- assign repo = item | append: "/" | append: item | append: "github.io" %}
 
     {%- if dir_spin == spin and site.repository != repo -%}
-        {%- assign dir_url = "https://" | append: site.track.organization[0] | append: ".github.io/identition/span11/" -%}
+        {%- assign dir_url = "https://" | append: item  | append: "github.io" | append: span -%}
     {%- endif -%}
 
 {%- endfor -%}
