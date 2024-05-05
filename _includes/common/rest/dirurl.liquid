@@ -1,6 +1,6 @@
 {%- assign site_id = site.id | times: 1 -%}
 {%- assign dir_spin = dir.spin | times: 1 -%}
-{%- assign pinned = "31,32,33,34,35,37" | split: ',' -%}
+{%- assign pinned = "31,32,33,34,35" | split: ',' -%}
 {%- assign organization = "39,40,42,44,48,50,54,56,60,66,68" | split: ',' -%}
 
 {%- comment -%}
@@ -14,30 +14,31 @@ example: site.track.pinned[0] = "maps"
 {%- endcomment -%}
 
 {%- for item in site.track.pinned -%}
-    {%- if dir_spin == 31 and site_id != 31 -%}
-        {%- assign dir_url = "https://www.eq19.com/" | append site.track.pinned[0] | append: "/exponentiation/span17/" -%}
+
+    {%- assign repo = "eq19/" | append: item %}
+    {%- assign num = 17 | minus: forloop.index0 %}
+    {%- assign spin = pinned[forloop.index0] | times: 1 -%}
+    {%- assign span = "/exponentiation/span" | append: num | append: "/" -%}
+
+    {%- if dir_spin == spin and site.repository != repo -%}
+        {%- assign dir_url = "https://www.eq19.com/" | append item | append: span -%}
     {%- endif -%}
+
 {%- endfor -%}
 
-{%- if dir_spin == 32 and site_id != 32 -%}{%- assign dir_url = "https://www.eq19.com/feed/exponentiation/span16/" -%}{%- endif -%}
-{%- if dir_spin == 33 and site_id != 33 -%}{%- assign dir_url = "https://www.eq19.com/lexer/exponentiation/span15/" -%}{%- endif -%}
-{%- if dir_spin == 34 and site_id != 34 -%}{%- assign dir_url = "https://www.eq19.com/parser/exponentiation/span14/" -%}{%- endif -%}
-{%- if dir_spin == 35 and site_id != 35 -%}{%- assign dir_url = "https://www.eq19.com/syntax/exponentiation/span13/" -%}{%- endif -%}
-{%- if dir_spin == 37 and site_id != 36 -%}{%- assign dir_url = "https://www.eq19.com/grammar/identition/span12/" -%}{%- endif -%}
+{%- if dir_spin == 37 and site.repository != "eq19/grammar" -%}
+    {%- assign dir_url = "https://www.eq19.com/grammar/identition/span12/" -%}
+{%- endif -%}
 
 {%- for item in site.track.organization -%}
-    {%- if dir_spin == 39 and site_id != 37 -%}
+
+    {%- assign num = 10 | minus: forloop.index0 %}
+    {%- assign spin = organization[forloop.index0] | times: 1 -%}
+    {%- assign span = "/identition/span" | append: num | append: "/" -%}
+    {%- assign repo = item | append: "/" | append: item | append: "github.io" %}
+
+    {%- if dir_spin == spin and site.repository != repo -%}
         {%- assign dir_url = "https://" | append: site.track.organization[0] | append: ".github.io/identition/span11/" -%}
     {%- endif -%}
-{%- endfor -%}
 
-{%- if dir_spin == 40 and site_id != 40 -%}{%- assign dir_url = "https://globalzones.github.io/identition/span10/" -%}{%- endif -%}
-{%- if dir_spin == 42 and site_id != 42 -%}{%- assign dir_url = "https://hybridmodels.github.io/identition/span9/" -%}{%- endif -%}
-{%- if dir_spin == 44 and site_id != 44 -%}{%- assign dir_url = "https://insightsmonitor.github.io/identition/span8/" -%}{%- endif -%}
-{%- if dir_spin == 48 and site_id != 48 -%}{%- assign dir_url = "https://junctionterms.github.io/identition/span7/" -%}{%- endif -%}
-{%- if dir_spin == 50 and site_id != 50 -%}{%- assign dir_url = "https://kernelpaterns.github.io/identition/span6/" -%}{%- endif -%}
-{%- if dir_spin == 54 and site_id != 54 -%}{%- assign dir_url = "https://mappingsystem.github.io/identition/span5/" -%}{%- endif -%}
-{%- if dir_spin == 56 and site_id != 56 -%}{%- assign dir_url = "https://neuralsystem.github.io/identition/span4/" -%}{%- endif -%}
-{%- if dir_spin == 60 and site_id != 60 -%}{%- assign dir_url = "https://weaknegative.github.io/identition/span3/" -%}{%- endif -%}
-{%- if dir_spin == 66 and site_id != 66 -%}{%- assign dir_url = "https://weakpositive.github.io/identition/span2/" -%}{%- endif -%}
-{%- if dir_spin == 68 and site_id != 68 -%}{%- assign dir_url = "https://zeroweak.github.io/identition/span1/" -%}{%- endif -%}
+{%- endfor -%}
