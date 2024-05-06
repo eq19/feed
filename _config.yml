@@ -1,12 +1,12 @@
+title: eQuantum
 description: Mapping the Quantum Way acrross Prime Identity
 
-debug:
-  dist: true
-  compress: true
-  shortcodes: true
+#debug:
+#  dist: true
+#  compress: true
+#  shortcodes: true
 
 lsi: false
-title: eQuantum
 incremental: false
 highlighter: rouge
 
@@ -16,7 +16,6 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-# folders sort
 readme_index:
   with_frontmatter: true
 
