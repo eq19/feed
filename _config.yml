@@ -1,7 +1,7 @@
 description: Mapping the Quantum Way acrross Prime Identity
 
 debug:
-  dist: false
+  dist: true
   compress: true
   shortcodes: true
 
