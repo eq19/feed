@@ -1,9 +1,9 @@
 description: Mapping the Quantum Way acrross Prime Identity
 
-# debug:
-#   dist: false
-#   compress: true
-#   shortcodes: true
+debug:
+  dist: false
+  compress: true
+  shortcodes: true
 
 lsi: false
 title: eQuantum
