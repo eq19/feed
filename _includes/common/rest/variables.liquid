@@ -46,10 +46,9 @@
 {%- endcapture -%}
 
 {% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
-{%- assign pageUrlWithHost = "https://feedmapping.github.io/identition/span11/" -%}
 {%- if site.repository contains "eq19" -%}
-    {%- assign pageHost = "https://eq19.com" | append: site.baseURL | append: page.url -%}
+    {%- assign pageUrlWithHost = "https://eq19.com" | append: site.baseurl | append: page.url -%}
 {%- else -%}
-    {%- assign baseHost = site.repository | split: "/" | first -%}
-    {%- assign pageHost = "https://" | append: baseHost | append: "github.io' -%}
+    {%- assign pageHost = site.repository | split: "/" | first -%}
+    {%- assign pageUrlWithHost = "https://" | append: pageHost | append: "github.io' | append: site.baseurl | append: page.url -%}
 {%- endif -%}
