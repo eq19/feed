@@ -3,7 +3,7 @@ layout: tasks/shortcodes
 ---
 
 {%- if site.debug.compress == false -%}
-    {{ content }}
+    {{ content | replace: "", ""}}
 {%- else -%}
     {%- if content contains "<pre" -%}
         {%- assign content_blocks = content | split: "<pre" -%}
