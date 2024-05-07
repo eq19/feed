@@ -22,4 +22,4 @@
 {% endunless -%}
 
 {% comment %}list the root dirs{% endcomment %}
-{%- for workdir in workdir_dirs %}{% unless workdir == empty %}{% include templates/_toctree.liquid %}{% endunless %}{% endfor -%}
+{%- for workdir in workdir_dirs %}{% include templates/_toctree.liquid %}{% endfor -%}
