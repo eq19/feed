@@ -23,6 +23,7 @@ Theory of Everything* - Mapping the Quantum Way acrross Prime Identity | eQuantu
         {%- assign title = page.title | default: page.name
             | append: " - "
             | append: docs.project_tagline
+            | truncate: 100
             | append: " | "
-            | append: site.title | truncate: 110 -%}
+            | append: site.title -%}
 {%- endcase -%}
