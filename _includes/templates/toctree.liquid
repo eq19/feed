@@ -1,7 +1,7 @@
 {%- include common/rest/workdir.liquid %}
 
 {% comment %} list the root files {% endcomment %}
-<ul title="_toctree">
+<ul title="toctree">
     {%- for item in workdir_files -%}
         {%- assign level = item.dir | append: "temp" | replace_first: "/", "" | split: "/" | size -%}
         {%- capture current -%}
