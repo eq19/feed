@@ -1,8 +1,6 @@
-{%- title = page.title
-    | default: page.name -%}
 {%- assign description = content
+    | replace: page.title, ""
     | strip_html
-    | replace: title, ""
     | split: " "
     | join: " "
     | escape
