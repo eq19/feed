@@ -7,7 +7,7 @@
 {%- assign rest_updated_at = rest.updated_at | default: site.time -%}
 
 {%- comment %} defaults {% endcomment -%}
-{%- assign direction = site.direction | default: "auto" -%}
+{%- assign direction = site.direction | default: "ltr" -%}
 {%- assign lang = site.lang | default: "en" -%}
 {%- assign author = docs.owner.name | default: docs.owner_name -%}
 
