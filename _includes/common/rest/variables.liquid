@@ -50,5 +50,5 @@
     {%- assign pageUrlWithHost = "https://eq19.com" | append: site.baseurl | append: page.url -%}
 {%- else -%}
     {%- assign pageHost = site.repository | split: "/" | first -%}
-    {%- assign pageUrlWithHost = "https://" | append: pageHost | append: "github.io' | append: site.baseurl | append: page.url -%}
+    {%- assign pageUrlWithHost = "https://" | append: pageHost | append: "github.io" | append: site.baseurl | append: page.url -%}
 {%- endif -%}
