@@ -1,10 +1,9 @@
-{%- stripTitle = page.title
-    | default: page.name
-    | append = " " -%}
+{%- title = page.title
+    | default: page.name -%}
 {%- assign description = content
     | strip_html
+    | replace: title, ""
     | split: " "
     | join: " "
     | escape
-    | replace: stripTitle, ""
     | truncate: 150 -%}
