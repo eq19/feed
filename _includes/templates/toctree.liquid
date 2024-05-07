@@ -1,6 +1,7 @@
-{%- include common/rest/workdir.liquid %}
+{%- include common/rest/workdir.liquid -%}
 
 {% comment %} list the root files {% endcomment %}
+{%- unless workdir_files == empty -%}
 <ul title="toctree">
     {%- for item in workdir_files -%}
         {%- assign level = item.dir | append: "temp" | replace_first: "/", "" | split: "/" | size -%}
@@ -18,6 +19,7 @@
         </li>
     {%- endfor %}
 </ul>
+{% endunless -%}
 
 {% comment %}list the root dirs{% endcomment %}
-{%- for workdir in workdir_dirs %}{% include templates/_toctree.liquid %}{% endfor -%}
+{%- for workdir in workdir_dirs %}{% unless workdir == empty %}{% include templates/_toctree.liquid %}{% endunless %}{% endfor -%}
