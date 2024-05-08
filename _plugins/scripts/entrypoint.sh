@@ -12,6 +12,7 @@ set_target() {
       cat " " >> /tmp/pinned_repo
       pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" >> /tmp/pinned_repo
     fi
+     cat /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
