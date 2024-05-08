@@ -5,7 +5,7 @@
 set_target() {
   
   # Get Structure
-    if [[ $2 == *"github.io"* ]]; then
+  if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
     pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
