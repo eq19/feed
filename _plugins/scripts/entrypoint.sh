@@ -30,7 +30,7 @@ set_target() {
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
     if [[ -n "$CELL" ]]; then
-      pinned_repos.rb ${ENTRY} public | yq eval -P | sed "s/ /, /g" >> /tmp/pinned_repo
+      pinned_repos.rb ${ENTRY} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
       sed -i "1s|^|maps, feed, lexer, parser, syntax, grammar, |" /tmp/pinned_repo
     fi
   else
