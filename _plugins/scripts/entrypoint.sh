@@ -29,7 +29,7 @@ set_target() {
     SPAN=0; echo ${array[0]}
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
-    [[ -n "$CELL" ]] && pinned_repos.rb "eq19" public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    [[ -n "$CELL" ]] && pinned_repos.rb ${ENTRY} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
   else
     for ((i=0; i < ${#array[@]}; i++)); do
       if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then SPAN=$(( $i + 1 )); echo ${array[$SPAN]}; fi
