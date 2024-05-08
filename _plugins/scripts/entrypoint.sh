@@ -7,11 +7,8 @@ set_target() {
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( CELL * 7 ))
-    pinned_repos.rb eq19 public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
-    if [[ "${OWNER}" != "eq19" ]]; then
-      pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/spinned_repo
-    fi
-     cat /tmp/pinned_repo
+    pinned_repos.rb eq19 public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo && cat /tmp/pinned_repo
+    pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/spinned_repo && cat /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
     gh api -H "${HEADER}" /user/orgs  --jq '.[].login' | sort -uf | yq eval -P | sed "s/ /, /g" > /tmp/user_orgs
@@ -44,7 +41,7 @@ set_target() {
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
   if [[ -n "$CELL" ]]; then
     echo "  spin: [${CELL}, ${SPAN}]" >> /maps/_config.yml
-    echo "  pinned: [$(cat /tmp/pinned_repo),$(cat /tmp/spinned_repo)]" >> /maps/_config.yml
+    echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
   return $(( $SPAN + $SPIN ))
