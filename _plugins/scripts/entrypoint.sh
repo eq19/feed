@@ -47,9 +47,12 @@ set_target() {
   if [[ -n "$CELL" ]]; then
     SPANPLUS=$(($SPAN + 1))
     if [[ "${CELL}" == "0" ]]; then MOD = 7; else MOD = 13; fi
-    if (( $SPANPLUS == $MOD )); then 
+    if [[ "${SPANPLUS}" == "${MOD}" ]]; then 
       SPANPLUS=0
       CELLPLUS=$(($CELL + 1))
+      if [[ "${CELLPLUS}" == "12" ]]; then
+        CELLPLUS=0
+      fi
     else
       CELLPLUS=$(($CELL + 0))
     fi
