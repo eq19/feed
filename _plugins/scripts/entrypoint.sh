@@ -46,11 +46,11 @@ set_target() {
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
   if [[ -n "$CELL" ]]; then
     SPANPLUS=$(($SPAN + 1))
-    if [[ "${CELL}" == "0" ]]; then MOD = 7; else MOD = 13; fi
-    if [[ "${SPANPLUS}" == "${MOD}" ]]; then 
+    if (( $CELL == 0 )); then MOD = 7; else MOD = 13; fi
+    if (( $SPANPLUS == $MOD )); then 
       SPANPLUS=0
       CELLPLUS=$(($CELL + 1))
-      if [[ "${CELLPLUS}" == "12" ]]; then
+      if (( $CELLPLUS == 12 )); then
         CELLPLUS=0
       fi
     else
