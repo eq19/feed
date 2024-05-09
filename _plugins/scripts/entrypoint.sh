@@ -44,9 +44,9 @@ set_target() {
   
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
-  if [[ -n "$CELL" ]]; then
-    if [[ "${CELL}" == "0" ]]; then SPANMOD=$(((SPAN + 1) % 7)); else SPANMOD=$(((SPAN + 1) % 13)); fi
-    [[ "${SPANMOD}" == "0" ]] && CELLMOD=$(((CELL + 1)) % 12))
+  if [[ -n "$CELL" ]]; them
+    if [[ "${CELL}" == "0" ]]; then SPANMOD=$((($SPAN + 1) % 7)); else SPANMOD=$((($SPAN + 1) % 13)); fi
+    [[ "${SPANMOD}" == "0" ]] && CELLMOD=$((($CELL + 1)) % 12))
     echo "  spin: [${CELLMOD}, ${SPANMOD}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
