@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
-    [[ -n "$CELL" ]] && SPIN=$(( CELL * 13 - 7))
+    [[ -n "$CELL" ]] && SPIN=$(( CELL * 13 - 6))
     pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     [[ "${OWNER}" != "eq19" ]] && sed -i "1s|^|maps, feed, lexer, parser, syntax, grammar, |" /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
@@ -31,6 +31,7 @@ set_target() {
   elif [[ "${array[-1]}" == "$1" ]]; then
     SPAN=${#array[@]}; echo $2 | sed "s|${OWNER}.github.io|${ENTRY}.github.io|g"
     if [[ -n "$CELL" ]]; then
+    
       pinned_repos.rb ${ENTRY} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
       [[ "${ENTRY}" != "eq19" ]] && sed -i "1s|^|maps, feed, lexer, parser, syntax, grammar, |" /tmp/pinned_repo
     fi
