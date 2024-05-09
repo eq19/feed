@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+I'm#!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
@@ -45,12 +45,7 @@ set_target() {
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
   if [[ -n "$CELL" ]]; then
-    SPANPLUS=$((SPAN + 1))
-    if [[ "${CELL}" == "0" ]]; then SPANMOD=$((SPANPLUS % 7)); else SPANMOD=$((SPANPLUS % 13)); fi
-    if [[ "${SPANMOD}" == "0" ]]; then CELLMOD=$((CELL + 1)); fi
-    if [[ "${CELLMOD}" == "12" ]]; then CELLMOD="0"; fi
-    
-    echo "  spin: [${CELLMOD}, ${SPANMOD}]" >> /maps/_config.yml
+    echo "  spin: [${CELL}, ${SPAN}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
