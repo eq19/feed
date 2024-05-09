@@ -57,11 +57,11 @@ jekyll_build() {
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
 
-  if  [[ "${OWNER}" != "eq19" ]]; then
+  if  [[ "${OWNER}" == "eq19" ]]; then
+    sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
+  else
     DESCRIPTION=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.description')
     sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /maps/_config.yml
-  else
-    sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
   fi
   
   sed -i "1s|^|builder: ${REPO}/actions\n|" /maps/_config.yml
