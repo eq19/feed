@@ -43,7 +43,7 @@ set_target() {
   fi
   
   # Generate id from the Structure
-  [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=7; fi
+  [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
   if [[ -n "$CELL" ]]; then
     echo "  spin: [${CELL}, ${SPAN}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
