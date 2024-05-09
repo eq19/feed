@@ -6,7 +6,7 @@ set_target() {
   
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
-    [[ -n "$CELL" ]] && SPIN=$(( CELL * 13 - 6))
+    [[ -n "$CELL" ]] && SPIN=$((CELL * 13 - 6))
     pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     [[ "${OWNER}" != "eq19" ]] && sed -i "1s|^|maps, feed, lexer, parser, syntax, grammar, |" /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
@@ -45,8 +45,9 @@ set_target() {
   # Generate id from the Structure
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
   if [[ -n "$CELL" ]]; then
-    if [[ "${CELL}" == "0" ]]; then SPANMOD=$(($((SPAN + 1)) % 7)); else SPANMOD=$(($((SPAN + 1)) % 13)); fi
-    [[ "${SPANMOD}" == "0" ]] && CELLMOD=$(($((CELL + 1)) % 12))
+    CELLPLUS=$((CELL + 1)) && SPANPLUS=$((SPAN + 1))
+    if [[ "${CELL}" == "0" ]]; then SPANMOD=$((SPANPLUS % 7)); else SPANMOD=$((SPANPLUS % 13)); fi
+    [[ "${SPANMOD}" == "0" ]] && CELLMOD=$((CELLPLUS % 12))
     
     echo "  spin: [${CELLMOD}, ${SPANMOD}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
