@@ -47,7 +47,7 @@ set_target() {
   if [[ -n "$CELL" ]]; then
     CELLPLUS=$((CELL + 1)) && SPANPLUS=$((SPAN + 1))
     if [[ "${CELL}" == "0" ]]; then SPANMOD=$((SPANPLUS % 7)); else SPANMOD=$((SPANPLUS % 13)); fi
-    [[ "${SPANMOD}" == "0" ]] && CELLMOD=$((CELLPLUS % 12))
+    if [[ "${SPANMOD}" == "0" ]]; then CELLMOD=$((CELLPLUS % 12)); fi
     
     echo "  spin: [${CELLMOD}, ${SPANMOD}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
