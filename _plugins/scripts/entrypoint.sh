@@ -46,9 +46,13 @@ set_target() {
   [[ -z "$SPIN" ]] && if [[ "$1" != "$2" ]]; then SPIN=0; else SPIN=13; fi
   if [[ -n "$CELL" ]]; then
     SPANPLUS=$(($SPAN + 1))
-    if (( $SPANPLUS % 13 == 0 ))
-
-    echo "  spin: [${CELL}, ${SPAN}]" >> /maps/_config.yml
+    if (( $SPANPLUS == 7 )); then 
+      SPANPLUS=0
+      CELLPLUS=$(($CELL + 1))
+    else
+      CELLPLUS=$(($CELL + 0))
+    fi
+    echo "  spin: [${CELLPLUS}, ${SPANPLUS}]" >> /maps/_config.yml
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
