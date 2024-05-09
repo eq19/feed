@@ -56,17 +56,20 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
-  sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
+
+  [[ "${OWNER}" != "eq19" ]] && DESCRIPTION=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.description')
+  if [[ -n "$DESCRIPTION" ]]; then
+    sed -i "1s|^|description: ${DESCRIPTION}\n|" /maps/_config.yml
+  else
+    sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
+  fi
+  
   sed -i "1s|^|builder: ${REPO}/actions\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
 
-  [[ "${OWNER}" != "eq19" ]] && PROPERTY=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.name')
-  [[ -n "$PROPERTY" ]] && sed -i "1s|^|property: ${PROPERTY}\n|" /maps/_config.yml
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
-  
-  SITEID="$(( $3 + 18 ))"
-  sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
+  SITEID="$(( $3 + 18 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
   echo -e "\n$hr\nSPIN\n$hr"
