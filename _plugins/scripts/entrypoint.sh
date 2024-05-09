@@ -57,7 +57,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
   [[ $1 == *"github.io"* ]] && OWNER=$2
-  sed -i "1s|^|description:  An attempt to discover the Final Theory\n|" /maps/_config.yml
+  sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
   sed -i "1s|^|builder: ${REPO}/actions\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
