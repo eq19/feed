@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+ok#!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
@@ -36,7 +36,7 @@ set_target() {
     fi
   else
     for ((i=0; i < ${#array[@]}; i++)); do
-      if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}-1" ]]; then 
+      if [[ "${array[$i]}" == "$1" && "$i" -lt "${#array[@]}" ]]; then 
         SPAN=$(( $i + 1 )); echo ${array[$SPAN]}
       fi
     done
