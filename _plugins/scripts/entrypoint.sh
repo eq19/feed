@@ -84,7 +84,7 @@ jekyll_build() {
  
   echo -e "\n$hr\nSPIN\n$hr"
   FOLDER="span$(( 17 - $3 ))"
-  gist.sh $1 ${OWNER} ${FOLDER} &>/dev/null
+  gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
   
   cd /tmp/workdir 
