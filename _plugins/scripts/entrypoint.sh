@@ -74,7 +74,7 @@ jekyll_build() {
     sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /maps/_config.yml
   fi
   
-  sed -i "1s|^|builder: ${REPO}/actions\n|" /maps/_config.yml
+  sed -i "1s|^|action: ${REPO}/actions\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   
