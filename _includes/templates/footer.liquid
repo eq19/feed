@@ -38,9 +38,8 @@
     <a class="text-gray" href="https://github.com/eq19" rel="noreferrer" target="_blank">
         eQuantum,
     </a>
-    {{ __.revision | default: "Prime Spin" }}
-    <a class="text-gray" href="https://github.com/{{ site.builder }}" title="{{ docs.build_revision }}" rel="noreferrer" target="_blank">
-        {{- site.track.spin | jsonify -}}
+    <a class="text-gray" href="https://github.com/{{ site.repository }}" title="{{ docs.build_revision }}" rel="noreferrer" target="_blank">
+        {{ __.revision | default: "Prime Spin" }} {{ site.track.spin | jsonify -}}
     </a>
     {% unless site.url contains "rundocs.io" %}
         <br/>
