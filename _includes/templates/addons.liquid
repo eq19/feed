@@ -14,9 +14,9 @@
         <dl>
             <dt>{{ __.github | default: "GitHub" }}</dt>
             <dd>
-                <a href="https://eq19.com/" title="Homepage">
+                <a href="https://eq19.com/" title="Repository">
                     <i class="fa fa-home"></i>
-                    {{ __.homepage | default: "Homepage" }}
+                    {{ __.homepage | default: "Repo" }}
                 </a>
             </dd>
             <dd>
@@ -29,6 +29,12 @@
                 <a href="https://gist.github.com/eq19" title="Gist" target="_blank">
                     <i class="fa fa-download"></i>
                     {{ __.download | default: "Gist" }}
+                </a>
+            </dd>
+            <dd>
+                <a href="https://github.com/settings/organizations" title="Organization" target="_blank">
+                    <i class="fa fa-download"></i>
+                    {{ __.download | default: "Orgs" }}
                 </a>
             </dd>
         </dl>
