@@ -79,7 +79,7 @@ jekyll_build() {
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
-  SITEID="$(( $3 + 18 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
+  SITEID="$(( $3 + 0 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
   echo -e "\n$hr\nSPIN\n$hr"
