@@ -22,19 +22,19 @@
             <dd>
                 <a href="https://github.com/{{ site.action }}" title="Action" target="_blank">
                     <i class="fa fa-github"></i>
-                    {{ __.issues | default: "Action" }}
+                    {{ __.action | default: "Action" }}
                 </a>
             </dd>
             <dd>
                 <a href="https://gist.github.com/eq19" title="Gist" target="_blank">
                     <i class="fa fa-download"></i>
-                    {{ __.download | default: "Gist" }}
+                    {{ __.gist | default: "Gist" }}
                 </a>
             </dd>
             <dd>
                 <a href="https://github.com/settings/organizations" title="Organization" target="_blank">
-                    <i class="fa fa-download"></i>
-                    {{ __.download | default: "Orgs" }}
+                    <i class="fa fa-institution"></i>
+                    {{ __.organization | default: "Orgs" }}
                 </a>
             </dd>
         </dl>
