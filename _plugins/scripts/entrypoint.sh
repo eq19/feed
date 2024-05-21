@@ -76,7 +76,7 @@ jekyll_build() {
   
   sed -i "1s|^|action: ${REPO}/actions\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
-  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
+  [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /exponentiation/$1\n|" /maps/_config.yml
   
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
   SITEID="$(( $3 + 0 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
