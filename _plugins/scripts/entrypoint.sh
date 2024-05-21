@@ -99,7 +99,7 @@ jekyll_build() {
   #[[ ! -f README.md ]] && wget -O README.md ${NR} &>/dev/null
   #rm -rf README.md && cp /tmp/workdir/exponentiation/span16/README.md .
   mkdir /tmp/workdir/_data && mv -f /tmp/orgs.json /tmp/workdir/_data/orgs.json
-  cp -R /tmp/gistdir/* . && cp -R /maps/_* . && if [[ $1 == *"github.io"* ]]; then mv _assets assets; fi && ls -al
+  cp -R /tmp/gistdir/* . && cp -R /maps/_* . && mv _assets assets && ls -al
 
   echo -e "\n$hr\nBUILD\n$hr"
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
