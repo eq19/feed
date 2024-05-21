@@ -27,7 +27,7 @@ jobs:
   # Build job
   github-pages:
     if: github.event.workflow_run.conclusion == 'success'
-    runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
+    runs-on: ${{github.ref_name != 'eQ19' && 'ubuntu-latest' || (
              github.ref_protected && 'windows-latest' || 'self-hosted') }}
     steps:
       - name: 💎Checkout
