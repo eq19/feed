@@ -31,4 +31,4 @@ edit_file () {
 
 FILE=${1##*_} && NAME=${FILE%.*}
 [[ $(($NAME + 0)) < 3 ]] && edit_file $1
-cat /tmp/spin.txt
+
