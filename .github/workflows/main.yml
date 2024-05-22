@@ -3,9 +3,13 @@ name: Build and deploy eQuantum site
 
 # 💎 Runs on workflow_run.conclusion
 on:
-  - push
-  - workflow_run:
-      types: [completed] #requested
+  push:
+    branches:
+      - v3
+      - master
+      - development
+  workflow_run:
+      types: [completed]
       workflows: ["pages-build-deployment"]
 
 # 🪂 Allow concurrent deployment
