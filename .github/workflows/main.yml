@@ -27,8 +27,8 @@ env:
 jobs:
   # Build job
   github-pages:
-    if: ${{ github.event_name == 'push' ||
-            github.event.workflow_run.conclusion == 'success' }}
+    if: ${{github.event_name == 'push' ||
+        github.event.workflow_run.conclusion == 'success'}}
     runs-on: ${{github.ref_name != 'eQ19' && 'ubuntu-latest' || (
              github.ref_protected && 'windows-latest' || 'self-hosted') }}
     steps:
@@ -53,6 +53,6 @@ jobs:
           owner: ${{ secrets.JEKYLL_GITHUB_OWNER }}
 
       - name: 📂Build on Self-Hosted  
-        if: ${{ (runner.os != 'Linux') && (runner.os != 'Windows') }}
+        if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: actions/checkout@v2
         
