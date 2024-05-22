@@ -82,7 +82,7 @@ jekyll_build() {
   SITEID="$(( $3 + 0 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
-  echo -e "\n$hr\nSPIN\n$hr"
+  echo -e "\n$hr\nSPIN$3\n$hr"
   FOLDER="span$(( 17 - $3 ))"
   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
