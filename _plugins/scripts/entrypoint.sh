@@ -59,7 +59,7 @@ set_target() {
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
-  return $(( $SPAN + $SPIN ))
+  return $(( $SPAN ))
 }
 
 jekyll_build() {
@@ -133,6 +133,5 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Capture the string and return status
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
-echo $?
-#CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
-#jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
+jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
