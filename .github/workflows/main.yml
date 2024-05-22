@@ -11,7 +11,7 @@ on:
 # 🪂 Allow concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 # Set GITHUB_TOKEN scopes
 permissions: write-all
