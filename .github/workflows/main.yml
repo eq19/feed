@@ -3,6 +3,7 @@ name: Build and deploy eQuantum site
 
 # 💎 Runs on workflow_run.conclusion
 on:
+  push
   workflow_run:
     types: [completed] #requested
     workflows: ["pages-build-deployment"]
