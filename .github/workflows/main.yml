@@ -11,7 +11,7 @@ on:
 # 🪂 Allow concurrent deployment
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 # Set GITHUB_TOKEN scopes
 permissions: write-all
@@ -43,16 +43,17 @@ jobs:
         with:
           pre_build_commands: 'make build'
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
-          owner: ${{ secrets.JEKYLL_GITHUB_OWNER }}
 
       - name: 📂Build on Windows
         if: runner.os == 'Windows'
         uses: eq19/maps@v1
         with:
           dotnet-version: '3.1.x'
-          owner: ${{ secrets.JEKYLL_GITHUB_OWNER }}
+          token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
       - name: 📂Build on Self-Hosted  
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: actions/checkout@v2
-        
+        with:
+          token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+ 
