@@ -59,7 +59,7 @@ set_target() {
     echo "  pinned: [$(cat /tmp/pinned_repo)]" >> /maps/_config.yml
     echo "  organization: [$(cat /tmp/user_orgs)]" >> /maps/_config.yml
   fi
-  return $(( $SPAN ))
+  return $(( $SPIN ))
 }
 
 jekyll_build() {
