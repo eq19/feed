@@ -39,6 +39,7 @@ find /tmp/gistdir -type f -name 'spin_*.txt' | sort -n -t _ -k 2  | while ((i++)
 
 if [[ "${WIKI}" != "${BASE}" ]]; then
   git clone $WIKI /tmp/wikidir && mv -f /tmp/wikidir/Home.md /tmp/wikidir/README.md
+  echo $3
   find /tmp/gistdir -type d -name "$3" -prune -exec sh -c 'wiki.sh "$1"' sh {} \;
 else
   cat /tmp/spin.txt
