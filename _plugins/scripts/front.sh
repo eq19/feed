@@ -30,10 +30,10 @@ edit_file () {
     fi
   done
   
-  if [[ $NUM -lt 2 || $NUM == 18 || $NUM -gt 29 ]]; then
+  #if [[ $NUM -lt 2 || $NUM == 18 || $NUM -gt 29 ]]; then
     mv -f $1 ${1%/*}/README.md
     #sed '1,8!d' ${1%/*}/README.md
-  fi
+  #fi
 
 }
 
