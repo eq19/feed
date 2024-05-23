@@ -4,12 +4,37 @@
 
    <sitemap>
       <loc>/siteindex.xml</loc>
-      <lastmod>2004-10-01T18:23:17+00:00</lastmod>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
    </sitemap>
 
    <sitemap>
       <loc>/maps/siteindex.xml</loc>
-      <lastmod>2005-01-01</lastmod>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+   </sitemap>
+
+   <sitemap>
+      <loc>/feed/siteindex.xml</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+   </sitemap>
+
+   <sitemap>
+      <loc>/lexer/siteindex.xml</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+   </sitemap>
+
+   <sitemap>
+      <loc>/parser/siteindex.xml</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+   </sitemap>
+
+   <sitemap>
+      <loc>/syntax/siteindex.xml</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+   </sitemap>
+
+   <sitemap>
+      <loc>/grammar/siteindex.xml</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
    </sitemap>
 
 </sitemapindex>
