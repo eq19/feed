@@ -79,12 +79,12 @@ jekyll_build() {
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
   
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
+  FOLDER="span$(( 17 - $3 ))" && sed -i "1s|^|span: ${FOLDER}\n|" /maps/_config.yml
   SITEID="$(( $3 + 0 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
-  echo -e "\n$hr\nSPIN$3\n$hr"
-  FOLDER="span$(( 17 - $3 ))"
-  gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
+  echo -e "\n$hr\nSPIN\n$hr"
+   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
   
   cd /tmp/workdir 
