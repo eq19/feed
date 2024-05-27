@@ -3,6 +3,7 @@
 {% comment %} display the directory name {% endcomment %}
 {%- assign dir = site_pages | where: "url", workdir | first -%}
 {%- assign dir_url = dir.url | relative_url -%}
+{%- assign dir_spin = dir.spin | times: 1 -%}
 {%- include common/rest/dirurl.liquid %}
 
 {%- if workdir_level == 2 %}
