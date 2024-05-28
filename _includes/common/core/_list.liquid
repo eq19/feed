@@ -9,7 +9,7 @@
 {%- assign item_url = dir.url -%}
 {%- if site.repository == "eq19/eq19.github.io" -%}
     {%- assign item_spin = dir.spin | times: 1 -%}
-    {%- include common/rest/itemurl.liquid %}
+    {%- include common/rest/itemurl.liquid -%}
 {%- endif -%}
 {% include common/rest/tabs.liquid size=size %} 1. [{{ dir.title | default:item_url }}]({{ item_url | relative_url }})
 
