@@ -6,7 +6,7 @@
     {%- for page in site_pages -%}
         {%- if site.repository == "eq19/eq19.github.io" or site.repository != "eq19/eq19.github.io" and page.url contains site.span -%}
             <url>
-                {%- assign dir_url = page.url | relative_url -%}
+                {%- assign dir_url = page.url -%}
                 {%- if site.repository == "eq19/eq19.github.io" -%}
                      {%- assign dir_spin = page.spin | times: 1 -%}
                      {%- include common/rest/dirurl.liquid %}
