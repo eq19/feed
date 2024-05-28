@@ -7,8 +7,10 @@
         {%- if site.repository == "eq19/eq19.github.io" or site.repository != "eq19/eq19.github.io" and page.url contains site.span -%}
             <url>
                 {%- assign dir_url = page.url | relative_url -%}
-                {%- assign dir_spin = page.spin | times: 1 -%}
-                {%- include common/rest/dirurl.liquid %}
+                {%- if site.repository == "eq19/eq19.github.io" -%}
+                     {%- assign dir_spin = page.spin | times: 1 -%}
+                     {%- include common/rest/dirurl.liquid %}
+                {%- endif -%}
                 <loc>{{ dir_url | absolute_url | xml_escape }}</loc>
                 <priority>{{ page.content | size | divided_by: 2048.0 | times: 10 | ceil | divided_by: 10.0 | at_least: 0.1 | at_most: 1.0 }}</priority>
                 <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
