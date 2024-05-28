@@ -15,7 +15,7 @@
 {%- assign item_spin = item.spin | times: 1 -%}
 {%- include common/rest/itemurl.liquid -%}
 {%- endif -%}
-{% include common/rest/tabs.liquid size=size_p1 %}- [{{ item.title | default: item.name }}]({{ item_url | relative_url }})
+{% include common/rest/tabs.liquid size=size_p1 %}- [{{ item.title | default: item.name }}]({{ item_url | relative_url }}) {{ item_url }}
 {%- endfor -%}
 {%- endif -%}
 
