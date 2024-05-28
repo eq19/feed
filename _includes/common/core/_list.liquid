@@ -11,7 +11,7 @@
 {%- assign item_spin = dir.spin | times: 1 -%}
 {%- include common/rest/itemurl.liquid -%}
 {%- endif %}
-{% include common/rest/tabs.liquid size=size %} 1. [{{ dir.title | default: dir_url }}]({{ dir_url | relative_url }}) {{ item_url }}
+{% include common/rest/tabs.liquid size=size %} 1. [{{ dir.title | default: item_url }}]({{ item_url | relative_url }})
 
 {%- if liquid.all -%}
 {%- for item in workdir_files -%}
