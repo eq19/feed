@@ -11,6 +11,10 @@
 {%- if liquid.all -%}
 {%- for item in workdir_files %}
 {%- assign item_url = item.url -%}
+{%- if site.repository == "eq19/eq19.github.io" -%}
+{%- assign item_spin = item.spin | times: 1 -%}
+{%- include common/rest/itemurl.liquid -%}
+{%- endif -%}
 {% include common/rest/tabs.liquid size=size_p1 %}- [{{ item.title | default: item.name }}]({{ item_url | relative_url }})
 {%- endfor -%}
 {%- endif -%}
