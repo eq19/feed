@@ -50,7 +50,7 @@ set_target() {
     if (( $SPANPLUS == $MOD )); then 
       SPANPLUS=0
       CELLPLUS=$(($CELL + 1))
-      if (( $CELLPLUS == 12 )); then CELLPLUS=0; fi
+      if (( $CELLPLUS == 14 )); then CELLPLUS=0; fi
     else
       CELLPLUS=$(($CELL + 0))
     fi
