@@ -14,7 +14,7 @@
             {%- include common/rest/itemurl.liquid -%}
         {%- endif %}
         <loc>{{ item_url | absolute_url | xml_escape }}</loc>
-        <priority>{{ page.content | size | divided_by: 20480 | times: 10 | ceil | divided_by: 10.0 | at_least: 0.1 | at_most: 1.0 }}</priority>
+        <priority>{{ page.content | size }}</priority>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
     {%- endif -%}
