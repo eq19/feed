@@ -80,6 +80,7 @@ jekyll_build() {
   
   sed -i "1s|^|title: eQuantum\n|" /maps/_config.yml
   FOLDER="span$(( 17 - $3 ))" && sed -i "1s|^|span: ${FOLDER}\n|" /maps/_config.yml
+  sed -i "1s|^|user: ${USER}\n|" /maps/_config.yml
   SITEID="$(( $3 + 0 ))" && sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
