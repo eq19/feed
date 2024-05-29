@@ -1,4 +1,4 @@
-{%- include common/rest/site_pages.liquid -%}
+l{%- include common/rest/site_pages.liquid -%}
 
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="{{ site.baseurl }}/sitemap.xsl"?>
@@ -14,7 +14,7 @@
             {%- include common/rest/itemurl.liquid -%}
         {%- endif %}
         <loc>{{ item_url | absolute_url | xml_escape }}</loc>
-        <priority>{{ page.content | size | divided_by: 204800 }}</priority>
+        <priority>{{ page.content | size | divided_by: 204800 | times: 10 }}</priority>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
     {%- endif -%}
