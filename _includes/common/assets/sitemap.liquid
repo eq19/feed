@@ -8,7 +8,7 @@
     {%- if site_id == 1 or site_id != 1 and page.url contains site.span -%}
     <url>
         {%- assign item_url = page.url -%}
-        {%- if site.repository == "eq19/eq19.github.io" -%}
+        {%- if site_id == 1 -%}
             {%- assign item_spin = page.spin | times: 1 -%}
             {%- include common/rest/itemurl.liquid %}
         {%- endif -%}
