@@ -5,7 +5,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 {%- for page in site_pages -%}
-    {%- if site_id == 1 or siteid != 1 and page.url contains site.span -%}
+    {%- if site_id == 1 or site_id != 1 and page.url contains site.span -%}
     <url>
         {%- assign item_url = page.url -%}
         {%- if site.repository == "eq19/eq19.github.io" -%}
