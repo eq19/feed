@@ -1,6 +1,7 @@
 {%- comment %} variables {% endcomment -%}
-{%- assign version = theme_alias | split: "@" | last -%}
 {%- assign docs = site.github -%}
+{%- assign site_id = site.id | times: 1 -%}
+{%- assign version = theme_alias | split: "@" | last -%}
 {%- assign rest = docs.public_repositories | where: "html_url", docs.repository_url | first -%}
 
 {%- assign rest_created_at = rest.created_at | default: site.time -%}
