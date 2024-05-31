@@ -69,7 +69,7 @@ jekyll_build() {
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
   if  [[ "${OWNER}" == "eq19" ]]; then
-    sed -i "1s|^|description:  An attempt to discover the Final Theory\n\n|" /maps/_config.yml
+    sed -i "1s|^|description: An attempt to discover the Final Theory\n\n|" /maps/_config.yml
   else
     DESCRIPTION=$(gh api -H "${HEADER}" /orgs/${OWNER} --jq '.description')
     sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /maps/_config.yml
