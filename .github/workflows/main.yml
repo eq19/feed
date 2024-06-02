@@ -7,10 +7,6 @@ on:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
-
-defaults:
-  run:
-    working-directory: /github/workspace/_site
   
 # 🪂 Allow concurrent deployment
 concurrency:
