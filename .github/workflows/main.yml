@@ -8,6 +8,10 @@ on:
     types: [completed]
     workflows: ["pages-build-deployment"]
 
+defaults:
+  run:
+    working-directory: ./app
+  
 # 🪂 Allow concurrent deployment
 concurrency:
   group: "pages"
