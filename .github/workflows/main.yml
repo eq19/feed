@@ -64,5 +64,5 @@ jobs:
         if: runner.os == 'Linux'
         uses: eq19/maps@v1
         with:
-          path-to-root: /maps/_site
+          path-to-root: /tmp/workdir/_site
           include-pdf: false
