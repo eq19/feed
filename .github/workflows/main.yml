@@ -10,7 +10,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./_site
+    working-directory: /github/workspace/_site
   
 # 🪂 Allow concurrent deployment
 concurrency:
