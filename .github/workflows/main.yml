@@ -60,7 +60,6 @@ jobs:
         uses: eq19/parser@v2
         with:
           dotnet-version: '3.1.x'
-          token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
       - name: 📂Feed on Linux
         if: runner.os == 'Linux'
