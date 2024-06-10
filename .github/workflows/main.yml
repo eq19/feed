@@ -31,9 +31,9 @@ jobs:
       fail-fast: false
       matrix:
         os:
+          - 'self-hosted'
           - 'ubuntu-latest'
           - 'windows-latest'
-          #- 'self-hosted'
     runs-on: '${{ matrix.os }}'
 
     if: ${{github.event_name == 'push' ||
@@ -49,8 +49,8 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
-      - name: 📂Build on Self-Hosted  
-        if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
+      - name: 📂Build on Self-Hosted
+        if: ${{runner.name && runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
