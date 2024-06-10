@@ -36,8 +36,8 @@ jobs:
           - 'windows-latest'
     runs-on: '${{ matrix.os }}'
 
-    if: ${{github.event_name == 'push' ||
-        github.event.workflow_run.conclusion == 'success'}}
+    if: ${{runner.name && (github.event_name == 'push' ||
+        github.event.workflow_run.conclusion == 'success')}}
 
     #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
              #github.ref_protected && 'windows-latest' || 'self-hosted') }}
@@ -50,7 +50,7 @@ jobs:
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
       - name: 📂Build on Self-Hosted
-        if: ${{runner.name && runner.os != 'Linux' && runner.os != 'Windows'}}
+        if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
