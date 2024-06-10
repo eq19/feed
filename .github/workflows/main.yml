@@ -73,13 +73,6 @@ jobs:
           pre_build_commands: 'make build'
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
-      - name: 📂Maps on Linux
-        if: runner.os == 'Linux'
-        uses: eq19/maps@v1
-        with:
-          path-to-root: /github/workspace/_site
-          include-pdf: false
-
       - id: 'auth'
         if: runner.os == 'Linux'
         uses: 'google-github-actions/auth@v2'
