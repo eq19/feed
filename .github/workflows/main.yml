@@ -31,13 +31,13 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - 'self-hosted'
+          #- 'self-hosted'
           - 'ubuntu-latest'
           - 'windows-latest'
     runs-on: '${{ matrix.os }}'
 
-    if: ${{runner_name && (github.event_name == 'push' ||
-        github.event.workflow_run.conclusion == 'success')}}
+    if: ${{github.event_name == 'push' ||
+        github.event.workflow_run.conclusion == 'success'}}
 
     #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
              #github.ref_protected && 'windows-latest' || 'self-hosted') }}
