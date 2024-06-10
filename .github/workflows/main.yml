@@ -28,13 +28,13 @@ jobs:
 
   github-pages:
     strategy:
-      fail-fast: false
       matrix:
         os:
-          #- 'self-hosted'
-          - 'ubuntu-latest'
           - 'windows-latest'
+          - 'ubuntu-latest'
+          - 'self-hosted'
       max-parallel: 1
+      fail-fast: false
     runs-on: '${{ matrix.os }}'
 
     if: ${{github.event_name == 'push' ||
