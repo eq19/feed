@@ -3,7 +3,7 @@ name: Build and deploy eQuantum site
 
 # 💎 Runs on workflow_run.conclusion
 on:
-  # push:
+  push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
@@ -25,13 +25,22 @@ env:
   ACTOR: ${{ github.triggering_actor }}
   
 jobs:
-  # Build job
+
   github-pages:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - 'ubuntu-latest'
+          - 'windows-latest'
+          #- 'self-hosted'
+    runs-on: '${{ matrix.os }}'
+
     if: ${{github.event_name == 'push' ||
         github.event.workflow_run.conclusion == 'success'}}
 
-    runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
-             github.ref_protected && 'windows-latest' || 'self-hosted') }}
+    #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
+             #github.ref_protected && 'windows-latest' || 'self-hosted') }}
 
     steps:
       - name: 💎Checkout
