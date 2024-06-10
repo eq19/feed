@@ -57,7 +57,7 @@ jobs:
 
       - name: 📂Build on Windows
         if: runner.os == 'Windows'
-        uses: eq19/parser@v1
+        uses: eq19/parser@v2
         with:
           dotnet-version: '3.1.x'
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
