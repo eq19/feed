@@ -75,6 +75,8 @@ jekyll_build() {
     sed -i "1s|^|description: ${DESCRIPTION}\n\n|" /maps/_config.yml
   fi
   
+  #Note: If you need to use a workflow run's URL from within a job, you can combine
+  #these variables: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
   sed -i "1s|^|action: ${REPO}/actions\n|" /maps/_config.yml
   sed -i "1s|^|repository: ${OWNER}/$1\n|" /maps/_config.yml
   [[ $1 != *"github.io"* ]] && sed -i "1s|^|baseurl: /$1\n|" /maps/_config.yml
