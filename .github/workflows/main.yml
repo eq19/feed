@@ -53,7 +53,13 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
-      - id: 'auth'
+      - name: Setup Dotnet
+        uses: eq19/parser@v2
+        with:
+          dotnet-version: '3.1.x'
+
+      - name: 💎 Authentication
+        id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
@@ -70,12 +76,6 @@ jobs:
         with:
           path-to-root: /github/workspace/_site
           include-pdf: false
-
-      - name: 📂Build on Windows
-        if: runner.os == 'Windows'
-        uses: eq19/parser@v2
-        with:
-          dotnet-version: '3.1.x'
 
       - name: 📂Feed on Linux
         if: runner.os == 'Linux'
