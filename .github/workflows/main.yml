@@ -24,9 +24,9 @@ env:
   OWNER: ${{ github.repository_owner }}
   ACTOR: ${{ github.triggering_actor }}
   
-defaults:
-  run:
-    working-directory: /github/workspace/_site
+#defaults:
+  #run:
+    #working-directory: /github/workspace/_site
     
 jobs:
   github-pages:
