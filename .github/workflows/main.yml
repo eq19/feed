@@ -51,11 +51,6 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
-      - name: 💎 Setup Dotnet
-        uses: eq19/parser@v2
-        with:
-          dotnet-version: '3.1.x'
-
       - name: 💎 Setup Credential
         id: 'auth'
         uses: 'google-github-actions/auth@v2'
@@ -68,6 +63,11 @@ jobs:
       - name: 📂 Use gcloud CLI
         run: 'gcloud info'
       
+      - name: 📂 Setup Dotnet
+        uses: eq19/parser@v2
+        with:
+          dotnet-version: '3.1.x'
+
       - name: 🚀 Build on Self-Hosted
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: eq19/maps@v1
