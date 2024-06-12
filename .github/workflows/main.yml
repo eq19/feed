@@ -31,6 +31,27 @@ env:
     #working-directory: /github/workspace/_site
     
 jobs:
+  # Job to 
+  determine-runner:
+    runs-on: ubuntu-latest
+    outputs:
+      runner: ${{ steps.set-runner.outputs.use-runner }}
+    steps:
+      - name: Determine which runner to use
+        id: set-runner
+        uses: jimmygchen/runner-fallback-action@v1
+        with:
+          primary-runner: "self-hosted,linux"
+          fallback-runner: "ubuntu-latest"
+          github-token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+
+  another-job:
+    needs: determine-runner
+    runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
+    steps:
+      - name: Do something
+        run: echo "Doing something on ${{ needs.determine-runner.outputs.runner }}"
+        
   github-pages:
     strategy:
       max-parallel: 1
