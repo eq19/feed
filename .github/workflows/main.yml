@@ -87,3 +87,8 @@ jobs:
         with:
           pre_build_commands: 'make build'
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+              
+      - name: Check Runner Availability
+        uses: jimmygchen/runner-fallback-action@v0.1.0-release
+
+            
