@@ -45,18 +45,18 @@ jobs:
         github.event.workflow_run.conclusion == 'success'}}
 
     steps:
-      - name: 💎 Checkout
+      - name: 📂 Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
-      - name: 💎 Setup Dotnet
+      - name: 📂 Setup Dotnet
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '3.1.x'
 
-      - name: 💎 Setup Credential
+      - name: 💎 Set Credential
         id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
@@ -65,9 +65,11 @@ jobs:
       - name: 💎 Authentication
         uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: 📂 Use gcloud CLI
-        #run: 'gcloud info'
+      - name: 🚀 Self-Hosted Runner
+        if: runner.os == 'Linux'
         uses: eq19/lexer@v3
+        with:
+          pre_build_commands: 'gcloud info'
       
       - name: 🚀 Build on Self-Hosted
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
