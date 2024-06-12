@@ -23,6 +23,7 @@ env:
   REPO: ${{ github.repository }}
   OWNER: ${{ github.repository_owner }}
   ACTOR: ${{ github.triggering_actor }}
+  GITHUB_ACCESS_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
   
 #defaults:
   #run:
