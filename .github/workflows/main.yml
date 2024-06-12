@@ -47,18 +47,18 @@ jobs:
         github.event.workflow_run.conclusion == 'success'}}
 
     steps:
-      - name: 💎Checkout
+      - name: 💎 Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
  
-      - name: 💎Setup Dotnet
+      - name: 💎 Setup Dotnet
         uses: eq19/parser@v2
         with:
           dotnet-version: '3.1.x'
 
-      - name: 💎Setup Credential
+      - name: 💎 Setup Credential
         id: 'auth'
         uses: 'google-github-actions/auth@v2'
         with:
@@ -67,17 +67,17 @@ jobs:
       - name: 💎 Authentication
         uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: 'Use gcloud CLI'
+      - name: 🚀 Use gcloud CLI
         run: 'gcloud info'
       
-      - name: 📂Build on Self-Hosted
+      - name: 📂 Build on Self-Hosted
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: eq19/maps@v1
         with:
           path-to-root: /github/workspace/_site
           include-pdf: false
 
-      - name: 📂Feed on Linux
+      - name: 📂 Build Feed on Linux
         if: runner.os == 'Linux'
         uses: eq19/feed@v3
         with:
