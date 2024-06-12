@@ -24,6 +24,7 @@ env:
   OWNER: ${{ github.repository_owner }}
   ACTOR: ${{ github.triggering_actor }}
   GITHUB_ACCESS_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
+  RUNNER_REPOSITORY_URL: https://github.com/${{ github.repository }}
   
 #defaults:
   #run:
