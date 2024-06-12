@@ -70,6 +70,7 @@ jobs:
         uses: eq19/lexer@v3
         with:
           pre_build_commands: 'gcloud info'
+          token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
       
       - name: 🚀 Build on Self-Hosted
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
