@@ -67,17 +67,17 @@ jobs:
       - name: 💎 Authentication
         uses: 'google-github-actions/setup-gcloud@v2'
 
-      - name: 🚀 Use gcloud CLI
+      - name: 📂 Use gcloud CLI
         run: 'gcloud info'
       
-      - name: 📂 Build on Self-Hosted
+      - name: 🚀 Build on Self-Hosted
         if: ${{runner.os != 'Linux' && runner.os != 'Windows'}}
         uses: eq19/maps@v1
         with:
           path-to-root: /github/workspace/_site
           include-pdf: false
 
-      - name: 📂 Build Feed on Linux
+      - name: 🚀 Build Feed on Linux
         if: runner.os == 'Linux'
         uses: eq19/feed@v3
         with:
