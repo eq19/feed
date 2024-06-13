@@ -44,14 +44,9 @@ jobs:
           fallback-runner: "ubuntu-latest"
           github-token: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
 
-  another-job:
-    needs: determine-runner
-    runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
-    steps:
-      - name: Do something
-        run: echo "Doing something on ${{ needs.determine-runner.outputs.runner }}"
-        
   github-pages:
+    needs: determine-runner
+  
     strategy:
       max-parallel: 1
       fail-fast: false
@@ -60,6 +55,7 @@ jobs:
         os: [windows-latest, ubuntu-latest] #self-hosted
 
     runs-on: ${{ matrix.os }}
+    #runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
     #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
              #github.ref_protected && matrix.os || 'windows-latest') }}
 
