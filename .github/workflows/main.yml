@@ -38,7 +38,7 @@ jobs:
     steps:
       - name: Determine which runner to use
         id: set-runner
-        uses: jimmygchen/runner-fallback-action@v1
+        uses: eq19/maps@v2
         with:
           primary-runner: "self-hosted,linux"
           fallback-runner: "ubuntu-latest"
