@@ -16,7 +16,7 @@ concurrency:
 # Set GITHUB_TOKEN scopes
 permissions: write-all
 
-# Sets global environtment variables
+# Global environtment variables
 env:
   RUN: ${{ github.run_id }}
   USER: ${{ github.actor }}
