@@ -35,7 +35,7 @@ jobs:
           docker_hub_username: "eq19"
           docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
           dockerfile_path: ".devcontainer/Dockerfile"
-          image_tag: "eq19/prime:latest"
+          image_tag: "prime:latest"
 
       - name: Determine which runner to use
         id: set-runner
