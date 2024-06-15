@@ -30,6 +30,7 @@ jobs:
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
     steps:
+      - uses: eq19/eq19.github.io@v1
       - name: Determine which runner to use
         id: set-runner
         uses: eq19/maps@v2
