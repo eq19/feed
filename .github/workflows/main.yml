@@ -34,7 +34,7 @@ jobs:
         with:
           docker_hub_username: "eq19"
           docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
-          dockerfile_path: "/Dockerfile"
+          dockerfile_path: ".devcontainer/Dockerfile"
           image_name: "prime"
           image_tag: "latest"
 
