@@ -46,7 +46,6 @@ jobs:
           image_tag: "latest"
 
       - name: 🚀 Self-Hosted Runner
-        if: runner.os == 'Linux'
         uses: eq19/maps@v1
         with:
           pre_build_commands: 'gcloud info'
