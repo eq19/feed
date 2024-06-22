@@ -2,14 +2,14 @@
 # Deploy GitHub Pages
 name: Build and deploy eQuantum site
 
-# 💎 Runs on workflow_run.conclusion
+# Runs on workflow_run.conclusion
 on:
   push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
   
-# 🪂 Allow concurrent deployment
+# Allow concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -36,7 +36,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
  
-      - name: Build Dev Container
+      - name: 🪂 Build Dev Container
         if: ${{ contains(github.repository, 'github.io') }}
         uses: eq19/eq19.github.io@v1
         with:
@@ -60,7 +60,7 @@ jobs:
       #       const script = require('/github/workspace/script.js')
       #       console.log(script({github, context}))      
       
-      - name: Determine which runner to use
+      - name: 💎 Determine which runner to use
         id: set-runner
         uses: eq19/lexer@v2
         with:
@@ -97,15 +97,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '3.1.x'
-
-      - name: 💎 Set Credential
-        id: 'auth'
-        uses: 'google-github-actions/auth@v2'
-        with:
-          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-
-      - name: 💎 Authentication
-        uses: 'google-github-actions/setup-gcloud@v2'
 
       - name: 🚀 Self-Hosted Runner
         if: runner.os == 'Linux'
