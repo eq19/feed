@@ -1,4 +1,3 @@
-
 # Deploy GitHub Pages
 name: Build and deploy eQuantum site
 
@@ -52,8 +51,8 @@ jobs:
         with:
           pre_build_commands: 'gcloud info'
           token: ${{ secrets.ACCESS_TOKEN }}
-          credentials: $ {{ secrets.GCP_CREDENTIALS }}
- 
+          credentials: ${{ secrets.GCP_CREDENTIALS}}
+      
       - uses: actions/github-script@v7
         id: set-result
         with:
