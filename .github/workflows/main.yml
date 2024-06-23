@@ -53,7 +53,6 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
       
       - name: 🚀 Build Feed on Linux
-        if: runner.os == 'Linux'
         uses: eq19/feed@v3
         with:
           pre_build_commands: 'make build'
@@ -99,6 +98,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
  
       - name: 💎 Setup Dotnet
+        if: runner.os == 'Linux'
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '3.1.x'
