@@ -64,7 +64,7 @@ jobs:
       #       const script = require('/github/workspace/script.js')
       #       console.log(script({github, context}))      
 
-      - run: gcluoud info
+      - run: gcloud info
       - name: 💎 Determine which runner to use
         id: set-runner
         uses: eq19/lexer@v2
