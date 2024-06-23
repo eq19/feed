@@ -42,7 +42,6 @@ jobs:
         with:
           script: |
             const { FIRST_NAME, LAST_NAME } = process.env
-
             console.log(`Hello ${FIRST_NAME} ${LAST_NAME}`)      
             
       - name: 🪂 Build Dev Container
