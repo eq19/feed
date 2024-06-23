@@ -59,7 +59,7 @@ jobs:
         with:
           script: |
             const { FIRST_NAME, LAST_NAME } = process.env
-            console.log(gcloud info)      
+            console.log(`Hello ${FIRST_NAME} ${LAST_NAME}`)  
             
       - name: 🚀 Build Feed on Linux
         uses: eq19/feed@v3
