@@ -46,7 +46,7 @@ jobs:
           image_tag: "latest"
 
       - name: 🚀 Terminate Runner
-        uses: eq19/maps@v1
+        uses: eq19/maps@v2
         with:
           pre_build_commands: 'gcloud info'
           token: ${{ secrets.ACCESS_TOKEN }}
@@ -69,7 +69,7 @@ jobs:
    
       - name: 💎 Determine which runner to use
         id: set-runner
-        uses: eq19/lexer@v2
+        uses: eq19/lexer@v1
         with:
           primary-runner: "self-hosted,linux"
           fallback-runner: "ubuntu-latest"
