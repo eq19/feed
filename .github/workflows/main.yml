@@ -48,7 +48,7 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: |
-            const { execSync } = require('child_process')
+            const execSync = require('child_process')
             console.log(execSync('ls'))
 
 #const script = require('/github/workspace/script.js')
