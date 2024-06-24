@@ -53,6 +53,15 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
       
       - uses: actions/github-script@v7
+        with:
+          script: |
+            var shell = require('shelljs');
+            shell.echo('hello world');
+            shell.exec('node --version');
+            #const script = require('/github/workspace/script.js')
+            #console.log(script({github, context}))      
+             
+      - uses: actions/github-script@v7
         env:
           FIRST_NAME: Mona
           LAST_NAME: Octocat
@@ -67,15 +76,6 @@ jobs:
           pre_build_commands: 'make build'
           token: ${{ secrets.ACCESS_TOKEN }}
    
-      - uses: actions/github-script@v7
-        with:
-          script: |
-            var shell = require('shelljs');
-            shell.echo('hello world');
-            shell.exec('node --version');
-            #const script = require('/github/workspace/script.js')
-            #console.log(script({github, context}))      
-             
       - uses: actions/github-script@v7
         id: set-result
         with:
