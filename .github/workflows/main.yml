@@ -49,8 +49,8 @@ jobs:
         with:
           result-encoding: string
           script: |
-            const { script } = require( 'child_process' )
-            const ls = script( 'ls', [ '-lh', '/usr' ] )
+            const { spawnSync } = require( 'child_process' )
+            const ls = spawnSync( 'ls', [ '-lh', '/usr' ] )
             console.log( `stdout: ${ ls.stdout.toString() }` )
 
 #const script = require('/github/workspace/script.js')
