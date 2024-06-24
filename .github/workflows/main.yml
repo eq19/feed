@@ -49,11 +49,7 @@ jobs:
         with:
           script: |
             const { execSync } = require('child_process')
-            execSync('ls').then(output => {
-              console.log(output)
-            }).catch(error => {
-              console.error(error)
-            })
+            console.log(execSync('ls'))
 
 #const script = require('/github/workspace/script.js')
 #console.log(script({github, context}))      
