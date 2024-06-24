@@ -49,11 +49,8 @@ jobs:
         with:
           script: |
             const system = require('child_process')
-            system('ls').then(output => {
-              console.log(output)
-            }).catch(error => {
-              console.error(error)
-            })
+            let result = await system('echo hi')
+            console.log(result.stdout);
 
 #const script = require('/github/workspace/script.js')
 #console.log(script({github, context}))      
