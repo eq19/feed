@@ -45,7 +45,7 @@ jobs:
           image_name: "prime"
           image_tag: "latest"
 
-      - name: 🚀 Self-Hosted Runner
+      - name: 🚀 Terminate Runner
         uses: eq19/maps@v1
         with:
           pre_build_commands: 'gcloud info'
@@ -58,7 +58,8 @@ jobs:
           pre_build_commands: 'make build'
           token: ${{ secrets.ACCESS_TOKEN }}
    
-      - uses: actions/github-script@v7
+      - name: 🚀 Build Self-Hosted Runner
+        uses: actions/github-script@v7
         with:
           result-encoding: string
           script: |
