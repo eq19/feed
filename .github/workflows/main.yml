@@ -49,7 +49,7 @@ jobs:
         with:
           script: |
             const exec = require("child_process").exec
-            exec("ls", (error, stdout, stderr) => {//do whatever here})            const system = require('child_process')
+            exec("ls", (error, stdout, stderr) => {//do whatever here})
 
 #const script = require('/github/workspace/script.js')
 #console.log(script({github, context}))      
