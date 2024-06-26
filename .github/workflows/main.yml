@@ -35,7 +35,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
  
-      - name: 🪂 Build Dev Container
+      - name: 🪂 Dev Container
         if: ${{ contains(github.repository, 'github.io') }}
         uses: eq19/eq19.github.io@v1
         with:
