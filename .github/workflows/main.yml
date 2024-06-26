@@ -79,11 +79,10 @@ jobs:
 
     steps:
       - name: 📂 Checkout
-        if: runner.os == 'Linux'
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
           token: ${{ secrets.ACCESS_TOKEN }}
+          sparse-checkout: ''
  
       - name: 💎 Setup Dotnet
         uses: actions/setup-dotnet@v4
