@@ -59,6 +59,14 @@ jobs:
           pre_build_commands: 'make build'
           token: ${{ secrets.ACCESS_TOKEN }}
    
+      - name: 🚀 Initiate Lexer on Linux
+        id: set-runner
+        uses: eq19/lexer@v1
+        with:
+          pre_build_commands: 'gcloud info'
+          token: ${{ secrets.ACCESS_TOKEN }}
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
+
   github-pages:
     needs: determine-runner
   
@@ -84,9 +92,9 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           repository: eq19/lexer
 
-      - name: 🚀 Initiate New Runner
+      - name: 🚀 Build Parser on Runner
         id: set-runner
-        uses: eq19/lexer@v1
+        uses: eq19/parser@v1
         with:
           pre_build_commands: 'gcloud info'
           token: ${{ secrets.ACCESS_TOKEN }}
