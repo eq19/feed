@@ -59,7 +59,7 @@ jobs:
           pre_build_commands: 'make build'
           token: ${{ secrets.ACCESS_TOKEN }}
    
-      - name: 🚀 Build Self-Hosted Runner
+      - name: 🚀 Initiate New Runner
         id: set-runner
         uses: eq19/lexer@v1
         with:
