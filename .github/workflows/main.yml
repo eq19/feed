@@ -90,7 +90,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-          repository: eq19/lexer
+          repository: eq19/parser
 
       - name: 🚀 Build Parser on Runner
         id: set-runner
