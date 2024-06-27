@@ -95,7 +95,9 @@ jobs:
       - name: 🪂 Evaluate Syntax Tree
         if: runner.os == 'Windows'
         uses: Vampire/setup-wsl@v3
-      
+        with:
+          wsl-shell-command: bash -c "wsl --version"  
+
       - name: 🪂 Grammar Languange
         if: runner.os == 'Windows'
         shell: wsl-bash {0}
