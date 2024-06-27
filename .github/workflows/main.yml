@@ -105,5 +105,5 @@ jobs:
         uses: Vampire/setup-wsl@v3
 
       - name: 🪂 Grammar Languange
-        if: ${{ runner.os != 'Windows' and runner.os != 'Linux' }}
+        if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
         run: wsl --version
