@@ -101,6 +101,8 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: 🪂 Element Syntax Tree
+        run: wsl --version
       
       - name: 🪂 Grammar Languange
+        run: wsl --version
   
