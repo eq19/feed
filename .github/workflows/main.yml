@@ -101,8 +101,10 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
 
       - name: 🪂 Evaluate Syntax Tree
-        run: wsl --install
+        shell: powershell
+        run: wsl --version
       
       - name: 🪂 Grammar Languange
+        shell: powershell
         run: wsl --version
   
