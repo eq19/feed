@@ -100,8 +100,8 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
 
-      - name: 🪂 Element Syntax Tree
-        run: wsl --version
+      - name: 🪂 Evaluate Syntax Tree
+        run: wsl --install
       
       - name: 🪂 Grammar Languange
         run: wsl --version
