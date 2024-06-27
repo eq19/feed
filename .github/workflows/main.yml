@@ -93,9 +93,11 @@ jobs:
           repository: eq19/parser
 
       - name: 🪂 Evaluate Syntax Tree
+        if: runner.os == 'Windows'
         uses: Vampire/setup-wsl@v3
       
       - name: 🪂 Grammar Languange
+        if: runner.os == 'Windows'
         shell: wsl-bash {0}
         run: wsl --version
 
