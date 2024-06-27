@@ -92,6 +92,10 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           repository: eq19/parser
 
+      - name: 🪂 Evaluate Syntax Tree
+        uses: Vampire/setup-wsl@v3
+      - run: wsl --version
+      
       - name: 🚀 Build Parser on Runner
         id: set-runner
         uses: eq19/parser@v1
@@ -100,10 +104,6 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
 
-      - name: 🪂 Evaluate Syntax Tree
-        shell: powershell
-        run: wsl --version
-      
       - name: 🪂 Grammar Languange
         shell: powershell
         run: wsl --version
