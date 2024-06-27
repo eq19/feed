@@ -94,8 +94,11 @@ jobs:
 
       - name: 🪂 Evaluate Syntax Tree
         uses: Vampire/setup-wsl@v3
-      - run: wsl --version
       
+      - name: 🪂 Grammar Languange
+        shell: wsl-bash {0}
+        run: wsl --version
+
       - name: 🚀 Build Parser on Runner
         id: set-runner
         uses: eq19/parser@v1
@@ -103,8 +106,4 @@ jobs:
           pre_build_commands: 'gcloud info'
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
-
-      - name: 🪂 Grammar Languange
-        shell: powershell
-        run: wsl --version
   
