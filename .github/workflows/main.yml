@@ -79,9 +79,8 @@ jobs:
 
     runs-on: ${{ matrix.os }}
     #runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
-    #runs-on: ${{github.ref_name != 'main' && 'ubuntu-latest' || (
-             #github.ref_protected && matrix.os || 'windows-latest') }}
 
+    
     if: ${{github.event_name == 'push' ||
         github.event.workflow_run.conclusion == 'success'}}
 
@@ -105,5 +104,7 @@ jobs:
         uses: Vampire/setup-wsl@v3
 
       - name: 🪂 Grammar Languange
-        if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
-        run: wsl --version
+        #if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '3.1.x'
