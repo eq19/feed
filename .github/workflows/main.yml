@@ -105,7 +105,6 @@ jobs:
 
       - name: 🪂 Grammar Languange
         if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
-        uses: eq19/grammar@v1
+        uses: browser-actions/setup-chrome@v1
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          credentials: ${{ secrets.GCP_CREDENTIALS }}
+          install-dependencies: true
