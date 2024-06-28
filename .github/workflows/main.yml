@@ -105,6 +105,7 @@ jobs:
 
       - name: 🪂 Grammar Languange
         #if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
-        uses: actions/setup-dotnet@v4
+        uses: eq19/grammar@v1
         with:
-          dotnet-version: '3.1.x'
+          token: ${{ secrets.ACCESS_TOKEN }}
+          credentials: ${{ secrets.GCP_CREDENTIALS }}
