@@ -104,7 +104,7 @@ jobs:
         uses: Vampire/setup-wsl@v3
 
       - name: 🪂 Grammar Languange
-        if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
-        uses: browser-actions/setup-chrome@v1
+        #if: ${{ runner.os != 'Windows' && runner.os != 'Linux' }}
+        uses: actions/setup-dotnet@v4
         with:
-          install-dependencies: true
+          dotnet-version: '3.1.x'
