@@ -118,7 +118,7 @@ jekyll_build() {
   [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
   REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
   git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
-  git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
+  #git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 }
 
 # Set update workflow
@@ -128,7 +128,7 @@ git config --global user.email "${ACTOR}@users.noreply.github.com"
 
 rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
 #[[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
-#git add . && git commit -m "Assign eQuantum to project workflow" > /dev/null && git push > /dev/null 2>&1
+git add . && git commit -m "Assign eQuantum to project workflow" > /dev/null && git push > /dev/null 2>&1
 
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
