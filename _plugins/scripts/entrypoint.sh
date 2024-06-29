@@ -138,9 +138,11 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Remove Existing Self-Hosted Runner
 # See: https://docs.github.com/en/rest/actions/self-hosted-runners
-gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.total_count'
-gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.runners.[].id'
-#gh api --method DELETE -H "${HEADER}" /repos/${REPO}/actions/runners/${RUNNER_ID}
+TOTAL_COUNT=$(gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.total_count')
+if (( $TOTAL_COUNT == 1 )); then
+  RUNNER_ID=$(gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.runners.[].id')
+  gh api --method DELETE -H "${HEADER}" /repos/${REPO}/actions/runners/${RUNNER_ID}
+fi 
 
 # Capture the string and return status
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
