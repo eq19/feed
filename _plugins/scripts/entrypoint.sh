@@ -137,7 +137,8 @@ PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.f
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
 # Remove Existing Self-Hosted Runner
-RUNNER_ID=$(gh api -H "${HEADER}" /repos/${OWNER}/${REPO}/actions/runners/RUNNER_ID)
+PATTERN='.[].id | select(.name == "self-hosted")'
+RUNNER_ID=$(gh api -H "${HEADER}" /repos/${OWNER}/${REPO}/actions/runners --jq "${PATTERN}")
 gh api --method DELETE -H "${HEADER}" /repos/${OWNER}/${REPO}/actions/runners/${RUNNER_ID}
 
 # Capture the string and return status
