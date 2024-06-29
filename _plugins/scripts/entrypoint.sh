@@ -135,6 +135,8 @@ HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token
 PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.filename != "README.md").raw_url'
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
+
+# Remove Existing Self-Hosted Runner
 gh api -H "${HEADER}" /repos/${OWNER}/${REPO}/actions/runners/${RUNNER_ID} --method DELETE
 
 # Capture the string and return status
