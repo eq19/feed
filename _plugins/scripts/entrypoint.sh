@@ -139,7 +139,7 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 # Remove Existing Self-Hosted Runner
 # See: https://docs.github.com/en/rest/actions/self-hosted-runners
 #PATTERN='.labels.[].id | select(.name == "self-hosted")'
-gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.runners'
+gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.runners.[].id'
 #RUNNER_ID=$(gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq "${PATTERN}")
 #gh api --method DELETE -H "${HEADER}" /repos/${REPO}/actions/runners/${RUNNER_ID}
 
