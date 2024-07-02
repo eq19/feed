@@ -114,6 +114,12 @@ jekyll_build() {
   cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
   
+CREDENTIAL=${INPUT_TOKEN}
+[[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
+REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
+git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
+git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
+
 }
 
 # Set update workflow
