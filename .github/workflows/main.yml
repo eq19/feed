@@ -108,7 +108,7 @@ jobs:
           id
           pwd
           ls -al /
-          docker info
+          curl -fsSL https://get.docker.com -o- | sh
   
       - name: 🪂 Set Grammar Rules
         #if: runner.os != 'Windows'
