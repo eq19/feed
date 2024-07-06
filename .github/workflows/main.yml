@@ -94,7 +94,10 @@ jobs:
             root = /
 
       - shell: wsl-bash {0}
-        run: id
+        run: |
+          id
+          pwd
+          ls -al /
   
       - name: 🪂 Set Grammar Rules
         #if: runner.os != 'Windows'
