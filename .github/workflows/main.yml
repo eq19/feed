@@ -83,6 +83,15 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           repository: eq19/eq19.github.io
 
+      - name: 🪂 Evaluate Syntax
+        if: runner.os == 'Windows'
+        #uses: eq19/syntax@v1
+        uses: Vampire/setup-wsl@v3
+
+      - name: 🪂 Set Grammar Rules
+        #if: runner.os != 'Windows'
+        uses: eq19/grammar@v3
+ 
       - name: 🚀 Setup Parser
         if: runner.os == 'Windows'
         uses: eq19/parser@v1
@@ -91,13 +100,3 @@ jobs:
           repository: ${{ github.repository }}
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
-  
-      - name: 🪂 Evaluate Syntax
-        if: runner.os == 'Windows'
-        #uses: eq19/syntax@v1
-        uses: Vampire/setup-wsl@v3
-
-      - name: 🪂 Set Grammar Rules
-        if: runner.os != 'Windows'
-        uses: eq19/grammar@v2
- 
