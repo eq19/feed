@@ -87,6 +87,10 @@ jobs:
         if: runner.os == 'Windows'
         #uses: eq19/syntax@v1
         uses: Vampire/setup-wsl@v3
+        with:
+           wsl-conf: |
+             [automount]
+             root = /
 
       - name: 🪂 Set Grammar Rules
         #if: runner.os != 'Windows'
