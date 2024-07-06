@@ -88,11 +88,14 @@ jobs:
         uses: eq19/syntax@v2
         #uses: Vampire/setup-wsl@v3
         with:
-          wsl-shell-command: bash -c "ls -al / && pwd && id"
+          #wsl-shell-command: bash -c "ls -al / && pwd && id"
           wsl-conf: |
             [automount]
             root = /
 
+      - shell: wsl-bash {0}
+        run: id
+  
       - name: 🪂 Set Grammar Rules
         #if: runner.os != 'Windows'
         uses: eq19/grammar@v3
