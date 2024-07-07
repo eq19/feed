@@ -45,4 +45,4 @@ runs:
     - name: 🚀 Initiate Lexer
       uses: eq19/eq19.github.io@main
       with:
-        push: always
+        pre_build_container: 'eq19/setup'
