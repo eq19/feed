@@ -55,7 +55,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
    
-      - name: 🚀 Cloud Config
+      - name: 🚀 Setup Lexer on Cloud
         uses: eq19/lexer@v1
         id: set-runner
         with:
