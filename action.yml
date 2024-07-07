@@ -32,9 +32,17 @@ inputs:
   pre_build_commands:
     description: 'The pre-build commands'
     required: false
+
 branding:
   icon: 'command'
   color: 'red'
+
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  #using: 'docker'
+  #image: 'Dockerfile'
+  using: composite
+  steps:
+    - name: 🚀 Initiate Lexer
+      uses: eq19/eq19.github.io@main
+      with:
+        push: always
