@@ -33,14 +33,27 @@ env:
 jobs:
   determine-runner:
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres
+    container: node:10.18-jessie
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
+
     steps:
       - name: 📂 Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
  
+      - name: Install dependencies
+        run: npm ci
+      - name: Connect to PostgreSQL
+        run: node client.js
+        env:
+          POSTGRES_HOST: postgres
+          POSTGRES_PORT: 5432
+
       - name: 🪂 Pre-build Maps
         uses: eq19/maps@v2
         with:
