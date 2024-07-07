@@ -50,7 +50,7 @@ jobs:
           image_tag: "latest"
 
       - name: 🚀 Build Feed on Linux
-        if: runner.os == 'Windows'
+        #if: runner.os == 'Windows'
         uses: eq19/feed@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
