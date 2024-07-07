@@ -34,14 +34,8 @@ jobs:
   determine-runner:
     runs-on: ubuntu-latest
     services:
-      redis:
-        image: redis
-        # Set health checks to wait until redis has started
-        options: >-
-          --health-cmd "redis-cli ping"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+      postgres:
+        image: postgres
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
 
@@ -86,7 +80,7 @@ jobs:
         os: [windows-latest, self-hosted]
     runs-on: ${{ matrix.os }}
     #runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
-          
+    
     if: ${{github.event_name == 'push' ||
         github.event.workflow_run.conclusion == 'success'}}
 
@@ -108,7 +102,6 @@ jobs:
           wsl-conf: |
             [automount]
             root = /
-
       - name: 🪂 Set Grammar Rules
         if: runner.os != 'Windows'
         uses: eq19/grammar@v3
