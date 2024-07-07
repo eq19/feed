@@ -81,9 +81,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     #runs-on: ${{ fromJson(needs.determine-runner.outputs.runner) }}
     services:
-      # Label used to access the service container
+      if: runner.os != 'Windows'
       redis:
-        # Docker Hub image
         image: redis
         # Set health checks to wait until redis has started
         options: >-
