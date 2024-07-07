@@ -39,7 +39,6 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
  
       - name: 🪂 Pre-build Maps
-        #if: runner.os == 'Windows'
         uses: eq19/maps@v2
         with:
           docker_hub_username: ${{ github.actor }}
