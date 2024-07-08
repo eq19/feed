@@ -6,10 +6,8 @@ name: Build and deploy eQuantum site
 on:
   push:
     paths:
-      - '.github/actions/**'
-      - '.github/workflows/**'
-      - '!.github/actions/reserves/**'
-      - '!.github/workflows/reserves/**'
+      - '.github/**'
+      - '!**/reserves/**'
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
