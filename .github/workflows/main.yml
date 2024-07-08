@@ -35,7 +35,7 @@ jobs:
       postgres:
         image: postgres
         env: 
-          POSTGRES_HOST_AUTH_METHOD: trust    
+          POSTGRES_PASSWORD: postgres
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
 
