@@ -27,7 +27,6 @@ env:
   REPO: ${{ github.repository }}
   OWNER: ${{ github.repository_owner }}
   ACTOR: ${{ github.triggering_actor }}
-  POSTGRES_HOST_AUTH_METHOD: trust
   
 jobs:
   determine-runner:
@@ -35,6 +34,8 @@ jobs:
     services:
       postgres:
         image: postgres
+        env: 
+          POSTGRES_HOST_AUTH_METHOD: trust    
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
 
