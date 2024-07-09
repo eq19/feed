@@ -47,3 +47,12 @@ runs:
       with:
         token: ${{ inputs.token }}
         pre_build_container: 'eq19/setup'
+
+    - name: Set Docker Hub description
+      uses: peter-evans/dockerhub-description@v4
+      with:
+        username: ${{ inputs.docker_hub_username }}
+        password: ${{ inputs.docker_hub_token }}
+        repository: ${{ steps.variables.outputs.repo_name }}
+        short-description: ${{ inputs.docker_hub_repo_short_description }}
+        readme-filepath: ${{ inputs.docker_hub_repo_readme_file_path }}
