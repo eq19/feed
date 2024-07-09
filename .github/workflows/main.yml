@@ -48,19 +48,18 @@ jobs:
       - name: 🪂 Pre-build Maps
         uses: eq19/maps@v2
         with:
-          docker_hub_username: ${{ github.actor }}
-          docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
-          dockerfile_path: ./.devcontainer/Dockerfile
           credentials: ${{ secrets.GCP_CREDENTIALS }}
-          image_name: "prime"
-          image_tag: "latest"
 
       - name: 🚀 Build Feed on Linux
         #if: runner.os == 'Windows'
         uses: eq19/feed@v3
         with:
+          image_name: "prime"
+          image_tag: "latest"
           token: ${{ secrets.ACCESS_TOKEN }}
-   
+          docker_hub_username: ${{ github.actor }}
+          docker_hub_token: ${{ secrets.DOCKER_HUB_TOKEN }}
+  
       - name: 🚀 Setup Lexer on Cloud
         uses: eq19/lexer@v1
         id: set-runner
