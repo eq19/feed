@@ -102,6 +102,7 @@ jobs:
           wsl-conf: |
             [automount]
             root = /
+
       - name: 🪂 Set Grammar Rules
         if: runner.os != 'Windows'
         uses: eq19/grammar@v3
