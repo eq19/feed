@@ -91,6 +91,26 @@ runs:
         token: ${{ inputs.token }}
         pre_build_container: 'eq19/setup'
 
+    - name: 💎 Variables
+      id: variables
+      shell: bash
+      run: |
+        repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
+        image_tag=${{ inputs.image_tag }}
+        dev_image_tag="$image_tag"
+        repo_ref="$repo_name:$image_tag"
+        image_ref="${{ inputs.image_name }}:$image_tag"
+        dev_repo_ref="$repo_name:$dev_image_tag"
+        dev_image_ref="${{ inputs.image_name }}:$dev_image_tag"
+
+        echo "repo_name=$repo_name" >> $GITHUB_OUTPUT
+        echo "image_tag=$image_tag" >> $GITHUB_OUTPUT
+        echo "dev_image_tag=$dev_image_tag" >> $GITHUB_OUTPUT
+        echo "repo_ref=$repo_ref" >> $GITHUB_OUTPUT
+        echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
+        echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
+        echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
+
     - name: Set Docker Hub description
       uses: peter-evans/dockerhub-description@v4
       with:
