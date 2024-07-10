@@ -30,12 +30,13 @@ env:
   
 jobs:
   determine-runner:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lates
     services:
       postgres:
         image: postgres
         env: 
           POSTGRES_PASSWORD: postgres
+    container: node:10.18-jessie
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
 
