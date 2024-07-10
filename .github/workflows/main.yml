@@ -36,7 +36,7 @@ jobs:
         image: postgres
         env: 
           POSTGRES_PASSWORD: postgres
-    container: node:10.18-jessie
+    #container: node:10.18-jessie
     outputs:
       runner: ${{ steps.set-runner.outputs.use-runner }}
 
