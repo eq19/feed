@@ -1,6 +1,10 @@
-name: 'Jekyll Deploy Action'
-description: >
-  🪂  A Github Action to deploy the Jekyll site conveniently for GitHub Pages
+name: Build devcontainer
+description: Build a devcontainer that is compliant with the spec
+
+branding:
+  icon: "activity"
+  color: "green"
+
 inputs:
   docker_hub_username:
     description: Username for Docker Hub
@@ -39,77 +43,84 @@ inputs:
     description: Path for the docker cache destination
     required: false
     default: /tmp/.buildx-cache-new
-  provider:
-    description: 'The deploy provider'
-    required: true
-  owner:
-    description: 'The deploy owner'
-    required: false
-  token:
-    description: 'The deploy token'
-    required: false
-  repository:
-    description: 'The deploy repository'
-    required: false
-  branch:
-    description: 'The deploy branch'
-    required: false
-  actor:
-    description: 'The github username creating the commit'
-    required: false
-  cname:
-    description: 'The cname to use for the site'
-    required: false
-  bundler_ver:
-    description: 'The Bundler version'
-    required: false
-  jekyll_baseurl:
-    description: 'The Jekyll website baseurl'
-    required: false
-  pre_build_commands:
-    description: 'The pre-build commands'
-    required: false
-
-branding:
-  icon: 'command'
-  color: 'red'
 
 runs:
-  #using: 'docker'
-  #image: 'Dockerfile'
   using: composite
   steps:
-    - name: Login to DockerHub
-      uses: docker/login-action@v3
-      with:
-        username: ${{ inputs.docker_hub_username }}
-        password: ${{ inputs.docker_hub_token }} 
-        
-    - name: 💎 Variables
-      id: variables
+    # Ref: https://stackoverflow.com/a/47018417/4058484
+    - name: 🪂 Setup Dockerfile
       shell: bash
       run: |
-        repo_name=${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
-        image_tag=${{ inputs.image_tag }}
-        dev_image_tag="$image_tag"
-        repo_ref="$repo_name:$image_tag"
-        image_ref="${{ inputs.image_name }}:$image_tag"
-        dev_repo_ref="$repo_name:$dev_image_tag"
-        dev_image_ref="${{ inputs.image_name }}:$dev_image_tag"
+        cat << EOL >> Dockerfile
+        FROM jekyll/jekyll:latest
+        LABEL version=v0.0.1
 
-        echo "repo_name=$repo_name" >> $GITHUB_OUTPUT
-        echo "image_tag=$image_tag" >> $GITHUB_OUTPUT
-        echo "dev_image_tag=$dev_image_tag" >> $GITHUB_OUTPUT
-        echo "repo_ref=$repo_ref" >> $GITHUB_OUTPUT
-        echo "image_ref=$image_ref" >> $GITHUB_OUTPUT
-        echo "dev_repo_ref=$dev_repo_ref" >> $GITHUB_OUTPUT
-        echo "dev_image_ref=$dev_image_ref" >> $GITHUB_OUTPUT
+        ADD . /maps
 
-    - name: Set Docker Hub description
-      uses: peter-evans/dockerhub-description@v4
+        ENV GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+        ENV PATH=${PATH}:/maps/_plugins/scripts
+        ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
+
+        # RUN apk update && apk upgrade
+        RUN chmod -R +x /maps/_plugins/scripts
+        RUN apk add -U bash curl github-cli jq yq
+        RUN bundle install &>/dev/null && bundle add webrick
+
+        ENTRYPOINT ["entrypoint.sh"]        
+        EOL
+
+    - name: 🪂 Setup DevContainer
+      shell: bash
+      run: |
+        cat << EOL >> .devcontainer.json
+        {
+        	"name": "Python 3"
+        	"build": {
+        		"dockerfile": "Dockerfile",
+        		//"context": "..",
+        		"args": {
+        			// Update 'VARIANT' to pick a Python version: 3, 3.11, 3.10, 3.9, 3.8
+        			// Append -bullseye or -buster to pin to an OS version.
+        			// Use -bullseye variants on local on arm64/Apple Silicon.
+        			"VARIANT": "3.12-bookworm",
+        		}
+        	},
+
+        	// Configure tool-specific properties.
+        	"customizations": {
+        		// Configure properties specific to VS Code.
+        		"vscode": {
+        			// Set *default* container specific settings.json values on container create.
+        			"settings": {
+        				"python.defaultInterpreterPath": "/usr/local/bin/python",
+        				"python.linting.enabled": true,
+        				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+        				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy"
+        			},
+
+        			// Add the IDs of extensions you want installed when the container is created.
+        			"extensions": [
+        				"ms-python.python",
+        				"ms-python.vscode-pylance"
+        			]
+        		}
+        	},
+
+         	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+        	// "forwardPorts": [],
+
+        	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+        	//"remoteUser": "vscode",
+
+        	// Use 'postCreateCommand' to run commands after the container is created.
+        	//"postCreateCommand": "cat /etc/supervisor/supervisord.conf && cat /etc/supervisor/conf.d/supervisord.conf"
+        	"postCreateCommand": "ls -al /"
+
+        }
+        EOL
+
+    - name: 🚀 Initiate Lexer
+      uses: eq19/eq19.github.io@main
       with:
-        username: ${{ inputs.docker_hub_username }}
-        password: ${{ inputs.docker_hub_token }}
-        repository: ${{ steps.variables.outputs.repo_name }}
-        short-description: ${{ inputs.docker_hub_repo_short_description }}
-        readme-filepath: ${{ inputs.docker_hub_repo_readme_file_path }}
+        token: ${{ inputs.token }}
+        pre_build_container: 'eq19/setup'
