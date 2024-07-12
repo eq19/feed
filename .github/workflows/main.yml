@@ -110,4 +110,4 @@ jobs:
             root = /
 
       - name: 🪂 Set Grammar Rules
-        uses: eq19/grammar@v3
+        uses: eq19/grammar@v1
