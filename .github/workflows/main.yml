@@ -96,13 +96,11 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: 🚀 Setup Parser
-        #if: runner.os != 'Windows'
         uses: eq19/parser@v1
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: 🪂 Evaluate Syntax
-        if: runner.os == 'Windows'
         uses: eq19/syntax@v2
         with:
           wsl-conf: |
