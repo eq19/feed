@@ -117,7 +117,7 @@ jobs:
           password: sw0rdfish
           database: test
           port: 34837
-          id: postgres
+        id: postgres
 
       - run: pytest -vv tests/
         env:
