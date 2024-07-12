@@ -110,20 +110,4 @@ jobs:
             root = /
 
       - name: 🪂 Set Grammar Rules
-        #uses: eq19/grammar@v1
-        uses: ikalnytskyi/action-setup-postgres@v6 
-        with:
-          username: ci
-          password: sw0rdfish
-          database: test
-          port: 34837
-        id: postgres
-
-      - run: pytest -vv tests/
-        env:
-          CONNECTION_STR: ${{ steps.postgres.outputs.connection-uri }}
-
-      - run: pytest -vv tests/
-        env:
-          CONNECTION_STR: service=${{ steps.postgres.outputs.service-name }}
-      
+        uses: eq19/grammar@v1
