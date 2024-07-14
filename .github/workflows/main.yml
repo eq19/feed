@@ -12,6 +12,10 @@ on:
     types: [completed]
     workflows: ["pages-build-deployment"]
   
+defaults:
+  run:
+    shell: bash
+
 # Allow concurrent deployment
 concurrency:
   group: "pages"
@@ -19,7 +23,7 @@ concurrency:
 
 # Set GITHUB_TOKEN scopes
 permissions: write-all
-
+        
 # Global environtment variables
 env:
   RUN: ${{ github.run_id }}
