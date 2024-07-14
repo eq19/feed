@@ -79,7 +79,11 @@ jobs:
           credentials: ${{ secrets.GCP_CREDENTIALS }}
     
   github-pages:
+    defaults:
+      run:
+        shell: bash
     needs: determine-runner
+
     strategy:
       max-parallel: 1
       fail-fast: false
