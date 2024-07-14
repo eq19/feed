@@ -102,10 +102,6 @@ jobs:
 
       - name: ⚠️ Evaluate Syntax
         uses: eq19/syntax@v2
-        with:
-          wsl-conf: |
-            [automount]
-            root = /
 
       - name: 🏃‍♂️ Set Grammar Rules
         uses: eq19/grammar@v1
