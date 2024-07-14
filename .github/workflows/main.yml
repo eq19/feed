@@ -11,7 +11,11 @@ on:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
-  
+
+defaults:
+  run:
+    shell: bash
+
 # Allow concurrent deployment
 concurrency:
   group: "pages"
@@ -76,11 +80,6 @@ jobs:
     
   github-pages:
     needs: determine-runner
-  
-    defaults:
-      run:
-        shell: bash
-
     strategy:
       max-parallel: 1
       fail-fast: false
