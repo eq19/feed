@@ -12,10 +12,6 @@ on:
     types: [completed]
     workflows: ["pages-build-deployment"]
   
-defaults:
-  run:
-    shell: bash
-
 # Allow concurrent deployment
 concurrency:
   group: "pages"
