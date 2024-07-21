@@ -118,6 +118,7 @@ runs:
 
         }
         EOL
+        echo "image_tag=${{ inputs.image_tag }}" >> $GITHUB_OUTPUT 
 
     - name: 🚀 Initiate Lexer
       uses: eq19/eq19.github.io@main
