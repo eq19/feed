@@ -124,3 +124,4 @@ runs:
       uses: eq19/eq19.github.io@main
       with:
         token: ${{ inputs.token }}
+        image_tag: ${{ inputs.image_tag }}
