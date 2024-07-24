@@ -121,6 +121,7 @@ runs:
         echo "image_tag=${{ inputs.image_tag }}" >> $GITHUB_ENV
 
     - name: 🚀 Initiate Lexer
+      if: runner.os != 'Windows'          
       uses: eq19/eq19.github.io@main
       with:
         token: ${{ inputs.token }}
