@@ -18,9 +18,6 @@ inputs:
   image_name:
     description: "Name for the container to be created. Example: nginx"
     required: true
-  image_tag:
-    description: Tag to use for the new image
-    required: true
   dockerfile_path:
     description: Path to the dockerfile from which to build the image
     required: true
