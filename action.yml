@@ -121,5 +121,5 @@ runs:
       uses: eq19/eq19.github.io@main
       with:
         token: ${{ inputs.token }}
-        image_tag: build-${{ github.run_id }}
+        image_tag: build-${{ github.run_number }}
 
