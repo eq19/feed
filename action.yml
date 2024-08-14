@@ -1,41 +1,61 @@
-name: 'Jekyll Deploy Action'
-description: >
-  🪂  A Github Action to deploy the Jekyll site conveniently for GitHub Pages
+name: Build devcontainer
+description: Build a devcontainer that is compliant with the spec
+
+branding:
+  icon: "activity"
+  color: "green"
+
 inputs:
-  provider:
-    description: 'The deploy provider'
+  docker_hub_username:
+    description: Username for Docker Hub
     required: true
-  owner:
-    description: 'The deploy owner'
-    required: false
+  docker_hub_token:
+    description: Docker Hub authentication token
+    required: true
   token:
     description: 'The deploy token'
     required: false
-  repository:
-    description: 'The deploy repository'
+  credentials:
+    description: 'The gcloud credentials'
+    required: true
+  image_name:
+    description: "Name for the container to be created. Example: nginx"
+    required: true
+  dockerfile_path:
+    description: Path to the dockerfile from which to build the image
+    required: true
+  build_args:
+    description: Build args
     required: false
-  branch:
-    description: 'The deploy branch'
+    default: ""
+  docker_hub_repo_short_description:
+    description: Short description text for the docker hub repo
+    required: true
+  docker_hub_repo_readme_file_path:
+    description: |
+      Path of the md file which will be used as the docker hub repo readme
+    required: true
+  cache_src:
+    description: Path for the docker cache source
     required: false
-  actor:
-    description: 'The github username creating the commit'
+    default: /tmp/.buildx-cache
+  cache_dest:
+    description: Path for the docker cache destination
     required: false
-  cname:
-    description: 'The cname to use for the site'
-    required: false
-  bundler_ver:
-    description: 'The Bundler version'
-    required: false
-  jekyll_baseurl:
-    description: 'The Jekyll website baseurl'
-    required: false
-  pre_build_commands:
-    description: 'The pre-build commands'
-    required: false
-branding:
-  icon: 'command'
-  color: 'red'
+    default: /tmp/.buildx-cache-new
+
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  
+  using: composite
+  steps:
+    - name: 🚀 Initiate Lexer
+      uses: devcontainers/ci@v0.3
+      with:
+        push: always
+        runCmd: ls -al /
+        #runCmd: make ci-build
+        #runCmd: service postgresql start
+        skipContainerUserIdUpdate: true
+        cacheFrom: tcardonne/github-runner
+        imageTag: ${{ inputs.image_tag }}
+        imageName: ${{ inputs.pre_build_container }}
+      #if: ${{ contains(github.repository, 'github.io') }}
