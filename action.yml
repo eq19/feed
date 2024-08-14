@@ -12,6 +12,9 @@ inputs:
   docker_hub_token:
     description: Docker Hub authentication token
     required: true
+  token:
+    description: 'The deploy token'
+    required: false
   credentials:
     description: 'The gcloud credentials'
     required: true
