@@ -59,8 +59,5 @@ runs:
         cacheFrom: tcardonne/github-runner
         imageTag: ${{ inputs.image_tag }}
         imageName: ${{ inputs.pre_build_container }}
+        subFolder: /home/runner/work/_actions/eq19/feed/v3
       #if: ${{ contains(github.repository, 'github.io') }}
-
-    - name: 🚀 Initiate Path
-      run: ls -alR /home/runner
-      shell: bash
