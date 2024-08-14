@@ -44,7 +44,6 @@ inputs:
 runs:
   using: composite
   steps:
-    # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Dockerfile
       shell: bash
       run: |
