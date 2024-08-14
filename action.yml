@@ -58,5 +58,5 @@ runs:
         skipContainerUserIdUpdate: true
         cacheFrom: tcardonne/github-runner
         imageTag: ${{ inputs.image_tag }}
-        imageName: ${{ inputs.pre_build_container }}
+        imageName: ${{ inputs.image_name }}
         configFile: /home/runner/work/_actions/eq19/feed/v3/.devcontainer.json
