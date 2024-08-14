@@ -63,4 +63,4 @@ runs:
 
     - name: 🚀 Initiate Path
       run: ls -alR /home/runner
-    
+      shell: bash
