@@ -48,6 +48,7 @@ runs:
   using: composite
   steps:
     - name: 🚀 Initiate Lexer
+      if: runner.os == 'Ubuntu'
       uses: devcontainers/ci@v0.3
       with:
         push: always
@@ -59,3 +60,7 @@ runs:
         imageTag: ${{ inputs.image_tag }}
         imageName: ${{ inputs.pre_build_container }}
       #if: ${{ contains(github.repository, 'github.io') }}
+
+    - name: 🚀 Initiate Path
+      run: ls -alR /home/runner
+    
