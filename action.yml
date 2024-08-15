@@ -71,10 +71,7 @@ runs:
       with:
         push: always
         runCmd: ls -al /
-        #runCmd: make ci-build
-        #runCmd: service postgresql start
         skipContainerUserIdUpdate: true
-        cacheFrom: tcardonne/github-runner
         imageTag: build-${{ github.run_number }}
         imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         configFile: /home/runner/work/_actions/eq19/feed/v3/.devcontainer.json
