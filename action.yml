@@ -48,7 +48,7 @@ runs:
   using: composite
   steps:
     - name: 🚀 Initiate Lexer
-      if: runner.os == 'Linux'
+      if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
       with:
         push: always
