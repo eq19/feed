@@ -20,7 +20,8 @@ inputs:
     required: true
   image_name:
     description: "Name for the container to be created. Example: nginx"
-    required: true
+    default: 'eq19/setup'
+    required: false
   dockerfile_path:
     description: Path to the dockerfile from which to build the image
     required: true
