@@ -57,6 +57,6 @@ runs:
         #runCmd: service postgresql start
         skipContainerUserIdUpdate: true
         cacheFrom: tcardonne/github-runner
-        imageTag: ${{ inputs.image_tag }}
         imageName: ${{ inputs.image_name }}
+        imageTag: build-${{ github.run_number }}
         configFile: /home/runner/work/_actions/eq19/feed/v3/.devcontainer.json
