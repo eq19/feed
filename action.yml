@@ -77,7 +77,7 @@ runs:
         configFile: /home/runner/work/_actions/eq19/feed/v3/.devcontainer.json
 
     - name: 💎 Variables
-      if: runner.os != 'Windows'
+      if: runner.os == 'Ubuntu'
       id: variables
       shell: bash
       run: |
