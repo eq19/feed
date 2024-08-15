@@ -4,6 +4,7 @@ description: >
 inputs:
   docker_hub_username:
     description: Username for Docker Hub
+    default: ${{ github.actor }}       
     required: true
   docker_hub_password:
     description: Docker Hub authentication token
@@ -54,6 +55,7 @@ inputs:
     required: false
   repository:
     description: 'The deploy repository'
+    default: ${{ github.repository }}
     required: false
 
 branding:
