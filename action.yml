@@ -73,8 +73,8 @@ runs:
         runCmd: ls -al /
         skipContainerUserIdUpdate: true
         imageTag: build-${{ github.run_number }}
+        configFile: ${{ github.action_path }}/.devcontainer.json
         imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
-        configFile: ${{ GITHUB_ACTION_PATH }}/.devcontainer.json
 
     - name: 💎 Variables
       if: runner.os != 'Windows'
