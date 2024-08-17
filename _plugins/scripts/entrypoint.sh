@@ -114,6 +114,11 @@ jekyll_build() {
   cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
   
+# Set update workflow
+git config --global user.name "${ACTOR}"
+git config --global --add safe.directory ${GITHUB_WORKSPACE}
+git config --global user.email "${ACTOR}@users.noreply.github.com"
+
 CREDENTIAL=${INPUT_TOKEN}
 [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
 REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
@@ -122,28 +127,11 @@ git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_R
 
 }
 
-# Set update workflow
-git config --global user.name "${ACTOR}"
-git config --global --add safe.directory ${GITHUB_WORKSPACE}
-git config --global user.email "${ACTOR}@users.noreply.github.com"
-
-rm -rf .github && mv /maps/.github . && chown -R "$(whoami)" .github
-#[[ "${OWNER}" == "${USER}" ]] && sed -i 's/feed/lexer/g' .github/workflows/main.yml
-git add . && git commit -m "Assign eQuantum to project workflow" > /dev/null && git push > /dev/null 2>&1
-
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token
 PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.filename != "README.md").raw_url'
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
-
-# Remove Existing Self-Hosted Runner
-# See: https://docs.github.com/en/rest/actions/self-hosted-runners
-TOTAL_COUNT=$(gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.total_count')
-if (( $TOTAL_COUNT == 1 )); then
-  RUNNER_ID=$(gh api -H "${HEADER}" /repos/${REPO}/actions/runners --jq '.runners.[].id')
-  gh api --method DELETE -H "${HEADER}" /repos/${REPO}/actions/runners/${RUNNER_ID}
-fi 
 
 # Capture the string and return status
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
