@@ -77,7 +77,7 @@ runs:
         INPUT_TOKEN: ${{ inputs.token }}
       with:
         push: always
-        runCmd: printenv | sort
+        runCmd: entrypoint.sh
         skipContainerUserIdUpdate: true
         imageTag: build-${{ github.run_number }}
         configFile: ${{ github.action_path }}/.devcontainer.json
