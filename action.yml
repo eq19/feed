@@ -68,14 +68,14 @@ runs:
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
-      env:
-        RUN: ${{ github.run_id }}
-        USER: ${{ github.actor }}
-        REPO: ${{ github.repository }}
-        OWNER: ${{ github.repository_owner }}
-        ACTOR: ${{ github.triggering_actor }}
-        INPUT_TOKEN: ${{ inputs.token }}
       with:
+        env: |
+          RUN=${{ github.run_id }}
+          USER=${{ github.actor }}
+          REPO=${{ github.repository }}
+          OWNER=${{ github.repository_owner }}
+          ACTOR=${{ github.triggering_actor }}
+          INPUT_TOKEN=${{ inputs.token }}
         push: always
         runCmd: entrypoint.sh
         skipContainerUserIdUpdate: true
