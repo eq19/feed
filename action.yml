@@ -76,9 +76,9 @@ runs:
         configFile: ${{ github.action_path }}/.devcontainer.json
         imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         env: |
-          INPUT_TOKEN=${{ inputs.token }}
           RUN=${{ github.run_id }}
           USER=${{ github.actor }}
+          TOKEN=${{ inputs.token }}
           REPO=${{ github.repository }}
           OWNER=${{ github.repository_owner }}
           ACTOR=${{ github.triggering_actor }}
