@@ -126,7 +126,7 @@ git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_R
 #git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
 }
-
+printenv | sort
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
 echo ${INPUT_TOKEN} | gh auth login --with-token
