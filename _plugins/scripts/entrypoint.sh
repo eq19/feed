@@ -88,7 +88,7 @@ jekyll_build() {
   cat /maps/_config.yml
  
   echo -e "\n$hr\nSPIN\n$hr"
-   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
+  gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
   
   cd /tmp/workdir 
