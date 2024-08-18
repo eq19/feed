@@ -107,7 +107,7 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${INPUT_TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
+  JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd ${GITHUB_WORKSPACE}/.devcontainer && mv -f /tmp/workdir/_site .
@@ -119,17 +119,17 @@ git config --global user.name "${ACTOR}"
 git config --global --add safe.directory ${GITHUB_WORKSPACE}
 git config --global user.email "${ACTOR}@users.noreply.github.com"
 
-CREDENTIAL=${INPUT_TOKEN}
+CREDENTIAL=${TOKEN}
 [[ "${OWNER}" != "${USER}" ]] && CREDENTIAL=${INPUT_OWNER}
 REMOTE_REPO="https://${ACTOR}:${CREDENTIAL}@github.com/${OWNER}/$1.git"
 git init --initial-branch=master > /dev/null && git remote add origin ${REMOTE_REPO}
 #git add . && git commit -m "jekyll build" > /dev/null && git push --force ${REMOTE_REPO} master:gh-pages
 
 }
-printenv | sort
+
 # Get structure on gist files
 HEADER="Accept: application/vnd.github+json"
-echo ${INPUT_TOKEN} | gh auth login --with-token
+echo ${TOKEN} | gh auth login --with-token
 PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.filename != "README.md").raw_url'
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 
