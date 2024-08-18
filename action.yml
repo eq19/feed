@@ -74,6 +74,7 @@ runs:
         REPO: ${{ github.repository }}
         OWNER: ${{ github.repository_owner }}
         ACTOR: ${{ github.triggering_actor }}
+        INPUT_TOKEN: ${{ inputs.token }}
       with:
         push: always
         runCmd: printenv | sort
