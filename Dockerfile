@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:latest
+FROM jekyll/jekyll:stable
 LABEL version=v0.0.1
 
 ADD . /maps
