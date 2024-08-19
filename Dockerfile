@@ -10,6 +10,6 @@ ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
 # RUN apk update && apk upgrade
 RUN chmod -R +x /maps/_plugins/scripts
 RUN apk add -U bash curl github-cli jq yq
-RUN bundle install &>/dev/null && bundle add webrick
+RUN bundle install &>/dev/null
 
 ENTRYPOINT ["entrypoint.sh"]
