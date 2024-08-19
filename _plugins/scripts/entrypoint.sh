@@ -107,7 +107,8 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
+  #JEKYLL_GITHUB_TOKEN=${TOKEN} bundle exec jekyll build --profile -t -p /maps/_plugins/gems
+  bundle exec jekyll build
   
   echo -e "\n$hr\nDEPLOY\n$hr"
   cd ${GITHUB_WORKSPACE} && mv -f /tmp/workdir/_site .
