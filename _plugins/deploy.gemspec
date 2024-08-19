@@ -1,4 +1,5 @@
 require 'rake'
+
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-rtd-theme"
   spec.version       = "2.0.10"
@@ -10,5 +11,6 @@ Gem::Specification.new do |spec|
   spec.files         = FileList['assets/*','_*/*','[A-Z]*'].to_a
   spec.license       = "MIT"
 
+  #Ref: https://github.com/github/pages-gem/releases
   spec.add_runtime_dependency "github-pages", "~> 232"
 end
