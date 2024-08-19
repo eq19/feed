@@ -70,7 +70,7 @@ runs:
       uses: devcontainers/ci@v0.3
       with:
         push: always
-        runCmd: entrypoint.sh
+        runCmd: printenv | sort
         skipContainerUserIdUpdate: true
         imageTag: build-${{ github.run_number }}
         configFile: ${{ github.action_path }}/.devcontainer.json
