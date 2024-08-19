@@ -10,5 +10,5 @@ Gem::Specification.new do |spec|
   spec.files         = FileList['assets/*','_*/*','[A-Z]*'].to_a
   spec.license       = "MIT"
 
-  spec.add_runtime_dependency "github-pages", "~> 209"
+  spec.add_runtime_dependency "github-pages", "~> 232"
 end
