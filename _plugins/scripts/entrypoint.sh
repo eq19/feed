@@ -113,7 +113,8 @@ jekyll_build() {
   cd /workspaces/eq19.github.io && mv -f /tmp/workdir/_site .
   pwd && ls -al . && cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
-  
+  chown -R runner:docker /workspaces/eq19.github.io/_site
+         
 }
 
 # Get structure on gist files
