@@ -65,6 +65,7 @@ set_target() {
 jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
+  echo 'NEXT_TARGET='$1 >> $GITHUB_ENV
   [[ $1 == *"github.io"* ]] && OWNER=$2
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
@@ -113,7 +114,6 @@ jekyll_build() {
   cd /workspaces/eq19.github.io && mv -f /tmp/workdir/_site .
   pwd && ls -al . && cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
-  #chown -R runner:docker /workspaces/eq19.github.io/_site
          
 }
 
