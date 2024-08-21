@@ -12,5 +12,5 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   #Ref: https://github.com/github/pages-gem/releases
-  spec.add_runtime_dependency "github-pages", "~> 232"
+  #spec.add_runtime_dependency "github-pages", "~> 232"
 end
