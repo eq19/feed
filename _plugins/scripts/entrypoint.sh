@@ -67,7 +67,7 @@ jekyll_build() {
   echo -e "\n$hr\nCONFIG\n$hr"
   
   [[ $1 == *"github.io"* ]] && OWNER=$2  
-  echo 'TARGET_REPOSITORY='${OWNER}/$1 >> ${GITHUB_ENV} && cat ${GITHUB_ENV}
+  echo 'TARGET_REPOSITORY='${OWNER}/$1 >> ${GITHUB_ENV}
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
   if  [[ "${OWNER}" == "eq19" ]]; then
@@ -128,3 +128,6 @@ gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > /tmp/gist_files
 if [[ "${OWNER}" != "${USER}" ]]; then ENTRY=$(set_target ${OWNER} ${USER}); else ENTRY=$(set_target ${OWNER}); fi
 CELL=$? && TARGET_REPOSITORY=$(set_target $(basename ${REPO}) ${OWNER}.github.io)
 jekyll_build ${TARGET_REPOSITORY} ${ENTRY} $?
+
+cat ${GITHUB_ENV}
+
