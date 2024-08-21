@@ -12,6 +12,7 @@ RUN chmod -R +x /maps/_plugins/scripts
 RUN apk add -U bash curl github-cli jq yq
 
 RUN bundle install &>/dev/null
+RUN bundle update github-pages
 RUN bundle exec github-pages versions
 
 ENTRYPOINT ["entrypoint.sh"]
