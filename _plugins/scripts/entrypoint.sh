@@ -67,6 +67,7 @@ jekyll_build() {
   echo -e "\n$hr\nCONFIG\n$hr"
   
   [[ $1 == *"github.io"* ]] && OWNER=$2  
+  echo 'TARGET_REPOSITORY='${OWNER}/$1 >> ${GITHUB_ENV} && cat ${GITHUB_ENV}
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
   if  [[ "${OWNER}" == "eq19" ]]; then
@@ -87,10 +88,7 @@ jekyll_build() {
   sed -i "1s|^|user: ${USER}\n|" /maps/_config.yml
   sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
- 
-  echo 'TARGET_REPOSITORY='${OWNER}/$1
-  echo 'env'=${GITHUB_ENV} && cat ${GITHUB_ENV}
-  
+   
   echo -e "\n$hr\nSPIN\n$hr"
   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
