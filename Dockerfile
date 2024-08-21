@@ -10,6 +10,6 @@ ENV PATH=${PATH}:/maps/_plugins/scripts
 RUN apk add -U bash curl github-cli jq yq
 
 ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
-RUN bundle install &>/dev/null
+RUN bundle install
 
 ENTRYPOINT ["entrypoint.sh"]
