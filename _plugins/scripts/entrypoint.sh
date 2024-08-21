@@ -65,8 +65,7 @@ set_target() {
 jekyll_build() {
 
   echo -e "\n$hr\nCONFIG\n$hr"
-  echo 'NEXT_TARGET='$1 >> ${GITHUB_ENV}
-
+  
   [[ $1 == *"github.io"* ]] && OWNER=$2  
   if [[ $1 != "eq19.github.io" ]]; then SITEID=$(( $3 + 2 )); else SITEID=1; fi
 
@@ -89,6 +88,9 @@ jekyll_build() {
   sed -i "1s|^|id: ${SITEID}\n|" /maps/_config.yml
   cat /maps/_config.yml
  
+  echo 'TARGET_REPOSITORY='${OWNER}/$1
+  echo 'env'=${GITHUB_ENV} && cat ${GITHUB_ENV}
+  
   echo -e "\n$hr\nSPIN\n$hr"
   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find /tmp/gistdir -type d -name .git -prune -exec rm -rf {} \;
