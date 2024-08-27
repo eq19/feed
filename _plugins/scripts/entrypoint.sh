@@ -112,7 +112,8 @@ jekyll_build() {
   JEKYLL_GITHUB_TOKEN=${TOKEN} DISABLE_WHITELIST=true bundle exec jekyll build --profile -t -p /maps/_plugins/gems
     
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd /workspaces/eq19.github.io && mv -f /tmp/workdir/_site .
+  REPONAME=$(basename ${REPO})
+  cd /workspaces/${REPONAME} && mv -f /tmp/workdir/_site .
   pwd && ls -al . && cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
          
