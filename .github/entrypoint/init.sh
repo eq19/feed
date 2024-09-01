@@ -93,7 +93,7 @@ jekyll_build() {
   gist.sh $1 ${OWNER} ${FOLDER} #&>/dev/null
   find ${TMP}/gistdir -type d -name .git -prune -exec rm -rf {} \;
   
-  cd ${TMP}/workdir 
+  cd ${TMP}/workdir && mv -f ${TMP}/_config.yml .
   rm -rf ${TMP}/Sidebar.md && cp _Sidebar.md ${TMP}/Sidebar.md
   sed -i 's/0. \[\[//g' ${TMP}/Sidebar.md && sed -i 's/\]\]//g' ${TMP}/Sidebar.md
 
@@ -112,7 +112,7 @@ jekyll_build() {
   #JEKYLL_GITHUB_TOKEN=${TOKEN} DISABLE_WHITELIST=true bundle exec jekyll build --profile -t -p /maps/_plugins/gems
     
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd /workspaces/$(basename ${REPO}) && mv -f ${TMP}/workdir/_site .
+  cd ${GITHUB_WORKSPACE} && mv -f ${TMP}/workdir/_site .
   pwd && ls -al . && cd _site && touch .nojekyll && mv ${TMP}/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
          
@@ -123,7 +123,7 @@ PATTERN='sort_by(.created_at)|.[] | select(.public == true).files.[] | select(.f
 HEADER="Accept: application/vnd.github+json" && echo ${TOKEN} | gh auth login --with-token
 gh api -H "${HEADER}" /users/eq19/gists --jq "${PATTERN}" > ${TMP}/gist_files
 
-mv ${GITHUB_WORKSPACE}/.github/entrypoint/_config.yml ${TMP}/_config.yml
+mv ${GITHUB_WORKSPACE}/.github/templates/_config.yml ${TMP}/_config.yml
 sudo gem install nokogiri --platform=ruby
 
 # Capture the string and return status
