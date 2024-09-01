@@ -8,6 +8,9 @@ inputs:
   token:
     description: 'The deploy token'
     required: true
+  temp:
+    description: 'The temporary path'
+    required: true
 
 branding:
   icon: 'command'
@@ -20,6 +23,7 @@ runs:
       id: update
       shell: bash
       env:
+        TMP: ${{ inputs.temp }}
         RUN: ${{ github.run_id }}
         USER: ${{ github.actor }}
         TOKEN: ${{ inputs.token }}

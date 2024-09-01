@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+I'll#!/usr/bin/env bash
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
@@ -7,7 +7,7 @@ set_target() {
   # Get Structure
   if [[ $2 == *"github.io"* ]]; then
     [[ -n "$CELL" ]] && SPIN=$(( $CELL * 13 ))
-    pinned_repos.rb ${OWNER} public | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
+    pinned_repos.rb ${OWNER} publicly | yq eval -P | sed "s/ /, /g" > /tmp/pinned_repo
     [[ "${OWNER}" != "eq19" ]] && sed -i "1s|^|maps, feed, lexer, parser, syntax, grammar, |" /tmp/pinned_repo
     IFS=', '; array=($(cat /tmp/pinned_repo))
   else
@@ -109,10 +109,10 @@ jekyll_build() {
 
   echo -e "\n$hr\nBUILD\n$hr"
   # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-  JEKYLL_GITHUB_TOKEN=${TOKEN} DISABLE_WHITELIST=true bundle exec jekyll build --profile -t -p /maps/_plugins/gems
+  #JEKYLL_GITHUB_TOKEN=${TOKEN} DISABLE_WHITELIST=true bundle exec jekyll build --profile -t -p /maps/_plugins/gems
     
   echo -e "\n$hr\nDEPLOY\n$hr"
-  cd /workspaces/eq19.github.io && mv -f /tmp/workdir/_site .
+  cd /workspaces/$(basename ${REPO}) && mv -f /tmp/workdir/_site .
   pwd && ls -al . && cd _site && touch .nojekyll && mv /tmp/workdir/README.md .
   if [[ $1 == "eq19.github.io" ]]; then echo "www.eq19.com" > CNAME; fi && ls -al . && echo -e "\n"
          
