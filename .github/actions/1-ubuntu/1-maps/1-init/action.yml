@@ -43,7 +43,7 @@ runs:
         git remote set-url origin ${REMOTE_REPO}
         
         git add . && git commit -m "Assign eQuantum" && git push
-        if [ $? -eq 0 ]; then exit 1; else entrypoint.sh; fi
+        if [ $? -eq 0 ]; then exit 1; else init.sh; fi
 
     - name: View context attributes
       uses: actions/github-script@v7
