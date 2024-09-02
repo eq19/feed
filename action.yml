@@ -1,4 +1,4 @@
-name: 'Docker Deploy Action'
+Iname: 'Docker Deploy Action'
 
 description: >
   🪂  A Github Action to deploy pages conveniently
@@ -67,7 +67,7 @@ inputs:
 outputs:
   resultFile:
     description: "A file path to a results file."
-    value: ${{ steps.set_output.outputs.resultFile }}
+    value: ${{ steps.variables.outputs.resultID }}
 
 runs:
   using: composite
@@ -104,3 +104,4 @@ runs:
             curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/${{ inputs.image_name }}/tags/${array[$i]}
           fi
         done
+        echo 'resultID='${{ env.SITEID } >> ${GITHUB_OUTPUT}
