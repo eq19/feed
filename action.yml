@@ -100,7 +100,7 @@ runs:
         for ((i=0; i < ${#array[@]}; i++)); do
           if [[ "${array[$i]}" != "latest" ]]; then
             if [[ "$RUNNER_OS" == "Windows" ]]; then
-              echo 'image_tag='${array[$i] >> ${GITHUB_OUTPUT}
+              echo 'image_tag='${array[$i]} >> ${GITHUB_OUTPUT}
             else
               HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
               echo "deleted: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}:${array[$i]}"
