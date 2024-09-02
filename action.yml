@@ -65,7 +65,7 @@ inputs:
     required: false
 
 outputs:
-  resultFile:
+  output_2:
     description: "A file path to a results file."
     value: ${{ steps.variables.outputs.resultID }}
 
@@ -104,4 +104,4 @@ runs:
             curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/${{ inputs.image_name }}/tags/${array[$i]}
           fi
         done
-        echo 'resultID='${{ env.SITEID } >> ${GITHUB_OUTPUT}
+        echo 'resultID='${{ env.SITEID }} >> ${GITHUB_OUTPUT}
