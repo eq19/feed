@@ -80,7 +80,7 @@ runs:
         push: always
         runCmd: entrypoint.sh
         skipContainerUserIdUpdate: true
-        imageTag: build-${{ github.run_number }}
+        imageTag: build-${{ env.SITEID }}
         configFile: ${{ github.action_path }}/.devcontainer.json
         imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         env: |
