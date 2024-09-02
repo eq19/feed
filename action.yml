@@ -92,7 +92,7 @@ runs:
           OWNER=${{ github.repository_owner }}
 
     - name: 💎 Variables
-      if: runner.os != 'Windows'
+      #if: runner.os != 'Windows'
       id: variables
       shell: bash
       run: |
