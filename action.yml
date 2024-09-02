@@ -1,6 +1,12 @@
 name: 'Docker Deploy Action'
+
 description: >
   🪂  A Github Action to deploy pages conveniently
+
+branding:
+  icon: 'command'
+  color: 'red'
+
 inputs:
   docker_hub_username:
     description: Username for Docker Hub
@@ -58,9 +64,10 @@ inputs:
     default: ${{ github.repository }}
     required: false
 
-branding:
-  icon: 'command'
-  color: 'red'
+outputs:
+  resultFile:
+    description: "A file path to a results file."
+    value: ${{ steps.set_output.outputs.resultFile }}
 
 runs:
   using: composite
@@ -68,6 +75,7 @@ runs:
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
+      id: set_output
       with:
         push: always
         runCmd: entrypoint.sh
