@@ -78,6 +78,7 @@ runs:
       run: |
         ls -al workdir && shopt -s dotglob
         mv -f workdir/* ${{ github.action_path }}/
+        rm -rf workdir && ls -al ${{ github.action_path }}
         
     - name: 🚀 Initiate Lexer
       if: runner.os == 'Ubuntu'
@@ -104,9 +105,8 @@ runs:
       shell: bash
       run: |
         echo -e "\n$hr\nBUILD\n$hr"    
-        rm -rf workdir && cd ${{ github.action_path }} && ls -al .
         # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-        JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems
+        JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems -s ${{ github.action_path }}
 
     - name: 💎 Variables
       id: variables
