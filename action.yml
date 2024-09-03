@@ -73,15 +73,14 @@ runs:
   using: composite
   steps:
     - name: 💎 Variables
-      #if: runner.os != 'Windows'
-      id: jekyll-build
+      if: runner.os != 'Windows'
       shell: bash
       run: |
         ls -al workdir && shopt -s dotglob
         mv -f workdir/* ${{ github.action_path }}/
         
     - name: 🚀 Initiate Lexer
-      if: runner.os != 'Windows'
+      if: runner.os == 'Ubuntu'
       uses: devcontainers/ci@v0.3
       id: set_output
       with:
@@ -100,8 +99,8 @@ runs:
           OWNER=${{ github.repository_owner }}
 
     - name: 💎 Variables
-      #if: runner.os != 'Windows'
-      id: variables
+      if: runner.os != 'Windows'
+      id: jekyll-build
       shell: bash
       run: |
         echo -e "\n$hr\nBUILD\n$hr"    
@@ -109,6 +108,10 @@ runs:
         # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
         JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems
 
+    - name: 💎 Variables
+      id: variables
+      shell: bash
+      run: |
         if [[ "$RUNNER_OS" == "Windows" ]]; then choco install yq; fi
         IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
  
