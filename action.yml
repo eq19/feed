@@ -77,9 +77,8 @@ runs:
       id: jekyll-build
       shell: bash
       run: |
-        ls -al . && ls -al workdir
-        mv -f workdir/.git* ${{ github.action_path }}
-        mv -f workdir/* ${{ github.action_path }} && rm -rf workdir
+        ls -al . && ls -al workdir && shopt -s dotglob
+        mv -f workdir/* ${{ github.action_path }}/ && rm -rf workdir
         cd ${{ github.action_path }} && pwd && ls -al ${{ github.action_path }}
         
         echo -e "\n$hr\nBUILD\n$hr"    
@@ -87,7 +86,7 @@ runs:
         JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems
 
     - name: 🚀 Initiate Lexer
-      if: runner.os == 'Ubuntu'
+      if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
       id: set_output
       with:
