@@ -1,15 +1,37 @@
-FROM jekyll/jekyll:stable
-LABEL version=v0.0.1
+#
+# PostgreSQL server and extensions docker image
+#
+# http://github.com/tenstartups/postgresql-docker
+#
 
-ADD . /maps
+FROM postgres:latest
 
-RUN chmod -R +x /maps/_plugins/scripts
-ENV PATH=${PATH}:/maps/_plugins/scripts
+MAINTAINER Marc Lennox <marc.lennox@gmail.com>
 
-#RUN apk update && apk upgrade
-RUN apk add -U bash curl github-cli jq yq
+# Set environment variables.
+ENV \
+  DEBIAN_FRONTEND=noninteractive \
+  TERM=xterm-color
 
-ENV BUNDLE_GEMFILE=/maps/_plugins/Gemfile
-RUN bundle install
+# Install base packages.
+RUN apt-get update && apt-get -y install \
+  curl \
+  git \
+  libffi-dev \
+  lzop \
+  nano \
+  pv \
+  python \
+  python-dev \
+  python-pip \
+  python-setuptools \
+  wget
 
-ENTRYPOINT ["entrypoint.sh"]
+# Add Heroku WAL-E tools for postgres WAL archiving.
+RUN pip install wal-e
+
+# Clean up APT when done.
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# Add volume for WAL-E configuration.
+VOLUME ["/etc/wal-e.d/env"]
