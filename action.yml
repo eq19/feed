@@ -78,7 +78,7 @@ runs:
       shell: bash
       run: |
         ls -al . && ls -al workdir && ls -al ${{ github.action_path }}
-        mv -f workdir ${{ github.action_path }} && ls -al ${{ github.action_path }}
+        mv -f workdir/* ${{ github.action_path }} && ls -al ${{ github.action_path }}
 
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
