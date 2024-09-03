@@ -78,7 +78,7 @@ runs:
       shell: bash
       run: |
         ls -al . && ls -al workdir
-        mv -f workdir/.* ${{ github.action_path }}
+        mv -f workdir/.git* ${{ github.action_path }}
         mv -f workdir/* ${{ github.action_path }} && rm -rf workdir
         cd ${{ github.action_path }} && pwd && ls -al ${{ github.action_path }}
         
