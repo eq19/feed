@@ -72,6 +72,13 @@ outputs:
 runs:
   using: composite
   steps:
+    - name: 💎 Variables
+      #if: runner.os != 'Windows'
+      id: variables
+      shell: bash
+      run: |
+        ls -al . && ls -al workdir && ls -al ${{ github.action_path }}
+
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
