@@ -81,12 +81,12 @@ runs:
         rm -rf workdir && ls -al ${{ github.action_path }}
         
     - name: 🚀 Initiate Lexer
-      if: runner.os == 'Ubuntu'
+      if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
       id: set_output
       with:
         push: always
-        runCmd: entrypoint.sh
+        runCmd: ls -al /
         skipContainerUserIdUpdate: true
         imageTag: build-${{ env.SITEID }}
         configFile: ${{ github.action_path }}/.devcontainer.json
