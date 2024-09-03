@@ -106,9 +106,9 @@ runs:
         if [[ "$RUNNER_OS" == "Windows" ]]; then
           choco install yq
         else
-          echo -e "\n$hr\nBUILD\n$hr"    
+          echo -e "\n$hr\nBUILD\n$hr" && cd ${{ github.action_path }}
           # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-          JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems -s ${{ github.action_path }}
+          JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p _plugins/gems -d ${{ github.workspace }}/_site
         fi
 
         IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g")) 
