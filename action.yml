@@ -1,4 +1,4 @@
-Iname: 'Docker Deploy Action'
+name: 'Docker Deploy Action'
 
 description: >
   🪂  A Github Action to deploy pages conveniently
