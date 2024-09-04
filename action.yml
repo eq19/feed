@@ -88,7 +88,7 @@ runs:
         push: always
         runCmd: ls -al /
         skipContainerUserIdUpdate: true
-        imageTag: build-${{ env.SITEID }}
+        imageTag: spin-${{ env.SITEID }}
         configFile: ${{ github.action_path }}/.devcontainer.json
         imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
         env: |
@@ -99,6 +99,7 @@ runs:
           ACTOR=${{ github.triggering_actor }}
           OWNER=${{ github.repository_owner }}
 
+    - name: 💎 Variables
       if: runner.os != 'Windows'
       id: variables
       shell: bash
