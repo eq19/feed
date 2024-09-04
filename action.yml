@@ -88,15 +88,8 @@ runs:
         runCmd: ls -al /
         skipContainerUserIdUpdate: true
         imageTag: spin-${{ env.SITEID }}
+        imageName: ${{ github.repository }}
         configFile: ${{ github.action_path }}/.devcontainer.json
-        imageName: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}
-        env: |
-          RUN=${{ github.run_id }}
-          USER=${{ github.actor }}
-          TOKEN=${{ inputs.token }}
-          REPO=${{ github.repository }}
-          ACTOR=${{ github.triggering_actor }}
-          OWNER=${{ github.repository_owner }}
 
     - name: 💎 Variables
       if: runner.os != 'Windows'
