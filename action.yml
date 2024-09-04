@@ -73,8 +73,8 @@ runs:
       if: runner.os != 'Windows'
       shell: bash
       run: |
-        shopt -s dotglob && ls ${RUNNER_TEMP}/workdir
-        mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/ && ls ${{ github.action_path }}
+        shopt -s dotglob && ls -al ${RUNNER_TEMP}/workdir
+        mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/ && ls -al ${{ github.action_path }}
         
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
