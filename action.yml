@@ -99,27 +99,15 @@ runs:
           ACTOR=${{ github.triggering_actor }}
           OWNER=${{ github.repository_owner }}
 
-    - name: 💎 Variables
+      if: runner.os != 'Windows'
       id: variables
       shell: bash
       run: |
-        if [[ "$RUNNER_OS" == "Windows" ]]; then
-          choco install yq
-        else
-          echo -e "\n$hr\nBUILD\n$hr" && cd ${{ github.action_path }}
-          # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-          JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p ${{ github.action_path }}/_plugins -d ${{ github.workspace }}/_site
-        fi
-
-        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g")) 
+        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
         for ((i=0; i < ${#array[@]}; i++)); do
-          if [[ "${array[$i]}" != "latest" ]]; then
-            if [[ "$RUNNER_OS" == "Windows" ]]; then
-              echo 'image_tag='${array[$i]} >> ${GITHUB_OUTPUT}
-            else
-              HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
-              echo "deleted: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}:${array[$i]}"
-              curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/${{ inputs.image_name }}/tags/${array[$i]}
-            fi
+          if [ "${array[$i]}" != "latest" ]; then
+            HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
+            curl -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/${{ inputs.image_name }}/tags/${array[$i]}
+            echo "deleted: ${{ inputs.docker_hub_username }}/${{ inputs.image_name }}:${array[$i]}"
           fi
         done
