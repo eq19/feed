@@ -21,10 +21,6 @@ inputs:
   credentials:
     description: 'The gcloud credentials'
     required: true
-  image_name:
-    description: "Name for the container to be created. Example: nginx"
-    default: 'feed'
-    required: false
   image_tag:
     description: Tag to use for the new image
     required: true
@@ -88,7 +84,7 @@ runs:
         runCmd: ls -al /
         skipContainerUserIdUpdate: true
         imageTag: spin-${{ env.SITEID }}
-        imageName: ${{ github.repository }}
+        imageName: ${{ github.action_repository }}
         configFile: ${{ github.action_path }}/.devcontainer.json
 
     - name: 💎 Variables
@@ -96,7 +92,7 @@ runs:
       id: variables
       shell: bash
       run: |
-        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
+        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.docker_hub_username }}/$(basename ${{ github.action_repository }})/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
         for ((i=0; i < ${#array[@]}; i++)); do
           if [ "${array[$i]}" != "latest" ]; then
             HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
