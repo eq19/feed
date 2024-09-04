@@ -65,8 +65,8 @@ inputs:
     required: false
 
 outputs:
-  output_2:
-    description: "A file path to a results file."
+  spin:
+    description: 'The spin of current repository'
     value: ${{ steps.variables.outputs.image_tag }}
 
 runs:
