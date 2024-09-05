@@ -40,10 +40,9 @@ jobs:
       max-parallel: 1
       fail-fast: true
       matrix:
-        #node_version: [8, 10, 12]
         config:
-          - { os: ubuntu-latest, id: 1 }
-          - { os: windows-latest, id: 2 }
+          - {os: ubuntu-latest, id: 1}
+          - {os: windows-latest, id: 2}
     
     # ✔️ Runs on workflow_run
     runs-on: ${{ matrix.config.os }}
@@ -85,6 +84,7 @@ jobs:
           docker_hub_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           
     outputs:
+      # ♻️ Simulate Gell-Mann Matrices    
       id: ${{ steps.build-parser.outputs.id }}
       spin: ${{ steps.feed-mapping.outputs.spin }}
       target: ${{ steps.set-lexering.outputs.target }}
@@ -94,12 +94,7 @@ jobs:
     strategy:
       matrix:
         config:
-          - { os: self-hosted, id: 3 }           
-
-    env:
-      # ♻️ Simulate Gell-Mann Matrices    
-      GELL_MANN: ${{ toJSON(needs.lexering.outputs) }}
-
+          - {os: self-hosted, id: 3}           
     runs-on: ${{ matrix.config.os }}
 
     steps:
@@ -114,13 +109,15 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
-  
+          gell_mann: ${{ toJSON(needs.lexering.outputs) }}
+
       - name: 🔧 Evaluate Syntax
         uses: eq19/syntax@v2
         id: eval-syntax
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
+          gell_mann: ${{ toJSON(steps.set-parser.outputs) }}
   
       - name: 🚀 Set Grammar Rules 
         uses: eq19/grammar@v1
@@ -128,3 +125,5 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
+          gell_mann: ${{ toJSON(steps.eval-syntax.outputs) }}
+ 
