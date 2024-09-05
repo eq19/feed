@@ -64,7 +64,7 @@ inputs:
 outputs:
   spin:
     description: 'The spin of current repository'
-    value: ${{ env.SPIN }}
+    value: ${{ steps.content.outputs.value }}
 
 runs:
   using: composite
@@ -106,3 +106,11 @@ runs:
             echo "deleted: ${{ github.action_repository }}:${array[$i]}"
           fi
         done
+
+    - name: 💎 Multiline variable 
+      uses: mkungla/actions-set-text-output@v1
+      id: content
+      with:
+        text: |
+          # Set text output
+          A simple composite actions to set the job output while maintaining the text format e.g. markdown format.
