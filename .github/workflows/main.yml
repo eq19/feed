@@ -31,7 +31,7 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-# ⚠️ Set GITHUB_TOKEN
+# ⚠️ Set token permissions
 permissions: write-all
         
 jobs:
@@ -44,7 +44,7 @@ jobs:
           - {os: ubuntu-latest, id: 1}
           - {os: windows-latest, id: 2}
     
-    # ✔️ Runs on workflow_run
+    # 🌀 Commutation relations
     runs-on: ${{ matrix.config.os }}
     if: ${{github.event_name == 'push' ||
         github.event.workflow_run.conclusion == 'success'}}
@@ -95,6 +95,8 @@ jobs:
       matrix:
         config:
           - {os: self-hosted, id: 3}           
+
+    # ✔️ Completeness relations
     runs-on: ${{ matrix.config.os }}
 
     steps:
@@ -103,7 +105,7 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: ➿ Parsering
+      - name: 🕸️ Parsering
         uses: eq19/parser@v2
         id: set-parser
         with:
