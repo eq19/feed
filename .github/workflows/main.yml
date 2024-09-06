@@ -1,5 +1,5 @@
-# 💎 Main Workflow: eQuantum MEC Structure
-name: Build and Deploy Cell Types – Modulo 6
+# 💎 Main Workflow: eQuantum MEC30
+name: COmpendium of RElations – Modulo 6
 #
 # The semantics for running shell commands in GitHub actions is non-obvious. Please read
 # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsshell
@@ -87,7 +87,7 @@ jobs:
       # ♻️ Simulate Gell-Mann Matrices    
       id: ${{ steps.build-parser.outputs.id }}
       spin: ${{ steps.feed-mapping.outputs.spin }}
-      target: ${{ steps.set-lexering.outputs.target }}
+      decays: ${{ steps.set-lexering.outputs.decays }}
 
   setup-parser:
     needs: lexering
