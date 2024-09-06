@@ -64,7 +64,7 @@ inputs:
 outputs:
   spin:
     description: 'The spin of current repository'
-    value: ${{ steps.set_output.outputs.result}}
+    value: ${{ steps.set_output.outputs.stdout }}
 
 runs:
   using: composite
@@ -106,19 +106,10 @@ runs:
           fi
         done
 
-    - name: Get today's date
-      if: runner.os == 'Windows'
-      uses: mathiasvr/command-output@v2.0.0
-      id: today
-      with:
-        run: date +'%Y-%m-%d'
-
     - name: Collect output
       if: runner.os == 'Windows'
+      uses: mathiasvr/command-output@v2.0.0
       id: set_output
-      shell: bash
-      run: |
-        #Ref https://stackoverflow.com/a/75932020/4058484
-        echo 'result<<EOF' >> $GITHUB_OUTPUT
-        echo ${{ steps.today.outputs.stdout }} >> $GITHUB_OUTPUT
-        echo 'EOF' >> $GITHUB_OUTPUT
+      with:
+        run: |
+          date +'%Y-%m-%d'
