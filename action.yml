@@ -117,6 +117,7 @@ runs:
       if: runner.os == 'Windows'
       id: set_output
       run: |
+        #Ref https://stackoverflow.com/a/75932020/4058484
         echo 'result<<EOF' >> $GITHUB_OUTPUT
         echo ${{ steps.today.outputs.stdout }} >> $GITHUB_OUTPUT
         echo 'EOF' >> $GITHUB_OUTPUT
