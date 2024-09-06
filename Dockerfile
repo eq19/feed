@@ -3,8 +3,9 @@ FROM postgres:latest
 USER postgres
 RUN whoami
 
-ADD *.sql /docker-entrypoint-initdb.d/
-RUN chmod a+r /docker-entrypoint-initdb.d/*
+ADD setup.sql /docker-entrypoint-initdb.d/
+RUN chown postgres:postgres /docker-entrypoint-initdb.d/setup.sql
+RUN chmod a+r /docker-entrypoint-initdb.d/setup.sql
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 5432
