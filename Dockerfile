@@ -1,6 +1,7 @@
 FROM postgres:latest
 
-#USER postgres
+# Run the rest of the commands as postgres user
+USER postgres:postgres
 RUN whoami
 
 ADD setup.sql /docker-entrypoint-initdb.d/
