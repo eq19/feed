@@ -82,7 +82,7 @@ runs:
       id: set_output
       with:
         push: always
-        runCmd: ls -al /
+        runCmd: ls /
         imageTag: spin-${{ env.ID }}
         skipContainerUserIdUpdate: true
         imageName: ${{ inputs.image_name }}
