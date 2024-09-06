@@ -79,6 +79,7 @@ runs:
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
+      id: set_output
       with:
         push: always
         runCmd: ls -al /
@@ -105,11 +106,3 @@ runs:
             echo "deleted: ${{ github.action_repository }}:${array[$i]}"
           fi
         done
-
-    - name: Collect output
-      if: runner.os == 'Windows'
-      uses: mathiasvr/command-output@v2.0.0
-      id: set_output
-      with:
-        run: |
-          date +'%Y-%m-%d'
