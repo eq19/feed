@@ -88,13 +88,6 @@ runs:
         imageName: ${{ inputs.image_name }}
         configFile: ${{ github.action_path }}/.devcontainer.json
 
-    - name: Get today's date
-      if: runner.os == 'Windows'
-      uses: mathiasvr/command-output@v2.0.0
-      id: today
-      with:
-        run: date +'%Y-%m-%d'
-
     - name: 💎 Variables
       if: runner.os != 'Windows'
       id: variables
@@ -113,3 +106,10 @@ runs:
             echo "deleted: ${{ github.action_repository }}:${array[$i]}"
           fi
         done
+
+    - name: Get today's date
+      if: runner.os == 'Windows'
+      uses: mathiasvr/command-output@v2.0.0
+      id: today
+      with:
+        run: date +'%Y-%m-%d'
