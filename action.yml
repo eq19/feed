@@ -116,6 +116,7 @@ runs:
     - name: Collect output
       if: runner.os == 'Windows'
       id: set_output
+      shell: bash
       run: |
         #Ref https://stackoverflow.com/a/75932020/4058484
         echo 'result<<EOF' >> $GITHUB_OUTPUT
