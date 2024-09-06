@@ -64,7 +64,7 @@ inputs:
 outputs:
   spin:
     description: 'The spin of current repository'
-    value: ${{ steps.today.outputs.stdout }}
+    value: ${{ steps.set_output.outputs.result}}
 
 runs:
   using: composite
@@ -79,7 +79,6 @@ runs:
     - name: 🚀 Initiate Lexer
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
-      id: set_output
       with:
         push: always
         runCmd: ls -al /
@@ -113,3 +112,11 @@ runs:
       id: today
       with:
         run: date +'%Y-%m-%d'
+
+    - name: Collect output
+      if: runner.os == 'Windows'
+      id: set_output
+      run: |
+        echo 'result<<EOF' >> $GITHUB_OUTPUT
+        echo ${{ steps.today.outputs.stdout }} >> $GITHUB_OUTPUT
+        echo 'EOF' >> $GITHUB_OUTPUT
