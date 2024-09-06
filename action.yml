@@ -69,6 +69,26 @@ outputs:
 runs:
   using: composite
   steps:
+    - uses: ikalnytskyi/action-setup-postgres@v6 
+      with:
+        username: yoda
+        password: GrandMaster
+        database: test
+        port: 34837
+      id: postgres
+
+    - run: |
+        python3 -m pip install --upgrade pip pytest psycopg furl
+        #psql -U postgres -c 'SHOW config_file'
+        cp ./.github/entrypoint/test.py .
+        python3 -m pytest -vv test.py
+      env:
+        CONNECTION_URI: ${{ steps.postgres.outputs.connection-uri }}
+        SERVICE_NAME: ${{ steps.postgres.outputs.service-name }}
+        EXPECTED_CONNECTION_URI: postgresql://yoda:GrandMaster@localhost:34837/test
+        EXPECTED_SERVICE_NAME: yoda
+      shell: bash
+
     - name: 💎 Variables
       if: runner.os != 'Windows'
       shell: bash
@@ -82,7 +102,8 @@ runs:
       id: set_output
       with:
         push: always
-        runCmd: ls /
+        runCmd: ls -l 
+        /
         imageTag: spin-${{ env.ID }}
         skipContainerUserIdUpdate: true
         imageName: ${{ inputs.image_name }}
