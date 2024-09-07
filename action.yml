@@ -93,6 +93,7 @@ runs:
       if: runner.os != 'Windows'
       shell: bash
       run: |
+        export PATH=$GITHUB_WORKSPACE/.github/entrypoint:$PATH
         artifact.sh && ls -al ${RUNNER_TEMP}/workdir && shopt -s dotglob
         mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/ && ls -al ${{ github.action_path }}
         
