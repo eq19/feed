@@ -92,6 +92,14 @@ runs:
     - name: 💎 Variables
       if: runner.os != 'Windows'
       shell: bash
+      env:
+        TMP: ${{ inputs.tmp }}
+        RUN: ${{ github.run_id }}
+        USER: ${{ github.actor }}
+        TOKEN: ${{ inputs.token }}
+        REPO: ${{ github.repository }}
+        ACTOR: ${{ github.triggering_actor }}
+        OWNER: ${{ github.repository_owner }}
       run: |
         export PATH=$GITHUB_WORKSPACE/.github/entrypoint:$PATH
         artifact.sh && ls -al ${RUNNER_TEMP}/workdir && shopt -s dotglob
