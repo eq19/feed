@@ -92,7 +92,7 @@ runs:
       with:
         push: always
         runCmd: ls /
-        imageTag: grid-${{ env.ID }}
+        imageTag: spin-${{ github.run_number }}
         skipContainerUserIdUpdate: true
         imageName: ${{ inputs.image_name }}
         configFile: ${{ github.action_path }}/.devcontainer.json
