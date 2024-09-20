@@ -103,7 +103,7 @@ runs:
       shell: bash
       run: |
         BASE_NAME=$(basename ${{ inputs.image_name }})
-        ln -s ${{ github.action_path }} ${{ github.workspace }}/_site
+        ln ${{ github.action_path }} ${{ github.workspace }}/_site
         #echo -e "\n$hr\nBUILD\n$hr" && cd ${{ github.action_path }}
         # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
         #JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p ${{ github.action_path }}/_plugins -d ${{ github.workspace }}/_site
