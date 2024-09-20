@@ -103,6 +103,7 @@ runs:
       shell: bash
       run: |
         BASE_NAME=$(basename ${{ inputs.image_name }})
+        mldir -p ${{ github.workspace }}/_site
         cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/
         #echo -e "\n$hr\nBUILD\n$hr" && cd ${{ github.action_path }}
         # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
