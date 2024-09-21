@@ -103,12 +103,7 @@ runs:
       shell: bash
       run: |
         BASE_NAME=$(basename ${{ inputs.image_name }})
-        mkdir -p ${{ github.workspace }}/_site
-        cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/
-        #echo -e "\n$hr\nBUILD\n$hr" && cd ${{ github.action_path }}
-        # Jekyll Quick Reference https://gist.github.com/DrOctogon/bfb6e392aa5654c63d12
-        #JEKYLL_GITHUB_TOKEN=${{ inputs.token }} DISABLE_WHITELIST=true jekyll build --profile -t -p ${{ github.action_path }}/_plugins -d ${{ github.workspace }}/_site
-          
+        mkdir -p ${{ github.workspace }}/_site && cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/       
         IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g"))
         for ((i=0; i < ${#array[@]}; i++)); do
           if [ "${array[$i]}" != "latest" ]; then
