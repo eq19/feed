@@ -45,7 +45,8 @@
                 {%- endfor -%}
         {%- endcase -%}
     </ul>
-    <a class="edit" href="{% github_edit_link %}" title="{{ __.edit | default: 'Edit on GitHub'}}" rel="noreferrer" target="_blank">
+    {%- capture github_edit_link %}{% github_edit_link %}{% endcapture -%}
+    <a class="edit" href="{{ github_edit_link | replace: "/docs/", "/"  }}" title="{{ __.edit | default: 'Edit on GitHub'}}" rel="noreferrer" target="_blank">
         <i class="fa fa-edit"></i>
     </a>
 </div>
