@@ -21,10 +21,9 @@ $RECYCLE.BIN/
 *.lnk
 
 # jekyll
-#.jekyll-metadata
-#_site
 #.sass-cache
 #.jekyll-cache
+#.jekyll-metadata
 
 
 # bundler
@@ -45,7 +44,12 @@ package-lock.json
 *.report.html
 
 
+# build
+Dockerfile
+.devcontainer.json
+
 # action
+action.yml
 action.changelog.md
 
 
