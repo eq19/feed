@@ -87,6 +87,7 @@ runs:
         shopt -s dotglob && mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/
 
     - uses: ikalnytskyi/action-setup-postgres@v6 
+      if: runner.os != 'Windows'
       id: postgres
       with:
         username: yoda
@@ -102,6 +103,7 @@ runs:
         SERVICE_NAME: ${{ steps.postgres.outputs.service-name }}
         EXPECTED_CONNECTION_URI: postgresql://yoda:GrandMaster@localhost:34837/test
         EXPECTED_SERVICE_NAME: yoda
+      if: runner.os != 'Windows'
       shell: bash
 
     - name: 🚀 Initiate Lexer
@@ -131,3 +133,8 @@ runs:
             echo "deleted: ${{ inputs.image_name }}:${array[$i]}"
           fi
         done
+
+    - id: 'deploy'
+      if: runner.os == 'Windows'
+      uses: 'google-github-actions/deploy-appengine@v2'
+
