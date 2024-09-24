@@ -135,6 +135,6 @@ runs:
         done
 
     - id: 'deploy'
-      if: runner.os == 'Windows'
+      if: runner.os == 'Ubuntu'
       uses: 'google-github-actions/deploy-appengine@v2'
 
