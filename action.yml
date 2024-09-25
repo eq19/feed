@@ -138,9 +138,9 @@ runs:
       if: runner.os == 'Windows'
       shell: bash
       run: |
-        echo 'runtime: nodejs20' > app.yaml
-        echo 'env: standard' >> app yaml
+        VERSIONS=$(gcloud app versions list --format="value(version.id)" --sort-by="~version.createTime" | tail -n +6 )
+        gcloud app versions delete --quiet $VERSIONS
 
     - id: 'deploy'
-      if: runner.os == 'Windows'
+      if: runner.os == 'Ubuntu'
       uses: 'google-github-actions/deploy-appengine@v2'
