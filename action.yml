@@ -137,13 +137,13 @@ runs:
     - name: 🌀 GAE Deployment 
       if: runner.os == 'Windows'
       uses: 'google-github-actions/deploy-cloud-functions@v3'
+      id: 'deploy'
       with:
         name: 'my-function'
         runtime: 'nodejs20'
         timeout-minutes: 10
 
-    # Example of using the output
-    - id: 'test'
+    - name: Example of using the output 
       if: runner.os == 'Windows'
       shell: bash
       run: 'curl "${{ steps.deploy.outputs.url }}"'
