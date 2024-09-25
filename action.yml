@@ -134,7 +134,12 @@ runs:
           fi
         done
 
-    - id: 'deploy'
-      if: runner.os == 'Ubuntu'
-      uses: 'google-github-actions/deploy-appengine@v2'
+    - name: 🌀 GAE Deployment 
+      if: runner.os == 'Windows'
+      shell: bash
+      run: |
+        echo 'runtime: nodejs20' > app.yaml
 
+    - id: 'deploy'
+      if: runner.os == 'Windows'
+      uses: 'google-github-actions/deploy-appengine@v2'
