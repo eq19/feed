@@ -145,5 +145,5 @@ runs:
     # Example of using the output
     - id: 'test'
       if: runner.os == 'Windows'
-      shall: bash
+      shell: bash
       run: 'curl "${{ steps.deploy.outputs.url }}"'
