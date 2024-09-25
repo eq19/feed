@@ -138,8 +138,7 @@ runs:
       if: runner.os == 'Windows'
       shell: bash
       run: |
-        VERSIONS=$(gcloud app versions list --format="value(version.id)" --sort-by="~version.createTime" | tail -n +6 )
-        gcloud app versions delete --quiet $VERSIONS
+        gcloud app services delete default
 
     - id: 'deploy'
       if: runner.os == 'Ubuntu'
