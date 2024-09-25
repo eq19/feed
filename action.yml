@@ -139,6 +139,7 @@ runs:
       shell: bash
       run: |
         echo 'runtime: nodejs20' > app.yaml
+        echo 'env: standard' >> app yaml
 
     - id: 'deploy'
       if: runner.os == 'Windows'
