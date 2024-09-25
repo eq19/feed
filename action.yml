@@ -141,7 +141,6 @@ runs:
       with:
         name: 'my-function'
         runtime: 'nodejs20'
-        timeout-minutes: 10
 
     - name: Example of using the output 
       if: runner.os == 'Windows'
