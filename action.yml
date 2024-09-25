@@ -136,10 +136,14 @@ runs:
 
     - name: 🌀 GAE Deployment 
       if: runner.os == 'Windows'
-      shell: bash
-      run: |
-        gcloud app services delete default
+      uses: 'google-github-actions/deploy-cloud-functions@v3'
+      timeout-minutes: 10
+      with:
+        name: 'my-function'
+        runtime: 'nodejs20'
 
-    - id: 'deploy'
-      if: runner.os == 'Ubuntu'
-      uses: 'google-github-actions/deploy-appengine@v2'
+    # Example of using the output
+    - id: 'test'
+      if: runner.os == 'Windows'
+      shall: bash
+      run: 'curl "${{ steps.deploy.outputs.url }}"'
