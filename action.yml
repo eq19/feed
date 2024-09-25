@@ -134,15 +134,8 @@ runs:
           fi
         done
 
-    - name: 🌀 GAE Deployment 
+    - name: Setup .NET SDK
       if: runner.os == 'Windows'
-      uses: 'google-github-actions/deploy-cloud-functions@v3'
-      id: 'deploy'
+      uses: actions/setup-dotnet@v4
       with:
-        name: 'my-function'
-        runtime: 'nodejs20'
-
-    - name: Example of using the output 
-      if: runner.os == 'Windows'
-      shell: bash
-      run: 'curl "${{ steps.deploy.outputs.url }}"'
+        dotnet-version: 8.0.x
