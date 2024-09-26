@@ -85,6 +85,7 @@ runs:
         mv -f ${{ github.action_path }}/_config.yml ${RUNNER_TEMP}/
         export PATH=$GITHUB_WORKSPACE/.github/entrypoint:$PATH && artifact.sh
         shopt -s dotglob && mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/
+        mkdir -p ${{ github.workspace }}/_site && cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/       
 
     - uses: ikalnytskyi/action-setup-postgres@v6 
       if: runner.os != 'Windows'
@@ -122,7 +123,6 @@ runs:
       id: variables
       shell: bash
       run: |
-        mkdir -p ${{ github.workspace }}/_site && cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/       
         IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g")) 
         for ((i=0; i < ${#array[@]}; i++)); do
           if [[ "${array[$i]}" != "latest" ]]; then
