@@ -106,7 +106,7 @@ runs:
       if: runner.os != 'Windows'
       shell: bash
 
-    - name: 🚀 Initiate Lexer
+    - name: 🚀 Initiate Feed Container
       if: runner.os != 'Windows'
       uses: devcontainers/ci@v0.3
       id: set_output
@@ -115,7 +115,7 @@ runs:
         runCmd: ls -al /
         skipContainerUserIdUpdate: true
         imageName: ${{ inputs.image_name }}
-        imageTag: spin-${{ github.run_number }}
+        imageTag: spin-${{ env.ID }}
         configFile: ${{ github.action_path }}/.devcontainer.json
 
     - name: 💎 Variables
