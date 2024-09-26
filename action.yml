@@ -199,7 +199,7 @@ runs:
               -e POSTGRES_DB=postgres \
               -e POSTGRES_USER=postgres \
               -e POSTGRES_PASSWORD=postgres \
-              --name=mydb -p 5432:5432 --pull=always eq19/feed:spin-${{ env.ID }}
+              --name=mydb -p 5432:5432 --pull=always eq19/feed:${{ steps.variables.outputs.image_tag }}
 
         - path: /etc/systemd/system/runner.service
           permissions: 0644
@@ -243,7 +243,7 @@ runs:
       shell: bash
       # Ref: https://stackoverflow.com/a/47018417/4058484
       run: >
-        gcloud compute instances create gr${{ steps.variables.outputs.image_tag }}
+        gcloud compute instances create ${{ steps.variables.outputs.image_tag }}
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
         --zone=us-central1-a --machine-type=e2-micro --enable-display-device --tags=https-server
         --boot-disk-device-name=cos --image-project cos-cloud --image-family cos-stable --metadata-from-file=user-data=cloud-config
