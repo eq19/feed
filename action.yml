@@ -134,8 +134,18 @@ runs:
           fi
         done
 
-    - name: Setup .NET SDK
-      if: runner.os == 'Windows'
-      uses: actions/setup-dotnet@v4
+    # See https://cloud.google.com/functions
+    - name: 🌀 Cloud Function Deployment 
+      if: runner.os != 'Windows'
+      uses: 'google-github-actions/deploy-cloud-functions@v3'
+      id: 'deploy'
       with:
-        dotnet-version: 8.0.x
+        name: 'my-function'
+        runtime: 'nodejs20'
+        project_id: feedmapping
+
+    # See https://github.com/google-github-actions/deploy-cloud-functions
+    - name: Example of using the output 
+      if: runner.os != 'Windows'
+      shell: bash
+      run: 'curl "${{ steps.deploy.outputs.url }}"'
