@@ -199,7 +199,7 @@ runs:
               -e POSTGRES_DB=postgres \
               -e POSTGRES_USER=postgres \
               -e POSTGRES_PASSWORD=postgres \
-              --name=mydb -p 5432:5432 --pull=always eq19/feed:${{ steps.variables.outputs.image_tag }}
+              --name=mydb -p 5432:5432 --pull=always eq19/feed:spin-${{ steps.variables.outputs.image_tag }}
 
         - path: /etc/systemd/system/runner.service
           permissions: 0644
@@ -225,7 +225,7 @@ runs:
               -e CONNECTION_URI="postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable" \
               -v /var/run/docker.sock:/var/run/docker.sock \
               -v /mnt:/mnt \
-              --name myrunner --pull=always eq19/lexer:${{ steps.variables.outputs.image_tag }}
+              --name myrunner --pull=always eq19/lexer:id-${{ steps.variables.outputs.image_tag }}
 
         runcmd:
         - systemctl daemon-reload
