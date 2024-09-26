@@ -118,6 +118,24 @@ runs:
         imageTag: spin-${{ env.ID }}
         configFile: ${{ github.action_path }}/.devcontainer.json
 
+    - name: 🪂 Remove existing images
+      id: variables
+      shell: bash
+      run: |
+        BASE_NAME=$(basename ${{ inputs.image_name }})
+        IFS=', '; array=($(curl -L -s 'https://registry.hub.docker.com/v2/repositories/${{ inputs.image_name }}/tags?page_size=1024' | jq -rc '."results"[]["name"]' | yq eval -P | sed "s/ /, /g")) 
+        for ((i=0; i < ${#array[@]}; i++)); do
+          if [[ "${array[$i]}" != "latest" ]]; then
+            if [[ "$RUNNER_OS" == "Windows" ]]; then
+              echo 'image_tag='${array[$i]} >> ${GITHUB_OUTPUT}
+            else
+              HUB_TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d "{\"username\": \"${{ inputs.docker_hub_username }}\", \"password\": \"${{ inputs.docker_hub_password }}\"}" https://hub.docker.com/v2/users/login/ | jq -r .token)
+              curl -s -i -X DELETE -H "Accept: application/json" -H "Authorization: JWT $HUB_TOKEN" https://hub.docker.com/v2/namespaces/${{ inputs.docker_hub_username }}/repositories/$BASE_NAME/tags/${array[$i]}
+              echo "deleted: ${{ inputs.image_name }}:${array[$i]}"
+            fi
+          fi
+        done
+  
     # See https://github.com/thesofproject/sof/blob/main/zephyr/docker-run.sh
     - name: 🪂 Cloud Config
       if: runner.os == 'Windows'
