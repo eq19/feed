@@ -305,14 +305,7 @@ runs:
             "goog-ec-src": "vm_add-rest"
           },
           "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
-          "metadata": {
-            "items": [
-              {
-                "key": "metadata-from-file",
-                "value": "user-data=cloud-config"
-              }
-            ]
-          },
+          "metadata-from-file": "user-data=cloud-config",
           "name": "spin-1",
           "networkInterfaces": [
             {
