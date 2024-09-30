@@ -249,3 +249,112 @@ runs:
         --zone=us-central1-a --machine-type=e2-micro --enable-display-device --tags=https-server
         --boot-disk-device-name=cos --image-project cos-cloud --image-family cos-stable --metadata-from-file=user-data=cloud-config
         --create-disk=boot=no,auto-delete=no,name=tensorflow,device-name=deeplearning,mode=ro,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
+
+    - name: 💎 Set Access Token
+      if: runner.os == 'Windows'
+      id: 'o2auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        token_format: 'access_token'
+        credentials_json: ${{ inputs.credentials }}
+
+    - name: 🪂 Setup Runner by API
+      if: runner.os == 'Windows'          
+      shell: bash
+      run: >
+        curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
+        -X POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances -d 
+        '{         
+          "canIpForward": false,
+          "confidentialInstanceConfig": {
+            "enableConfidentialCompute": false
+          },
+          "deletionProtection": false,
+          "description": "",
+          "disks": [
+            {
+              "autoDelete": true,
+              "boot": true,
+              "deviceName": "instance-20240930-102016",
+              "diskEncryptionKey": {},
+              "initializeParams": {
+                "diskSizeGb": "10",
+                "diskType": "projects/feedmapping/zones/us-central1-f/diskTypes/pd-standard",
+                "labels": {},
+                "sourceImage": "projects/cos-cloud/global/images/cos-101-17162-528-49"
+              },
+              "mode": "READ_WRITE",
+              "type": "PERSISTENT"
+            },
+            {
+              "autoDelete": false,
+              "boot": false,
+              "deviceName": "tensorflow",
+              "interface": "SCSI",
+              "mode": "READ_ONLY",
+              "source": "projects/feedmapping/zones/us-central1-a/disks/tensorflow",
+              "type": "PERSISTENT"
+            }
+          ],
+          "displayDevice": {
+            "enableDisplay": false
+          },
+          "guestAccelerators": [],
+          "instanceEncryptionKey": {},
+          "keyRevocationActionType": "NONE",
+          "labels": {
+            "goog-ec-src": "vm_add-rest"
+          },
+          "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
+          "metadata": {
+            "items": [
+              {
+                "key": "metadata-file",
+                "value": "cloud-config"
+              }
+            ]
+          },
+          "name": "spin-1",
+          "networkInterfaces": [
+            {
+              "accessConfigs": [
+                {
+                  "name": "External NAT",
+                  "networkTier": "PREMIUM"
+                }
+              ],
+              "stackType": "IPV4_ONLY",
+              "subnetwork": "projects/feedmapping/regions/us-central1/subnetworks/default"
+            }
+          ],
+          "params": {
+            "resourceManagerTags": {}
+          },
+          "reservationAffinity": {
+            "consumeReservationType": "NO_RESERVATION"
+          },
+          "scheduling": {
+            "automaticRestart": true,
+            "onHostMaintenance": "MIGRATE",
+            "provisioningModel": "STANDARD"
+         },
+         "serviceAccounts": [
+            {
+              "email": "project-owner@feedmapping.iam.gserviceaccount.com",
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            }
+          ],
+          "shieldedInstanceConfig": {
+            "enableIntegrityMonitoring": true,
+            "enableSecureBoot": false,
+            "enableVtpm": true
+          },
+          "tags": {
+            "items": [
+              "https-server"
+            ]
+          },
+          "zone": "projects/feedmapping/zones/us-central1-a"
+        }'
