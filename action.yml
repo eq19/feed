@@ -253,7 +253,6 @@ runs:
     - name: 🪂 Setup Runner by API
       if: runner.os == 'Windows'          
       shell: bash
-      # Ref: https://stackoverflow.com/a/47018417/4058484
       run: >
         curl -s -X POST POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances
         -H "Authorization: Bearer $IDENTITY" -H "Content-Type: application/json" -d 
