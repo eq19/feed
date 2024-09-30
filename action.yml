@@ -308,8 +308,8 @@ runs:
           "metadata": {
             "items": [
               {
-                "key": "metadata-file",
-                "value": "cloud-config"
+                "key": "metadata-from-file",
+                "value": "user-data=cloud-config"
               }
             ]
           },
