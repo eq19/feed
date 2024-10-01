@@ -306,7 +306,12 @@ runs:
           },
           "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
           "metadata": {
-            "user-data": ["cloud-config"]
+            "items": [
+              {
+                "key": "user-data",
+                "value": "cloud-config"
+              }
+            ]
           },
           "name": "spin-1",
           "networkInterfaces": [
