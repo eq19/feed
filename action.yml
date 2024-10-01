@@ -310,7 +310,7 @@ runs:
           "metadata": {
             "items": [
               {
-                "key": "user_data",
+                "key": "user-data",
                 "value": "${{ steps.cloud_config.outputs.user_data }}"
               }
             ]
