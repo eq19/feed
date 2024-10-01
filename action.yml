@@ -312,7 +312,7 @@ runs:
             "items": [
               {
                 "key": "user_data",
-                "value": "${{ steps.cloud_config.outputs.user_data }}"
+                "value": "@cloud_config"
               }
             ]
           },
