@@ -240,7 +240,7 @@ runs:
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by Gcloud
-      if: runner.os == 'Ubuntu'          
+      if: runner.os == 'Windows'          
       shell: bash
       # Ref: https://stackoverflow.com/a/47018417/4058484
       run: >
@@ -260,7 +260,7 @@ runs:
 
     # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'          
+      if: runner.os == 'Ubuntu'          
       shell: bash
       run: >
         curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
