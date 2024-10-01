@@ -311,7 +311,7 @@ runs:
             "items": [
               {
                 "key": "startup-script-url",
-                "value": "cloud-config"
+                "value": "gs://feedmapping.appspot.com/cloud-config"
               }
             ]
           },
