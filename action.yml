@@ -343,7 +343,8 @@ runs:
             {
               "email": "project-owner@feedmapping.iam.gserviceaccount.com",
               "scopes": [
-                "https://www.googleapis.com/auth/cloud-platform"
+                "https://www.googleapis.com/auth/cloud-platform",
+                "https://www.googleapis.com/auth/devstorage.read_only"
               ]
             }
           ],
