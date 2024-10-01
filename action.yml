@@ -259,6 +259,7 @@ runs:
         token_format: 'access_token'
         credentials_json: ${{ inputs.credentials }}
 
+    # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
     - name: 🪂 Setup Runner by API
       if: runner.os == 'Windows'          
       shell: bash
