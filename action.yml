@@ -214,7 +214,7 @@ runs:
             [Service]
             RestartSec=5s
             Restart=on-failure
-            Environment=`HOME=/home/runner`
+            Environment='HOME=/home/runner'
             ExecStop=/usr/bin/docker stop myrunner
             ExecStopPost=/usr/bin/docker rm myrunner
             ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
