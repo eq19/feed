@@ -214,7 +214,7 @@ runs:
             [Service]
             RestartSec=5s
             Restart=on-failure
-            Environment="HOME=/home/runner"
+            Environment=`HOME=/home/runner`
             ExecStop=/usr/bin/docker stop myrunner
             ExecStopPost=/usr/bin/docker rm myrunner
             ExecStartPre=/usr/bin/docker-credential-gcr configure-docker
@@ -223,7 +223,6 @@ runs:
               -e RUNNER_NAME=Google-optimized-instance \
               -e RUNNER_REPOSITORY_URL=https://github.com/${{ inputs.repository }} \
               -e GITHUB_ACCESS_TOKEN=${{ inputs.token }} \
-              -e CONNECTION_URI="postgresql+psycopg2://postgres:postgres@172.17.0.1:5432/postgres?sslmode=disable" \
               -v /var/run/docker.sock:/var/run/docker.sock \
               -v /mnt:/mnt \
               --name myrunner --pull=always eq19/lexer:id-${{ steps.variables.outputs.image_tag }}
