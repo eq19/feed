@@ -308,7 +308,12 @@ runs:
           },
           "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
           "metadata": {
-            "user_data": "${{ steps.cloud_config.outputs.BASE64 }}"
+            "items": [
+              {
+                "key": "user_data",
+                "value": "${{ steps.cloud_config.outputs.BASE64 }}"
+              }
+            ]
           },
           "name": "spin-1",
           "networkInterfaces": [
