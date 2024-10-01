@@ -260,7 +260,8 @@ runs:
 
     # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'          
+      if: runner.os == 'Windows'
+      id: targetLink
       shell: bash
       run: >
         curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
@@ -360,4 +361,4 @@ runs:
             ]
           },
           "zone": "projects/feedmapping/zones/us-central1-a"
-        }'
+        }' | jq '.targetLink'
