@@ -261,10 +261,10 @@ runs:
     # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
     - name: 🪂 Setup Runner by API
       if: runner.os == 'Windows'
-      id: targetLink
+      id: setup_runner
       shell: bash
       run: >
-        curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
+        echo 'targetLink='$(curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
         -X POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances -d 
         '{         
           "canIpForward": false,
@@ -361,4 +361,11 @@ runs:
             ]
           },
           "zone": "projects/feedmapping/zones/us-central1-a"
-        }' | jq '.targetLink'
+        }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
+
+    - name: 🪂 Setup Runner by API
+      if: runner.os == 'Windows'
+      id: connectLink
+      shell: bash
+      run: |
+        echo ${{ steps.setup_runner.outputs.targetLink }}
