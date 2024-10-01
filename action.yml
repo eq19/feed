@@ -315,7 +315,7 @@ runs:
               }
             ]
           },
-          "name": "spin-1",
+          "name": "grid-${{ steps.variables.outputs.image_tag }}",
           "networkInterfaces": [
             {
               "accessConfigs": [
