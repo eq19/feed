@@ -310,8 +310,8 @@ runs:
           "metadata": {
             "items": [
               {
-                "key": "user_data",
-                "value": "${{ steps.cloud_config.outputs.user_data }}"
+                "key": "startup-script-url",
+                "value": "cloud-config"
               }
             ]
           },
