@@ -277,7 +277,7 @@ runs:
       id: setup_runner
       shell: bash
       run: >
-        curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
+        echo 'targetLink='$(curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
         -X POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances -d 
         '{         
           "name": "grid-${{ steps.variables.outputs.image_tag }}",
@@ -378,7 +378,7 @@ runs:
               }
             ]
           }
-        }' #echo 'targetLink='$(| jq '.targetLink') >> ${GITHUB_OUTPUT}
+        }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
       if: runner.os == '-Windows'
