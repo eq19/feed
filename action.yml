@@ -141,7 +141,7 @@ runs:
     # See https://github.com/thesofproject/sof/blob/main/zephyr/docker-run.sh
     - name: 🪂 Cloud Config
       if: runner.os == 'Windows'
-      id: cloud_config
+      id: metadata
       shell: bash
       run: |
         cat << EOL >> cloud-config
@@ -241,7 +241,7 @@ runs:
         SERVICE_ACCOUNT=project-owner@feedmapping.iam.gserviceaccount.com
         ssh-keygen -t rsa -N '' -f $HOME/.ssh/id_rsa -C $SERVICE_ACCOUNT
         echo 'private_key='$(cat $HOME/.ssh/id_rsa) >> ${GITHUB_OUTPUT}
-        
+        echo 'pub_key='$(cat $HOME/.ssh/id_rsa.pub) >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by Gcloud
       if: runner.os == 'Ubuntu'          
@@ -316,7 +316,11 @@ runs:
             "items": [
               {
                 "key": "user-data",
-                "value": "${{ steps.cloud_config.outputs.user_data }}"
+                "value": "${{ steps.metadata.outputs.user_data }}"
+              },
+              {
+                "key": "ssh-keys",
+                "value": "${{ steps.metadata.outputs.pub_key }}"
               }
             ]
           },
