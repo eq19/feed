@@ -323,6 +323,10 @@ runs:
               {
                 "key": "user-data",
                 "value": "${{ steps.metadata.outputs.user_data }}"
+              },
+              {
+                "key": "private-keys",
+                "value": "${{ steps.metadata.outputs.private_key }}"
               }
             ]
           },
