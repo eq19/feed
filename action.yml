@@ -389,7 +389,7 @@ runs:
         #echo ${{ steps.setup_runner.outputs.targetLink }}
         curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip
 
-    #See also: https://github.com/appleboy/ssh-action
+    #See https://github.com/google-github-actions/ssh-compute
     - uses: 'google-github-actions/ssh-compute@v1'
       if: runner.os == '-Windows'
       with:
