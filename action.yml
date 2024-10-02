@@ -396,6 +396,7 @@ runs:
         ssh_private_key: '${{ steps.metadata.outputs.private_key }}'
         command: 'echo Hello world'
 
+    # Ref: https://blog.benoitblanchon.fr/github-action-run-ssh-commands/
     - name: Configure SSH
       id: 'compute-ssh'
       if: runner.os == 'Windows'
