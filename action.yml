@@ -237,8 +237,8 @@ runs:
         - mkdir -p /mnt/disks/platform
         - mount -o nosuid,nodev,commit=30,defaults -t ext4 /dev/sdb1 /mnt/disks/platform
         EOL
-        USER_NAME=project-owner@feedmapping.iam.gserviceaccount.com
-        ssh-keygen -t rsa -f $USERPROFILE\.ssh\my_ssh_key -C $USER_NAME
+        SERVICE_ACCOUNT=project-owner@feedmapping.iam.gserviceaccount.com
+        ssh-keygen -t rsa -f $USERPROFILE/.ssh/my_ssh_key -C $SERVICE_ACCOUNT
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by Gcloud
@@ -314,7 +314,7 @@ runs:
             "items": [
               {
                 "key": "user-data",
-                "value": "${{ steps.cloud_config.outputs.user_data }}"
+                "value": "$(awk '{printf "%s\\n", $0}' cloud-config)"
               }
             ]
           },
