@@ -277,10 +277,10 @@ runs:
       id: setup_runner
       shell: bash
       run: >
-        echo 'targetLink='$(curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
+        curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
         -X POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances -d 
         '{         
-          "canIpForward": false,
+          "canIpForward": true,
           "confidentialInstanceConfig": {
             "enableConfidentialCompute": false
           },
@@ -378,7 +378,7 @@ runs:
             ]
           },
           "zone": "projects/feedmapping/zones/us-central1-a"
-        }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
+        }' #echo 'targetLink='$(| jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
       if: runner.os == '-Windows'
@@ -404,6 +404,7 @@ runs:
       run: |
         mkdir -p $HOME/.ssh/
         echo "${{ steps.metadata.outputs.private_key }}" > $HOME/.ssh/staging.key
+        #ssh-keyscan -t rsa  ${{ steps.setup_runner.outputs.external_ip }} >> ~/.ssh/known_hosts
         chmod 600 $HOME/.ssh/staging.key
         cat >> $HOME/.ssh/config <<END
         Host staging
