@@ -28,7 +28,7 @@ inputs:
   dockerfile_path:
     description: Path to the dockerfile from which to build the image
     required: true
-  build_args:
+  initiate_pauli:
     description: Build args
     required: false
     default: ""
@@ -375,8 +375,25 @@ runs:
         }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       id: connectLink
       shell: bash
       run: |
         echo ${{ steps.setup_runner.outputs.targetLink }}
+
+    - id: 'compute-ssh'
+      uses: 'google-github-actions/ssh-compute@v1'
+      if: runner.os == 'Windows'
+      with:
+        instance_name: 'grid-5'
+        zone: 'us-central1-a'
+        ssh_private_key: '${{ steps.metadata.outputs.private_key }}'
+        command: 'echo Hello world'
+
+    # Example of using the output
+    - id: 'test'
+      if: runner.os == 'Windows'
+      shell: bash
+      run: |-
+        echo '${{ steps.compute-ssh.outputs.stdout }}'
+        echo '${{ steps.compute-ssh.outputs.stderr }}'
