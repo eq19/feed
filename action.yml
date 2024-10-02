@@ -242,7 +242,7 @@ runs:
         EOL
         ssh-keygen -t rsa -N '' -f $HOME/.ssh/id_rsa -C root
         echo 'private_key='$(cat $HOME/.ssh/id_rsa) >> ${GITHUB_OUTPUT}
-        echo 'pub_key=root:'$(cat $HOME/.ssh/id_rsa.pub) >> ${GITHUB_OUTPUT}
+        echo 'public_key='$(cat $HOME/.ssh/id_rsa.pub) >> ${GITHUB_OUTPUT}
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by Gcloud
@@ -322,7 +322,7 @@ runs:
               },
               {
                 "key": "ssh-keys",
-                "value": "${{ steps.metadata.outputs.pub_key }}"
+                "value": "root:${{ steps.metadata.outputs.public_key }}"
               }
             ]
           },
