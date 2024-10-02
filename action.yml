@@ -387,8 +387,7 @@ runs:
         echo ${{ steps.setup_runner.outputs.targetLink }}
 
     #See also: https://github.com/appleboy/ssh-action
-    - id: 'compute-ssh'
-      uses: 'google-github-actions/ssh-compute@v1'
+    - uses: 'google-github-actions/ssh-compute@v1'
       if: runner.os == '-Windows'
       with:
         instance_name: 'grid-5'
@@ -397,7 +396,9 @@ runs:
         command: 'echo Hello world'
 
     - name: Configure SSH
+      id: 'compute-ssh'
       if: runner.os == 'Windows'
+      shell: bash
       run: |
         mkdir -p $HOME/.ssh/
         echo "${{ steps.metadata.outputs.private_key }}" > $HOME/.ssh/staging.key
@@ -412,9 +413,8 @@ runs:
           
     # Example of using the output
     - id: 'test'
-      if: runner.os == '-Windows'
+      if: runner.os == 'Windows'
       shell: bash
       run: |-
         ssh staging 'sudo whoami'
         echo '${{ steps.compute-ssh.outputs.stdout }}'
-        echo '${{ steps.compute-ssh.outputs.stderr }}'
