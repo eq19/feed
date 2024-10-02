@@ -418,6 +418,6 @@ runs:
       if: runner.os == 'Windows'
       shell: bash
       run: |-
-        choco install notepadplusplus
+        NPP=$(choco install notepadplusplus)
         ssh staging 'sudo whoami'
         echo '${{ steps.compute-ssh.outputs.stdout }}'
