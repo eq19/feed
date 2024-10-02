@@ -317,16 +317,12 @@ runs:
           "metadata": {
             "items": [
               {
-                "key": "ssh-keys",
-                "value": "${{ steps.metadata.outputs.pub_key }}"
-              },
-              {
                 "key": "user-data",
                 "value": "${{ steps.metadata.outputs.user_data }}"
               },
               {
-                "key": "private-keys",
-                "value": "${{ steps.metadata.outputs.private_key }}"
+                "key": "ssh-keys",
+                "value": "${{ steps.metadata.outputs.pub_key }}"
               }
             ]
           },
