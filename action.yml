@@ -387,6 +387,7 @@ runs:
       run: |
         NPP=$(choco install notepadplusplus)
         #echo ${{ steps.setup_runner.outputs.targetLink }}
+        gcloud compute firewall-rules create allow-rdp-ingress-from-iap --direction=INGRESS --action=allow --rules=tcp:3389 --source-ranges=35.235.240.0/20
         curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip
 
     #See https://github.com/google-github-actions/ssh-compute
