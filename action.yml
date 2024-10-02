@@ -381,11 +381,13 @@ runs:
         }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
-      if: runner.os == '-Windows'
+      if: runner.os == 'Windows'
       id: connectLink
       shell: bash
       run: |
-        echo ${{ steps.setup_runner.outputs.targetLink }}
+        NPP=$(choco install notepadplusplus)
+        #echo ${{ steps.setup_runner.outputs.targetLink }}
+        curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip
 
     #See also: https://github.com/appleboy/ssh-action
     - uses: 'google-github-actions/ssh-compute@v1'
@@ -419,6 +421,5 @@ runs:
       if: runner.os == 'Windows'
       shell: bash
       run: |-
-        NPP=$(choco install notepadplusplus)
         ssh staging 'sudo whoami'
         echo '${{ steps.compute-ssh.outputs.stdout }}'
