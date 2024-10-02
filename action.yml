@@ -280,60 +280,8 @@ runs:
         curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
         -X POST https://compute.googleapis.com/compute/v1/projects/feedmapping/zones/us-central1-a/instances -d 
         '{         
-          "canIpForward": true,
-          "confidentialInstanceConfig": {
-            "enableConfidentialCompute": false
-          },
-          "deletionProtection": false,
-          "description": "",
-          "disks": [
-            {
-              "autoDelete": true,
-              "boot": true,
-              "deviceName": "instance-20240930-102016",
-              "diskEncryptionKey": {},
-              "initializeParams": {
-                "diskSizeGb": "10",
-                "diskType": "projects/feedmapping/zones/us-central1-f/diskTypes/pd-standard",
-                "labels": {},
-                "sourceImage": "projects/cos-cloud/global/images/cos-101-17162-528-49"
-              },
-              "mode": "READ_WRITE",
-              "type": "PERSISTENT"
-            },
-            {
-              "autoDelete": false,
-              "boot": false,
-              "deviceName": "tensorflow",
-              "interface": "SCSI",
-              "mode": "READ_ONLY",
-              "source": "projects/feedmapping/zones/us-central1-a/disks/tensorflow",
-              "type": "PERSISTENT"
-            }
-          ],
-          "displayDevice": {
-            "enableDisplay": false
-          },
-          "guestAccelerators": [],
-          "instanceEncryptionKey": {},
-          "keyRevocationActionType": "NONE",
-          "labels": {
-            "goog-ec-src": "vm_add-rest"
-          },
-          "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
-          "metadata": {
-            "items": [
-              {
-                "key": "user-data",
-                "value": "${{ steps.metadata.outputs.user_data }}"
-              },
-              {
-                "key": "ssh-keys",
-                "value": "root:${{ steps.metadata.outputs.public_key }}"
-              }
-            ]
-          },
           "name": "grid-${{ steps.variables.outputs.image_tag }}",
+          "zone": "projects/feedmapping/zones/us-central1-a",
           "networkInterfaces": [
             {
               "accessConfigs": [
@@ -377,7 +325,59 @@ runs:
               "https-server"
             ]
           },
-          "zone": "projects/feedmapping/zones/us-central1-a"
+          "canIpForward": true,
+          "confidentialInstanceConfig": {
+            "enableConfidentialCompute": false
+          },
+          "deletionProtection": false,
+          "description": "",
+          "disks": [
+            {
+              "autoDelete": true,
+              "boot": true,
+              "deviceName": "instance-20240930-102016",
+              "diskEncryptionKey": {},
+              "initializeParams": {
+                "diskSizeGb": "10",
+                "diskType": "projects/feedmapping/zones/us-central1-f/diskTypes/pd-standard",
+                "labels": {},
+                "sourceImage": "projects/cos-cloud/global/images/cos-101-17162-528-49"
+              },
+              "mode": "READ_WRITE",
+              "type": "PERSISTENT"
+            },
+            {
+              "autoDelete": false,
+              "boot": false,
+              "deviceName": "tensorflow",
+              "interface": "SCSI",
+              "mode": "READ_ONLY",
+              "source": "projects/feedmapping/zones/us-central1-a/disks/tensorflow",
+              "type": "PERSISTENT"
+            }
+          ],
+          "displayDevice": {
+            "enableDisplay": true
+          },
+          "guestAccelerators": [],
+          "instanceEncryptionKey": {},
+          "keyRevocationActionType": "NONE",
+          "labels": {
+            "goog-ec-src": "vm_add-rest"
+          },
+          "machineType": "projects/feedmapping/zones/us-central1-a/machineTypes/e2-micro",
+          "metadata": {
+            "items": [
+              {
+                "key": "user-data",
+                "value": "${{ steps.metadata.outputs.user_data }}"
+              },
+              {
+                "key": "ssh-keys",
+                "value": "root:${{ steps.metadata.outputs.public_key }}"
+              }
+            ]
+          }
         }' #echo 'targetLink='$(| jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
