@@ -389,16 +389,24 @@ runs:
     #See also: https://github.com/appleboy/ssh-action
     - id: 'compute-ssh'
       uses: 'google-github-actions/ssh-compute@v1'
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       with:
         instance_name: 'grid-5'
         zone: 'us-central1-a'
         ssh_private_key: '${{ steps.metadata.outputs.private_key }}'
         command: 'echo Hello world'
 
+    - name: executing remote ssh commands using ssh key
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ steps.setup_runner.outputs.targetLink }}
+        key: ${{ steps.metadata.outputs.private_key }}
+        username: root
+        script: whoami
+    
     # Example of using the output
     - id: 'test'
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       shell: bash
       run: |-
         echo '${{ steps.compute-ssh.outputs.stdout }}'
