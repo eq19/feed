@@ -386,6 +386,7 @@ runs:
       run: |
         echo ${{ steps.setup_runner.outputs.targetLink }}
 
+    #See also: https://github.com/appleboy/ssh-action
     - id: 'compute-ssh'
       uses: 'google-github-actions/ssh-compute@v1'
       if: runner.os == 'Windows'
