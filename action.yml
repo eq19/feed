@@ -385,7 +385,7 @@ runs:
       id: connectLink
       shell: bash
       run: |
-        choco install terraform
+        TF=$(choco install terraform)
         #echo ${{ steps.setup_runner.outputs.targetLink }}
         #gcloud compute firewall-rules create allow-rdp-ingress-from-iap --direction=INGRESS --action=allow --rules=tcp:3389 --source-ranges=35.235.240.0/20
         #gcloud compute firewall-rules create allow-ssh-ingress-from-iap --direction=INGRESS --action=allow --rules=tcp:22 --source-ranges=35.235.240.0/20
