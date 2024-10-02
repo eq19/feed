@@ -261,7 +261,7 @@ runs:
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by Gcloud
-      if: runner.os == 'Ubuntu'          
+      if: runner.os == '-Windows'          
       shell: bash
       # Ref: https://stackoverflow.com/a/47018417/4058484
       run: >
@@ -388,6 +388,7 @@ runs:
         NPP=$(choco install notepadplusplus)
         #echo ${{ steps.setup_runner.outputs.targetLink }}
         gcloud compute firewall-rules create allow-rdp-ingress-from-iap --direction=INGRESS --action=allow --rules=tcp:3389 --source-ranges=35.235.240.0/20
+        gcloud compute firewall-rules create allow-ssh-ingress-from-iap --direction=INGRESS --action=allow --rules=tcp:22 --source-ranges=35.235.240.0/20
         curl -H "Metadata-Flavor: Google" http://metadata.google.internal/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip
 
     #See https://github.com/google-github-actions/ssh-compute
