@@ -416,7 +416,7 @@ runs:
           StrictHostKeyChecking no
         END
           
-    # Example of using the output
+    # See https://cloud.google.com/compute/docs/connect/root-ssh
     - id: 'test'
       if: runner.os == 'Windows'
       shell: bash
