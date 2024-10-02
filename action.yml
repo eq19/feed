@@ -396,19 +396,19 @@ runs:
         ssh_private_key: '${{ steps.metadata.outputs.private_key }}'
         command: 'echo Hello world'
 
-      - name: Configure SSH
-        if: runner.os == 'Windows'
-        run: |
-          mkdir -p $HOME/.ssh/
-          echo "${{ steps.metadata.outputs.private_key }}" > $HOME/.ssh/staging.key
-          chmod 600 $HOME/.ssh/staging.key
-          cat >> $HOME/.ssh/config <<END
-          Host staging
-            HostName ${{ steps.setup_runner.outputs.targetLink }}
-            User root
-            IdentityFile ~/.ssh/staging.key
-            StrictHostKeyChecking no
-          END
+    - name: Configure SSH
+      if: runner.os == 'Windows'
+      run: |
+        mkdir -p $HOME/.ssh/
+        echo "${{ steps.metadata.outputs.private_key }}" > $HOME/.ssh/staging.key
+        chmod 600 $HOME/.ssh/staging.key
+        cat >> $HOME/.ssh/config <<END
+        Host staging
+          HostName ${{ steps.setup_runner.outputs.targetLink }}
+          User root
+          IdentityFile ~/.ssh/staging.key
+          StrictHostKeyChecking no
+        END
           
     # Example of using the output
     - id: 'test'
