@@ -274,15 +274,10 @@ runs:
       if: runner.os == 'Windows'
       id: setup_runner
       shell: bash
-      run: |
-        curl -s -X POST ${{ env.DATASET_URL }} \
-          -H "Authorization: Bearer $(gcloud auth print-identity-token)" \
-          -H "Content-Type: application/json" \
-          -d '{}' | jq '.'
-    
       run: >
-        echo 'targetLink='$(curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
-        -X POST https://compute.googleapis.com/compute/beta/projects/feedmapping/zones/us-central1-a/instances -d 
+        curl -s -X POST ${{ env.DATASET_URL }} 
+        -H "Authorization: Bearer $(gcloud auth print-identity-token)"
+        -H "Content-Type: application/json" -d
         '{         
           "name": "grid-${{ steps.variables.outputs.image_tag }}",
           "zone": "projects/feedmapping/zones/us-central1-a",
@@ -382,7 +377,16 @@ runs:
               }
             ]
           }
-        }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
+        }' | jq '.'
+
+    - name: 🪂 Setup Runner by API
+      if: runner.os == '-Windows'
+      id: targetLink
+      shell: bash
+      run: >
+        echo 'targetLink='$(curl -s -H "Authorization: Bearer ${{ steps.o2auth.outputs.access_token }}" -H "Content-Type: application/json"
+        -X POST https://compute.googleapis.com/compute/beta/projects/feedmapping/zones/us-central1-a/instances -d 
+        '{}' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
       if: runner.os == '-Windows'
