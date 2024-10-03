@@ -275,7 +275,7 @@ runs:
       id: setup_runner
       shell: bash
       run: >
-        curl -s -X POST ${{ env.DATASET_URL }} 
+        curl -s -X POST https://us-central1-feedmapping.cloudfunctions.net/function 
         -H "Authorization: Bearer $(gcloud auth print-identity-token)"
         -H "Content-Type: application/json" -d
         '{         
