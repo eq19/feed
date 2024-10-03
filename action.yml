@@ -150,8 +150,9 @@ runs:
         credentials_json: ${{ inputs.credentials }}
 
     - name: 🪂 Generate SSH keys
-      if: runner.os == '-Windows'          
+      if: runner.os == 'Windows'          
       shell: bash
+      id: keygen
       run: |
         ssh-keygen -t rsa -b 4096 -N '' -f $HOME/.ssh/id_rsa -C root
         echo 'private_key='$(cat $HOME/.ssh/id_rsa) >> ${GITHUB_OUTPUT}
@@ -261,6 +262,7 @@ runs:
     # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Runner by Gcloud
       if: runner.os == 'Windows' #&& os.linux.outcome == 'success'
+      id: compute_instances
       shell: bash
       run: >
         gcloud compute instances create grid-${{ steps.variables.outputs.image_tag }}
@@ -373,7 +375,7 @@ runs:
               },
               {
                 "key": "ssh-keys",
-                "value": "root:${{ steps.metadata.outputs.public_key }}"
+                "value": "root:${{ steps.keygen.outputs.public_key }}"
               }
             ]
           }
@@ -389,7 +391,7 @@ runs:
         '{}' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
-      if: runner.os == '-Windows'
+      if: runner.os == 'Windows'
       id: connectLink
       shell: bash
       run: |
@@ -406,7 +408,7 @@ runs:
       with:
         instance_name: 'grid-5'
         zone: 'us-central1-a'
-        ssh_private_key: '${{ steps.metadata.outputs.private_key }}'
+        ssh_private_key: '${{ steps.keygen.outputs.private_key }}'
         command: 'echo Hello world'
 
     # Ref: https://blog.benoitblanchon.fr/github-action-run-ssh-commands/
@@ -416,12 +418,12 @@ runs:
       shell: bash
       run: |
         mkdir -p $HOME/.ssh/
-        echo "${{ steps.metadata.outputs.private_key }}" > $HOME/.ssh/staging.key
-        #ssh-keyscan -t rsa  ${{ steps.setup_runner.outputs.external_ip }} >> ~/.ssh/known_hosts
+        echo "${{ steps.keygen.outputs.private_key }}" > $HOME/.ssh/staging.key
+        #ssh-keyscan -t rsa  ${{ steps.compute_instances.outputs.external_ip }} >> ~/.ssh/known_hosts
         chmod 600 $HOME/.ssh/staging.key
         cat >> $HOME/.ssh/config <<END
         Host staging
-          HostName ${{ steps.setup_runner.outputs.targetLink }}
+          HostName ${{ steps.compute_instances.outputs.external_ip }}
           User root
           IdentityFile ~/.ssh/staging.key
           StrictHostKeyChecking no
