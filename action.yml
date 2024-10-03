@@ -263,7 +263,7 @@ runs:
     # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Runner by Gcloud
       if: runner.os == '-Windows'
-      #if: os.linux.outcome == 'success'
+      #if: os.linux.outcome == 'success' || current.job.parallel == 1
       shell: bash
       run: >
         gcloud compute instances create grid-${{ steps.variables.outputs.image_tag }}
