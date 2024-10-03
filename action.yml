@@ -74,6 +74,7 @@ runs:
   steps:
     - name: 💎 Set Artifact
       if: runner.os != 'Windows'
+      id: artifact
       shell: bash
       env:
         TMP: ${{ inputs.tmp }}
