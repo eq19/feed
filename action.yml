@@ -255,15 +255,13 @@ runs:
         - mount -o nosuid,nodev,commit=30,defaults -t ext4 /dev/sdb1 /mnt/disks/platform
         EOL
         ssh-keygen -t rsa -b 4096 -N '' -f $HOME/.ssh/id_rsa -C root
-        sed -i "s/-----END/\n-----END/g" $HOME/.ssh/id_rsa
         echo 'private_key='$(cat $HOME/.ssh/id_rsa) >> ${GITHUB_OUTPUT}
         echo 'public_key='$(cat $HOME/.ssh/id_rsa.pub) >> ${GITHUB_OUTPUT}
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
     # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Runner by Gcloud
-      if: runner.os == '-Windows'
-      #if: os.linux.outcome == 'success' || current.job.parallel == 1
+      if: runner.os == 'Windows' #&& os.linux.outcome == 'success'
       shell: bash
       run: >
         gcloud compute instances create grid-${{ steps.variables.outputs.image_tag }}
@@ -274,7 +272,7 @@ runs:
 
     # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       id: setup_runner
       shell: bash
       run: >
@@ -382,7 +380,7 @@ runs:
         }' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       id: connectLink
       shell: bash
       run: |
@@ -405,7 +403,7 @@ runs:
     # Ref: https://blog.benoitblanchon.fr/github-action-run-ssh-commands/
     - name: Configure SSH
       id: 'compute-ssh'
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       shell: bash
       run: |
         mkdir -p $HOME/.ssh/
@@ -422,7 +420,7 @@ runs:
           
     # See https://cloud.google.com/compute/docs/connect/root-ssh
     - id: 'test'
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       shell: bash
       run: |-
         ssh staging 'sudo whoami'
