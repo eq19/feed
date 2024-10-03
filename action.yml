@@ -260,10 +260,11 @@ runs:
         echo 'public_key='$(cat $HOME/.ssh/id_rsa.pub) >> ${GITHUB_OUTPUT}
         echo 'user_data='$(awk '{printf "%s\\n", $0}' cloud-config) >> ${GITHUB_OUTPUT}
 
+    # Ref: https://stackoverflow.com/a/47018417/4058484
     - name: 🪂 Setup Runner by Gcloud
-      if: runner.os == '-Windows'          
+      if: runner.os == '-Windows'
+      #if: os.linux.outcome == 'success'
       shell: bash
-      # Ref: https://stackoverflow.com/a/47018417/4058484
       run: >
         gcloud compute instances create grid-${{ steps.variables.outputs.image_tag }}
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
