@@ -150,10 +150,10 @@ runs:
         credentials_json: ${{ inputs.credentials }}
 
     - name: 🪂 Generate SSH keys
-      if: runner.os == '-Windows'          
+      if: runner.os == 'Windows'          
       shell: cmd
       run: |
-        ssh-keygen -t rsa -N '' -f C:\Users\runneradmin\.ssh\id_rsa -C root
+        docker run --rm helloworld cmd.exe /s /c type Hello.txt
  
     # See https://github.com/thesofproject/sof/blob/main/zephyr/docker-run.sh
     - name: 🪂 Cloud Config
