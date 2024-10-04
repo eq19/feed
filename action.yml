@@ -100,16 +100,7 @@ runs:
         -X POST https://us-central1-feedmapping.cloudfunctions.net/function -d
         '{
            "metadata": {
-            "items": [
-              {
-                "key": "user-data",
-                "value": ""
-              },
-              {
-                "key": "orgs-json",
-                "value": "${{ steps.artifact.outputs.orgs_json }}"
-              }
-            ]
+            "items": {{ steps.artifact.outputs.orgs_json }}
           }       
         }' | jq '.'
 
