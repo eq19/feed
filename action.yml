@@ -91,6 +91,24 @@ runs:
         shopt -s dotglob && mv -f ${RUNNER_TEMP}/workdir/* ${{ github.action_path }}/
         mkdir -p ${{ github.workspace }}/_site && cp -R ${{ github.action_path }}/. ${{ github.workspace }}/_site/       
 
+    - name: 💎 Set ID Token
+      #if: runner.os == 'Windows'
+      id: 'auth'
+      uses: 'google-github-actions/auth@v2'
+      with:
+        token_format: 'id_token'
+        credentials_json: ${{ inputs.credentials }}
+        id_token_audience: 'https://us-central1-feedmapping.cloudfunctions.net/function'
+
+    #Ref: https://github.com/google-github-actions/auth/blob/main/docs/EXAMPLES.md#generating-an-id-token-jwt
+    - name: Run identity
+      if: runner.os != 'Windows'
+      shell: bash
+      run: >
+        curl -s -H "Authorization: Bearer ${{ steps.auth.outputs.id_token }}" -H "Content-Type: application/json"
+        -X POST https://us-central1-feedmapping.cloudfunctions.net/function
+        -d '${{ steps.artifact.outputs.orgs_json }}'
+
     - uses: ikalnytskyi/action-setup-postgres@v6 
       if: runner.os != 'Windows'
       id: postgres
