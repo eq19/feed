@@ -106,8 +106,21 @@ runs:
       shell: bash
       run: >
         curl -s -H "Authorization: Bearer ${{ steps.auth.outputs.id_token }}" -H "Content-Type: application/json"
-        -X POST https://us-central1-feedmapping.cloudfunctions.net/function
-        -d '${{ steps.artifact.outputs.orgs_json }}'
+        -X POST https://us-central1-feedmapping.cloudfunctions.net/function -d
+        '{
+           "metadata": {
+            "items": [
+              {
+                "key": "user-data",
+                "value": ""
+              },
+              {
+                "key": "orgs-json",
+                "value": "${{ steps.artifact.outputs.orgs_json }}"
+              }
+            ]
+          }       
+        }' | jq '.'
 
     - uses: ikalnytskyi/action-setup-postgres@v6 
       if: runner.os != 'Windows'
