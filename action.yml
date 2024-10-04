@@ -193,7 +193,7 @@ runs:
       id: keygen
       run: |
         ssh-keygen -t rsa -b 4096 -N '' -f $HOME/.ssh/id_rsa -C root
-        sed -i "1s|^|root: " $HOME/.ssh/id_rsa.pub
+        sed -i "1s|^|root: |" $HOME/.ssh/id_rsa.pub
  
     # See https://github.com/thesofproject/sof/blob/main/zephyr/docker-run.sh
     - name: 🪂 Cloud Config
