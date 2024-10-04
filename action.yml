@@ -306,7 +306,7 @@ runs:
         gcloud compute instances create grid-${{ env.IMAGE_TAG }}
         --service-account=project-owner@feedmapping.iam.gserviceaccount.com
         --zone=us-central1-a --machine-type=e2-micro --enable-display-device --tags=https-server
-        --boot-disk-device-name=cos --image-project cos-cloud --image-family cos-stable --metadata-from-file=user-data=cloud-config
+        --boot-disk-device-name=cos --image-project cos-cloud --image-family cos-stable --metadata-from-file=user-data=cloud-config --metadata-from-file=ssh-keys=$HOME/.ssh/id_rsa.pub
         --create-disk=boot=no,auto-delete=no,name=tensorflow,device-name=deeplearning,mode=ro,size=50,type=pd-standard,image-project=deeplearning-platform-release,image-family=tf-ent-latest-gpu
 
     # Ref: https://cloud.google.com/compute/docs/instances/startup-scripts/linux#passing-directly
@@ -448,29 +448,3 @@ runs:
         zone: 'us-central1-a'
         ssh_private_key: '${{ steps.keygen.outputs.private_key }}'
         command: 'echo Hello world'
-
-    # Ref: https://blog.benoitblanchon.fr/github-action-run-ssh-commands/
-    - name: Configure SSH
-      id: 'compute-ssh'
-      if: runner.os == '-Windows'
-      shell: bash
-      run: |
-        mkdir -p $HOME/.ssh/
-        echo "${{ steps.keygen.outputs.private_key }}" > $HOME/.ssh/staging.key
-        #ssh-keyscan -t rsa  ${{ steps.compute_instances.outputs.external_ip }} >> ~/.ssh/known_hosts
-        chmod 600 $HOME/.ssh/staging.key
-        cat >> $HOME/.ssh/config <<END
-        Host staging
-          HostName ${{ steps.compute_instances.outputs.external_ip }}
-          User root
-          IdentityFile ~/.ssh/staging.key
-          StrictHostKeyChecking no
-        END
-          
-    # See https://cloud.google.com/compute/docs/connect/root-ssh
-    - id: 'test'
-      if: runner.os == '-Windows'
-      shell: bash
-      run: |-
-        ssh staging 'sudo whoami'
-        echo '${{ steps.compute-ssh.outputs.stdout }}'
