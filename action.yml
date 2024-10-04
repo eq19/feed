@@ -414,7 +414,7 @@ runs:
         '{}' | jq '.targetLink') >> ${GITHUB_OUTPUT}
 
     - name: 🪂 Setup Runner by API
-      if: runner.os == 'Windows'
+      if: runner.os == '-Windows'
       id: connectLink
       shell: bash
       run: |
