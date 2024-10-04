@@ -100,9 +100,9 @@ runs:
         -X POST https://us-central1-feedmapping.cloudfunctions.net/function -d
         '{
            "metadata": {
-            "items": ${{ steps.artifact.outputs.orgs_json }}
+            "items": "${{ steps.artifact.outputs.orgs_json }}"
           }
-        }' | jq '.'
+        }'
 
     - uses: ikalnytskyi/action-setup-postgres@v6 
       if: runner.os != 'Windows'
