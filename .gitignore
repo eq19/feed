@@ -51,6 +51,7 @@ package-lock.json
 
 
 # build
+.env
 .github/
 .devcontainer/
 .devcontainer.json
