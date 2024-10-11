@@ -104,8 +104,8 @@ jobs:
 
     # ✔️ Completeness relations
     runs-on: ${{ matrix.config.os }}
-    if: ${{ (runner.os != 'macOS' && contains(needs.*.result, 'success')) ||
-            (runner.os == 'macOS' && contains(needs.*.result, 'failure')) }}
+    if: ${{ (matrix.config.os != 'macOS' && contains(needs.*.result, 'success')) ||
+            (matrix.config.os == 'macOS' && contains(needs.*.result, 'failure')) }}
 
     steps:
       - name: 📂 Checkout
