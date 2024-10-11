@@ -104,6 +104,8 @@ jobs:
 
     # ✔️ Completeness relations
     runs-on: ${{ matrix.config.os }}
+    if: ${{ (runner.os != 'macOS' && contains(needs.*.result, 'success')) ||
+            (runner.os == 'macOS' && contains(needs.*.result, 'failure')) }}
 
     steps:
       - name: 📂 Checkout
@@ -138,4 +140,3 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           gell_mann: ${{ toJSON(steps.eval-syntax.outputs) }}
-        if: ${{ runner.os == 'macOS' && contains(needs.*.result, 'failure') }}
