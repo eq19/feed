@@ -22,6 +22,7 @@ name: COmpendium of RElations – Modulo 6
 # For more information on these settings, see https://www.tensorflow.org/quantum/design.
 #
 on:
+  push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
@@ -114,6 +115,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: 🕸️ Parsering
+        if: runner.os != 'macOS'
         uses: eq19/parser@v2
         id: set-parser
         with:
@@ -122,6 +124,7 @@ jobs:
           gell_mann: ${{ toJSON(needs.lexering.outputs) }}
 
       - name: 🔧 Evaluate Syntax
+        if: runner.os != 'macOS'
         uses: eq19/syntax@v2
         id: eval-syntax
         with:
