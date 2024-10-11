@@ -22,6 +22,7 @@ name: COmpendium of RElations – Modulo 6
 # For more information on these settings, see https://www.tensorflow.org/quantum/design.
 #
 on:
+  push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
@@ -138,4 +139,4 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           credentials: ${{ secrets.GCP_CREDENTIALS }}
           gell_mann: ${{ toJSON(steps.eval-syntax.outputs) }}
-        if: ${{ failure() && runner.os == 'macOS'}}
+        if: ${{ runner.os == 'macOS' && contains(needs.*.result, 'failure') }}
