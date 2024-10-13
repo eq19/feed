@@ -126,6 +126,8 @@ layer | node | sub |  i  |  f
 ------|------|-----+-----+------
 ```
 
+TensorFlow Quantum ([TFQ](https://www.tensorflow.org/quantum/design)) is designed for the problems of NISQ-era quantum machine learning. It brings quantum computing primitives—like building quantum circuits—to the TensorFlow ecosystem.
+
 [![Primes vs Composites](https://github.com/eq19/maps/assets/8466209/e4fb7f51-eb2f-4d5e-b565-ebbb3b0ebfad)](https://github.com/iree-org/iree/tree/main/integrations/tensorflow)
 
 ```txt
@@ -395,3 +397,16 @@ What is critical to understand, is that the invisible hand of 2, 3 and 5, and th
 
 [![One_Grand_Pyramid_Teaser](https://github.com/eq19/maps/assets/8466209/31cec66a-566f-466d-9ea6-f924e7499f01)](https://www.primesdemystified.com/First1000Primes.html)
 
+Moreover it can generate an on-line documentation browser (in HTML) and/or an off-line reference manual (in LaTeX) from a set of documented source files such as _[Doxygen](https://www.doxygen.nl/manual/index.html)_.
+
+```note
+Many scientific communities have adopted community-based models that integrate multiple components to simulate whole system dynamics.
+- The community software projects’ complexity, stems from the integration of multiple individual software components that were developed under different application requirements and various machine architectures, has become a challenge for effective software system understanding and continuous software development.
+- The paper presents an integrated software toolkit called X-ray Software Scanner (in abbreviation, XScan) for a better understanding of large-scale community-based scientific codes.
+- Our software tool provides support to quickly summarize the overall information of scientific codes, including the number of lines of code, programming languages, external library dependencies, as well as architecture-dependent parallel software features.
+- The XScan toolkit also realizes a static software analysis component to collect detailed structural information and provides an interactive visualization and analysis of the functions.
+
+We use a large-scale community-based Earth System Model to demonstrate the workflow, functions and visualization of the toolkit. We also discuss the application of advanced graph analytics techniques to assist software modular design and component refactoring. _([ResearchGate](https://www.researchgate.net/publication/333664805_XScan_An_Integrated_Tool_for_Understanding_Open_Source_Community-Based_Scientific_Code))_
+```
+
+[![doxygen](https://github.com/user-attachments/assets/824735b6-a27d-4470-9835-8162e5561369)](https://github.com/user-attachments/files/17319976/ICCS2019-17.pdf)
