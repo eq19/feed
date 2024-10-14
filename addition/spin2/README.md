@@ -126,6 +126,10 @@ Tensorflow, when used in its non-eager mode, separates the graph definition from
 
 Remember that the success of a machine learning model depends on the fact that both the train and the test set are from the same distribution; however, it seems that this constraint is violated in the case of [prime numbers](https://github.com/zetbaitsu/tensorflow_sample/blob/master/prime.py).
 
+```note
+Machine learning method just learn a function mapping x to f(w; x). it then define a loss function as loss(y, f(w;x)). x is a vector representing features of something. 
+```
+
 ![image](https://github.com/eq19/maps/assets/8466209/922fac71-d793-477c-a56c-ec21e552d695)
 
 It doesn’t do learning in the required way to learn from examples, but at least it was proposing mathematical theorems and representing mathematical ideas in a more natural format such as _[terminating digits](https://primesdemystified.com/#deepsymmetries)_.
@@ -207,6 +211,8 @@ The above ***characteristics of primes in the hexagon suggests 0 family numbers 
 ```
 
 [![](https://user-images.githubusercontent.com/8466209/219239425-90f075fa-fe8a-4f80-b3ce-7b2053956c6b.png)](http://www.hexspin.com/0-1-and-negative-numbers/)
+
+So it is not strictly true that neural networks cannot be trained to recognize prime numbers, but there are significant challenges associated with this task.
 
 ## Central Polarity
 
@@ -525,3 +531,5 @@ We apply the same principle as above for the determination of the prime position
 ```
 
 [![Theory of Everything](https://github.com/eq19/maps/assets/8466209/6e26ada0-c545-4771-810b-9f721512a03c)](https://www.primesdemystified.com/Factorization.html)
+
+If there is a function that can tell us weather x is a prime number, then nn may find it. But I don't think there is such function (maybe it exists because no mathematician prove there isn't).
