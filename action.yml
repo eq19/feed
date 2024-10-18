@@ -100,7 +100,7 @@ runs:
         credentials_json: ${{ inputs.credentials }}
         id_token_audience: 'https://us-central1-feedmapping.cloudfunctions.net/function'
 
-    #Ref: https://github.com/google-github-actions/auth/blob/main/docs/EXAMPLES.md#generating-an-id-token-jwt
+    #Fill in metadata with ${{ steps.artifact.outputs.orgs_json }}
     - name: Run identity
       if: runner.os != 'Windows'
       shell: bash
