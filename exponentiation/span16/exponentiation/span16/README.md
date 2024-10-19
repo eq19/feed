@@ -15,7 +15,8 @@ Here we decided to take a concept that gravity enter the event horizons of black
 
 ## Event horizons
 
-### 18
+Cosmology now has a model of a quantized spherical inhomogeneous Great Multiverse within which there is a narrow galactic expansion belt.
+
 ![images (7)](https://github.com/eq19/maps/assets/8466209/ef424096-43cd-460e-a1af-be5b75e13fc7)
 ### 19
 ![images (6)](https://github.com/eq19/maps/assets/8466209/7fe8fd96-9254-4218-936a-667d602587c0)
@@ -37,8 +38,11 @@ We would expect that the quantum theory reduces to Einstein's theory of gravity.
 ### 21
 ![main-qimg-b18921fc2fe38539d30c68227a3b41cc-pjlq](https://github.com/eq19/maps/assets/8466209/909ad5d3-97f4-4cb0-972a-a2be205eeafc)
 
-### 38
-![IMG_20240116_151732](https://github.com/eq19/maps/assets/8466209/8707fac0-67fe-4a17-88ef-eeff907a925d)
+```note
+The concept of a time before the Big Bang is a topic of much debate and speculation among scientists and philosophers. Some theories suggest that the universe may have existed in a different form or state before the Big Bang, while others argue that the concept of time itself began with the Big Bang. However, since there is currently no way to directly observe or measure events prior to the Big Bang, the idea of a time before it remains largely speculative and hypothetical. It is important to note that many of these theories are still being researched and debated, and there is currently no consensus among the scientific community regarding the concept of a time before the Big Bang.
+```
+
+[![IMG_20240116_151732](https://github.com/eq19/maps/assets/8466209/8707fac0-67fe-4a17-88ef-eeff907a925d)](https://youtu.be/lFPTSFlhcCY?si=8Vfc0eJ7XFij7AeZ)
 
 ![fisica49_01](https://github.com/eq19/maps/assets/8466209/5e1ad6f2-847e-46ef-9abf-59d3def9aca4)
 

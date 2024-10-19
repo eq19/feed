@@ -157,197 +157,256 @@ majorana-3 |   2x2   |    -    |    13     |     -     |     13     |   i13
 
 ![PRI_196247467](https://github.com/eq19/maps/assets/8466209/3c88a36a-19fd-4b34-b956-3f3d19143538)
 
-Despite the popularity of dark matter and dark energy as an explanation of various  empirical observations in physics, there remains _[no direct evidence](https://github.com/user-attachments/files/17408958/Title_Alternative_Explanation_of_Dark_Ma.pdf)_ of either. # Prime Identity
+Despite the popularity of dark matter and dark energy as an explanation of various  empirical observations in physics, there remains _[no direct evidence](https://github.com/user-attachments/files/17408958/Title_Alternative_Explanation_of_Dark_Ma.pdf)_ of either. ## Subclasses of Partitions
 
-We are going to assign prime identity as a ***standard model*** that attempts to stimulate a quantum field model called ***[eQuantum](https://github.com/eq19)*** for _[the four (4) known fundamental forces](https://en.wikipedia.org/wiki/Fundamental_interaction)_.
-
-This presentation was inspired by [theoretical works](https://github.com/eq19/maps/files/13468466/OU1938-Y1.1.pdf) from _[Hideki Yukawa](https://en.wikipedia.org/wiki/Hideki_Yukawa)_ who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Meson)_ of strong nuclear force.
-
-## Addition Zones
-
-Here we would like to explain the way of said prime identity on getting the [arithmetic expression](https://youtu.be/S9oPqBeSsZA) of an ***individual unit identity*** such as a taxicab number below.
-
-```note
-It is a taxicab number, and is variously known as Ramanujan's number and the Ramanujan-Hardy number, after an anecdote of the British mathematician _[GH Hardy](https://en.wikipedia.org/wiki/G._H._Hardy)_ when he visited Indian mathematician _[Srinivasa Ramanujan](https://en.wikipedia.org/wiki/Srinivasa_Ramanujan)_ in hospital _([Wikipedia](https://en.wikipedia.org/wiki/1729_(number)))_.
-```
-
-[![Ramanujan-Hardy number](https://user-images.githubusercontent.com/36441664/103107461-173c2b00-4671-11eb-962c-da7e9eab022e.png)](https://en.wikipedia.org/wiki/1729_(number))
-
-These three (3) number are [twin primes](https://en.wikipedia.org/wiki/Twin_prime). We called the pairs as _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_. Our scenario is mapping the distribution out of these pairs by taking the symmetrical behaviour of 36 as the smallest power (greater than 1) which is not a prime power.
-
-```tip
-The smallest square number expressible as the sum of **four (4) consecutive primes** in two ways (5 + 7 + 11 + 13 and 17 + 19) which are also **two (2) couples** of prime twins! _([Prime Curios!](https://en.wikipedia.org/wiki/1729_(number)](https://primes.utm.edu/curios/page.php?number_id=270)))_.
-```
-
-```scss
-$True Prime Pairs:
- (5,7), (11,13), (17,19)
- 
- layer|  i  |   f
- -----+-----+---------
-      |  1  | 5
-   1  +-----+
-      |  2  | 7
- -----+-----+---  } 36 » 6®
-      |  3  | 11
-   2  +-----+
-      |  4  | 13
- -----+-----+---------
-      |  5  | 17
-   3  +-----+     } 36 » 6®
-      |  6  | 19
- -----+-----+---------
-```
-
-Thus in short this is all about a method that we called as the ***[19 vs 18 Scenario](https://www.eq19.com/grammar/identition/#the-77-principles)*** of mapping [the quantum way](https://www.google.com/search?q=eQuantum) within a huge of [primes objects](https://github.com/eq19) (5 to 19) by [lexering](https://en.wikipedia.org/wiki/Lexer_generator) (11) the un[grammar](https://en.wikipedia.org/wiki/Grammar)ed feed (7) and [parsering](https://en.wikipedia.org/wiki/Comparison_of_parser_generators) (13) across [syntax](https://en.wikipedia.org/wiki/Syntax) (17). 
-
-***Φ(1,2,3) = Φ(6,12,18) = Φ(13,37,61)***
-
-```scss
-$True Prime Pairs:
-(5,7), (11,13), (17,19)
- 
-layer | node | sub |  i  |  f
-------+------+-----+----------
-      |      |     |  1  | 
-      |      |  1  +-----+          
-      |  1   |     |  2  | (5)
-      |      |-----+-----+
-      |      |     |  3  |
-  1   +------+  2  +-----+----
-      |      |     |  4  |
-      |      +-----+-----+
-      |  2   |     |  5  | (7)
-      |      |  3  +-----+
-      |      |     |  6  |
-------+------+-----+-----+------      } (36)
-      |      |     |  7  |
-      |      |  4  +-----+
-      |  3   |     |  8  | (11)
-      |      +-----+-----+
-      |      |     |  9  |
-  2   +------|  5  +-----+-----
-      |      |     |  10 |
-      |      |-----+-----+
-      |  4   |     |  11 | (13)
-      |      |  6  +-----+
-      |      |     |  12 |
-------+------+-----+-----+------------------
-      |      |     |  13 |
-      |      |  7  +-----+
-      |  5   |     |  14 | (17)
-      |      |-----+-----+
-      |      |     |  15 |
-  3   +------+  8  +-----+-----       } (36)
-      |      |     |  16 |
-      |      |-----+-----+
-      |  6   |     |  17 | (19)
-      |      |  9  +-----+
-      |      |     |  18 |
-------|------|-----+-----+------
-```
-
-The main background is that, as you may aware, the prime number theorem describes the [asymptotic distribution](https://youtu.be/j5s0h42GfvM) of prime numbers which is still a major problem in mathematic. 
-
-## Multiplication Zones
-
-Instead of a proved formula we came to a unique expression called ***zeta function***. This expression first appeared in a paper in 1737 entitled _Variae observationes circa series infinitas_. 
-
-```tip
-This expression states that the sum of the zeta function is equal to the product of the reciprocal of one minus the reciprocal of primes to the powers. But what has this got to do with the primes?  The answer is in the following product taken over the primes p (discovered by _[Leonhard Euler](https://en.wikipedia.org/wiki/Leonhard_Euler)_):
-```
-
-![zeta function](https://user-images.githubusercontent.com/8466209/219739322-ebdc1916-249a-49da-8ded-ce0fe1205550.png)
-
-This issue is actually come from ***[Riemann hypothesis](https://youtu.be/zlm1aajH6gY)***, a conjecture about the distribution of complex zeros of the Riemann zeta function that is considered to be ***the most important*** of _[unsolved problems](https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics)_ in pure mathematics.
-
-```note
-In addition to the trivial roots, there also exist ***complex roots*** for real t. We find that the he first ten (10) non-trivial roots of the Riemann zeta function is occured when the values of t below 50. A plot of the values of ζ(1/2 + it) for t ranging from –50 to +50 is shown below. The roots occur each time ***the locus passes through the origin***. _([mathpages](https://www.mathpages.com/home/kmath738/kmath738.htm))_.
-```
-
-[![trivial roots](https://user-images.githubusercontent.com/8466209/219828222-615a2037-dbcd-4412-95bf-740bb32094de.png)](https://www.mathpages.com/home/kmath738/kmath738.htm)
-
-Meanwhile obtaining the non complex numbers it is easier to look at a graph like the one below which shows Li(x) (blue), R(x) (black), π(x) (red) and x/ln x (green); and then proclaim "R(x) is the best estimate of π(x)." Indeed it is for that range, but as we mentioned above, Li(x)-π(x) changes sign infinitely often, and near where it does, Li(x) would be the best value.
-
-[![non complex numbers](https://user-images.githubusercontent.com/8466209/219214486-e6412fb0-d190-45ae-990f-524532661444.png)](https://primes.utm.edu/howmany.html#better)
-
-And we can see in the same way that the function Li(x)-(1/2)Li(x1/2) is 'on the average' a better approximation than Li(x) to π(x); but no importance can be attached to the latter terms in Riemann's formula even by repeated averaging.
-
-## Exponentiation Zones
-
-The problem is that the contributions from the non-trivial zeros at times swamps that of any but the main terms in these expansions.
-
-```warning
-A. E. Ingham says it this way: Considerable importance was attached formerly to a function suggested by Riemann as an approximation to π(x)... This function represents π(x) with astonishing accuracy for all values of x for which π(x) has been calculated, but we now see that its superiority over Li(x) ***is illusory***... and for special values of x (as large as we please) the one approximation will deviate as widely as the other from the true value _([primes.utm.edu](https://primes.utm.edu/howmany.html#better))_.
-```
-
-[![howmany primes](https://user-images.githubusercontent.com/36441664/87958552-dea18f80-cadb-11ea-9499-6c2ee580a5ca.png)](https://primes.utm.edu/howmany.html#pnt)
-
-Moreover in it was verified numerically, in a rigorous way using interval arithmetic, that _[The Riemann hypothesis is true up to 3 · 10^12](https://arxiv.org/pdf/2004.09765.pdf)_. That is, all zeroes β+iγ of the Riemann zeta-function with 0<γ≤3⋅1012 have β=1/2.
-
-```danger
-We have Λ ≤ 0.2. The next entry is conditional on taking H a little higher than 10*13, which of course, is not achieved by Theorem 1. This would enable one to prove Λ < 0.19. Given that our value of H falls between the entries in this table, it is possible that some extra decimals could be wrought out of the calculation. We have not pursued this _([arXiv:2004.09765](https://arxiv.org/abs/2004.09765))_.
-```
-
-[![functional equation](https://user-images.githubusercontent.com/8466209/219715694-751fe538-378d-4f58-ae82-ac9e6823ad65.png)](https://arxiv.org/pdf/2004.09765.pdf)
-
-This Euler formula represents the distribution of a group of numbers that are positioned at regular intervals on a straight line to each other. Riemann later extended the definition of zeta(s) to all complex numbers (***except the simple pole at s=1 with residue one***). Euler's product still holds if the real part of s is greater than one. Riemann derived the functional equation of zeta function.
-
-```danger
-The Riemann zeta function has the trivial zeros at -2, -4, -6, ... (the poles of gamma(s/2)).  Using the Euler product (with the functional equation) it is easy to show that all the other zeros are in the critical strip of non-real complex numbers with 0 < Re(s) < 1, and that they are symmetric about the critical line Re(s)=1/2. The unproved Riemann hypothesis is that all of the nontrivial zeros are actually on the critical line _([primes.utm.edu](https://primes.utm.edu/notes/rh.html))_.
-```
-
-[![zeta function](https://user-images.githubusercontent.com/8466209/219720444-e5ba30ac-e000-4c85-8678-186676b93d2b.png)](https://primes.utm.edu/notes/rh.html)
-
-If both of the above statements are true then mathematically this Riemann Hypothesis is proven to be incorrect because it only applies to certain cases or limitations. So first of all the basis of the Riemann Hypothesis has to be considered.
-
-```warning
-The solution is not only to prove Re(z)= 1/2 but also to calculate ways for the imaginary part of the complex root of ζ(z)=0 and also to solve the functional equations. _([Riemann Zeta - pdf](https://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/EZeta.pdf))_
-```
-
-[![Riemann hypothesis](https://user-images.githubusercontent.com/8466209/218374273-729fee09-5480-4fb3-a3a6-0dc050bdbe26.png)](https://en.wikipedia.org/wiki/Riemann_hypothesis)
-
-On the other hand, the possibility of obtaining the function of the distribution of prime numbers shall go backwards since it needs significant studies to be traced.
-
-Or may be [start again from the Euler Function](https://youtu.be/FCpRl0NzVu4).
-
-## Identition Zones
-
-_[Freeman Dyson](https://en.wikipedia.org/wiki/Freeman_Dyson#Quantum_physics_and_prime_numbers)_ discovered an intriguing connection between quantum physics and [Montgomery's pair correlation conjecture](https://en.wikipedia.org/wiki/Montgomery%27s_pair_correlation_conjecture) about the zeros of the [zeta function](https://gist.github.com/eq19/e9832026b5b78f694e4ad22c3eb6c3ef#zeta-function) which dealts with the distribution of primes.
-
-```note
-The Mathematical Elementary Cell 30 (***MEC30***) standard _[unites](https://www.eq19.com/multiplication/12.html#entrypoint-of-momentum-spin-3)_ the mathematical and physical results of 1972 by _the mathematician Hugh Montgomery and the physicist Freeman Dyson_ and thus reproduces energy distribution in systems as a path plan ***more accurately than a measurement***. _([Google Patent DE102011101032A9](https://patents.google.com/patent/DE102011101032A9/en#similarDocuments))_
-```
-
-![Standard Spin](https://github.com/eq19/maps/assets/8466209/705213d6-00e3-4130-9b06-adfb8d06c110)
-
-There is only one nature in THIS universe, that is, quantum and gravity must be unified in Nature regardless of whether human is able to figure it out or not.
-
-![image](https://github.com/eq19/maps/assets/8466209/d08043d0-91fc-4931-9fc1-af5ba231e5c4)
-
-GUT predicts that the other forces become identical under conditions so extreme that they cannot be tested in the laboratory, although there may be lingering evidence of them in the evolution of the universe.
-
-```note
-How can the Universe be so uniform? Now, the time for light to cross a significant part of the Universe is billions of years. We call this time the light communication time, and it is the shortest time required for any changes to be felt between two parts of the Universe. (From J. Schombert)
-```
-
-![horizon_problem](https://github.com/eq19/maps/assets/8466209/94e118cb-9a89-49d6-b3ac-f5394fa761d7)
-
-The finiteness position of Euler's identity by the said _MEC30_ opens up the possibility of accurately representing the self-similarity based on the distribution of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_ so that all number would belongs together with [their own identitities](https://www.eq19.com/identition/). 
+The subclasses of partitions systemically develops characters similar to the distribution of prime numbers.
 
 ```tip
 {{ site.github.latest_release.body }}
 ```
 
-![A-schematic-illustration-of-how-quantum-gravity-emerges-in-an-information-based-theory-of](https://github.com/eq19/maps/assets/8466209/9ab1b0c8-ca84-49c5-8780-89c083c1b6cd)
+![image](https://github.com/eq19/maps/assets/8466209/a4e57e16-8334-4270-bce7-9739e30df21a)
 
-Nothing is going to be easly about the nature of prime numbers but they demonstrably congruent to something organized. Let's discuss starting with the _[addition zones](https://www.eq19.com/addition/)_.
+***(10 - 2) th prime = 8th prime = 19***
 
-**[eQuantum Project](https://github.com/eq19)**   
-Copyright © 2023-2024
+[![default](https://user-images.githubusercontent.com/8466209/200228711-996e52bf-887c-445d-ad4b-46da2eabc30e.png)](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857#the-implementation)
 
-Reference:
-* [Riemann Zeta](https://commons.wikimedia.org/wiki/File:RiemannZeta_Zeros.svg)
-* [Mersenne Prime](https://en.wikipedia.org/wiki/Mersenne_prime)
-* [The Prime Hexagon](https://youtu.be/fQL4KRH3wUQ)
-* [The Primes Demystified](https://www.primesdemystified.com/First1000Primes.html)
+The subclasses of partitions systemically develops characters similar to the distribution of prime Numbers  represents the number of possible partitions of a non-negative integer n.
+
+[![Rank of a partition](https://user-images.githubusercontent.com/8466209/227838045-3ddd5238-7beb-4023-affa-c61a054afd2b.png)](https://en.wikipedia.org/wiki/Rank_of_a_partition)
+
+***f(8 twins) = 60 - 23 = 37 inner partitions***
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 -29 = 61 - 1 = 60 ✔️
+5 5 2 1 0 5 👉 f(37) = f(8 twins) ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime 👉 7s
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+***7 + 13 + 19 + 25 = 64 = 8 × 8 = 8²***
+
+![](https://user-images.githubusercontent.com/36441664/83051968-e2cfa480-a078-11ea-8ff2-316a809a8fad.jpg)
+
+```note
+Let weighted points be given in the plane . For each point a radius is given which is the expected ideal distance from this point to a new facility. We want to find the location of a new facility such that the sum of the weighted errors between the existing points and this new facility is minimized. This is in fact a nonconvex optimization problem. We show that the optimal solution lies in an extended rectangular hull of the existing points. Based on this finding then an efficient big square small square (BSSS) procedure is proposed.
+```
+
+[![A_BSSS_Algorithm_for_the_Location_Problem_with_Min.pdf](https://github.com/eq19/maps/assets/8466209/44b32796-e66b-4364-b20c-2a7305c53802)](https://github.com/eq19/maps/files/13764148/A_BSSS_Algorithm_for_the_Location_Problem_with_Min.pdf)
+
+Integers can be considered either in themselves or as solutions to equations ([Diophantine geometry](https://en.wikipedia.org/wiki/Diophantine_geometry)).
+
+```note
+[Young diagrams](https://commons.wikimedia.org/wiki/Category:Young_diagrams) associated to the partitions of the positive integers ***1 through 8***. They are arranged so that images under the reflection about the main diagonal of the square are conjugate partitions _([Wikipedia](https://en.wikipedia.org/wiki/Partition_(number_theory)))_.
+```
+
+***f(8🪟8) = 1 + 7 + 29 = 37 inner partitions***
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 -29 = 61 - 1 = 60
+5 5 2 1 0 5 👉 f(37) = f(8🪟8) ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime 👉 7s
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+When these subclasses of partitions are flatten out into a matrix, you want to take the Jacobian of each of a stack of targets with respect to a stack of sources, where the Jacobians for each target-source pair are independent .
+
+```note
+It's possible to build a _[Hessian matrix](https://en.wikipedia.org/wiki/Hessian_matrix)_ for a _[Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method_in_optimization)_ step using the Jacobian method. You would first flatten out its axes into a matrix, and flatten out the gradient into a vector _([Tensorflow](https://www.tensorflow.org/guide/advanced_autodiff#batch_jacobian))_. 
+```
+
+[![Partitioned-matrices-of-the-numbers-60-62-and-64-as-examples](https://github.com/eq19/maps/assets/8466209/2009c4a4-49f8-4653-b0ea-b928ecad3240)](https://github.com/eq19/maps/files/13722898/Partitions_of_even_numbers.pdf)
+
+```note
+***In summary, it has been shown that partitions into an even number of distinct parts and an odd number of distinct parts exactly cancel each other, producing null terms 0x^n, except if n is a generalized [pentagonal number](https://www.eq19.com/identition/#hidden-dimensions) n=g_{k}=k(3k-1)/2}***, in which case there is exactly one Ferrers diagram left over, producing a term (−1)kxn. But this is precisely what the right side of the identity says should happen, so we are finished. _([Wikipedia](https://en.wikipedia.org/wiki/Pentagonal_number_theorem))_
+```
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 -29 = 61 - 1 = 60
+5 5 2 1 0 5 👉 f(37) = f(29🪟23) ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime 👉 7s
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+The code is interspersed with python, shell, perl, also demonstrates how multiple languages can be integrated seamlessly. 
+
+[![extended branes](https://github.com/eq19/maps/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/identition/#partition-function)
+
+These include generating variants of their abundance profile, assigning taxonomy and finally generating a rooted [phylogenetic tree](https://en.wikipedia.org/wiki/Phylogenetic_tree).
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 - 29 = 61 - 1 = 60
+5 5 2 1 0 5 👉 f(37) = ❓ 👈 Composite ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime 👉 7s 👈 Composite ✔️
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+This behaviour in a fundamental causal relation to the primes when the products are entered into the  _[partitions](https://en.wikipedia.org/wiki/Partition_(number_theory))_ system. 
+
+## Composite behaviour
+
+It would mean that there should be some undiscovered things hidden within the residual of the decimal values. 
+
+[![integer partition](https://github.com/eq19/maps/assets/8466209/814079f5-a06f-436f-9dc3-a41dbc0c120b)](https://blogs.iiit.ac.in/sumit-jha/)
+
+***168 + 2 = 170 = (10+30)+60+70 = 40+60+70 = 40 + 60 + ∆(2~71)***
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 - 29 = 61 - 1 = 60
+5 5 2 1 0 5 👉 f(37) ✔️
+          6 👉 11s Composite Partition ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime
+           18 👉 7s Composite Partition ✔️
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+```note
+The initial concept of this work was the Partitioned Matrix of an even number w≥ 4:
+- It was shown that ***for every even number w≥ 4*** it is possible to establish a corresponding Partitioned Matrix with a determined number of lines.
+- It was demonstrated that, fundamentally, ***the sum of the partitions is equal to the number of lines*** in the matrix: Lw = Cw + Gw + Mw.
+- It was also shown that for each and every Partitioned Matrix of an even number w ≥ 4 it is observed that
+ Gw = π(w) − (Lw − Cw), which means that the number of Goldbach partitions or ***partitions of prime numbers of an even number w ≥ 4 is given by the number of prime numbers up to w minus the number of available lines*** (Lwd) calculated as follows: Lwd = Lw − Cw.
+
+To analyze the adequacy of the proposed formulas, probabilistically calculated reference values were adopted. _([Partitions of even numbers - pdf](https://github.com/eq19/maps/files/13722898/Partitions_of_even_numbers.pdf))_
+```
+
+[![Batch Jacobian](https://user-images.githubusercontent.com/8466209/229297019-4583e9a7-273d-4489-ab87-37c88be16adb.png)](https://www.tensorflow.org/guide/advanced_autodiff#batch_jacobian)
+
+```txt
+p r i m e s
+1 0 0 0 0 0
+2 1 0 0 0 1 ◄--- #29 ◄--- #61
+3 2 0 1 0 2 👉 2
+4 3 1 1 0 3 👉 89 - 29 = 61 - 1 = 60
+5 5 2 1 0 5 👉 11 + 29 = 37 + 3 = 40 ✔️
+          6 👉 11s Composite Partition ◄--- 2+60+40 = 102 ✔️
+6 7 3 1 0 7 ◄--- #23
+7 11 4 1 0 11 ◄--- #19
+8 13 5 1 0 13 ◄--- # 17 ◄--- #49
+9 17 0 1 1 17 ◄--- 7th prime 
+           18 👉 7s Composite Partition 
+10 19 1 1 1 ∆1 ◄--- 0th ∆prime ◄--- Fibonacci Index #18
+-----
+11 23 2 1 1 ∆2 ◄--- 1st ∆prime ◄--- Fibonacci Index #19 ◄--- #43
+..
+..
+40 163 5 1 0 ∆31 ◄- 11th ∆prime ◄-- Fibonacci Index #29 👉 11
+-----
+41 167 0 1 1 ∆0
+42 173 0 -1 1 ∆1
+43 179 0 1 1 ∆2 ◄--- ∆∆1
+44 181 1 1 1 ∆3 ◄--- ∆∆2 ◄--- 1st ∆∆prime ◄--- Fibonacci Index #30
+..
+..
+100 521 0 -1 2 ∆59 ◄--- ∆∆17 ◄--- 7th ∆∆prime ◄--- Fibonacci Index #36  👉 7s
+-----
+```
+
+***(11x7) + (29+11) + (25+6) + (11+7) + 4 = 77+40+31+18+4 = 170***
+
+[![16S rRNA amplicons study](https://user-images.githubusercontent.com/36441664/71659208-5515b480-2d79-11ea-859f-a20dea0cf680.jpg)](https://colab.research.google.com/drive/17Up0gSGF9euhqQ8Ext_2GtSptiPdt4HP)
