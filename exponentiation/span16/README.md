@@ -329,6 +329,8 @@ This behaviour in a fundamental causal relation to the primes when the products 
 
 ## Composite behaviour
 
+![The-Standard-Model-of-particle-physics-with-Higgs-boson-at-the-center-includes-fractional ppm](https://github.com/user-attachments/assets/a95715fd-a8b7-44be-967d-1133e2151ce9)
+
 It would mean that there should be some undiscovered things hidden within the residual of the decimal values. 
 
 [![integer partition](https://github.com/eq19/maps/assets/8466209/814079f5-a06f-436f-9dc3-a41dbc0c120b)](https://blogs.iiit.ac.in/sumit-jha/)
