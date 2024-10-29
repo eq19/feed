@@ -58,6 +58,7 @@ runs:
         credentials: ${{ inputs.credentials }}
         action_path: ${{ github.action_path }}
         image_name: ${{ inputs.image_name }}
+        token: ${{ inputs.token }}
 
     - name: 🪂 Remove existing images
       id: variables
