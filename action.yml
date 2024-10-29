@@ -56,7 +56,7 @@ runs:
         hub_password: ${{ inputs.docker_hub_password }}
         hub_token: ${{ inputs.docker_hub_token }}
         credentials: ${{ inputs.credentials }}
-        action_path: ${{ github.action_path}}
+        action_path: ${{ github.action_path }}
         image_name: ${{ inputs.image_name }}
 
     - name: 🪂 Remove existing images
