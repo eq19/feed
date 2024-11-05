@@ -44,8 +44,10 @@ outputs:
     description: Collect all outputs
     value: ${{ toJSON(steps.*.outputs) }}
   addition:
+    description: Collect addition outputs
     value: ${{ toJSON(steps.addition.outputs) }}
   multiplication:
+    description: Collect multiplication outputs
     value: ${{ toJSON(steps.multiplication.outputs) }}
 
 runs:
@@ -74,7 +76,3 @@ runs:
         action_path: ${{ github.action_path }}
         hub_token: ${{ inputs.docker_hub_token }} 
         hub_username: ${{ inputs.docker_hub_username }}
-
-    - shell: bash
-      run: |
-        echo ${{ toJSON(steps.*.outputs) }}
