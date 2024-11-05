@@ -40,10 +40,13 @@ inputs:
     required: true
 
 outputs:
+  all_outputs:
+    description: Collect all outputs
+    value: ${{ toJSON(steps.*.outputs) }}
   addition:
-    value: ${{ toJSON(steps.addition.outputs.*) }}
+    value: ${{ toJSON(steps.addition.outputs) }}
   multiplication:
-    value: ${{ toJSON(steps.multiplication.outputs.*) }}
+    value: ${{ toJSON(steps.multiplication.outputs) }}
 
 runs:
   using: composite
