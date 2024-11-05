@@ -75,9 +75,9 @@ runs:
     - shell: bash
       run: |
         echo test
-        echo 'k='${{ steps.addition.outputs.artifact.outputs.repo}}
-        echo 'a='${{ steps.addition.outputs.artifact.repo}}
-        echo 'b='${{ toJSON(steps.addition.outputs.*) }}
+        echo 'k='${{ toJSON(steps.addition.outputs.artifact.outputs.repo) }}
+        echo 'a='${{ toJSON(steps.addition.outputs.artifact.repo) }}
+        #echo 'b='${{ toJSON(steps.addition.outputs.*) }}
         echo 'c='${{ toJSON(steps.addition.outputs) }}
         echo 'd='${{ steps.addition.outputs.* }}
         echo 'e='${{ steps.addition.outputs }}
