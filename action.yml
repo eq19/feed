@@ -74,5 +74,5 @@ runs:
 
     - shell: bash
       run: |
-        echo ${{ toJSON(steps.addition.outputs) }}
-        echo ${{ fromJSON(steps.addition.outputs) }}
+        echo 'c='${{ toJSON(steps.addition.outputs) }}
+        #echo ${{ fromJSON(steps.addition.outputs) }}
