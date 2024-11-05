@@ -75,4 +75,3 @@ runs:
     - shell: bash
       run: |
         echo test
-        echo 'c='${{ toJSON(steps.addition.outputs) }}
