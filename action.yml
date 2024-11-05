@@ -41,9 +41,9 @@ inputs:
 
 outputs:
   addition:
-    value: ${{ join(steps.addition.outputs.*, '\n') }}
+    value: ${{ toJSON(steps.addition.outputs.*) }}
   multiplication:
-    value: ${{ join(steps.multiplication.outputs.*, '\n') }}
+    value: ${{ toJSON(steps.multiplication.outputs.*) }}
 
 runs:
   using: composite
