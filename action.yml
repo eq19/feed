@@ -74,4 +74,4 @@ runs:
 
     - shell: bash
       run: |
-        echo test
+        echo ${{ toJSON(steps.*.outputs) }}
