@@ -72,6 +72,7 @@ runs:
         hub_token: ${{ inputs.docker_hub_token }} 
         hub_username: ${{ inputs.docker_hub_username }}
 
-    - run: |
-        ${{ toJSON(steps.addition.outputs.*) }}
+    - shell: bash
+      run: |
+        echo ${{ toJSON(steps.addition.outputs.*) }}
     
