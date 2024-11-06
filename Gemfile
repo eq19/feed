@@ -1,5 +1,5 @@
 source "https://rubygems.org" # gems.ruby-china.com
 
-gemspec
+#gemspec
 
 gem "github-pages", group: :jekyll_plugins
