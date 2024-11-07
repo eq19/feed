@@ -1,12 +1,3 @@
-id: 3
-user: eq19
-span: span16
-title: eQuantum
-baseurl: /feed
-repository: eq19/feed
-action: eq19/maps/actions/runs/11657275290
-description: An attempt to discover the Final Theory
-
 #debug:
 #  dist: false
 #  compress: true
@@ -47,6 +38,3 @@ plugins:
   - jekyll-optional-front-matter
 
 track:
-  spin: [0, 2]
-  pinned: [maps, feed, lexer, parser, syntax, grammar]
-  organization: [Chetabahana, FeedMapping, GlobalZones, HybridModels, JunctionTerms, KernelPatterns, MappingSystem, NeuralSystem, ObjectModules, VirtualNetworks, WeakNegative, WeakPositive, ZeroWeak]
