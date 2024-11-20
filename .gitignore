@@ -52,14 +52,14 @@ package-lock.json
 
 
 # build
-.env
+#.env
 #.github
-.devcontainer/
-.devcontainer.json
+#.devcontainer/
+#.devcontainer.json
 
 
 # action
-action.yml
+#action.yml
 action.changelog.md
 
 
