@@ -53,7 +53,7 @@ package-lock.json
 
 # build
 .env
-.github/
+#.github
 .devcontainer/
 .devcontainer.json
 
