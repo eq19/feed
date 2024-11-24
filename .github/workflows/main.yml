@@ -18,7 +18,7 @@ name: COmpendium of RElations – Modulo 6
 # For more information on these settings, see https://www.tensorflow.org/quantum/design.
 #
 on:
-  #push:
+  push:
   workflow_run:
     types: [completed]
     workflows: ["pages-build-deployment"]
@@ -122,6 +122,7 @@ jobs:
       fail-fast: ${{ contains(needs.*.result, 'success') && false || true }}
 
     env:
+      ID: ${{ matrix.config.id }}
       IP_ADDRESS: '${{ needs.lexering.outputs.address }}'
       PASS: ${{ contains(needs.*.result, 'success') && true || false }}
 
