@@ -27,6 +27,7 @@ readme_index:
   with_frontmatter: true
 
 exclude:
+  - vendor
   - LICENSE
   - action.yml  
   - Dockerfile
