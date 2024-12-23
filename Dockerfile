@@ -25,6 +25,11 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
+    build-essential \
+    gcc \
+    libffi-dev \
+    libssl-dev \
+    libta-lib-dev \
     --no-install-recommends && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
