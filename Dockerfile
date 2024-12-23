@@ -20,6 +20,9 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
+# Use the latest PostgreSQL image as the base
+FROM postgres:latest
+
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
     python3 \
@@ -34,15 +37,18 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install TA-Lib from source
+# Install TA-Lib from source with precision fix
 WORKDIR /tmp
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
-    tar -xzf ta-lib-0.4.0-src.tar.gz && \
+    tar xvzf ta-lib-0.4.0-src.tar.gz && \
     cd ta-lib && \
-    ./configure --prefix=/usr && \
+    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
+    ./configure --prefix=/usr/local && \
     make && \
     make install && \
-    rm -rf /tmp/ta-lib*
+    ldconfig && \
+    cd .. && \
+    rm -rf ./ta-lib*
 
 # Set the working directory for Freqtrade
 WORKDIR /freqtrade
