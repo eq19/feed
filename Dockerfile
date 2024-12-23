@@ -1,3 +1,4 @@
+# Use the latest PostgreSQL image as the base
 FROM postgres:latest
 
 ENV POSTGRES_DB postgres
@@ -15,10 +16,28 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
-#RUN pip install --user ta
-#RUN pip install --user freqtrade
+# Install dependencies (including Python)
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip \
+    python3-venv \
+    --no-install-recommends && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
+# Set the working directory
+WORKDIR /freqtrade
+
+# Install Freqtrade globally
+RUN pip3 install freqtrade
+
+# Copy your application files (if any)
+#COPY . .
+
+# Set the default entrypoint
+#ENTRYPOINT ["freqtrade"]
 ENTRYPOINT ["docker-entrypoint.sh"]
+
 #RUN chmod a+r /docker-entrypoint-initdb.d/*
 #RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
 #CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
