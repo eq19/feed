@@ -16,7 +16,7 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
-# Install dependencies (including Python)
+# Install Python and required dependencies
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
@@ -28,8 +28,15 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /freqtrade
 
-# Install Freqtrade globally
-RUN pip3 install freqtrade
+# Create a virtual environment for Python
+RUN python3 -m venv /freqtrade/venv
+
+# Activate the virtual environment and install Freqtrade
+RUN /freqtrade/venv/bin/pip install --upgrade pip && \
+    /freqtrade/venv/bin/pip install freqtrade
+
+# Ensure the virtual environment is used by default
+ENV PATH="/freqtrade/venv/bin:$PATH"
 
 # Copy your application files (if any)
 #COPY . .
