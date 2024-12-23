@@ -20,14 +20,12 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
-# Use the latest PostgreSQL image as the base
-FROM postgres:latest
-
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip \
     python3-venv \
+    python3-dev \ 
     build-essential \
     gcc \
     libffi-dev \
