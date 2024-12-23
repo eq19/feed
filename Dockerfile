@@ -15,8 +15,8 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
-RUN pip install --user ta
-RUN pip install --user freqtrade
+#RUN pip install --user ta
+#RUN pip install --user freqtrade
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 #RUN chmod a+r /docker-entrypoint-initdb.d/*
