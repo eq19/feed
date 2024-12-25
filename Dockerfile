@@ -22,14 +22,15 @@ ADD setup.sql /docker-entrypoint-initdb.d/
 
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    libffi-dev \
+    libssl-dev \
+    gcc \
     python3 \
     python3-pip \
     python3-venv \
     python3-dev \ 
-    build-essential \
-    gcc \
-    libffi-dev \
-    libssl-dev \
     wget \
     --no-install-recommends && \
     apt-get clean && \
