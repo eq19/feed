@@ -57,7 +57,8 @@ RUN python3 -m venv /freqtrade/venv
 
 # Activate the virtual environment and install Freqtrade
 RUN /freqtrade/venv/bin/pip install --upgrade pip
-RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/')
+RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
+    echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION"
 RUN /freqtrade/venv/bin/pip install https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
 # Ensure the virtual environment is used by default
