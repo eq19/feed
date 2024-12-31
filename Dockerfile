@@ -64,14 +64,18 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
 # Ensure the virtual environment is used by default
 ENV PATH="/freqtrade/venv/bin:$PATH"
 
-# Copy your application files (if any)
-#COPY . .
-
 # Set the working directory for Freqtrade
 WORKDIR /home/runner
-RUN echo "freqtrade trade" >> /docker-entrypoint-initdb.d/docker-entrypoint.sh
+
+# Append Freqtrade command to run in the background
+RUN echo "freqtrade trade &" >> /docker-entrypoint-initdb.d/docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint-initdb.d/docker-entrypoint.sh
 
 # Set the default entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
+
+# Expose PostgreSQL port
 EXPOSE 5432
+
+# Default command for the container
 CMD ["postgres"]
