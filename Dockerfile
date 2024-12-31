@@ -60,7 +60,7 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
 
 # Set the working directory for Freqtrade
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
-ADD user_data /home/runner
+ADD user_data /home/runner/user_data
 WORKDIR /home/runner
 
 # Set the default entrypoint
