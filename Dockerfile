@@ -47,24 +47,21 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     make install > /dev/null 2>&1 && \
     ldconfig > /dev/null 2>&1 && \
     cd .. && \
-    rm -rf ./ta-lib* /tmp/*
-
-# Create a virtual environment for Python
-RUN python3 -m venv /freqtrade/venv
-ENV PATH="/freqtrade/venv/bin:$PATH"
+    rm -rf ./ta-lib*
 
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
+RUN python3 -m venv /freqtrade/venv
+ENV PATH="/freqtrade/venv/bin:$PATH"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
     /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /tmp/*
 
 # Set the working directory for Freqtrade
 WORKDIR /home/runner
-RUN echo "freqtrade trade &" >> /usr/local/bin/docker-entrypoint.sh
+COPY user_data /home/runner/user_data
 
 # Set the default entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
