@@ -6,7 +6,7 @@ ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 
 # Start PostgreSQL with custom configuration
-ADD setup.sql /docker-entrypoint-initdb.d/
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 #COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
 #COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
 #COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
