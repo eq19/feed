@@ -6,7 +6,6 @@ ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 
 # Start PostgreSQL with custom configuration
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 #COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
 #COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
 #COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
@@ -60,7 +59,8 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
     rm -rf /tmp/*
 
 # Set the working directory for Freqtrade
-ADD . /home/runner
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+ADD user_data /home/runner
 WORKDIR /home/runner
 
 # Set the default entrypoint
