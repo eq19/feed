@@ -47,10 +47,7 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     make install > /dev/null 2>&1 && \
     ldconfig > /dev/null 2>&1 && \
     cd .. && \
-    rm -rf ./ta-lib*
-
-# Set the working directory for Freqtrade
-WORKDIR /freqtrade
+    rm -rf ./ta-lib* /tmp/*
 
 # Create a virtual environment for Python
 RUN python3 -m venv /freqtrade/venv
@@ -71,8 +68,14 @@ ENV PATH="/freqtrade/venv/bin:$PATH"
 #COPY . .
 
 # Set the default entrypoint
-#ENTRYPOINT ["freqtrade"]
 ENTRYPOINT ["docker-entrypoint.sh"]
-
 EXPOSE 5432
 CMD ["postgres"]
+
+# Set the working directory for Freqtrade
+WORKDIR /home/runner
+ENTRYPOINT ["freqtrade"]
+CMD ["trade"]
+
+
+
