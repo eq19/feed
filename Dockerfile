@@ -51,6 +51,7 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 
 # Create a virtual environment for Python
 RUN python3 -m venv /freqtrade/venv
+ENV PATH="/freqtrade/venv/bin:$PATH"
 
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
@@ -61,21 +62,11 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Ensure the virtual environment is used by default
-ENV PATH="/freqtrade/venv/bin:$PATH"
-
 # Set the working directory for Freqtrade
 WORKDIR /home/runner
-
-# Append Freqtrade command to run in the background
-RUN echo "freqtrade trade &" >> /docker-entrypoint-initdb.d/docker-entrypoint.sh
-RUN chmod +x /docker-entrypoint-initdb.d/docker-entrypoint.sh
+RUN echo "freqtrade trade &" >> /usr/local/bin/docker-entrypoint.sh
 
 # Set the default entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
-
-# Expose PostgreSQL port
 EXPOSE 5432
-
-# Default command for the container
 CMD ["postgres"]
