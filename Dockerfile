@@ -67,15 +67,11 @@ ENV PATH="/freqtrade/venv/bin:$PATH"
 # Copy your application files (if any)
 #COPY . .
 
+# Set the working directory for Freqtrade
+WORKDIR /home/runner
+RUN echo "freqtrade trade" >> /docker-entrypoint-initdb.d/docker-entrypoint.sh
+
 # Set the default entrypoint
 ENTRYPOINT ["docker-entrypoint.sh"]
 EXPOSE 5432
 CMD ["postgres"]
-
-# Set the working directory for Freqtrade
-WORKDIR /home/runner
-ENTRYPOINT ["freqtrade"]
-CMD ["trade"]
-
-
-
