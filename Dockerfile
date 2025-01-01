@@ -1,6 +1,5 @@
 # Use the latest PostgreSQL image as the base
 FROM postgres:latest
-
 EXPOSE 5432
 
 ENV POSTGRES_DB postgres
@@ -64,9 +63,10 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
-# Set the working directory for freqtrade
+# Set the working directory
 WORKDIR /home/runner
 ADD user_data user_data
 
-# Set the default entrypoint
+# Run default entrypoint
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
