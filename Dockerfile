@@ -58,12 +58,13 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
     /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
     rm -rf /tmp/*
 
-# Set the working directory for Freqtrade
+ADD user_data/ft_client/test_client/entrypoint.sh /usr/local/bin/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
-ADD user_data /home/runner/user_data
+
+# Set the working directory for freqtrade
 WORKDIR /home/runner
+ADD user_data user_data
 
 # Set the default entrypoint
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 5432
-CMD ["postgres"]
