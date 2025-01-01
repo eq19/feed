@@ -1,6 +1,8 @@
 # Use the latest PostgreSQL image as the base
 FROM postgres:latest
 
+EXPOSE 5432
+
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
@@ -67,5 +69,4 @@ WORKDIR /home/runner
 ADD user_data user_data
 
 # Set the default entrypoint
-ENTRYPOINT ["entrypoint.sh"]
-EXPOSE 5432
+ENTRYPOINT ["/entrypoint.sh"]
