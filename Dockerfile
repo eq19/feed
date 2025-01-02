@@ -25,8 +25,8 @@ WORKDIR /home/runner
 ADD user_data user_data
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
