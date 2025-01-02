@@ -20,6 +20,14 @@ ENV POSTGRES_PASSWORD postgres
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
+# Set the working directory
+WORKDIR /home/runner
+ADD user_data user_data
+
+# Use custom entrypoint to start both PostgreSQL and freqtrade
+ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -27,6 +35,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev \
     gcc \
+    jq \
     python3 \
     python3-pip \
     python3-venv \
@@ -37,7 +46,6 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # Install TA-Lib from source with precision fix
-WORKDIR /tmp
 RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     tar xvzf ta-lib-0.4.0-src.tar.gz && \
     cd ta-lib && \
@@ -53,19 +61,13 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 ARG CACHE_BUST=1
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
+RUN curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
+    "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | \
+    jq -r '.payload.data' | base64 --decode > /home/runner/config.json
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
-    /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
-    rm -rf /tmp/*
-
-# Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
-
-# Set the working directory
-WORKDIR /home/runner
-ADD user_data user_data
+    /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.w
 
 # Run default entrypoint
 RUN chmod +x /entrypoint.sh
