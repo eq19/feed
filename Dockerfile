@@ -61,7 +61,7 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 ARG CACHE_BUST=1
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
-RUN curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
+RUN [ ! -f /home/runner/config.json ] && curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
     "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | \
     jq -r '.payload.data' | base64 --decode > /home/runner/config.json
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
