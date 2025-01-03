@@ -37,17 +37,18 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # Install TA-Lib from source with precision fix
-WORKDIR /tmp
-RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
-    tar xvzf ta-lib-0.4.0-src.tar.gz && \
-    cd ta-lib && \
-    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
-    ./configure --prefix=/usr/local > /dev/null 2>&1 && \
-    make > /dev/null 2>&1 && \
-    make install > /dev/null 2>&1 && \
-    ldconfig > /dev/null 2>&1 && \
-    cd .. && \
-    rm -rf ./ta-lib*
+#WORKDIR /tmp
+#RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
+#    tar xvzf ta-lib-0.4.0-src.tar.gz && \
+#    cd ta-lib && \
+#    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
+#    ./configure --prefix=/usr/local > /dev/null 2>&1 && \
+#    make > /dev/null 2>&1 && \
+#    make install > /dev/null 2>&1 && \
+#    ldconfig > /dev/null 2>&1 && \
+#    cd .. && \
+#    rm -rf ./ta-lib* \
+#    rm -rf /tmp/*
 
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
@@ -56,8 +57,7 @@ ENV PATH="/freqtrade/venv/bin:$PATH"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
-    /freqtrade/venv/bin/pip install --no-cache-dir https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
-    rm -rf /tmp/*
+    /freqtrade/venv/bin/pip install --no-cache-dir https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
