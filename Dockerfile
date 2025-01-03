@@ -26,13 +26,11 @@ RUN apt-get update && apt-get install -y \
     curl \
     libffi-dev \
     libssl-dev \
-    libta-lib0-dev \
     gcc \
     python3 \
     python3-pip \
     python3-venv \
     python3-dev \
-    ta-lib \
     wget \
     --no-install-recommends && \
     apt-get clean && \
@@ -58,7 +56,7 @@ ENV PATH="/freqtrade/venv/bin:$PATH"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
-    /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
+    /freqtrade/venv/bin/pip install --no-cache-dir TA-Lib https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
     rm -rf /tmp/*
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
