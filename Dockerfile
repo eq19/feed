@@ -53,7 +53,6 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /home/runner
 ADD user_data user_data
-COPY user_data/build_helpers/* /tmp/
 
 # Activate the python venv
 RUN python3 -m venv /freqtrade/venv
