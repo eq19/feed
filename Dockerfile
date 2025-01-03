@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-venv \
     python3-dev \ 
+    sudo \
     wget \
     --no-install-recommends && \
     apt-get clean && \
@@ -59,7 +60,7 @@ ADD user_data user_data
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
 
-RUN git clone https://github.com/KernelPatterns/freqtrade.git && cd freqtrade && ./build_helpers/install_ta-lib.sh
+RUN git clone https://github.com/KernelPatterns/freqtrade.git && cd freqtrade && sudo ./build_helpers/install_ta-lib.sh
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     /freqtrade/venv/bin/pip install https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
