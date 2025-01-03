@@ -1,13 +1,24 @@
-# Use the latest PostgreSQL image as the Build stage
-FROM postgres:latest AS build
+# Use the latest PostgreSQL image as the base
+FROM postgres:latest
+EXPOSE 5432
 
-# Set the working directory
-WORKDIR /home/runner
-ADD . .
+ENV POSTGRES_DB postgres
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD postgres
 
-# Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
-ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
+# Start PostgreSQL with custom configuration
+#COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
+#COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
+#COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
+
+#RUN chmod a+r /docker-entrypoint-initdb.d/*
+#RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
+#CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+
+# Install pgvector and make sure the extension can be loaded
+#RUN wget https://github.com/pgvector/pgvector/archive/refs/tags/v0.2.1.tar.gz
+#RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
+#RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
 # Install Python, build tools, and required dependencies
 RUN apt-get update && apt-get install -y \
@@ -16,7 +27,6 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev \
     gcc \
-    jq \
     python3 \
     python3-pip \
     python3-venv \
@@ -49,42 +59,13 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
     /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
     rm -rf /tmp/*
 
-# Final stage
-FROM postgres:latest
+# Use custom entrypoint to start both PostgreSQL and freqtrade
+ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+
+# Set the working directory
 WORKDIR /home/runner
-
-# Copy necessary files from the build stage, excluding config.json
-COPY --from=build /home/runner/ /home/runner/
-
-# Remove config.json to ensure it's not in the final image
-RUN rm -f /home/runner/config.json
-
-# Expose PostgreSQL port
-EXPOSE 5432
-
-# Set environment variables
-ENV POSTGRES_DB=postgres
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=postgres
-
-# Start PostgreSQL with custom configuration
-#COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
-#COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
-#COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
-
-#RUN chmod a+r /docker-entrypoint-initdb.d/*
-#RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
-#CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
-
-# Install pgvector and make sure the extension can be loaded
-#RUN wget https://github.com/pgvector/pgvector/archive/refs/tags/v0.2.1.tar.gz
-#RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
-#RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
-
-# Fetch config.json from Google Secrets
-RUN curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
-    "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | \
-    jq -r '.payload.data' | base64 --decode > /home/runner/config.json
+ADD user_data user_data
 
 # Run default entrypoint
 RUN chmod +x /entrypoint.sh
