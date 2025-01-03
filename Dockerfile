@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install -y \
     libffi-dev \
     libssl-dev \
     gcc \
+    git \
     python3 \
     python3-pip \
     python3-venv \
@@ -37,17 +38,23 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # Install TA-Lib from source with precision fix
+#WORKDIR /tmp
+#RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
+#    tar xvzf ta-lib-0.4.0-src.tar.gz && \
+#    cd ta-lib && \
+#    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
+#    ./configure --prefix=/usr/local > /dev/null 2>&1 && \
+#    make > /dev/null 2>&1 && \
+#    make install > /dev/null 2>&1 && \
+#    ldconfig && \
+#    cd .. && \
+#    rm -rf ./ta-lib*
+
+# Install TA-lib
 WORKDIR /tmp
-RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
-    tar xvzf ta-lib-0.4.0-src.tar.gz && \
-    cd ta-lib && \
-    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
-    ./configure --prefix=/usr/local > /dev/null 2>&1 && \
-    make > /dev/null 2>&1 && \
-    make install > /dev/null 2>&1 && \
-    ldconfig && \
-    cd .. && \
-    rm -rf ./ta-lib*
+RUN git clone https://github.com/KernelPatterns/freqtrade.git
+COPY freqtrade/build_helpers/* /tmp/
+RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*
 
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
