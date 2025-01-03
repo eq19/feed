@@ -47,12 +47,13 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     make install > /dev/null 2>&1 && \
     cd .. && \
     rm -rf ./ta-lib* \
-    ldconfig && \
-    ENV LDFLAGS="-L/usr/local/lib" && \
-    ENV CFLAGS="-I/usr/local/include"
-    
+    ldconfig
+     
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
+ENV LDFLAGS="-L/usr/local/lib"
+ENV CFLAGS="-I/usr/local/include"
+   
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
