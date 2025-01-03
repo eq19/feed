@@ -45,10 +45,12 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     ./configure --prefix=/usr/local > /dev/null 2>&1 && \
     make > /dev/null 2>&1 && \
     make install > /dev/null 2>&1 && \
-    ldconfig > /dev/null 2>&1 && \
     cd .. && \
-    rm -rf ./ta-lib*
-
+    rm -rf ./ta-lib* \
+    ldconfig && \
+    ENV LDFLAGS="-L/usr/local/lib" && \
+    ENV CFLAGS="-I/usr/local/include"
+    
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
 RUN python3 -m venv /freqtrade/venv
