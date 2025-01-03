@@ -38,7 +38,6 @@ COPY --chown=ftuser:ftuser /tmp/freqtrade/*.txt /freqtrade/
 USER ftuser
 RUN  pip install --user --no-cache-dir "numpy<2.0" \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt
-  && rm -r /tmp/*
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
@@ -53,7 +52,8 @@ COPY --chown=ftuser:ftuser . /freqtrade/
 
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
+  && freqtrade install-ui \
+  && rm -r /tmp/*
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
