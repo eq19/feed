@@ -1,5 +1,5 @@
 # Use the latest PostgreSQL image as the base
-FROM postgres:latest
+FROM postgres:latest AS build
 EXPOSE 5432
 
 ENV POSTGRES_DB postgres
@@ -68,6 +68,14 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
     /freqtrade/venv/bin/pip install --no-cache-dir ta https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.w
+
+# Final stage
+FROM postgres:latest
+WORKDIR /home/runner
+
+# Copy everything except config.json
+COPY --from=build /home/runner/ /home/runner/
+RUN rm -f /home/runner/config.json
 
 # Run default entrypoint
 RUN chmod +x /entrypoint.sh
