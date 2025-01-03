@@ -53,7 +53,7 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory
 WORKDIR /home/runner
 ADD user_data user_data
-COPY user-data/build_helpers /tmp/
+COPY user_data/build_helpers/* /tmp/
 RUN pip install --user --no-index --find-links /tmp TA-Lib
 
 # Activate the python venv
