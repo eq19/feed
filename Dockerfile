@@ -20,7 +20,7 @@ ENV POSTGRES_PASSWORD postgres
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
-# Install Python, build tools, and required dependencies
+# Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
     build-essential \
     curl \
