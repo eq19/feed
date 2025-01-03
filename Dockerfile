@@ -64,6 +64,10 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
+#COPY --chown=ftuser:ftuser run.sh /freqtrade/run.sh
+#COPY --chown=ftuser:ftuser strategies /freqtrade/strategies
+#COPY --chown=ftuser:ftuser configs /freqtrade/configs
+
 # Set the working directory
 WORKDIR /home/runner
 ADD user_data user_data
