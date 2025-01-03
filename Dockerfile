@@ -35,7 +35,7 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 
 # Install dependencies
 WORKDIR /tmp/freqtrade
-COPY --chown=ftuser:ftuser *.txt /freqtrade/
+COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
 
 USER ftuser
 WORKDIR /freqtrade
