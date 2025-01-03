@@ -51,7 +51,6 @@ RUN apt-get update && apt-get install -y \
 #    rm -rf ./ta-lib*
 
 # Install TA-lib
-WORKDIR /tmp
 RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade
 COPY /tmp/freqtrade/build_helpers/* /tmp/
 RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*
