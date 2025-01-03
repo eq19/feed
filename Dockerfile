@@ -21,11 +21,16 @@ ENV POSTGRES_PASSWORD postgres
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
 # Install Python, build tools, and required dependencies
-RUN apt-get update && apt-get install -y \
+RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
     build-essential \
     curl \
     libffi-dev \
     libssl-dev \
+    libxmu-dev \
+    libxmu-headers \
+    freeglut3-dev \
+    libxext-dev \
+    libxi-dev \
     gcc \
     git \
     python3 \
