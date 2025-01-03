@@ -22,7 +22,7 @@ ENV POSTGRES_PASSWORD postgres
 
 # Set the working directory
 WORKDIR /home/runner
-ADD user_data user_data
+ADD . .
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
