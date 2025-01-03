@@ -45,7 +45,7 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
     ./configure --prefix=/usr/local > /dev/null 2>&1 && \
     make > /dev/null 2>&1 && \
     make install > /dev/null 2>&1 && \
-    ldconfig > /dev/null 2>&1 && \
+    ldconfig && \
     cd .. && \
     rm -rf ./ta-lib*
 
