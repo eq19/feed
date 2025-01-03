@@ -1,20 +1,6 @@
 # Use the latest PostgreSQL image as the Build stage
 FROM postgres:latest AS build
 
-# Start PostgreSQL with custom configuration
-#COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
-#COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
-#COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
-
-#RUN chmod a+r /docker-entrypoint-initdb.d/*
-#RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
-#CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
-
-# Install pgvector and make sure the extension can be loaded
-#RUN wget https://github.com/pgvector/pgvector/archive/refs/tags/v0.2.1.tar.gz
-#RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
-#RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
-
 # Set the working directory
 WORKDIR /home/runner
 ADD . .
@@ -78,6 +64,20 @@ EXPOSE 5432
 ENV POSTGRES_DB=postgres
 ENV POSTGRES_USER=postgres
 ENV POSTGRES_PASSWORD=postgres
+
+# Start PostgreSQL with custom configuration
+#COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
+#COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
+#COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
+
+#RUN chmod a+r /docker-entrypoint-initdb.d/*
+#RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
+#CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+
+# Install pgvector and make sure the extension can be loaded
+#RUN wget https://github.com/pgvector/pgvector/archive/refs/tags/v0.2.1.tar.gz
+#RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
+#RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
 # Fetch config.json from Google Secrets
 RUN curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
