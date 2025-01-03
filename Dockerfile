@@ -50,20 +50,21 @@ RUN apt-get update && apt-get install -y \
 #    rm -rf ./ta-lib* \
 #    rm -rf /tmp/*
 
-# Activate the python venv and install Freqtrade
-ARG CACHE_BUST=1
+# Set the working directory
+WORKDIR /home/runner
+ADD user_data user_data
+COPY user-data/build_helpers /tmp/
+RUN pip install --user --no-index --find-links /tmp TA-Lib
+
+# Activate the python venv
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
-    /freqtrade/venv/bin/pip install --find-links build_helpers\ TA-Lib \ https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
+    /freqtrade/venv/bin/pip install https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
-
-# Set the working directory
-WORKDIR /home/runner
-ADD user_data user_data
 
 # Run default entrypoint
 RUN chmod +x /entrypoint.sh
