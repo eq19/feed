@@ -34,8 +34,11 @@ RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
 ENV LD_LIBRARY_PATH /usr/local/lib
 
 # Install dependencies
-COPY --chown=ftuser:ftuser /tmp/freqtrade/*.txt /freqtrade/
+WORKDIR /tmp/freqtrade
+COPY --chown=ftuser:ftuser *.txt /freqtrade/
+
 USER ftuser
+WORKDIR /freqtrade
 RUN  pip install --user --no-cache-dir "numpy<2.0" \
   && pip install --user --no-cache-dir -r requirements-hyperopt.txt
 
