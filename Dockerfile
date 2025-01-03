@@ -37,22 +37,9 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install TA-Lib from source with precision fix
-#WORKDIR /tmp
-#RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
-#    tar xvzf ta-lib-0.4.0-src.tar.gz && \
-#    cd ta-lib && \
-#    sed -i.bak "s|0.00000001|0.000000000000000001 |g" src/ta_func/ta_utility.h && \
-#    ./configure --prefix=/usr/local > /dev/null 2>&1 && \
-#    make > /dev/null 2>&1 && \
-#    make install > /dev/null 2>&1 && \
-#    ldconfig && \
-#    cd .. && \
-#    rm -rf ./ta-lib*
-
 # Install TA-lib
 RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade
-RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh && rm -r /tmp/*
+RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1&& rm -r /tmp/*
 
 # Activate the python venv and install Freqtrade
 ARG CACHE_BUST=1
@@ -62,7 +49,7 @@ ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
-    /freqtrade/venv/bin/pip install --no-cache-dir ta-lib https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
+    /freqtrade/venv/bin/pip install --no-cache-dir https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
     rm -rf /tmp/*
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
