@@ -54,11 +54,11 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /home/runner
 ADD user_data user_data
 COPY user_data/build_helpers/* /tmp/
-RUN pip install --user --no-index --find-links /tmp TA-Lib
 
 # Activate the python venv
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
+RUN /freqtrade/venv/bin/pip install --user --no-index --find-links /tmp TA-Lib
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     /freqtrade/venv/bin/pip install https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
