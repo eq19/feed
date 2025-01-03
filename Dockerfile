@@ -58,8 +58,7 @@ ADD user_data user_data
 # Activate the python venv
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
-RUN git clone https://github.com/KernelPatterns/freqtrade.git
-RUN /freqtrade/venv/bin/pip install --no-index --find-links freqtrade/build_helpers TA-Lib
+RUN git clone https://github.com/KernelPatterns/freqtrade.git && cd freqtrade && sudo ./build_helpers/install_ta-lib.sh
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     /freqtrade/venv/bin/pip install https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
