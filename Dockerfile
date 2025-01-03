@@ -1,10 +1,5 @@
-# Use the latest PostgreSQL image as the base
+# Use the latest PostgreSQL image as the Build stage
 FROM postgres:latest AS build
-EXPOSE 5432
-
-ENV POSTGRES_DB postgres
-ENV POSTGRES_USER postgres
-ENV POSTGRES_PASSWORD postgres
 
 # Start PostgreSQL with custom configuration
 #COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
@@ -61,9 +56,6 @@ RUN wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz && \
 ARG CACHE_BUST=1
 RUN python3 -m venv /freqtrade/venv
 ENV PATH="/freqtrade/venv/bin:$PATH"
-RUN [ ! -f /home/runner/config.json ] && curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
-    "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | \
-    jq -r '.payload.data' | base64 --decode > /home/runner/config.json
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
@@ -73,9 +65,24 @@ RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatter
 FROM postgres:latest
 WORKDIR /home/runner
 
-# Copy everything except config.json
+# Copy necessary files from the build stage, excluding config.json
 COPY --from=build /home/runner/ /home/runner/
+
+# Remove config.json to ensure it's not in the final image
 RUN rm -f /home/runner/config.json
+
+# Expose PostgreSQL port
+EXPOSE 5432
+
+# Set environment variables
+ENV POSTGRES_DB=postgres
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=postgres
+
+# Fetch config.json from Google Secrets
+RUN curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" \
+    "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | \
+    jq -r '.payload.data' | base64 --decode > /home/runner/config.json
 
 # Run default entrypoint
 RUN chmod +x /entrypoint.sh
