@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     gcc \
+    git \
     libffi-dev \
     libssl-dev \
     python3 \
