@@ -1,3 +1,4 @@
+# Step 1: Base stage
 FROM python:3.12.7-slim-bookworm as base
 
 # Setup env
@@ -18,18 +19,26 @@ RUN mkdir /freqtrade \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
+# Set the working directory
 WORKDIR /freqtrade
 
-# Install dependencies
+# Create a virtual environment
+ENV VENV_DIR=/freqtrade/venv
+RUN python -m venv $VENV_DIR
+
+# Ensure venv is used for Python and pip by default
+ENV PATH="$VENV_DIR/bin:$PATH"
+
+# Step 2: Python-def stage
 FROM base as python-deps
 
-# Activate the python venv
-RUN python3 -m venv /freqtrade/venv
+# Activate venv for runtime
+ENV PATH="$VENV_DIR/bin:$PATH"
 
 RUN  apt-get update \
   && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
   && apt-get clean \
-  && /freqtrade/venv/bin/pip install --upgrade pip wheel
+  && pip install --upgrade pip wheel
 
 # Install TA-lib
 WORKDIR /tmp
@@ -45,9 +54,10 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 RUN  /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" \
   && /freqtrade/venv/bin/pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
-# Copy dependencies to runtime-image
+# Step 3: Final stage
 FROM base as runtime-image
 
+COPY --from=python-depd $VENV_DIR $VENV_DIR
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
@@ -56,12 +66,12 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 USER ftuser
 WORKDIR /freqtrade
 
-# Activate the python venv
-RUN python3 -m venv /freqtrade/venv
+# Activate venv for runtime
+ENV PATH="$VENV_DIR/bin:$PATH"
 
 ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN cd /tmp/freqtrade && /freqtrade/venv/bin/pip install -e . --no-cache-dir --no-build-isolation \
+RUN cd /tmp/freqtrade && pip install -e . --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
