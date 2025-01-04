@@ -39,6 +39,7 @@
 	//"remoteUser": "ftuser",
 
 	// Use 'postCreateCommand' to run commands after the container is created.
+        "workspaceFolder": "/tmp/freqtrade",
         "onCreateCommand": "pip install --user -e .",
 	"postCreateCommand": "freqtrade list-exchanges"
         //"postCreateCommand": "freqtrade create-userdir --userdir user_data/"
