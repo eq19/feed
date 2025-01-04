@@ -28,9 +28,9 @@ RUN  apt-get update \
   && pip install --upgrade pip wheel
 
 # Install TA-lib
-RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade
+RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade \
+  && chown ftuser:ftuser /tmp/freqtrade
 RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
-RUN chown ftuser:ftuser /tmp/freqtrade/*.txt
 
 # Install dependencies
 USER ftuser
@@ -47,7 +47,7 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 
 USER ftuser
 # Install and execute
-COPY --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade/
+COPY --from=base /tmp/freqtrade /tmp/freqtrade/
 
 RUN cd /tmp/freqtrade && pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
