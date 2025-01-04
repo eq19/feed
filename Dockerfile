@@ -8,10 +8,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONFAULTHANDLER 1
 ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
-
-# Create a virtual environment
 ENV VENV_DIR=/freqtrade/venv
-RUN python -m venv $VENV_DIR
 
 # Ensure venv is used for Python and pip by default
 ENV PATH="$VENV_DIR/bin:$PATH"
@@ -22,6 +19,7 @@ RUN mkdir /freqtrade \
   && apt-get -y install sudo libatlas3-base curl sqlite3 libhdf5-serial-dev libgomp1 \
   && apt-get clean \
   && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
+  && python -m venv $VENV_DIR \
   && chown ftuser:ftuser /freqtrade \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
