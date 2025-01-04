@@ -9,6 +9,13 @@ ENV PYTHONFAULTHANDLER 1
 ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
 
+# Create a virtual environment
+ENV VENV_DIR=/freqtrade/venv
+RUN python -m venv $VENV_DIR
+
+# Ensure venv is used for Python and pip by default
+ENV PATH="$VENV_DIR/bin:$PATH"
+
 # Prepare environment
 RUN mkdir /freqtrade \
   && apt-get update \
@@ -21,13 +28,6 @@ RUN mkdir /freqtrade \
 
 # Set the working directory
 WORKDIR /freqtrade
-
-# Create a virtual environment
-ENV VENV_DIR=/freqtrade/venv
-RUN python -m venv $VENV_DIR
-
-# Ensure venv is used for Python and pip by default
-ENV PATH="$VENV_DIR/bin:$PATH"
 
 # Step 2: Python-deps stage
 FROM base as python-deps
