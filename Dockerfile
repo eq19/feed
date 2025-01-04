@@ -1,5 +1,7 @@
 # Step 1: Base stage
-FROM python:3.12.7-slim-bookworm as base
+#FROM python:3.12.7-slim-bookworm as base
+FROM postgres:latest
+EXPOSE 5432
 
 # Setup env
 ENV LANG C.UTF-8
@@ -10,6 +12,9 @@ ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
 ENV VENV_DIR=/freqtrade/venv
 ENV PATH="$VENV_DIR/bin:$PATH"
+ENV POSTGRES_DB postgres
+ENV POSTGRES_USER postgres
+ENV POSTGRES_PASSWORD postgres
 
 # Prepare environment
 RUN mkdir /freqtrade \
