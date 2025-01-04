@@ -30,9 +30,10 @@ RUN  apt-get update \
 # Install TA-lib
 
 WORKDIR /tmp
-RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git 
-RUN chown ftuser:ftuser /tmp/freqtrade && cd /tmp/freqtrade/build_helpers \
-  && ./install_ta-lib.sh > /dev/null 2>&1
+RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git \
+  && chown ftuser:ftuser /tmp/freqtrade && cd /tmp/freqtrade/build_helpers \
+  && ./install_ta-lib.sh > /dev/null 2>&1 && rm -r *ta-lib*
+COPY --chown=ftuser:ftuser user_data/* /tmp/freqtrade/user_data/
 
 # Install dependencies
 USER ftuser
@@ -44,7 +45,6 @@ RUN  pip install --user --no-cache-dir "numpy<2.0" \
 FROM base as runtime-image
 
 COPY --from=python-deps /usr/local/lib /usr/local/lib
-COPY --chown=ftuser:ftuser user_data/* /tmp/freqtrade/user_data/
 COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
 
