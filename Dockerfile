@@ -30,7 +30,7 @@ RUN  apt-get update \
 # Install TA-lib
 COPY user_data/build_helpers/* /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
-COPY --chown=ftuser:ftuser /tmp/requirements.txt /tmp/requirements-hyperopt.txt /freqtrade/
+COPY --chown=ftuser:ftuser user_data/build_helpers/*.txt /freqtrade/
 
 # Install dependencies
 USER ftuser
