@@ -19,7 +19,7 @@ RUN mkdir /freqtrade \
   && apt-get clean \
   && python3 -m venv $VENV_DIR \
   && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
-  && chown ftuser:ftuser /freqtrade \
+  && chown -R ftuser:ftuser /freqtrade \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
