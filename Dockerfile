@@ -1,6 +1,6 @@
 # Step 1: Base stage
 #FROM python:3.12.7-slim-bookworm as base
-FROM postgres:latest
+FROM postgres:latest as base
 EXPOSE 5432
 
 # Setup env
