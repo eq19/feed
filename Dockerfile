@@ -29,7 +29,7 @@ RUN python -m venv $VENV_DIR
 # Ensure venv is used for Python and pip by default
 ENV PATH="$VENV_DIR/bin:$PATH"
 
-# Step 2: Python-def stage
+# Step 2: Python-deps stage
 FROM base as python-deps
 
 # Activate venv for runtime
@@ -51,8 +51,8 @@ COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 USER ftuser
 ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN  /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" \
-  && /freqtrade/venv/bin/pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
+RUN pip install --no-cache-dir "numpy<2.0" \
+  && pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
 # Step 3: Final stage
 FROM base as runtime-image
@@ -68,8 +68,6 @@ WORKDIR /freqtrade
 
 # Activate venv for runtime
 ENV PATH="$VENV_DIR/bin:$PATH"
-
-ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN cd /tmp/freqtrade && pip install -e . --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
