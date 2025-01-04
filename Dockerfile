@@ -57,7 +57,7 @@ RUN  /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" \
 # Step 3: Final stage
 FROM base as runtime-image
 
-COPY --from=python-depd $VENV_DIR $VENV_DIR
+COPY --from=python-deps $VENV_DIR $VENV_DIR
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
