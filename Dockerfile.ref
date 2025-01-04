@@ -28,31 +28,35 @@ RUN  apt-get update \
   && pip install --upgrade pip wheel
 
 # Install TA-lib
-COPY build_helpers/* /tmp/
-RUN cd /tmp && /tmp/install_ta-lib.sh && rm -r /tmp/*ta-lib*
-ENV LD_LIBRARY_PATH /usr/local/lib
+
+WORKDIR /tmp
+RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git 
+RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install dependencies
-COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
 USER ftuser
+ENV LD_LIBRARY_PATH /usr/local/lib
 RUN  pip install --user --no-cache-dir "numpy<2.0" \
-  && pip install --user --no-cache-dir -r requirements-hyperopt.txt
+  && pip install --user --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
-COPY --from=python-deps /usr/local/lib /usr/local/lib
-ENV LD_LIBRARY_PATH /usr/local/lib
 
+COPY --from=python-deps /usr/local/lib /usr/local/lib
+COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
 
-USER ftuser
 # Install and execute
-COPY --chown=ftuser:ftuser . /freqtrade/
+USER ftuser
 
+WORKDIR /tmp/freqtrade
+ENV LD_LIBRARY_PATH /usr/local/lib
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
+  && freqtrade install-ui \
+  && rm -r /tmp/*
 
+WORKDIR /freqtrade
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]
