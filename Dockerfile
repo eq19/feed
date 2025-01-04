@@ -41,21 +41,22 @@ RUN  pip install --user --no-cache-dir "numpy<2.0" \
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
-COPY --from=python-deps /usr/local/lib /usr/local/lib
-ENV LD_LIBRARY_PATH /usr/local/lib
 
+COPY --from=python-deps /usr/local/lib /usr/local/lib
+COPY --from=python-deps /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
-COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade/* /freqtrade/
 
 # Install and execute
 USER ftuser
 
-WORKDIR /freqtrade
+WORKDIR /tmp/freqtrade
+ENV LD_LIBRARY_PATH /usr/local/lib
 RUN pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui \
   && rm -r /tmp/*
 
+WORKDIR /freqtrade
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]
