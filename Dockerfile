@@ -40,7 +40,7 @@ RUN  apt-get update \
 # Install TA-lib
 WORKDIR /tmp
 RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git \
-  && chown ftuser:ftuser /tmp/freqtrade && cd /tmp/freqtrade/build_helpers \
+  && chown -R ftuser:ftuser /tmp/freqtrade && cd /tmp/freqtrade/build_helpers \
   && ./install_ta-lib.sh > /dev/null 2>&1 && rm -r *ta-lib*
 COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 
