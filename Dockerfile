@@ -1,7 +1,6 @@
 # Step 1: Base stage
 #FROM python:3.12.7-slim-bookworm as base
 FROM postgres:latest as base
-EXPOSE 5432
 
 # Setup env
 ENV LANG C.UTF-8
@@ -79,3 +78,4 @@ ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
 # Use custom entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
+EXPOSE 5432
