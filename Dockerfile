@@ -47,11 +47,12 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 
 USER ftuser
 # Install and execute
-COPY --chown=ftuser:ftuser . /freqtrade/
+COPY --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade/
 
 RUN cd /tmp/freqtrade && pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
+  && freqtrade install-ui \
+  && rm -r /tmp/*
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
