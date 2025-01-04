@@ -53,8 +53,7 @@ WORKDIR /freqtrade
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN cd /tmp/freqtrade && pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui \
-  && rm -r /tmp/*
+  && freqtrade install-ui
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
