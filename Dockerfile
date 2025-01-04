@@ -20,12 +20,12 @@ RUN mkdir /freqtrade \
 
 WORKDIR /freqtrade
 
-# Activate the python venv
-RUN python3 -m venv /freqtrade/venv
-ENV PATH=/freqtrade/venv/bin:$PATH
-
 # Install dependencies
 FROM base as python-deps
+
+# Activate the python venv
+RUN python3 -m venv /freqtrade/venv
+
 RUN  apt-get update \
   && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
   && apt-get clean \
@@ -40,6 +40,7 @@ COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 
 # Install dependencies
 USER ftuser
+ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN  /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" \
   && /freqtrade/venv/bin/pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
@@ -53,8 +54,12 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 
 # Install and execute
 USER ftuser
-
 WORKDIR /freqtrade
+
+# Activate the python venv
+RUN python3 -m venv /freqtrade/venv
+
+ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN cd /tmp/freqtrade && /freqtrade/venv/bin/pip install -e . --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
