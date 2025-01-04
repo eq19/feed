@@ -41,8 +41,8 @@ COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 # Install dependencies
 USER ftuser
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN  /freqtrade/venv/bin/pip install --user --no-cache-dir "numpy<2.0" \
-  && /freqtrade/venv/bin/pip install --user --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
+RUN  /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" \
+  && /freqtrade/venv/bin/pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
@@ -56,7 +56,7 @@ USER ftuser
 
 WORKDIR /freqtrade
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN cd /tmp/freqtrade && /freqtrade/venv/bin/pip install -e . --user --no-cache-dir --no-build-isolation \
+RUN cd /tmp/freqtrade && /freqtrade/venv/bin/pip install -e . --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
