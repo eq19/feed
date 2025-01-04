@@ -61,7 +61,6 @@ FROM base as runtime-image
 COPY --from=python-deps $VENV_DIR $VENV_DIR
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
-#COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local || true
 
 # Install and execute
 USER ftuser
@@ -73,6 +72,10 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 RUN cd /tmp/freqtrade && pip install -e . --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
+
+# Use custom entrypoint to start both PostgreSQL and freqtrade
+ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
