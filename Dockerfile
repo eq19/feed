@@ -20,15 +20,18 @@ RUN mkdir /freqtrade \
 
 WORKDIR /freqtrade
 
+# Activate the python venv
+RUN python3 -m venv /freqtrade/venv
+ENV PATH=/freqtrade/venv/bin:$PATH
+
 # Install dependencies
 FROM base as python-deps
 RUN  apt-get update \
   && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
   && apt-get clean \
-  && pip install --upgrade pip wheel
+  && /freqtrade/venv/bin/pip install --upgrade pip wheel
 
 # Install TA-lib
-
 WORKDIR /tmp
 RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git \
   && chown ftuser:ftuser /tmp/freqtrade && cd /tmp/freqtrade/build_helpers \
@@ -38,8 +41,8 @@ COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 # Install dependencies
 USER ftuser
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN  pip install --user --no-cache-dir "numpy<2.0" \
-  && pip install --user --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
+RUN  /freqtrade/venv/bin/pip install --user --no-cache-dir "numpy<2.0" \
+  && /freqtrade/venv/bin/pip install --user --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
@@ -53,7 +56,7 @@ USER ftuser
 
 WORKDIR /freqtrade
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN cd /tmp/freqtrade && pip install -e . --user --no-cache-dir --no-build-isolation \
+RUN cd /tmp/freqtrade && /freqtrade/venv/bin/pip install -e . --user --no-cache-dir --no-build-isolation \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
