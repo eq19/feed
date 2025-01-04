@@ -78,5 +78,4 @@ ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
 # Use custom entrypoint
-RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
