@@ -9,8 +9,6 @@ ENV PYTHONFAULTHANDLER 1
 ENV PATH=/home/ftuser/.local/bin:$PATH
 ENV FT_APP_ENV="docker"
 ENV VENV_DIR=/freqtrade/venv
-
-# Ensure venv is used for Python and pip by default
 ENV PATH="$VENV_DIR/bin:$PATH"
 
 # Prepare environment
@@ -18,8 +16,8 @@ RUN mkdir /freqtrade \
   && apt-get update \
   && apt-get -y install sudo libatlas3-base curl sqlite3 libhdf5-serial-dev libgomp1 \
   && apt-get clean \
-  && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
   && python -m venv $VENV_DIR \
+  && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
   && chown ftuser:ftuser /freqtrade \
   # Allow sudoers
   && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
@@ -47,7 +45,6 @@ COPY --chown=ftuser:ftuser user_data/ /tmp/freqtrade/user_data/
 
 # Install dependencies
 USER ftuser
-ENV PATH=/freqtrade/venv/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN pip install --no-cache-dir "numpy<2.0" \
   && pip install --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
