@@ -27,17 +27,16 @@ RUN  apt-get update \
   && apt-get clean \
   && pip install --upgrade pip wheel
 
-# Install TA-lib Ref: https://stackoverflow.com/a/38568339/4058484
-RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade
-RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1 && rm -r /tmp/*
-
-COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
+# Install TA-lib
+COPY user_data/build_helpers/* /tmp/
+RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
+COPY --chown=ftuser:ftuser /tmp/requirements.txt /tmp/requirements-hyperopt.txt /freqtrade/
 
 # Install dependencies
 USER ftuser
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN  pip install --user --no-cache-dir "numpy<2.0" \
-  && pip install --user --no-cache-dir -r requirements-hyperopt.txt
+  && pip install --user --no-cache-dir -r requirements-hyperopt.txt && rm -r /tmp/*
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
