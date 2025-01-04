@@ -56,6 +56,7 @@ RUN pip install --no-cache-dir "numpy<2.0" \
 
 # Step 3: Final stage
 FROM base as runtime-image
+EXPOSE 5432
 
 COPY --from=python-deps $VENV_DIR $VENV_DIR
 COPY --from=python-deps /usr/local/lib /usr/local/lib
@@ -78,4 +79,3 @@ ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 
 # Use custom entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
-EXPOSE 5432
