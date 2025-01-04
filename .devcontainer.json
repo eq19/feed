@@ -40,7 +40,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
         "workspaceFolder": "/tmp/freqtrade",
-        "onCreateCommand": "pip install --user -e .",
+        "onCreateCommand": "pip install -e .",
 	"postCreateCommand": "freqtrade list-exchanges && freqtrade create-userdir --userdir user_data/"
 	
 }
