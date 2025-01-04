@@ -54,7 +54,7 @@ ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
     echo "Resolved FREQTRADE_VERSION: $FREQTRADE_VERSION using cached timestamp CACHE_BUST: $CACHE_BUST" && \
     echo "Attempting to install Freqtrade with the following URL: https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl" && \
-    /freqtrade/venv/bin/pip install --no-cache-dir ta_lib https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
+    /freqtrade/venv/bin/pip install --no-cache-dir "numpy<2.0" https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl && \
     rm -rf /tmp/*
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
