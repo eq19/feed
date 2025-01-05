@@ -34,7 +34,8 @@ RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 # Install dependencies
 USER ftuser
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN  pip install --user --no-cache-dir "numpy<2.0"
+RUN  pip install --user --no-cache-dir "numpy<2.0" \
+  && pip install --user --no-cache-dir -r /tmp/requirements-hyperopt.txt
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
