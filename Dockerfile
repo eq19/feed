@@ -47,9 +47,10 @@ RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install TA-lib Ref: https://stackoverflow.com/a/38568339/4058484
-#RUN git clone https://github.com/KernelPatterns/freqtrade.git /tmp/freqtrade
-#RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1 && rm -r /tmp/*
+# Install TA-lib
+ADD user_data/build_helpers/ /tmp/
+RUN cd /tmp/build_helpers && ./install_ta-lib.sh
+#> /dev/null 2>&1
 
 # Activate the python venv and install Freqtrade
 #ARG CACHE_BUST=1
