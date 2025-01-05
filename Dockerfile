@@ -51,7 +51,7 @@ USER ftuser
 
 WORKDIR /tmp/freqtrade
 ENV LD_LIBRARY_PATH /usr/local/lib
-RUN pip install --user --no-cache-dir --no-build-isolation https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl \
+RUN pip install --user --no-cache-dir --no-build-isolation freqtrade @ https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
