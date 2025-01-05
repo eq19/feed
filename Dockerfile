@@ -40,7 +40,6 @@ RUN  pip install --user --no-cache-dir "numpy<2.0"
 FROM base as runtime-image
 
 COPY --from=python-deps /usr/local/lib /usr/local/lib
-COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
 COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
 
 # Install and execute
