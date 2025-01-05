@@ -38,9 +38,9 @@
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	//"remoteUser": "ftuser",
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-        //"workspaceFolder": "/tmp/freqtrade",
-        //"onCreateCommand": "pip install -e .",
-	//"postCreateCommand": "freqtrade list-exchanges && freqtrade create-userdir --userdir user_data/"
+	// Run commands after the container is created.
+        "workspaceFolder": "/home/runner",
+        "onCreateCommand": "freqtrade list-exchanges",
+	"postCreateCommand": "freqtrade create-userdir --userdir user_data/"
 	
 }
