@@ -51,13 +51,13 @@ RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
 ADD user_data/build_helpers/ /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1 && rm -r /tmp/*
 
-# Activate the python venv and install Freqtrade
-ARG CACHE_BUST=1
-RUN python3 -m venv /home/runner/venv
+# Install Freqtrade
 ENV PATH=/home/runner/bin:$PATH
-ENV LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+ENV LD_LIBRARY_PATH /usr/local/lib
+RUN python3 -m venv /home/runner/venv
+RUN pip install --no-cache-dir "numpy<2.0"
 RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && \
-    pip install --no-cache-dir ta_lib https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
+    pip install --no-cache-dir https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
