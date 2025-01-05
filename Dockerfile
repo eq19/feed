@@ -60,10 +60,10 @@ RUN pip install --no-cache-dir "numpy<2.0" \
   && pip install --no-cache-dir --no-build-isolation https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data/config_examples/config_indodax.example.json /home/runner/config.json
-ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d
 ADD user_data /home/runner/user_data
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d
+ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
+ADD user_data/config_examples/config_indodax.example.json /home/runner/config.json
 
 # Run entrypoint
 WORKDIR /home/runner
