@@ -76,7 +76,7 @@ RUN cd /tmp/freqtrade && pip install -e . --no-cache-dir --no-build-isolation \
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 COPY --chown=ftuser:ftuser user_data/data/setup.sql /docker-entrypoint-initdb.d/
 COPY --chown=ftuser:ftuser user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-RUN [ -d /mnt/disks/deeplearning ] && curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | jq -r '.payload.data' | base64 --decode > /freqtrade/config.json && chown ftuser:ftuser /freqtrade/config.json
+#RUN [ -d /mnt/disks/deeplearning ] && curl -H "Authorization: Bearer $(/mnt/disks/deeplearning/usr/bin/gcloud auth application-default print-access-token)" "https://secretmanager.googleapis.com/v1/projects/feedmapping/secrets/freqtrade-config/versions/latest:access" | jq -r '.payload.data' | base64 --decode > /freqtrade/config.json && chown ftuser:ftuser /freqtrade/config.json
 
 # Use custom entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
