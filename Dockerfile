@@ -1,67 +1,62 @@
-# Use the latest PostgreSQL image as the base
-FROM postgres:latest
-EXPOSE 5432
+FROM python:3.12.7-slim-bookworm as base
 
-ENV POSTGRES_DB postgres
-ENV POSTGRES_USER postgres
-ENV POSTGRES_PASSWORD postgres
+# Setup env
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONFAULTHANDLER 1
+ENV PATH=/home/ftuser/.local/bin:$PATH
+ENV FT_APP_ENV="docker"
 
-# Start PostgreSQL with custom configuration
-#COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
-#COPY conf/postgresql.conf /etc/postgresql/postgresql.conf
-#COPY conf/docker-entrypoint-initdb.d/* /docker-entrypoint-initdb.d/        
+# Prepare environment
+RUN mkdir /freqtrade \
+  && apt-get update \
+  && apt-get -y install sudo libatlas3-base curl sqlite3 libhdf5-serial-dev libgomp1 \
+  && apt-get clean \
+  && useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser \
+  && chown ftuser:ftuser /freqtrade \
+  # Allow sudoers
+  && echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
 
-#RUN chmod a+r /docker-entrypoint-initdb.d/*
-#RUN chown postgres:postgres /docker-entrypoint-initdb.d/*
-#CMD ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+WORKDIR /freqtrade
 
-# Install pgvector and make sure the extension can be loaded
-#RUN wget https://github.com/pgvector/pgvector/archive/refs/tags/v0.2.1.tar.gz
-#RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
-#RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
-
-# Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
-RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
-    build-essential \
-    curl \
-    libffi-dev \
-    libssl-dev \
-    libxmu-dev \
-    libxmu-headers \
-    freeglut3-dev \
-    libxext-dev \
-    libxi-dev \
-    libatlas3-base \
-    libhdf5-serial-dev \
-    libgomp1 \
-    gcc \
-    git \
-    python3 \
-    python3-pip \
-    python3-venv \
-    python3-dev \
-    sudo  \
-    sqlite3 \
-    wget \
-    --no-install-recommends && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+# Install dependencies
+FROM base as python-deps
+RUN  apt-get update \
+  && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
+  && apt-get clean \
+  && pip install --upgrade pip wheel
 
 # Install TA-lib
-ADD user_data/build_helpers/ /tmp/
-RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
-# Install Freqtrade
+WORKDIR /tmp
+RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git 
+RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
+
+# Install dependencies
+USER ftuser
 ENV LD_LIBRARY_PATH /usr/local/lib
-ENV PATH=/home/runner/venv/bin:$PATH
-RUN python3 -m venv /home/runner/venv
-RUN pip install --no-cache-dir "numpy<2.0"
-#RUN FREQTRADE_VERSION=$(curl --silent "https://api.github.com/repos/KernelPatterns/freqtrade/releases/latest" | grep tag_name | sed -E 's/.*"v([^"]+)".*/\1/') && pip install --no-cache-dir --no-build-isolation https://github.com/KernelPatterns/freqtrade/releases/download/v${FREQTRADE_VERSION}/freqtrade-dev${FREQTRADE_VERSION}-py3-none-any.whl
+RUN  pip install --user --no-cache-dir "numpy<2.0" \
+  && pip install --user --no-cache-dir -r /tmp/freqtrade/requirements-hyperopt.txt
 
-# Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d
+# Copy dependencies to runtime-image
+FROM base as runtime-image
 
-# Run entrypoint
-WORKDIR /home/runner
-ENTRYPOINT ["/entrypoint.sh"]
+COPY --from=python-deps /usr/local/lib /usr/local/lib
+COPY --from=python-deps --chown=ftuser:ftuser /tmp/freqtrade /tmp/freqtrade
+COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
+
+# Install and execute
+USER ftuser
+
+WORKDIR /tmp/freqtrade
+ENV LD_LIBRARY_PATH /usr/local/lib
+RUN pip install -e . --user --no-cache-dir --no-build-isolation \
+  && mkdir /freqtrade/user_data/ \
+  && freqtrade install-ui \
+  && rm -r /tmp/*
+
+WORKDIR /freqtrade
+ENTRYPOINT ["freqtrade"]
+# Default to trade mode
+CMD [ "trade" ]
