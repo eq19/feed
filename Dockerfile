@@ -64,16 +64,8 @@ RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+ADD user_data/data/setup.sql /docker-entrypoint-initdb.d
 
-#COPY --chown=ftuser:ftuser run.sh /freqtrade/run.sh
-#COPY --chown=ftuser:ftuser strategies /freqtrade/strategies
-#COPY --chown=ftuser:ftuser configs /freqtrade/configs
-
-# Set the working directory
+# Run entrypoint
 WORKDIR /home/runner
-#ADD user_data user_data
-
-# Run default entrypoint
-RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
