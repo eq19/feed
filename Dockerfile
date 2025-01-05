@@ -28,10 +28,8 @@ RUN  apt-get update \
   && pip install --upgrade pip wheel
 
 # Install TA-lib
-
-WORKDIR /tmp
-RUN git clone --branch=v0.0.56 --single-branch https://github.com/KernelPatterns/freqtrade.git 
-RUN cd /tmp/freqtrade/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
+ADD user_data/build_helpers/ /tmp/
+RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install dependencies
 USER ftuser
