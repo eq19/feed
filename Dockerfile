@@ -49,13 +49,12 @@ COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.
 # Install and execute
 USER ftuser
 
-WORKDIR /tmp/freqtrade
+WORKDIR /freqtrade
 ENV LD_LIBRARY_PATH /usr/local/lib
 RUN pip install --user --no-cache-dir --no-build-isolation freqtrade @ https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl \
   && mkdir /freqtrade/user_data/ \
   && freqtrade install-ui
 
-WORKDIR /freqtrade
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]
