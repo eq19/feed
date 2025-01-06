@@ -63,6 +63,7 @@ RUN pip install --no-cache-dir "numpy<2.0" \
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data /home/runner/user_data
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d
+ADD user_data/ft_client/supervisord.conf 
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
 # Run entrypoint
