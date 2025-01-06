@@ -40,8 +40,9 @@ RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
     python3-pip \
     python3-venv \
     python3-dev \
-    sudo  \
     sqlite3 \
+    sudo \
+    supervisor \
     wget \
     --no-install-recommends && \
     apt-get clean && \
