@@ -40,6 +40,6 @@
 
 	// Run commands after the container is created.
         "workspaceFolder": "/home/runner",
-        "onCreateCommand": "freqtrade list-exchanges",
-	"postCreateCommand": "freqtrade create-userdir --userdir user_data/"
+        "onCreateCommand": "freqtrade create-userdir --userdir user_data/",
+	"postCreateCommand": ""
 }
