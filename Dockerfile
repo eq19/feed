@@ -57,10 +57,10 @@ RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
-RUN pip install --no-cache-dir ta \
-  && pip install --no-cache-dir "numpy<2.0" \
-  && pip install --no-cache-dir -r /tmp/requirements-hyperopt.txt \
-  && pip install --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl
+RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir "numpy<2.0" > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data /home/runner/user_data
