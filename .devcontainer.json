@@ -41,5 +41,5 @@
 	// Run commands after the container is created.
         "workspaceFolder": "/home/runner",
         "onCreateCommand": "freqtrade create-userdir --userdir user_data/",
-	"postCreateCommand": ""
+	"postCreateCommand": "bash user_data/ft_client/test_client/test_rest_client.sh listing"
 }
