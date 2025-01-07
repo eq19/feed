@@ -21,7 +21,7 @@ ENV POSTGRES_PASSWORD postgres
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
-RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
+RUN apt-get update > /dev/null 2>&1 && apt-get install -y \
     build-essential \
     curl \
     libffi-dev \
@@ -44,7 +44,7 @@ RUN apt-get update > /dev/null 2>&1 && apt-get install -y > /dev/null 2>&1 \
     sudo \
     supervisor \
     wget \
-    --no-install-recommends && \
+    --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
