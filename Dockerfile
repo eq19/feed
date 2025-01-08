@@ -59,9 +59,9 @@ ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir "numpy<2.0" > /dev/null 2>&1 \
+  #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai.txt > /dev/null 2>&1 \
+  #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt  > /dev/null 2>&1 \
-  #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai.txt > /dev/null 2>&1 \
-  #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
