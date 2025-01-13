@@ -23,6 +23,7 @@ ENV POSTGRES_PASSWORD postgres
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
+    bc \
     build-essential \
     curl \
     libffi-dev \
