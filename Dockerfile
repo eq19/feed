@@ -23,7 +23,6 @@ ENV POSTGRES_PASSWORD postgres
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
-    bc \
     build-essential \
     curl \
     libffi-dev \
@@ -38,7 +37,6 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     libgomp1 \
     gcc \
     jq \
-    procps \
     python3 \
     python3-pip \
     python3-venv \
@@ -71,7 +69,6 @@ ADD user_data /home/runner/user_data
 ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/ft_client/test_client/start_freqtrade.sh /start_freqtrade.sh
 
 # Run entrypoint
 WORKDIR /home/runner
