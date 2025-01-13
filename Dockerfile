@@ -38,6 +38,7 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     libgomp1 \
     gcc \
     jq \
+    procps \
     python3 \
     python3-pip \
     python3-venv \
