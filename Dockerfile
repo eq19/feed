@@ -58,7 +58,7 @@ ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
-  && pip install -qq --no-cache-dir "numpy<2.0" > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
