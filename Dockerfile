@@ -86,6 +86,7 @@ ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
 # Copy from the builder stage
+ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 COPY --from=builder /home/runner /home/runner
 
