@@ -20,6 +20,16 @@ ENV POSTGRES_PASSWORD postgres
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
+
+
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+
+
+
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
@@ -50,26 +60,26 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     rm -rf /var/lib/apt/lists/*
 
 # Install TA-lib
-ADD user_data/build_helpers/ /tmp/
-RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
+ADD user_data /home/runner/user_data
+RUN cd /home/runner/user_data/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
+WORKDIR /home/runner
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
-  #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt > /dev/null 2>&1 \
-  #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
-  && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
-  && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
+  #&& pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-dev.txt > /dev/null 2>&1 \
+  #&& pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-freqai-rl.txt > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-hyperopt.txt > /dev/null 2>&1 \
+  && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1 \
+  && rm -rf /home/runner/user_data/build_helpers
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
-ADD user_data /home/runner/user_data
 ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
 # Run entrypoint
-WORKDIR /home/runner
 ENTRYPOINT ["/entrypoint.sh"]
