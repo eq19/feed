@@ -1,3 +1,4 @@
+# Stage 1: Build freqtrade
 FROM python:3.12.7-slim-bookworm as builder
 
 # Setup env
@@ -51,8 +52,8 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-hyperopt.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
 
-# Use PostgreSQL as runtime-image
-FROM postgres:latest
+# Stage 2: Runtime image
+FROM postgres:latest AS runtime-image
 EXPOSE 5432
 
 ENV POSTGRES_DB postgres
