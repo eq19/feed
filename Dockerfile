@@ -1,4 +1,4 @@
-FROM python:3.12.7-slim-bookworm as base
+FROM python:3.12.7-slim-bookworm as builder
 
 # Setup env
 ENV LANG C.UTF-8
@@ -42,9 +42,7 @@ ADD user_data /home/runner/user_data
 RUN cd /home/runner/user_data/build_helpers && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
-WORKDIR /home/runner
 ENV LD_LIBRARY_PATH /usr/local/lib
-ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
@@ -80,5 +78,10 @@ ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
+# Copy virtual environment from the builder stage
+COPY --from=builder /home/runner/venv /home/runner/venv
+
 # Run entrypoint
+WORKDIR /home/runner
+ENV PATH=/home/runner/venv/bin:$PATH
 ENTRYPOINT ["/entrypoint.sh"]
