@@ -89,6 +89,7 @@ ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 COPY --from=builder /home/runner /home/runner
+COPY --from=builder /usr/local/lib /usr/local/lib
 
 # Run entrypoint
 WORKDIR /home/runner
