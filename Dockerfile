@@ -25,14 +25,11 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     libhdf5-serial-dev \
     libgomp1 \
     gcc \
-    jq \
     python3 \
     python3-pip \
     python3-venv \
     python3-dev \
-    sqlite3 \
     sudo \
-    supervisor \
     wget \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
@@ -59,6 +56,14 @@ EXPOSE 5432
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
+    curl \
+    jq \
+    supervisor \
+    --no-install-recommends > /dev/null 2>&1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Start PostgreSQL with custom configuration
 #COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
