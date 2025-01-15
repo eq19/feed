@@ -47,7 +47,8 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-dev.txt > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /home/runner/user_data/build_helpers/requirements-hyperopt.txt > /dev/null 2>&1 \
-  && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
+  && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1 \
+  && rm -rf /home/runner/user_data/build_helpers /home/runner/user_data/build_helpers
 
 # Stage 2: Runtime image
 FROM postgres:latest AS runtime-image
@@ -84,10 +85,10 @@ ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
-# Copy virtual environment from the builder stage
-COPY --from=builder /home/runner/venv /home/runner/venv
+# Copy from the builder stage
+ENV PATH=/home/runner/venv/bin:$PATH
+COPY --from=builder /home/runner /home/runner
 
 # Run entrypoint
 WORKDIR /home/runner
-ENV PATH=/home/runner/venv/bin:$PATH
 ENTRYPOINT ["/entrypoint.sh"]
