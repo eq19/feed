@@ -25,12 +25,6 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     libhdf5-serial-dev \
     libgomp1 \
     gcc \
-    python3 \
-    python3-pip \
-    python3-venv \
-    python3-dev \
-    sudo \
-    wget \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
@@ -62,8 +56,14 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     curl \
     jq \
+    python3 \
+    python3-pip \
+    python3-venv \
+    python3-dev \
     sqlite3 \
     supervisor \
+    sudo \
+    wget \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
