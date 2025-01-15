@@ -62,6 +62,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     curl \
     jq \
+    sqlite3 \
     supervisor \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
