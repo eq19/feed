@@ -54,6 +54,7 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
 ADD user_data /home/runner/user_data
 ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
+ADD user_data/ft_client/test_client/freqtrade.sh /freqtrade.sh
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
 
 # Start PostgreSQL with custom configuration
