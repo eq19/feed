@@ -11,6 +11,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     build-essential \
     curl \
+    gcc \
+    jq \
     libffi-dev \
     libssl-dev \
     libxmu-dev \
@@ -21,8 +23,7 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     libatlas3-base \
     libhdf5-serial-dev \
     libgomp1 \
-    gcc \
-    jq \
+    nano \
     python3 \
     python3-pip \
     python3-venv \
