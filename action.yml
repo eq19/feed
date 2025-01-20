@@ -32,14 +32,11 @@ inputs:
   token:
     description: The Github personal token
     required: true
-  token:
-    description: The Github personal token
-    required: true
   bot_token:
     description: The telegram token
     required: true
   chat_id:
-    description: The telegram chst id
+    description: The telegram chat id
     required: true
   id:
     description: The id according to os
