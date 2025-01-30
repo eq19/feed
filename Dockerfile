@@ -12,6 +12,7 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     build-essential \
     curl \
     gcc \
+    git \
     jq \
     libffi-dev \
     libssl-dev \
