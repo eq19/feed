@@ -33,7 +33,10 @@ inputs:
     description: The Github personal token
     required: true
   bot_token:
-    description: The telegram token
+    description: The monitor token
+    required: true
+  logs_token:
+    description: The warning token
     required: true
   chat_id:
     description: The telegram chat id
@@ -74,6 +77,7 @@ runs:
         token: ${{ inputs.token }}
         chat_id: ${{ inputs.chat_id }}
         bot_token: ${{ inputs.bot_token }}
+        logs_token: ${{ inputs.logs_token }}
         image_name: ${{ inputs.image_name }}
         action_path: ${{ github.action_path }}
         hub_token: ${{ inputs.docker_hub_token }} 
