@@ -39,7 +39,7 @@
 	//"remoteUser": "ftuser",
 
 	// Run commands after the container is created.
-        "workspaceFolder": "/freqtrade",
+        "workspaceFolder": "/home/runner",
         "onCreateCommand": "bash /entrypoint.sh",
 	"postCreateCommand": "bash user_data/ft_client/test_client/test_rest_client.sh listing"
 }
