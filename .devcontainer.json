@@ -39,7 +39,7 @@
 	//"remoteUser": "ftuser",
 
 	// Run commands after the container is created.
-        "overrideCommand": true,
+        "overrideCommand": false,
         "workspaceFolder": "/freqtrade",
         //"onCreateCommand": "freqtrade create-userdir --userdir user_data/",
 	"postCreateCommand": "bash user_data/ft_client/test_client/test_rest_client.sh listing"
