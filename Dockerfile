@@ -58,7 +58,7 @@ ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/freqtrade.sh /freqtrade.sh
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/ft_client/ft_rest_client.service /etc/systemd/system/
+ADD user_data/ft_client/freqtrade_client/ft_client.service /etc/systemd/system/
 ADD user_data/config_examples/config_exchange.example.json /home/runner/config.json
 
 # Start PostgreSQL with custom configuration
