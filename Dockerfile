@@ -37,6 +37,8 @@ RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+FROM base as python-deps
+
 # Install TA-lib
 ADD user_data/build_helpers/ /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
