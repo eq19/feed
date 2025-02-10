@@ -5,11 +5,11 @@ EXPOSE 5432
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
+ENV DEBIAN_FRONTEND=noninteractive
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
-ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     build-essential \
     curl \
