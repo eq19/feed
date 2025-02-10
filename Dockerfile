@@ -5,10 +5,12 @@ EXPOSE 5432
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
+ENV LD_LIBRARY_PATH /usr/local/lib
+ENV PATH=/home/runner/venv/bin:$PATH
 
 # Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update -qq > /dev/null && apt-get install -y -qq \
+RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     build-essential \
     curl \
     gcc \
@@ -45,7 +47,7 @@ RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
 RUN python3 -m venv /home/runner/venv
-RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
+RUN pip install -qq --no-cache-dir ta \
   && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
@@ -54,9 +56,6 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
 
 # Copy dependencies to runtime-image
 FROM base as runtime-image
-
-ENV LD_LIBRARY_PATH /usr/local/lib
-ENV PATH=/home/runner/venv/bin:$PATH
 
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 COPY --from=python-deps /home/runner/venv /home/runner/venv
