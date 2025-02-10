@@ -44,8 +44,6 @@ ADD user_data/build_helpers/ /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
-ENV LD_LIBRARY_PATH /usr/local/lib
-ENV PATH=/home/runner/venv/bin:$PATH
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
@@ -53,6 +51,15 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
+
+# Copy dependencies to runtime-image
+FROM base as runtime-image
+
+ENV LD_LIBRARY_PATH /usr/local/lib
+ENV PATH=/home/runner/venv/bin:$PATH
+
+COPY --from=python-deps /usr/local/lib /usr/local/lib
+COPY --from=python-deps /home/runner/venv /home/runner/venv
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data /home/runner/user_data
