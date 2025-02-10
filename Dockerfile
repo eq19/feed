@@ -15,16 +15,6 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     curl \
     git \
     jq \
-    libffi-dev \
-    libssl-dev \
-    libxmu-dev \
-    libxmu-headers \
-    freeglut3-dev \
-    libxext-dev \
-    libxi-dev \
-    libatlas3-base \
-    libhdf5-serial-dev \
-    libgomp1 \
     nano \
     python3 \
     python3-pip \
@@ -46,6 +36,16 @@ FROM base as python-deps
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     build-essential \
     gcc \
+    libffi-dev \
+    libssl-dev \
+    libxmu-dev \
+    libxmu-headers \
+    freeglut3-dev \
+    libxext-dev \
+    libxi-dev \
+    libatlas3-base \
+    libhdf5-serial-dev \
+    libgomp1 \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
