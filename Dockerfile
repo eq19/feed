@@ -9,11 +9,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 
-# Dependencies Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
+# Runtime Dependencies
+# Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
-    build-essential \
     curl \
-    gcc \
     git \
     jq \
     libffi-dev \
@@ -39,7 +38,17 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Instal build-image
 FROM base as python-deps
+
+# Build Dependencies
+# Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
+RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
+    build-essential \
+    gcc \
+    --no-install-recommends > /dev/null 2>&1 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Install TA-lib
 ADD user_data/build_helpers/ /tmp/
@@ -47,14 +56,14 @@ RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
 RUN python3 -m venv /home/runner/venv
-RUN pip install -qq --no-cache-dir ta \
+RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir "numpy<2.0" "plotly==5.24.1" > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir --no-build-isolation freqtrade@https://github.com/KernelPatterns/freqtrade/releases/download/v0.0.56/freqtrade-dev0.0.56-py3-none-any.whl > /dev/null 2>&1
 
-# Copy dependencies to runtime-image
+# Final runtime-image
 FROM base as runtime-image
 
 COPY --from=python-deps /usr/local/lib /usr/local/lib
