@@ -1,5 +1,5 @@
 # Use the latest PostgreSQL image as the base
-FROM postgres:latest
+FROM postgres:latest as base
 EXPOSE 5432
 
 ENV POSTGRES_DB postgres
