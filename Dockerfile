@@ -23,6 +23,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     sqlite3 \
     sudo \
     supervisor \
+    unzip \
     wget \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
