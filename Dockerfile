@@ -16,7 +16,10 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     curl \
     git \
     jq \
-    nano \
+    libatlas3-base \
+    libhdf5-serial-dev \
+    libgomp1 \
+    #nano \
     python3 \
     python3-pip \
     python3-venv \
@@ -45,9 +48,6 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     freeglut3-dev \
     libxext-dev \
     libxi-dev \
-    libatlas3-base \
-    libhdf5-serial-dev \
-    libgomp1 \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
