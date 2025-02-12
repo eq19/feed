@@ -12,6 +12,7 @@ ENV PATH=/home/runner/venv/bin:$PATH
 # Runtime Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
+    bc \
     curl \
     git \
     jq \
