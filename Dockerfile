@@ -19,7 +19,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     libatlas3-base \
     libhdf5-serial-dev \
     libgomp1 \
-    #nano \
+    nano \
     python3 \
     python3-pip \
     python3-venv \
@@ -40,14 +40,17 @@ FROM base as python-deps
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     build-essential \
+    cmake \
+    freeglut3-dev \
     gcc \
     libffi-dev \
+    libgfortran5 \
     libssl-dev \
-    libxmu-dev \
-    libxmu-headers \
-    freeglut3-dev \
     libxext-dev \
     libxi-dev \
+    libxmu-dev \
+    libxmu-headers \
+    pkg-config \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
