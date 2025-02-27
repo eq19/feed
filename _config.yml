@@ -6,6 +6,7 @@
 lsi: false
 incremental: true
 highlighter: rouge
+plugins_dir: _plugins
 
 gist:
   noscript: false
