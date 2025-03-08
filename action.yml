@@ -45,6 +45,12 @@ inputs:
   chat_id:
     description: The telegram chat id
     required: true
+  api_key:
+    description: The telegram chat id
+    required: true
+  api_secret:
+    description: The telegram chat id
+    required: true
   id:
     description: The id according to os
     required: true
