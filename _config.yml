@@ -4,7 +4,7 @@ span: span16
 title: eQuantum
 baseurl: /feed
 repository: eq19/feed
-action: eq19/maps/actions/runs/11651892697
+action: eq19/maps/actions/runs/13732596268
 description: An attempt to discover the Final Theory
 
 #debug:
@@ -15,6 +15,7 @@ description: An attempt to discover the Final Theory
 lsi: false
 incremental: true
 highlighter: rouge
+plugins_dir: _plugins
 
 gist:
   noscript: false
@@ -27,8 +28,8 @@ readme_index:
   with_frontmatter: true
 
 exclude:
-  - vendor
   - LICENSE
+  - vendor/
   - action.yml  
   - Dockerfile
 
