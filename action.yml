@@ -36,6 +36,9 @@ inputs:
   token:
     description: The Github personal token
     required: true
+  pypi_token:
+    description: The monitor token
+    required: true
   bot_token:
     description: The monitor token
     required: true
@@ -81,6 +84,7 @@ runs:
         api_secret: ${{ inputs.api_secret }}
         api_key: ${{ inputs.api_key }}
         chat_id: ${{ inputs.chat_id }}
+        pypi_token: ${{ inputs.pypi_token }}
         logs_token: ${{ inputs.logs_token }}
         bot_token: ${{ inputs.bot_token }}
         token: ${{ inputs.token }}
