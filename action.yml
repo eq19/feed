@@ -80,6 +80,9 @@ runs:
         image_name: ${{ inputs.image_name }}
         api_secret: ${{ inputs.api_secret }}
         api_key: ${{ inputs.api_key }}
+        chat_id: ${{ inputs.chat_id }}
+        logs_token: ${{ inputs.logs_token }}
+        bot_token: ${{ inputs.bot_token }}
         token: ${{ inputs.token }}
 
     - name: Profiling Feedback
