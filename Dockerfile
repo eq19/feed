@@ -1,5 +1,6 @@
 # Use the latest PostgreSQL image as the base
 FROM postgres:latest as base
+WORKDIR /home/runner
 EXPOSE 5432
 
 ENV POSTGRES_DB postgres
@@ -108,5 +109,4 @@ ADD user_data/config_examples/config_exchange.example.json /home/runner/user_dat
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
 # Run entrypoint
-WORKDIR /home/runner
 ENTRYPOINT ["/entrypoint.sh"]
