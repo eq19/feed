@@ -83,7 +83,8 @@ RUN pip install -qq --no-cache-dir ta > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt > /dev/null 2>&1 \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt > /dev/null 2>&1 \
   && pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt > /dev/null 2>&1 \
-  && pip install -qq --no-cache-dir --no-build-isolation https://github.com/KernelPatterns/freqtrade/releases/download/v1.0.2/freqtrade-dev1.0.2-py3-none-any.whl #> /dev/null 2>&1
+  && pip install -qq --no-cache-dir --no-build-isolation \
+  https://github.com/KernelPatterns/freqtrade/releases/download/v1.0.2/freqtrade-dev1.0.2-py3-none-any.whl > /dev/null 2>&1
 
 # Final runtime-image
 FROM base as runtime-image
