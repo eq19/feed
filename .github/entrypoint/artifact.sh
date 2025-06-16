@@ -57,7 +57,6 @@ set_target() {
   # Generate id from the Structure
   if [[ -z "$SPIN" ]]; then
     if [[ "$1" != "$2" ]]; then
-echo "to be corrected as $1 != $2"
       SPIN=-1
     else
       SPIN=13
