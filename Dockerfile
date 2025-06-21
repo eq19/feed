@@ -77,15 +77,14 @@ ADD user_data/build_helpers/ /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
 
 # Install Freqtrade
-RUN python3 -m venv /home/runner/venv
+RUN python3 -m venv venv
 RUN pip install --upgrade pip \
- && pip install --no-cache-dir --upgrade freqtrade
-#RUN pip install -qq --no-cache-dir ta \
-  #&& pip install -qq --no-cache-dir "numpy<3.0" "plotly==6.1.2" \
+  && pip install -qq --no-cache-dir ta \
+  && pip install -qq --no-cache-dir "numpy<3.0" \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-dev.txt \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-hyperopt.txt \
   #&& pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
-  #&& pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade
+  && pip install --no-cache-dir --upgrade freqtrade
 
 # Final runtime-image
 FROM base as runtime-image
