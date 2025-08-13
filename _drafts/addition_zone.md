@@ -213,7 +213,7 @@ As the number line winds about toward infinity, bending around prime numbers, it
 Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no prime numbers occupy a cell with a right or left wall on the t-hexagon’s outer boundary, other than 2 and 3, the initial primes that forced the number line into this complex coil. Without a prime number in the outer set of triangles, the number line does not change to an outward course and ***remains forever contained in the 24 cells***. _([HexSpin](https://www.hexspin.com/defining-the-prime-hexagon/))_
 ```
 
-[![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
+[![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.github.io/identition/#euler-partition)
 
 And it is the fact that 168 divided by 24 is ***exactly seven (7)***. So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://eq19.github.io/multiplication/#assigning-a-lexer)_. 
 
