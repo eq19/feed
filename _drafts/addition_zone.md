@@ -12,7 +12,7 @@ Addition is the form of an expression set equal to zero as the ***additive ident
 
 {% include list.liquid all=true %}
 
-By the _[Euler's identity](https://www.eq19.com/#eulers-identity)_ this addition should form as one (1) unit of an object originated by the 18s structure. For further on let's call this unit as ***the base unit***.
+By the _[Euler's identity](https://eq19.github.io/#eulers-identity)_ this addition should form as one (1) unit of an object originated by the 18s structure. For further on let's call this unit as ***the base unit***.
 
 ## Prime Hexagon
 
@@ -215,7 +215,7 @@ Surprisingly, the 24-cell hexagon confines all natural numbers. The reason: no p
 
 [![Euler Partition](https://github.com/eq19/eq19.github.io/assets/8466209/b73fec0f-1798-4679-bbc2-ed6060484543)](https://eq19.com/identition/#euler-partition)
 
-And it is the fact that 168 divided by 24 is ***exactly seven (7)***. So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://www.eq19.com/multiplication/#assigning-a-lexer)_. 
+And it is the fact that 168 divided by 24 is ***exactly seven (7)***. So there should be a tight connection between the prime within 1000 with the _[24-cell hexagon](https://eq19.github.io/multiplication/#assigning-a-lexer)_. 
 
 We found later that it is also correlated with 1000 primes.
 
@@ -277,9 +277,9 @@ In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra), there is vect
 The eigenvectors of the matrix (red lines) are the two special directions such that every point on them will just slide on them _([Wikipedia](https://commons.wikimedia.org/wiki/File:Eigenvectors_of_a_linear_operator.gif))_.
 ```
 
-[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://www.eq19.com/identition/#partition-function)
+[![Eigenvectors_of_a_linear_operator](https://user-images.githubusercontent.com/8466209/228168805-ab93185d-4172-4284-8459-040e2f8797d4.gif)](https://eq19.github.io/identition/#partition-function)
 
-You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://www.eq19.com/addition/file02.html#true-prime-pairs)_.
+You may notice that there are twists and turns until 19 abuts 2 therefore this addition zone takes only the seven (7) primes out of the 18's structure of _[True Prime Pairs](https://eq19.github.io/addition/file02.html#true-prime-pairs)_.
 
 ```tip
 The tessellating field of equilateral triangles fills with numbers, with spin orientation flipping with each prime number encountered, creating ***3 minor hexagons***.
@@ -287,7 +287,7 @@ The tessellating field of equilateral triangles fills with numbers, with spin or
 
 ![](https://user-images.githubusercontent.com/36441664/274093531-0878e3e5-6be3-448e-9ad4-3b34523c1e9c.jpg)
 
-So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be _[unified](https://www.eq19.com/exponentiation/#god-particle)_ by all of the eleven (11) members of ***[identition zones](https://www.eq19.com/identition/)***.
+So there would be the empty spaces for `18 - 7 = 11` numbers. By our project these spaces will be _[unified](https://eq19.github.io/exponentiation/#god-particle)_ by all of the eleven (11) members of ***[identition zones](https://eq19.github.io/identition/)***.
 
 ```tip
 Prime numbers are numbers that have only 2 factors: 1 and themselves.
@@ -300,7 +300,7 @@ In conclusion, the number 1 is neither prime nor composite.
 
 ***π(6+11) = π(17) = 7***
 
-[![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://www.eq19.com/identition/#partition-function)
+[![extended branes](https://github.com/eq19/eq19.github.io/assets/8466209/deb0e309-2178-4dc5-a1d6-30c81c4a8305)](https://eq19.github.io/identition/#partition-function)
 
 The above seven (7) primes will act then as ***[extended branes](https://en.m.wikipedia.org/wiki/D-brane)***. This is what we mean by ***addition zones*** and it happens whenever a cycle is restarted.
 
@@ -336,7 +336,7 @@ Another is that phi and its members have a pisano period if the resulting fracti
 I wondered if that property might hold for the incremental powers of phi as well. For this reason I chose to see numbers in the hexagon as quantum, and truncate off the decimal values to determine which integer cell they land in. That is what I found. Phi and its members have a pisano period if the resulting fractional numbers are truncated _([HexSpin](https://www.hexspin.com/phi-not-pi-and-why-i-truncate-to-determine-integer-values/))_.
 ```
 
-[![truncated fractional numbers](https://user-images.githubusercontent.com/8466209/229198281-8dbd72fb-cd0b-46c3-8a2c-ddc66107333e.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+[![truncated fractional numbers](https://user-images.githubusercontent.com/8466209/229198281-8dbd72fb-cd0b-46c3-8a2c-ddc66107333e.png)](https://eq19.github.io/identition/#the-powers-of-pi)
 
 Going deeper there are many things raised up as questions. So in this project we are going to analyze it using a javascript library called _[Chevrotain](https://dev.to/codingwithadam/introduction-to-lexers-parsers-and-interpreters-with-chevrotain-5c7b)_.
 
@@ -344,7 +344,7 @@ Going deeper there are many things raised up as questions. So in this project we
 The spin states for the powers of pi. The Prime Hexagon is an integer environment, so pi powers are truncated. I believe these data suggest ***prime numbers are linked in some way to pi***. _([HexSpin](https://www.hexspin.com/minor-hexagons/))_
 ```
 
-[![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://www.eq19.com/multiplication/)
+[![Lexers, Parsers and Interpreters with Chevrotain](https://user-images.githubusercontent.com/8466209/241206698-b4128e07-81ea-4eab-a14a-5d881836b924.png)](https://eq19.github.io/multiplication/)
 
 It can be used to build parsers/compilers/interpreters for various use cases ranging from simple config files to full fledged programming languages.
 

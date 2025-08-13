@@ -23,13 +23,13 @@ The first appearance of ***e*** in a printed publication was in Euler's [Mechani
 
 [![Letter e](https://user-images.githubusercontent.com/36441664/262249679-b5d6fc1a-6e42-4775-b09d-965ddd046171.png)](https://en.wikipedia.org/wiki/E_(mathematical_constant))
 
-This exponentiation takes important roles since by the _[multiplication zones](https://www.eq19.com/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
+This exponentiation takes important roles since by the _[multiplication zones](https://eq19.github.io/multiplication/#parsering-structure)_ the MEC30 forms a matrix of  `8 x 8 = 64 = 8²` where the power of 2 stands as exponent
 
 ```note
 During the last few years of the 12th century, ***Fibonacci*** undertook a series of travels around the Mediterranean. At this time, the world’s most prominent mathematicians were Arabs, and he spent much time studying with them. His work, whose title translates as the Book of Calculation, was extremely influential in that ***it popularized the use of the Arabic numerals in Europe***, thereby revolutionizing arithmetic and allowing scientific experiment and discovery to progress more quickly. _([Famous Mathematicians](https://famous-mathematicians.org/leonardo-pisano-bigollo/))_
 ```
 
-[![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://www.eq19.com/multiplication/#parsering-structure)
+[![MEC30 Square](https://user-images.githubusercontent.com/36441664/262213707-63aa0a64-cf7d-4fb7-9f1a-f3d1ba805643.png)](https://eq19.github.io/multiplication/#parsering-structure)
 
 Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 30` which has to be transformed first to `6 x 6 = 36 = 6²` prior to the above MEC30's square. 
 
@@ -37,7 +37,7 @@ Since the first member is 30 then the form is initiated by a matrix of `5 x 6 = 
 A square system of coupled nonlinear equations can be solved iteratively by Newton's method. This method uses the Jacobian matrix of the system of equations. _([Wikipedia](https://en.wikipedia.org/Jacobian_matrix_and_determinant))_
 ```
 
-[![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://www.eq19.com/multiplication/#transformation-to-exponentiation)
+[![gradien](https://user-images.githubusercontent.com/36441664/128025898-187ba576-795f-4578-af71-ff02a8b682b1.png)](https://eq19.github.io/multiplication/#transformation-to-exponentiation)
 
 In quantum field theory, [partition functions](https://en.wikipedia.org/wiki/Partition_function_(quantum_field_theory)) are generating functionals for correlation functions, making them key objects of study in the path integral formalism. 
 
@@ -47,7 +47,7 @@ As usual, the images ***on the left are snapshots of the particles at different 
 
 [![Feynman diagrams](https://user-images.githubusercontent.com/36441664/276836690-392dbc6f-29cd-465c-8d74-beef4c5ff78f.png)](http://www.slimy.com/~steuard/research/StringIntro/slide13.html)
 
-So basically  there is a basic transformation between ***[addition](https://www.eq19.com/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://www.eq19.com/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
+So basically  there is a basic transformation between ***[addition](https://eq19.github.io/addition/)*** of `3 + 4 = 7` in to their ***[multiplication](https://eq19.github.io/multiplication/)*** of `3 x 4 = 12` while the 7 vs 12 will be treated as ***exponentiation***.
 
 ```note
 In the standard version of gematria, each letter is given a numerical value between 1 and 400, as shown in the following table. In the Mispar gadol variation, the five final letters are given their own values, ranging from 500 to 900. _([Wikipedia](https://en.wikipedia.org/wiki/Gematria))_
@@ -144,7 +144,7 @@ In particle physics, an _[elementary particle](https://en.wikipedia.org/wiki/Ele
 The Standard Model presently recognizes ***seventeen distinct particles (twelve fermions and five bosons)***. As a consequence of flavor and color combinations and antimatter, the fermions and bosons are known to have 48 and 13 variations, respectively. Among ***the 61 elementary particles*** embraced by the Standard Model number electrons and other leptons, quarks, and the fundamental bosons. _([Wikipedia](https://en.wikipedia.org/wiki/Elementary_particle))_
 ```
 
-[![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://www.eq19.com/multiplication/#elementary-structure)
+[![Standard_Model_of_Elementary_Particles](https://user-images.githubusercontent.com/36441664/274339509-913c39a3-9fdf-4a02-91da-7bc7b746db27.png)](https://eq19.github.io/multiplication/#elementary-structure)
 
 In the Standard Model, the _[Higgs boson](https://youtu.be/R0clnHE37Xc?t=13m42s)_ is a massive scalar boson whose mass must be found experimentally. It is the only particle that remains massive even at high energies. 
 
@@ -179,7 +179,7 @@ We are going to assign the above field as a ***standard model*** that attempts t
 This unification was initiated from the theoretical work by Hideki Yukawa who in 1935 had predicted the existence of _[mesons as the carrier particles](https://en.wikipedia.org/wiki/Pion)_ of the strong nuclear force.
 
 ```note
-The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://www.eq19.com/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
+The quarks and the leptons interact with the Higgs field through _[Yukawa interaction](https://en.wikipedia.org/wiki/Yukawa_interaction)_. Rotating the quark and lepton fields to the basis where the matrices of Yukawa couplings are diagonal and denote as the _[eigenvalues](https://eq19.github.io/multiplication/#shearing-structure)_ of the Yukawa matrices. Moreover, reducing the number of different interaction types is seen as desirable. Two cases in point are the unification of:
 - Electric and magnetic force into ***electromagnetic force***,
 - The electromagnetic and the weak interaction into ***[electroweak interaction](https://en.wikipedia.org/wiki/Electroweak_interaction)***.
 
@@ -190,7 +190,7 @@ The modern (perturbative) quantum mechanical view of the fundamental forces othe
 
 [![Elementary Particle](https://user-images.githubusercontent.com/36441664/273753979-58dd8bfd-e4c0-4515-a783-801d9cdb3287.png)](https://en.wikipedia.org/wiki/Fundamental_interaction)
 
-To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://www.eq19.com/exponentiation/#root-functions)*** of prime hexagons.
+To unify the interactions of this four (4) fundamental forces we assign a group of number from ***30 to 36*** reflect to the ***[fifth (5th) hexagon](https://eq19.github.io/exponentiation/#root-functions)*** of prime hexagons.
 
 ```warning
 Theories of everything (TOE), which integrate GUTs with a quantum gravity theory face a greater barrier, because no quantum gravity theories, which include string theory, loop quantum gravity, and twistor theory, have secured wide acceptance.
@@ -198,8 +198,8 @@ Theories of everything (TOE), which integrate GUTs with a quantum gravity theory
 - ***The strong force is carried by eight proposed particles called gluons***, which are intimately connected to a quantum number called color, their governing theory is thus called ***quantum chromodynamics (31)***.
 - Some theories look for a graviton to complete the Standard Model list of force-carrying particles, while others, like loop quantum gravity, emphasize the possibility that ***time-space itself may have a quantum aspect to it (32)***.
 - Attempts to TOE show unification of the four forces called Grand Unified Theories (GUTs) and have been partially successful, with connections proven between weak forces in electroweak theory and ***quantum electrodynamics (33)***.
-- [The exchange of virtual pions](https://www.eq19.com/identition/#the-powers-of-pi) along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons***. Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (34)***.
-- ***[Unification of the strong force](https://www.eq19.com/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (35)***.
+- [The exchange of virtual pions](https://eq19.github.io/identition/#the-powers-of-pi) along with vector, rho and omega mesons, provides an explanation for ***the residual strong force between nucleons***. Allowed decays of the neutral Higgs boson, H, (circled) ***satisfy electroweak charge conservation (34)***.
+- ***[Unification of the strong force](https://eq19.github.io/addition/#18s-structure)*** is expected at such high energies that it cannot be directly tested, but it may have observable consequences in the following ***unobserved decay of the proton (35)***.
 - Pions are not produced in radioactive decay, but commonly are in ***high-energy collisions between hadrons***. Pions also ***result from some matter–antimatter annihilation events (36)***.
 - All types of pions are also produced in natural processes when high-energy cosmic-ray protons and other hadronic cosmic-ray components ***interact with matter in Earth's atmosphere (37-102)***.
 
@@ -208,13 +208,13 @@ Although unification of forces is generally anticipated, ***much remains to be d
 
 [![TOE](https://user-images.githubusercontent.com/36441664/274626323-c1547d51-169b-471e-99ce-ba060f3ab603.jpg)](https://phys.libretexts.org/Bookshelves/College_Physics/College_Physics_1e_%28OpenStax%29/33%3A_Particle_Physics/33.06%3A_GUTs_-_The_Unification_of_Forces)
 
-The weak, strong and gravity forces are assigned to ***30, 31 and 32***. The unification and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://www.eq19.com/multiplication/#assigning-a-lexer)*** and ***[parser](https://www.eq19.com/exponentiation/#parsering-structure)***.
+The weak, strong and gravity forces are assigned to ***30, 31 and 32***. The unification and exchange are assigned to ***33 and 34*** which are then standing as the ***[lexer](https://eq19.github.io/multiplication/#assigning-a-lexer)*** and ***[parser](https://eq19.github.io/exponentiation/#parsering-structure)***.
 
 ```note
 Feynman diagram for the same process as in the animation, with the individual quark constituents shown, to illustrate how the fundamental strong interaction gives rise to the nuclear force. Straight lines are quarks, while ***multi-colored loops are gluons (the carriers of the fundamental force). Other gluons, which bind together the proton, neutron, and pion "in-flight", are not shown***. The π⁰ pion contains an anti-quark, shown to travel in the opposite direction, as per the Feynman–Stueckelberg interpretation. _([Wikipedia](https://en.wikipedia.org/wiki/Pion))_
 ```
 
-[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+[![residual strong force](https://user-images.githubusercontent.com/36441664/274776116-17603ba1-0e83-433e-a8e2-b3df5716ff00.png)](https://eq19.github.io/identition/#the-powers-of-pi)
 
 When we take all the forces that we understand, i.e., ***[not including gravity](https://youtu.be/NsUm9mNXrX4)***, and write down the QFT version of them, we arrive at the predictions of the Standard Model.
 
@@ -240,7 +240,7 @@ Proceeding, the number line begins to coil upon itself; 20 lands on 2’s cell, 
 
 ***19 + 18 + 102 = 37 + 102 = 139 = 34th prime = (40 - 6)the prime***
 
-[![The exchange of virtual pions](https://user-images.githubusercontent.com/8466209/282278731-ac8438f7-afd4-41f8-8c6a-a41c0d740825.png)](https://www.eq19.com/identition/#partition-function)
+[![The exchange of virtual pions](https://user-images.githubusercontent.com/8466209/282278731-ac8438f7-afd4-41f8-8c6a-a41c0d740825.png)](https://eq19.github.io/identition/#partition-function)
 
 We therefore set them both on _[the wiki](https://github.com/eq19/eq19.github.io/wiki)_ and the 18's on _[the gist](https://gist.github.com/eq19)_. The 19's and 17's cover the 4 zones while the 18's covers the 66 items as the central base of hexagonal spins.
 
@@ -270,9 +270,9 @@ By MEC30 we will also discuss the relation of these 4 zones with high density of
 Both Ulam and Gardner noted that the existence of such prominent lines ***is not unexpected***, as lines in ***the spiral correspond to quadratic polynomials***, and certain such polynomials, such as Euler's prime-generating polynomial x²-x+41, are believed to produce a high density of prime numbers. Nevertheless, the Ulam spiral is connected with **major unsolved problems** in number theory such as Landau's problems _([Wikipedia](https://en.wikipedia.org/wiki/Ulam_spiral))_.
 ```
 
-[![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://www.eq19.com/multiplication/#streching-structure)
+[![prime Sacks_spiral](https://user-images.githubusercontent.com/8466209/229820606-b2bbd7fb-3300-4507-8080-fb27ed6fd512.png)](https://eq19.github.io/multiplication/#streching-structure)
 
-This density will bring the _[D3-Brane](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://www.eq19.com/identition/#euler-partition).
+This density will bring the _[D3-Brane](https://eq19.github.io/addition/#structure-true-prime-pairs)_ where the lexer is being assigned per MEC30. Base on the its spin as shown in the above picture this lexer is assigned by [`Id: 33`](https://eq19.github.io/identition/#euler-partition).
 
 ## Truncated Perturbation
 
@@ -282,7 +282,7 @@ We found also a useful method called ***Square of Nine*** which was developed by
 He designed a new approach to predicting market behavior using several disciplines, ***including geometry, astrology, astronomy, and ancient mathematics***. They say that not long before his death, Gann developed a unique trading system. ***However, he preferred not to make his invention public or share it with anyone***. _([PipBear](https://pipbear.com/price-action-pattern/gann-square-of-9/))_
 ```
 
-[![The Square of 9](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/258702885-e21c7bfc-0d91-4bc6-8a28-e61a2cdadece.png)](https://www.eq19.com/identition/#the-powers-of-pi)
+[![The Square of 9](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/258702885-e21c7bfc-0d91-4bc6-8a28-e61a2cdadece.png)](https://eq19.github.io/identition/#the-powers-of-pi)
 
 By parsering 168 primes of 1000 id's across `π(π(100 x 100)) - 1 = 200` then the (Δ1) would be _[initiated](https://eq19.github.io/init.js)_. As you may guess they will slightly forms the ***hexagonal patterns***.
 
@@ -298,8 +298,8 @@ We are focusing to MEC30 so we end up this exponentiation by the famous quote fr
 W.D. Gann: “Stocks make important changes in trend every ***30, 60, 120, 150, 210, 240, 300, 330, 360*** days or degrees from any important top or bottom.”
 ```
 
-[![WD Gann - Hexagonal Chart](https://github.com/eq19/eq19.github.io/assets/8466209/defe3aa5-ab70-4fd6-9412-b19c21a4ffaf)](https://www.eq19.com/identition/)
+[![WD Gann - Hexagonal Chart](https://github.com/eq19/eq19.github.io/assets/8466209/defe3aa5-ab70-4fd6-9412-b19c21a4ffaf)](https://eq19.github.io/identition/)
 
 ***In line with 168 there is 330 located of 10th layer***. Since the base unit of 30 repeats it self on the center then this `11 x 30 = 330` is pushed to the `10 + 1 = 11th layer`. 
 
-This eleven (11) will continue to be discussed on _[identition zone](https://www.eq19.com/identition/)_.
+This eleven (11) will continue to be discussed on _[identition zone](https://eq19.github.io/identition/)_.

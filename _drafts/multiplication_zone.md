@@ -11,7 +11,7 @@ Multiplication is the form of expression set equal to the inverse function of sy
 
 {% include list.liquid all=true %}
 
-The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_. 
+The multiplication zones is a symmetric matrix representing the multilinear relationship of a stretching and shearing within the plane of _[the base unit](https://eq19.github.io/addition/#addition-zones-1-18)_. 
 
 ## Assigning a lexer
 
@@ -21,7 +21,7 @@ By prime hexagon we can see that the number seven (7), hold the power to make th
 A Prime Hexagon is formed when integers are sequentially added to a field of tessellating equilateral triangles, where the path of the integers is changed whenever a prime number is encountered. Since prime numbers are never multiples of two or three, all numbers from "2" to infinity are confined within a ***24-cell hexagon*** _([GitHub: kaustubhcs/prime-hexagon](https://github.com/kaustubhcs/prime-hexagon#prime-hexagon))_.
 ```
 
-[![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://www.eq19.com/addition/#structure-minor-hexagons)
+[![Structure: Minor Hexagons](https://user-images.githubusercontent.com/8466209/253148724-8dffc1e4-e2a9-478e-ae13-7bb1c0303406.png)](https://eq19.github.io/addition/#structure-minor-hexagons)
 
 The the main reason of assigning two (2) profiles instead of only one (1) is that we have to accommodate the major type of primes numbers called twin primes.
 
@@ -100,7 +100,7 @@ https://api.github.com/gists/f78d4470250720fb18111165564d555f 13 maps 30
 
 We concluded later on that this bilateral would not come to be possible if only one (1) profile is assigned. Therefore we add another profile so they would be `11 + 2 = 13's`.
 
-These are the ones that bring [`11 + 13 = 24 cell hexagons`](https://www.eq19.com/addition/#structure-true-prime-pairs).
+These are the ones that bring [`11 + 13 = 24 cell hexagons`](https://eq19.github.io/addition/#structure-true-prime-pairs).
 
 ## Orbital structure
 
@@ -115,7 +115,7 @@ The points that lie on the line through the origin, parallel to an eigenvector, 
 By our project the scheme will be treated as the sun and the moon orbit where this 31 is the maximum days of a month:
 
 ```tip
-By the _[exponentiation zones](https://www.eq19.com/exponentiation/)_ and _[identition zones](https://www.eq19.com/identition/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***). This 7 vs 12 is the point of view from the earth which making its position is just in the right location (not too far nor to close) with the sun within the universe.
+By the _[exponentiation zones](https://eq19.github.io/exponentiation/)_ and _[identition zones](https://eq19.github.io/identition/)_ they will end up as 7 days (***sun***) and 12 months (***moon***) while the 11 will represent the ones outside the orbit (***stars*** or ***galaxies***). This 7 vs 12 is the point of view from the earth which making its position is just in the right location (not too far nor to close) with the sun within the universe.
 ```
 
 ```sh
@@ -192,7 +192,7 @@ So they are `4 folders (1, 7, 11, 12)` remain inviolable by the gist.
 
 ## Elementary Structure
 
-These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://www.eq19.com/addition/#prime-hexagon)_ and _[MEC30 Structure](https://www.eq19.com/#eulers-identity)_.
+These features are the solution to arrange 30 files located in in four (4) of zone folders as the lexer to cope with the _[Prime Spin](https://eq19.github.io/addition/#prime-hexagon)_ and _[MEC30 Structure](https://eq19.github.io/#eulers-identity)_.
 
 ```note
 The eigenvalue is the factor by which an eigenvector is stretched. If the eigenvalue is negative, the direction is reversed. Eigenvalues are often introduced in the context of linear algebra or matrix theory. Historically, however, they arose in the study of ***quadratic forms and differential equations***. In the 18th century, Leonhard Euler studied the rotational motion of a rigid body, and discovered the importance of the principal axes.[a] Joseph-Louis Lagrange realized that ***the principal axes are the eigenvectors of the inertia matrix*** _([Wikipedia](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors))_
@@ -242,7 +242,7 @@ layer | node | sub |  i  |  f.                                       MEC 30 / 2
 ------|------|-----+-----+------      ‹------------------------------- 30 {+1/2}
 ```
 
-Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://www.eq19.com/addition/#structure-true-prime-pairs)_.
+Here we are using the [inverse function](https://en.m.wikipedia.org/wiki/Inverse_function) to [exponentiation](https://en.m.wikipedia.org/wiki/Exponentiation) by `3 x 6 = 18` spins. This is what we mean by the ***multiplication zones*** that is applied to each of _[addition zones](https://eq19.github.io/addition/#structure-true-prime-pairs)_.
 
 ```tip
 The three (3) minor hexagons are surrounded by the primes (19, 43, 71) which is close to ***the multiplication of six (6)*** with 3, 7, 12 to 18, 42, 72. One of a mysterious thing is that `19 × 6 = 43 + 71` where ∆1 is balancing and keep them to remain stay on the 18s scheme. Therefore we use the primes ***43 and 71*** as corresponding _[eigenvalues](https://en.wikipedia.org/wiki/Eigenvalues)_ which is the factor by which the eigenvector is [scaled](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors#Overview).
@@ -263,23 +263,23 @@ By this exponentiation zones we will get multiple layers of primes density. So w
 
 ## Parsering Structure
 
-As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://www.eq19.com/exponentiation/) thus the total will be `102 + 66 = 168`
+As you can see on the left sidebar (dekstop mode) a total of 102 items will be reached by the end of `Id: 35`. So when they transfered to `Id: 36` it will cover [`11 x 6 = 66 items`](https://eq19.github.io/exponentiation/) thus the total will be `102 + 66 = 168`
 
 ```tip
-Base on the ***[11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://www.eq19.com/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://www.eq19.com/identition/#the-powers-of-pi)***.
+Base on the ***[11s and 7s](https://eq19.github.io/addition/#structure-true-prime-pairs)*** distribution of the 18s  structure of The True Prime Pairs, the 7s will be reflected by ***[seven (7) repositories](https://eq19.github.io/exponentiation/#parsering-structure)*** of user profile with id: 30 to id: 36 meanwhile the 11s will be reflected by ***[eleven (11) organizations](https://eq19.github.io/identition/#the-powers-of-pi)***.
 ```
 
 ***168 + 329 + 289 - 619 - 30 - 30 - 5 = 786 - 619 - 65 = 102***
 
 [![exponentiation zones](https://user-images.githubusercontent.com/8466209/200024664-afc433a0-5f7f-4ec1-9bfc-77d672817fed.png)](https://github.com/eq19)
 
-Using the javascript library from _[Chevotrain](https://www.eq19.com/addition/#structure-minor-hexagons)_ and data parser from _[Jekyll/Liquid](https://jekyllrb.com/docs/datafiles/)_ finally we found the correlation between the lexer and parser trough _[the powers of pi](https://www.eq19.com/identition/#the-powers-of-pi)_.
+Using the javascript library from _[Chevotrain](https://eq19.github.io/addition/#structure-minor-hexagons)_ and data parser from _[Jekyll/Liquid](https://jekyllrb.com/docs/datafiles/)_ finally we found the correlation between the lexer and parser trough _[the powers of pi](https://eq19.github.io/identition/#the-powers-of-pi)_.
 
 ```note
 In this example, the content from a Markdown document `document.md` that specifies `layout: docs` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `docs.html`. Because the docs layout itself specifies `layout: page`, the content from `docs.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag in the layout file `page.html`. Finally because the page layout specifies `layout: default`, the content from `page.html` gets pushed into the `{% raw %}{{ content }}{% endraw %}` tag of the layout file `default.html`. _([JekyllRb](https://jekyllrb.com/tutorials/convert-site-to-jekyll/#how-layouts-work))_
 ```
 
-[![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://www.eq19.com/exponentiation/#god-particle)
+[![Parsering](https://github-production-user-asset-6210df.s3.amazonaws.com/8466209/260864973-50fbc0a0-7441-4800-97aa-265b0dfd2ac2.png)](https://eq19.github.io/exponentiation/#god-particle)
 
 Since the _modulo 6_ is occured all over the spin then we have defined that this 4 zones should stand as ***default configuration*** as you can see on the left sidebar. 
 
@@ -287,8 +287,8 @@ Since the _modulo 6_ is occured all over the spin then we have defined that this
 In order to maintain the 18's structure between each of repositories to correlate with the above density then we could use a hierarchical database that stores low-level settings for the operating system such as _[windows registry](https://en.wikipedia.org/wiki/Windows_Registry)_.
 ```
 
-[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://www.eq19.com/exponentiation/)
+[![windows registry](https://user-images.githubusercontent.com/8466209/230746478-0146e88e-22ba-4f1b-abf2-c5226c1a56ca.png)](https://eq19.github.io/exponentiation/)
 
 So then a question is arised. Where is this vector flowing in the 18s?<br>
-Let's discuss it first with the _[exponentiation zones](https://www.eq19.com/exponentiation/)_.
+Let's discuss it first with the _[exponentiation zones](https://eq19.github.io/exponentiation/)_.
 

@@ -11,7 +11,7 @@ Identition is defined for a complex operation by extending one of the definition
 
 {% include list.liquid all=true %}
 
-This identition zones stands as one of the solution to deal with the residual primes that is occured in the exponentation zones to become compactifiable within _[the base unit](https://www.eq19.com/addition/#addition-zones-1-18)_.
+This identition zones stands as one of the solution to deal with the residual primes that is occured in the exponentation zones to become compactifiable within _[the base unit](https://eq19.github.io/addition/#addition-zones-1-18)_.
 
 ## The Extra Dimensions
 
@@ -21,15 +21,15 @@ By this image you would see how [the earth movements](https://youtu.be/oW2GT48ZL
 Five consistent versions of superstring theory were developed before it was conjectured in the mid-1990s that they were all different limiting cases of a single theory in **11 dimensions** known as M-theory _([Wikipedia](https://en.wikipedia.org/wiki/String_theory))_.
 ```
 
-[![Solar Ststem](https://user-images.githubusercontent.com/8466209/223703153-6ea330bf-92e8-433b-9ebe-660430a87a29.gif)](https://www.eq19.com/exponentiation/#subclasses-of-partition)
+[![Solar Ststem](https://user-images.githubusercontent.com/8466209/223703153-6ea330bf-92e8-433b-9ebe-660430a87a29.gif)](https://eq19.github.io/exponentiation/#subclasses-of-partition)
 
 Nowadays there are many scientists come in to the conclusion that there should be ***[extra dimensions](https://en.wikipedia.org/wiki/Extra_dimensions#:~:text=In%20physics%2C%20extra%20dimensions%20are,on%20the%20Kaluza%E2%80%93Klein%20theory.)*** involved and typically it would take a very complicated form. 
 
 ```tip
 1. ***Line/length***
 2. ***Plane/shapes***
-3. ***Depth***, representing a [stretching and shearing](https://www.eq19.com/multiplication/#streaching-structure) of the plane
-4. ***Time***, stands as [starting point](https://youtu.be/yPVQtvbiS4Y) to _[attemp](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ the ***[Theory Of Everything (TOE)](https://www.eq19.com/identition/#fundamental-forces)***.
+3. ***Depth***, representing a [stretching and shearing](https://eq19.github.io/multiplication/#streaching-structure) of the plane
+4. ***Time***, stands as [starting point](https://youtu.be/yPVQtvbiS4Y) to _[attemp](https://theoryofeverything.org/TOE/JGM/What%20Time%20is%20it.pdf)_ the ***[Theory Of Everything (TOE)](https://eq19.github.io/identition/#fundamental-forces)***.
 5. ***Alternate world*** (we could measure similarities and differences of what might have been). Some theories state that light is nothing but ripples of vibrations in the [fifth dimension](https://www.wattpad.com/amp/474802474)
 6. ***A plane of possible worlds*** that start with the same conditions (example: the Big Bang). Theoretically, if you were to master the sixth and seventh dimensions, you could travel through time.
 7. ***Access to different worlds*** with different initial conditions. Here, everything would have happened differently, including the beginning conditions (one universe started with the Big Bang, another with the Oscillating Universe theory).
@@ -40,7 +40,7 @@ Nowadays there are many scientists come in to the conclusion that there should b
 
 [![extra dimensions](https://github-production-user-asset-6210df.s3.amazonaws.com/36441664/268452636-26cd6e73-e4e8-4de2-bb17-5da7184344ca.jpeg)](https://en.wikipedia.org/wiki/Dimension)
 
-The coupling dynamics of dimension d ⩾ 4 reflects to ***[matter–antimatter annihilation](https://en.wikipedia.org/wiki/Annihilation)*** that tied in with ***addition, multiplication and exponentiation function*** of _[Euler Indentity](https://www.eq19.com/#eulers-identity)_.
+The coupling dynamics of dimension d ⩾ 4 reflects to ***[matter–antimatter annihilation](https://en.wikipedia.org/wiki/Annihilation)*** that tied in with ***addition, multiplication and exponentiation function*** of _[Euler Indentity](https://eq19.github.io/#eulers-identity)_.
 
 ```note
 In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be expressed in terms of an action only for a four-dimensional manifold. Finally, Tangherlini showed in 1963 that ***when there are more than three spatial dimensions, electron orbitals around nuclei cannot be stable***; electrons would either fall into the nucleus or disperse. _([Wikipedia](https://en.wikipedia.org/wiki/Anthropic_principle#Dimensions_of_spacetime))_
@@ -48,7 +48,7 @@ In 1922, Hermann Weyl claimed that Maxwell's theory of electromagnetism can be e
 
 [![pairing from nothingness](https://user-images.githubusercontent.com/36441664/277077844-a6c38352-5d68-4f55-ae51-6bb1c8bfac7b.png)](https://sciexplorer.blogspot.com/2011/09/antimatter.html)
 
-By the _[exponentiation zones](https://www.eq19.com/exponentiation/#subclasses-of-partition)_ these annihilation [relates](https://quantumartandpoetry.blogspot.com/2013/08/the-theory-of-everything-explaining.html) to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
+By the _[exponentiation zones](https://eq19.github.io/exponentiation/#subclasses-of-partition)_ these annihilation [relates](https://quantumartandpoetry.blogspot.com/2013/08/the-theory-of-everything-explaining.html) to the fundamental ***circle constant*** `π = 3.1415…`. So how does it go with ***imajinari constant***?
 
 ```note
 ***Euler's identity*** is named after the Swiss mathematician Leonhard Euler. It is a special case of Euler's formula 
@@ -64,7 +64,7 @@ In order to propagate this annihilation and how they interact with each other we
 In physics, string theory is a theoretical framework in which the point-like particles of particle physics are replaced by ***one-dimensional objects*** called strings.
 
 ```tip
-The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the _[fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces)_ that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
+The concept of eleven dimensions is a theoretical one in physics and cosmology, specifically in the realm of string theory and M-theory. ***These theories propose that our observable universe is made up of 11 dimensions, rather than the traditional three dimensions of length, width, and height, and the fourth dimension of time***. The additional dimensions are thought to be compactified or curled up, meaning that they are not directly observable by us in our everyday experience. ***As for the cosmic philosophy, it is important to note that these theories are still considered speculative and have not been proven through experimental evidence***. However, they do offer a new perspective on the nature of our universe and the _[fundamental forces](https://eq19.github.io/exponentiation/#fundamental-forces)_ that govern it. Some scientists and philosophers argue that these theories may provide new insights into the origins of the universe and the nature of reality itself. Ultimately, the concept of eleven dimensions is a fascinating area of study that continues to inspire new research and discoveries in the field of physics and cosmology. _(ChatGPT)_
 ```
 
 ![M-theory](https://github.com/eq19/eq19.github.io/assets/8466209/38b6bb71-6e4b-4020-aa59-03d83873ffc5)
@@ -85,7 +85,7 @@ Nothing prevents a theory from including more than 4 dimensions. In the case of 
 
 [![superstring theory](https://github.com/eq19/feed/assets/36441664/e1fe403e-4650-428c-b5c1-d3432b2447d6)](https://astrophysicsblogs.blogspot.com/2008/01/superstring-theory_03.html)
 
-The string theory is sofar the leading candidate to the _[TOE](https://www.eq19.com/identition/#fundamental-forces)_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
+The string theory is sofar the leading candidate to the _[TOE](https://eq19.github.io/identition/#fundamental-forces)_ however it is said that the theory ***[may be incompatible with dark energy](https://www.quantamagazine.org/dark-energy-may-be-incompatible-with-string-theory-20180809/)***.
 
 ```danger
 It is argued that the generic formulation of string theory leads naturally to dark energy, represented by a positive cosmological constant to lowest order and the intrinsic stringy non-commutativity is the new crucial ingredient responsible for its radiative stability. _([Physic Letters](https://doi.org/10.1016/j.physletb.2019.134950))_
@@ -148,7 +148,7 @@ Each of the user profiles will have ***seven (7) user repositories*** consist of
      - {{ item.key2 | jsonify }}
 {% endfor %}
 
-The _[Root Function](https://www.eq19.com/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://www.eq19.com/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
+The _[Root Function](https://eq19.github.io/exponentiation/#root-functions)_ of ***13 repositories*** per each of organization above is not arranged to directly follow the _[partition function](https://eq19.github.io/identition/#partition-function)_ but through _[the 18 gists](https://gist.github.com/eq19)_ via their _[.github profiles](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile#adding-a-public-organization-profile-readme)_.
 
 ```note
 The four faces of our pyramid additively cascade ***32 four-times triangular numbers*** (Note that 4 x 32 = 128 = the perimeter of the square base which has an area of ***32^2 = 1024 = 2^10***). These include Fibo1-3 equivalent 112 (rooted in T7 = 28; 28 x 4 = 112), which creates a pyramidion or capstone in our model, and 2112 (rooted in T32 = 528; 528 x 4 = 2112), which is the index number of ***the 1000th prime*** within our domain, and equals the total number of 'elements' used to construct the pyramid. _([PrimesDemystified](https://www.primesdemystified.com/First1000Primes.html))_
@@ -158,22 +158,22 @@ The four faces of our pyramid additively cascade ***32 four-times triangular num
 
 [![Mystery of the First 1000 Prime Numbers](https://user-images.githubusercontent.com/8466209/225830554-007fbd06-9d7d-44e8-867d-c7b0188bf488.png)](https://www.primesdemystified.com/First1000Primes.html)
 
-By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://www.eq19.com/multiplication/#elementary-structure)***.
+By taking the correlation of these 11 partitions with the logical sequence of numbers there would be a ***[series expansion](https://eq19.github.io/multiplication/#elementary-structure)***.
 
 ```note
 ***All of these results strongly suggest adynkras are pointing in the direction of using series expansion*** in terms of YT’s as a tool to gain the most fundamental mathematical understanding of this class of problems. _([Higher-Dimensional Supergravity - Pdf](https://github.com/eq19/feed/files/12924002/ATMP-2021-0025-0006-a003.pdf))_
 ```
 
-[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://www.eq19.com/exponentiation/folder14/#root-profiles)
+[![root profiles](https://user-images.githubusercontent.com/36441664/277179073-e0411710-779e-4cea-8a37-ff7c635f46f7.png)](https://eq19.github.io/exponentiation/folder14/#root-profiles)
 
-Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://www.eq19.com/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
+Both 1/89 and 1/109 have the Fibonacci sequence _[encoded in their decimal expansions](https://eq19.github.io/addition/#minor-hexagons)_ illustrates a period-24 palindromic that bring ***the powers of pi***. 
 
 ## Vibrating Strings
 
-There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://www.eq19.com/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
+There are thought to be ***[24 separate quantum fields](https://youtu.be/euNr9PozCmg?t=41m25s)*** that permit the universe. It consists of 12 various [fundamental forces](https://eq19.github.io/exponentiation/#fundamental-forces) including mass, 9 quarks, and 3 leptons.
 
 ```note
-[String Theory](https://www.eq19.com/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
+[String Theory](https://eq19.github.io/identition/#string-theory) which states there could be 11 dimensions (***9 dimensions of space, 1 dimension of time, and 1 dimension for other universes***) - the diagram  below can sum it up for the 9 dimensions of space. Then the Cosmos would be the 11th dimension where (+/-) Binary Universes are born from Nothingness. Where Nothingness = 0 = (+) universe of regular matter and (-) universe of dark matter. _([Quora](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros))_
 ```
 
 [![11 dimensions](https://user-images.githubusercontent.com/36441664/277389494-752aa9db-b533-495b-9201-b927292edcb8.png)](https://www.quora.com/Grand-Unification-Theories-predict-that-there-should-be-several-extra-dimensions-Is-it-possible-that-fields-electromagnetic-Higgs-gluon-etc-are-these-extra-dimensions-and-if-so-why/answer/George-Davros)
@@ -184,19 +184,19 @@ Both scheme are carrying a correlation between two (2) number of 89 and 109 whic
 In the matrix pictured below, we list the first 24 elements of our domain, take their squares, calculate the modulo 90 congruence and digital roots of each square, and display the digital root factorization dyad for each square (and map their ***collective bilateral 9 sum symmetry***). _([PrimesDemystified](https://primesdemystified.com/))_
 ```
 
-[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://www.eq19.com/multiplication/#elementary-structure)
+[![collective bilateral 9 sum symmetry](https://user-images.githubusercontent.com/8466209/200229388-03811f48-2492-4845-b15f-85259cd93717.png)](https://eq19.github.io/multiplication/#elementary-structure)
 
-This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the ***[30 to 36' cells](https://www.eq19.com/exponentiation/#fundamental-forces)***.
+This scheme goes to the unification of 11s with 7s to 18s meanwhile the 11th it self behave as residual by the 5th minor hexagon between the ***[30 to 36' cells](https://eq19.github.io/exponentiation/#fundamental-forces)***.
 
 ```tip
-This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the _[self repetition](https://www.eq19.com/exponentiation/#self-repetition)_ on MEC30.
+This behaviour finaly brings us to a suggestion that the dimension in string theory are linked with ***the prime distribution level*** as indicated by the _[self repetition](https://eq19.github.io/exponentiation/#self-repetition)_ on MEC30.
 ```
 
 ***109 = 29th prime = (10th prime)th prime***
 
-[![self repetition](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://www.eq19.com/exponentiation/#self-repetition)
+[![self repetition](https://github.com/eq19/eq19.github.io/assets/8466209/bde2248a-2feb-4c4b-85fe-f75de640775d)](https://eq19.github.io/exponentiation/#self-repetition)
 
-So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://www.eq19.com). 
+So the 36 should behave as a central. Therefore the total files that inherited from this scheme will be `1 + 7 + 29 = 37` including [one (1) main page](https://eq19.github.io). 
 
 ```note
 Every repository on GitHub.com comes equipped with a section for hosting documentation, called a wiki. You can use your repository's wiki to share long-form content about your project, such as how to use it, how you designed it, or its core principles. _([GitHub](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis))_
@@ -216,14 +216,14 @@ This web enabled demonstration shows a polar plot of ***the first 20 non-trivial
 
 [![Riemann Zeta_Zeros](https://user-images.githubusercontent.com/36441664/268831545-9d8998b9-2528-458a-8956-5b0654e59f97.png)](https://qr.ae/pKnIbn)
 
-By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://www.eq19.com/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
+By our project, these 37 files are located within _[the wiki of main repository](https://github.com/eq19/eq19.github.io/wiki)_ and organized by [the 18's structure](https://eq19.github.io/addition/#structure-true-prime-pairs) located per the _[18 files of  project gist](https://gist.github.com/eq19)_.
 
 ## Parallel Universes
 
-When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://www.eq19.com/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions.
+When the seven (7) and eleven (11) are _[combined as eighteen (18)](https://eq19.github.io/addition/#structure-true-prime-pairs)_ then ∆1 by the prime hexagon is recycled as nineteen (19) and generate `37 + 77 = 114` partitions.
 
 ```tip
-By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://www.eq19.com/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://www.eq19.com/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system. We call this arrangement as ***Δ(19 vs 18) Scenario*** where the [zeta function](https://www.eq19.com/#zeta-function) stands as the basic algorithm.
+By this tabulation you may see that all the numbers between 37 and 102 are located within ***11 columns*** where the 31 behave as a _[new axis](https://eq19.github.io/exponentiation/#parsering-structure)_. So this 11 is reflecting the ***19 to 29***. Since the 11 is bonding with 19 so it would go to another cycles starting with ***the 26th dimension*** which will bring them by ***four (4) compactification (26 to 29)*** to the 30. This 30th order ***[repeats itself](https://eq19.github.io/exponentiation/#self-repetition)*** to infinity. Even in the first 30s system. We call this arrangement as ***Δ(19 vs 18) Scenario*** where the [zeta function](https://eq19.github.io/#zeta-function) stands as the basic algorithm.
  
 ```
 
@@ -281,12 +281,12 @@ By this tabulation you may see that all the numbers between 37 and 102 are locat
 By the above tabulation, here you can see that _[the layout](https://gist.github.com/eq19/0ce5848f7ad62dc46dedfaa430069857)_ of our home page refers to the ***four (4) partitions*** of ∆1 i.e. id: 1-18, id: 19-30, id: 31-36, and id: 37-102.
 
 ```tip
-Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://www.eq19.com/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://www.eq19.com/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://www.eq19.com/exponentiation/#parsering-structure)_ by means of _[MEC30 Structure](https://www.eq19.com/exponentiation/#self-repetition)_. So whenever the 11s is _[compactified](https://www.eq19.com/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://www.eq19.com/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://www.eq19.com/identition/#extra-dimensions)_ which including the _[eigenvector](https://www.eq19.com/addition/#18s-structure)_ of _[dark energy](https://www.eq19.com/identition/#string-theory)_ and finally become another level of ***[11 dimensions](https://www.eq19.com/identitionl/#the-powers-of-pi)*** that lead to the concept of _[multiple universes](https://www.eq19.com/identition/#extra-dimensions)_. 
+Our ***[18s gists](https://gist.github.com/eq19)*** would form the _[18s structure of 11s and 7s](https://eq19.github.io/addition/#structure-true-prime-pairs)_ where by the 11s, the 20th prime 71 would stand as _[eigenvalue](https://eq19.github.io/multiplication/#streaching-structure)_ and by the 7s, the 11th prime 31 would stand as the _[new symmetical zero axis](https://eq19.github.io/exponentiation/#parsering-structure)_ by means of _[MEC30 Structure](https://eq19.github.io/exponentiation/#self-repetition)_. So whenever the 11s is _[compactified](https://eq19.github.io/identition/#the-powers-of-10)_ down to ***[4 dimensions](https://eq19.github.io/exponentiation/#parsering-structure)*** it will always be compactifed by the 7s as their _[extended branes](https://eq19.github.io/identition/#extra-dimensions)_ which including the _[eigenvector](https://eq19.github.io/addition/#18s-structure)_ of _[dark energy](https://eq19.github.io/identition/#string-theory)_ and finally become another level of ***[11 dimensions](https://eq19.github.io/identitionl/#the-powers-of-pi)*** that lead to the concept of _[multiple universes](https://eq19.github.io/identition/#extra-dimensions)_. 
 ```
 
 ***Δ prime = 114th prime - 19 = (6 x 19)th prime - 19 = 619 - 19 = 600 = 3 x 200***
 
-[![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://www.eq19.com/multiplication/#streaching-structure)
+[![Proof of Confinement](https://user-images.githubusercontent.com/36441664/270557989-54d6720f-fd55-44e9-a873-e11c6763bb8d.png)](https://eq19.github.io/multiplication/#streaching-structure)
 
 So the four (4) zones is actually a streaching result by means of eigenvector. Thus it is the main reason why we see our live dimensions is four (4) instead of eleven (11).
 
@@ -318,11 +318,11 @@ Once a black hole has formed, it can continue to grow by absorbing additional ma
 
 [![Infinite number](https://user-images.githubusercontent.com/8466209/283898523-1344a713-cec3-4475-8af3-bad8c53d52c0.png)](https://en.wikipedia.org/wiki/Black_hole#High-energy_collisions)
 
-So it will need a gap between each identities to proceed the thing. Let's discuss how it goes by the ***[seven (7) hidden dimensions](https://www.eq19.com/addition/)***.
+So it will need a gap between each identities to proceed the thing. Let's discuss how it goes by the ***[seven (7) hidden dimensions](https://eq19.github.io/addition/)***.
 
 ## Hidden Dimensions
 
-By _[The Δ(19 vs 18) Scenario](https://www.eq19.com/identition/#%CE%B419-vs-18-scenario)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
+By _[The Δ(19 vs 18) Scenario](https://eq19.github.io/identition/#%CE%B419-vs-18-scenario)_ those three are exactly landed in the ***0's cell*** out of Δ18. See that the sum of 30 and 36 is 66 while the difference between 36 and 102 is also 66.
 
 ```note
 You likely noticed I began with 2 rather than 1 or 0 when I first constructed the hexagon. Why? Because they do not fit inside — they stick off the hexagon like a tail. Perhaps that’s where they belong. However, if one makes a significant and interesting assumption, then 1 and 0 fall in their logical locations – in the 1 and 0 cells, respectively. _([HexSpin](https://www.hexspin.com/0-1-and-negative-numbers/))
@@ -340,9 +340,9 @@ Using Euler's method to find p(40): A ruler with plus and minus signs (grey box)
 
 ***π(π(π(1000th prime))) + 1 = 40***
 
-[![Euler_partition_function](https://camo.githubusercontent.com/edf846a419b2999b535be1e1c3cf2a92eed95997bee3558897c1cbc24ab40602/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f45756c65725f706172746974696f6e5f66756e6374696f6e2e737667)](https://www.eq19.com/addition/file02.html#true-prime-pairs)
+[![Euler_partition_function](https://camo.githubusercontent.com/edf846a419b2999b535be1e1c3cf2a92eed95997bee3558897c1cbc24ab40602/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30352f45756c65725f706172746974696f6e5f66756e6374696f6e2e737667)](https://eq19.github.io/addition/file02.html#true-prime-pairs)
 
-As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://www.eq19.com/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://www.eq19.com/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://www.eq19.com/identition/#the-powers-of-pi)_.
+As explicitly indicated by `n - 7` within identition zones this `p(33)` behave reversal to the _[exponentiation zones](https://eq19.github.io/exponentiation/#exponentiation-zones-31-36)_ so it would stand as [`π(π(π(1000th prime)))+1`](https://eq19.github.io/addition/file02.html#true-prime-pairs). Within these 1000 primes there will be fractions which end up with _[168 identities](https://eq19.github.io/identition/#the-powers-of-pi)_.
 
 ```note
 The advantages achieved by the invention are, in particular, that instead of a rudimentary mathematical template, structured in standards, now a folding rule of the MEC 30 can be used which makes the associated and determined algorithm visible.
@@ -350,8 +350,8 @@ The advantages achieved by the invention are, in particular, that instead of a r
 Why does it work?
 
 - In the subatomic space, Heisenberger does not allow precise measurements because the measurements themselves distort the result. Through the mathematical basis presented here, our scale behaves like ***[Plank's quantum](https://en.wikipedia.org/wiki/Planck%27s_law)*** of action and shows in the positions the behaviorally entangled photons, which in turn produce the quantum of action in the sums. 
-- The MEC 30 as a folding rule is also here a tool for ***[The Entangled Quantum](https://en.wikipedia.org/wiki/Quantum_entanglement)*** systems to explain the ghostly behavior of _[the elementary particles](https://www.eq19.com/exponentiation/#elementary-particles)_. So also to make the underlying algorithm visible and explainable, keyword quantum teleportation. 
-- So we are able to investigate the energy behavior below the quantum of effect without measuring influence. This works because our scale is the basis for the ***[Riemann Zeta Function](https://www.eq19.com/#zeta-function)***, which reflects the _[energy distribution in atoms](https://youtu.be/ajlUCFZ1Ft8)_.
+- The MEC 30 as a folding rule is also here a tool for ***[The Entangled Quantum](https://en.wikipedia.org/wiki/Quantum_entanglement)*** systems to explain the ghostly behavior of _[the elementary particles](https://eq19.github.io/exponentiation/#elementary-particles)_. So also to make the underlying algorithm visible and explainable, keyword quantum teleportation. 
+- So we are able to investigate the energy behavior below the quantum of effect without measuring influence. This works because our scale is the basis for the ***[Riemann Zeta Function](https://eq19.github.io/#zeta-function)***, which reflects the _[energy distribution in atoms](https://youtu.be/ajlUCFZ1Ft8)_.
 - On the other hand, with larger systems we are able to transfer the behavior of the energy from the _[subatomic](https://youtu.be/8-HF5XKeK8Q?si)_ space into the haptic space with the scale described here (thought experiment ***[Schröninger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat)***).
 - Thus, we are still able to apply the Schröninger wave equation in the haptic space, and replace ***[The Hamiltonian](https://en.wikipedia.org/wiki/Hamiltonian_(quantum_mechanics))*** with our measurements.
 
@@ -360,9 +360,9 @@ Developing MEC 30 as a folding rule emerged from a new analysis of mathematical 
 
 ***p(33) = p(40-7) = loop (100000) = 4 + 25 + 139 + 1091 + 8884 = 10143***
 
-[![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://www.eq19.com/exponentiation/#root-functions)
+[![](https://user-images.githubusercontent.com/8466209/241491860-72da956a-1740-4ed7-83ef-3844ae1ff8d2.png)](https://eq19.github.io/exponentiation/#root-functions)
 
-Starting with [the next chapter](https://www.eq19.com/identition/folder1/#scenarios-1st-dimension) we are going to discuss in detail how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
+Starting with [the next chapter](https://eq19.github.io/identition/folder1/#scenarios-1st-dimension) we are going to discuss in detail how this reversal behaviour is converting the 11 dimensions to `7 x 11 = 77` partitions.
 
 ```note
 ***There are 7 hidden dimensions in 11-d Supergravity, which is the low energy approximation to M theory, which also has 7 hidden dimensions***. _([Prime Curios!](https://t5k.org/curios/page.php?curio_id=20686))_
@@ -370,8 +370,8 @@ Starting with [the next chapter](https://www.eq19.com/identition/folder1/#scenar
 
 ***π(1000) - loop(1,30) - loop(31,36) = 168 - 29 - 25 = 114***
 
-[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://www.eq19.com/addition/#addition-zones-1-18)
+[![114 Nodes](https://user-images.githubusercontent.com/36441664/262341222-6c71005e-2f44-45d9-ac42-b1464c045a45.png)](https://eq19.github.io/addition/#addition-zones-1-18)
 
-This will be the same structure as the seven (7) pàrtitions of _[addition zones](https://www.eq19.com/addition/)_. So by simple words this 11 dimensions brings us back to the _[root functions](https://www.eq19.com/exponentiation/#root-functions)_.
+This will be the same structure as the seven (7) pàrtitions of _[addition zones](https://eq19.github.io/addition/)_. So by simple words this 11 dimensions brings us back to the _[root functions](https://eq19.github.io/exponentiation/#root-functions)_.
 
-The only difference is _the base unit_ of the lexer [`(Id: 33)`](https://www.eq19.com/multiplication/#parsering-structure).<br>It is now carrying the above `p(33) = 10143`.
+The only difference is _the base unit_ of the lexer [`(Id: 33)`](https://eq19.github.io/multiplication/#parsering-structure).<br>It is now carrying the above `p(33) = 10143`.
