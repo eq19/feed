@@ -2,7 +2,7 @@
 # Structure: Cell Types – Modulo 6
 # https://www.hexspin.com/proof-of-confinement/
 
-hr='------------------------------------------------------------------------------------'
+hr='----------------------------------------------------------------------------------'
 
 set_config() {
   echo -e "\n$hr\nCONFIG\n$hr"
@@ -12,6 +12,10 @@ set_config() {
   cat $RUNNER_TEMP/orgs.json > $1/user_data/ft_client/test_client/results/orgs.json
   gh variable set JEKYLL_CONFIG --body "$(cat $RUNNER_TEMP/_config.yml)"
 
+  PARAMS_DRY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+    "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/PARAMS_DRY" | jq -r '.value')
+  PARAMS_LIVE=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+    "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/PARAMS_LIVE" | jq -r '.value')
   PARAMS_JSON=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
     "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/PARAMS_JSON" | jq -r '.value')
   echo "${PARAMS_JSON}" | jq '.' > $1/user_data/strategies/fibbo.json
@@ -19,6 +23,8 @@ set_config() {
   if jq empty < $1/user_data/strategies/fibbo.json; then
     echo -e "\n$hr\nPARAMETERS\n$hr"
     cat $1/user_data/strategies/fibbo.json
+    gh variable set PARAMS_DRY --repo ${TARGET_REPOSITORY} --body "${PARAMS_DRY}"
+    gh variable set PARAMS_LIVE --repo ${TARGET_REPOSITORY} --body "${PARAMS_LIVE}"
     gh variable set PARAMS_JSON --repo ${TARGET_REPOSITORY} --body "${PARAMS_JSON}"
     gh variable set REMOVE_REPOSITORY --repo ${TARGET_REPOSITORY} --body "${GITHUB_REPOSITORY}"
   else
@@ -38,12 +44,22 @@ git config --global --add safe.directory "${GITHUB_WORKSPACE}"
 git config --global credential.helper store
 echo "https://${GITHUB_ACTOR}:${GH_TOKEN}@github.com" > ~/.git-credentials
 
+export MAP_BRANCH=$(curl -s -H "Authorization: token $GH_TOKEN" \
+  https://api.github.com/repos/eq19/maps | jq -r .default_branch)
+export DEFAULT_BRANCH=$(curl -s -H "Authorization: token $GH_TOKEN" \
+  https://api.github.com/repos/$GITHUB_REPOSITORY | jq -r .default_branch)
+export FREQAIMODEL_DRY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
+export FREQAIMODEL_LIVE=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/FREQAIMODEL" | jq -r '.value')
 export RERUN_RUNNER=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
   "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/RERUN_RUNNER" | jq -r '.value')
 export TARGET_REPOSITORY=$(curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
   "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/TARGET_REPOSITORY" | jq -r '.value')
-  
+
+
 echo 'RERUN_RUNNER='${RERUN_RUNNER} >> ${GITHUB_ENV}
+echo 'DEFAULT_BRANCH='${DEFAULT_BRANCH} >> ${GITHUB_ENV}
 echo 'TARGET_REPOSITORY='${TARGET_REPOSITORY} >> ${GITHUB_ENV}
 
 TARGET_REPO="https://${GITHUB_ACTOR}:${GH_TOKEN}@github.com/${TARGET_REPOSITORY}.git"
@@ -51,8 +67,6 @@ REMOTE_REPO="https://${GITHUB_ACTOR}:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}
 
 API_URL="https://api.github.com/users/eq19/events/public"
 COMMIT=$(curl -s $API_URL | jq -r 'map(select(.type == "PushEvent")) | .[0].payload.commits[0].message')
-DEFAULT_BRANCH=$(curl -s -H "Authorization: token $GH_TOKEN" \
-  https://api.github.com/repos/$GITHUB_REPOSITORY | jq -r .default_branch)
 
 # Remove double quotes using parameter expansion
 LATEST_COMMIT="${COMMIT//\"/}"
@@ -76,14 +90,14 @@ if [[ "${JOBS_ID}" == "1" ]]; then
 
     #git clone --single-branch --branch gh-pages $REMOTE_REPO gh-pages && cd gh-pages
     #git add . && git commit --allow-empty -m "rerun due to job update" && git push
-    gh workflow run "main.yml" && exit 1
+    gh workflow run "main.yml"
 
   else
 
     if [[ ! -f $RUNNER_TEMP/_config.yml ]]; then set_config $1; fi
     if [[ "$(yq '.repository' $RUNNER_TEMP/_config.yml)" != "$TARGET_REPOSITORY" ]]; then
       echo "$(yq '.repository' $RUNNER_TEMP/_config.yml) != $TARGET_REPOSITORY"
-      gh workflow run "main.yml" && exit 1
+      gh workflow run "main.yml"
     else
       HEADER="Accept: application/vnd.github+json"
       RESPONSE=$(gh api -H "${HEADER}" repos/$TARGET_REPOSITORY/actions/runners)
@@ -161,8 +175,108 @@ elif [[ "${JOBS_ID}" == "2" ]]; then
   
 elif [[ "${JOBS_ID}" == "3" ]]; then
 
-  find -not -path "./.git/*" -not -name ".git" -delete
-  shopt -s dotglob && cp -R /mnt/disks/deeplearning/tmp/_site/* .
+  # Configuration
+  MAX_RETRIES=3
+  DIRS=(
+    "data_dry"
+    "data_live"
+    "user_data"
+  )
+  FILES=(
+    "strategies/fibbo.py"
+    "strategies/__init__.py"
+    "strategies/utils/__init__.py"
+    "strategies/utils/indodax_patch.py"
+  )
+  BASE_URL="https://raw.githubusercontent.com/eq19/maps/$MAP_BRANCH/user_data"
+
+  for DIR_PATH in "${DIRS[@]}"; do
+    for REL_PATH in "${FILES[@]}"; do
+      DOWNLOAD_URL="$BASE_URL/$REL_PATH"
+      DEST_PATH="/home/runner/$DIR_PATH/$REL_PATH"
+
+      # Ensure parent directory exists (no file existence check)
+      /mnt/disks/deeplearning/usr/bin/docker exec mydb mkdir -p "$(dirname "$DEST_PATH")"
+      /mnt/disks/deeplearning/usr/bin/docker exec mydb rm -rf "$(dirname "$DEST_PATH")/strategies/__pycache__"
+      /mnt/disks/deeplearning/usr/bin/docker exec mydb rm -rf "$(dirname "$DEST_PATH")/strategies/utils/__pycache__"
+
+      # Download with retries (always overwrite
+      for attempt in $(seq 1 $MAX_RETRIES); do
+        echo "⌛ [Attempt $attempt/$MAX_RETRIES] Downloading: $REL_PATH"
+    
+        if /mnt/disks/deeplearning/usr/bin/docker exec mydb curl -sf -o "$DEST_PATH" "$DOWNLOAD_URL"; then
+          if /mnt/disks/deeplearning/usr/bin/docker exec mydb test -s "$DEST_PATH"; then
+            echo "✅ [SUCCESS] Downloaded: $DEST_PATH"
+            break
+          else
+            echo "⚠️ [WARNING] Empty file (retrying...)"
+          fi
+        else
+          echo "⚠️ [WARNING] Download failed (retrying...)"
+        fi
+
+        # Final attempt failure
+        if [ "$attempt" -eq "$MAX_RETRIES" ]; then
+          echo "❌ [ERROR] Failed to download: $REL_PATH" >&2
+          exit 1
+        fi
+        sleep 2
+      done
+    done
+  done
+
+  # Setup freqtrade config.json
+  CONF="/etc/supervisor/supervisord.conf"
+  CONFIG="/home/runner/user_data/config.json"
+  CONFIG_DRY="/home/runner/data_dry/config.json"
+  CONFIG_LIVE="/home/runner/data_live/config.json"
+  SUPERVISORD_CONF="$BASE_URL/ft_client/supervisord.conf"
+  CONFIG_FULL="$BASE_URL/config_examples/config_full.example.json"
+  CONFIG_BASE="$BASE_URL/config_examples/config_exchange.example.json"
+  CONFIG_PAIR="$BASE_URL/config_examples/config_pairlist.example.json"
+  HYPEROPT_PARAM="/home/runner/user_data/strategies/hyperopt_params.json"
+  EXCHANGE_PARAM="/home/runner/user_data/config_examples/config_exchange.example.json"
+  PAIRLIST_PARAM="/home/runner/user_data/config_examples/config_pairlist.example.json"
+
+  set -euo pipefail  # Strict error handling
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb rm -rf "$CONFIG"
+  if /mnt/disks/deeplearning/usr/bin/docker exec mydb curl -sf -o "$CONFIG" "$CONFIG_FULL"; then
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|your_telegram_chat_id|$TELEGRAM_CHAT_ID|g" $CONFIG
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|config_examples|/home/runner/user_data/config_examples|g" $CONFIG
+
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb ls -al /home/runner/user_data
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb bash -c "jq '.telegram.enabled = true' $CONFIG > $CONFIG_DRY"
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb bash -c "jq '.telegram.enabled = true' $CONFIG > $CONFIG_LIVE"
+    #/mnt/disks/deeplearning/usr/bin/docker exec mydb bash -c "jq '.telegram.enabled = true | .dry_run = false' $CONFIG > $CONFIG_LIVE"
+
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|tradesv3|tradesv3_dry|g" $CONFIG_DRY
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|tradesv3|tradesv3_live|g" $CONFIG_LIVE
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|your_telegram_token|$MONITOR_BOT_TOKEN|g" $CONFIG_DRY
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|your_telegram_token|$TRADING_BOT_TOKEN|g" $CONFIG_LIVE
+
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb curl -sf -o "$CONF" "$SUPERVISORD_CONF"
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|FREQAIMODEL_DRY|$FREQAIMODEL_DRY|g" $CONF
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|FREQAIMODEL_LIVE|$FREQAIMODEL_LIVE|g" $CONF
+
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb curl -sf -o "$PAIRLIST_PARAM" "$CONFIG_PAIR"
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb curl -sf -o "$EXCHANGE_PARAM" "$CONFIG_BASE"
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|your_exchange_key|$API_KEY|g" $EXCHANGE_PARAM
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|your_exchange_secret|$API_SECRET|g" $EXCHANGE_PARAM
+
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|TELEGRAM_CHAT_ID|$TELEGRAM_CHAT_ID|g" /freqtrade.sh
+    /mnt/disks/deeplearning/usr/bin/docker exec mydb sed -i "s|WARNING_BOT_TOKEN|$WARNING_BOT_TOKEN|g" /freqtrade.sh
+
+    echo "🚀 All files updated (forced overwrite)!"
+  fi
+
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb bash -c \
+    "curl -s -H 'Authorization: token $GH_TOKEN' -H 'Accept: application/vnd.github.v3+json' \
+    https://api.github.com/repos/$GITHUB_REPOSITORY/actions/variables/PARAMS_DRY \
+    | jq -r '.value' > /home/runner/data_dry/strategies/fibbo.json"
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb bash -c \
+    "curl -s -H 'Authorization: token $GH_TOKEN' -H 'Accept: application/vnd.github.v3+json' \
+    https://api.github.com/repos/$GITHUB_REPOSITORY/actions/variables/PARAMS_LIVE \
+    | jq -r '.value' > /home/runner/data_live/strategies/fibbo.json"
 
   # Get the config value and save to file.json
   curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
@@ -171,6 +285,13 @@ elif [[ "${JOBS_ID}" == "3" ]]; then
   curl -s -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" \
     "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/JEKYLL_CONFIG" \
     | jq -r '.value' > _config.yml
+
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb cat $HYPEROPT_PARAM
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb cp $HYPEROPT_PARAM /home/runner/data_dry/strategies/hyperopt_params.json
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb cp $HYPEROPT_PARAM /home/runner/data_live/strategies/hyperopt_params.json
+
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb ls -alR /home/runner/data_dry
+  /mnt/disks/deeplearning/usr/bin/docker exec mydb ls -alR /home/runner/data_live
 
   echo -e "\n$hr\nCONFIG\n$hr" && cat _config.yml
   echo -e "\n$hr\nENVIRONTMENT\n$hr" && printenv | sort
