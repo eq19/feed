@@ -75,6 +75,8 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
 # Install TA-lib
 ADD user_data/build_helpers/ /tmp/
 RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
+RUN cd /tmp && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .download_url' | xargs -n1 curl -sO
+
 
 # Install Freqtrade
 RUN python3 -m venv /home/runner/venv
