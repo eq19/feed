@@ -80,7 +80,8 @@ RUN cd /tmp && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents
 
 # Install Freqtrade
 RUN python3 -m venv /home/runner/venv
-RUN pip install -qq --no-cache-dir ta "numpy<3.0" "plotly==6.1.2" && \
+RUN pip install -qq --no-cache-dir ta "numpy<3.0" && \
+    pip install -qq --no-cache-dir -r /tmp/requirements-plotly.txt && \
     pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt && \
     pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade
     #pip install -qq --no-cache-dir --no-build-isolation "freqtrade @ https://github.com/KernelPatterns/freqtrade/releases/download/v1.0.2/freqtrade-dev1.0.2-py3-none-any.whl"
