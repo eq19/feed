@@ -98,7 +98,7 @@ ADD user_data/ft_client/*.conf /etc/supervisor/
 ADD user_data/data/setup.sql /docker-entrypoint-initdb.d/
 ADD user_data/ft_client/test_client/freqtrade.sh /freqtrade.sh
 ADD user_data/ft_client/test_client/entrypoint.sh /entrypoint.sh
-ADD user_data/config_examples/config_full.example.json /home/runner/user_data/config.json
+ADD user_data/config_examples/config_basic.example.json /home/runner/user_data/config.json
 
 # Start PostgreSQL with custom configuration
 #COPY conf/pg_hba.conf /etc/postgresql/pg_hba.conf
