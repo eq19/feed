@@ -5,9 +5,37 @@ hr='----------------------------------------------------------------------------
 CONTAINER="mydb"
 APP="freqtrade_live"
 DOCKER="/mnt/disks/deeplearning/usr/bin/docker"
+FILE_PATH="/home/runner/data_live/logs/freqtrade.log"
 
 echo -e "\n$hr\nFinal Space\n$hr"
 df -h
+
+set_monitor() {
+  # Max retries
+  max_retries=10
+  # Interval between checks (10 retries in 10 minutes -> 60s each)
+  interval=60
+
+  for ((i=1; i<=max_retries; i++)); do
+    echo "Check $i of $max_retries..."
+
+    if $DOCKER exec mydb test -f "$FILE_PATH"; then
+      $DOCKER exec mydb supervisorctl start monitor_freqtrade
+      $DOCKER exec mydb service cron start
+
+      echo -e "\n$hr\nMemory Usage\n$hr"
+      $DOCKER exec mydb free -h
+
+      echo -e "\n$hr\njob completed ✅"
+      exit 0
+    fi
+
+    if [ $i -lt $max_retries ]; then
+      wait=$((i * interval))
+      sleep $wait
+    fi
+  done
+}
 
 if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
 
@@ -33,11 +61,13 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
     "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/variables/TARGET_REPOSITORY" | jq -r '.value')
 
   echo -e "\n$hr\nStart Network\n$hr"
-  $DOCKER exec mydb supervisorctl reload
+  $DOCKER exec mydb supervisorctl reread
+  $DOCKER exec mydb supervisorctl update
   if [[ "$RERUN_RUNNER" == "true" ]]; then
-    #$DOCKER exec mydb supervisorctl start freqtrade_dry
+    echo "🚀 Run all applications upon the given configuration."
+    $DOCKER exec mydb supervisorctl start freqtrade_dry
     $DOCKER exec mydb supervisorctl start freqtrade_live
-    $DOCKER exec mydb service cron start
+    set_monitor
 
   #Check if ✅ $APP is running inside $CONTAINER
   elif $DOCKER ps --format '{{.Names}}' | grep -q "^${CONTAINER}$" && \
@@ -52,12 +82,9 @@ if [ -d /mnt/disks/deeplearning/usr/local/sbin ]; then
   else
     # Optionally restart:
     # docker start "$CONTAINER" && docker exec "$CONTAINER" supervisorctl start "$APP"
-    #$DOCKER exec mydb supervisorctl start freqtrade_dry
+    echo "🌀 Rerun all applications upon the updated configuration."
+    $DOCKER exec mydb supervisorctl start freqtrade_dry
     $DOCKER exec mydb supervisorctl start freqtrade_live
-    $DOCKER exec mydb service cron start
-    #echo "❌ $APP is NOT running (either container is down or process crashed)."
-    
+    set_monitor
   fi
 fi
-
-echo -e "\njob completed"
