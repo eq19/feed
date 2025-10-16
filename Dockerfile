@@ -1,7 +1,7 @@
 # Use the latest PostgreSQL image as the base
 FROM postgres:latest as base
+EXPOSE 5432 8080 8081 8082
 WORKDIR /home/runner
-EXPOSE 5432
 
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
