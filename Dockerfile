@@ -88,7 +88,7 @@ RUN set -ex \
  && . /home/runner/venv/bin/activate \
  && pip install -qq --no-cache-dir ta "numpy<3.0" \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
- && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
+ && pip install -qq --no-cache-dir -r /tmp/requirements-freqai.txt \
  && pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
