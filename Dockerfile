@@ -74,15 +74,19 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
 
 # Install TA-lib
 ADD user_data/build_helpers/ /tmp/
-RUN cd /tmp && ./install_ta-lib.sh > /dev/null 2>&1
-RUN cd /tmp && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .download_url' | xargs -n1 curl -sO
-
+RUN cd /tmp \
+ && ./install_ta-lib.sh > /dev/null 2>&1 \
+ && rm -rf /tmp/* /tmp/.[!.]* /tmp/..?* \
+ && mkdir -p /tmp && chmod 1777 /tmp \
+ && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents \
+    | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .download_url' \
+    | xargs -n1 curl -sO
 
 # Install Freqtrade
 RUN python3 -m venv /home/runner/venv
 RUN pip install -qq --no-cache-dir ta "numpy<3.0" && \
     pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt && \
-    pip install -qq --no-cache-dir -r /tmp/requirements-freqai.txt && \
+    pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt && \
     pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade
     #pip install -qq --no-cache-dir --no-build-isolation "freqtrade @ https://github.com/KernelPatterns/freqtrade/releases/download/v1.0.2/freqtrade-dev1.0.2-py3-none-any.whl"
 
