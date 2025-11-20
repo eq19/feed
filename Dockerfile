@@ -1,12 +1,4 @@
 
-WORKDIR /freqtrade
-
-# Install dependencies
-FROM base AS python-deps
-RUN  apt-get update \
-  && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
-  && apt-get clean \
-  && pip install --upgrade pip wheel
 
 # Install dependencies
 COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
@@ -45,6 +37,8 @@ CMD [ "trade" ]
 FROM postgres:latest as base
 EXPOSE 5432 8080 8081 8082
 WORKDIR /home/runner
+#WORKDIR /freqtrade
+
 
 # Setup env
 ENV LANG=C.UTF-8
@@ -59,6 +53,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 #ENV PATH=/home/ftuser/.local/bin:$PATH
+
 
 # Runtime Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
@@ -113,6 +108,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     cmake \
     freeglut3-dev \
     gcc \
+    git \
     libffi-dev \
     libgfortran5 \
     libssl-dev \
@@ -123,6 +119,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     pkg-config \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
+    pip install --upgrade pip wheel && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy helper scripts
