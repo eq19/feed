@@ -71,10 +71,8 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     pip install --upgrade pip wheel && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy helper scripts
-ADD user_data/build_helpers/ /tmp/
-
 # Install TA-Lib and Freqtrade
+ADD user_data/build_helpers/ /tmp/
 RUN set -ex \
  && cd /tmp \
  && ./install_ta-lib.sh > /dev/null 2>&1 \
