@@ -96,12 +96,12 @@ RUN set -ex \
 # Final runtime-image
 FROM base as runtime-image
 
-#COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
+COPY --from=python-deps /home/runner/.local /home/runner/.local
 COPY --from=python-deps /home/runner/venv /home/runner/venv
 COPY --from=python-deps /usr/local/lib /usr/local/lib
+
 ENV PATH=/home/runner/venv/bin:$PATH
 ENV LD_LIBRARY_PATH=/usr/local/lib
-
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data /home/runner/user_data
