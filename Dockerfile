@@ -1,37 +1,3 @@
-
-
-# Install dependencies
-COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
-USER ftuser
-RUN  pip install --user --no-cache-dir "numpy<3.0" \
-  && pip install --user --no-cache-dir -r requirements-hyperopt.txt
-
-# Copy dependencies to runtime-image
-FROM base AS runtime-image
-COPY --from=python-deps /usr/local/lib /usr/local/lib
-ENV LD_LIBRARY_PATH=/usr/local/lib
-
-COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
-
-USER ftuser
-# Install and execute
-COPY --chown=ftuser:ftuser . /freqtrade/
-
-RUN pip install -e . --user --no-cache-dir \
-  && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
-
-ENTRYPOINT ["freqtrade"]
-# Default to trade mode
-CMD [ "trade" ]
-
-
-
-
-
-
-
-
 # Use the latest PostgreSQL image as the base
 # FROM python:3.13.8-slim-bookworm AS base
 FROM postgres:latest as base
@@ -50,7 +16,6 @@ ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 ENV DEBIAN_FRONTEND=noninteractive
-ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
 #ENV PATH=/home/ftuser/.local/bin:$PATH
 
@@ -146,8 +111,11 @@ RUN set -ex \
 # Final runtime-image
 FROM base as runtime-image
 
+#COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
+#COPY --from=python-deps /home/runner/venv /home/runner/venv
 COPY --from=python-deps /usr/local/lib /usr/local/lib
-COPY --from=python-deps /home/runner/venv /home/runner/venv
+ENV LD_LIBRARY_PATH=/usr/local/lib
+
 
 # Use custom entrypoint to start both PostgreSQL and freqtrade
 ADD user_data /home/runner/user_data
@@ -173,3 +141,20 @@ ADD user_data/config_examples/config_basic.example.json /home/runner/user_data/c
 
 # Run entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
+
+
+
+
+
+
+USER ftuser
+# Install and execute
+COPY --chown=ftuser:ftuser . /freqtrade/
+
+RUN pip install -e . --user --no-cache-dir \
+  && mkdir /freqtrade/user_data/ \
+  && freqtrade install-ui
+
+ENTRYPOINT ["freqtrade"]
+# Default to trade mode
+CMD [ "trade" ]
