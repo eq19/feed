@@ -5,7 +5,6 @@ EXPOSE 5432 8080 8081 8082
 WORKDIR /home/runner
 #WORKDIR /freqtrade
 
-
 # Setup env
 ENV LANG=C.UTF-8
 ENV LC_ALL=C.UTF-8
@@ -17,7 +16,6 @@ ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH=/home/runner/.local/bin:$PATH
-
 
 # Runtime Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
@@ -47,7 +45,8 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     #useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser && \
     #chown ftuser:ftuser /freqtrade && \
     #echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
-    
+
+
 # Instal build-image
 FROM base as python-deps
 
@@ -92,6 +91,7 @@ RUN set -ex \
  && pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
+
 
 # Final runtime-image
 FROM base as runtime-image
