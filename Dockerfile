@@ -1,14 +1,64 @@
+
+WORKDIR /freqtrade
+
+# Install dependencies
+FROM base AS python-deps
+RUN  apt-get update \
+  && apt-get -y install build-essential libssl-dev git libffi-dev libgfortran5 pkg-config cmake gcc \
+  && apt-get clean \
+  && pip install --upgrade pip wheel
+
+# Install dependencies
+COPY --chown=ftuser:ftuser requirements.txt requirements-hyperopt.txt /freqtrade/
+USER ftuser
+RUN  pip install --user --no-cache-dir "numpy<3.0" \
+  && pip install --user --no-cache-dir -r requirements-hyperopt.txt
+
+# Copy dependencies to runtime-image
+FROM base AS runtime-image
+COPY --from=python-deps /usr/local/lib /usr/local/lib
+ENV LD_LIBRARY_PATH=/usr/local/lib
+
+COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
+
+USER ftuser
+# Install and execute
+COPY --chown=ftuser:ftuser . /freqtrade/
+
+RUN pip install -e . --user --no-cache-dir \
+  && mkdir /freqtrade/user_data/ \
+  && freqtrade install-ui
+
+ENTRYPOINT ["freqtrade"]
+# Default to trade mode
+CMD [ "trade" ]
+
+
+
+
+
+
+
+
 # Use the latest PostgreSQL image as the base
+# FROM python:3.13.8-slim-bookworm AS base
 FROM postgres:latest as base
 EXPOSE 5432 8080 8081 8082
 WORKDIR /home/runner
 
+# Setup env
+ENV LANG=C.UTF-8
+ENV LC_ALL=C.UTF-8
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONFAULTHANDLER=1
+ENV FT_APP_ENV="docker"
 ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LD_LIBRARY_PATH /usr/local/lib
 ENV PATH=/home/runner/venv/bin:$PATH
+#ENV PATH=/home/ftuser/.local/bin:$PATH
 
 # Runtime Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
@@ -35,7 +85,10 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
+    #useradd -u 1000 -G sudo -U -m -s /bin/bash ftuser && \
+    #chown ftuser:ftuser /freqtrade && \
+    #echo "ftuser ALL=(ALL) NOPASSWD: /bin/chown" >> /etc/sudoers
+    
 # Find the required package in ubuntu
 #RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq -o=Dpkg::Use-Pty=0 > /dev/null 2>&1
 #RUN sed "s/#.*//" /home/runner/requirements.apt | xargs apt-get install -yq -o=Dpkg::Use-Pty=0 > /dev/null 2>&1
