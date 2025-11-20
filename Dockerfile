@@ -139,22 +139,13 @@ ADD user_data/config_examples/config_basic.example.json /home/runner/user_data/c
 #RUN tar -xzf v0.2.1.tar.gz && cd pgvector-0.2.1 && make && make install
 #RUN echo "shared_preload_libraries = 'vector'" >> /etc/postgresql/postgresql.conf
 
+# Execute
+#USER ftuser
+#COPY --chown=ftuser:ftuser . /freqtrade/
+
+#RUN pip install -e . --user --no-cache-dir \
+  #&& mkdir /freqtrade/user_data/ \
+  #&& freqtrade install-ui
+
 # Run entrypoint
 ENTRYPOINT ["/entrypoint.sh"]
-
-
-
-
-
-
-USER ftuser
-# Install and execute
-COPY --chown=ftuser:ftuser . /freqtrade/
-
-RUN pip install -e . --user --no-cache-dir \
-  && mkdir /freqtrade/user_data/ \
-  && freqtrade install-ui
-
-ENTRYPOINT ["freqtrade"]
-# Default to trade mode
-CMD [ "trade" ]
