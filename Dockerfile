@@ -16,8 +16,7 @@ ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PATH=/home/runner/venv/bin:$PATH
-#ENV PATH=/home/ftuser/.local/bin:$PATH
+ENV PATH=/home/runner/.local/bin:$PATH
 
 
 # Runtime Dependencies
@@ -112,8 +111,9 @@ RUN set -ex \
 FROM base as runtime-image
 
 #COPY --from=python-deps --chown=ftuser:ftuser /home/ftuser/.local /home/ftuser/.local
-#COPY --from=python-deps /home/runner/venv /home/runner/venv
+COPY --from=python-deps /home/runner/venv /home/runner/venv
 COPY --from=python-deps /usr/local/lib /usr/local/lib
+ENV PATH=/home/runner/venv/bin:$PATH
 ENV LD_LIBRARY_PATH=/usr/local/lib
 
 
