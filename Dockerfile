@@ -68,7 +68,6 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     pkg-config \
     --no-install-recommends > /dev/null 2>&1 && \
     apt-get clean && \
-    pip install --upgrade pip wheel && \
     rm -rf /var/lib/apt/lists/*
 
 # Install TA-Lib and Freqtrade
@@ -83,6 +82,7 @@ RUN set -ex \
     | xargs -n1 curl -sO \
  && python3 -m venv /home/runner/venv \
  && . /home/runner/venv/bin/activate \
+ && pip install --upgrade pip wheel \
  && pip install -qq --no-cache-dir ta "numpy<3.0" \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
