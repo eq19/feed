@@ -15,7 +15,6 @@ ENV POSTGRES_DB postgres
 ENV POSTGRES_USER postgres
 ENV POSTGRES_PASSWORD postgres
 ENV DEBIAN_FRONTEND=noninteractive
-ENV PATH=/home/runner/.local/bin:$PATH
 
 # Runtime Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
@@ -94,7 +93,6 @@ RUN set -ex \
 # Final runtime-image
 FROM base as runtime-image
 
-COPY --from=python-deps /home/runner/.local /home/runner/.local
 COPY --from=python-deps /home/runner/venv /home/runner/venv
 COPY --from=python-deps /usr/local/lib /usr/local/lib
 
