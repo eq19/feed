@@ -1,6 +1,10 @@
 # Use the latest PostgreSQL image as the base
 # FROM python:3.13.8-slim-bookworm AS base
-FROM postgres:latest as base
+#FROM postgres:latest as base
+
+# Use 15-bookworm (Python 3.11 to supports Tensorflow)
+FROM postgres:15-bookworm AS base
+
 EXPOSE 5432 8080 8081 8082
 WORKDIR /home/runner
 #WORKDIR /freqtrade
