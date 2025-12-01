@@ -86,7 +86,7 @@ RUN set -ex \
  && python3 -m venv /home/runner/venv \
  && . /home/runner/venv/bin/activate \
  && pip install -qq --upgrade pip wheel \
- && pip install -qq --no-cache-dir ta "numpy<3.0" \
+ && pip install -qq --no-cache-dir ta "numpy<3.0" tensorflow-cpu \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
  && pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade \
