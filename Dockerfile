@@ -83,6 +83,9 @@ RUN set -ex \
  && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
     | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .download_url' \
     | xargs -n1 curl -sO \
+ && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
+    | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .path' \
+    | xargs -I{} curl -sO "https://raw.githubusercontent.com/freqtrade/freqtrade/2025.10/{}"
  && python3 -m venv /home/runner/venv \
  && . /home/runner/venv/bin/activate \
  && pip install -qq --upgrade pip wheel \
