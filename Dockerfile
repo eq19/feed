@@ -80,16 +80,15 @@ RUN set -ex \
  && ./install_ta-lib.sh > /dev/null 2>&1 \
  && rm -rf /tmp/* /tmp/.[!.]* /tmp/..?* \
  && mkdir -p /tmp && chmod 1777 /tmp \
- && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents \
+ && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
     | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .download_url' \
     | xargs -n1 curl -sO \
  && python3 -m venv /home/runner/venv \
  && . /home/runner/venv/bin/activate \
  && pip install -qq --upgrade pip wheel \
- && pip install -qq --no-cache-dir ta "numpy<3.0" tensorflow-cpu \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
- && pip install -qq --no-cache-dir --no-build-isolation --upgrade freqtrade \
+ && pip install -qq --no-cache-dir ta "numpy<3.0" "freqtrade==2025.10" tensorflow-cpu \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
 
