@@ -24,6 +24,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
 RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     bc \
+    ca-certificates \
     cron \
     curl \
     earlyoom \
