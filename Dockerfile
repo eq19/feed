@@ -34,6 +34,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     python3-venv \
     python3-dev \
     sqlite3 \
+    subversion \
     sudo \
     supervisor \
     unzip \
