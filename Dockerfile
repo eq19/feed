@@ -91,6 +91,7 @@ RUN set -ex \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
  && pip install -qq --no-cache-dir ta "numpy<3.0" "aiodns<3.0" "freqtrade==2025.10" tensorflow-cpu \
+ && pip install -qq --pre iree-base-compiler iree-base-runtime iree-tools-tf -f https://iree.dev/pip-release-links.html \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
 
