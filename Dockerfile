@@ -83,7 +83,7 @@ RUN set -ex \
  && rm -rf /tmp/* /tmp/.[!.]* /tmp/..?* \
  && mkdir -p /tmp && chmod 1777 /tmp \
  && curl -sf -o /tmp/requirements-freqaimodels.txt \
-    \
+    https://raw.githubusercontent.com/eq19/maps/refs/heads/v8/user_data/freqaimodels/standalone/libs/requirements.txt \
  && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
     | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .path' \
     | xargs -I{} curl -sO "https://raw.githubusercontent.com/freqtrade/freqtrade/2025.10/{}" \
