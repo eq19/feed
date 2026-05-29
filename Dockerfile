@@ -82,6 +82,8 @@ RUN set -ex \
  && ./install_ta-lib.sh > /dev/null 2>&1 \
  && rm -rf /tmp/* /tmp/.[!.]* /tmp/..?* \
  && mkdir -p /tmp && chmod 1777 /tmp \
+ && curl -sf -o /tmp/requirements-freqaimodels.txt \
+    \
  && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
     | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .path' \
     | xargs -I{} curl -sO "https://raw.githubusercontent.com/freqtrade/freqtrade/2025.10/{}" \
