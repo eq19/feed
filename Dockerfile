@@ -82,9 +82,9 @@ RUN set -ex \
  && ./install_ta-lib.sh > /dev/null 2>&1 \
  && rm -rf /tmp/* /tmp/.[!.]* /tmp/..?* \
  && mkdir -p /tmp && chmod 1777 /tmp \
- && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.10 \
+ && curl -s https://api.github.com/repos/freqtrade/freqtrade/contents?ref=2025.12 \
     | jq -r '.[] | select(.name | test("^requirements(-.*)?\\.txt$")) | .path' \
-    | xargs -I{} curl -sO "https://raw.githubusercontent.com/freqtrade/freqtrade/2025.10/{}" \
+    | xargs -I{} curl -sO "https://raw.githubusercontent.com/freqtrade/freqtrade/2025.12/{}" \
  && curl -sf -o /tmp/requirements-freqaimodels.txt \
     https://raw.githubusercontent.com/eq19/maps/refs/heads/v8/user_data/freqaimodels/standalone/libs/requirements.txt \
  && python3 -m venv /home/runner/venv \
@@ -93,7 +93,7 @@ RUN set -ex \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
  && pip install -qq --no-cache-dir -r /tmp/requirements-freqaimodels.txt \
- && pip install -qq --no-cache-dir ta "numpy<3.0" "aiodns<3.0" "freqtrade==2025.10" "tensorflow-cpu==2.20.0" \
+ && pip install -qq --no-cache-dir ta "numpy<3.0" "aiodns<3.0" "freqtrade==2025.12" "tensorflow-cpu==2.20.0" \
  && pip install -qq --pre iree-base-compiler iree-base-runtime iree-tools-tf -f https://iree.dev/pip-release-links.html \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
