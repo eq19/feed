@@ -54,6 +54,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
 
 # Instal build-image
 FROM base as python-deps
+ARG BYPASS_LEXERING="false"
 
 # Build Dependencies
 # Ref: https://github.com/freqtrade/freqtrade/blob/develop/Dockerfile
@@ -75,7 +76,7 @@ RUN apt-get update -qq > /dev/null 2>&1 && apt-get install -y -qq \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install TA-Lib and Freqtrade
+# Install TA-Lib and Freqtrade conditionally
 ADD user_data/build_helpers/ /tmp/
 RUN set -ex \
  && cd /tmp \
@@ -91,14 +92,16 @@ RUN set -ex \
  && . /home/runner/venv/bin/activate \
  && pip install -qq --upgrade pip wheel \
  && pip install -qq --no-cache-dir -r /tmp/requirements-plot.txt \
- && pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
- && pip install -qq --no-cache-dir -r /tmp/requirements-freqaimodels.txt \
- && pip install -qq --no-cache-dir "torch==2.5.1" "torchvision==0.20.1" --force-reinstall \
- && pip install -qq --no-cache-dir ta "numpy<3.0" "aiodns<3.0" "freqtrade==2025.12" "tensorflow-cpu==2.20.0" \
- && pip install -qq --pre iree-base-compiler iree-base-runtime iree-tools-tf -f https://iree.dev/pip-release-links.html \
+ && if [ "$BYPASS_LEXERING" = "true" ]; then \
+      pip install -qq --no-cache-dir -r /tmp/requirements-freqai-rl.txt \
+      && pip install -qq --no-cache-dir -r /tmp/requirements-freqaimodels.txt \
+      && pip install -qq --no-cache-dir "torch==2.5.1" "torchvision==0.20.1" --force-reinstall \
+      && pip install -qq --no-cache-dir "tensorflow-cpu==2.20.0" \
+      && pip install -qq --pre iree-base-compiler iree-base-runtime iree-tools-tf -f https://iree.dev/pip-release-links.html; \
+    fi \
+ && pip install -qq --no-cache-dir ta "numpy<3.0" "aiodns<3.0" "freqtrade==2025.12" \
  && rm -rf /tmp/* /root/.cache/pip /var/lib/apt/lists/* \
  && mkdir -p /tmp && chmod 1777 /tmp
-
 
 # Final runtime-image
 FROM base as runtime-image
